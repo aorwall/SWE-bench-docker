@@ -2,25 +2,25 @@ This is a Dockerfile based solution of the [SWE-Bench evaluation framework](http
 
 ## Supported repositories
 
-[ ] astropy/astropy
-[x] django/django (SWE-Bench Lite dataset)
-[ ] marshmallow-code/marshmallow
-[ ] matplotlib/matplotlib
-[ ] mwaskom/seaborn
-[ ] pallets/flask
-[ ] psf/requests
-[ ] pvlib/pvlib-python
-[ ] pydata/xarray
-[ ] pydicom/pydicom
-[ ] pylint-dev/astroid
-[ ] pylint-dev/pylint
-[ ] pytest-dev/pytest
-[ ] pyvista/pyvista
-[ ] scikit-learn/scikit-learn
-[ ] sphinx-doc/sphinx
-[ ] sqlfluff/sqlfluff
-[ ] swe-bench/humaneval
-[ ] sympy/sympy
+- [ ] astropy/astropy
+- [x] django/django (SWE-Bench Lite dataset)
+- [ ] marshmallow-code/marshmallow
+- [ ] matplotlib/matplotlib
+- [ ] mwaskom/seaborn
+- [ ] pallets/flask
+- [ ] psf/requests
+- [ ] pvlib/pvlib-python
+- [ ] pydata/xarray
+- [ ] pydicom/pydicom
+- [ ] pylint-dev/astroid
+- [ ] pylint-dev/pylint
+- [ ] pytest-dev/pytest
+- [ ] pyvista/pyvista
+- [ ] scikit-learn/scikit-learn
+- [ ] sphinx-doc/sphinx
+- [ ] sqlfluff/sqlfluff
+- [ ] swe-bench/humaneval
+- [ ] sympy/sympy
 
 ## Usage
 
