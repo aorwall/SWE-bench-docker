@@ -22,7 +22,7 @@ build_docker_images() {
             if [ -f "$dockerfile_path" ]; then
                 tag="${dir#$root_directory/}"
                 tag="${tag%/}"
-                image_name="$base_image-${tag//\//__}"
+                image_name="$base_image-$(echo $tag | sed 's/__*/_/g')"
                 echo "Building Docker image: $image_name"
                 docker build -t "$image_name:latest" -f "$dockerfile_path" .
             fi
@@ -37,7 +37,7 @@ build_docker_images() {
                 base_dir=$(dirname "$dir")
                 version=$(basename "$dir")
                 tag_base="${base_dir#$root_directory/}"
-                tag_base="${tag_base//\//__}"
+                tag_base="$(echo $tag_base | sed 's/__*/_/g')"
                 image_name="$base_image-${tag_base}-testbed"
                 echo "Building Docker image: $image_name:$version for $dir/Dockerfile"
                 docker build -t "$image_name:$version" -f "$dockerfile_path" .

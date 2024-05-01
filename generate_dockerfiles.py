@@ -5,7 +5,7 @@ from typing import List
 
 from jinja2 import FileSystemLoader, Environment
 
-from swebench.constants import MAP_VERSION_TO_INSTALL, SUPPORTED_REPOS
+from swebench.constants import MAP_VERSION_TO_INSTALL, SUPPORTED_REPOS, MAP_REPO_TO_DEB_PACKAGES
 from swebench.utils import get_eval_refs, get_requirements, get_environment_yml
 
 logging.basicConfig(level=logging.INFO)
@@ -28,12 +28,13 @@ def group_task_instances(task_instances):
     return task_instances_grouped
 
 
-def generate_testbed_base_dockerfile(namespace: str, repo_name: str, docker_dir: str):
+def generate_testbed_base_dockerfile(namespace: str, repo_name: str, deb_packages: List[str], docker_dir: str):
     env = Environment(loader=FileSystemLoader("templates"))
     template = env.get_template('Dockerfile.testbed_base')
 
     dockerfile_content = template.render(
         namespace=namespace,
+        deb_packages=" ".join(deb_packages) if deb_packages else None,
         repo_name=repo_name
     )
 
@@ -56,7 +57,8 @@ def generate_testbed_dockerfile(
     install_cmds: List[str],
     environment_setup_commit: str,
     docker_dir: str,
-    path_to_reqs: str = None
+    path_to_reqs: str = None,
+    path_to_env_file: str = None
 ):
     env = Environment(loader=FileSystemLoader("templates"))
     template = env.get_template('Dockerfile.testbed')
@@ -69,7 +71,8 @@ def generate_testbed_dockerfile(
         conda_create_cmd=conda_create_cmd,
         install_cmds=install_cmds,
         path_to_reqs=path_to_reqs,
-        environment_setup_commit=environment_setup_commit
+        environment_setup_commit=environment_setup_commit,
+        path_to_env_file=path_to_env_file
     )
 
     testbed_dir = f"{docker_dir}/{repo_name}/{version}"
@@ -107,7 +110,12 @@ def build(
     # Create docker file per repo
     for repo in setup_refs.keys():
         repo_name = _repo_name(repo)
-        generate_testbed_base_dockerfile(namespace, repo_name, docker_dir)
+
+        deb_packages = None
+        if repo in MAP_REPO_TO_DEB_PACKAGES:
+            deb_packages = MAP_REPO_TO_DEB_PACKAGES[repo]
+
+        generate_testbed_base_dockerfile(namespace, repo_name, deb_packages, docker_dir)
 
     for repo, version_to_setup_ref in setup_refs.items():
         repo_name = _repo_name(repo)
@@ -128,6 +136,7 @@ def build(
             environment_setup_commit = setup_ref_instance.get('environment_setup_commit', setup_ref_instance['base_commit'])
 
             path_to_reqs = None
+            path_to_env_file = None
             install_cmds = []
 
             testbed_dir = f"{docker_dir}/{repo_name}/{version}"
@@ -146,7 +155,7 @@ def build(
             elif pkgs == "environment.yml":
                 if "no_use_env" in install and install["no_use_env"]:
                     # Create environment from yml
-                    path_to_reqs = get_environment_yml(
+                    path_to_env_file = get_environment_yml(
                         setup_ref_instance, env_name,
                         save_path=test_bed_dir
                     )
@@ -156,17 +165,17 @@ def build(
 
                     # Install dependencies
                     install_cmds.append(
-                        f"conda env update -f requirements.txt"
+                        f"conda env update -f environment.yml"
                     )
                 else:
                     # Create environment from yml
-                    path_to_reqs = get_environment_yml(
+                    path_to_env_file = get_environment_yml(
                         setup_ref_instance, env_name,
                         save_path=test_bed_dir,
                         python_version=install["python"]
                     )
 
-                    conda_create_cmd = f"conda env create --file requirements.txt"
+                    conda_create_cmd = f"conda env create -f environment.yml"
             else:
                 conda_create_cmd = f"conda create -n {env_name} python={install['python']} {pkgs} -y"
 
@@ -177,10 +186,11 @@ def build(
                     f"pip install {pip_packages}"
                 )
 
+
             if "install" in install:
                 install_cmds.append(install["install"])
 
-            image_name = repo.replace("/", "__")
+            image_name = repo.replace("/", "_")
             base_image = f"{namespace}/swe-bench-{image_name}:latest"
 
             generate_testbed_dockerfile(
@@ -191,6 +201,7 @@ def build(
                 install_cmds=install_cmds,
                 environment_setup_commit=environment_setup_commit,
                 path_to_reqs=path_to_reqs,
+                path_to_env_file=path_to_env_file,
                 docker_dir=docker_dir)
 
 

@@ -1,10 +1,14 @@
 FROM {{ base_image }}
 
+RUN git -c advice.detachedHead=false checkout {{ environment_setup_commit }}
+
+{% if path_to_env_file %}
+COPY {{ path_to_env_file }} .
+{% endif %}
+
 RUN {{conda_create_cmd}}
 
 SHELL ["conda", "run", "-n", "{{ testbed }}", "/bin/bash", "-c"]
-
-RUN git -c advice.detachedHead=false checkout {{ environment_setup_commit }}
 
 {% if path_to_reqs %}
 COPY {{ path_to_reqs }} .

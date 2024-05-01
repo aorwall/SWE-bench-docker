@@ -1,7 +1,8 @@
 from enum import Enum
 
 SUPPORTED_REPOS = [
-    "django/django"
+    "django/django",
+    "matplotlib/matplotlib",
 ]
 
 MAP_VERSION_TO_INSTALL_SKLEARN = {
@@ -593,6 +594,10 @@ MAP_REPO_TO_REQS_PATHS = {
 MAP_REPO_TO_ENV_YML_PATHS = {
     "matplotlib/matplotlib": ["environment.yml"],
     "pydata/xarray": ["ci/requirements/environment.yml", "environment.yml"],
+}
+
+MAP_REPO_TO_DEB_PACKAGES = {
+    "matplotlib/matplotlib": ["texlive", "dvipng", "ghostscript"],
 }
 
 # Constants - Evaluation Keys

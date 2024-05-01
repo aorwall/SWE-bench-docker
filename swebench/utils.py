@@ -68,6 +68,8 @@ def get_environment_yml(
         environment.yml (str): If save_path given, returns path to saved environment.yml.
             Otherwise, returns environment.yml as string
     """
+    import requests
+
     # Attempt to find environment.yml at each path based on task instance's repo
     path_worked = False
 
@@ -143,6 +145,8 @@ def get_requirements(instance: dict, save_path: str = None):
         requirements.txt (str): If save_path given, returns path to saved requirements.txt.
             Otherwise, returns requirements.txt as string
     """
+    import requests
+
     # Attempt to find requirements.txt at each path based on task instance's repo
     path_worked = False
     commit = 'environment_setup_commit' if 'environment_setup_commit' in instance else 'base_commit'
@@ -151,7 +155,6 @@ def get_requirements(instance: dict, save_path: str = None):
         reqs_url = os.path.join(
             SWE_BENCH_URL_RAW, instance["repo"], instance[commit], req_path
         )
-        import requests
 
         reqs = requests.get(reqs_url)
         if reqs.status_code == 200:
@@ -273,6 +276,8 @@ def find_python_by_date(target_date, date_format="%Y%m%d"):
     Returns:
         python_version (str): Python version closest to target_date
     """
+    import requests
+
     # Make web request to versions + date page
     url = f"https://www.python.org/doc/versions/"
     response = requests.get(url)

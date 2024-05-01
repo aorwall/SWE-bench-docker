@@ -1,0 +1,25 @@
+FROM aorwall/swe-bench-matplotlib_matplotlib:latest
+
+RUN git -c advice.detachedHead=false checkout 28289122be81e0bc0a6ee0c4c5b7343a46ce2e4e
+
+
+
+RUN conda create -n matplotlib__matplotlib__3.3 python=3.8 -y
+
+SHELL ["conda", "run", "-n", "matplotlib__matplotlib__3.3", "/bin/bash", "-c"]
+
+
+COPY docker/matplotlib__matplotlib/3.3/requirements.txt .
+
+
+
+RUN pip install -r requirements.txt
+
+RUN python -m pip install -e .
+
+
+ENV TESTBED_NAME=matplotlib__matplotlib__3.3
+
+WORKDIR /home/swe-bench
+
+ENTRYPOINT ["./entrypoint.sh"]

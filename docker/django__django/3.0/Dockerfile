@@ -1,10 +1,12 @@
-FROM aorwall/swe-bench-django__django:latest
+FROM aorwall/swe-bench-django_django:latest
+
+RUN git -c advice.detachedHead=false checkout 419a78300f7cd27611196e1e464d50fd0385ff27
+
+
 
 RUN conda create -n django__django__3.0 python=3.6 -y
 
 SHELL ["conda", "run", "-n", "django__django__3.0", "/bin/bash", "-c"]
-
-RUN git -c advice.detachedHead=false checkout 419a78300f7cd27611196e1e464d50fd0385ff27
 
 
 COPY docker/django__django/3.0/requirements.txt .

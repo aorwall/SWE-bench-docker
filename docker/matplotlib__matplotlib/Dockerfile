@@ -1,0 +1,18 @@
+FROM aorwall/swe-bench-base:latest
+
+
+USER root
+
+RUN apt-get update && \
+    apt-get install -y texlive dvipng ghostscript && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+USER swe-bench
+
+
+RUN git clone https://github.com/swe-bench/matplotlib__matplotlib.git
+
+WORKDIR /home/swe-bench/matplotlib__matplotlib
+
+ENV TESTBED=/home/swe-bench/matplotlib__matplotlib

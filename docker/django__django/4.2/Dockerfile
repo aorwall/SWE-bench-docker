@@ -1,10 +1,12 @@
-FROM aorwall/swe-bench-django__django:latest
+FROM aorwall/swe-bench-django_django:latest
+
+RUN git -c advice.detachedHead=false checkout 0fbdb9784da915fce5dcc1fe82bac9b4785749e5
+
+
 
 RUN conda create -n django__django__4.2 python=3.9 -y
 
 SHELL ["conda", "run", "-n", "django__django__4.2", "/bin/bash", "-c"]
-
-RUN git -c advice.detachedHead=false checkout 0fbdb9784da915fce5dcc1fe82bac9b4785749e5
 
 
 COPY docker/django__django/4.2/requirements.txt .
