@@ -1,0 +1,7 @@
+FROM {{ namespace }}/swe-bench-base:latest
+
+RUN git clone https://github.com/swe-bench/{{ repo_name }}.git
+
+WORKDIR /home/swe-bench/{{ repo_name }}
+
+ENV TESTBED=/home/swe-bench/{{ repo_name }}
