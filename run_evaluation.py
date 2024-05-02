@@ -15,7 +15,7 @@ from tqdm import tqdm
 from swebench.constants import (
     KEY_INSTANCE_ID,
     KEY_MODEL,
-    KEY_PREDICTION, MAP_REPO_TO_TEST_FRAMEWORK, SUPPORTED_REPOS,
+    KEY_PREDICTION, MAP_REPO_TO_TEST_FRAMEWORK,
 )
 from swebench.utils import get_instances, get_eval_refs, get_test_directives
 
