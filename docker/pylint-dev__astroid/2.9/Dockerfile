@@ -1,0 +1,20 @@
+FROM aorwall/swe-bench-pylint-dev_astroid:latest
+
+RUN git -c advice.detachedHead=false checkout 0d1211558670cfefd95b39984b8d5f7f34837f32
+
+RUN conda create -n pylint-dev__astroid__2.9 python=3.9  -y
+
+SHELL ["conda", "run", "-n", "pylint-dev__astroid__2.9", "/bin/bash", "-c"]
+
+
+RUN pip install pytest lazy_object_proxy==1.9.0 wrapt==1.13.3 typing-extensions==4.8.0 setuptools==68.0.0
+
+RUN pip install -e .
+ENV TESTBED_NAME=pylint-dev__astroid__2.9
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

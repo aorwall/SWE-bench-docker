@@ -26,8 +26,3 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-py311_24.3.0-0-L
 RUN conda --version \
     && conda init bash \
     && conda config --append channels conda-forge
-
-COPY swebench swebench
-COPY docker/base/entrypoint.sh .
-
-ENTRYPOINT ["./entrypoint.sh"]

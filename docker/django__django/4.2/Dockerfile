@@ -2,8 +2,6 @@ FROM aorwall/swe-bench-django_django:latest
 
 RUN git -c advice.detachedHead=false checkout 0fbdb9784da915fce5dcc1fe82bac9b4785749e5
 
-
-
 RUN conda create -n django__django__4.2 python=3.9 -y
 
 SHELL ["conda", "run", "-n", "django__django__4.2", "/bin/bash", "-c"]
@@ -11,15 +9,19 @@ SHELL ["conda", "run", "-n", "django__django__4.2", "/bin/bash", "-c"]
 
 COPY docker/django__django/4.2/requirements.txt .
 
-
-
 RUN pip install -r requirements.txt
 
 RUN python -m pip install -e .
-
-
+RUN if git show 0fbdb9784da915fce5dcc1fe82bac9b4785749e5:requirements.txt > /dev/null 2>&1; then \
+        git checkout 0fbdb9784da915fce5dcc1fe82bac9b4785749e5 -- requirements.txt; \
+    else \
+        rm -f requirements.txt; \
+    fi
 ENV TESTBED_NAME=django__django__4.2
 
 WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

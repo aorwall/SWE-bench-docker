@@ -5,7 +5,7 @@ from typing import List
 
 from jinja2 import FileSystemLoader, Environment
 
-from swebench.constants import MAP_VERSION_TO_INSTALL, SUPPORTED_REPOS, MAP_REPO_TO_DEB_PACKAGES
+from swebench.constants import MAP_VERSION_TO_INSTALL, MAP_REPO_TO_DEB_PACKAGES
 from swebench.utils import get_eval_refs, get_requirements, get_environment_yml
 
 logging.basicConfig(level=logging.INFO)
@@ -54,6 +54,7 @@ def generate_testbed_dockerfile(
     repo_name: str,
     version: str,
     conda_create_cmd: str,
+    pre_install_cmds: List[str],
     install_cmds: List[str],
     environment_setup_commit: str,
     docker_dir: str,
@@ -69,6 +70,7 @@ def generate_testbed_dockerfile(
         version=version,
         testbed=repo_name + "__" + version,
         conda_create_cmd=conda_create_cmd,
+        pre_install_cmds=pre_install_cmds,
         install_cmds=install_cmds,
         path_to_reqs=path_to_reqs,
         environment_setup_commit=environment_setup_commit,
@@ -91,7 +93,6 @@ def build(
     docker_dir: str = "docker"
 ):
     task_instances = list(get_eval_refs(swe_bench_tasks).values())
-    task_instances = [instance for instance in task_instances if instance["repo"] in SUPPORTED_REPOS]
 
     # Group repos by repo, then version
     task_instances_grouped = group_task_instances(task_instances)
@@ -143,6 +144,8 @@ def build(
             if not os.path.exists(testbed_dir):
                 os.makedirs(testbed_dir)
 
+            pre_install_cmds = install.get("pre_install", None)
+
             # Create conda environment according to install instructinos
             pkgs = install["packages"] if "packages" in install else ""
             if pkgs == "requirements.txt":
@@ -186,7 +189,6 @@ def build(
                     f"pip install {pip_packages}"
                 )
 
-
             if "install" in install:
                 install_cmds.append(install["install"])
 
@@ -198,6 +200,7 @@ def build(
                 repo_name=repo_name,
                 version=version,
                 conda_create_cmd=conda_create_cmd,
+                pre_install_cmds=pre_install_cmds,
                 install_cmds=install_cmds,
                 environment_setup_commit=environment_setup_commit,
                 path_to_reqs=path_to_reqs,

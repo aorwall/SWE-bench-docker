@@ -1,0 +1,18 @@
+FROM aorwall/swe-bench-scikit-learn_scikit-learn:latest
+
+RUN git -c advice.detachedHead=false checkout 1e8a5b833d1b58f3ab84099c4582239af854b23a
+
+RUN conda create -n scikit-learn__scikit-learn__1.3 python=3.9 numpy scipy cython pytest pandas matplotlib joblib threadpoolctl -y
+
+SHELL ["conda", "run", "-n", "scikit-learn__scikit-learn__1.3", "/bin/bash", "-c"]
+
+
+RUN pip install -v --no-use-pep517 --no-build-isolation -e .
+ENV TESTBED_NAME=scikit-learn__scikit-learn__1.3
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

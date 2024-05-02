@@ -8,6 +8,7 @@ import json
 import logging
 import os
 import subprocess
+import time
 
 from tqdm import tqdm
 
@@ -74,19 +75,24 @@ def run_docker_evaluation(task_instance: dict, log_dir: str, timeout: int = 900,
         docker_image
     ]
 
+    cmd_string = ' '.join(docker_command)
+    start_time = time.time()
     result = subprocess.run(docker_command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+    elapsed_time = time.time() - start_time
 
-    if result.returncode == 0:
-        if "Evaluation succeeded" not in result.stdout:
-            logger.warning(f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Container ran successfully, but evaluation failed.")
-            logger.warning(' '.join(docker_command))
-            logger.warning(f"stdout - {result.stdout}")
-        else:
-            logger.debug(f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Container ran successfully.")
+    if result.returncode != 0:
+        logger.warning(
+            f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Error running container:")
+        logger.warning(f"Command: {cmd_string}")
+        logger.warning(f"Stdout - {result.stdout}")
+        logger.warning(f"Stderr - {result.stderr}")
+
+    elif "Evaluation succeeded" not in result.stdout:
+        logger.warning(f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Container ran successfully in {elapsed_time} seconds, but evaluation failed.")
+        logger.warning(f"Command: {cmd_string}")
+        logger.warning(f"stdout - {result.stdout}")
     else:
-        logger.debug(f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Error running container:")
-
-
+        logger.info(f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Container ran successfully in {elapsed_time} seconds.")
 
 def main(
     predictions_path: str,
@@ -136,7 +142,7 @@ def main(
         predictions_filtered = []
         for p in predictions:
             log_file_name = f"{p[KEY_INSTANCE_ID]}.{p[KEY_MODEL]}.eval.log"
-            if log_suffix is not None:
+            if log_suffix:
                 log_file_name = f"{p[KEY_INSTANCE_ID]}.{p[KEY_MODEL]}.{log_suffix}.eval.log"
             log_file = os.path.join(log_dir, log_file_name)
             if not os.path.exists(log_file):
@@ -172,13 +178,6 @@ def main(
             "test_directives": test_directives,
             "test_cmd": test_cmd
         })
-
-    filtered_task_instances = []
-    for p in task_instances:
-        if p["repo"] in SUPPORTED_REPOS:
-            filtered_task_instances.append(p)
-
-    task_instances = filtered_task_instances
 
     for task_instance in tqdm(task_instances):
         run_docker_evaluation(task_instance, log_dir, timeout, log_suffix)

@@ -1,0 +1,9 @@
+FROM aorwall/swe-bench-base:latest
+
+
+
+RUN git clone https://github.com/swe-bench/pallets__flask.git
+
+WORKDIR /home/swe-bench/pallets__flask
+
+ENV TESTBED=/home/swe-bench/pallets__flask

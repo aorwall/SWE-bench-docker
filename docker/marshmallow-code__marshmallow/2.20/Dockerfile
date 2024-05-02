@@ -1,0 +1,18 @@
+FROM aorwall/swe-bench-marshmallow-code_marshmallow:latest
+
+RUN git -c advice.detachedHead=false checkout 7015fc4333a2f32cd58c3465296e834acd4496ff
+
+RUN conda create -n marshmallow-code__marshmallow__2.20 python=3.9  -y
+
+SHELL ["conda", "run", "-n", "marshmallow-code__marshmallow__2.20", "/bin/bash", "-c"]
+
+
+RUN pip install -e '.[dev]'
+ENV TESTBED_NAME=marshmallow-code__marshmallow__2.20
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

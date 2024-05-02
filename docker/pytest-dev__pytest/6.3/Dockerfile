@@ -1,0 +1,20 @@
+FROM aorwall/swe-bench-pytest-dev_pytest:latest
+
+RUN git -c advice.detachedHead=false checkout 634312b14a45db8d60d72016e01294284e3a18d4
+
+RUN conda create -n pytest-dev__pytest__6.3 python=3.9  -y
+
+SHELL ["conda", "run", "-n", "pytest-dev__pytest__6.3", "/bin/bash", "-c"]
+
+
+RUN pip install attrs==23.1.0 iniconfig==2.0.0 packaging==23.1 pluggy==0.13.1 py==1.11.0 toml==0.10.2
+
+RUN pip install -e .
+ENV TESTBED_NAME=pytest-dev__pytest__6.3
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

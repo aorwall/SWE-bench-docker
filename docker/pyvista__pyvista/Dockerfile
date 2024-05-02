@@ -1,0 +1,18 @@
+FROM aorwall/swe-bench-base:latest
+
+
+USER root
+
+RUN apt-get update && \
+    apt-get install -y libgl1 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+USER swe-bench
+
+
+RUN git clone https://github.com/swe-bench/pyvista__pyvista.git
+
+WORKDIR /home/swe-bench/pyvista__pyvista
+
+ENV TESTBED=/home/swe-bench/pyvista__pyvista

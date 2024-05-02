@@ -1,0 +1,21 @@
+FROM aorwall/swe-bench-sphinx-doc_sphinx:latest
+
+RUN git -c advice.detachedHead=false checkout 571b55328d401a6e1d50e37407df56586065a7be
+
+RUN conda create -n sphinx-doc__sphinx__5.1 python=3.9  -y
+
+SHELL ["conda", "run", "-n", "sphinx-doc__sphinx__5.1", "/bin/bash", "-c"]
+
+RUN sed -i 's/pytest/pytest -rA/' tox.ini
+
+RUN pip install tox
+
+RUN pip install -e .[test]
+ENV TESTBED_NAME=sphinx-doc__sphinx__5.1
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

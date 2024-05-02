@@ -1,0 +1,29 @@
+FROM aorwall/swe-bench-pallets_flask:latest
+
+RUN git -c advice.detachedHead=false checkout 182ce3dd15dfa3537391c3efaf9c3ff407d134d4
+
+RUN conda create -n pallets__flask__2.3 python=3.11 -y
+
+SHELL ["conda", "run", "-n", "pallets__flask__2.3", "/bin/bash", "-c"]
+
+
+COPY docker/pallets__flask/2.3/requirements.txt .
+
+RUN pip install -r requirements.txt
+
+RUN pip install click==8.1.3 itsdangerous==2.1.2 Jinja2==3.1.2 MarkupSafe==2.1.1 Werkzeug==2.3.7
+
+RUN pip install -e .
+RUN if git show 182ce3dd15dfa3537391c3efaf9c3ff407d134d4:requirements.txt > /dev/null 2>&1; then \
+        git checkout 182ce3dd15dfa3537391c3efaf9c3ff407d134d4 -- requirements.txt; \
+    else \
+        rm -f requirements.txt; \
+    fi
+ENV TESTBED_NAME=pallets__flask__2.3
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

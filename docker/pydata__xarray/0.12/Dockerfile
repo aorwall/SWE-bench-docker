@@ -1,0 +1,28 @@
+FROM aorwall/swe-bench-pydata_xarray:latest
+
+RUN git -c advice.detachedHead=false checkout 1c198a191127c601d091213c4b3292a8bb3054e1
+
+COPY docker/pydata__xarray/0.12/environment.yml .
+RUN conda create -c conda-forge -n pydata__xarray__0.12 python=3.10 -y
+
+SHELL ["conda", "run", "-n", "pydata__xarray__0.12", "/bin/bash", "-c"]
+
+
+RUN conda env update -f environment.yml
+
+RUN pip install numpy==1.25.2 packaging==23.1 pandas==1.5.3 pytest==8.1.1 python-dateutil==2.8.2 pytz==2023.3 six==1.16.0
+
+RUN pip install -e .
+RUN if git show 1c198a191127c601d091213c4b3292a8bb3054e1:environment.yml > /dev/null 2>&1; then \
+        git checkout 1c198a191127c601d091213c4b3292a8bb3054e1 -- environment.yml; \
+    else \
+        rm -f requirements.txt; \
+    fi
+ENV TESTBED_NAME=pydata__xarray__0.12
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

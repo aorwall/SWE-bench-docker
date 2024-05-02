@@ -2,24 +2,49 @@ FROM {{ base_image }}
 
 RUN git -c advice.detachedHead=false checkout {{ environment_setup_commit }}
 
-{% if path_to_env_file %}
+{% if path_to_env_file -%}
 COPY {{ path_to_env_file }} .
-{% endif %}
+{% endif -%}
 
 RUN {{conda_create_cmd}}
 
 SHELL ["conda", "run", "-n", "{{ testbed }}", "/bin/bash", "-c"]
 
+{% if pre_install_cmds -%}
+{% for cmd in pre_install_cmds -%}
+RUN {{ cmd }}
+{% endfor -%}
+{% endif -%}
+
 {% if path_to_reqs %}
 COPY {{ path_to_reqs }} .
-{% endif %}
+{% endif -%}
 
 {% for cmd in install_cmds %}
 RUN {{ cmd }}
-{% endfor %}
+{% endfor -%}
+
+{% if path_to_reqs -%}
+RUN if git show {{ environment_setup_commit }}:requirements.txt > /dev/null 2>&1; then \
+        git checkout {{ environment_setup_commit }} -- requirements.txt; \
+    else \
+        rm -f requirements.txt; \
+    fi
+{% endif -%}
+
+{% if path_to_env_file -%}
+RUN if git show {{ environment_setup_commit }}:environment.yml > /dev/null 2>&1; then \
+        git checkout {{ environment_setup_commit }} -- environment.yml; \
+    else \
+        rm -f requirements.txt; \
+    fi
+{% endif -%}
 
 ENV TESTBED_NAME={{ testbed }}
 
 WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

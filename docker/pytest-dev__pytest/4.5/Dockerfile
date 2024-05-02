@@ -1,0 +1,20 @@
+FROM aorwall/swe-bench-pytest-dev_pytest:latest
+
+RUN git -c advice.detachedHead=false checkout 693c3b7f61d4d32f8927a74f34ce8ac56d63958e
+
+RUN conda create -n pytest-dev__pytest__4.5 python=3.9  -y
+
+SHELL ["conda", "run", "-n", "pytest-dev__pytest__4.5", "/bin/bash", "-c"]
+
+
+RUN pip install atomicwrites==1.4.1 attrs==23.1.0 more-itertools==10.1.0 pluggy==0.11.0 py==1.11.0 setuptools==68.0.0 six==1.16.0 wcwidth==0.2.6
+
+RUN pip install -e .
+ENV TESTBED_NAME=pytest-dev__pytest__4.5
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

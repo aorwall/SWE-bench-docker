@@ -1,0 +1,20 @@
+FROM aorwall/swe-bench-mwaskom_seaborn:latest
+
+RUN git -c advice.detachedHead=false checkout 23860365816440b050e9211e1c395a966de3c403
+
+RUN conda create -n mwaskom__seaborn__0.13 python=3.9  -y
+
+SHELL ["conda", "run", "-n", "mwaskom__seaborn__0.13", "/bin/bash", "-c"]
+
+
+RUN pip install contourpy==1.1.0 cycler==0.11.0 fonttools==4.42.1 importlib-resources==6.0.1 kiwisolver==1.4.5 matplotlib==3.7.2 numpy==1.25.2 packaging==23.1 pandas==2.1.0 pillow==10.0.0 pyparsing==3.0.9 python-dateutil==2.8.2 pytz==2023.3.post1 scipy==1.11.2 six==1.16.0 tzdata==2023.1 zipp==3.16.2
+
+RUN pip install -e .[dev]
+ENV TESTBED_NAME=mwaskom__seaborn__0.13
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

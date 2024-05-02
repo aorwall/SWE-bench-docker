@@ -1,0 +1,9 @@
+FROM aorwall/swe-bench-base:latest
+
+
+
+RUN git clone https://github.com/swe-bench/sympy__sympy.git
+
+WORKDIR /home/swe-bench/sympy__sympy
+
+ENV TESTBED=/home/swe-bench/sympy__sympy

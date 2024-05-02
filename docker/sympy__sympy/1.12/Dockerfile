@@ -1,0 +1,20 @@
+FROM aorwall/swe-bench-sympy_sympy:latest
+
+RUN git -c advice.detachedHead=false checkout c6cb7c5602fa48034ab1bd43c2347a7e8488f12e
+
+RUN conda create -n sympy__sympy__1.12 python=3.9 mpmath flake8 -y
+
+SHELL ["conda", "run", "-n", "sympy__sympy__1.12", "/bin/bash", "-c"]
+
+
+RUN pip install mpmath==1.3.0 flake8-comprehensions
+
+RUN pip install -e .
+ENV TESTBED_NAME=sympy__sympy__1.12
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

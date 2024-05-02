@@ -1,0 +1,9 @@
+FROM aorwall/swe-bench-base:latest
+
+
+
+RUN git clone https://github.com/swe-bench/astropy__astropy.git
+
+WORKDIR /home/swe-bench/astropy__astropy
+
+ENV TESTBED=/home/swe-bench/astropy__astropy

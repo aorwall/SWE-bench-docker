@@ -1,0 +1,9 @@
+FROM aorwall/swe-bench-base:latest
+
+
+
+RUN git clone https://github.com/swe-bench/pydicom__pydicom.git
+
+WORKDIR /home/swe-bench/pydicom__pydicom
+
+ENV TESTBED=/home/swe-bench/pydicom__pydicom

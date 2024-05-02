@@ -1,0 +1,29 @@
+FROM aorwall/swe-bench-pylint-dev_pylint:latest
+
+RUN git -c advice.detachedHead=false checkout e90702074e68e20dc8e5df5013ee3ecf22139c3e
+
+RUN conda create -n pylint-dev__pylint__2.15 python=3.9 -y
+
+SHELL ["conda", "run", "-n", "pylint-dev__pylint__2.15", "/bin/bash", "-c"]
+
+
+COPY docker/pylint-dev__pylint/2.15/requirements.txt .
+
+RUN pip install -r requirements.txt
+
+RUN pip install pytest
+
+RUN pip install -e .
+RUN if git show e90702074e68e20dc8e5df5013ee3ecf22139c3e:requirements.txt > /dev/null 2>&1; then \
+        git checkout e90702074e68e20dc8e5df5013ee3ecf22139c3e -- requirements.txt; \
+    else \
+        rm -f requirements.txt; \
+    fi
+ENV TESTBED_NAME=pylint-dev__pylint__2.15
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

@@ -1,0 +1,15 @@
+flake8
+flake8-docstrings
+flake8-black
+doc8
+Pygments
+coverage
+hypothesis
+pytest
+pytest-cov
+pytest-sugar
+mypy
+types-toml
+types-pkg_resources
+types-chardet
+requests

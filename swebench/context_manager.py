@@ -6,7 +6,7 @@ from logging import INFO, Logger, DEBUG, ERROR
 from traceback import format_exc
 
 from swebench.constants import KEY_INSTANCE_ID, PatchType, APPLY_PATCH_FAIL, APPLY_PATCH_PASS, TESTS_FAILED, \
-    TESTS_PASSED, TESTS_TIMEOUT, TESTS_ERROR, KEY_MODEL, MAP_VERSION_TO_INSTALL
+    TESTS_PASSED, TESTS_TIMEOUT, TESTS_ERROR, KEY_MODEL
 
 base_dir = "/home/swe-bench"
 
@@ -133,11 +133,21 @@ class TaskEnvContextManager:
             enter_msg += f"\n\t- Evaluation Model: {self.instance[KEY_MODEL]}"
         self.log.write(enter_msg, mode="w")
 
+        output = self.exec(["git", "status", "--porcelain"])
+        if output.stdout:
+            self.exec(["git", "stash", "push", "-m", "Temporarily stashed changes"])
+            stash_used = True
+        else:
+            stash_used = False
+
         self.exec(
             f"git -c advice.detachedHead=false checkout {self.instance['base_commit']}".split(
                 " "
             )
         )
+        if stash_used:
+            self.exec(["git", "stash", "pop"])
+
         return self
 
     def apply_patch(

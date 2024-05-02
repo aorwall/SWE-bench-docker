@@ -1,10 +1,5 @@
 from enum import Enum
 
-SUPPORTED_REPOS = [
-    "django/django",
-    "matplotlib/matplotlib",
-]
-
 MAP_VERSION_TO_INSTALL_SKLEARN = {
     k: {
         "python": "3.6",
@@ -216,7 +211,7 @@ MAP_VERSION_TO_INSTALL_PYTEST["4.5"]["pip_packages"] = [
     "atomicwrites==1.4.1", "attrs==23.1.0", "more-itertools==10.1.0",
     "pluggy==0.11.0", "py==1.11.0", "setuptools==68.0.0", "six==1.16.0", "wcwidth==0.2.6"]
 MAP_VERSION_TO_INSTALL_PYTEST["4.6"]["pip_packages"] = [
-    "atomicwrites==1.4.1", "attrs==23.1.0", "more-itertools==10.1.0",
+    "atomicwrites==1.4.1", "attrs==23.1.0", "more-itertools==10.1.0", "importlib-metadata==1.6.0",
     "packaging==23.1", "pluggy==0.13.1", "py==1.11.0", "six==1.16.0", "wcwidth==0.2.6"]
 for k in ["5.0", "5.1", "5.2"]:
     MAP_VERSION_TO_INSTALL_PYTEST[k]["pip_packages"] = [
@@ -407,12 +402,23 @@ MAP_VERSION_TO_INSTALL_SYMPY.update(
 )
 
 MAP_VERSION_TO_INSTALL_PYLINT = {
-    k: {"python": "3.9", "packages": "requirements.txt", "install": "pip install -e ."}
+    k: {
+        "python": "3.9",
+        "packages": "requirements.txt",
+        "install": "pip install -e .",
+        "pip_packages": ["pytest"]
+    }
     for k in ["2.10", "2.11", "2.13", "2.14", "2.15", "2.16", "2.17", "2.8", "2.9", "3.0"]
 }
+
 MAP_VERSION_TO_INSTALL_PYLINT.update({
     k: {**MAP_VERSION_TO_INSTALL_PYLINT[k], "pip_packages": [
-        "astroid==3.0.0a6"
+        "toml", "pytest"
+    ]} for k in ['2.13']})
+
+MAP_VERSION_TO_INSTALL_PYLINT.update({
+    k: {**MAP_VERSION_TO_INSTALL_PYLINT[k], "pip_packages": [
+        "astroid==3.0.0a6", "pytest"
     ]} for k in ['3.0']})
 
 MAP_VERSION_TO_INSTALL_XARRAY = {
@@ -477,18 +483,18 @@ MAP_VERSION_TO_INSTALL_ASTROID = {
     for k in ['2.10', '2.12', '2.13', '2.14', '2.15', '2.5', '2.6', '2.7', '2.9', '3.0']
 }
 for k in ["2.5", "2.6"]:
-    MAP_VERSION_TO_INSTALL_ASTROID[k]["pip_packages"] = [
-        "lazy_object_proxy==1.9.0", "wrapt==1.12.1"]
+    MAP_VERSION_TO_INSTALL_ASTROID[k]["pip_packages"].extend([
+        "lazy_object_proxy==1.9.0", "wrapt==1.12.1"])
 for k in ["2.9", "2.10"]:
-    MAP_VERSION_TO_INSTALL_ASTROID[k]["pip_packages"] = [
+    MAP_VERSION_TO_INSTALL_ASTROID[k]["pip_packages"].extend([
         "lazy_object_proxy==1.9.0", "wrapt==1.13.3",
-        "typing-extensions==4.8.0", "setuptools==68.0.0"]
+        "typing-extensions==4.8.0", "setuptools==68.0.0"])
 for k in ["2.12", "2.13", "2.14", "2.15"]:
-    MAP_VERSION_TO_INSTALL_ASTROID[k]["pip_packages"] = [
-        "lazy_object_proxy==1.9.0", "wrapt==1.15.0", "typing-extensions==4.8.0"]
-MAP_VERSION_TO_INSTALL_ASTROID["2.7"]["pip_packages"] = [
-    "lazy_object_proxy==1.9.0", "wrapt==1.12.1", "typing-extensions==4.8.0"]
-MAP_VERSION_TO_INSTALL_ASTROID["3.0"]["pip_packages"] = ["typing-extensions==4.8.0"]
+    MAP_VERSION_TO_INSTALL_ASTROID[k]["pip_packages"].extend([
+        "lazy_object_proxy==1.9.0", "wrapt==1.15.0", "typing-extensions==4.8.0"])
+MAP_VERSION_TO_INSTALL_ASTROID["2.7"]["pip_packages"].extend([
+    "lazy_object_proxy==1.9.0", "wrapt==1.12.1", "typing-extensions==4.8.0"])
+MAP_VERSION_TO_INSTALL_ASTROID["3.0"]["pip_packages"].append("typing-extensions==4.8.0")
 
 
 MAP_VERSION_TO_INSTALL_MARSHMALLOW = {
@@ -513,7 +519,8 @@ MAP_VERSION_TO_INSTALL_PYDICOM = {
     k: {
         "python": "3.6",
         "install": "pip install -e .",
-        "packages": "numpy"
+        "packages": "numpy",
+        "pip_packages": ["pytest"]
     }
     for k in ['1.2', '1.3', '1.4', '2.0', '2.1', '2.2', '2.3']
 }
@@ -556,7 +563,7 @@ MAP_VERSION_TO_INSTALL = {
 MAP_REPO_TO_INSTALL = {}
 
 # Constants - Task Instance Test Frameworks
-TEST_PYTEST = "pytest --no-header -rA --tb=no -p no:cacheprovider"
+TEST_PYTEST = "pytest --no-header -rA -p no:cacheprovider"  # --no-header -rA
 MAP_REPO_TO_TEST_FRAMEWORK = {
     "astropy/astropy": TEST_PYTEST,
     "django/django": "./tests/runtests.py --verbosity 2",
@@ -598,6 +605,7 @@ MAP_REPO_TO_ENV_YML_PATHS = {
 
 MAP_REPO_TO_DEB_PACKAGES = {
     "matplotlib/matplotlib": ["texlive", "dvipng", "ghostscript"],
+    "pyvista/pyvista": ["libgl1"]
 }
 
 # Constants - Evaluation Keys

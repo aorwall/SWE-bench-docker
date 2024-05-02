@@ -1,0 +1,29 @@
+FROM aorwall/swe-bench-sphinx-doc_sphinx:latest
+
+RUN git -c advice.detachedHead=false checkout 8939a75efaa911a12dbe6edccedf261e88bf7eef
+
+RUN conda create -n sphinx-doc__sphinx__4.0 python=3.9  -y
+
+SHELL ["conda", "run", "-n", "sphinx-doc__sphinx__4.0", "/bin/bash", "-c"]
+
+RUN sed -i 's/pytest/pytest -rA/' tox.ini
+RUN sed -i 's/Jinja2>=2.3/Jinja2<3.0/' setup.py
+RUN sed -i 's/sphinxcontrib-applehelp/sphinxcontrib-applehelp<=1.0.7/' setup.py
+RUN sed -i 's/sphinxcontrib-devhelp/sphinxcontrib-devhelp<=1.0.5/' setup.py
+RUN sed -i 's/sphinxcontrib-qthelp/sphinxcontrib-qthelp<=1.0.6/' setup.py
+RUN sed -i 's/alabaster>=0.7,<0.8/alabaster>=0.7,<0.7.12/' setup.py
+RUN sed -i "s/'packaging',/'packaging', 'markupsafe<=2.0.1',/" setup.py
+RUN sed -i 's/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp<=2.0.4/' setup.py
+RUN sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py
+
+RUN pip install tox
+
+RUN pip install -e .[test]
+ENV TESTBED_NAME=sphinx-doc__sphinx__4.0
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

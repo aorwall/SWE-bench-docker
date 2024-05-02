@@ -1,0 +1,20 @@
+FROM aorwall/swe-bench-pvlib_pvlib-python:latest
+
+RUN git -c advice.detachedHead=false checkout 6e5148f59c5050e8f7a0084b7ae39e93b80f72e6
+
+RUN conda create -n pvlib__pvlib-python__0.7 python=3.9 pandas scipy -y
+
+SHELL ["conda", "run", "-n", "pvlib__pvlib-python__0.7", "/bin/bash", "-c"]
+
+
+RUN pip install jupyter ipython matplotlib pytest flake8
+
+RUN pip install -e .[all]
+ENV TESTBED_NAME=pvlib__pvlib-python__0.7
+
+WORKDIR /home/swe-bench
+
+COPY swebench swebench
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

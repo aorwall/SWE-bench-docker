@@ -1,0 +1,9 @@
+FROM aorwall/swe-bench-base:latest
+
+
+
+RUN git clone https://github.com/swe-bench/scikit-learn__scikit-learn.git
+
+WORKDIR /home/swe-bench/scikit-learn__scikit-learn
+
+ENV TESTBED=/home/swe-bench/scikit-learn__scikit-learn

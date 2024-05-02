@@ -1,0 +1,9 @@
+FROM aorwall/swe-bench-base:latest
+
+
+
+RUN git clone https://github.com/swe-bench/sqlfluff__sqlfluff.git
+
+WORKDIR /home/swe-bench/sqlfluff__sqlfluff
+
+ENV TESTBED=/home/swe-bench/sqlfluff__sqlfluff
