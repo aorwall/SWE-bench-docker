@@ -1,0 +1,206 @@
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Task Metadata:
+	- Instance ID: pvlib__pvlib-python-1154
+	- Testbed: pvlib__pvlib-python__0.8
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Command: git status --porcelain 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Std. Output:
+ 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Return Code: 0 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Command: git -c advice.detachedHead=false checkout 0b8f24c265d76320067a5ee908a57d475cd1bb24 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Std. Output:
+Previous HEAD position was ef8ad2f Update adrinverter parameter database (#1695)
+HEAD is now at 0b8f24c refactor ModelChain inverter methods to use PVSystem.get_ac (#1150)
+ 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Return Code: 0 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1154_pred_try.patch 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Std. Output:
+Checking patch pvlib/irradiance.py...
+Applied patch pvlib/irradiance.py cleanly.
+ 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Return Code: 0 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Command: git apply -v -R /home/swe-bench/temp_pvlib__pvlib-python-1154_pred_try.patch 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Std. Output:
+Checking patch pvlib/irradiance.py...
+Applied patch pvlib/irradiance.py cleanly.
+ 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Return Code: 0 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1154_pred.patch 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Std. Output:
+Checking patch pvlib/irradiance.py...
+Applied patch pvlib/irradiance.py cleanly.
+ 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Return Code: 0 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Command: git restore pvlib/tests/test_irradiance.py 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Std. Output:
+ 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Return Code: 0 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1154_test.patch 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Std. Output:
+Checking patch pvlib/tests/test_irradiance.py...
+Applied patch pvlib/tests/test_irradiance.py cleanly.
+ 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Return Code: 0 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n pvlib__pvlib-python__0.8 pytest --no-header -rA -p no:cacheprovider pvlib/tests/test_irradiance.py;
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Command: conda run -n pvlib__pvlib-python__0.8 pytest --no-header -rA -p no:cacheprovider pvlib/tests/test_irradiance.py 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Std. Output:
+============================= test session starts ==============================
+collected 98 items
+
+pvlib/tests/test_irradiance.py ......................................... [ 41%]
+.........................................................                [100%]
+
+=============================== warnings summary ===============================
+pvlib/tests/conftest.py:6
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/conftest.py:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    from pkg_resources import parse_version
+
+../miniconda3/envs/pvlib__pvlib-python__0.8/lib/python3.9/site-packages/pkg_resources/__init__.py:2871
+  /home/swe-bench/miniconda3/envs/pvlib__pvlib-python__0.8/lib/python3.9/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('sphinxcontrib')`.
+  Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+    declare_namespace(pkg)
+
+pvlib/tests/test_irradiance.py: 16 warnings
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_irradiance.py:30: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    return pd.date_range(start='20140624', freq='6H', periods=4,
+
+pvlib/tests/test_irradiance.py::test_dirint_nans
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_irradiance.py:476: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='2014-06-24T12-0700', periods=5, freq='6H')
+
+pvlib/tests/test_irradiance.py::test_clearsky_index
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_irradiance.py:838: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='20180601', periods=2, freq='12H')
+
+pvlib/tests/test_irradiance.py::test_clearness_index
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_irradiance.py:894: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='20180601', periods=2, freq='12H')
+
+pvlib/tests/test_irradiance.py::test_clearness_index_zenith_independent
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_irradiance.py:928: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='20180601', periods=2, freq='12H')
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[asce-300-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[asce-300.0-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[asce-testval2-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[asce-testval3-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[asce-testval4-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[asce-testval5-expected5]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[asce-testval6-expected6]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[asce-testval7-expected7]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[asce-testval8-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[spencer-300-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[spencer-300.0-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[spencer-testval2-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[spencer-testval3-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[spencer-testval4-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[spencer-testval5-expected5]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[spencer-testval6-expected6]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[spencer-testval7-expected7]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[spencer-testval8-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[nrel-300-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[nrel-300.0-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[nrel-testval2-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[nrel-testval3-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[nrel-testval4-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[nrel-testval5-expected5]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[nrel-testval6-expected6]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[nrel-testval7-expected7]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[nrel-testval8-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[pyephem-300-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[pyephem-300.0-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[pyephem-testval2-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[pyephem-testval3-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[pyephem-testval4-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[pyephem-testval5-expected5]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[pyephem-testval6-expected6]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[pyephem-testval7-expected7]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation[pyephem-testval8-1383.636203]
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation_epoch_year
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation_nrel_numba
+PASSED pvlib/tests/test_irradiance.py::test_get_extra_radiation_invalid
+PASSED pvlib/tests/test_irradiance.py::test_grounddiffuse_simple_float
+PASSED pvlib/tests/test_irradiance.py::test_grounddiffuse_simple_series
+PASSED pvlib/tests/test_irradiance.py::test_grounddiffuse_albedo_0
+PASSED pvlib/tests/test_irradiance.py::test_grounddiffuse_albedo_invalid_surface
+PASSED pvlib/tests/test_irradiance.py::test_grounddiffuse_albedo_surface
+PASSED pvlib/tests/test_irradiance.py::test_isotropic_float
+PASSED pvlib/tests/test_irradiance.py::test_isotropic_series
+PASSED pvlib/tests/test_irradiance.py::test_klucher_series_float
+PASSED pvlib/tests/test_irradiance.py::test_klucher_series
+PASSED pvlib/tests/test_irradiance.py::test_haydavies
+PASSED pvlib/tests/test_irradiance.py::test_reindl
+PASSED pvlib/tests/test_irradiance.py::test_king
+PASSED pvlib/tests/test_irradiance.py::test_perez
+PASSED pvlib/tests/test_irradiance.py::test_perez_components
+PASSED pvlib/tests/test_irradiance.py::test_perez_arrays
+PASSED pvlib/tests/test_irradiance.py::test_perez_scalar
+PASSED pvlib/tests/test_irradiance.py::test_sky_diffuse_zenith_close_to_90[isotropic]
+PASSED pvlib/tests/test_irradiance.py::test_sky_diffuse_zenith_close_to_90[klucher]
+PASSED pvlib/tests/test_irradiance.py::test_sky_diffuse_zenith_close_to_90[haydavies]
+PASSED pvlib/tests/test_irradiance.py::test_sky_diffuse_zenith_close_to_90[reindl]
+PASSED pvlib/tests/test_irradiance.py::test_sky_diffuse_zenith_close_to_90[king]
+PASSED pvlib/tests/test_irradiance.py::test_sky_diffuse_zenith_close_to_90[perez]
+PASSED pvlib/tests/test_irradiance.py::test_get_sky_diffuse_invalid
+PASSED pvlib/tests/test_irradiance.py::test_campbell_norman
+PASSED pvlib/tests/test_irradiance.py::test_get_total_irradiance
+PASSED pvlib/tests/test_irradiance.py::test_get_total_irradiance_scalars[isotropic]
+PASSED pvlib/tests/test_irradiance.py::test_get_total_irradiance_scalars[klucher]
+PASSED pvlib/tests/test_irradiance.py::test_get_total_irradiance_scalars[haydavies]
+PASSED pvlib/tests/test_irradiance.py::test_get_total_irradiance_scalars[reindl]
+PASSED pvlib/tests/test_irradiance.py::test_get_total_irradiance_scalars[king]
+PASSED pvlib/tests/test_irradiance.py::test_get_total_irradiance_scalars[perez]
+PASSED pvlib/tests/test_irradiance.py::test_poa_components
+PASSED pvlib/tests/test_irradiance.py::test_disc_value[93193-expected0]
+PASSED pvlib/tests/test_irradiance.py::test_disc_value[None-expected1]
+PASSED pvlib/tests/test_irradiance.py::test_disc_value[101325-expected2]
+PASSED pvlib/tests/test_irradiance.py::test_disc_overirradiance
+PASSED pvlib/tests/test_irradiance.py::test_disc_min_cos_zenith_max_zenith
+PASSED pvlib/tests/test_irradiance.py::test_dirint_value
+PASSED pvlib/tests/test_irradiance.py::test_dirint_nans
+PASSED pvlib/tests/test_irradiance.py::test_dirint_tdew
+PASSED pvlib/tests/test_irradiance.py::test_dirint_no_delta_kt
+PASSED pvlib/tests/test_irradiance.py::test_dirint_coeffs
+PASSED pvlib/tests/test_irradiance.py::test_dirint_min_cos_zenith_max_zenith
+PASSED pvlib/tests/test_irradiance.py::test_gti_dirint
+PASSED pvlib/tests/test_irradiance.py::test_erbs
+PASSED pvlib/tests/test_irradiance.py::test_erbs_min_cos_zenith_max_zenith
+PASSED pvlib/tests/test_irradiance.py::test_erbs_all_scalar
+PASSED pvlib/tests/test_irradiance.py::test_dirindex
+PASSED pvlib/tests/test_irradiance.py::test_dirindex_min_cos_zenith_max_zenith
+PASSED pvlib/tests/test_irradiance.py::test_dni
+PASSED pvlib/tests/test_irradiance.py::test_aoi_and_aoi_projection[0-0-0-0-0-1]
+PASSED pvlib/tests/test_irradiance.py::test_aoi_and_aoi_projection[30-180-30-180-0-1]
+PASSED pvlib/tests/test_irradiance.py::test_aoi_and_aoi_projection[30-180-150-0-180--1]
+PASSED pvlib/tests/test_irradiance.py::test_aoi_and_aoi_projection[90-0-30-60-75.5224878-0.25]
+PASSED pvlib/tests/test_irradiance.py::test_aoi_and_aoi_projection[90-0-30-170-119.4987042--0.4924038]
+PASSED pvlib/tests/test_irradiance.py::test_kt_kt_prime_factor
+PASSED pvlib/tests/test_irradiance.py::test_clearsky_index
+PASSED pvlib/tests/test_irradiance.py::test_clearness_index
+PASSED pvlib/tests/test_irradiance.py::test_clearness_index_zenith_independent
+======================= 98 passed, 22 warnings in 5.18s ========================
+
+ 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Return Code: 0 
+
+>>>>> All Tests Passed
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Test script run successful 

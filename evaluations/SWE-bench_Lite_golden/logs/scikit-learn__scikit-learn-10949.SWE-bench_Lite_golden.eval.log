@@ -1,0 +1,398 @@
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Task Metadata:
+	- Instance ID: scikit-learn__scikit-learn-10949
+	- Testbed: scikit-learn__scikit-learn__0.20
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git status --porcelain 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git -c advice.detachedHead=false checkout 3b5abf76597ce6aff76192869f92647c1b5259e7 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+Previous HEAD position was 55bf5d93e don't set check_pickle on new joblib on python2.7 (#12645)
+HEAD is now at 3b5abf765 DOC Credit Thomas Fan for contribution to ColumnTransformer
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-10949_pred_try.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+Checking patch sklearn/utils/validation.py...
+Applied patch sklearn/utils/validation.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-10949_pred_try.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+Checking patch sklearn/utils/validation.py...
+Applied patch sklearn/utils/validation.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-10949_pred.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+Checking patch sklearn/utils/validation.py...
+Applied patch sklearn/utils/validation.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git restore sklearn/utils/tests/test_validation.py 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-10949_test.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+Checking patch sklearn/utils/tests/test_validation.py...
+Applied patch sklearn/utils/tests/test_validation.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n scikit-learn__scikit-learn__0.20 pytest --no-header -rA -p no:cacheprovider sklearn/utils/tests/test_validation.py;
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: conda run -n scikit-learn__scikit-learn__0.20 pytest --no-header -rA -p no:cacheprovider sklearn/utils/tests/test_validation.py 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+============================= test session starts ==============================
+collected 53 items
+
+sklearn/utils/tests/test_validation.py ............FFFFFFFFFF........... [ 62%]
+....................                                                     [100%]
+
+=================================== FAILURES ===================================
+_ test_check_array_force_all_finiteinvalid[asarray-inf-True-Input contains NaN, infinity] _
+
+value = inf, force_all_finite = True, match_msg = 'Input contains NaN, infinity'
+retype = <function asarray at 0x7c13ac05c0d0>
+
+    @pytest.mark.parametrize(
+        "value, force_all_finite, match_msg",
+        [(np.inf, True, 'Input contains NaN, infinity'),
+         (np.inf, 'allow-nan', 'Input contains infinity'),
+         (np.nan, True, 'Input contains NaN, infinity'),
+         (np.nan, 'allow-inf', 'force_all_finite should be a bool or "allow-nan"'),
+         (np.nan, 1, 'force_all_finite should be a bool or "allow-nan"')]
+    )
+    @pytest.mark.parametrize(
+        "retype",
+        [np.asarray, sp.csr_matrix]
+    )
+    def test_check_array_force_all_finiteinvalid(value, force_all_finite,
+                                                 match_msg, retype):
+        X = retype(np.arange(4).reshape(2, 2).astype(np.float))
+        X[0, 0] = value
+>       with pytest.raises(ValueError, message=match_msg):
+E       TypeError: Unexpected keyword arguments passed to pytest.raises: message
+E       Use context-manager form instead?
+
+sklearn/utils/tests/test_validation.py:185: TypeError
+_ test_check_array_force_all_finiteinvalid[asarray-inf-allow-nan-Input contains infinity] _
+
+value = inf, force_all_finite = 'allow-nan'
+match_msg = 'Input contains infinity'
+retype = <function asarray at 0x7c13ac05c0d0>
+
+    @pytest.mark.parametrize(
+        "value, force_all_finite, match_msg",
+        [(np.inf, True, 'Input contains NaN, infinity'),
+         (np.inf, 'allow-nan', 'Input contains infinity'),
+         (np.nan, True, 'Input contains NaN, infinity'),
+         (np.nan, 'allow-inf', 'force_all_finite should be a bool or "allow-nan"'),
+         (np.nan, 1, 'force_all_finite should be a bool or "allow-nan"')]
+    )
+    @pytest.mark.parametrize(
+        "retype",
+        [np.asarray, sp.csr_matrix]
+    )
+    def test_check_array_force_all_finiteinvalid(value, force_all_finite,
+                                                 match_msg, retype):
+        X = retype(np.arange(4).reshape(2, 2).astype(np.float))
+        X[0, 0] = value
+>       with pytest.raises(ValueError, message=match_msg):
+E       TypeError: Unexpected keyword arguments passed to pytest.raises: message
+E       Use context-manager form instead?
+
+sklearn/utils/tests/test_validation.py:185: TypeError
+_ test_check_array_force_all_finiteinvalid[asarray-nan-True-Input contains NaN, infinity] _
+
+value = nan, force_all_finite = True, match_msg = 'Input contains NaN, infinity'
+retype = <function asarray at 0x7c13ac05c0d0>
+
+    @pytest.mark.parametrize(
+        "value, force_all_finite, match_msg",
+        [(np.inf, True, 'Input contains NaN, infinity'),
+         (np.inf, 'allow-nan', 'Input contains infinity'),
+         (np.nan, True, 'Input contains NaN, infinity'),
+         (np.nan, 'allow-inf', 'force_all_finite should be a bool or "allow-nan"'),
+         (np.nan, 1, 'force_all_finite should be a bool or "allow-nan"')]
+    )
+    @pytest.mark.parametrize(
+        "retype",
+        [np.asarray, sp.csr_matrix]
+    )
+    def test_check_array_force_all_finiteinvalid(value, force_all_finite,
+                                                 match_msg, retype):
+        X = retype(np.arange(4).reshape(2, 2).astype(np.float))
+        X[0, 0] = value
+>       with pytest.raises(ValueError, message=match_msg):
+E       TypeError: Unexpected keyword arguments passed to pytest.raises: message
+E       Use context-manager form instead?
+
+sklearn/utils/tests/test_validation.py:185: TypeError
+_ test_check_array_force_all_finiteinvalid[asarray-nan-allow-inf-force_all_finite should be a bool or "allow-nan"] _
+
+value = nan, force_all_finite = 'allow-inf'
+match_msg = 'force_all_finite should be a bool or "allow-nan"'
+retype = <function asarray at 0x7c13ac05c0d0>
+
+    @pytest.mark.parametrize(
+        "value, force_all_finite, match_msg",
+        [(np.inf, True, 'Input contains NaN, infinity'),
+         (np.inf, 'allow-nan', 'Input contains infinity'),
+         (np.nan, True, 'Input contains NaN, infinity'),
+         (np.nan, 'allow-inf', 'force_all_finite should be a bool or "allow-nan"'),
+         (np.nan, 1, 'force_all_finite should be a bool or "allow-nan"')]
+    )
+    @pytest.mark.parametrize(
+        "retype",
+        [np.asarray, sp.csr_matrix]
+    )
+    def test_check_array_force_all_finiteinvalid(value, force_all_finite,
+                                                 match_msg, retype):
+        X = retype(np.arange(4).reshape(2, 2).astype(np.float))
+        X[0, 0] = value
+>       with pytest.raises(ValueError, message=match_msg):
+E       TypeError: Unexpected keyword arguments passed to pytest.raises: message
+E       Use context-manager form instead?
+
+sklearn/utils/tests/test_validation.py:185: TypeError
+_ test_check_array_force_all_finiteinvalid[asarray-nan-1-force_all_finite should be a bool or "allow-nan"] _
+
+value = nan, force_all_finite = 1
+match_msg = 'force_all_finite should be a bool or "allow-nan"'
+retype = <function asarray at 0x7c13ac05c0d0>
+
+    @pytest.mark.parametrize(
+        "value, force_all_finite, match_msg",
+        [(np.inf, True, 'Input contains NaN, infinity'),
+         (np.inf, 'allow-nan', 'Input contains infinity'),
+         (np.nan, True, 'Input contains NaN, infinity'),
+         (np.nan, 'allow-inf', 'force_all_finite should be a bool or "allow-nan"'),
+         (np.nan, 1, 'force_all_finite should be a bool or "allow-nan"')]
+    )
+    @pytest.mark.parametrize(
+        "retype",
+        [np.asarray, sp.csr_matrix]
+    )
+    def test_check_array_force_all_finiteinvalid(value, force_all_finite,
+                                                 match_msg, retype):
+        X = retype(np.arange(4).reshape(2, 2).astype(np.float))
+        X[0, 0] = value
+>       with pytest.raises(ValueError, message=match_msg):
+E       TypeError: Unexpected keyword arguments passed to pytest.raises: message
+E       Use context-manager form instead?
+
+sklearn/utils/tests/test_validation.py:185: TypeError
+_ test_check_array_force_all_finiteinvalid[csr_matrix-inf-True-Input contains NaN, infinity] _
+
+value = inf, force_all_finite = True, match_msg = 'Input contains NaN, infinity'
+retype = <class 'scipy.sparse.csr.csr_matrix'>
+
+    @pytest.mark.parametrize(
+        "value, force_all_finite, match_msg",
+        [(np.inf, True, 'Input contains NaN, infinity'),
+         (np.inf, 'allow-nan', 'Input contains infinity'),
+         (np.nan, True, 'Input contains NaN, infinity'),
+         (np.nan, 'allow-inf', 'force_all_finite should be a bool or "allow-nan"'),
+         (np.nan, 1, 'force_all_finite should be a bool or "allow-nan"')]
+    )
+    @pytest.mark.parametrize(
+        "retype",
+        [np.asarray, sp.csr_matrix]
+    )
+    def test_check_array_force_all_finiteinvalid(value, force_all_finite,
+                                                 match_msg, retype):
+        X = retype(np.arange(4).reshape(2, 2).astype(np.float))
+        X[0, 0] = value
+>       with pytest.raises(ValueError, message=match_msg):
+E       TypeError: Unexpected keyword arguments passed to pytest.raises: message
+E       Use context-manager form instead?
+
+sklearn/utils/tests/test_validation.py:185: TypeError
+_ test_check_array_force_all_finiteinvalid[csr_matrix-inf-allow-nan-Input contains infinity] _
+
+value = inf, force_all_finite = 'allow-nan'
+match_msg = 'Input contains infinity'
+retype = <class 'scipy.sparse.csr.csr_matrix'>
+
+    @pytest.mark.parametrize(
+        "value, force_all_finite, match_msg",
+        [(np.inf, True, 'Input contains NaN, infinity'),
+         (np.inf, 'allow-nan', 'Input contains infinity'),
+         (np.nan, True, 'Input contains NaN, infinity'),
+         (np.nan, 'allow-inf', 'force_all_finite should be a bool or "allow-nan"'),
+         (np.nan, 1, 'force_all_finite should be a bool or "allow-nan"')]
+    )
+    @pytest.mark.parametrize(
+        "retype",
+        [np.asarray, sp.csr_matrix]
+    )
+    def test_check_array_force_all_finiteinvalid(value, force_all_finite,
+                                                 match_msg, retype):
+        X = retype(np.arange(4).reshape(2, 2).astype(np.float))
+        X[0, 0] = value
+>       with pytest.raises(ValueError, message=match_msg):
+E       TypeError: Unexpected keyword arguments passed to pytest.raises: message
+E       Use context-manager form instead?
+
+sklearn/utils/tests/test_validation.py:185: TypeError
+_ test_check_array_force_all_finiteinvalid[csr_matrix-nan-True-Input contains NaN, infinity] _
+
+value = nan, force_all_finite = True, match_msg = 'Input contains NaN, infinity'
+retype = <class 'scipy.sparse.csr.csr_matrix'>
+
+    @pytest.mark.parametrize(
+        "value, force_all_finite, match_msg",
+        [(np.inf, True, 'Input contains NaN, infinity'),
+         (np.inf, 'allow-nan', 'Input contains infinity'),
+         (np.nan, True, 'Input contains NaN, infinity'),
+         (np.nan, 'allow-inf', 'force_all_finite should be a bool or "allow-nan"'),
+         (np.nan, 1, 'force_all_finite should be a bool or "allow-nan"')]
+    )
+    @pytest.mark.parametrize(
+        "retype",
+        [np.asarray, sp.csr_matrix]
+    )
+    def test_check_array_force_all_finiteinvalid(value, force_all_finite,
+                                                 match_msg, retype):
+        X = retype(np.arange(4).reshape(2, 2).astype(np.float))
+        X[0, 0] = value
+>       with pytest.raises(ValueError, message=match_msg):
+E       TypeError: Unexpected keyword arguments passed to pytest.raises: message
+E       Use context-manager form instead?
+
+sklearn/utils/tests/test_validation.py:185: TypeError
+_ test_check_array_force_all_finiteinvalid[csr_matrix-nan-allow-inf-force_all_finite should be a bool or "allow-nan"] _
+
+value = nan, force_all_finite = 'allow-inf'
+match_msg = 'force_all_finite should be a bool or "allow-nan"'
+retype = <class 'scipy.sparse.csr.csr_matrix'>
+
+    @pytest.mark.parametrize(
+        "value, force_all_finite, match_msg",
+        [(np.inf, True, 'Input contains NaN, infinity'),
+         (np.inf, 'allow-nan', 'Input contains infinity'),
+         (np.nan, True, 'Input contains NaN, infinity'),
+         (np.nan, 'allow-inf', 'force_all_finite should be a bool or "allow-nan"'),
+         (np.nan, 1, 'force_all_finite should be a bool or "allow-nan"')]
+    )
+    @pytest.mark.parametrize(
+        "retype",
+        [np.asarray, sp.csr_matrix]
+    )
+    def test_check_array_force_all_finiteinvalid(value, force_all_finite,
+                                                 match_msg, retype):
+        X = retype(np.arange(4).reshape(2, 2).astype(np.float))
+        X[0, 0] = value
+>       with pytest.raises(ValueError, message=match_msg):
+E       TypeError: Unexpected keyword arguments passed to pytest.raises: message
+E       Use context-manager form instead?
+
+sklearn/utils/tests/test_validation.py:185: TypeError
+_ test_check_array_force_all_finiteinvalid[csr_matrix-nan-1-force_all_finite should be a bool or "allow-nan"] _
+
+value = nan, force_all_finite = 1
+match_msg = 'force_all_finite should be a bool or "allow-nan"'
+retype = <class 'scipy.sparse.csr.csr_matrix'>
+
+    @pytest.mark.parametrize(
+        "value, force_all_finite, match_msg",
+        [(np.inf, True, 'Input contains NaN, infinity'),
+         (np.inf, 'allow-nan', 'Input contains infinity'),
+         (np.nan, True, 'Input contains NaN, infinity'),
+         (np.nan, 'allow-inf', 'force_all_finite should be a bool or "allow-nan"'),
+         (np.nan, 1, 'force_all_finite should be a bool or "allow-nan"')]
+    )
+    @pytest.mark.parametrize(
+        "retype",
+        [np.asarray, sp.csr_matrix]
+    )
+    def test_check_array_force_all_finiteinvalid(value, force_all_finite,
+                                                 match_msg, retype):
+        X = retype(np.arange(4).reshape(2, 2).astype(np.float))
+        X[0, 0] = value
+>       with pytest.raises(ValueError, message=match_msg):
+E       TypeError: Unexpected keyword arguments passed to pytest.raises: message
+E       Use context-manager form instead?
+
+sklearn/utils/tests/test_validation.py:185: TypeError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED sklearn/utils/tests/test_validation.py::test_as_float_array
+PASSED sklearn/utils/tests/test_validation.py::test_as_float_array_nan[X0]
+PASSED sklearn/utils/tests/test_validation.py::test_as_float_array_nan[X1]
+PASSED sklearn/utils/tests/test_validation.py::test_np_matrix
+PASSED sklearn/utils/tests/test_validation.py::test_memmap
+PASSED sklearn/utils/tests/test_validation.py::test_ordering
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finite_valid[asarray-inf-False]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finite_valid[asarray-nan-allow-nan]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finite_valid[asarray-nan-False]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finite_valid[csr_matrix-inf-False]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finite_valid[csr_matrix-nan-allow-nan]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finite_valid[csr_matrix-nan-False]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_pandas_dtype_object_conversion
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_on_mock_dataframe
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_dtype_stability
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_dtype_warning
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_accept_sparse_type_exception
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_accept_sparse_no_exception
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_accept_large_sparse_no_exception[csr]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_accept_large_sparse_no_exception[csc]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_accept_large_sparse_no_exception[coo]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_accept_large_sparse_no_exception[bsr]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_accept_large_sparse_raise_exception[csr]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_accept_large_sparse_raise_exception[csc]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_accept_large_sparse_raise_exception[coo]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_accept_large_sparse_raise_exception[bsr]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_large_indices_non_supported_scipy_version[csr]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_large_indices_non_supported_scipy_version[csc]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_large_indices_non_supported_scipy_version[coo]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_large_indices_non_supported_scipy_version[bsr]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_min_samples_and_features_messages
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_complex_data_error
+PASSED sklearn/utils/tests/test_validation.py::test_has_fit_parameter
+PASSED sklearn/utils/tests/test_validation.py::test_check_symmetric
+PASSED sklearn/utils/tests/test_validation.py::test_check_is_fitted
+PASSED sklearn/utils/tests/test_validation.py::test_check_consistent_length
+PASSED sklearn/utils/tests/test_validation.py::test_check_dataframe_fit_attribute
+PASSED sklearn/utils/tests/test_validation.py::test_suppress_validation
+PASSED sklearn/utils/tests/test_validation.py::test_check_dataframe_warns_on_dtype
+PASSED sklearn/utils/tests/test_validation.py::test_check_memory
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_memmap[True]
+PASSED sklearn/utils/tests/test_validation.py::test_check_array_memmap[False]
+FAILED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finiteinvalid[asarray-inf-True-Input contains NaN, infinity]
+FAILED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finiteinvalid[asarray-inf-allow-nan-Input contains infinity]
+FAILED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finiteinvalid[asarray-nan-True-Input contains NaN, infinity]
+FAILED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finiteinvalid[asarray-nan-allow-inf-force_all_finite should be a bool or "allow-nan"]
+FAILED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finiteinvalid[asarray-nan-1-force_all_finite should be a bool or "allow-nan"]
+FAILED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finiteinvalid[csr_matrix-inf-True-Input contains NaN, infinity]
+FAILED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finiteinvalid[csr_matrix-inf-allow-nan-Input contains infinity]
+FAILED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finiteinvalid[csr_matrix-nan-True-Input contains NaN, infinity]
+FAILED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finiteinvalid[csr_matrix-nan-allow-inf-force_all_finite should be a bool or "allow-nan"]
+FAILED sklearn/utils/tests/test_validation.py::test_check_array_force_all_finiteinvalid[csr_matrix-nan-1-force_all_finite should be a bool or "allow-nan"]
+================== 10 failed, 43 passed, 15 warnings in 1.68s ==================
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA -p no:cacheprovider sklearn/utils/tests/test_validation.py` failed. (See above for error)
+
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 1 
+
+>>>>> Some Tests Failed
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Test script run successful 

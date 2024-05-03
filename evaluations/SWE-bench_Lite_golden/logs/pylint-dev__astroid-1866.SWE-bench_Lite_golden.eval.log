@@ -1,0 +1,92 @@
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Task Metadata:
+	- Instance ID: pylint-dev__astroid-1866
+	- Testbed: pylint-dev__astroid__2.13
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Command: git status --porcelain 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Std. Output:
+ 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Return Code: 0 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Command: git -c advice.detachedHead=false checkout 6cf238d089cf4b6753c94cfc089b4a47487711e5 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Std. Output:
+Previous HEAD position was fe058bff Initial pass with ``pydocstringformatter`` over tests (#1949)
+HEAD is now at 6cf238d0 Add typing for `set_local` (#1837)
+ 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Return Code: 0 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Command: git apply -v /home/swe-bench/temp_pylint-dev__astroid-1866_pred_try.patch 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Std. Output:
+Checking patch astroid/brain/brain_builtin_inference.py...
+Applied patch astroid/brain/brain_builtin_inference.py cleanly.
+ 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Return Code: 0 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Command: git apply -v -R /home/swe-bench/temp_pylint-dev__astroid-1866_pred_try.patch 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Std. Output:
+Checking patch astroid/brain/brain_builtin_inference.py...
+Applied patch astroid/brain/brain_builtin_inference.py cleanly.
+ 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Return Code: 0 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Command: git apply -v /home/swe-bench/temp_pylint-dev__astroid-1866_pred.patch 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Std. Output:
+Checking patch astroid/brain/brain_builtin_inference.py...
+Applied patch astroid/brain/brain_builtin_inference.py cleanly.
+ 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Return Code: 0 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Command: git restore tests/unittest_brain_builtin.py 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Std. Output:
+ 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Return Code: 0 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Command: git apply -v /home/swe-bench/temp_pylint-dev__astroid-1866_test.patch 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Std. Output:
+Checking patch tests/unittest_brain_builtin.py...
+Applied patch tests/unittest_brain_builtin.py cleanly.
+ 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Return Code: 0 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n pylint-dev__astroid__2.13 pytest --no-header -rA -p no:cacheprovider tests/unittest_brain_builtin.py;
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Command: conda run -n pylint-dev__astroid__2.13 pytest --no-header -rA -p no:cacheprovider tests/unittest_brain_builtin.py 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Std. Output:
+============================= test session starts ==============================
+collected 16 items
+
+tests/unittest_brain_builtin.py ................                         [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/unittest_brain_builtin.py::BuiltinsTest::test_infer_property
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format[empty-indexes]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format[numbered-indexes]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format[named-indexes]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format[numbered-indexes-from-positional]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format[named-indexes-from-keyword]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format[mixed-indexes-from-mixed]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format[empty-indexes-on-variable]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_uninferable[\n            from missing import Unknown\n            name = Unknown\n            age = 12\n            "My name is {fname}, I'm {age}".format(fname = name, age = age)\n            ]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_uninferable[\n            from missing import Unknown\n            age = 12\n            "My name is {fname}, I'm {age}".format(fname = Unknown, age = age)\n            ]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_uninferable[\n            from missing import Unknown\n            "My name is {}, I'm {}".format(Unknown, 12)\n            ]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_uninferable["I am {}".format()]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_uninferable[\n            "My name is {fname}, I'm {age}".format(fsname = "Daniel", age = 12)\n            ]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_uninferable[\n            "My unicode character is {:c}".format(None)\n            ]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_uninferable[\n            "My hex format is {:4x}".format('1')\n            ]
+PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_with_specs
+============================== 16 passed in 0.55s ==============================
+
+ 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Return Code: 0 
+
+>>>>> All Tests Passed
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Test script run successful 

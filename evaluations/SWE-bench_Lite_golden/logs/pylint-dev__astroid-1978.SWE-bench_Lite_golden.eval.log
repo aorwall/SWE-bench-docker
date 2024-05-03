@@ -1,0 +1,1049 @@
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Task Metadata:
+	- Instance ID: pylint-dev__astroid-1978
+	- Testbed: pylint-dev__astroid__2.14
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Command: git status --porcelain 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Std. Output:
+ 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Return Code: 0 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Command: git -c advice.detachedHead=false checkout 0c9ab0fe56703fa83c73e514a1020d398d23fa7f 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Std. Output:
+HEAD is now at 0c9ab0fe Fix issues with `typing_extensions.TypeVar` (#1973)
+ 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Return Code: 0 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Command: git apply -v /home/swe-bench/temp_pylint-dev__astroid-1978_pred_try.patch 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Std. Output:
+Checking patch astroid/raw_building.py...
+Applied patch astroid/raw_building.py cleanly.
+ 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Return Code: 0 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Command: git apply -v -R /home/swe-bench/temp_pylint-dev__astroid-1978_pred_try.patch 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Std. Output:
+Checking patch astroid/raw_building.py...
+Applied patch astroid/raw_building.py cleanly.
+ 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Return Code: 0 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Command: git apply -v /home/swe-bench/temp_pylint-dev__astroid-1978_pred.patch 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Std. Output:
+Checking patch astroid/raw_building.py...
+Applied patch astroid/raw_building.py cleanly.
+ 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Return Code: 0 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Command: git restore tests/unittest_raw_building.py 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Std. Output:
+ 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Return Code: 0 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Command: git apply -v /home/swe-bench/temp_pylint-dev__astroid-1978_test.patch 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Std. Output:
+Checking patch tests/unittest_raw_building.py...
+Applied patch tests/unittest_raw_building.py cleanly.
+ 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Return Code: 0 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n pylint-dev__astroid__2.14 pytest --no-header -rA -p no:cacheprovider tests/unittest_raw_building.py;
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Command: conda run -n pylint-dev__astroid__2.14 pytest --no-header -rA -p no:cacheprovider tests/unittest_raw_building.py 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Std. Output:
+============================= test session starts ==============================
+collected 13 items
+
+tests/unittest_raw_building.py .............                             [100%]
+
+==================================== PASSES ====================================
+____________________ test_build_module_getattr_catch_output ____________________
+------------------------------ Captured log call -------------------------------
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting DirEntry from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785db85e0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting DirEntry from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785dcc2b0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting WCOREDUMP from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d84460>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting WCOREDUMP from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d84790>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting WEXITSTATUS from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d84d60>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting WEXITSTATUS from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d890d0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting WIFCONTINUED from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d895b0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting WIFCONTINUED from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d898e0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting WIFEXITED from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d89dc0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting WIFEXITED from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d8f130>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting WIFSIGNALED from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d8f610>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting WIFSIGNALED from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d8f940>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting WIFSTOPPED from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d8fe20>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting WIFSTOPPED from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d93190>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting WSTOPSIG from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d93940>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting WSTOPSIG from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d93c70>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting WTERMSIG from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d98190>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting WTERMSIG from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d984c0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting _exit from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d610d0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting _exit from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d61400>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting abort from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cffe50>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting abort from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d051c0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting access from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d056a0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting access from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d059d0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting chdir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d05fa0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting chdir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d0c310>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting chmod from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d0c7f0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting chmod from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d0cb20>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting chown from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d11040>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting chown from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d11370>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting chroot from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d11850>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting chroot from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d11b80>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting close from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d160a0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting close from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d163d0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting closerange from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d168b0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting closerange from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d16be0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting confstr from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d1b100>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting confstr from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d1b430>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting cpu_count from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d1f460>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting cpu_count from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d1f790>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting ctermid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d1fc70>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting ctermid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d1ffa0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting device_encoding from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d186a0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting device_encoding from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d189d0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting dup from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d18fa0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting dup from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d29310>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting dup2 from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d297f0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting dup2 from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d29b20>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting execv from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d30a90>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting execv from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785d30dc0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting execve from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cb52e0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting execve from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cb5610>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting fchdir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cb5f70>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting fchdir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cbc2e0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting fchmod from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cbc7c0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting fchmod from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cbcaf0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting fchown from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cbcfd0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting fchown from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cc1340>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting fdatasync from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cc1820>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting fdatasync from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cc1b50>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting fork from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cc7220>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting fork from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cc7550>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting forkpty from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cc7a30>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting forkpty from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cc7d60>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting fpathconf from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ccd280>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting fpathconf from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ccd5b0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting fspath from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ccdd90>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting fspath from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cd2100>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting fstat from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cd25e0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting fstat from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cd2910>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting fstatvfs from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cd2df0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting fstatvfs from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cd5160>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting fsync from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cd5640>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting fsync from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cd5970>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting ftruncate from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cd5e50>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting ftruncate from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cdb1c0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting get_blocking from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cdb9d0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting get_blocking from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cdbd00>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting get_inheritable from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ce13d0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting get_inheritable from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ce1700>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting get_terminal_size from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ce1be0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting get_terminal_size from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ce1f10>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getcwd from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ce6430>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getcwd from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ce6760>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getcwdb from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ce6c40>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getcwdb from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ce6f70>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getegid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ceb490>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getegid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ceb7c0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting geteuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c720a0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting geteuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c723d0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c728b0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c72be0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getgrouplist from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c77100>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getgrouplist from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c77430>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getgroups from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c77910>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getgroups from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c77c40>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getloadavg from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c7b160>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getloadavg from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c7b490>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getlogin from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c7b970>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getlogin from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c7bca0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getpgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c831c0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getpgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c834f0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getpgrp from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c839d0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getpgrp from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c83d00>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getpid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c88220>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getpid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c88550>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getppid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c88a30>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getppid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c88d60>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getpriority from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c8d280>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getpriority from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c8d5b0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getrandom from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c8da90>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getrandom from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c8ddc0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getresgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c922e0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getresgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c92610>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getresuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c92af0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getresuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c92e20>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getsid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c97340>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getsid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c97670>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c97b50>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c97e80>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting getxattr from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c9d3a0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting getxattr from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c9d6d0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting initgroups from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c9dbb0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting initgroups from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c9dee0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting isatty from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ca4400>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting isatty from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ca4730>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting kill from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ca4c10>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting kill from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ca4f40>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting killpg from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ca8460>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting killpg from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ca8790>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting lchown from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ca8c70>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting lchown from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ca8fa0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting link from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cad5b0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting link from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cad8e0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting listdir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785caddc0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting listdir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cb0130>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting listxattr from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cb0610>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting listxattr from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cb0940>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting lockf from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785cb0e20>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting lockf from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c37190>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting lseek from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c37670>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting lseek from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c379a0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting lstat from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c37e80>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting lstat from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c3d1f0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting major from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c3d6d0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting major from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c3da00>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting makedev from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c3dee0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting makedev from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c42250>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting minor from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c42970>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting minor from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c42ca0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting mkdir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c481c0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting mkdir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c484f0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting mkfifo from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c489d0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting mkfifo from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c48d00>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting mknod from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c4e220>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting mknod from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c4e550>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting nice from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c4eb20>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting nice from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c4ee50>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting open from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c51370>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting open from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c516a0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting openpty from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c51b80>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting openpty from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c51eb0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting pathconf from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c0cc10>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting pathconf from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c0cf40>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting pipe from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c11df0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting pipe from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c15160>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting pipe2 from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c15640>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting pipe2 from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c15970>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting posix_fadvise from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c1a0a0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting posix_fadvise from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c1a3d0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting posix_fallocate from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c1a8b0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting posix_fallocate from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c1abe0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting posix_spawn from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c20100>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting posix_spawn from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c20430>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting posix_spawnp from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c20910>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting posix_spawnp from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c20c40>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting pread from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c26160>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting pread from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c26490>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting preadv from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c26970>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting preadv from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c26ca0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting putenv from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c2b1c0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting putenv from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c2b4f0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting pwrite from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c2b9d0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting pwrite from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785c2bd00>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting pwritev from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bb2220>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting pwritev from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bb2550>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting read from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bb2a30>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting read from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bb2d60>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting readlink from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bb5280>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting readlink from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bb55b0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting readv from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bb5a90>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting readv from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bb5dc0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting register_at_fork from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bbb2e0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting register_at_fork from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bbb610>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting remove from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bbbaf0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting remove from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bbbe20>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting removexattr from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bc14c0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting removexattr from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bc17f0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting rename from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bc1cd0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting rename from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bc4040>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting replace from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bc46d0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting replace from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bc4a00>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting rmdir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bc4ee0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting rmdir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bcb250>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting scandir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bcb730>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting scandir from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bcba60>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sched_get_priority_max from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bcbf40>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sched_get_priority_max from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bd02b0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sched_get_priority_min from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bd0790>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sched_get_priority_min from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bd0ac0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sched_getaffinity from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bd0fa0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sched_getaffinity from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bd7310>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sched_getparam from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bd77f0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sched_getparam from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bd7b20>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sched_getscheduler from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bdb040>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sched_getscheduler from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bdb370>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sched_param from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bdb850>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sched_param from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bdbb80>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sched_rr_get_interval from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785be30a0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sched_rr_get_interval from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785be33d0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sched_setaffinity from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785be38b0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sched_setaffinity from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785be3be0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sched_setparam from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785be7100>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sched_setparam from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785be7430>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sched_setscheduler from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785be7910>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sched_setscheduler from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785be7c40>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sched_yield from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bee160>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sched_yield from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bee490>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sendfile from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785bee970>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sendfile from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785beeca0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting set_blocking from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b732b0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting set_blocking from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b735e0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting set_inheritable from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b73ac0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting set_inheritable from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b73df0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setegid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b78310>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setegid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b78640>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting seteuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b78b20>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting seteuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b78e50>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b7d370>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b7d6a0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setgroups from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b7db80>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setgroups from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b7deb0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setpgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b843d0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setpgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b84700>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setpgrp from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b84be0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setpgrp from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b84f10>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setpriority from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b89430>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setpriority from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b89760>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setregid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b89c40>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setregid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b89f70>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setresgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b8f490>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setresgid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b8f7c0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setresuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b8fca0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setresuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b8ffd0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setreuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b934f0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setreuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b93820>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setsid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b93d00>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setsid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b98070>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b98550>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setuid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b98880>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting setxattr from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b98d60>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting setxattr from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b9e0d0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting stat from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ba5640>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting stat from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ba5970>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting statvfs from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b553a0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting statvfs from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b556d0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting strerror from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b00730>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting strerror from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b00a60>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting symlink from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b06a30>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting symlink from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b06d60>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sync from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b0b280>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sync from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b0b5b0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting sysconf from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b0bb80>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting sysconf from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b0beb0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting system from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b1e7c0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting system from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b1eaf0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting tcgetpgrp from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b1efd0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting tcgetpgrp from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b22340>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting tcsetpgrp from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b22820>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting tcsetpgrp from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785b22b50>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting times from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785acc040>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting times from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785acc370>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting times_result from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785acc850>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting times_result from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785accb80>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting truncate from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ad20a0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting truncate from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ad23d0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting ttyname from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ad28b0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting ttyname from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ad2be0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting umask from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ad7100>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting umask from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ad7430>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting uname from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ad7910>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting uname from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ad7c40>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting uname_result from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785add160>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting uname_result from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785add490>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting unlink from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785add970>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting unlink from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785addca0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting unsetenv from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ae11c0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting unsetenv from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ae14f0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting urandom from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ae19d0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting urandom from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ae1d00>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting utime from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ae8220>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting utime from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ae8550>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting wait from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ae8a30>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting wait from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785ae8d60>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting wait3 from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785aec280>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting wait3 from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785aec5b0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting wait4 from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785aeca90>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting wait4 from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785aecdc0>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting waitid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a722e0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting waitid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a72610>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting waitid_result from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a72af0>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting waitid_result from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a72e20>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting waitpid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a77340>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting waitpid from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a77670>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting waitstatus_to_exitcode from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a77b50>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting waitstatus_to_exitcode from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a77e80>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting write from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a7c640>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting write from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a7c970>:
+INFO (TEST): Welcome to posix!
+
+ERROR    astroid.raw_building:raw_building.py:486 Captured stderr while getting writev from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a7ce50>:
+WARNING (TEST): Monkey-patched version of posix - module getattr
+
+INFO     astroid.raw_building:raw_building.py:494 Captured stdout while getting writev from <tests.unittest_raw_building.test_build_module_getattr_catch_output.<locals>.CustomGetattr object at 0x716785a821c0>:
+INFO (TEST): Welcome to posix!
+=========================== short test summary info ============================
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_attach_dummy_node
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_build_class
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_build_from_import
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_build_function
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_build_function_args
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_build_function_deepinspect_deprecation
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_build_function_defaults
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_build_function_kwonlyargs
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_build_function_posonlyargs
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_build_module
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_io_is__io
+PASSED tests/unittest_raw_building.py::RawBuildingTC::test_module_object_with_broken_getattr
+PASSED tests/unittest_raw_building.py::test_build_module_getattr_catch_output
+============================== 13 passed in 0.74s ==============================
+
+ 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Return Code: 0 
+
+>>>>> All Tests Passed
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Test script run successful 

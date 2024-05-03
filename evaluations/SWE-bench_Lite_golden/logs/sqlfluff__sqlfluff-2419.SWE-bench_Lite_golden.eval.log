@@ -1,0 +1,72 @@
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Task Metadata:
+	- Instance ID: sqlfluff__sqlfluff-2419
+	- Testbed: sqlfluff__sqlfluff__0.8
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Command: git status --porcelain 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Std. Output:
+ 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Return Code: 0 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Command: git -c advice.detachedHead=false checkout f1dba0e1dd764ae72d67c3d5e1471cf14d3db030 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Std. Output:
+Previous HEAD position was a5c4eae4 Spark3: Support for Grouping Sets, `CUBE` and `ROLLUP` in `GROUP BY` clause of `SELECT` statement (#2505)
+HEAD is now at f1dba0e1 Fix code formatting in Rule docs (#2418)
+ 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Return Code: 0 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-2419_pred_try.patch 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Std. Output:
+Checking patch src/sqlfluff/rules/L060.py...
+Applied patch src/sqlfluff/rules/L060.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Return Code: 0 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Command: git apply -v -R /home/swe-bench/temp_sqlfluff__sqlfluff-2419_pred_try.patch 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Std. Output:
+Checking patch src/sqlfluff/rules/L060.py...
+Applied patch src/sqlfluff/rules/L060.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Return Code: 0 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-2419_pred.patch 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Std. Output:
+Checking patch src/sqlfluff/rules/L060.py...
+Applied patch src/sqlfluff/rules/L060.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Return Code: 0 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-2419_test.patch 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Std. Output:
+Checking patch test/rules/std_L060_test.py...
+Applied patch test/rules/std_L060_test.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Return Code: 0 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n sqlfluff__sqlfluff__0.8 pytest --no-header -rA -p no:cacheprovider test/rules/std_L060_test.py;
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Command: conda run -n sqlfluff__sqlfluff__0.8 pytest --no-header -rA -p no:cacheprovider test/rules/std_L060_test.py 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Std. Output:
+============================= test session starts ==============================
+collected 1 item
+
+test/rules/std_L060_test.py .                                            [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test/rules/std_L060_test.py::test__rules__std_L060_raised
+============================== 1 passed in 0.45s ===============================
+
+ 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Return Code: 0 
+
+>>>>> All Tests Passed
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Test script run successful 

@@ -1,0 +1,186 @@
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Task Metadata:
+	- Instance ID: sqlfluff__sqlfluff-1763
+	- Testbed: sqlfluff__sqlfluff__0.6
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Command: git status --porcelain 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Std. Output:
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Command: git -c advice.detachedHead=false checkout a10057635e5b2559293a676486f0b730981f037a 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Std. Output:
+Previous HEAD position was 67023b85 Add __all__ attributes to __init__.py files to resolve F401 (#1949)
+HEAD is now at a1005763 Update older dbt dependency (#1756)
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1763_pred_try.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Std. Output:
+Checking patch src/sqlfluff/core/linter/linted_file.py...
+Applied patch src/sqlfluff/core/linter/linted_file.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Command: git apply -v -R /home/swe-bench/temp_sqlfluff__sqlfluff-1763_pred_try.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Std. Output:
+Checking patch src/sqlfluff/core/linter/linted_file.py...
+Applied patch src/sqlfluff/core/linter/linted_file.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1763_pred.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Std. Output:
+Checking patch src/sqlfluff/core/linter/linted_file.py...
+Applied patch src/sqlfluff/core/linter/linted_file.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Command: git restore test/core/linter_test.py 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Std. Output:
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1763_test.patch 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Std. Output:
+Checking patch test/core/linter_test.py...
+Applied patch test/core/linter_test.py cleanly.
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Return Code: 0 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA -p no:cacheprovider test/core/linter_test.py;
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Command: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA -p no:cacheprovider test/core/linter_test.py 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Std. Output:
+============================= test session starts ==============================
+collected 69 items
+
+test/core/linter_test.py ............................................... [ 68%]
+......................                                                   [100%]
+
+=============================== warnings summary ===============================
+src/sqlfluff/__init__.py:9
+  /home/swe-bench/sqlfluff__sqlfluff/src/sqlfluff/__init__.py:9: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+________________ test__linter__path_from_paths__explicit_ignore ________________
+------------------------------ Captured log call -------------------------------
+WARNING  sqlfluff.linter:linter.py:770 Exact file path test/fixtures/linter/sqlfluffignore/path_a/query_a.sql was given but it was ignored by a .sqlfluffignore pattern in /home/swe-bench/sqlfluff__sqlfluff/test/fixtures/linter/sqlfluffignore, re-run with `--disregard-sqlfluffignores` to skip .sqlfluffignore
+_________________ test__linter__linting_parallel_thread[True] __________________
+------------------------------ Captured log call -------------------------------
+WARNING  sqlfluff.linter:runner.py:82 Unable to lint None due to an internal error. Please report this as an issue with your query's contents and stacktrace below!
+To hide this warning, add the failing file to .sqlfluffignore
+Traceback (most recent call last):
+  File "/home/swe-bench/sqlfluff__sqlfluff/src/sqlfluff/core/linter/runner.py", line 136, in run
+    lint_result.reraise()
+  File "/home/swe-bench/sqlfluff__sqlfluff/src/sqlfluff/core/linter/runner.py", line 214, in reraise
+    raise self.ee.with_traceback(self.tb)
+ValueError
+__________________ test_lint_path_parallel_wrapper_exception ___________________
+------------------------------ Captured log call -------------------------------
+WARNING  sqlfluff.linter:runner.py:82 Unable to lint None due to an internal error. Please report this as an issue with your query's contents and stacktrace below!
+To hide this warning, add the failing file to .sqlfluffignore
+Traceback (most recent call last):
+  File "/home/swe-bench/sqlfluff__sqlfluff/src/sqlfluff/core/linter/runner.py", line 136, in run
+    lint_result.reraise()
+  File "/home/swe-bench/sqlfluff__sqlfluff/src/sqlfluff/core/linter/runner.py", line 214, in reraise
+    raise self.ee.with_traceback(self.tb)
+  File "/home/swe-bench/sqlfluff__sqlfluff/src/sqlfluff/core/linter/runner.py", line 159, in _apply
+    return partial()
+  File "/home/swe-bench/miniconda3/envs/sqlfluff__sqlfluff__0.6/lib/python3.9/unittest/mock.py", line 1092, in __call__
+    return self._mock_call(*args, **kwargs)
+  File "/home/swe-bench/miniconda3/envs/sqlfluff__sqlfluff__0.6/lib/python3.9/unittest/mock.py", line 1096, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+  File "/home/swe-bench/miniconda3/envs/sqlfluff__sqlfluff__0.6/lib/python3.9/unittest/mock.py", line 1151, in _execute_mock_call
+    raise effect
+ValueError: Something unexpected happened
+__________________ test__attempt_to_change_templater_warning ___________________
+------------------------------ Captured log call -------------------------------
+WARNING  sqlfluff.linter:linter.py:544 Attempt to set templater to python failed. Using jinja templater. Templater cannot be set in a .sqlfluff file in a subdirectory of the current working directory. It can be set in a .sqlfluff in the current working directory. See Nesting section of the docs for more details.
+=========================== short test summary info ============================
+PASSED test/core/linter_test.py::test__linter__path_from_paths__dir
+PASSED test/core/linter_test.py::test__linter__path_from_paths__default
+PASSED test/core/linter_test.py::test__linter__path_from_paths__exts
+PASSED test/core/linter_test.py::test__linter__path_from_paths__file
+PASSED test/core/linter_test.py::test__linter__path_from_paths__not_exist
+PASSED test/core/linter_test.py::test__linter__path_from_paths__not_exist_ignore
+PASSED test/core/linter_test.py::test__linter__path_from_paths__explicit_ignore
+PASSED test/core/linter_test.py::test__linter__path_from_paths__dot
+PASSED test/core/linter_test.py::test__linter__path_from_paths__ignore[test/fixtures/linter/sqlfluffignore]
+PASSED test/core/linter_test.py::test__linter__path_from_paths__ignore[test/fixtures/linter/sqlfluffignore/]
+PASSED test/core/linter_test.py::test__linter__path_from_paths__ignore[test/fixtures/linter/sqlfluffignore/.]
+PASSED test/core/linter_test.py::test__linter__lint_string_vs_file[test/fixtures/linter/indentation_errors.sql]
+PASSED test/core/linter_test.py::test__linter__lint_string_vs_file[test/fixtures/linter/whitespace_errors.sql]
+PASSED test/core/linter_test.py::test__linter__get_violations_filter_rules[None-7]
+PASSED test/core/linter_test.py::test__linter__get_violations_filter_rules[L010-2]
+PASSED test/core/linter_test.py::test__linter__get_violations_filter_rules[rules2-2]
+PASSED test/core/linter_test.py::test__linter__linting_result__sum_dicts
+PASSED test/core/linter_test.py::test__linter__linting_result__combine_dicts
+PASSED test/core/linter_test.py::test__linter__linting_result_check_tuples_by_path[False-list]
+PASSED test/core/linter_test.py::test__linter__linting_result_check_tuples_by_path[True-dict]
+PASSED test/core/linter_test.py::test__linter__linting_result_get_violations[1]
+PASSED test/core/linter_test.py::test__linter__linting_result_get_violations[2]
+PASSED test/core/linter_test.py::test__linter__linting_parallel_thread[False]
+PASSED test/core/linter_test.py::test__linter__linting_parallel_thread[True]
+PASSED test/core/linter_test.py::test_lint_path_parallel_wrapper_exception
+PASSED test/core/linter_test.py::test__linter__linting_unexpected_error_handled_gracefully
+PASSED test/core/linter_test.py::test__linter__raises_malformed_noqa
+PASSED test/core/linter_test.py::test__linter__empty_file
+PASSED test/core/linter_test.py::test__linter__mask_templated_violations[True-check_tuples0]
+PASSED test/core/linter_test.py::test__linter__mask_templated_violations[False-check_tuples1]
+PASSED test/core/linter_test.py::test__linter__encoding[test/fixtures/linter/encoding-utf-8.sql-autodetect-False]
+PASSED test/core/linter_test.py::test__linter__encoding[test/fixtures/linter/encoding-utf-8-sig.sql-autodetect-False]
+PASSED test/core/linter_test.py::test__linter__encoding[test/fixtures/linter/encoding-utf-8.sql-utf-8-False]
+PASSED test/core/linter_test.py::test__linter__encoding[test/fixtures/linter/encoding-utf-8-sig.sql-utf-8-True]
+PASSED test/core/linter_test.py::test__linter__encoding[test/fixtures/linter/encoding-utf-8.sql-utf-8-sig-False]
+PASSED test/core/linter_test.py::test__linter__encoding[test/fixtures/linter/encoding-utf-8-sig.sql-utf-8-sig-False]
+PASSED test/core/linter_test.py::test_parse_noqa[-None]
+PASSED test/core/linter_test.py::test_parse_noqa[noqa-expected1]
+PASSED test/core/linter_test.py::test_parse_noqa[noqa?-SQLParseError]
+PASSED test/core/linter_test.py::test_parse_noqa[noqa:-expected3]
+PASSED test/core/linter_test.py::test_parse_noqa[noqa:L001,L002-expected4]
+PASSED test/core/linter_test.py::test_parse_noqa[noqa: enable=L005-expected5]
+PASSED test/core/linter_test.py::test_parse_noqa[noqa: disable=L010-expected6]
+PASSED test/core/linter_test.py::test_parse_noqa[noqa: disable=all-expected7]
+PASSED test/core/linter_test.py::test_parse_noqa[noqa: disable-SQLParseError]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_no_ignore]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_ignore_specific_line]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_ignore_different_specific_line]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_ignore_different_specific_rule]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_ignore_enable_this_range]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_ignore_disable_this_range]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_line_1_ignore_disable_specific_2_3]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_line_2_ignore_disable_specific_2_3]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_line_3_ignore_disable_specific_2_3]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_line_4_ignore_disable_specific_2_3]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_line_1_ignore_disable_all_2_3]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_line_2_ignore_disable_all_2_3]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_line_3_ignore_disable_all_2_3]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[1_violation_line_4_ignore_disable_all_2_3]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[4_violations_two_types_disable_specific_enable_all]
+PASSED test/core/linter_test.py::test_linted_file_ignore_masked_violations[4_violations_two_types_disable_all_enable_specific]
+PASSED test/core/linter_test.py::test_linter_noqa
+PASSED test/core/linter_test.py::test_linter_noqa_with_templating
+PASSED test/core/linter_test.py::test_delayed_exception
+PASSED test/core/linter_test.py::test__attempt_to_change_templater_warning
+PASSED test/core/linter_test.py::test_safe_create_replace_file[utf8_create]
+PASSED test/core/linter_test.py::test_safe_create_replace_file[utf8_update]
+PASSED test/core/linter_test.py::test_safe_create_replace_file[utf8_special_char]
+PASSED test/core/linter_test.py::test_safe_create_replace_file[incorrect_encoding]
+======================== 69 passed, 1 warning in 2.57s =========================
+
+ 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Return Code: 0 
+
+>>>>> All Tests Passed
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Test script run successful 

@@ -1,0 +1,117 @@
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Task Metadata:
+	- Instance ID: pydicom__pydicom-1694
+	- Testbed: pydicom__pydicom__2.3
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: git status --porcelain 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Std. Output:
+ 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Return Code: 0 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: git -c advice.detachedHead=false checkout f8cf45b6c121e5a4bf4a43f71aba3bc64af3db9c 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Std. Output:
+Previous HEAD position was a8be73841 Add flake8 and black actions with annotations (#1711)
+HEAD is now at f8cf45b6c [MRG] Codify Ensures distinct names (#1674)
+ 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Return Code: 0 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1694_pred_try.patch 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Std. Output:
+Checking patch pydicom/dataset.py...
+Applied patch pydicom/dataset.py cleanly.
+ 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Return Code: 0 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: git apply -v -R /home/swe-bench/temp_pydicom__pydicom-1694_pred_try.patch 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Std. Output:
+Checking patch pydicom/dataset.py...
+Applied patch pydicom/dataset.py cleanly.
+ 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Return Code: 0 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1694_pred.patch 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Std. Output:
+Checking patch pydicom/dataset.py...
+Applied patch pydicom/dataset.py cleanly.
+ 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Return Code: 0 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: git restore pydicom/tests/test_json.py 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Std. Output:
+ 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Return Code: 0 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1694_test.patch 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Std. Output:
+Checking patch pydicom/tests/test_json.py...
+Applied patch pydicom/tests/test_json.py cleanly.
+ 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Return Code: 0 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n pydicom__pydicom__2.3 pytest --no-header -rA -p no:cacheprovider pydicom/tests/test_json.py;
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: conda run -n pydicom__pydicom__2.3 pytest --no-header -rA -p no:cacheprovider pydicom/tests/test_json.py 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Std. Output:
+============================= test session starts ==============================
+collected 27 items
+
+pydicom/tests/test_json.py ...........................                   [100%]
+
+=============================== warnings summary ===============================
+pydicom/tests/test_json.py::TestDataSetToJson::test_suppress_invalid_tags_with_failed_dataelement
+  /home/swe-bench/pydicom__pydicom/pydicom/valuerep.py:443: UserWarning: Invalid value for VR IS: '5.25'. Please see <https://dicom.nema.org/medical/dicom/current/output/html/part05.html#table_6.2-1> for allowed values for each VR.
+    warnings.warn(msg)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+_________________ TestDataSetToJson.test_suppress_invalid_tags _________________
+------------------------------ Captured log call -------------------------------
+ERROR    pydicom:dataset.py:2502 Error while processing tag 00100010
+ERROR    pydicom:dataset.py:2502 Error while processing tag 00100010
+_____ TestDataSetToJson.test_suppress_invalid_tags_with_failed_dataelement _____
+------------------------------ Captured log call -------------------------------
+ERROR    pydicom:dataset.py:2502 Error while processing tag 00082128
+ERROR    pydicom:dataset.py:2502 Error while processing tag 00082128
+=========================== short test summary info ============================
+PASSED pydicom/tests/test_json.py::TestPersonName::test_json_pn_from_file
+PASSED pydicom/tests/test_json.py::TestPersonName::test_pn_components_to_json
+PASSED pydicom/tests/test_json.py::TestPersonName::test_pn_components_from_json
+PASSED pydicom/tests/test_json.py::TestPersonName::test_empty_value
+PASSED pydicom/tests/test_json.py::TestPersonName::test_multi_value_to_json
+PASSED pydicom/tests/test_json.py::TestPersonName::test_dataelem_from_json
+PASSED pydicom/tests/test_json.py::TestAT::test_to_json
+PASSED pydicom/tests/test_json.py::TestAT::test_from_json
+PASSED pydicom/tests/test_json.py::TestAT::test_invalid_value_in_json
+PASSED pydicom/tests/test_json.py::TestAT::test_invalid_tag_in_json
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_json_from_dicom_file
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_roundtrip
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_dataset_dumphandler
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_dataelement_dumphandler
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_sort_order
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_suppress_invalid_tags
+PASSED pydicom/tests/test_json.py::TestDataSetToJson::test_suppress_invalid_tags_with_failed_dataelement
+PASSED pydicom/tests/test_json.py::TestSequence::test_nested_sequences
+PASSED pydicom/tests/test_json.py::TestBinary::test_inline_binary
+PASSED pydicom/tests/test_json.py::TestBinary::test_invalid_inline_binary
+PASSED pydicom/tests/test_json.py::TestBinary::test_valid_bulkdata_uri
+PASSED pydicom/tests/test_json.py::TestBinary::test_invalid_bulkdata_uri
+PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called
+PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called_2
+PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called_within_SQ
+PASSED pydicom/tests/test_json.py::TestNumeric::test_numeric_values
+PASSED pydicom/tests/test_json.py::TestNumeric::test_numeric_types
+======================== 27 passed, 1 warning in 0.11s =========================
+
+ 
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Return Code: 0 
+
+>>>>> All Tests Passed
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Test script run successful 

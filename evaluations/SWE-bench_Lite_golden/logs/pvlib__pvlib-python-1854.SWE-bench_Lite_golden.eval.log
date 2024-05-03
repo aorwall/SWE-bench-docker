@@ -1,0 +1,442 @@
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Task Metadata:
+	- Instance ID: pvlib__pvlib-python-1854
+	- Testbed: pvlib__pvlib-python__0.9
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git status --porcelain 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
+ 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git -c advice.detachedHead=false checkout 27a3a07ebc84b11014d3753e4923902adf9a38c0 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
+Previous HEAD position was 6072e09 fix invalid escape sequence '\c' (#1879)
+HEAD is now at 27a3a07 `pvsystem.singlediode` with `method='newton'` can be passed `pd.Series` of length one. (#1822)
+ 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1854_pred_try.patch 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
+Checking patch pvlib/pvsystem.py...
+Applied patch pvlib/pvsystem.py cleanly.
+ 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git apply -v -R /home/swe-bench/temp_pvlib__pvlib-python-1854_pred_try.patch 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
+Checking patch pvlib/pvsystem.py...
+Applied patch pvlib/pvsystem.py cleanly.
+ 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1854_pred.patch 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
+Checking patch pvlib/pvsystem.py...
+Applied patch pvlib/pvsystem.py cleanly.
+ 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git restore pvlib/tests/test_pvsystem.py 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
+ 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1854_test.patch 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
+Checking patch pvlib/tests/test_pvsystem.py...
+Applied patch pvlib/tests/test_pvsystem.py cleanly.
+ 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n pvlib__pvlib-python__0.9 pytest --no-header -rA -p no:cacheprovider pvlib/tests/test_pvsystem.py;
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: conda run -n pvlib__pvlib-python__0.9 pytest --no-header -rA -p no:cacheprovider pvlib/tests/test_pvsystem.py 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
+============================= test session starts ==============================
+collected 282 items
+
+pvlib/tests/test_pvsystem.py ........................................... [ 15%]
+........................................................................ [ 40%]
+........................................................................ [ 66%]
+........................................................................ [ 91%]
+.......................                                                  [100%]
+
+=============================== warnings summary ===============================
+pvlib/iam.py:843
+  /home/swe-bench/pvlib__pvlib-python/pvlib/iam.py:843: DeprecationWarning: invalid escape sequence \c
+    """
+
+pvlib/tests/conftest.py:7
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/conftest.py:7: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    from pkg_resources import parse_version
+
+../miniconda3/envs/pvlib__pvlib-python__0.9/lib/python3.9/site-packages/pkg_resources/__init__.py:2871
+  /home/swe-bench/miniconda3/envs/pvlib__pvlib-python__0.9/lib/python3.9/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('sphinxcontrib')`.
+  Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+    declare_namespace(pkg)
+
+pvlib/tests/test_pvsystem.py::test_sapm
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:187: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='2015-01-01', periods=5, freq='12H')
+
+pvlib/tests/test_pvsystem.py::test_PVSystem_noct_celltemp
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:538: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    dr = pd.date_range(start='2020-01-01 12:00:00', end='2020-01-01 13:00:00',
+
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_functions[faiman]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_functions[pvsyst]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_functions[sapm]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_functions[fuentes]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_functions[noct_sam]
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:569: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='2020-08-25 11:00', freq='H', periods=3)
+
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_temp[faiman]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_temp[pvsyst]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_temp[sapm]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_temp[fuentes]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_temp[noct_sam]
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:583: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='2020-08-25 11:00', freq='H', periods=3)
+
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_wind[faiman]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_wind[pvsyst]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_wind[sapm]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_wind[fuentes]
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_wind[noct_sam]
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:608: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='2020-08-25 11:00', freq='H', periods=3)
+
+pvlib/tests/test_pvsystem.py::test_calcparams_desoto
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:936: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='2015-01-01', periods=3, freq='12H')
+
+pvlib/tests/test_pvsystem.py::test_calcparams_cec
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:968: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='2015-01-01', periods=3, freq='12H')
+
+pvlib/tests/test_pvsystem.py::test_calcparams_cec_extra_params_propagation
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:1011: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='2015-01-01', periods=3, freq='12H')
+
+pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:1038: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='2015-01-01', periods=2, freq='12H')
+
+pvlib/tests/test_pvsystem.py::test_singlediode_series
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:1530: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='2015-01-01', periods=2, freq='12H')
+
+pvlib/tests/test_pvsystem.py::test_singlediode_series_ivcurve
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:1620: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='2015-06-01', periods=3, freq='6H')
+
+pvlib/tests/test_pvsystem.py::test_PVSystem_get_irradiance
+pvlib/tests/test_pvsystem.py::test_PVSystem_get_irradiance_albedo
+pvlib/tests/test_pvsystem.py::test_PVSystem_get_irradiance_model
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_get_irradiance
+pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_get_irradiance_multi_irrad
+pvlib/tests/test_pvsystem.py::test_Array_get_irradiance
+  /home/swe-bench/pvlib__pvlib-python/pvlib/tests/test_pvsystem.py:1913: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+    times = pd.date_range(start='20160101 1200-0700',
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_iam[ashrae-model_params0]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_iam[physical-model_params1]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_iam[martin_ruiz-model_params2]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_get_iam
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_iam_sapm
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_iam_interp
+PASSED pvlib/tests/test_pvsystem.py::test__normalize_sam_product_names
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_iam_invalid
+PASSED pvlib/tests/test_pvsystem.py::test_retrieve_sam_raise_no_parameters
+PASSED pvlib/tests/test_pvsystem.py::test_retrieve_sam_cecmod
+PASSED pvlib/tests/test_pvsystem.py::test_retrieve_sam_cecinverter
+PASSED pvlib/tests/test_pvsystem.py::test_sapm
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_sapm
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_sapm
+PASSED pvlib/tests/test_pvsystem.py::test_sapm_spectral_loss_deprecated
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_sapm_spectral_loss
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_sapm_spectral_loss
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_first_solar_spectral_loss[module_parameters0-multisi-None]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_first_solar_spectral_loss[module_parameters1-multisi-None]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_first_solar_spectral_loss[module_parameters2-None-coefficients2]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_first_solar_spectral_loss
+PASSED pvlib/tests/test_pvsystem.py::test_sapm_effective_irradiance[test_input0-1140.0510967821876]
+PASSED pvlib/tests/test_pvsystem.py::test_sapm_effective_irradiance[test_input1-expected1]
+PASSED pvlib/tests/test_pvsystem.py::test_sapm_effective_irradiance[test_input2-expected2]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_sapm_effective_irradiance
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_sapm_effective_irradiance
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_sapm_effective_irradiance_value_error[20-poa_diffuse0-aoi0]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_sapm_effective_irradiance_value_error[poa_direct1-poa_diffuse1-aoi1]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_sapm_effective_irradiance_value_error[poa_direct2-poa_diffuse2-20]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_sapm_celltemp
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_sapm_celltemp_kwargs
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_sapm_celltemp_different_arrays
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_pvsyst_celltemp
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_faiman_celltemp
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_noct_celltemp
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_noct_celltemp_error
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_functions[faiman]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_functions[pvsyst]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_functions[sapm]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_functions[fuentes]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_functions[noct_sam]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_temp[faiman]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_temp[pvsyst]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_temp[sapm]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_temp[fuentes]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_temp[noct_sam]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_wind[faiman]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_wind[pvsyst]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_wind[sapm]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_wind[fuentes]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_multi_wind[noct_sam]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_cell_temperature_invalid
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_temp_too_short[faiman]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_temp_too_short[pvsyst]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_temp_too_short[sapm]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_temp_too_short[fuentes]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_temp_too_short[noct_sam]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_temp_too_long[faiman]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_temp_too_long[pvsyst]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_temp_too_long[sapm]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_temp_too_long[fuentes]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_temp_too_long[noct_sam]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_wind_too_short[faiman]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_wind_too_short[pvsyst]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_wind_too_short[sapm]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_wind_too_short[fuentes]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_wind_too_short[noct_sam]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_wind_too_long[faiman]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_wind_too_long[pvsyst]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_wind_too_long[sapm]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_wind_too_long[fuentes]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_wind_too_long[noct_sam]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_poa_length_mismatch[faiman]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_poa_length_mismatch[pvsyst]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_poa_length_mismatch[sapm]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_poa_length_mismatch[fuentes]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_celltemp_poa_length_mismatch[noct_sam]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_fuentes_celltemp
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_fuentes_module_height
+PASSED pvlib/tests/test_pvsystem.py::test_Array__infer_temperature_model_params
+PASSED pvlib/tests/test_pvsystem.py::test_Array__infer_cell_type
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs0]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs1]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs2]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs3]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs4]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs5]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs6]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs7]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs8]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs9]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs10]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs11]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs12]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs13]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs14]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_returns_correct_Python_type[numeric_type_funcs15]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs0]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs1]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs2]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs3]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs4]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs5]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs6]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs7]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs8]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs9]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs10]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs11]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs12]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs13]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs14]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_returns_correct_Python_type[numeric_type_funcs15]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs0]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs1]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs2]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs3]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs4]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs5]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs6]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs7]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs8]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs9]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs10]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs11]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs12]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs13]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs14]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_returns_correct_Python_type[numeric_type_funcs15]
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto_all_scalars
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_all_scalars
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst_all_scalars
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_desoto
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_cec_extra_params_propagation
+PASSED pvlib/tests/test_pvsystem.py::test_calcparams_pvsyst
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_calcparams_desoto
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_calcparams_pvsyst
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_calcparams[calcparams_pvsyst]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_calcparams[calcparams_desoto]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_calcparams[calcparams_cec]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_calcparams_value_error[calcparams_desoto-1-celltemp0]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_calcparams_value_error[calcparams_desoto-irrad1-1]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_calcparams_value_error[calcparams_cec-1-celltemp2]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_calcparams_value_error[calcparams_cec-irrad3-1]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_calcparams_value_error[calcparams_pvsyst-1-celltemp4]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_calcparams_value_error[calcparams_pvsyst-irrad5-1]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i0-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i0-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i0-newton-1e-08]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i1-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i1-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i1-newton-1e-08]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i2-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i2-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i2-newton-1e-08]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i3-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i3-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i3-newton-1e-08]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i4-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i4-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i4-newton-1e-08]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i5-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i5-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i5-newton-1e-08]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i6-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i6-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i6-newton-1e-08]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i7-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i7-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i7-newton-1e-08]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i8-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i8-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i8-newton-1e-08]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i9-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i9-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i9-newton-1e-08]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i10-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i10-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i[fixture_v_from_i10-newton-1e-08]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_from_i[fixture_v_from_i0]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_from_i[fixture_v_from_i1]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_from_i[fixture_v_from_i2]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_from_i[fixture_v_from_i3]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_from_i[fixture_v_from_i4]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_from_i[fixture_v_from_i5]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_from_i[fixture_v_from_i6]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_from_i[fixture_v_from_i7]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_from_i[fixture_v_from_i8]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_from_i[fixture_v_from_i9]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_from_i[fixture_v_from_i10]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v0-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v0-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v0-newton-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v1-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v1-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v1-newton-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v2-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v2-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v2-newton-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v3-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v3-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v3-newton-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v4-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v4-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v4-newton-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v5-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v5-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v5-newton-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v6-lambertw-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v6-brentq-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v[fixture_i_from_v6-newton-1e-11]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_i_from_v
+PASSED pvlib/tests/test_pvsystem.py::test_i_from_v_size
+PASSED pvlib/tests/test_pvsystem.py::test_v_from_i_size
+PASSED pvlib/tests/test_pvsystem.py::test_mpp_floats
+PASSED pvlib/tests/test_pvsystem.py::test_mpp_recombination
+PASSED pvlib/tests/test_pvsystem.py::test_mpp_array
+PASSED pvlib/tests/test_pvsystem.py::test_mpp_series
+PASSED pvlib/tests/test_pvsystem.py::test_singlediode_series
+PASSED pvlib/tests/test_pvsystem.py::test_singlediode_array
+PASSED pvlib/tests/test_pvsystem.py::test_singlediode_floats
+PASSED pvlib/tests/test_pvsystem.py::test_singlediode_floats_ivcurve
+PASSED pvlib/tests/test_pvsystem.py::test_singlediode_series_ivcurve
+PASSED pvlib/tests/test_pvsystem.py::test_singlediode_ivcurvepnts_deprecation_warning[lambertw]
+PASSED pvlib/tests/test_pvsystem.py::test_singlediode_ivcurvepnts_deprecation_warning[brentq]
+PASSED pvlib/tests/test_pvsystem.py::test_singlediode_ivcurvepnts_deprecation_warning[newton]
+PASSED pvlib/tests/test_pvsystem.py::test_scale_voltage_current_power
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_scale_voltage_current_power
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_scale_voltage_current_power
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_ac_sandia
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_ac_sandia_multi
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_ac_pvwatts
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_ac_pvwatts_kwargs
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_ac_pvwatts_multi
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_ac_single_array_tuple_input[sandia]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_ac_single_array_tuple_input[adr]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_ac_single_array_tuple_input[pvwatts]
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_ac_adr
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_ac_adr_multi
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_ac_invalid
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_creation
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multiple_array_creation
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_aoi
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multiple_array_get_aoi
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_irradiance
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_irradiance_albedo
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_irradiance_model
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_get_irradiance
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array_get_irradiance_multi_irrad
+PASSED pvlib/tests/test_pvsystem.py::test_Array_get_irradiance
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem___repr__
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multi_array___repr__
+PASSED pvlib/tests/test_pvsystem.py::test_Array___repr__
+PASSED pvlib/tests/test_pvsystem.py::test_pvwatts_dc_scalars
+PASSED pvlib/tests/test_pvsystem.py::test_pvwatts_dc_arrays
+PASSED pvlib/tests/test_pvsystem.py::test_pvwatts_dc_series
+PASSED pvlib/tests/test_pvsystem.py::test_pvwatts_losses_default
+PASSED pvlib/tests/test_pvsystem.py::test_pvwatts_losses_arrays
+PASSED pvlib/tests/test_pvsystem.py::test_pvwatts_losses_series
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_pvwatts_dc
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_pvwatts_dc_kwargs
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multiple_array_pvwatts_dc
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_multiple_array_pvwatts_dc_value_error
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_pvwatts_losses
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_num_arrays
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_at_least_one_array
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_single_array
+PASSED pvlib/tests/test_pvsystem.py::test_combine_loss_factors
+PASSED pvlib/tests/test_pvsystem.py::test_no_extra_kwargs
+PASSED pvlib/tests/test_pvsystem.py::test_AbstractMount_constructor
+PASSED pvlib/tests/test_pvsystem.py::test_FixedMount_constructor
+PASSED pvlib/tests/test_pvsystem.py::test_FixedMount_get_orientation
+PASSED pvlib/tests/test_pvsystem.py::test_SingleAxisTrackerMount_constructor
+PASSED pvlib/tests/test_pvsystem.py::test_SingleAxisTrackerMount_get_orientation
+PASSED pvlib/tests/test_pvsystem.py::test_dc_ohms_from_percent
+PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_dc_ohms_from_percent
+PASSED pvlib/tests/test_pvsystem.py::test_dc_ohmic_losses
+PASSED pvlib/tests/test_pvsystem.py::test_Array_dc_ohms_from_percent
+PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[sapm-keys0]
+PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[fuentes-keys1]
+PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[noct_sam-keys2]
+======================= 282 passed, 32 warnings in 0.96s =======================
+
+ 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
+
+>>>>> All Tests Passed
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Test script run successful 

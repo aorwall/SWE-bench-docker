@@ -1,0 +1,242 @@
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Task Metadata:
+	- Instance ID: scikit-learn__scikit-learn-25638
+	- Testbed: scikit-learn__scikit-learn__1.3
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git status --porcelain 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
+ 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git -c advice.detachedHead=false checkout 6adb209acd63825affc884abcd85381f148fb1b0 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
+Previous HEAD position was 1e8a5b833 TST Fix test_clone_sparse_matrices on scipy dev (#26556)
+HEAD is now at 6adb209ac FIX renormalization of y_pred inside log_loss (#25299)
+ 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25638_pred_try.patch 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
+Checking patch sklearn/utils/multiclass.py...
+Applied patch sklearn/utils/multiclass.py cleanly.
+ 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-25638_pred_try.patch 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
+Checking patch sklearn/utils/multiclass.py...
+Applied patch sklearn/utils/multiclass.py cleanly.
+ 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25638_pred.patch 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
+Checking patch sklearn/utils/multiclass.py...
+Applied patch sklearn/utils/multiclass.py cleanly.
+ 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git restore sklearn/metrics/tests/test_classification.py 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
+ 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git restore sklearn/preprocessing/tests/test_label.py 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
+ 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git restore sklearn/utils/tests/test_multiclass.py 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
+ 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25638_test.patch 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
+Checking patch sklearn/metrics/tests/test_classification.py...
+Checking patch sklearn/preprocessing/tests/test_label.py...
+Checking patch sklearn/utils/tests/test_multiclass.py...
+Applied patch sklearn/metrics/tests/test_classification.py cleanly.
+Applied patch sklearn/preprocessing/tests/test_label.py cleanly.
+Applied patch sklearn/utils/tests/test_multiclass.py cleanly.
+ 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n scikit-learn__scikit-learn__1.3 pytest --no-header -rA -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py;
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: conda run -n scikit-learn__scikit-learn__1.3 pytest --no-header -rA -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
+[1m============================= test session starts ==============================[0m
+collected 34 items / 4 errors
+
+==================================== ERRORS ====================================
+[31m[1m________ ERROR collecting sklearn/metrics/tests/test_classification.py _________[0m
+[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/runner.py[0m:341: in from_call
+    result: Optional[TResult] = func()
+[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/runner.py[0m:372: in <lambda>
+    call = CallInfo.from_call(lambda: list(collector.collect()), "collect")
+[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/doctest.py[0m:547: in collect
+    module = import_path(
+[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/pathlib.py[0m:565: in import_path
+    importlib.import_module(module_name)
+[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/importlib/__init__.py[0m:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+[1m[31m<frozen importlib._bootstrap>[0m:1030: in _gcd_import
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:1007: in _find_and_load
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:972: in _find_and_load_unlocked
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:228: in _call_with_frames_removed
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:1030: in _gcd_import
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:1007: in _find_and_load
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:972: in _find_and_load_unlocked
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:228: in _call_with_frames_removed
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:1030: in _gcd_import
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:1007: in _find_and_load
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:986: in _find_and_load_unlocked
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:680: in _load_unlocked
+    ???
+[1m[31m<frozen importlib._bootstrap_external>[0m:850: in exec_module
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:228: in _call_with_frames_removed
+    ???
+[1m[31msklearn/metrics/__init__.py[0m:42: in <module>
+    from . import cluster
+[1m[31msklearn/metrics/cluster/__init__.py[0m:22: in <module>
+    from ._unsupervised import silhouette_samples
+[1m[31msklearn/metrics/cluster/_unsupervised.py[0m:16: in <module>
+    from ..pairwise import pairwise_distances_chunked
+[1m[31msklearn/metrics/pairwise.py[0m:34: in <module>
+    from ._pairwise_distances_reduction import ArgKmin
+[1m[31msklearn/metrics/_pairwise_distances_reduction/__init__.py[0m:89: in <module>
+    from ._dispatcher import (
+[1m[31msklearn/metrics/_pairwise_distances_reduction/_dispatcher.py[0m:9: in <module>
+    from .._dist_metrics import BOOL_METRICS, METRIC_MAPPING
+[1m[31mE   ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dist_metrics' (/home/swe-bench/scikit-learn__scikit-learn/sklearn/metrics/_dist_metrics.cpython-39-x86_64-linux-gnu.so)[0m
+[31m[1m________ ERROR collecting sklearn/metrics/tests/test_classification.py _________[0m
+[31mImportError while importing test module '/home/swe-bench/scikit-learn__scikit-learn/sklearn/metrics/tests/test_classification.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+sklearn/metrics/__init__.py:42: in <module>
+    from . import cluster
+sklearn/metrics/cluster/__init__.py:22: in <module>
+    from ._unsupervised import silhouette_samples
+sklearn/metrics/cluster/_unsupervised.py:16: in <module>
+    from ..pairwise import pairwise_distances_chunked
+sklearn/metrics/pairwise.py:34: in <module>
+    from ._pairwise_distances_reduction import ArgKmin
+sklearn/metrics/_pairwise_distances_reduction/__init__.py:89: in <module>
+    from ._dispatcher import (
+sklearn/metrics/_pairwise_distances_reduction/_dispatcher.py:9: in <module>
+    from .._dist_metrics import BOOL_METRICS, METRIC_MAPPING
+E   ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dist_metrics' (/home/swe-bench/scikit-learn__scikit-learn/sklearn/metrics/_dist_metrics.cpython-39-x86_64-linux-gnu.so)[0m
+[31m[1m___________ ERROR collecting sklearn/utils/tests/test_multiclass.py ____________[0m
+[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/runner.py[0m:341: in from_call
+    result: Optional[TResult] = func()
+[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/runner.py[0m:372: in <lambda>
+    call = CallInfo.from_call(lambda: list(collector.collect()), "collect")
+[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/doctest.py[0m:547: in collect
+    module = import_path(
+[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/pathlib.py[0m:565: in import_path
+    importlib.import_module(module_name)
+[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/importlib/__init__.py[0m:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+[1m[31m<frozen importlib._bootstrap>[0m:1030: in _gcd_import
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:1007: in _find_and_load
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:986: in _find_and_load_unlocked
+    ???
+[1m[31m<frozen importlib._bootstrap>[0m:680: in _load_unlocked
+    ???
+[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/assertion/rewrite.py[0m:178: in exec_module
+    exec(co, module.__dict__)
+[1m[31msklearn/utils/tests/test_multiclass.py[0m:16: in <module>
+    from sklearn.utils.estimator_checks import _NotAnArray
+[1m[31msklearn/utils/estimator_checks.py[0m:31: in <module>
+    from ..linear_model import LinearRegression
+[1m[31msklearn/linear_model/__init__.py[0m:11: in <module>
+    from ._least_angle import (
+[1m[31msklearn/linear_model/_least_angle.py[0m:28: in <module>
+    from ..model_selection import check_cv
+[1m[31msklearn/model_selection/__init__.py[0m:23: in <module>
+    from ._validation import cross_val_score
+[1m[31msklearn/model_selection/_validation.py[0m:32: in <module>
+    from ..metrics import check_scoring
+[1m[31msklearn/metrics/__init__.py[0m:42: in <module>
+    from . import cluster
+[1m[31msklearn/metrics/cluster/__init__.py[0m:22: in <module>
+    from ._unsupervised import silhouette_samples
+[1m[31msklearn/metrics/cluster/_unsupervised.py[0m:16: in <module>
+    from ..pairwise import pairwise_distances_chunked
+[1m[31msklearn/metrics/pairwise.py[0m:34: in <module>
+    from ._pairwise_distances_reduction import ArgKmin
+[1m[31msklearn/metrics/_pairwise_distances_reduction/__init__.py[0m:89: in <module>
+    from ._dispatcher import (
+[1m[31msklearn/metrics/_pairwise_distances_reduction/_dispatcher.py[0m:9: in <module>
+    from .._dist_metrics import BOOL_METRICS, METRIC_MAPPING
+[1m[31mE   ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dist_metrics' (/home/swe-bench/scikit-learn__scikit-learn/sklearn/metrics/_dist_metrics.cpython-39-x86_64-linux-gnu.so)[0m
+[31m[1m___________ ERROR collecting sklearn/utils/tests/test_multiclass.py ____________[0m
+[31mImportError while importing test module '/home/swe-bench/scikit-learn__scikit-learn/sklearn/utils/tests/test_multiclass.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+sklearn/utils/tests/test_multiclass.py:16: in <module>
+    from sklearn.utils.estimator_checks import _NotAnArray
+sklearn/utils/estimator_checks.py:31: in <module>
+    from ..linear_model import LinearRegression
+sklearn/linear_model/__init__.py:11: in <module>
+    from ._least_angle import (
+sklearn/linear_model/_least_angle.py:28: in <module>
+    from ..model_selection import check_cv
+sklearn/model_selection/__init__.py:23: in <module>
+    from ._validation import cross_val_score
+sklearn/model_selection/_validation.py:32: in <module>
+    from ..metrics import check_scoring
+sklearn/metrics/__init__.py:42: in <module>
+    from . import cluster
+sklearn/metrics/cluster/__init__.py:22: in <module>
+    from ._unsupervised import silhouette_samples
+sklearn/metrics/cluster/_unsupervised.py:16: in <module>
+    from ..pairwise import pairwise_distances_chunked
+sklearn/metrics/pairwise.py:34: in <module>
+    from ._pairwise_distances_reduction import ArgKmin
+sklearn/metrics/_pairwise_distances_reduction/__init__.py:89: in <module>
+    from ._dispatcher import (
+sklearn/metrics/_pairwise_distances_reduction/_dispatcher.py:9: in <module>
+    from .._dist_metrics import BOOL_METRICS, METRIC_MAPPING
+E   ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dist_metrics' (/home/swe-bench/scikit-learn__scikit-learn/sklearn/metrics/_dist_metrics.cpython-39-x86_64-linux-gnu.so)[0m
+[36m[1m=========================== short test summary info ============================[0m
+[31mERROR[0m sklearn/metrics/tests/test_classification.py - ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dis...
+[31mERROR[0m sklearn/metrics/tests/test_classification.py
+[31mERROR[0m sklearn/utils/tests/test_multiclass.py - ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dis...
+[31mERROR[0m sklearn/utils/tests/test_multiclass.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 4 errors during collection !!!!!!!!!!!!!!!!!!!!
+[31m============================== [31m[1m4 errors[0m[31m in 0.59s[0m[31m ===============================[0m
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py` failed. (See above for error)
+
+ 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 2 
+
+>>>>> Some Tests Failed
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Test script run successful 

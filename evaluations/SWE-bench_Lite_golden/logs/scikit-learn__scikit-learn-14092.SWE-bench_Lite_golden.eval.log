@@ -1,0 +1,125 @@
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Task Metadata:
+	- Instance ID: scikit-learn__scikit-learn-14092
+	- Testbed: scikit-learn__scikit-learn__0.22
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Command: git status --porcelain 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Std. Output:
+ 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Return Code: 0 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Command: git -c advice.detachedHead=false checkout df7dd8391148a873d157328a4f0328528a0c4ed9 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Std. Output:
+Previous HEAD position was 7e85a6d1f More explicit binder requirements for 0.22 (#15847)
+HEAD is now at df7dd8391 ENH allow sparse input to incremental PCA (#13960)
+ 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Return Code: 0 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-14092_pred_try.patch 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Std. Output:
+Checking patch sklearn/neighbors/nca.py...
+Applied patch sklearn/neighbors/nca.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Return Code: 0 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-14092_pred_try.patch 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Std. Output:
+Checking patch sklearn/neighbors/nca.py...
+Applied patch sklearn/neighbors/nca.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Return Code: 0 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-14092_pred.patch 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Std. Output:
+Checking patch sklearn/neighbors/nca.py...
+Applied patch sklearn/neighbors/nca.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Return Code: 0 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Command: git restore sklearn/neighbors/tests/test_nca.py 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Std. Output:
+ 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Return Code: 0 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-14092_test.patch 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Std. Output:
+Checking patch sklearn/neighbors/tests/test_nca.py...
+Applied patch sklearn/neighbors/tests/test_nca.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Return Code: 0 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n scikit-learn__scikit-learn__0.22 pytest --no-header -rA -p no:cacheprovider sklearn/neighbors/tests/test_nca.py;
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Command: conda run -n scikit-learn__scikit-learn__0.22 pytest --no-header -rA -p no:cacheprovider sklearn/neighbors/tests/test_nca.py 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Std. Output:
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA -p no:cacheprovider sklearn/neighbors/tests/test_nca.py` failed. (See above for error)
+============================= test session starts ==============================
+collected 0 items / 2 errors
+
+==================================== ERRORS ====================================
+_____________ ERROR collecting sklearn/neighbors/tests/test_nca.py _____________
+../miniconda3/envs/scikit-learn__scikit-learn__0.22/lib/python3.6/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:994: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:941: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:219: in _call_with_frames_removed
+    ???
+<frozen importlib._bootstrap>:994: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:941: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:219: in _call_with_frames_removed
+    ???
+<frozen importlib._bootstrap>:994: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:971: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:955: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:665: in _load_unlocked
+    ???
+<frozen importlib._bootstrap_external>:678: in exec_module
+    ???
+<frozen importlib._bootstrap>:219: in _call_with_frames_removed
+    ???
+sklearn/neighbors/__init__.py:6: in <module>
+    from .ball_tree import BallTree
+sklearn/neighbors/ball_tree.py:5: in <module>
+    from ..externals._pep562 import Pep562
+E   ModuleNotFoundError: No module named 'sklearn.externals._pep562'
+_____________ ERROR collecting sklearn/neighbors/tests/test_nca.py _____________
+ImportError while importing test module '/home/swe-bench/scikit-learn__scikit-learn/sklearn/neighbors/tests/test_nca.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+../miniconda3/envs/scikit-learn__scikit-learn__0.22/lib/python3.6/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+sklearn/neighbors/__init__.py:6: in <module>
+    from .ball_tree import BallTree
+sklearn/neighbors/ball_tree.py:5: in <module>
+    from ..externals._pep562 import Pep562
+E   ModuleNotFoundError: No module named 'sklearn.externals._pep562'
+=========================== short test summary info ============================
+ERROR sklearn/neighbors/tests/test_nca.py - ModuleNotFoundError: No module na...
+ERROR sklearn/neighbors/tests/test_nca.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 2 errors in 0.10s ===============================
+
+ 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Return Code: 2 
+
+>>>>> Some Tests Failed
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14092] Test script run successful 

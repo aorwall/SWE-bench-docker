@@ -1,0 +1,200 @@
+[astropy__astropy__1.3] [astropy__astropy-7746] Task Metadata:
+	- Instance ID: astropy__astropy-7746
+	- Testbed: astropy__astropy__1.3
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[astropy__astropy__1.3] [astropy__astropy-7746] Command: git status --porcelain 
+[astropy__astropy__1.3] [astropy__astropy-7746] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[astropy__astropy__1.3] [astropy__astropy-7746] Std. Output:
+ 
+[astropy__astropy__1.3] [astropy__astropy-7746] Return Code: 0 
+[astropy__astropy__1.3] [astropy__astropy-7746] Command: git -c advice.detachedHead=false checkout d5bd3f68bb6d5ce3a61bdce9883ee750d1afade5 
+[astropy__astropy__1.3] [astropy__astropy-7746] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[astropy__astropy__1.3] [astropy__astropy-7746] Std. Output:
+Previous HEAD position was 848c8fa21 Merge pull request #6868 from eteq/coc_wording
+HEAD is now at d5bd3f68b Merge pull request #7742 from astrofrog/travis-egg-info
+ 
+[astropy__astropy__1.3] [astropy__astropy-7746] Return Code: 0 
+[astropy__astropy__1.3] [astropy__astropy-7746] Command: git apply -v /home/swe-bench/temp_astropy__astropy-7746_pred_try.patch 
+[astropy__astropy__1.3] [astropy__astropy-7746] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[astropy__astropy__1.3] [astropy__astropy-7746] Std. Output:
+Checking patch astropy/wcs/wcs.py...
+Applied patch astropy/wcs/wcs.py cleanly.
+ 
+[astropy__astropy__1.3] [astropy__astropy-7746] Return Code: 0 
+[astropy__astropy__1.3] [astropy__astropy-7746] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[astropy__astropy__1.3] [astropy__astropy-7746] Command: git apply -v -R /home/swe-bench/temp_astropy__astropy-7746_pred_try.patch 
+[astropy__astropy__1.3] [astropy__astropy-7746] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[astropy__astropy__1.3] [astropy__astropy-7746] Std. Output:
+Checking patch astropy/wcs/wcs.py...
+Applied patch astropy/wcs/wcs.py cleanly.
+ 
+[astropy__astropy__1.3] [astropy__astropy-7746] Return Code: 0 
+[astropy__astropy__1.3] [astropy__astropy-7746] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[astropy__astropy__1.3] [astropy__astropy-7746] Command: git apply -v /home/swe-bench/temp_astropy__astropy-7746_pred.patch 
+[astropy__astropy__1.3] [astropy__astropy-7746] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[astropy__astropy__1.3] [astropy__astropy-7746] Std. Output:
+Checking patch astropy/wcs/wcs.py...
+Applied patch astropy/wcs/wcs.py cleanly.
+ 
+[astropy__astropy__1.3] [astropy__astropy-7746] Return Code: 0 
+[astropy__astropy__1.3] [astropy__astropy-7746] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[astropy__astropy__1.3] [astropy__astropy-7746] Command: git restore astropy/wcs/tests/test_wcs.py 
+[astropy__astropy__1.3] [astropy__astropy-7746] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[astropy__astropy__1.3] [astropy__astropy-7746] Std. Output:
+ 
+[astropy__astropy__1.3] [astropy__astropy-7746] Return Code: 0 
+[astropy__astropy__1.3] [astropy__astropy-7746] Command: git apply -v /home/swe-bench/temp_astropy__astropy-7746_test.patch 
+[astropy__astropy__1.3] [astropy__astropy-7746] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[astropy__astropy__1.3] [astropy__astropy-7746] Std. Output:
+Checking patch astropy/wcs/tests/test_wcs.py...
+Applied patch astropy/wcs/tests/test_wcs.py cleanly.
+ 
+[astropy__astropy__1.3] [astropy__astropy-7746] Return Code: 0 
+[astropy__astropy__1.3] [astropy__astropy-7746] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n astropy__astropy__1.3 pytest --no-header -rA -p no:cacheprovider astropy/wcs/tests/test_wcs.py;
+[astropy__astropy__1.3] [astropy__astropy-7746] Command: conda run -n astropy__astropy__1.3 pytest --no-header -rA -p no:cacheprovider astropy/wcs/tests/test_wcs.py 
+[astropy__astropy__1.3] [astropy__astropy-7746] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[astropy__astropy__1.3] [astropy__astropy-7746] Std. Output:
+============================= test session starts ==============================
+collected 57 items
+
+astropy/wcs/tests/test_wcs.py .......................................... [ 73%]
+...............                                                          [100%]
+
+==================================== PASSES ====================================
+______________________________ test_all_world2pix ______________________________
+----------------------------- Captured stdout call -----------------------------
+
+Finished running 'test_all_world2pix'.
+Mean error = 3.702986e-07  (Max error = 1.515191e-06)
+Run time: 0:00:00.022234
+
+________________________________ test_printwcs _________________________________
+----------------------------- Captured stdout call -----------------------------
+WCS Keywords
+
+Number of WCS axes: 4
+CTYPE : 'FREQ'  'RA'  'DEC'  'STOKES'  
+CRVAL : 102118941400.0  83.81042  -5.375222  1.0  
+CRPIX : 32768.0  1.0  1.0  1.0  
+PC1_1 PC1_2 PC1_3 PC1_4  : 1.0  0.0  0.0  0.0  
+PC2_1 PC2_2 PC2_3 PC2_4  : 0.0  1.0  0.0  0.0  
+PC3_1 PC3_2 PC3_3 PC3_4  : 0.0  0.0  1.0  0.0  
+PC4_1 PC4_2 PC4_3 PC4_4  : 0.0  0.0  0.0  1.0  
+CDELT : -269537.297  1.0  1.0  1.0  
+NAXIS : 4096  0
+WCS Keywords
+
+Number of WCS axes: 3
+CTYPE : 'RA---TAN'  'DEC--TAN'  'AWAV'  
+CRVAL : 0.0  0.0  0.0  
+CRPIX : 0.0  0.0  0.0  
+CD1_1 CD1_2 CD1_3  : -4.12e-05  -3.72e-05  0.0  
+CD2_1 CD2_2 CD2_3  : -3.72e-05  4.12e-05  0.0  
+CD3_1 CD3_2 CD3_3  : 0.0  0.0  2.0000000000000003e-10  
+NAXIS : 0  0
+____________________________ test_inconsistent_sip _____________________________
+----------------------------- Captured stdout call -----------------------------
+INFO: 
+        Inconsistent SIP distortion information is present in the current WCS:
+        SIP coefficients were detected, but CTYPE is missing "-SIP" suffix,
+        therefore the current WCS is internally inconsistent.
+
+        Because relax has been set to True, the resulting output WCS will have
+        "-SIP" appended to CTYPE in order to make the header internally consistent.
+
+        However, this may produce incorrect astrometry in the output WCS, if
+        in fact the current WCS is already distortion-corrected.
+
+        Therefore, if current WCS is already distortion-corrected (eg, drizzled)
+        then SIP distortion components should not apply. In that case, for a WCS
+        that is already distortion-corrected, please remove the SIP coefficients
+        from the header.
+
+         [astropy.wcs.wcs]
+------------------------------ Captured log call -------------------------------
+INFO     astropy:wcs.py:2607 
+        Inconsistent SIP distortion information is present in the current WCS:
+        SIP coefficients were detected, but CTYPE is missing "-SIP" suffix,
+        therefore the current WCS is internally inconsistent.
+
+        Because relax has been set to True, the resulting output WCS will have
+        "-SIP" appended to CTYPE in order to make the header internally consistent.
+
+        However, this may produce incorrect astrometry in the output WCS, if
+        in fact the current WCS is already distortion-corrected.
+
+        Therefore, if current WCS is already distortion-corrected (eg, drizzled)
+        then SIP distortion components should not apply. In that case, for a WCS
+        that is already distortion-corrected, please remove the SIP coefficients
+        from the header.
+=========================== short test summary info ============================
+PASSED astropy/wcs/tests/test_wcs.py::TestMaps::test_consistency
+PASSED astropy/wcs/tests/test_wcs.py::TestMaps::test_maps
+PASSED astropy/wcs/tests/test_wcs.py::TestSpectra::test_consistency
+PASSED astropy/wcs/tests/test_wcs.py::TestSpectra::test_spectra
+PASSED astropy/wcs/tests/test_wcs.py::test_fixes
+PASSED astropy/wcs/tests/test_wcs.py::test_outside_sky
+PASSED astropy/wcs/tests/test_wcs.py::test_pix2world
+PASSED astropy/wcs/tests/test_wcs.py::test_load_fits_path
+PASSED astropy/wcs/tests/test_wcs.py::test_dict_init
+PASSED astropy/wcs/tests/test_wcs.py::test_extra_kwarg
+PASSED astropy/wcs/tests/test_wcs.py::test_3d_shapes
+PASSED astropy/wcs/tests/test_wcs.py::test_preserve_shape
+PASSED astropy/wcs/tests/test_wcs.py::test_broadcasting
+PASSED astropy/wcs/tests/test_wcs.py::test_shape_mismatch
+PASSED astropy/wcs/tests/test_wcs.py::test_invalid_shape
+PASSED astropy/wcs/tests/test_wcs.py::test_warning_about_defunct_keywords
+PASSED astropy/wcs/tests/test_wcs.py::test_warning_about_defunct_keywords_exception
+PASSED astropy/wcs/tests/test_wcs.py::test_to_header_string
+PASSED astropy/wcs/tests/test_wcs.py::test_to_fits
+PASSED astropy/wcs/tests/test_wcs.py::test_to_header_warning
+PASSED astropy/wcs/tests/test_wcs.py::test_no_comments_in_header
+PASSED astropy/wcs/tests/test_wcs.py::test_find_all_wcs_crash
+PASSED astropy/wcs/tests/test_wcs.py::test_validate
+PASSED astropy/wcs/tests/test_wcs.py::test_validate_with_2_wcses
+PASSED astropy/wcs/tests/test_wcs.py::test_crpix_maps_to_crval
+PASSED astropy/wcs/tests/test_wcs.py::test_all_world2pix
+PASSED astropy/wcs/tests/test_wcs.py::test_scamp_sip_distortion_parameters
+PASSED astropy/wcs/tests/test_wcs.py::test_fixes2
+PASSED astropy/wcs/tests/test_wcs.py::test_unit_normalization
+PASSED astropy/wcs/tests/test_wcs.py::test_footprint_to_file
+PASSED astropy/wcs/tests/test_wcs.py::test_validate_faulty_wcs
+PASSED astropy/wcs/tests/test_wcs.py::test_error_message
+PASSED astropy/wcs/tests/test_wcs.py::test_out_of_bounds
+PASSED astropy/wcs/tests/test_wcs.py::test_calc_footprint_1
+PASSED astropy/wcs/tests/test_wcs.py::test_calc_footprint_2
+PASSED astropy/wcs/tests/test_wcs.py::test_calc_footprint_3
+PASSED astropy/wcs/tests/test_wcs.py::test_sip
+PASSED astropy/wcs/tests/test_wcs.py::test_printwcs
+PASSED astropy/wcs/tests/test_wcs.py::test_invalid_spherical
+PASSED astropy/wcs/tests/test_wcs.py::test_no_iteration
+PASSED astropy/wcs/tests/test_wcs.py::test_sip_tpv_agreement
+PASSED astropy/wcs/tests/test_wcs.py::test_tpv_copy
+PASSED astropy/wcs/tests/test_wcs.py::test_hst_wcs
+PASSED astropy/wcs/tests/test_wcs.py::test_list_naxis
+PASSED astropy/wcs/tests/test_wcs.py::test_sip_broken
+PASSED astropy/wcs/tests/test_wcs.py::test_no_truncate_crval
+PASSED astropy/wcs/tests/test_wcs.py::test_no_truncate_crval_try2
+PASSED astropy/wcs/tests/test_wcs.py::test_no_truncate_crval_p17
+PASSED astropy/wcs/tests/test_wcs.py::test_no_truncate_using_compare
+PASSED astropy/wcs/tests/test_wcs.py::test_passing_ImageHDU
+PASSED astropy/wcs/tests/test_wcs.py::test_inconsistent_sip
+PASSED astropy/wcs/tests/test_wcs.py::test_bounds_check
+PASSED astropy/wcs/tests/test_wcs.py::test_naxis
+PASSED astropy/wcs/tests/test_wcs.py::test_sip_with_altkey
+PASSED astropy/wcs/tests/test_wcs.py::test_to_fits_1
+PASSED astropy/wcs/tests/test_wcs.py::test_keyedsip
+PASSED astropy/wcs/tests/test_wcs.py::test_zero_size_input
+============================== 57 passed in 0.77s ==============================
+
+ 
+[astropy__astropy__1.3] [astropy__astropy-7746] Return Code: 0 
+
+>>>>> All Tests Passed
+[astropy__astropy__1.3] [astropy__astropy-7746] Test script run successful 

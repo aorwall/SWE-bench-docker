@@ -1,0 +1,92 @@
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Task Metadata:
+	- Instance ID: scikit-learn__scikit-learn-13584
+	- Testbed: scikit-learn__scikit-learn__0.21
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Command: git status --porcelain 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Std. Output:
+ 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Return Code: 0 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Command: git -c advice.detachedHead=false checkout 0e3c1879b06d839171b7d0a607d71bbb19a966a9 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Std. Output:
+Previous HEAD position was 7813f7efb DOC fix link in what's new
+HEAD is now at 0e3c1879b TST Fixes to make test_pprint.py more resilient to change (#13529)
+ 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Return Code: 0 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-13584_pred_try.patch 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Std. Output:
+Checking patch sklearn/utils/_pprint.py...
+Applied patch sklearn/utils/_pprint.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Return Code: 0 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-13584_pred_try.patch 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Std. Output:
+Checking patch sklearn/utils/_pprint.py...
+Applied patch sklearn/utils/_pprint.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Return Code: 0 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-13584_pred.patch 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Std. Output:
+Checking patch sklearn/utils/_pprint.py...
+Applied patch sklearn/utils/_pprint.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Return Code: 0 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Command: git restore sklearn/utils/tests/test_pprint.py 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Std. Output:
+ 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Return Code: 0 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-13584_test.patch 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Std. Output:
+Checking patch sklearn/utils/tests/test_pprint.py...
+Applied patch sklearn/utils/tests/test_pprint.py cleanly.
+ 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Return Code: 0 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n scikit-learn__scikit-learn__0.21 pytest --no-header -rA -p no:cacheprovider sklearn/utils/tests/test_pprint.py;
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Command: conda run -n scikit-learn__scikit-learn__0.21 pytest --no-header -rA -p no:cacheprovider sklearn/utils/tests/test_pprint.py 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Std. Output:
+============================= test session starts ==============================
+collected 9 items
+
+sklearn/utils/tests/test_pprint.py .........                             [100%]
+
+==================================== PASSES ====================================
+__________________________ test_builtin_prettyprinter __________________________
+----------------------------- Captured stdout call -----------------------------
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=100,
+                   multi_class='warn', n_jobs=None, penalty='l2',
+                   random_state=None, solver='warn', tol=0.0001, verbose=0,
+                   warm_start=False)
+=========================== short test summary info ============================
+PASSED sklearn/utils/tests/test_pprint.py::test_basic
+PASSED sklearn/utils/tests/test_pprint.py::test_changed_only
+PASSED sklearn/utils/tests/test_pprint.py::test_pipeline
+PASSED sklearn/utils/tests/test_pprint.py::test_deeply_nested
+PASSED sklearn/utils/tests/test_pprint.py::test_gridsearch
+PASSED sklearn/utils/tests/test_pprint.py::test_gridsearch_pipeline
+PASSED sklearn/utils/tests/test_pprint.py::test_n_max_elements_to_show
+PASSED sklearn/utils/tests/test_pprint.py::test_length_constraint
+PASSED sklearn/utils/tests/test_pprint.py::test_builtin_prettyprinter
+============================== 9 passed in 1.05s ===============================
+
+ 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Return Code: 0 
+
+>>>>> All Tests Passed
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13584] Test script run successful 

@@ -1,0 +1,1739 @@
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Task Metadata:
+	- Instance ID: pydicom__pydicom-901
+	- Testbed: pydicom__pydicom__1.3
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git status --porcelain 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git -c advice.detachedHead=false checkout 3746878d8edf1cbda6fbcf35eec69f9ba79301ca 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+Previous HEAD position was 7241f5d9d Update DICOM dictionary to 2019e edition (#1015)
+HEAD is now at 3746878d8 Convert remaining unittests to pytest (#898)
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-901_pred_try.patch 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+Checking patch pydicom/config.py...
+Applied patch pydicom/config.py cleanly.
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git apply -v -R /home/swe-bench/temp_pydicom__pydicom-901_pred_try.patch 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+Checking patch pydicom/config.py...
+Applied patch pydicom/config.py cleanly.
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-901_pred.patch 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+Checking patch pydicom/config.py...
+Applied patch pydicom/config.py cleanly.
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-901_test.patch 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+Checking patch pydicom/tests/test_config.py...
+Applied patch pydicom/tests/test_config.py cleanly.
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n pydicom__pydicom__1.3 pytest --no-header -rA -p no:cacheprovider pydicom/tests/test_config.py;
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Command: conda run -n pydicom__pydicom__1.3 pytest --no-header -rA -p no:cacheprovider pydicom/tests/test_config.py 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Std. Output:
+============================= test session starts ==============================
+collected 5 items
+
+pydicom/tests/test_config.py .....                                       [100%]
+
+==================================== PASSES ====================================
+____________________________ TestDebug.test_default ____________________________
+------------------------------ Captured log call -------------------------------
+DEBUG    pydicom:filereader.py:823 Reading file '/home/swe-bench/pydicom__pydicom/pydicom/data/test_files/CT_small.dcm'
+DEBUG    pydicom:filereader.py:588 Reading File Meta Information preamble...
+DEBUG    pydicom:filereader.py:594 Reading File Meta Information prefix...
+DEBUG    pydicom:filereader.py:609 00000080: 'DICM' prefix found
+_____________________ TestDebug.test_debug_on_handler_null _____________________
+------------------------------ Captured log call -------------------------------
+DEBUG    pydicom:filereader.py:823 Reading file '/home/swe-bench/pydicom__pydicom/pydicom/data/test_files/CT_small.dcm'
+DEBUG    pydicom:filereader.py:829 
+--------------------------------------------------------------------------------
+DEBUG    pydicom:filereader.py:830 Call to dcmread()
+DEBUG    pydicom:filereader.py:834 filename:'/home/swe-bench/pydicom__pydicom/pydicom/data/test_files/CT_small.dcm', defer_size='None', stop_before_pixels=False, force=False, specific_tags=None
+DEBUG    pydicom:filereader.py:838 Caller passed file name
+DEBUG    pydicom:filereader.py:839 --------------------------------------------------------------------------------
+DEBUG    pydicom:filereader.py:588 Reading File Meta Information preamble...
+DEBUG    pydicom:filereader.py:592 00000000: 49 49 2a 00 54 18 08 00...00 00 00 00 00 00 00 00
+DEBUG    pydicom:filereader.py:594 Reading File Meta Information prefix...
+DEBUG    pydicom:filereader.py:609 00000080: 'DICM' prefix found
+DEBUG    pydicom:filereader.py:153 00000084: 02 00 00 00 55 4c 04 00                (0002, 0000) UL Length: 4
+DEBUG    pydicom:filereader.py:197 0000008c: c0 00 00 00                            b'\xc0\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000090: 02 00 01 00 4f 42 00 00 02 00 00 00    (0002, 0001) OB Length: 2
+DEBUG    pydicom:filereader.py:197 0000009c: 00 01                                  b'\x00\x01'    
+DEBUG    pydicom:filereader.py:153 0000009e: 02 00 02 00 55 49 1a 00                (0002, 0002) UI Length: 26
+DEBUG    pydicom:filereader.py:197 000000a6: 31 2e 32 2e 38 34 30 2e 31 30 30 30 ... b'1.2.840.1000' ...
+DEBUG    pydicom:filereader.py:153 000000c0: 02 00 03 00 55 49 30 00                (0002, 0003) UI Length: 48
+DEBUG    pydicom:filereader.py:197 000000c8: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 000000f8: 02 00 10 00 55 49 14 00                (0002, 0010) UI Length: 20
+DEBUG    pydicom:filereader.py:197 00000100: 31 2e 32 2e 38 34 30 2e 31 30 30 30 ... b'1.2.840.1000' ...
+DEBUG    pydicom:filereader.py:153 00000114: 02 00 12 00 55 49 12 00                (0002, 0012) UI Length: 18
+DEBUG    pydicom:filereader.py:197 0000011c: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 0000012e: 02 00 13 00 53 48 0a 00                (0002, 0013) SH Length: 10
+DEBUG    pydicom:filereader.py:197 00000136: 44 43 54 4f 4f 4c 31 30 30 20          b'DCTOOL100 '    
+DEBUG    pydicom:filereader.py:153 00000140: 02 00 16 00 41 45 08 00                (0002, 0016) AE Length: 8
+DEBUG    pydicom:filereader.py:197 00000148: 43 4c 55 4e 49 45 31 20                b'CLUNIE1 '    
+DEBUG    pydicom:filereader.py:153 00000150: 08 00 05 00 43 53 0a 00                (0008, 0005) CS Length: 10
+DEBUG    pydicom:filereader.py:162 Reading ended by stop_when callback. Rewinding to start of data element.
+DEBUG    pydicom:filereader.py:153 00000150: 08 00 05 00 43 53 0a 00                (0008, 0005) CS Length: 10
+DEBUG    pydicom:filereader.py:162 Reading ended by stop_when callback. Rewinding to start of data element.
+DEBUG    pydicom:filereader.py:153 00000150: 08 00 05 00 43 53 0a 00                (0008, 0005) CS Length: 10
+DEBUG    pydicom:filereader.py:197 00000158: 49 53 4f 5f 49 52 20 31 30 30          b'ISO_IR 100'    
+DEBUG    pydicom:filereader.py:153 00000162: 08 00 08 00 43 53 16 00                (0008, 0008) CS Length: 22
+DEBUG    pydicom:filereader.py:197 0000016a: 4f 52 49 47 49 4e 41 4c 5c 50 52 49 ... b'ORIGINAL\\PRI' ...
+DEBUG    pydicom:filereader.py:153 00000180: 08 00 12 00 44 41 08 00                (0008, 0012) DA Length: 8
+DEBUG    pydicom:filereader.py:197 00000188: 32 30 30 34 30 31 31 39                b'20040119'    
+DEBUG    pydicom:filereader.py:153 00000190: 08 00 13 00 54 4d 06 00                (0008, 0013) TM Length: 6
+DEBUG    pydicom:filereader.py:197 00000198: 30 37 32 37 33 31                      b'072731'    
+DEBUG    pydicom:filereader.py:153 0000019e: 08 00 14 00 55 49 12 00                (0008, 0014) UI Length: 18
+DEBUG    pydicom:filereader.py:197 000001a6: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 000001b8: 08 00 16 00 55 49 1a 00                (0008, 0016) UI Length: 26
+DEBUG    pydicom:filereader.py:197 000001c0: 31 2e 32 2e 38 34 30 2e 31 30 30 30 ... b'1.2.840.1000' ...
+DEBUG    pydicom:filereader.py:153 000001da: 08 00 18 00 55 49 30 00                (0008, 0018) UI Length: 48
+DEBUG    pydicom:filereader.py:197 000001e2: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 00000212: 08 00 20 00 44 41 08 00                (0008, 0020) DA Length: 8
+DEBUG    pydicom:filereader.py:197 0000021a: 32 30 30 34 30 31 31 39                b'20040119'    
+DEBUG    pydicom:filereader.py:153 00000222: 08 00 21 00 44 41 08 00                (0008, 0021) DA Length: 8
+DEBUG    pydicom:filereader.py:197 0000022a: 31 39 39 37 30 34 33 30                b'19970430'    
+DEBUG    pydicom:filereader.py:153 00000232: 08 00 22 00 44 41 08 00                (0008, 0022) DA Length: 8
+DEBUG    pydicom:filereader.py:197 0000023a: 31 39 39 37 30 34 33 30                b'19970430'    
+DEBUG    pydicom:filereader.py:153 00000242: 08 00 23 00 44 41 08 00                (0008, 0023) DA Length: 8
+DEBUG    pydicom:filereader.py:197 0000024a: 31 39 39 37 30 34 33 30                b'19970430'    
+DEBUG    pydicom:filereader.py:153 00000252: 08 00 30 00 54 4d 06 00                (0008, 0030) TM Length: 6
+DEBUG    pydicom:filereader.py:197 0000025a: 30 37 32 37 33 30                      b'072730'    
+DEBUG    pydicom:filereader.py:153 00000260: 08 00 31 00 54 4d 06 00                (0008, 0031) TM Length: 6
+DEBUG    pydicom:filereader.py:197 00000268: 31 31 32 37 34 39                      b'112749'    
+DEBUG    pydicom:filereader.py:153 0000026e: 08 00 32 00 54 4d 06 00                (0008, 0032) TM Length: 6
+DEBUG    pydicom:filereader.py:197 00000276: 31 31 32 39 33 36                      b'112936'    
+DEBUG    pydicom:filereader.py:153 0000027c: 08 00 33 00 54 4d 06 00                (0008, 0033) TM Length: 6
+DEBUG    pydicom:filereader.py:197 00000284: 31 31 33 30 30 38                      b'113008'    
+DEBUG    pydicom:filereader.py:153 0000028a: 08 00 50 00 53 48 00 00                (0008, 0050) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000292:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000292: 08 00 60 00 43 53 02 00                (0008, 0060) CS Length: 2
+DEBUG    pydicom:filereader.py:197 0000029a: 43 54                                  b'CT'    
+DEBUG    pydicom:filereader.py:153 0000029c: 08 00 70 00 4c 4f 12 00                (0008, 0070) LO Length: 18
+DEBUG    pydicom:filereader.py:197 000002a4: 47 45 20 4d 45 44 49 43 41 4c 20 53 ... b'GE MEDICAL S' ...
+DEBUG    pydicom:filereader.py:153 000002b6: 08 00 80 00 4c 4f 12 00                (0008, 0080) LO Length: 18
+DEBUG    pydicom:filereader.py:197 000002be: 4a 46 4b 20 49 4d 41 47 49 4e 47 20 ... b'JFK IMAGING ' ...
+DEBUG    pydicom:filereader.py:153 000002d0: 08 00 90 00 50 4e 00 00                (0008, 0090) PN Length: 0
+DEBUG    pydicom:filereader.py:197 000002d8:                                        b''    
+DEBUG    pydicom:filereader.py:153 000002d8: 08 00 01 02 53 48 06 00                (0008, 0201) SH Length: 6
+DEBUG    pydicom:filereader.py:197 000002e0: 2d 30 35 30 30 20                      b'-0500 '    
+DEBUG    pydicom:filereader.py:153 000002e6: 08 00 10 10 53 48 08 00                (0008, 1010) SH Length: 8
+DEBUG    pydicom:filereader.py:197 000002ee: 43 54 30 31 5f 4f 43 30                b'CT01_OC0'    
+DEBUG    pydicom:filereader.py:153 000002f6: 08 00 30 10 4c 4f 04 00                (0008, 1030) LO Length: 4
+DEBUG    pydicom:filereader.py:197 000002fe: 65 2b 31 20                            b'e+1 '    
+DEBUG    pydicom:filereader.py:153 00000302: 08 00 90 10 4c 4f 08 00                (0008, 1090) LO Length: 8
+DEBUG    pydicom:filereader.py:197 0000030a: 52 48 41 50 53 4f 44 45                b'RHAPSODE'    
+DEBUG    pydicom:filereader.py:153 00000312: 09 00 10 00 4c 4f 0c 00                (0009, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 0000031a: 47 45 4d 53 5f 49 44 45 4e 5f 30 31     b'GEMS_IDEN_01'    
+DEBUG    pydicom:filereader.py:153 00000326: 09 00 01 10 4c 4f 0e 00                (0009, 1001) LO Length: 14
+DEBUG    pydicom:filereader.py:197 0000032e: 47 45 5f 47 45 4e 45 53 49 53 5f 46 ... b'GE_GENESIS_F' ...
+DEBUG    pydicom:filereader.py:153 0000033c: 09 00 02 10 53 48 04 00                (0009, 1002) SH Length: 4
+DEBUG    pydicom:filereader.py:197 00000344: 43 54 30 31                            b'CT01'    
+DEBUG    pydicom:filereader.py:153 00000348: 09 00 04 10 53 48 0c 00                (0009, 1004) SH Length: 12
+DEBUG    pydicom:filereader.py:197 00000350: 48 69 53 70 65 65 64 20 43 54 2f 69     b'HiSpeed CT/i'    
+DEBUG    pydicom:filereader.py:153 0000035c: 09 00 27 10 53 4c 04 00                (0009, 1027) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000364: b5 2c 67 33                            b'\xb5,g3'    
+DEBUG    pydicom:filereader.py:153 00000368: 09 00 30 10 53 48 00 00                (0009, 1030) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000370:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000370: 09 00 31 10 53 48 00 00                (0009, 1031) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000378:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000378: 09 00 e6 10 53 48 02 00                (0009, 10e6) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000380: 30 35                                  b'05'    
+DEBUG    pydicom:filereader.py:153 00000382: 09 00 e7 10 55 4c 04 00                (0009, 10e7) UL Length: 4
+DEBUG    pydicom:filereader.py:197 0000038a: 4d 22 03 3a                            b'M"\x03:'    
+DEBUG    pydicom:filereader.py:153 0000038e: 09 00 e9 10 53 4c 04 00                (0009, 10e9) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000396: b5 2c 67 33                            b'\xb5,g3'    
+DEBUG    pydicom:filereader.py:153 0000039a: 10 00 10 00 50 4e 16 00                (0010, 0010) PN Length: 22
+DEBUG    pydicom:filereader.py:197 000003a2: 43 6f 6d 70 72 65 73 73 65 64 53 61 ... b'CompressedSa' ...
+DEBUG    pydicom:filereader.py:153 000003b8: 10 00 20 00 4c 4f 04 00                (0010, 0020) LO Length: 4
+DEBUG    pydicom:filereader.py:197 000003c0: 31 43 54 31                            b'1CT1'    
+DEBUG    pydicom:filereader.py:153 000003c4: 10 00 30 00 44 41 00 00                (0010, 0030) DA Length: 0
+DEBUG    pydicom:filereader.py:197 000003cc:                                        b''    
+DEBUG    pydicom:filereader.py:153 000003cc: 10 00 40 00 43 53 02 00                (0010, 0040) CS Length: 2
+DEBUG    pydicom:filereader.py:197 000003d4: 4f 20                                  b'O '    
+DEBUG    pydicom:filereader.py:153 000003d6: 10 00 10 10 41 53 04 00                (0010, 1010) AS Length: 4
+DEBUG    pydicom:filereader.py:197 000003de: 30 30 30 59                            b'000Y'    
+DEBUG    pydicom:filereader.py:153 000003e2: 10 00 30 10 44 53 08 00                (0010, 1030) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000003ea: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000003f2: 10 00 b0 21 4c 54 00 00                (0010, 21b0) LT Length: 0
+DEBUG    pydicom:filereader.py:197 000003fa:                                        b''    
+DEBUG    pydicom:filereader.py:153 000003fa: 11 00 10 00 4c 4f 0c 00                (0011, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000402: 47 45 4d 53 5f 50 41 54 49 5f 30 31     b'GEMS_PATI_01'    
+DEBUG    pydicom:filereader.py:153 0000040e: 11 00 10 10 53 53 02 00                (0011, 1010) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000416: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000418: 18 00 10 00 4c 4f 0e 00                (0018, 0010) LO Length: 14
+DEBUG    pydicom:filereader.py:197 00000420: 49 53 4f 56 55 45 33 30 30 2f 31 30 ... b'ISOVUE300/10' ...
+DEBUG    pydicom:filereader.py:153 0000042e: 18 00 22 00 43 53 0c 00                (0018, 0022) CS Length: 12
+DEBUG    pydicom:filereader.py:197 00000436: 48 45 4c 49 43 41 4c 20 4d 4f 44 45     b'HELICAL MODE'    
+DEBUG    pydicom:filereader.py:153 00000442: 18 00 50 00 44 53 08 00                (0018, 0050) DS Length: 8
+DEBUG    pydicom:filereader.py:197 0000044a: 35 2e 30 30 30 30 30 30                b'5.000000'    
+DEBUG    pydicom:filereader.py:153 00000452: 18 00 60 00 44 53 04 00                (0018, 0060) DS Length: 4
+DEBUG    pydicom:filereader.py:197 0000045a: 31 32 30 20                            b'120 '    
+DEBUG    pydicom:filereader.py:153 0000045e: 18 00 88 00 44 53 08 00                (0018, 0088) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000466: 35 2e 30 30 30 30 30 30                b'5.000000'    
+DEBUG    pydicom:filereader.py:153 0000046e: 18 00 90 00 44 53 0a 00                (0018, 0090) DS Length: 10
+DEBUG    pydicom:filereader.py:197 00000476: 34 38 30 2e 30 30 30 30 30 30          b'480.000000'    
+DEBUG    pydicom:filereader.py:153 00000480: 18 00 20 10 4c 4f 02 00                (0018, 1020) LO Length: 2
+DEBUG    pydicom:filereader.py:197 00000488: 30 35                                  b'05'    
+DEBUG    pydicom:filereader.py:153 0000048a: 18 00 40 10 4c 4f 02 00                (0018, 1040) LO Length: 2
+DEBUG    pydicom:filereader.py:197 00000492: 49 56                                  b'IV'    
+DEBUG    pydicom:filereader.py:153 00000494: 18 00 00 11 44 53 0a 00                (0018, 1100) DS Length: 10
+DEBUG    pydicom:filereader.py:197 0000049c: 33 33 38 2e 36 37 31 36 30 30          b'338.671600'    
+DEBUG    pydicom:filereader.py:153 000004a6: 18 00 10 11 44 53 10 00                (0018, 1110) DS Length: 16
+DEBUG    pydicom:filereader.py:197 000004ae: 31 30 39 39 2e 33 31 30 30 35 38 35 ... b'1099.3100585' ...
+DEBUG    pydicom:filereader.py:153 000004be: 18 00 11 11 44 53 0a 00                (0018, 1111) DS Length: 10
+DEBUG    pydicom:filereader.py:197 000004c6: 36 33 30 2e 30 30 30 30 30 30          b'630.000000'    
+DEBUG    pydicom:filereader.py:153 000004d0: 18 00 20 11 44 53 08 00                (0018, 1120) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000004d8: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000004e0: 18 00 30 11 44 53 0a 00                (0018, 1130) DS Length: 10
+DEBUG    pydicom:filereader.py:197 000004e8: 31 33 33 2e 36 39 39 39 39 37          b'133.699997'    
+DEBUG    pydicom:filereader.py:153 000004f2: 18 00 50 11 49 53 04 00                (0018, 1150) IS Length: 4
+DEBUG    pydicom:filereader.py:197 000004fa: 31 36 30 31                            b'1601'    
+DEBUG    pydicom:filereader.py:153 000004fe: 18 00 51 11 49 53 04 00                (0018, 1151) IS Length: 4
+DEBUG    pydicom:filereader.py:197 00000506: 31 37 30 20                            b'170 '    
+DEBUG    pydicom:filereader.py:153 0000050a: 18 00 52 11 49 53 04 00                (0018, 1152) IS Length: 4
+DEBUG    pydicom:filereader.py:197 00000512: 31 37 30 20                            b'170 '    
+DEBUG    pydicom:filereader.py:153 00000516: 18 00 60 11 53 48 10 00                (0018, 1160) SH Length: 16
+DEBUG    pydicom:filereader.py:197 0000051e: 4c 41 52 47 45 20 42 4f 57 54 49 45 ... b'LARGE BOWTIE' ...
+DEBUG    pydicom:filereader.py:153 0000052e: 18 00 90 11 44 53 08 00                (0018, 1190) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000536: 30 2e 37 30 30 30 30 30                b'0.700000'    
+DEBUG    pydicom:filereader.py:153 0000053e: 18 00 10 12 53 48 08 00                (0018, 1210) SH Length: 8
+DEBUG    pydicom:filereader.py:197 00000546: 53 54 41 4e 44 41 52 44                b'STANDARD'    
+DEBUG    pydicom:filereader.py:153 0000054e: 18 00 00 51 43 53 04 00                (0018, 5100) CS Length: 4
+DEBUG    pydicom:filereader.py:197 00000556: 46 46 53 20                            b'FFS '    
+DEBUG    pydicom:filereader.py:153 0000055a: 19 00 10 00 4c 4f 0c 00                (0019, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000562: 47 45 4d 53 5f 41 43 51 55 5f 30 31     b'GEMS_ACQU_01'    
+DEBUG    pydicom:filereader.py:153 0000056e: 19 00 02 10 53 4c 04 00                (0019, 1002) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000576: 90 03 00 00                            b'\x90\x03\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000057a: 19 00 03 10 44 53 0a 00                (0019, 1003) DS Length: 10
+DEBUG    pydicom:filereader.py:197 00000582: 33 37 33 2e 37 35 30 30 30 30          b'373.750000'    
+DEBUG    pydicom:filereader.py:153 0000058c: 19 00 04 10 44 53 08 00                (0019, 1004) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000594: 31 2e 30 31 36 36 30 30                b'1.016600'    
+DEBUG    pydicom:filereader.py:153 0000059c: 19 00 0f 10 44 53 0a 00                (0019, 100f) DS Length: 10
+DEBUG    pydicom:filereader.py:197 000005a4: 39 35 35 2e 37 39 39 39 38 38          b'955.799988'    
+DEBUG    pydicom:filereader.py:153 000005ae: 19 00 11 10 53 53 02 00                (0019, 1011) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005b6: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 000005b8: 19 00 13 10 53 53 02 00                (0019, 1013) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005c0: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000005c2: 19 00 14 10 53 53 02 00                (0019, 1014) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005ca: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000005cc: 19 00 15 10 53 53 02 00                (0019, 1015) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005d4: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000005d6: 19 00 16 10 53 53 02 00                (0019, 1016) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005de: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000005e0: 19 00 17 10 53 53 02 00                (0019, 1017) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005e8: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 000005ea: 19 00 18 10 4c 4f 02 00                (0019, 1018) LO Length: 2
+DEBUG    pydicom:filereader.py:197 000005f2: 53 20                                  b'S '    
+DEBUG    pydicom:filereader.py:153 000005f4: 19 00 19 10 44 53 08 00                (0019, 1019) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000005fc: 37 2e 37 39 31 38 37 30                b'7.791870'    
+DEBUG    pydicom:filereader.py:153 00000604: 19 00 1a 10 4c 4f 02 00                (0019, 101a) LO Length: 2
+DEBUG    pydicom:filereader.py:197 0000060c: 49 20                                  b'I '    
+DEBUG    pydicom:filereader.py:153 0000060e: 19 00 1b 10 44 53 0c 00                (0019, 101b) DS Length: 12
+DEBUG    pydicom:filereader.py:197 00000616: 2d 33 32 30 2e 31 39 37 39 36 38 20     b'-320.197968 '    
+DEBUG    pydicom:filereader.py:153 00000622: 19 00 1e 10 44 53 08 00                (0019, 101e) DS Length: 8
+DEBUG    pydicom:filereader.py:197 0000062a: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000632: 19 00 23 10 44 53 08 00                (0019, 1023) DS Length: 8
+DEBUG    pydicom:filereader.py:197 0000063a: 35 2e 30 30 30 30 30 30                b'5.000000'    
+DEBUG    pydicom:filereader.py:153 00000642: 19 00 24 10 44 53 0a 00                (0019, 1024) DS Length: 10
+DEBUG    pydicom:filereader.py:197 0000064a: 31 37 2e 37 38 34 35 37 38 20          b'17.784578 '    
+DEBUG    pydicom:filereader.py:153 00000654: 19 00 25 10 53 53 02 00                (0019, 1025) SS Length: 2
+DEBUG    pydicom:filereader.py:197 0000065c: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 0000065e: 19 00 26 10 53 4c 04 00                (0019, 1026) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000666: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000066a: 19 00 27 10 44 53 08 00                (0019, 1027) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000672: 31 2e 30 30 30 30 30 30                b'1.000000'    
+DEBUG    pydicom:filereader.py:153 0000067a: 19 00 2a 10 44 53 0a 00                (0019, 102a) DS Length: 10
+DEBUG    pydicom:filereader.py:197 00000682: 31 37 38 2e 30 37 39 39 32 36          b'178.079926'    
+DEBUG    pydicom:filereader.py:153 0000068c: 19 00 2b 10 44 53 0c 00                (0019, 102b) DS Length: 12
+DEBUG    pydicom:filereader.py:197 00000694: 33 39 39 34 2e 32 39 39 33 31 36 20     b'3994.299316 '    
+DEBUG    pydicom:filereader.py:153 000006a0: 19 00 2c 10 53 4c 04 00                (0019, 102c) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000006a8: bf 28 00 00                            b'\xbf(\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000006ac: 19 00 2e 10 44 53 0c 00                (0019, 102e) DS Length: 12
+DEBUG    pydicom:filereader.py:197 000006b4: 2d 37 31 38 2e 30 37 39 39 35 36 20     b'-718.079956 '    
+DEBUG    pydicom:filereader.py:153 000006c0: 19 00 2f 10 44 53 0a 00                (0019, 102f) DS Length: 10
+DEBUG    pydicom:filereader.py:197 000006c8: 39 38 34 2e 30 30 30 30 30 30          b'984.000000'    
+DEBUG    pydicom:filereader.py:153 000006d2: 19 00 39 10 53 53 02 00                (0019, 1039) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000006da: 10 00                                  b'\x10\x00'    
+DEBUG    pydicom:filereader.py:153 000006dc: 19 00 40 10 53 53 02 00                (0019, 1040) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000006e4: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000006e6: 19 00 41 10 53 53 02 00                (0019, 1041) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000006ee: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 000006f0: 19 00 42 10 53 53 02 00                (0019, 1042) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000006f8: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000006fa: 19 00 43 10 53 53 02 00                (0019, 1043) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000702: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000704: 19 00 44 10 44 53 08 00                (0019, 1044) DS Length: 8
+DEBUG    pydicom:filereader.py:197 0000070c: 31 2e 30 30 30 30 30 30                b'1.000000'    
+DEBUG    pydicom:filereader.py:153 00000714: 19 00 47 10 53 53 02 00                (0019, 1047) SS Length: 2
+DEBUG    pydicom:filereader.py:197 0000071c: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 0000071e: 19 00 4a 10 53 53 02 00                (0019, 104a) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000726: 06 00                                  b'\x06\x00'    
+DEBUG    pydicom:filereader.py:153 00000728: 19 00 4b 10 53 4c 04 00                (0019, 104b) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000730: bf 28 00 00                            b'\xbf(\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000734: 19 00 52 10 53 53 02 00                (0019, 1052) SS Length: 2
+DEBUG    pydicom:filereader.py:197 0000073c: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 0000073e: 19 00 57 10 53 53 02 00                (0019, 1057) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000746: a1 ff                                  b'\xa1\xff'    
+DEBUG    pydicom:filereader.py:153 00000748: 19 00 58 10 53 53 02 00                (0019, 1058) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000750: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000752: 19 00 5e 10 53 4c 04 00                (0019, 105e) SL Length: 4
+DEBUG    pydicom:filereader.py:197 0000075a: fb 02 00 00                            b'\xfb\x02\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000075e: 19 00 5f 10 53 4c 04 00                (0019, 105f) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000766: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000076a: 19 00 60 10 53 4c 04 00                (0019, 1060) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000772: b1 07 00 00                            b'\xb1\x07\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000776: 19 00 61 10 53 4c 04 00                (0019, 1061) SL Length: 4
+DEBUG    pydicom:filereader.py:197 0000077e: 28 06 00 00                            b'(\x06\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000782: 19 00 62 10 53 4c 04 00                (0019, 1062) SL Length: 4
+DEBUG    pydicom:filereader.py:197 0000078a: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000078e: 19 00 6a 10 53 53 02 00                (0019, 106a) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000796: 04 00                                  b'\x04\x00'    
+DEBUG    pydicom:filereader.py:153 00000798: 19 00 6b 10 53 53 02 00                (0019, 106b) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000007a0: 54 03                                  b'T\x03'    
+DEBUG    pydicom:filereader.py:153 000007a2: 19 00 70 10 53 53 02 00                (0019, 1070) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000007aa: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 000007ac: 19 00 71 10 53 53 02 00                (0019, 1071) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000007b4: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000007b6: 19 00 72 10 44 53 08 00                (0019, 1072) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000007be: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000007c6: 19 00 73 10 44 53 08 00                (0019, 1073) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000007ce: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000007d6: 19 00 74 10 44 53 08 00                (0019, 1074) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000007de: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000007e6: 19 00 75 10 44 53 08 00                (0019, 1075) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000007ee: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000007f6: 19 00 76 10 44 53 08 00                (0019, 1076) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000007fe: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000806: 19 00 da 10 53 53 02 00                (0019, 10da) SS Length: 2
+DEBUG    pydicom:filereader.py:197 0000080e: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000810: 19 00 db 10 44 53 08 00                (0019, 10db) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000818: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000820: 19 00 dc 10 53 53 02 00                (0019, 10dc) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000828: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 0000082a: 19 00 dd 10 53 53 02 00                (0019, 10dd) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000832: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 00000834: 19 00 de 10 44 53 08 00                (0019, 10de) DS Length: 8
+DEBUG    pydicom:filereader.py:197 0000083c: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000844: 20 00 0d 00 55 49 2c 00                (0020, 000d) UI Length: 44
+DEBUG    pydicom:filereader.py:197 0000084c: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 00000878: 20 00 0e 00 55 49 2e 00                (0020, 000e) UI Length: 46
+DEBUG    pydicom:filereader.py:197 00000880: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 000008ae: 20 00 10 00 53 48 04 00                (0020, 0010) SH Length: 4
+DEBUG    pydicom:filereader.py:197 000008b6: 31 43 54 31                            b'1CT1'    
+DEBUG    pydicom:filereader.py:153 000008ba: 20 00 11 00 49 53 02 00                (0020, 0011) IS Length: 2
+DEBUG    pydicom:filereader.py:197 000008c2: 31 20                                  b'1 '    
+DEBUG    pydicom:filereader.py:153 000008c4: 20 00 12 00 49 53 02 00                (0020, 0012) IS Length: 2
+DEBUG    pydicom:filereader.py:197 000008cc: 32 20                                  b'2 '    
+DEBUG    pydicom:filereader.py:153 000008ce: 20 00 13 00 49 53 02 00                (0020, 0013) IS Length: 2
+DEBUG    pydicom:filereader.py:197 000008d6: 31 20                                  b'1 '    
+DEBUG    pydicom:filereader.py:153 000008d8: 20 00 32 00 44 53 22 00                (0020, 0032) DS Length: 34
+DEBUG    pydicom:filereader.py:197 000008e0: 2d 31 35 38 2e 31 33 35 38 30 33 5c ... b'-158.135803\\' ...
+DEBUG    pydicom:filereader.py:153 00000902: 20 00 37 00 44 53 36 00                (0020, 0037) DS Length: 54
+DEBUG    pydicom:filereader.py:197 0000090a: 31 2e 30 30 30 30 30 30 5c 30 2e 30 ... b'1.000000\\0.0' ...
+DEBUG    pydicom:filereader.py:153 00000940: 20 00 52 00 55 49 2e 00                (0020, 0052) UI Length: 46
+DEBUG    pydicom:filereader.py:197 00000948: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 00000976: 20 00 60 00 43 53 00 00                (0020, 0060) CS Length: 0
+DEBUG    pydicom:filereader.py:197 0000097e:                                        b''    
+DEBUG    pydicom:filereader.py:153 0000097e: 20 00 40 10 4c 4f 02 00                (0020, 1040) LO Length: 2
+DEBUG    pydicom:filereader.py:197 00000986: 53 4e                                  b'SN'    
+DEBUG    pydicom:filereader.py:153 00000988: 20 00 41 10 44 53 0e 00                (0020, 1041) DS Length: 14
+DEBUG    pydicom:filereader.py:197 00000990: 2d 37 37 2e 32 30 34 30 36 33 34 31 ... b'-77.20406341' ...
+DEBUG    pydicom:filereader.py:153 0000099e: 20 00 00 40 4c 54 0c 00                (0020, 4000) LT Length: 12
+DEBUG    pydicom:filereader.py:197 000009a6: 55 6e 63 6f 6d 70 72 65 73 73 65 64     b'Uncompressed'    
+DEBUG    pydicom:filereader.py:153 000009b2: 21 00 10 00 4c 4f 0c 00                (0021, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 000009ba: 47 45 4d 53 5f 52 45 4c 41 5f 30 31     b'GEMS_RELA_01'    
+DEBUG    pydicom:filereader.py:153 000009c6: 21 00 03 10 53 53 02 00                (0021, 1003) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000009ce: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 000009d0: 21 00 05 10 53 48 02 00                (0021, 1005) SH Length: 2
+DEBUG    pydicom:filereader.py:197 000009d8: 30 35                                  b'05'    
+DEBUG    pydicom:filereader.py:153 000009da: 21 00 07 10 55 4c 04 00                (0021, 1007) UL Length: 4
+DEBUG    pydicom:filereader.py:197 000009e2: 29 2f b6 5f                            b')/\xb6_'    
+DEBUG    pydicom:filereader.py:153 000009e6: 21 00 15 10 55 53 02 00                (0021, 1015) US Length: 2
+DEBUG    pydicom:filereader.py:197 000009ee: 0e 5e                                  b'\x0e^'    
+DEBUG    pydicom:filereader.py:153 000009f0: 21 00 16 10 53 53 02 00                (0021, 1016) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000009f8: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 000009fa: 21 00 18 10 53 48 02 00                (0021, 1018) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000a02: 30 35                                  b'05'    
+DEBUG    pydicom:filereader.py:153 00000a04: 21 00 19 10 55 4c 04 00                (0021, 1019) UL Length: 4
+DEBUG    pydicom:filereader.py:197 00000a0c: 32 66 be 2c                            b'2f\xbe,'    
+DEBUG    pydicom:filereader.py:153 00000a10: 21 00 37 10 53 53 02 00                (0021, 1037) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000a18: 10 00                                  b'\x10\x00'    
+DEBUG    pydicom:filereader.py:153 00000a1a: 21 00 4a 10 4c 4f 00 00                (0021, 104a) LO Length: 0
+DEBUG    pydicom:filereader.py:197 00000a22:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000a22: 21 00 90 10 53 53 02 00                (0021, 1090) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000a2a: e8 1c                                  b'\xe8\x1c'    
+DEBUG    pydicom:filereader.py:153 00000a2c: 21 00 91 10 53 53 02 00                (0021, 1091) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000a34: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000a36: 21 00 92 10 46 4c 04 00                (0021, 1092) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000a3e: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000a42: 21 00 93 10 46 4c 04 00                (0021, 1093) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000a4a: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000a4e: 23 00 10 00 4c 4f 0c 00                (0023, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000a56: 47 45 4d 53 5f 53 54 44 59 5f 30 31     b'GEMS_STDY_01'    
+DEBUG    pydicom:filereader.py:153 00000a62: 23 00 70 10 46 44 08 00                (0023, 1070) FD Length: 8
+DEBUG    pydicom:filereader.py:197 00000a6a: d6 37 8e 88 96 b3 c9 41                b'\xd67\x8e\x88\x96\xb3\xc9A'    
+DEBUG    pydicom:filereader.py:153 00000a72: 23 00 74 10 53 4c 04 00                (0023, 1074) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000a7a: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000a7e: 23 00 7d 10 53 53 02 00                (0023, 107d) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000a86: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000a88: 25 00 10 00 4c 4f 0c 00                (0025, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000a90: 47 45 4d 53 5f 53 45 52 53 5f 30 31     b'GEMS_SERS_01'    
+DEBUG    pydicom:filereader.py:153 00000a9c: 25 00 06 10 53 53 02 00                (0025, 1006) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000aa4: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000aa6: 25 00 07 10 53 4c 04 00                (0025, 1007) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000aae: 2c 00 00 00                            b',\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000ab2: 25 00 10 10 53 4c 04 00                (0025, 1010) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000aba: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000abe: 25 00 11 10 53 53 02 00                (0025, 1011) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000ac6: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000ac8: 25 00 17 10 53 4c 04 00                (0025, 1017) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000ad0: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000ad4: 25 00 18 10 53 4c 04 00                (0025, 1018) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000adc: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000ae0: 25 00 19 10 53 4c 04 00                (0025, 1019) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000ae8: 04 00 00 00                            b'\x04\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000aec: 25 00 1a 10 53 48 00 00                (0025, 101a) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000af4:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000af4: 27 00 10 00 4c 4f 0c 00                (0027, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000afc: 47 45 4d 53 5f 49 4d 41 47 5f 30 31     b'GEMS_IMAG_01'    
+DEBUG    pydicom:filereader.py:153 00000b08: 27 00 06 10 53 4c 04 00                (0027, 1006) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b10: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000b14: 27 00 10 10 53 53 02 00                (0027, 1010) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000b1c: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000b1e: 27 00 1c 10 53 4c 04 00                (0027, 101c) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b26: 96 00 00 00                            b'\x96\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000b2a: 27 00 1d 10 53 53 02 00                (0027, 101d) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000b32: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 00000b34: 27 00 1e 10 53 4c 04 00                (0027, 101e) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b3c: 18 00 00 00                            b'\x18\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000b40: 27 00 1f 10 53 4c 04 00                (0027, 101f) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b48: 81 00 00 00                            b'\x81\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000b4c: 27 00 20 10 53 53 02 00                (0027, 1020) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000b54: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 00000b56: 27 00 30 10 53 48 00 00                (0027, 1030) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000b5e:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000b5e: 27 00 35 10 53 53 02 00                (0027, 1035) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000b66: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 00000b68: 27 00 40 10 53 48 02 00                (0027, 1040) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000b70: 49 20                                  b'I '    
+DEBUG    pydicom:filereader.py:153 00000b72: 27 00 41 10 46 4c 04 00                (0027, 1041) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b7a: 7b 68 9a c2                            b'{h\x9a\xc2'    
+DEBUG    pydicom:filereader.py:153 00000b7e: 27 00 42 10 46 4c 04 00                (0027, 1042) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b86: 33 33 33 c1                            b'333\xc1'    
+DEBUG    pydicom:filereader.py:153 00000b8a: 27 00 43 10 46 4c 04 00                (0027, 1043) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b92: 33 33 1b 41                            b'33\x1bA'    
+DEBUG    pydicom:filereader.py:153 00000b96: 27 00 44 10 46 4c 04 00                (0027, 1044) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b9e: 66 66 97 c2                            b'ff\x97\xc2'    
+DEBUG    pydicom:filereader.py:153 00000ba2: 27 00 45 10 46 4c 04 00                (0027, 1045) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000baa: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000bae: 27 00 46 10 46 4c 04 00                (0027, 1046) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bb6: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000bba: 27 00 47 10 46 4c 04 00                (0027, 1047) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bc2: 00 00 80 bf                            b'\x00\x00\x80\xbf'    
+DEBUG    pydicom:filereader.py:153 00000bc6: 27 00 48 10 46 4c 04 00                (0027, 1048) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bce: 2a 89 34 c3                            b'*\x894\xc3'    
+DEBUG    pydicom:filereader.py:153 00000bd2: 27 00 49 10 46 4c 04 00                (0027, 1049) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bda: 2a 09 33 43                            b'*\t3C'    
+DEBUG    pydicom:filereader.py:153 00000bde: 27 00 4a 10 46 4c 04 00                (0027, 104a) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000be6: 66 66 97 c2                            b'ff\x97\xc2'    
+DEBUG    pydicom:filereader.py:153 00000bea: 27 00 4b 10 46 4c 04 00                (0027, 104b) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bf2: 2a 89 34 c3                            b'*\x894\xc3'    
+DEBUG    pydicom:filereader.py:153 00000bf6: 27 00 4c 10 46 4c 04 00                (0027, 104c) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bfe: c4 a2 1f c3                            b'\xc4\xa2\x1f\xc3'    
+DEBUG    pydicom:filereader.py:153 00000c02: 27 00 4d 10 46 4c 04 00                (0027, 104d) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000c0a: 66 66 97 c2                            b'ff\x97\xc2'    
+DEBUG    pydicom:filereader.py:153 00000c0e: 27 00 50 10 46 4c 04 00                (0027, 1050) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000c16: cc cc 7c c2                            b'\xcc\xcc|\xc2'    
+DEBUG    pydicom:filereader.py:153 00000c1a: 27 00 51 10 46 4c 04 00                (0027, 1051) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000c22: f6 67 e8 c2                            b'\xf6g\xe8\xc2'    
+DEBUG    pydicom:filereader.py:153 00000c26: 27 00 52 10 53 48 02 00                (0027, 1052) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000c2e: 4c 20                                  b'L '    
+DEBUG    pydicom:filereader.py:153 00000c30: 27 00 53 10 53 48 02 00                (0027, 1053) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000c38: 41 20                                  b'A '    
+DEBUG    pydicom:filereader.py:153 00000c3a: 27 00 54 10 53 48 02 00                (0027, 1054) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000c42: 49 20                                  b'I '    
+DEBUG    pydicom:filereader.py:153 00000c44: 27 00 55 10 53 48 02 00                (0027, 1055) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000c4c: 49 20                                  b'I '    
+DEBUG    pydicom:filereader.py:153 00000c4e: 28 00 02 00 55 53 02 00                (0028, 0002) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000c56: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 00000c58: 28 00 04 00 43 53 0c 00                (0028, 0004) CS Length: 12
+DEBUG    pydicom:filereader.py:197 00000c60: 4d 4f 4e 4f 43 48 52 4f 4d 45 32 20     b'MONOCHROME2 '    
+DEBUG    pydicom:filereader.py:153 00000c6c: 28 00 10 00 55 53 02 00                (0028, 0010) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000c74: 80 00                                  b'\x80\x00'    
+DEBUG    pydicom:filereader.py:153 00000c76: 28 00 11 00 55 53 02 00                (0028, 0011) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000c7e: 80 00                                  b'\x80\x00'    
+DEBUG    pydicom:filereader.py:153 00000c80: 28 00 30 00 44 53 12 00                (0028, 0030) DS Length: 18
+DEBUG    pydicom:filereader.py:197 00000c88: 30 2e 36 36 31 34 36 38 5c 30 2e 36 ... b'0.661468\\0.6' ...
+DEBUG    pydicom:filereader.py:153 00000c9a: 28 00 00 01 55 53 02 00                (0028, 0100) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000ca2: 10 00                                  b'\x10\x00'    
+DEBUG    pydicom:filereader.py:153 00000ca4: 28 00 01 01 55 53 02 00                (0028, 0101) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000cac: 10 00                                  b'\x10\x00'    
+DEBUG    pydicom:filereader.py:153 00000cae: 28 00 02 01 55 53 02 00                (0028, 0102) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000cb6: 0f 00                                  b'\x0f\x00'    
+DEBUG    pydicom:filereader.py:153 00000cb8: 28 00 03 01 55 53 02 00                (0028, 0103) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000cc0: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 00000cc2: 28 00 20 01 53 53 02 00                (0028, 0120) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000cca: 30 f8                                  b'0\xf8'    
+DEBUG    pydicom:filereader.py:153 00000ccc: 28 00 52 10 44 53 06 00                (0028, 1052) DS Length: 6
+DEBUG    pydicom:filereader.py:197 00000cd4: 2d 31 30 32 34 20                      b'-1024 '    
+DEBUG    pydicom:filereader.py:153 00000cda: 28 00 53 10 44 53 02 00                (0028, 1053) DS Length: 2
+DEBUG    pydicom:filereader.py:197 00000ce2: 31 20                                  b'1 '    
+DEBUG    pydicom:filereader.py:153 00000ce4: 29 00 10 00 4c 4f 0c 00                (0029, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000cec: 47 45 4d 53 5f 49 4d 50 53 5f 30 31     b'GEMS_IMPS_01'    
+DEBUG    pydicom:filereader.py:153 00000cf8: 29 00 04 10 53 4c 04 00                (0029, 1004) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000d00: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000d04: 29 00 05 10 44 53 08 00                (0029, 1005) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000d0c: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000d14: 29 00 06 10 44 53 08 00                (0029, 1006) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000d1c: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000d24: 29 00 07 10 53 4c 04 00                (0029, 1007) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000d2c: 57 00 00 00                            b'W\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000d30: 29 00 08 10 53 48 00 00                (0029, 1008) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000d38:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000d38: 29 00 09 10 53 48 00 00                (0029, 1009) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000d40:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000d40: 29 00 0a 10 53 53 02 00                (0029, 100a) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000d48: fc 02                                  b'\xfc\x02'    
+DEBUG    pydicom:filereader.py:153 00000d4a: 29 00 26 10 53 53 02 00                (0029, 1026) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000d52: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 00000d54: 29 00 34 10 53 4c 04 00                (0029, 1034) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000d5c: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000d60: 29 00 35 10 53 4c 04 00                (0029, 1035) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000d68: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000d6c: 43 00 10 00 4c 4f 0c 00                (0043, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000d74: 47 45 4d 53 5f 50 41 52 4d 5f 30 31     b'GEMS_PARM_01'    
+DEBUG    pydicom:filereader.py:153 00000d80: 43 00 10 10 55 53 02 00                (0043, 1010) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000d88: 90 01                                  b'\x90\x01'    
+DEBUG    pydicom:filereader.py:153 00000d8a: 43 00 11 10 55 53 02 00                (0043, 1011) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000d92: bf 28                                  b'\xbf('    
+DEBUG    pydicom:filereader.py:153 00000d94: 43 00 12 10 53 53 06 00                (0043, 1012) SS Length: 6
+DEBUG    pydicom:filereader.py:197 00000d9c: 0e 00 02 00 03 00                      b'\x0e\x00\x02\x00\x03\x00'    
+DEBUG    pydicom:filereader.py:153 00000da2: 43 00 13 10 53 53 0a 00                (0043, 1013) SS Length: 10
+DEBUG    pydicom:filereader.py:197 00000daa: 6b 00 15 00 04 00 02 00 14 00          b'k\x00\x15\x00\x04\x00\x02\x00\x14\x00'    
+DEBUG    pydicom:filereader.py:153 00000db4: 43 00 14 10 53 53 06 00                (0043, 1014) SS Length: 6
+DEBUG    pydicom:filereader.py:197 00000dbc: 04 00 04 00 05 00                      b'\x04\x00\x04\x00\x05\x00'    
+DEBUG    pydicom:filereader.py:153 00000dc2: 43 00 15 10 53 53 02 00                (0043, 1015) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000dca: bf 28                                  b'\xbf('    
+DEBUG    pydicom:filereader.py:153 00000dcc: 43 00 16 10 53 53 02 00                (0043, 1016) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000dd4: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000dd6: 43 00 17 10 44 53 08 00                (0043, 1017) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000dde: 30 2e 30 39 35 30 30 30                b'0.095000'    
+DEBUG    pydicom:filereader.py:153 00000de6: 43 00 18 10 44 53 1a 00                (0043, 1018) DS Length: 26
+DEBUG    pydicom:filereader.py:197 00000dee: 30 2e 30 38 35 30 30 30 5c 31 2e 31 ... b'0.085000\\1.1' ...
+DEBUG    pydicom:filereader.py:153 00000e08: 43 00 19 10 53 53 02 00                (0043, 1019) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000e10: 5e 01                                  b'^\x01'    
+DEBUG    pydicom:filereader.py:153 00000e12: 43 00 1a 10 53 4c 04 00                (0043, 101a) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000e1a: 07 00 00 00                            b'\x07\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000e1e: 43 00 1b 10 53 53 0a 00                (0043, 101b) SS Length: 10
+DEBUG    pydicom:filereader.py:197 00000e26: 00 00 00 00 00 00 00 00 00 00          b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000e30: 43 00 1c 10 53 53 02 00                (0043, 101c) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000e38: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000e3a: 43 00 1d 10 53 53 02 00                (0043, 101d) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000e42: 28 00                                  b'(\x00'    
+DEBUG    pydicom:filereader.py:153 00000e44: 43 00 1e 10 44 53 08 00                (0043, 101e) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000e4c: 32 2e 30 30 30 30 30 30                b'2.000000'    
+DEBUG    pydicom:filereader.py:153 00000e54: 43 00 1f 10 53 4c 04 00                (0043, 101f) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000e5c: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000e60: 43 00 20 10 44 53 08 00                (0043, 1020) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000e68: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000e70: 43 00 21 10 53 53 02 00                (0043, 1021) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000e78: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000e7a: 43 00 25 10 53 53 0c 00                (0043, 1025) SS Length: 12
+DEBUG    pydicom:filereader.py:197 00000e82: 01 00 02 00 03 00 ec 02 ed 02 ee 02     b'\x01\x00\x02\x00\x03\x00\xec\x02\xed\x02\xee\x02'    
+DEBUG    pydicom:filereader.py:153 00000e8e: 43 00 26 10 55 53 0c 00                (0043, 1026) US Length: 12
+DEBUG    pydicom:filereader.py:197 00000e96: 00 00 01 00 01 00 00 00 00 00 00 00     b'\x00\x00\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000ea2: 43 00 27 10 53 48 06 00                (0043, 1027) SH Length: 6
+DEBUG    pydicom:filereader.py:197 00000eaa: 2f 31 2e 30 3a 31                      b'/1.0:1'    
+DEBUG    pydicom:filereader.py:153 00000eb0: 43 00 28 10 4f 42 00 00 50 00 00 00    (0043, 1028) OB Length: 80
+DEBUG    pydicom:filereader.py:197 00000ebc: 43 54 30 31 00 00 00 48 69 53 70 65 ... b'CT01\x00\x00\x00HiSpe' ...
+DEBUG    pydicom:filereader.py:153 00000f0c: 43 00 29 10 4f 42 00 00 14 08 00 00    (0043, 1029) OB Length: 2068
+DEBUG    pydicom:filereader.py:197 00000f18: 00 00 00 01 43 cf 52 14 02 d7 00 00 ... b'\x00\x00\x00\x01C\xcfR\x14\x02\xd7\x00\x00' ...
+DEBUG    pydicom:filereader.py:153 0000172c: 43 00 2a 10 4f 42 00 00 28 00 00 00    (0043, 102a) OB Length: 40
+DEBUG    pydicom:filereader.py:197 00001738: 43 54 30 31 00 00 00 48 69 53 70 65 ... b'CT01\x00\x00\x00HiSpe' ...
+DEBUG    pydicom:filereader.py:153 00001760: 43 00 2b 10 53 53 08 00                (0043, 102b) SS Length: 8
+DEBUG    pydicom:filereader.py:197 00001768: 04 00 04 00 00 00 00 00                b'\x04\x00\x04\x00\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00001770: 43 00 31 10 44 53 14 00                (0043, 1031) DS Length: 20
+DEBUG    pydicom:filereader.py:197 00001778: 2d 31 31 2e 32 30 30 30 30 30 5c 39 ... b'-11.200000\\9' ...
+DEBUG    pydicom:filereader.py:153 0000178c: 43 00 40 10 46 4c 04 00                (0043, 1040) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00001794: 76 14 32 43                            b'v\x142C'    
+DEBUG    pydicom:filereader.py:153 00001798: 43 00 41 10 46 4c 04 00                (0043, 1041) FL Length: 4
+DEBUG    pydicom:filereader.py:197 000017a0: 83 83 6e 45                            b'\x83\x83nE'    
+DEBUG    pydicom:filereader.py:153 000017a4: 43 00 42 10 53 4c 04 00                (0043, 1042) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017ac: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017b0: 43 00 43 10 53 4c 04 00                (0043, 1043) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017b8: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017bc: 43 00 44 10 53 4c 04 00                (0043, 1044) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017c4: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017c8: 43 00 45 10 53 4c 04 00                (0043, 1045) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017d0: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017d4: 43 00 46 10 53 4c 04 00                (0043, 1046) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017dc: 03 00 00 00                            b'\x03\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017e0: 43 00 47 10 53 4c 04 00                (0043, 1047) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017e8: ff ff ff ff                            b'\xff\xff\xff\xff'    
+DEBUG    pydicom:filereader.py:153 000017ec: 43 00 48 10 53 4c 04 00                (0043, 1048) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017f4: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017f8: 43 00 49 10 53 4c 04 00                (0043, 1049) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00001800: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00001804: 43 00 4a 10 53 53 02 00                (0043, 104a) SS Length: 2
+DEBUG    pydicom:filereader.py:197 0000180c: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 0000180e: 43 00 4b 10 53 4c 04 00                (0043, 104b) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00001816: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000181a: 43 00 4c 10 53 53 02 00                (0043, 104c) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00001822: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00001824: 43 00 4d 10 46 4c 04 00                (0043, 104d) FL Length: 4
+DEBUG    pydicom:filereader.py:197 0000182c: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00001830: 43 00 4e 10 46 4c 04 00                (0043, 104e) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00001838: 19 9c 29 41                            b'\x19\x9c)A'    
+DEBUG    pydicom:filereader.py:153 0000183c: e0 7f 10 00 4f 57 00 00 00 80 00 00    (7fe0, 0010) OW Length: 32768
+DEBUG    pydicom:filereader.py:197 00001848: af 00 b4 00 a6 00 8f 00 8b 00 98 00 ... b'\xaf\x00\xb4\x00\xa6\x00\x8f\x00\x8b\x00\x98\x00' ...
+DEBUG    pydicom:filereader.py:153 00009848: fc ff fc ff 4f 42 00 00 7e 00 00 00    (fffc, fffc) OB Length: 126
+DEBUG    pydicom:filereader.py:197 00009854: 0a 00 fe 00 04 00 01 00 00 00 00 00 ... b'\n\x00\xfe\x00\x04\x00\x01\x00\x00\x00\x00\x00' ...
+____________________ TestDebug.test_debug_off_handler_null _____________________
+------------------------------ Captured log call -------------------------------
+DEBUG    pydicom:filereader.py:823 Reading file '/home/swe-bench/pydicom__pydicom/pydicom/data/test_files/CT_small.dcm'
+DEBUG    pydicom:filereader.py:588 Reading File Meta Information preamble...
+DEBUG    pydicom:filereader.py:594 Reading File Meta Information prefix...
+DEBUG    pydicom:filereader.py:609 00000080: 'DICM' prefix found
+____________________ TestDebug.test_debug_on_handler_stream ____________________
+----------------------------- Captured stderr call -----------------------------
+Reading file '/home/swe-bench/pydicom__pydicom/pydicom/data/test_files/CT_small.dcm'
+
+--------------------------------------------------------------------------------
+Call to dcmread()
+filename:'/home/swe-bench/pydicom__pydicom/pydicom/data/test_files/CT_small.dcm', defer_size='None', stop_before_pixels=False, force=False, specific_tags=None
+Caller passed file name
+--------------------------------------------------------------------------------
+Reading File Meta Information preamble...
+00000000: 49 49 2a 00 54 18 08 00...00 00 00 00 00 00 00 00
+Reading File Meta Information prefix...
+00000080: 'DICM' prefix found
+00000084: 02 00 00 00 55 4c 04 00                (0002, 0000) UL Length: 4
+0000008c: c0 00 00 00                            b'\xc0\x00\x00\x00'    
+00000090: 02 00 01 00 4f 42 00 00 02 00 00 00    (0002, 0001) OB Length: 2
+0000009c: 00 01                                  b'\x00\x01'    
+0000009e: 02 00 02 00 55 49 1a 00                (0002, 0002) UI Length: 26
+000000a6: 31 2e 32 2e 38 34 30 2e 31 30 30 30 ... b'1.2.840.1000' ...
+000000c0: 02 00 03 00 55 49 30 00                (0002, 0003) UI Length: 48
+000000c8: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+000000f8: 02 00 10 00 55 49 14 00                (0002, 0010) UI Length: 20
+00000100: 31 2e 32 2e 38 34 30 2e 31 30 30 30 ... b'1.2.840.1000' ...
+00000114: 02 00 12 00 55 49 12 00                (0002, 0012) UI Length: 18
+0000011c: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+0000012e: 02 00 13 00 53 48 0a 00                (0002, 0013) SH Length: 10
+00000136: 44 43 54 4f 4f 4c 31 30 30 20          b'DCTOOL100 '    
+00000140: 02 00 16 00 41 45 08 00                (0002, 0016) AE Length: 8
+00000148: 43 4c 55 4e 49 45 31 20                b'CLUNIE1 '    
+00000150: 08 00 05 00 43 53 0a 00                (0008, 0005) CS Length: 10
+Reading ended by stop_when callback. Rewinding to start of data element.
+00000150: 08 00 05 00 43 53 0a 00                (0008, 0005) CS Length: 10
+Reading ended by stop_when callback. Rewinding to start of data element.
+00000150: 08 00 05 00 43 53 0a 00                (0008, 0005) CS Length: 10
+00000158: 49 53 4f 5f 49 52 20 31 30 30          b'ISO_IR 100'    
+00000162: 08 00 08 00 43 53 16 00                (0008, 0008) CS Length: 22
+0000016a: 4f 52 49 47 49 4e 41 4c 5c 50 52 49 ... b'ORIGINAL\\PRI' ...
+00000180: 08 00 12 00 44 41 08 00                (0008, 0012) DA Length: 8
+00000188: 32 30 30 34 30 31 31 39                b'20040119'    
+00000190: 08 00 13 00 54 4d 06 00                (0008, 0013) TM Length: 6
+00000198: 30 37 32 37 33 31                      b'072731'    
+0000019e: 08 00 14 00 55 49 12 00                (0008, 0014) UI Length: 18
+000001a6: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+000001b8: 08 00 16 00 55 49 1a 00                (0008, 0016) UI Length: 26
+000001c0: 31 2e 32 2e 38 34 30 2e 31 30 30 30 ... b'1.2.840.1000' ...
+000001da: 08 00 18 00 55 49 30 00                (0008, 0018) UI Length: 48
+000001e2: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+00000212: 08 00 20 00 44 41 08 00                (0008, 0020) DA Length: 8
+0000021a: 32 30 30 34 30 31 31 39                b'20040119'    
+00000222: 08 00 21 00 44 41 08 00                (0008, 0021) DA Length: 8
+0000022a: 31 39 39 37 30 34 33 30                b'19970430'    
+00000232: 08 00 22 00 44 41 08 00                (0008, 0022) DA Length: 8
+0000023a: 31 39 39 37 30 34 33 30                b'19970430'    
+00000242: 08 00 23 00 44 41 08 00                (0008, 0023) DA Length: 8
+0000024a: 31 39 39 37 30 34 33 30                b'19970430'    
+00000252: 08 00 30 00 54 4d 06 00                (0008, 0030) TM Length: 6
+0000025a: 30 37 32 37 33 30                      b'072730'    
+00000260: 08 00 31 00 54 4d 06 00                (0008, 0031) TM Length: 6
+00000268: 31 31 32 37 34 39                      b'112749'    
+0000026e: 08 00 32 00 54 4d 06 00                (0008, 0032) TM Length: 6
+00000276: 31 31 32 39 33 36                      b'112936'    
+0000027c: 08 00 33 00 54 4d 06 00                (0008, 0033) TM Length: 6
+00000284: 31 31 33 30 30 38                      b'113008'    
+0000028a: 08 00 50 00 53 48 00 00                (0008, 0050) SH Length: 0
+00000292:                                        b''    
+00000292: 08 00 60 00 43 53 02 00                (0008, 0060) CS Length: 2
+0000029a: 43 54                                  b'CT'    
+0000029c: 08 00 70 00 4c 4f 12 00                (0008, 0070) LO Length: 18
+000002a4: 47 45 20 4d 45 44 49 43 41 4c 20 53 ... b'GE MEDICAL S' ...
+000002b6: 08 00 80 00 4c 4f 12 00                (0008, 0080) LO Length: 18
+000002be: 4a 46 4b 20 49 4d 41 47 49 4e 47 20 ... b'JFK IMAGING ' ...
+000002d0: 08 00 90 00 50 4e 00 00                (0008, 0090) PN Length: 0
+000002d8:                                        b''    
+000002d8: 08 00 01 02 53 48 06 00                (0008, 0201) SH Length: 6
+000002e0: 2d 30 35 30 30 20                      b'-0500 '    
+000002e6: 08 00 10 10 53 48 08 00                (0008, 1010) SH Length: 8
+000002ee: 43 54 30 31 5f 4f 43 30                b'CT01_OC0'    
+000002f6: 08 00 30 10 4c 4f 04 00                (0008, 1030) LO Length: 4
+000002fe: 65 2b 31 20                            b'e+1 '    
+00000302: 08 00 90 10 4c 4f 08 00                (0008, 1090) LO Length: 8
+0000030a: 52 48 41 50 53 4f 44 45                b'RHAPSODE'    
+00000312: 09 00 10 00 4c 4f 0c 00                (0009, 0010) LO Length: 12
+0000031a: 47 45 4d 53 5f 49 44 45 4e 5f 30 31     b'GEMS_IDEN_01'    
+00000326: 09 00 01 10 4c 4f 0e 00                (0009, 1001) LO Length: 14
+0000032e: 47 45 5f 47 45 4e 45 53 49 53 5f 46 ... b'GE_GENESIS_F' ...
+0000033c: 09 00 02 10 53 48 04 00                (0009, 1002) SH Length: 4
+00000344: 43 54 30 31                            b'CT01'    
+00000348: 09 00 04 10 53 48 0c 00                (0009, 1004) SH Length: 12
+00000350: 48 69 53 70 65 65 64 20 43 54 2f 69     b'HiSpeed CT/i'    
+0000035c: 09 00 27 10 53 4c 04 00                (0009, 1027) SL Length: 4
+00000364: b5 2c 67 33                            b'\xb5,g3'    
+00000368: 09 00 30 10 53 48 00 00                (0009, 1030) SH Length: 0
+00000370:                                        b''    
+00000370: 09 00 31 10 53 48 00 00                (0009, 1031) SH Length: 0
+00000378:                                        b''    
+00000378: 09 00 e6 10 53 48 02 00                (0009, 10e6) SH Length: 2
+00000380: 30 35                                  b'05'    
+00000382: 09 00 e7 10 55 4c 04 00                (0009, 10e7) UL Length: 4
+0000038a: 4d 22 03 3a                            b'M"\x03:'    
+0000038e: 09 00 e9 10 53 4c 04 00                (0009, 10e9) SL Length: 4
+00000396: b5 2c 67 33                            b'\xb5,g3'    
+0000039a: 10 00 10 00 50 4e 16 00                (0010, 0010) PN Length: 22
+000003a2: 43 6f 6d 70 72 65 73 73 65 64 53 61 ... b'CompressedSa' ...
+000003b8: 10 00 20 00 4c 4f 04 00                (0010, 0020) LO Length: 4
+000003c0: 31 43 54 31                            b'1CT1'    
+000003c4: 10 00 30 00 44 41 00 00                (0010, 0030) DA Length: 0
+000003cc:                                        b''    
+000003cc: 10 00 40 00 43 53 02 00                (0010, 0040) CS Length: 2
+000003d4: 4f 20                                  b'O '    
+000003d6: 10 00 10 10 41 53 04 00                (0010, 1010) AS Length: 4
+000003de: 30 30 30 59                            b'000Y'    
+000003e2: 10 00 30 10 44 53 08 00                (0010, 1030) DS Length: 8
+000003ea: 30 2e 30 30 30 30 30 30                b'0.000000'    
+000003f2: 10 00 b0 21 4c 54 00 00                (0010, 21b0) LT Length: 0
+000003fa:                                        b''    
+000003fa: 11 00 10 00 4c 4f 0c 00                (0011, 0010) LO Length: 12
+00000402: 47 45 4d 53 5f 50 41 54 49 5f 30 31     b'GEMS_PATI_01'    
+0000040e: 11 00 10 10 53 53 02 00                (0011, 1010) SS Length: 2
+00000416: 00 00                                  b'\x00\x00'    
+00000418: 18 00 10 00 4c 4f 0e 00                (0018, 0010) LO Length: 14
+00000420: 49 53 4f 56 55 45 33 30 30 2f 31 30 ... b'ISOVUE300/10' ...
+0000042e: 18 00 22 00 43 53 0c 00                (0018, 0022) CS Length: 12
+00000436: 48 45 4c 49 43 41 4c 20 4d 4f 44 45     b'HELICAL MODE'    
+00000442: 18 00 50 00 44 53 08 00                (0018, 0050) DS Length: 8
+0000044a: 35 2e 30 30 30 30 30 30                b'5.000000'    
+00000452: 18 00 60 00 44 53 04 00                (0018, 0060) DS Length: 4
+0000045a: 31 32 30 20                            b'120 '    
+0000045e: 18 00 88 00 44 53 08 00                (0018, 0088) DS Length: 8
+00000466: 35 2e 30 30 30 30 30 30                b'5.000000'    
+0000046e: 18 00 90 00 44 53 0a 00                (0018, 0090) DS Length: 10
+00000476: 34 38 30 2e 30 30 30 30 30 30          b'480.000000'    
+00000480: 18 00 20 10 4c 4f 02 00                (0018, 1020) LO Length: 2
+00000488: 30 35                                  b'05'    
+0000048a: 18 00 40 10 4c 4f 02 00                (0018, 1040) LO Length: 2
+00000492: 49 56                                  b'IV'    
+00000494: 18 00 00 11 44 53 0a 00                (0018, 1100) DS Length: 10
+0000049c: 33 33 38 2e 36 37 31 36 30 30          b'338.671600'    
+000004a6: 18 00 10 11 44 53 10 00                (0018, 1110) DS Length: 16
+000004ae: 31 30 39 39 2e 33 31 30 30 35 38 35 ... b'1099.3100585' ...
+000004be: 18 00 11 11 44 53 0a 00                (0018, 1111) DS Length: 10
+000004c6: 36 33 30 2e 30 30 30 30 30 30          b'630.000000'    
+000004d0: 18 00 20 11 44 53 08 00                (0018, 1120) DS Length: 8
+000004d8: 30 2e 30 30 30 30 30 30                b'0.000000'    
+000004e0: 18 00 30 11 44 53 0a 00                (0018, 1130) DS Length: 10
+000004e8: 31 33 33 2e 36 39 39 39 39 37          b'133.699997'    
+000004f2: 18 00 50 11 49 53 04 00                (0018, 1150) IS Length: 4
+000004fa: 31 36 30 31                            b'1601'    
+000004fe: 18 00 51 11 49 53 04 00                (0018, 1151) IS Length: 4
+00000506: 31 37 30 20                            b'170 '    
+0000050a: 18 00 52 11 49 53 04 00                (0018, 1152) IS Length: 4
+00000512: 31 37 30 20                            b'170 '    
+00000516: 18 00 60 11 53 48 10 00                (0018, 1160) SH Length: 16
+0000051e: 4c 41 52 47 45 20 42 4f 57 54 49 45 ... b'LARGE BOWTIE' ...
+0000052e: 18 00 90 11 44 53 08 00                (0018, 1190) DS Length: 8
+00000536: 30 2e 37 30 30 30 30 30                b'0.700000'    
+0000053e: 18 00 10 12 53 48 08 00                (0018, 1210) SH Length: 8
+00000546: 53 54 41 4e 44 41 52 44                b'STANDARD'    
+0000054e: 18 00 00 51 43 53 04 00                (0018, 5100) CS Length: 4
+00000556: 46 46 53 20                            b'FFS '    
+0000055a: 19 00 10 00 4c 4f 0c 00                (0019, 0010) LO Length: 12
+00000562: 47 45 4d 53 5f 41 43 51 55 5f 30 31     b'GEMS_ACQU_01'    
+0000056e: 19 00 02 10 53 4c 04 00                (0019, 1002) SL Length: 4
+00000576: 90 03 00 00                            b'\x90\x03\x00\x00'    
+0000057a: 19 00 03 10 44 53 0a 00                (0019, 1003) DS Length: 10
+00000582: 33 37 33 2e 37 35 30 30 30 30          b'373.750000'    
+0000058c: 19 00 04 10 44 53 08 00                (0019, 1004) DS Length: 8
+00000594: 31 2e 30 31 36 36 30 30                b'1.016600'    
+0000059c: 19 00 0f 10 44 53 0a 00                (0019, 100f) DS Length: 10
+000005a4: 39 35 35 2e 37 39 39 39 38 38          b'955.799988'    
+000005ae: 19 00 11 10 53 53 02 00                (0019, 1011) SS Length: 2
+000005b6: 02 00                                  b'\x02\x00'    
+000005b8: 19 00 13 10 53 53 02 00                (0019, 1013) SS Length: 2
+000005c0: 00 00                                  b'\x00\x00'    
+000005c2: 19 00 14 10 53 53 02 00                (0019, 1014) SS Length: 2
+000005ca: 00 00                                  b'\x00\x00'    
+000005cc: 19 00 15 10 53 53 02 00                (0019, 1015) SS Length: 2
+000005d4: 00 00                                  b'\x00\x00'    
+000005d6: 19 00 16 10 53 53 02 00                (0019, 1016) SS Length: 2
+000005de: 00 00                                  b'\x00\x00'    
+000005e0: 19 00 17 10 53 53 02 00                (0019, 1017) SS Length: 2
+000005e8: 02 00                                  b'\x02\x00'    
+000005ea: 19 00 18 10 4c 4f 02 00                (0019, 1018) LO Length: 2
+000005f2: 53 20                                  b'S '    
+000005f4: 19 00 19 10 44 53 08 00                (0019, 1019) DS Length: 8
+000005fc: 37 2e 37 39 31 38 37 30                b'7.791870'    
+00000604: 19 00 1a 10 4c 4f 02 00                (0019, 101a) LO Length: 2
+0000060c: 49 20                                  b'I '    
+0000060e: 19 00 1b 10 44 53 0c 00                (0019, 101b) DS Length: 12
+00000616: 2d 33 32 30 2e 31 39 37 39 36 38 20     b'-320.197968 '    
+00000622: 19 00 1e 10 44 53 08 00                (0019, 101e) DS Length: 8
+0000062a: 30 2e 30 30 30 30 30 30                b'0.000000'    
+00000632: 19 00 23 10 44 53 08 00                (0019, 1023) DS Length: 8
+0000063a: 35 2e 30 30 30 30 30 30                b'5.000000'    
+00000642: 19 00 24 10 44 53 0a 00                (0019, 1024) DS Length: 10
+0000064a: 31 37 2e 37 38 34 35 37 38 20          b'17.784578 '    
+00000654: 19 00 25 10 53 53 02 00                (0019, 1025) SS Length: 2
+0000065c: 01 00                                  b'\x01\x00'    
+0000065e: 19 00 26 10 53 4c 04 00                (0019, 1026) SL Length: 4
+00000666: 00 00 00 00                            b'\x00\x00\x00\x00'    
+0000066a: 19 00 27 10 44 53 08 00                (0019, 1027) DS Length: 8
+00000672: 31 2e 30 30 30 30 30 30                b'1.000000'    
+0000067a: 19 00 2a 10 44 53 0a 00                (0019, 102a) DS Length: 10
+00000682: 31 37 38 2e 30 37 39 39 32 36          b'178.079926'    
+0000068c: 19 00 2b 10 44 53 0c 00                (0019, 102b) DS Length: 12
+00000694: 33 39 39 34 2e 32 39 39 33 31 36 20     b'3994.299316 '    
+000006a0: 19 00 2c 10 53 4c 04 00                (0019, 102c) SL Length: 4
+000006a8: bf 28 00 00                            b'\xbf(\x00\x00'    
+000006ac: 19 00 2e 10 44 53 0c 00                (0019, 102e) DS Length: 12
+000006b4: 2d 37 31 38 2e 30 37 39 39 35 36 20     b'-718.079956 '    
+000006c0: 19 00 2f 10 44 53 0a 00                (0019, 102f) DS Length: 10
+000006c8: 39 38 34 2e 30 30 30 30 30 30          b'984.000000'    
+000006d2: 19 00 39 10 53 53 02 00                (0019, 1039) SS Length: 2
+000006da: 10 00                                  b'\x10\x00'    
+000006dc: 19 00 40 10 53 53 02 00                (0019, 1040) SS Length: 2
+000006e4: 00 00                                  b'\x00\x00'    
+000006e6: 19 00 41 10 53 53 02 00                (0019, 1041) SS Length: 2
+000006ee: 01 00                                  b'\x01\x00'    
+000006f0: 19 00 42 10 53 53 02 00                (0019, 1042) SS Length: 2
+000006f8: 00 00                                  b'\x00\x00'    
+000006fa: 19 00 43 10 53 53 02 00                (0019, 1043) SS Length: 2
+00000702: 00 00                                  b'\x00\x00'    
+00000704: 19 00 44 10 44 53 08 00                (0019, 1044) DS Length: 8
+0000070c: 31 2e 30 30 30 30 30 30                b'1.000000'    
+00000714: 19 00 47 10 53 53 02 00                (0019, 1047) SS Length: 2
+0000071c: 01 00                                  b'\x01\x00'    
+0000071e: 19 00 4a 10 53 53 02 00                (0019, 104a) SS Length: 2
+00000726: 06 00                                  b'\x06\x00'    
+00000728: 19 00 4b 10 53 4c 04 00                (0019, 104b) SL Length: 4
+00000730: bf 28 00 00                            b'\xbf(\x00\x00'    
+00000734: 19 00 52 10 53 53 02 00                (0019, 1052) SS Length: 2
+0000073c: 01 00                                  b'\x01\x00'    
+0000073e: 19 00 57 10 53 53 02 00                (0019, 1057) SS Length: 2
+00000746: a1 ff                                  b'\xa1\xff'    
+00000748: 19 00 58 10 53 53 02 00                (0019, 1058) SS Length: 2
+00000750: 00 00                                  b'\x00\x00'    
+00000752: 19 00 5e 10 53 4c 04 00                (0019, 105e) SL Length: 4
+0000075a: fb 02 00 00                            b'\xfb\x02\x00\x00'    
+0000075e: 19 00 5f 10 53 4c 04 00                (0019, 105f) SL Length: 4
+00000766: 01 00 00 00                            b'\x01\x00\x00\x00'    
+0000076a: 19 00 60 10 53 4c 04 00                (0019, 1060) SL Length: 4
+00000772: b1 07 00 00                            b'\xb1\x07\x00\x00'    
+00000776: 19 00 61 10 53 4c 04 00                (0019, 1061) SL Length: 4
+0000077e: 28 06 00 00                            b'(\x06\x00\x00'    
+00000782: 19 00 62 10 53 4c 04 00                (0019, 1062) SL Length: 4
+0000078a: 01 00 00 00                            b'\x01\x00\x00\x00'    
+0000078e: 19 00 6a 10 53 53 02 00                (0019, 106a) SS Length: 2
+00000796: 04 00                                  b'\x04\x00'    
+00000798: 19 00 6b 10 53 53 02 00                (0019, 106b) SS Length: 2
+000007a0: 54 03                                  b'T\x03'    
+000007a2: 19 00 70 10 53 53 02 00                (0019, 1070) SS Length: 2
+000007aa: 01 00                                  b'\x01\x00'    
+000007ac: 19 00 71 10 53 53 02 00                (0019, 1071) SS Length: 2
+000007b4: 00 00                                  b'\x00\x00'    
+000007b6: 19 00 72 10 44 53 08 00                (0019, 1072) DS Length: 8
+000007be: 30 2e 30 30 30 30 30 30                b'0.000000'    
+000007c6: 19 00 73 10 44 53 08 00                (0019, 1073) DS Length: 8
+000007ce: 30 2e 30 30 30 30 30 30                b'0.000000'    
+000007d6: 19 00 74 10 44 53 08 00                (0019, 1074) DS Length: 8
+000007de: 30 2e 30 30 30 30 30 30                b'0.000000'    
+000007e6: 19 00 75 10 44 53 08 00                (0019, 1075) DS Length: 8
+000007ee: 30 2e 30 30 30 30 30 30                b'0.000000'    
+000007f6: 19 00 76 10 44 53 08 00                (0019, 1076) DS Length: 8
+000007fe: 30 2e 30 30 30 30 30 30                b'0.000000'    
+00000806: 19 00 da 10 53 53 02 00                (0019, 10da) SS Length: 2
+0000080e: 00 00                                  b'\x00\x00'    
+00000810: 19 00 db 10 44 53 08 00                (0019, 10db) DS Length: 8
+00000818: 30 2e 30 30 30 30 30 30                b'0.000000'    
+00000820: 19 00 dc 10 53 53 02 00                (0019, 10dc) SS Length: 2
+00000828: 01 00                                  b'\x01\x00'    
+0000082a: 19 00 dd 10 53 53 02 00                (0019, 10dd) SS Length: 2
+00000832: 01 00                                  b'\x01\x00'    
+00000834: 19 00 de 10 44 53 08 00                (0019, 10de) DS Length: 8
+0000083c: 30 2e 30 30 30 30 30 30                b'0.000000'    
+00000844: 20 00 0d 00 55 49 2c 00                (0020, 000d) UI Length: 44
+0000084c: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+00000878: 20 00 0e 00 55 49 2e 00                (0020, 000e) UI Length: 46
+00000880: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+000008ae: 20 00 10 00 53 48 04 00                (0020, 0010) SH Length: 4
+000008b6: 31 43 54 31                            b'1CT1'    
+000008ba: 20 00 11 00 49 53 02 00                (0020, 0011) IS Length: 2
+000008c2: 31 20                                  b'1 '    
+000008c4: 20 00 12 00 49 53 02 00                (0020, 0012) IS Length: 2
+000008cc: 32 20                                  b'2 '    
+000008ce: 20 00 13 00 49 53 02 00                (0020, 0013) IS Length: 2
+000008d6: 31 20                                  b'1 '    
+000008d8: 20 00 32 00 44 53 22 00                (0020, 0032) DS Length: 34
+000008e0: 2d 31 35 38 2e 31 33 35 38 30 33 5c ... b'-158.135803\\' ...
+00000902: 20 00 37 00 44 53 36 00                (0020, 0037) DS Length: 54
+0000090a: 31 2e 30 30 30 30 30 30 5c 30 2e 30 ... b'1.000000\\0.0' ...
+00000940: 20 00 52 00 55 49 2e 00                (0020, 0052) UI Length: 46
+00000948: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+00000976: 20 00 60 00 43 53 00 00                (0020, 0060) CS Length: 0
+0000097e:                                        b''    
+0000097e: 20 00 40 10 4c 4f 02 00                (0020, 1040) LO Length: 2
+00000986: 53 4e                                  b'SN'    
+00000988: 20 00 41 10 44 53 0e 00                (0020, 1041) DS Length: 14
+00000990: 2d 37 37 2e 32 30 34 30 36 33 34 31 ... b'-77.20406341' ...
+0000099e: 20 00 00 40 4c 54 0c 00                (0020, 4000) LT Length: 12
+000009a6: 55 6e 63 6f 6d 70 72 65 73 73 65 64     b'Uncompressed'    
+000009b2: 21 00 10 00 4c 4f 0c 00                (0021, 0010) LO Length: 12
+000009ba: 47 45 4d 53 5f 52 45 4c 41 5f 30 31     b'GEMS_RELA_01'    
+000009c6: 21 00 03 10 53 53 02 00                (0021, 1003) SS Length: 2
+000009ce: 02 00                                  b'\x02\x00'    
+000009d0: 21 00 05 10 53 48 02 00                (0021, 1005) SH Length: 2
+000009d8: 30 35                                  b'05'    
+000009da: 21 00 07 10 55 4c 04 00                (0021, 1007) UL Length: 4
+000009e2: 29 2f b6 5f                            b')/\xb6_'    
+000009e6: 21 00 15 10 55 53 02 00                (0021, 1015) US Length: 2
+000009ee: 0e 5e                                  b'\x0e^'    
+000009f0: 21 00 16 10 53 53 02 00                (0021, 1016) SS Length: 2
+000009f8: 02 00                                  b'\x02\x00'    
+000009fa: 21 00 18 10 53 48 02 00                (0021, 1018) SH Length: 2
+00000a02: 30 35                                  b'05'    
+00000a04: 21 00 19 10 55 4c 04 00                (0021, 1019) UL Length: 4
+00000a0c: 32 66 be 2c                            b'2f\xbe,'    
+00000a10: 21 00 37 10 53 53 02 00                (0021, 1037) SS Length: 2
+00000a18: 10 00                                  b'\x10\x00'    
+00000a1a: 21 00 4a 10 4c 4f 00 00                (0021, 104a) LO Length: 0
+00000a22:                                        b''    
+00000a22: 21 00 90 10 53 53 02 00                (0021, 1090) SS Length: 2
+00000a2a: e8 1c                                  b'\xe8\x1c'    
+00000a2c: 21 00 91 10 53 53 02 00                (0021, 1091) SS Length: 2
+00000a34: 00 00                                  b'\x00\x00'    
+00000a36: 21 00 92 10 46 4c 04 00                (0021, 1092) FL Length: 4
+00000a3e: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00000a42: 21 00 93 10 46 4c 04 00                (0021, 1093) FL Length: 4
+00000a4a: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00000a4e: 23 00 10 00 4c 4f 0c 00                (0023, 0010) LO Length: 12
+00000a56: 47 45 4d 53 5f 53 54 44 59 5f 30 31     b'GEMS_STDY_01'    
+00000a62: 23 00 70 10 46 44 08 00                (0023, 1070) FD Length: 8
+00000a6a: d6 37 8e 88 96 b3 c9 41                b'\xd67\x8e\x88\x96\xb3\xc9A'    
+00000a72: 23 00 74 10 53 4c 04 00                (0023, 1074) SL Length: 4
+00000a7a: 01 00 00 00                            b'\x01\x00\x00\x00'    
+00000a7e: 23 00 7d 10 53 53 02 00                (0023, 107d) SS Length: 2
+00000a86: 00 00                                  b'\x00\x00'    
+00000a88: 25 00 10 00 4c 4f 0c 00                (0025, 0010) LO Length: 12
+00000a90: 47 45 4d 53 5f 53 45 52 53 5f 30 31     b'GEMS_SERS_01'    
+00000a9c: 25 00 06 10 53 53 02 00                (0025, 1006) SS Length: 2
+00000aa4: 00 00                                  b'\x00\x00'    
+00000aa6: 25 00 07 10 53 4c 04 00                (0025, 1007) SL Length: 4
+00000aae: 2c 00 00 00                            b',\x00\x00\x00'    
+00000ab2: 25 00 10 10 53 4c 04 00                (0025, 1010) SL Length: 4
+00000aba: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00000abe: 25 00 11 10 53 53 02 00                (0025, 1011) SS Length: 2
+00000ac6: 00 00                                  b'\x00\x00'    
+00000ac8: 25 00 17 10 53 4c 04 00                (0025, 1017) SL Length: 4
+00000ad0: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00000ad4: 25 00 18 10 53 4c 04 00                (0025, 1018) SL Length: 4
+00000adc: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00000ae0: 25 00 19 10 53 4c 04 00                (0025, 1019) SL Length: 4
+00000ae8: 04 00 00 00                            b'\x04\x00\x00\x00'    
+00000aec: 25 00 1a 10 53 48 00 00                (0025, 101a) SH Length: 0
+00000af4:                                        b''    
+00000af4: 27 00 10 00 4c 4f 0c 00                (0027, 0010) LO Length: 12
+00000afc: 47 45 4d 53 5f 49 4d 41 47 5f 30 31     b'GEMS_IMAG_01'    
+00000b08: 27 00 06 10 53 4c 04 00                (0027, 1006) SL Length: 4
+00000b10: 01 00 00 00                            b'\x01\x00\x00\x00'    
+00000b14: 27 00 10 10 53 53 02 00                (0027, 1010) SS Length: 2
+00000b1c: 00 00                                  b'\x00\x00'    
+00000b1e: 27 00 1c 10 53 4c 04 00                (0027, 101c) SL Length: 4
+00000b26: 96 00 00 00                            b'\x96\x00\x00\x00'    
+00000b2a: 27 00 1d 10 53 53 02 00                (0027, 101d) SS Length: 2
+00000b32: 01 00                                  b'\x01\x00'    
+00000b34: 27 00 1e 10 53 4c 04 00                (0027, 101e) SL Length: 4
+00000b3c: 18 00 00 00                            b'\x18\x00\x00\x00'    
+00000b40: 27 00 1f 10 53 4c 04 00                (0027, 101f) SL Length: 4
+00000b48: 81 00 00 00                            b'\x81\x00\x00\x00'    
+00000b4c: 27 00 20 10 53 53 02 00                (0027, 1020) SS Length: 2
+00000b54: 01 00                                  b'\x01\x00'    
+00000b56: 27 00 30 10 53 48 00 00                (0027, 1030) SH Length: 0
+00000b5e:                                        b''    
+00000b5e: 27 00 35 10 53 53 02 00                (0027, 1035) SS Length: 2
+00000b66: 02 00                                  b'\x02\x00'    
+00000b68: 27 00 40 10 53 48 02 00                (0027, 1040) SH Length: 2
+00000b70: 49 20                                  b'I '    
+00000b72: 27 00 41 10 46 4c 04 00                (0027, 1041) FL Length: 4
+00000b7a: 7b 68 9a c2                            b'{h\x9a\xc2'    
+00000b7e: 27 00 42 10 46 4c 04 00                (0027, 1042) FL Length: 4
+00000b86: 33 33 33 c1                            b'333\xc1'    
+00000b8a: 27 00 43 10 46 4c 04 00                (0027, 1043) FL Length: 4
+00000b92: 33 33 1b 41                            b'33\x1bA'    
+00000b96: 27 00 44 10 46 4c 04 00                (0027, 1044) FL Length: 4
+00000b9e: 66 66 97 c2                            b'ff\x97\xc2'    
+00000ba2: 27 00 45 10 46 4c 04 00                (0027, 1045) FL Length: 4
+00000baa: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00000bae: 27 00 46 10 46 4c 04 00                (0027, 1046) FL Length: 4
+00000bb6: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00000bba: 27 00 47 10 46 4c 04 00                (0027, 1047) FL Length: 4
+00000bc2: 00 00 80 bf                            b'\x00\x00\x80\xbf'    
+00000bc6: 27 00 48 10 46 4c 04 00                (0027, 1048) FL Length: 4
+00000bce: 2a 89 34 c3                            b'*\x894\xc3'    
+00000bd2: 27 00 49 10 46 4c 04 00                (0027, 1049) FL Length: 4
+00000bda: 2a 09 33 43                            b'*\t3C'    
+00000bde: 27 00 4a 10 46 4c 04 00                (0027, 104a) FL Length: 4
+00000be6: 66 66 97 c2                            b'ff\x97\xc2'    
+00000bea: 27 00 4b 10 46 4c 04 00                (0027, 104b) FL Length: 4
+00000bf2: 2a 89 34 c3                            b'*\x894\xc3'    
+00000bf6: 27 00 4c 10 46 4c 04 00                (0027, 104c) FL Length: 4
+00000bfe: c4 a2 1f c3                            b'\xc4\xa2\x1f\xc3'    
+00000c02: 27 00 4d 10 46 4c 04 00                (0027, 104d) FL Length: 4
+00000c0a: 66 66 97 c2                            b'ff\x97\xc2'    
+00000c0e: 27 00 50 10 46 4c 04 00                (0027, 1050) FL Length: 4
+00000c16: cc cc 7c c2                            b'\xcc\xcc|\xc2'    
+00000c1a: 27 00 51 10 46 4c 04 00                (0027, 1051) FL Length: 4
+00000c22: f6 67 e8 c2                            b'\xf6g\xe8\xc2'    
+00000c26: 27 00 52 10 53 48 02 00                (0027, 1052) SH Length: 2
+00000c2e: 4c 20                                  b'L '    
+00000c30: 27 00 53 10 53 48 02 00                (0027, 1053) SH Length: 2
+00000c38: 41 20                                  b'A '    
+00000c3a: 27 00 54 10 53 48 02 00                (0027, 1054) SH Length: 2
+00000c42: 49 20                                  b'I '    
+00000c44: 27 00 55 10 53 48 02 00                (0027, 1055) SH Length: 2
+00000c4c: 49 20                                  b'I '    
+00000c4e: 28 00 02 00 55 53 02 00                (0028, 0002) US Length: 2
+00000c56: 01 00                                  b'\x01\x00'    
+00000c58: 28 00 04 00 43 53 0c 00                (0028, 0004) CS Length: 12
+00000c60: 4d 4f 4e 4f 43 48 52 4f 4d 45 32 20     b'MONOCHROME2 '    
+00000c6c: 28 00 10 00 55 53 02 00                (0028, 0010) US Length: 2
+00000c74: 80 00                                  b'\x80\x00'    
+00000c76: 28 00 11 00 55 53 02 00                (0028, 0011) US Length: 2
+00000c7e: 80 00                                  b'\x80\x00'    
+00000c80: 28 00 30 00 44 53 12 00                (0028, 0030) DS Length: 18
+00000c88: 30 2e 36 36 31 34 36 38 5c 30 2e 36 ... b'0.661468\\0.6' ...
+00000c9a: 28 00 00 01 55 53 02 00                (0028, 0100) US Length: 2
+00000ca2: 10 00                                  b'\x10\x00'    
+00000ca4: 28 00 01 01 55 53 02 00                (0028, 0101) US Length: 2
+00000cac: 10 00                                  b'\x10\x00'    
+00000cae: 28 00 02 01 55 53 02 00                (0028, 0102) US Length: 2
+00000cb6: 0f 00                                  b'\x0f\x00'    
+00000cb8: 28 00 03 01 55 53 02 00                (0028, 0103) US Length: 2
+00000cc0: 01 00                                  b'\x01\x00'    
+00000cc2: 28 00 20 01 53 53 02 00                (0028, 0120) SS Length: 2
+00000cca: 30 f8                                  b'0\xf8'    
+00000ccc: 28 00 52 10 44 53 06 00                (0028, 1052) DS Length: 6
+00000cd4: 2d 31 30 32 34 20                      b'-1024 '    
+00000cda: 28 00 53 10 44 53 02 00                (0028, 1053) DS Length: 2
+00000ce2: 31 20                                  b'1 '    
+00000ce4: 29 00 10 00 4c 4f 0c 00                (0029, 0010) LO Length: 12
+00000cec: 47 45 4d 53 5f 49 4d 50 53 5f 30 31     b'GEMS_IMPS_01'    
+00000cf8: 29 00 04 10 53 4c 04 00                (0029, 1004) SL Length: 4
+00000d00: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00000d04: 29 00 05 10 44 53 08 00                (0029, 1005) DS Length: 8
+00000d0c: 30 2e 30 30 30 30 30 30                b'0.000000'    
+00000d14: 29 00 06 10 44 53 08 00                (0029, 1006) DS Length: 8
+00000d1c: 30 2e 30 30 30 30 30 30                b'0.000000'    
+00000d24: 29 00 07 10 53 4c 04 00                (0029, 1007) SL Length: 4
+00000d2c: 57 00 00 00                            b'W\x00\x00\x00'    
+00000d30: 29 00 08 10 53 48 00 00                (0029, 1008) SH Length: 0
+00000d38:                                        b''    
+00000d38: 29 00 09 10 53 48 00 00                (0029, 1009) SH Length: 0
+00000d40:                                        b''    
+00000d40: 29 00 0a 10 53 53 02 00                (0029, 100a) SS Length: 2
+00000d48: fc 02                                  b'\xfc\x02'    
+00000d4a: 29 00 26 10 53 53 02 00                (0029, 1026) SS Length: 2
+00000d52: 02 00                                  b'\x02\x00'    
+00000d54: 29 00 34 10 53 4c 04 00                (0029, 1034) SL Length: 4
+00000d5c: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00000d60: 29 00 35 10 53 4c 04 00                (0029, 1035) SL Length: 4
+00000d68: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00000d6c: 43 00 10 00 4c 4f 0c 00                (0043, 0010) LO Length: 12
+00000d74: 47 45 4d 53 5f 50 41 52 4d 5f 30 31     b'GEMS_PARM_01'    
+00000d80: 43 00 10 10 55 53 02 00                (0043, 1010) US Length: 2
+00000d88: 90 01                                  b'\x90\x01'    
+00000d8a: 43 00 11 10 55 53 02 00                (0043, 1011) US Length: 2
+00000d92: bf 28                                  b'\xbf('    
+00000d94: 43 00 12 10 53 53 06 00                (0043, 1012) SS Length: 6
+00000d9c: 0e 00 02 00 03 00                      b'\x0e\x00\x02\x00\x03\x00'    
+00000da2: 43 00 13 10 53 53 0a 00                (0043, 1013) SS Length: 10
+00000daa: 6b 00 15 00 04 00 02 00 14 00          b'k\x00\x15\x00\x04\x00\x02\x00\x14\x00'    
+00000db4: 43 00 14 10 53 53 06 00                (0043, 1014) SS Length: 6
+00000dbc: 04 00 04 00 05 00                      b'\x04\x00\x04\x00\x05\x00'    
+00000dc2: 43 00 15 10 53 53 02 00                (0043, 1015) SS Length: 2
+00000dca: bf 28                                  b'\xbf('    
+00000dcc: 43 00 16 10 53 53 02 00                (0043, 1016) SS Length: 2
+00000dd4: 00 00                                  b'\x00\x00'    
+00000dd6: 43 00 17 10 44 53 08 00                (0043, 1017) DS Length: 8
+00000dde: 30 2e 30 39 35 30 30 30                b'0.095000'    
+00000de6: 43 00 18 10 44 53 1a 00                (0043, 1018) DS Length: 26
+00000dee: 30 2e 30 38 35 30 30 30 5c 31 2e 31 ... b'0.085000\\1.1' ...
+00000e08: 43 00 19 10 53 53 02 00                (0043, 1019) SS Length: 2
+00000e10: 5e 01                                  b'^\x01'    
+00000e12: 43 00 1a 10 53 4c 04 00                (0043, 101a) SL Length: 4
+00000e1a: 07 00 00 00                            b'\x07\x00\x00\x00'    
+00000e1e: 43 00 1b 10 53 53 0a 00                (0043, 101b) SS Length: 10
+00000e26: 00 00 00 00 00 00 00 00 00 00          b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'    
+00000e30: 43 00 1c 10 53 53 02 00                (0043, 101c) SS Length: 2
+00000e38: 00 00                                  b'\x00\x00'    
+00000e3a: 43 00 1d 10 53 53 02 00                (0043, 101d) SS Length: 2
+00000e42: 28 00                                  b'(\x00'    
+00000e44: 43 00 1e 10 44 53 08 00                (0043, 101e) DS Length: 8
+00000e4c: 32 2e 30 30 30 30 30 30                b'2.000000'    
+00000e54: 43 00 1f 10 53 4c 04 00                (0043, 101f) SL Length: 4
+00000e5c: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00000e60: 43 00 20 10 44 53 08 00                (0043, 1020) DS Length: 8
+00000e68: 30 2e 30 30 30 30 30 30                b'0.000000'    
+00000e70: 43 00 21 10 53 53 02 00                (0043, 1021) SS Length: 2
+00000e78: 00 00                                  b'\x00\x00'    
+00000e7a: 43 00 25 10 53 53 0c 00                (0043, 1025) SS Length: 12
+00000e82: 01 00 02 00 03 00 ec 02 ed 02 ee 02     b'\x01\x00\x02\x00\x03\x00\xec\x02\xed\x02\xee\x02'    
+00000e8e: 43 00 26 10 55 53 0c 00                (0043, 1026) US Length: 12
+00000e96: 00 00 01 00 01 00 00 00 00 00 00 00     b'\x00\x00\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00'    
+00000ea2: 43 00 27 10 53 48 06 00                (0043, 1027) SH Length: 6
+00000eaa: 2f 31 2e 30 3a 31                      b'/1.0:1'    
+00000eb0: 43 00 28 10 4f 42 00 00 50 00 00 00    (0043, 1028) OB Length: 80
+00000ebc: 43 54 30 31 00 00 00 48 69 53 70 65 ... b'CT01\x00\x00\x00HiSpe' ...
+00000f0c: 43 00 29 10 4f 42 00 00 14 08 00 00    (0043, 1029) OB Length: 2068
+00000f18: 00 00 00 01 43 cf 52 14 02 d7 00 00 ... b'\x00\x00\x00\x01C\xcfR\x14\x02\xd7\x00\x00' ...
+0000172c: 43 00 2a 10 4f 42 00 00 28 00 00 00    (0043, 102a) OB Length: 40
+00001738: 43 54 30 31 00 00 00 48 69 53 70 65 ... b'CT01\x00\x00\x00HiSpe' ...
+00001760: 43 00 2b 10 53 53 08 00                (0043, 102b) SS Length: 8
+00001768: 04 00 04 00 00 00 00 00                b'\x04\x00\x04\x00\x00\x00\x00\x00'    
+00001770: 43 00 31 10 44 53 14 00                (0043, 1031) DS Length: 20
+00001778: 2d 31 31 2e 32 30 30 30 30 30 5c 39 ... b'-11.200000\\9' ...
+0000178c: 43 00 40 10 46 4c 04 00                (0043, 1040) FL Length: 4
+00001794: 76 14 32 43                            b'v\x142C'    
+00001798: 43 00 41 10 46 4c 04 00                (0043, 1041) FL Length: 4
+000017a0: 83 83 6e 45                            b'\x83\x83nE'    
+000017a4: 43 00 42 10 53 4c 04 00                (0043, 1042) SL Length: 4
+000017ac: 00 00 00 00                            b'\x00\x00\x00\x00'    
+000017b0: 43 00 43 10 53 4c 04 00                (0043, 1043) SL Length: 4
+000017b8: 00 00 00 00                            b'\x00\x00\x00\x00'    
+000017bc: 43 00 44 10 53 4c 04 00                (0043, 1044) SL Length: 4
+000017c4: 01 00 00 00                            b'\x01\x00\x00\x00'    
+000017c8: 43 00 45 10 53 4c 04 00                (0043, 1045) SL Length: 4
+000017d0: 01 00 00 00                            b'\x01\x00\x00\x00'    
+000017d4: 43 00 46 10 53 4c 04 00                (0043, 1046) SL Length: 4
+000017dc: 03 00 00 00                            b'\x03\x00\x00\x00'    
+000017e0: 43 00 47 10 53 4c 04 00                (0043, 1047) SL Length: 4
+000017e8: ff ff ff ff                            b'\xff\xff\xff\xff'    
+000017ec: 43 00 48 10 53 4c 04 00                (0043, 1048) SL Length: 4
+000017f4: 01 00 00 00                            b'\x01\x00\x00\x00'    
+000017f8: 43 00 49 10 53 4c 04 00                (0043, 1049) SL Length: 4
+00001800: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00001804: 43 00 4a 10 53 53 02 00                (0043, 104a) SS Length: 2
+0000180c: 01 00                                  b'\x01\x00'    
+0000180e: 43 00 4b 10 53 4c 04 00                (0043, 104b) SL Length: 4
+00001816: 00 00 00 00                            b'\x00\x00\x00\x00'    
+0000181a: 43 00 4c 10 53 53 02 00                (0043, 104c) SS Length: 2
+00001822: 00 00                                  b'\x00\x00'    
+00001824: 43 00 4d 10 46 4c 04 00                (0043, 104d) FL Length: 4
+0000182c: 00 00 00 00                            b'\x00\x00\x00\x00'    
+00001830: 43 00 4e 10 46 4c 04 00                (0043, 104e) FL Length: 4
+00001838: 19 9c 29 41                            b'\x19\x9c)A'    
+0000183c: e0 7f 10 00 4f 57 00 00 00 80 00 00    (7fe0, 0010) OW Length: 32768
+00001848: af 00 b4 00 a6 00 8f 00 8b 00 98 00 ... b'\xaf\x00\xb4\x00\xa6\x00\x8f\x00\x8b\x00\x98\x00' ...
+00009848: fc ff fc ff 4f 42 00 00 7e 00 00 00    (fffc, fffc) OB Length: 126
+00009854: 0a 00 fe 00 04 00 01 00 00 00 00 00 ... b'\n\x00\xfe\x00\x04\x00\x01\x00\x00\x00\x00\x00' ...
+------------------------------ Captured log call -------------------------------
+DEBUG    pydicom:filereader.py:823 Reading file '/home/swe-bench/pydicom__pydicom/pydicom/data/test_files/CT_small.dcm'
+DEBUG    pydicom:filereader.py:829 
+--------------------------------------------------------------------------------
+DEBUG    pydicom:filereader.py:830 Call to dcmread()
+DEBUG    pydicom:filereader.py:834 filename:'/home/swe-bench/pydicom__pydicom/pydicom/data/test_files/CT_small.dcm', defer_size='None', stop_before_pixels=False, force=False, specific_tags=None
+DEBUG    pydicom:filereader.py:838 Caller passed file name
+DEBUG    pydicom:filereader.py:839 --------------------------------------------------------------------------------
+DEBUG    pydicom:filereader.py:588 Reading File Meta Information preamble...
+DEBUG    pydicom:filereader.py:592 00000000: 49 49 2a 00 54 18 08 00...00 00 00 00 00 00 00 00
+DEBUG    pydicom:filereader.py:594 Reading File Meta Information prefix...
+DEBUG    pydicom:filereader.py:609 00000080: 'DICM' prefix found
+DEBUG    pydicom:filereader.py:153 00000084: 02 00 00 00 55 4c 04 00                (0002, 0000) UL Length: 4
+DEBUG    pydicom:filereader.py:197 0000008c: c0 00 00 00                            b'\xc0\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000090: 02 00 01 00 4f 42 00 00 02 00 00 00    (0002, 0001) OB Length: 2
+DEBUG    pydicom:filereader.py:197 0000009c: 00 01                                  b'\x00\x01'    
+DEBUG    pydicom:filereader.py:153 0000009e: 02 00 02 00 55 49 1a 00                (0002, 0002) UI Length: 26
+DEBUG    pydicom:filereader.py:197 000000a6: 31 2e 32 2e 38 34 30 2e 31 30 30 30 ... b'1.2.840.1000' ...
+DEBUG    pydicom:filereader.py:153 000000c0: 02 00 03 00 55 49 30 00                (0002, 0003) UI Length: 48
+DEBUG    pydicom:filereader.py:197 000000c8: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 000000f8: 02 00 10 00 55 49 14 00                (0002, 0010) UI Length: 20
+DEBUG    pydicom:filereader.py:197 00000100: 31 2e 32 2e 38 34 30 2e 31 30 30 30 ... b'1.2.840.1000' ...
+DEBUG    pydicom:filereader.py:153 00000114: 02 00 12 00 55 49 12 00                (0002, 0012) UI Length: 18
+DEBUG    pydicom:filereader.py:197 0000011c: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 0000012e: 02 00 13 00 53 48 0a 00                (0002, 0013) SH Length: 10
+DEBUG    pydicom:filereader.py:197 00000136: 44 43 54 4f 4f 4c 31 30 30 20          b'DCTOOL100 '    
+DEBUG    pydicom:filereader.py:153 00000140: 02 00 16 00 41 45 08 00                (0002, 0016) AE Length: 8
+DEBUG    pydicom:filereader.py:197 00000148: 43 4c 55 4e 49 45 31 20                b'CLUNIE1 '    
+DEBUG    pydicom:filereader.py:153 00000150: 08 00 05 00 43 53 0a 00                (0008, 0005) CS Length: 10
+DEBUG    pydicom:filereader.py:162 Reading ended by stop_when callback. Rewinding to start of data element.
+DEBUG    pydicom:filereader.py:153 00000150: 08 00 05 00 43 53 0a 00                (0008, 0005) CS Length: 10
+DEBUG    pydicom:filereader.py:162 Reading ended by stop_when callback. Rewinding to start of data element.
+DEBUG    pydicom:filereader.py:153 00000150: 08 00 05 00 43 53 0a 00                (0008, 0005) CS Length: 10
+DEBUG    pydicom:filereader.py:197 00000158: 49 53 4f 5f 49 52 20 31 30 30          b'ISO_IR 100'    
+DEBUG    pydicom:filereader.py:153 00000162: 08 00 08 00 43 53 16 00                (0008, 0008) CS Length: 22
+DEBUG    pydicom:filereader.py:197 0000016a: 4f 52 49 47 49 4e 41 4c 5c 50 52 49 ... b'ORIGINAL\\PRI' ...
+DEBUG    pydicom:filereader.py:153 00000180: 08 00 12 00 44 41 08 00                (0008, 0012) DA Length: 8
+DEBUG    pydicom:filereader.py:197 00000188: 32 30 30 34 30 31 31 39                b'20040119'    
+DEBUG    pydicom:filereader.py:153 00000190: 08 00 13 00 54 4d 06 00                (0008, 0013) TM Length: 6
+DEBUG    pydicom:filereader.py:197 00000198: 30 37 32 37 33 31                      b'072731'    
+DEBUG    pydicom:filereader.py:153 0000019e: 08 00 14 00 55 49 12 00                (0008, 0014) UI Length: 18
+DEBUG    pydicom:filereader.py:197 000001a6: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 000001b8: 08 00 16 00 55 49 1a 00                (0008, 0016) UI Length: 26
+DEBUG    pydicom:filereader.py:197 000001c0: 31 2e 32 2e 38 34 30 2e 31 30 30 30 ... b'1.2.840.1000' ...
+DEBUG    pydicom:filereader.py:153 000001da: 08 00 18 00 55 49 30 00                (0008, 0018) UI Length: 48
+DEBUG    pydicom:filereader.py:197 000001e2: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 00000212: 08 00 20 00 44 41 08 00                (0008, 0020) DA Length: 8
+DEBUG    pydicom:filereader.py:197 0000021a: 32 30 30 34 30 31 31 39                b'20040119'    
+DEBUG    pydicom:filereader.py:153 00000222: 08 00 21 00 44 41 08 00                (0008, 0021) DA Length: 8
+DEBUG    pydicom:filereader.py:197 0000022a: 31 39 39 37 30 34 33 30                b'19970430'    
+DEBUG    pydicom:filereader.py:153 00000232: 08 00 22 00 44 41 08 00                (0008, 0022) DA Length: 8
+DEBUG    pydicom:filereader.py:197 0000023a: 31 39 39 37 30 34 33 30                b'19970430'    
+DEBUG    pydicom:filereader.py:153 00000242: 08 00 23 00 44 41 08 00                (0008, 0023) DA Length: 8
+DEBUG    pydicom:filereader.py:197 0000024a: 31 39 39 37 30 34 33 30                b'19970430'    
+DEBUG    pydicom:filereader.py:153 00000252: 08 00 30 00 54 4d 06 00                (0008, 0030) TM Length: 6
+DEBUG    pydicom:filereader.py:197 0000025a: 30 37 32 37 33 30                      b'072730'    
+DEBUG    pydicom:filereader.py:153 00000260: 08 00 31 00 54 4d 06 00                (0008, 0031) TM Length: 6
+DEBUG    pydicom:filereader.py:197 00000268: 31 31 32 37 34 39                      b'112749'    
+DEBUG    pydicom:filereader.py:153 0000026e: 08 00 32 00 54 4d 06 00                (0008, 0032) TM Length: 6
+DEBUG    pydicom:filereader.py:197 00000276: 31 31 32 39 33 36                      b'112936'    
+DEBUG    pydicom:filereader.py:153 0000027c: 08 00 33 00 54 4d 06 00                (0008, 0033) TM Length: 6
+DEBUG    pydicom:filereader.py:197 00000284: 31 31 33 30 30 38                      b'113008'    
+DEBUG    pydicom:filereader.py:153 0000028a: 08 00 50 00 53 48 00 00                (0008, 0050) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000292:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000292: 08 00 60 00 43 53 02 00                (0008, 0060) CS Length: 2
+DEBUG    pydicom:filereader.py:197 0000029a: 43 54                                  b'CT'    
+DEBUG    pydicom:filereader.py:153 0000029c: 08 00 70 00 4c 4f 12 00                (0008, 0070) LO Length: 18
+DEBUG    pydicom:filereader.py:197 000002a4: 47 45 20 4d 45 44 49 43 41 4c 20 53 ... b'GE MEDICAL S' ...
+DEBUG    pydicom:filereader.py:153 000002b6: 08 00 80 00 4c 4f 12 00                (0008, 0080) LO Length: 18
+DEBUG    pydicom:filereader.py:197 000002be: 4a 46 4b 20 49 4d 41 47 49 4e 47 20 ... b'JFK IMAGING ' ...
+DEBUG    pydicom:filereader.py:153 000002d0: 08 00 90 00 50 4e 00 00                (0008, 0090) PN Length: 0
+DEBUG    pydicom:filereader.py:197 000002d8:                                        b''    
+DEBUG    pydicom:filereader.py:153 000002d8: 08 00 01 02 53 48 06 00                (0008, 0201) SH Length: 6
+DEBUG    pydicom:filereader.py:197 000002e0: 2d 30 35 30 30 20                      b'-0500 '    
+DEBUG    pydicom:filereader.py:153 000002e6: 08 00 10 10 53 48 08 00                (0008, 1010) SH Length: 8
+DEBUG    pydicom:filereader.py:197 000002ee: 43 54 30 31 5f 4f 43 30                b'CT01_OC0'    
+DEBUG    pydicom:filereader.py:153 000002f6: 08 00 30 10 4c 4f 04 00                (0008, 1030) LO Length: 4
+DEBUG    pydicom:filereader.py:197 000002fe: 65 2b 31 20                            b'e+1 '    
+DEBUG    pydicom:filereader.py:153 00000302: 08 00 90 10 4c 4f 08 00                (0008, 1090) LO Length: 8
+DEBUG    pydicom:filereader.py:197 0000030a: 52 48 41 50 53 4f 44 45                b'RHAPSODE'    
+DEBUG    pydicom:filereader.py:153 00000312: 09 00 10 00 4c 4f 0c 00                (0009, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 0000031a: 47 45 4d 53 5f 49 44 45 4e 5f 30 31     b'GEMS_IDEN_01'    
+DEBUG    pydicom:filereader.py:153 00000326: 09 00 01 10 4c 4f 0e 00                (0009, 1001) LO Length: 14
+DEBUG    pydicom:filereader.py:197 0000032e: 47 45 5f 47 45 4e 45 53 49 53 5f 46 ... b'GE_GENESIS_F' ...
+DEBUG    pydicom:filereader.py:153 0000033c: 09 00 02 10 53 48 04 00                (0009, 1002) SH Length: 4
+DEBUG    pydicom:filereader.py:197 00000344: 43 54 30 31                            b'CT01'    
+DEBUG    pydicom:filereader.py:153 00000348: 09 00 04 10 53 48 0c 00                (0009, 1004) SH Length: 12
+DEBUG    pydicom:filereader.py:197 00000350: 48 69 53 70 65 65 64 20 43 54 2f 69     b'HiSpeed CT/i'    
+DEBUG    pydicom:filereader.py:153 0000035c: 09 00 27 10 53 4c 04 00                (0009, 1027) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000364: b5 2c 67 33                            b'\xb5,g3'    
+DEBUG    pydicom:filereader.py:153 00000368: 09 00 30 10 53 48 00 00                (0009, 1030) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000370:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000370: 09 00 31 10 53 48 00 00                (0009, 1031) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000378:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000378: 09 00 e6 10 53 48 02 00                (0009, 10e6) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000380: 30 35                                  b'05'    
+DEBUG    pydicom:filereader.py:153 00000382: 09 00 e7 10 55 4c 04 00                (0009, 10e7) UL Length: 4
+DEBUG    pydicom:filereader.py:197 0000038a: 4d 22 03 3a                            b'M"\x03:'    
+DEBUG    pydicom:filereader.py:153 0000038e: 09 00 e9 10 53 4c 04 00                (0009, 10e9) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000396: b5 2c 67 33                            b'\xb5,g3'    
+DEBUG    pydicom:filereader.py:153 0000039a: 10 00 10 00 50 4e 16 00                (0010, 0010) PN Length: 22
+DEBUG    pydicom:filereader.py:197 000003a2: 43 6f 6d 70 72 65 73 73 65 64 53 61 ... b'CompressedSa' ...
+DEBUG    pydicom:filereader.py:153 000003b8: 10 00 20 00 4c 4f 04 00                (0010, 0020) LO Length: 4
+DEBUG    pydicom:filereader.py:197 000003c0: 31 43 54 31                            b'1CT1'    
+DEBUG    pydicom:filereader.py:153 000003c4: 10 00 30 00 44 41 00 00                (0010, 0030) DA Length: 0
+DEBUG    pydicom:filereader.py:197 000003cc:                                        b''    
+DEBUG    pydicom:filereader.py:153 000003cc: 10 00 40 00 43 53 02 00                (0010, 0040) CS Length: 2
+DEBUG    pydicom:filereader.py:197 000003d4: 4f 20                                  b'O '    
+DEBUG    pydicom:filereader.py:153 000003d6: 10 00 10 10 41 53 04 00                (0010, 1010) AS Length: 4
+DEBUG    pydicom:filereader.py:197 000003de: 30 30 30 59                            b'000Y'    
+DEBUG    pydicom:filereader.py:153 000003e2: 10 00 30 10 44 53 08 00                (0010, 1030) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000003ea: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000003f2: 10 00 b0 21 4c 54 00 00                (0010, 21b0) LT Length: 0
+DEBUG    pydicom:filereader.py:197 000003fa:                                        b''    
+DEBUG    pydicom:filereader.py:153 000003fa: 11 00 10 00 4c 4f 0c 00                (0011, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000402: 47 45 4d 53 5f 50 41 54 49 5f 30 31     b'GEMS_PATI_01'    
+DEBUG    pydicom:filereader.py:153 0000040e: 11 00 10 10 53 53 02 00                (0011, 1010) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000416: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000418: 18 00 10 00 4c 4f 0e 00                (0018, 0010) LO Length: 14
+DEBUG    pydicom:filereader.py:197 00000420: 49 53 4f 56 55 45 33 30 30 2f 31 30 ... b'ISOVUE300/10' ...
+DEBUG    pydicom:filereader.py:153 0000042e: 18 00 22 00 43 53 0c 00                (0018, 0022) CS Length: 12
+DEBUG    pydicom:filereader.py:197 00000436: 48 45 4c 49 43 41 4c 20 4d 4f 44 45     b'HELICAL MODE'    
+DEBUG    pydicom:filereader.py:153 00000442: 18 00 50 00 44 53 08 00                (0018, 0050) DS Length: 8
+DEBUG    pydicom:filereader.py:197 0000044a: 35 2e 30 30 30 30 30 30                b'5.000000'    
+DEBUG    pydicom:filereader.py:153 00000452: 18 00 60 00 44 53 04 00                (0018, 0060) DS Length: 4
+DEBUG    pydicom:filereader.py:197 0000045a: 31 32 30 20                            b'120 '    
+DEBUG    pydicom:filereader.py:153 0000045e: 18 00 88 00 44 53 08 00                (0018, 0088) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000466: 35 2e 30 30 30 30 30 30                b'5.000000'    
+DEBUG    pydicom:filereader.py:153 0000046e: 18 00 90 00 44 53 0a 00                (0018, 0090) DS Length: 10
+DEBUG    pydicom:filereader.py:197 00000476: 34 38 30 2e 30 30 30 30 30 30          b'480.000000'    
+DEBUG    pydicom:filereader.py:153 00000480: 18 00 20 10 4c 4f 02 00                (0018, 1020) LO Length: 2
+DEBUG    pydicom:filereader.py:197 00000488: 30 35                                  b'05'    
+DEBUG    pydicom:filereader.py:153 0000048a: 18 00 40 10 4c 4f 02 00                (0018, 1040) LO Length: 2
+DEBUG    pydicom:filereader.py:197 00000492: 49 56                                  b'IV'    
+DEBUG    pydicom:filereader.py:153 00000494: 18 00 00 11 44 53 0a 00                (0018, 1100) DS Length: 10
+DEBUG    pydicom:filereader.py:197 0000049c: 33 33 38 2e 36 37 31 36 30 30          b'338.671600'    
+DEBUG    pydicom:filereader.py:153 000004a6: 18 00 10 11 44 53 10 00                (0018, 1110) DS Length: 16
+DEBUG    pydicom:filereader.py:197 000004ae: 31 30 39 39 2e 33 31 30 30 35 38 35 ... b'1099.3100585' ...
+DEBUG    pydicom:filereader.py:153 000004be: 18 00 11 11 44 53 0a 00                (0018, 1111) DS Length: 10
+DEBUG    pydicom:filereader.py:197 000004c6: 36 33 30 2e 30 30 30 30 30 30          b'630.000000'    
+DEBUG    pydicom:filereader.py:153 000004d0: 18 00 20 11 44 53 08 00                (0018, 1120) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000004d8: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000004e0: 18 00 30 11 44 53 0a 00                (0018, 1130) DS Length: 10
+DEBUG    pydicom:filereader.py:197 000004e8: 31 33 33 2e 36 39 39 39 39 37          b'133.699997'    
+DEBUG    pydicom:filereader.py:153 000004f2: 18 00 50 11 49 53 04 00                (0018, 1150) IS Length: 4
+DEBUG    pydicom:filereader.py:197 000004fa: 31 36 30 31                            b'1601'    
+DEBUG    pydicom:filereader.py:153 000004fe: 18 00 51 11 49 53 04 00                (0018, 1151) IS Length: 4
+DEBUG    pydicom:filereader.py:197 00000506: 31 37 30 20                            b'170 '    
+DEBUG    pydicom:filereader.py:153 0000050a: 18 00 52 11 49 53 04 00                (0018, 1152) IS Length: 4
+DEBUG    pydicom:filereader.py:197 00000512: 31 37 30 20                            b'170 '    
+DEBUG    pydicom:filereader.py:153 00000516: 18 00 60 11 53 48 10 00                (0018, 1160) SH Length: 16
+DEBUG    pydicom:filereader.py:197 0000051e: 4c 41 52 47 45 20 42 4f 57 54 49 45 ... b'LARGE BOWTIE' ...
+DEBUG    pydicom:filereader.py:153 0000052e: 18 00 90 11 44 53 08 00                (0018, 1190) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000536: 30 2e 37 30 30 30 30 30                b'0.700000'    
+DEBUG    pydicom:filereader.py:153 0000053e: 18 00 10 12 53 48 08 00                (0018, 1210) SH Length: 8
+DEBUG    pydicom:filereader.py:197 00000546: 53 54 41 4e 44 41 52 44                b'STANDARD'    
+DEBUG    pydicom:filereader.py:153 0000054e: 18 00 00 51 43 53 04 00                (0018, 5100) CS Length: 4
+DEBUG    pydicom:filereader.py:197 00000556: 46 46 53 20                            b'FFS '    
+DEBUG    pydicom:filereader.py:153 0000055a: 19 00 10 00 4c 4f 0c 00                (0019, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000562: 47 45 4d 53 5f 41 43 51 55 5f 30 31     b'GEMS_ACQU_01'    
+DEBUG    pydicom:filereader.py:153 0000056e: 19 00 02 10 53 4c 04 00                (0019, 1002) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000576: 90 03 00 00                            b'\x90\x03\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000057a: 19 00 03 10 44 53 0a 00                (0019, 1003) DS Length: 10
+DEBUG    pydicom:filereader.py:197 00000582: 33 37 33 2e 37 35 30 30 30 30          b'373.750000'    
+DEBUG    pydicom:filereader.py:153 0000058c: 19 00 04 10 44 53 08 00                (0019, 1004) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000594: 31 2e 30 31 36 36 30 30                b'1.016600'    
+DEBUG    pydicom:filereader.py:153 0000059c: 19 00 0f 10 44 53 0a 00                (0019, 100f) DS Length: 10
+DEBUG    pydicom:filereader.py:197 000005a4: 39 35 35 2e 37 39 39 39 38 38          b'955.799988'    
+DEBUG    pydicom:filereader.py:153 000005ae: 19 00 11 10 53 53 02 00                (0019, 1011) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005b6: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 000005b8: 19 00 13 10 53 53 02 00                (0019, 1013) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005c0: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000005c2: 19 00 14 10 53 53 02 00                (0019, 1014) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005ca: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000005cc: 19 00 15 10 53 53 02 00                (0019, 1015) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005d4: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000005d6: 19 00 16 10 53 53 02 00                (0019, 1016) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005de: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000005e0: 19 00 17 10 53 53 02 00                (0019, 1017) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000005e8: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 000005ea: 19 00 18 10 4c 4f 02 00                (0019, 1018) LO Length: 2
+DEBUG    pydicom:filereader.py:197 000005f2: 53 20                                  b'S '    
+DEBUG    pydicom:filereader.py:153 000005f4: 19 00 19 10 44 53 08 00                (0019, 1019) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000005fc: 37 2e 37 39 31 38 37 30                b'7.791870'    
+DEBUG    pydicom:filereader.py:153 00000604: 19 00 1a 10 4c 4f 02 00                (0019, 101a) LO Length: 2
+DEBUG    pydicom:filereader.py:197 0000060c: 49 20                                  b'I '    
+DEBUG    pydicom:filereader.py:153 0000060e: 19 00 1b 10 44 53 0c 00                (0019, 101b) DS Length: 12
+DEBUG    pydicom:filereader.py:197 00000616: 2d 33 32 30 2e 31 39 37 39 36 38 20     b'-320.197968 '    
+DEBUG    pydicom:filereader.py:153 00000622: 19 00 1e 10 44 53 08 00                (0019, 101e) DS Length: 8
+DEBUG    pydicom:filereader.py:197 0000062a: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000632: 19 00 23 10 44 53 08 00                (0019, 1023) DS Length: 8
+DEBUG    pydicom:filereader.py:197 0000063a: 35 2e 30 30 30 30 30 30                b'5.000000'    
+DEBUG    pydicom:filereader.py:153 00000642: 19 00 24 10 44 53 0a 00                (0019, 1024) DS Length: 10
+DEBUG    pydicom:filereader.py:197 0000064a: 31 37 2e 37 38 34 35 37 38 20          b'17.784578 '    
+DEBUG    pydicom:filereader.py:153 00000654: 19 00 25 10 53 53 02 00                (0019, 1025) SS Length: 2
+DEBUG    pydicom:filereader.py:197 0000065c: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 0000065e: 19 00 26 10 53 4c 04 00                (0019, 1026) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000666: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000066a: 19 00 27 10 44 53 08 00                (0019, 1027) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000672: 31 2e 30 30 30 30 30 30                b'1.000000'    
+DEBUG    pydicom:filereader.py:153 0000067a: 19 00 2a 10 44 53 0a 00                (0019, 102a) DS Length: 10
+DEBUG    pydicom:filereader.py:197 00000682: 31 37 38 2e 30 37 39 39 32 36          b'178.079926'    
+DEBUG    pydicom:filereader.py:153 0000068c: 19 00 2b 10 44 53 0c 00                (0019, 102b) DS Length: 12
+DEBUG    pydicom:filereader.py:197 00000694: 33 39 39 34 2e 32 39 39 33 31 36 20     b'3994.299316 '    
+DEBUG    pydicom:filereader.py:153 000006a0: 19 00 2c 10 53 4c 04 00                (0019, 102c) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000006a8: bf 28 00 00                            b'\xbf(\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000006ac: 19 00 2e 10 44 53 0c 00                (0019, 102e) DS Length: 12
+DEBUG    pydicom:filereader.py:197 000006b4: 2d 37 31 38 2e 30 37 39 39 35 36 20     b'-718.079956 '    
+DEBUG    pydicom:filereader.py:153 000006c0: 19 00 2f 10 44 53 0a 00                (0019, 102f) DS Length: 10
+DEBUG    pydicom:filereader.py:197 000006c8: 39 38 34 2e 30 30 30 30 30 30          b'984.000000'    
+DEBUG    pydicom:filereader.py:153 000006d2: 19 00 39 10 53 53 02 00                (0019, 1039) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000006da: 10 00                                  b'\x10\x00'    
+DEBUG    pydicom:filereader.py:153 000006dc: 19 00 40 10 53 53 02 00                (0019, 1040) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000006e4: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000006e6: 19 00 41 10 53 53 02 00                (0019, 1041) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000006ee: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 000006f0: 19 00 42 10 53 53 02 00                (0019, 1042) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000006f8: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000006fa: 19 00 43 10 53 53 02 00                (0019, 1043) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000702: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000704: 19 00 44 10 44 53 08 00                (0019, 1044) DS Length: 8
+DEBUG    pydicom:filereader.py:197 0000070c: 31 2e 30 30 30 30 30 30                b'1.000000'    
+DEBUG    pydicom:filereader.py:153 00000714: 19 00 47 10 53 53 02 00                (0019, 1047) SS Length: 2
+DEBUG    pydicom:filereader.py:197 0000071c: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 0000071e: 19 00 4a 10 53 53 02 00                (0019, 104a) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000726: 06 00                                  b'\x06\x00'    
+DEBUG    pydicom:filereader.py:153 00000728: 19 00 4b 10 53 4c 04 00                (0019, 104b) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000730: bf 28 00 00                            b'\xbf(\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000734: 19 00 52 10 53 53 02 00                (0019, 1052) SS Length: 2
+DEBUG    pydicom:filereader.py:197 0000073c: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 0000073e: 19 00 57 10 53 53 02 00                (0019, 1057) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000746: a1 ff                                  b'\xa1\xff'    
+DEBUG    pydicom:filereader.py:153 00000748: 19 00 58 10 53 53 02 00                (0019, 1058) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000750: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000752: 19 00 5e 10 53 4c 04 00                (0019, 105e) SL Length: 4
+DEBUG    pydicom:filereader.py:197 0000075a: fb 02 00 00                            b'\xfb\x02\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000075e: 19 00 5f 10 53 4c 04 00                (0019, 105f) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000766: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000076a: 19 00 60 10 53 4c 04 00                (0019, 1060) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000772: b1 07 00 00                            b'\xb1\x07\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000776: 19 00 61 10 53 4c 04 00                (0019, 1061) SL Length: 4
+DEBUG    pydicom:filereader.py:197 0000077e: 28 06 00 00                            b'(\x06\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000782: 19 00 62 10 53 4c 04 00                (0019, 1062) SL Length: 4
+DEBUG    pydicom:filereader.py:197 0000078a: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000078e: 19 00 6a 10 53 53 02 00                (0019, 106a) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000796: 04 00                                  b'\x04\x00'    
+DEBUG    pydicom:filereader.py:153 00000798: 19 00 6b 10 53 53 02 00                (0019, 106b) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000007a0: 54 03                                  b'T\x03'    
+DEBUG    pydicom:filereader.py:153 000007a2: 19 00 70 10 53 53 02 00                (0019, 1070) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000007aa: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 000007ac: 19 00 71 10 53 53 02 00                (0019, 1071) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000007b4: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000007b6: 19 00 72 10 44 53 08 00                (0019, 1072) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000007be: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000007c6: 19 00 73 10 44 53 08 00                (0019, 1073) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000007ce: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000007d6: 19 00 74 10 44 53 08 00                (0019, 1074) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000007de: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000007e6: 19 00 75 10 44 53 08 00                (0019, 1075) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000007ee: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 000007f6: 19 00 76 10 44 53 08 00                (0019, 1076) DS Length: 8
+DEBUG    pydicom:filereader.py:197 000007fe: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000806: 19 00 da 10 53 53 02 00                (0019, 10da) SS Length: 2
+DEBUG    pydicom:filereader.py:197 0000080e: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000810: 19 00 db 10 44 53 08 00                (0019, 10db) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000818: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000820: 19 00 dc 10 53 53 02 00                (0019, 10dc) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000828: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 0000082a: 19 00 dd 10 53 53 02 00                (0019, 10dd) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000832: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 00000834: 19 00 de 10 44 53 08 00                (0019, 10de) DS Length: 8
+DEBUG    pydicom:filereader.py:197 0000083c: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000844: 20 00 0d 00 55 49 2c 00                (0020, 000d) UI Length: 44
+DEBUG    pydicom:filereader.py:197 0000084c: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 00000878: 20 00 0e 00 55 49 2e 00                (0020, 000e) UI Length: 46
+DEBUG    pydicom:filereader.py:197 00000880: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 000008ae: 20 00 10 00 53 48 04 00                (0020, 0010) SH Length: 4
+DEBUG    pydicom:filereader.py:197 000008b6: 31 43 54 31                            b'1CT1'    
+DEBUG    pydicom:filereader.py:153 000008ba: 20 00 11 00 49 53 02 00                (0020, 0011) IS Length: 2
+DEBUG    pydicom:filereader.py:197 000008c2: 31 20                                  b'1 '    
+DEBUG    pydicom:filereader.py:153 000008c4: 20 00 12 00 49 53 02 00                (0020, 0012) IS Length: 2
+DEBUG    pydicom:filereader.py:197 000008cc: 32 20                                  b'2 '    
+DEBUG    pydicom:filereader.py:153 000008ce: 20 00 13 00 49 53 02 00                (0020, 0013) IS Length: 2
+DEBUG    pydicom:filereader.py:197 000008d6: 31 20                                  b'1 '    
+DEBUG    pydicom:filereader.py:153 000008d8: 20 00 32 00 44 53 22 00                (0020, 0032) DS Length: 34
+DEBUG    pydicom:filereader.py:197 000008e0: 2d 31 35 38 2e 31 33 35 38 30 33 5c ... b'-158.135803\\' ...
+DEBUG    pydicom:filereader.py:153 00000902: 20 00 37 00 44 53 36 00                (0020, 0037) DS Length: 54
+DEBUG    pydicom:filereader.py:197 0000090a: 31 2e 30 30 30 30 30 30 5c 30 2e 30 ... b'1.000000\\0.0' ...
+DEBUG    pydicom:filereader.py:153 00000940: 20 00 52 00 55 49 2e 00                (0020, 0052) UI Length: 46
+DEBUG    pydicom:filereader.py:197 00000948: 31 2e 33 2e 36 2e 31 2e 34 2e 31 2e ... b'1.3.6.1.4.1.' ...
+DEBUG    pydicom:filereader.py:153 00000976: 20 00 60 00 43 53 00 00                (0020, 0060) CS Length: 0
+DEBUG    pydicom:filereader.py:197 0000097e:                                        b''    
+DEBUG    pydicom:filereader.py:153 0000097e: 20 00 40 10 4c 4f 02 00                (0020, 1040) LO Length: 2
+DEBUG    pydicom:filereader.py:197 00000986: 53 4e                                  b'SN'    
+DEBUG    pydicom:filereader.py:153 00000988: 20 00 41 10 44 53 0e 00                (0020, 1041) DS Length: 14
+DEBUG    pydicom:filereader.py:197 00000990: 2d 37 37 2e 32 30 34 30 36 33 34 31 ... b'-77.20406341' ...
+DEBUG    pydicom:filereader.py:153 0000099e: 20 00 00 40 4c 54 0c 00                (0020, 4000) LT Length: 12
+DEBUG    pydicom:filereader.py:197 000009a6: 55 6e 63 6f 6d 70 72 65 73 73 65 64     b'Uncompressed'    
+DEBUG    pydicom:filereader.py:153 000009b2: 21 00 10 00 4c 4f 0c 00                (0021, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 000009ba: 47 45 4d 53 5f 52 45 4c 41 5f 30 31     b'GEMS_RELA_01'    
+DEBUG    pydicom:filereader.py:153 000009c6: 21 00 03 10 53 53 02 00                (0021, 1003) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000009ce: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 000009d0: 21 00 05 10 53 48 02 00                (0021, 1005) SH Length: 2
+DEBUG    pydicom:filereader.py:197 000009d8: 30 35                                  b'05'    
+DEBUG    pydicom:filereader.py:153 000009da: 21 00 07 10 55 4c 04 00                (0021, 1007) UL Length: 4
+DEBUG    pydicom:filereader.py:197 000009e2: 29 2f b6 5f                            b')/\xb6_'    
+DEBUG    pydicom:filereader.py:153 000009e6: 21 00 15 10 55 53 02 00                (0021, 1015) US Length: 2
+DEBUG    pydicom:filereader.py:197 000009ee: 0e 5e                                  b'\x0e^'    
+DEBUG    pydicom:filereader.py:153 000009f0: 21 00 16 10 53 53 02 00                (0021, 1016) SS Length: 2
+DEBUG    pydicom:filereader.py:197 000009f8: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 000009fa: 21 00 18 10 53 48 02 00                (0021, 1018) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000a02: 30 35                                  b'05'    
+DEBUG    pydicom:filereader.py:153 00000a04: 21 00 19 10 55 4c 04 00                (0021, 1019) UL Length: 4
+DEBUG    pydicom:filereader.py:197 00000a0c: 32 66 be 2c                            b'2f\xbe,'    
+DEBUG    pydicom:filereader.py:153 00000a10: 21 00 37 10 53 53 02 00                (0021, 1037) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000a18: 10 00                                  b'\x10\x00'    
+DEBUG    pydicom:filereader.py:153 00000a1a: 21 00 4a 10 4c 4f 00 00                (0021, 104a) LO Length: 0
+DEBUG    pydicom:filereader.py:197 00000a22:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000a22: 21 00 90 10 53 53 02 00                (0021, 1090) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000a2a: e8 1c                                  b'\xe8\x1c'    
+DEBUG    pydicom:filereader.py:153 00000a2c: 21 00 91 10 53 53 02 00                (0021, 1091) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000a34: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000a36: 21 00 92 10 46 4c 04 00                (0021, 1092) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000a3e: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000a42: 21 00 93 10 46 4c 04 00                (0021, 1093) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000a4a: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000a4e: 23 00 10 00 4c 4f 0c 00                (0023, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000a56: 47 45 4d 53 5f 53 54 44 59 5f 30 31     b'GEMS_STDY_01'    
+DEBUG    pydicom:filereader.py:153 00000a62: 23 00 70 10 46 44 08 00                (0023, 1070) FD Length: 8
+DEBUG    pydicom:filereader.py:197 00000a6a: d6 37 8e 88 96 b3 c9 41                b'\xd67\x8e\x88\x96\xb3\xc9A'    
+DEBUG    pydicom:filereader.py:153 00000a72: 23 00 74 10 53 4c 04 00                (0023, 1074) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000a7a: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000a7e: 23 00 7d 10 53 53 02 00                (0023, 107d) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000a86: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000a88: 25 00 10 00 4c 4f 0c 00                (0025, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000a90: 47 45 4d 53 5f 53 45 52 53 5f 30 31     b'GEMS_SERS_01'    
+DEBUG    pydicom:filereader.py:153 00000a9c: 25 00 06 10 53 53 02 00                (0025, 1006) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000aa4: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000aa6: 25 00 07 10 53 4c 04 00                (0025, 1007) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000aae: 2c 00 00 00                            b',\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000ab2: 25 00 10 10 53 4c 04 00                (0025, 1010) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000aba: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000abe: 25 00 11 10 53 53 02 00                (0025, 1011) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000ac6: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000ac8: 25 00 17 10 53 4c 04 00                (0025, 1017) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000ad0: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000ad4: 25 00 18 10 53 4c 04 00                (0025, 1018) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000adc: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000ae0: 25 00 19 10 53 4c 04 00                (0025, 1019) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000ae8: 04 00 00 00                            b'\x04\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000aec: 25 00 1a 10 53 48 00 00                (0025, 101a) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000af4:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000af4: 27 00 10 00 4c 4f 0c 00                (0027, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000afc: 47 45 4d 53 5f 49 4d 41 47 5f 30 31     b'GEMS_IMAG_01'    
+DEBUG    pydicom:filereader.py:153 00000b08: 27 00 06 10 53 4c 04 00                (0027, 1006) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b10: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000b14: 27 00 10 10 53 53 02 00                (0027, 1010) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000b1c: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000b1e: 27 00 1c 10 53 4c 04 00                (0027, 101c) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b26: 96 00 00 00                            b'\x96\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000b2a: 27 00 1d 10 53 53 02 00                (0027, 101d) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000b32: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 00000b34: 27 00 1e 10 53 4c 04 00                (0027, 101e) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b3c: 18 00 00 00                            b'\x18\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000b40: 27 00 1f 10 53 4c 04 00                (0027, 101f) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b48: 81 00 00 00                            b'\x81\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000b4c: 27 00 20 10 53 53 02 00                (0027, 1020) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000b54: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 00000b56: 27 00 30 10 53 48 00 00                (0027, 1030) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000b5e:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000b5e: 27 00 35 10 53 53 02 00                (0027, 1035) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000b66: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 00000b68: 27 00 40 10 53 48 02 00                (0027, 1040) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000b70: 49 20                                  b'I '    
+DEBUG    pydicom:filereader.py:153 00000b72: 27 00 41 10 46 4c 04 00                (0027, 1041) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b7a: 7b 68 9a c2                            b'{h\x9a\xc2'    
+DEBUG    pydicom:filereader.py:153 00000b7e: 27 00 42 10 46 4c 04 00                (0027, 1042) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b86: 33 33 33 c1                            b'333\xc1'    
+DEBUG    pydicom:filereader.py:153 00000b8a: 27 00 43 10 46 4c 04 00                (0027, 1043) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b92: 33 33 1b 41                            b'33\x1bA'    
+DEBUG    pydicom:filereader.py:153 00000b96: 27 00 44 10 46 4c 04 00                (0027, 1044) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000b9e: 66 66 97 c2                            b'ff\x97\xc2'    
+DEBUG    pydicom:filereader.py:153 00000ba2: 27 00 45 10 46 4c 04 00                (0027, 1045) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000baa: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000bae: 27 00 46 10 46 4c 04 00                (0027, 1046) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bb6: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000bba: 27 00 47 10 46 4c 04 00                (0027, 1047) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bc2: 00 00 80 bf                            b'\x00\x00\x80\xbf'    
+DEBUG    pydicom:filereader.py:153 00000bc6: 27 00 48 10 46 4c 04 00                (0027, 1048) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bce: 2a 89 34 c3                            b'*\x894\xc3'    
+DEBUG    pydicom:filereader.py:153 00000bd2: 27 00 49 10 46 4c 04 00                (0027, 1049) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bda: 2a 09 33 43                            b'*\t3C'    
+DEBUG    pydicom:filereader.py:153 00000bde: 27 00 4a 10 46 4c 04 00                (0027, 104a) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000be6: 66 66 97 c2                            b'ff\x97\xc2'    
+DEBUG    pydicom:filereader.py:153 00000bea: 27 00 4b 10 46 4c 04 00                (0027, 104b) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bf2: 2a 89 34 c3                            b'*\x894\xc3'    
+DEBUG    pydicom:filereader.py:153 00000bf6: 27 00 4c 10 46 4c 04 00                (0027, 104c) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000bfe: c4 a2 1f c3                            b'\xc4\xa2\x1f\xc3'    
+DEBUG    pydicom:filereader.py:153 00000c02: 27 00 4d 10 46 4c 04 00                (0027, 104d) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000c0a: 66 66 97 c2                            b'ff\x97\xc2'    
+DEBUG    pydicom:filereader.py:153 00000c0e: 27 00 50 10 46 4c 04 00                (0027, 1050) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000c16: cc cc 7c c2                            b'\xcc\xcc|\xc2'    
+DEBUG    pydicom:filereader.py:153 00000c1a: 27 00 51 10 46 4c 04 00                (0027, 1051) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00000c22: f6 67 e8 c2                            b'\xf6g\xe8\xc2'    
+DEBUG    pydicom:filereader.py:153 00000c26: 27 00 52 10 53 48 02 00                (0027, 1052) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000c2e: 4c 20                                  b'L '    
+DEBUG    pydicom:filereader.py:153 00000c30: 27 00 53 10 53 48 02 00                (0027, 1053) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000c38: 41 20                                  b'A '    
+DEBUG    pydicom:filereader.py:153 00000c3a: 27 00 54 10 53 48 02 00                (0027, 1054) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000c42: 49 20                                  b'I '    
+DEBUG    pydicom:filereader.py:153 00000c44: 27 00 55 10 53 48 02 00                (0027, 1055) SH Length: 2
+DEBUG    pydicom:filereader.py:197 00000c4c: 49 20                                  b'I '    
+DEBUG    pydicom:filereader.py:153 00000c4e: 28 00 02 00 55 53 02 00                (0028, 0002) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000c56: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 00000c58: 28 00 04 00 43 53 0c 00                (0028, 0004) CS Length: 12
+DEBUG    pydicom:filereader.py:197 00000c60: 4d 4f 4e 4f 43 48 52 4f 4d 45 32 20     b'MONOCHROME2 '    
+DEBUG    pydicom:filereader.py:153 00000c6c: 28 00 10 00 55 53 02 00                (0028, 0010) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000c74: 80 00                                  b'\x80\x00'    
+DEBUG    pydicom:filereader.py:153 00000c76: 28 00 11 00 55 53 02 00                (0028, 0011) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000c7e: 80 00                                  b'\x80\x00'    
+DEBUG    pydicom:filereader.py:153 00000c80: 28 00 30 00 44 53 12 00                (0028, 0030) DS Length: 18
+DEBUG    pydicom:filereader.py:197 00000c88: 30 2e 36 36 31 34 36 38 5c 30 2e 36 ... b'0.661468\\0.6' ...
+DEBUG    pydicom:filereader.py:153 00000c9a: 28 00 00 01 55 53 02 00                (0028, 0100) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000ca2: 10 00                                  b'\x10\x00'    
+DEBUG    pydicom:filereader.py:153 00000ca4: 28 00 01 01 55 53 02 00                (0028, 0101) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000cac: 10 00                                  b'\x10\x00'    
+DEBUG    pydicom:filereader.py:153 00000cae: 28 00 02 01 55 53 02 00                (0028, 0102) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000cb6: 0f 00                                  b'\x0f\x00'    
+DEBUG    pydicom:filereader.py:153 00000cb8: 28 00 03 01 55 53 02 00                (0028, 0103) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000cc0: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 00000cc2: 28 00 20 01 53 53 02 00                (0028, 0120) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000cca: 30 f8                                  b'0\xf8'    
+DEBUG    pydicom:filereader.py:153 00000ccc: 28 00 52 10 44 53 06 00                (0028, 1052) DS Length: 6
+DEBUG    pydicom:filereader.py:197 00000cd4: 2d 31 30 32 34 20                      b'-1024 '    
+DEBUG    pydicom:filereader.py:153 00000cda: 28 00 53 10 44 53 02 00                (0028, 1053) DS Length: 2
+DEBUG    pydicom:filereader.py:197 00000ce2: 31 20                                  b'1 '    
+DEBUG    pydicom:filereader.py:153 00000ce4: 29 00 10 00 4c 4f 0c 00                (0029, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000cec: 47 45 4d 53 5f 49 4d 50 53 5f 30 31     b'GEMS_IMPS_01'    
+DEBUG    pydicom:filereader.py:153 00000cf8: 29 00 04 10 53 4c 04 00                (0029, 1004) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000d00: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000d04: 29 00 05 10 44 53 08 00                (0029, 1005) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000d0c: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000d14: 29 00 06 10 44 53 08 00                (0029, 1006) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000d1c: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000d24: 29 00 07 10 53 4c 04 00                (0029, 1007) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000d2c: 57 00 00 00                            b'W\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000d30: 29 00 08 10 53 48 00 00                (0029, 1008) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000d38:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000d38: 29 00 09 10 53 48 00 00                (0029, 1009) SH Length: 0
+DEBUG    pydicom:filereader.py:197 00000d40:                                        b''    
+DEBUG    pydicom:filereader.py:153 00000d40: 29 00 0a 10 53 53 02 00                (0029, 100a) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000d48: fc 02                                  b'\xfc\x02'    
+DEBUG    pydicom:filereader.py:153 00000d4a: 29 00 26 10 53 53 02 00                (0029, 1026) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000d52: 02 00                                  b'\x02\x00'    
+DEBUG    pydicom:filereader.py:153 00000d54: 29 00 34 10 53 4c 04 00                (0029, 1034) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000d5c: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000d60: 29 00 35 10 53 4c 04 00                (0029, 1035) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000d68: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000d6c: 43 00 10 00 4c 4f 0c 00                (0043, 0010) LO Length: 12
+DEBUG    pydicom:filereader.py:197 00000d74: 47 45 4d 53 5f 50 41 52 4d 5f 30 31     b'GEMS_PARM_01'    
+DEBUG    pydicom:filereader.py:153 00000d80: 43 00 10 10 55 53 02 00                (0043, 1010) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000d88: 90 01                                  b'\x90\x01'    
+DEBUG    pydicom:filereader.py:153 00000d8a: 43 00 11 10 55 53 02 00                (0043, 1011) US Length: 2
+DEBUG    pydicom:filereader.py:197 00000d92: bf 28                                  b'\xbf('    
+DEBUG    pydicom:filereader.py:153 00000d94: 43 00 12 10 53 53 06 00                (0043, 1012) SS Length: 6
+DEBUG    pydicom:filereader.py:197 00000d9c: 0e 00 02 00 03 00                      b'\x0e\x00\x02\x00\x03\x00'    
+DEBUG    pydicom:filereader.py:153 00000da2: 43 00 13 10 53 53 0a 00                (0043, 1013) SS Length: 10
+DEBUG    pydicom:filereader.py:197 00000daa: 6b 00 15 00 04 00 02 00 14 00          b'k\x00\x15\x00\x04\x00\x02\x00\x14\x00'    
+DEBUG    pydicom:filereader.py:153 00000db4: 43 00 14 10 53 53 06 00                (0043, 1014) SS Length: 6
+DEBUG    pydicom:filereader.py:197 00000dbc: 04 00 04 00 05 00                      b'\x04\x00\x04\x00\x05\x00'    
+DEBUG    pydicom:filereader.py:153 00000dc2: 43 00 15 10 53 53 02 00                (0043, 1015) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000dca: bf 28                                  b'\xbf('    
+DEBUG    pydicom:filereader.py:153 00000dcc: 43 00 16 10 53 53 02 00                (0043, 1016) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000dd4: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000dd6: 43 00 17 10 44 53 08 00                (0043, 1017) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000dde: 30 2e 30 39 35 30 30 30                b'0.095000'    
+DEBUG    pydicom:filereader.py:153 00000de6: 43 00 18 10 44 53 1a 00                (0043, 1018) DS Length: 26
+DEBUG    pydicom:filereader.py:197 00000dee: 30 2e 30 38 35 30 30 30 5c 31 2e 31 ... b'0.085000\\1.1' ...
+DEBUG    pydicom:filereader.py:153 00000e08: 43 00 19 10 53 53 02 00                (0043, 1019) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000e10: 5e 01                                  b'^\x01'    
+DEBUG    pydicom:filereader.py:153 00000e12: 43 00 1a 10 53 4c 04 00                (0043, 101a) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000e1a: 07 00 00 00                            b'\x07\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000e1e: 43 00 1b 10 53 53 0a 00                (0043, 101b) SS Length: 10
+DEBUG    pydicom:filereader.py:197 00000e26: 00 00 00 00 00 00 00 00 00 00          b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000e30: 43 00 1c 10 53 53 02 00                (0043, 101c) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000e38: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000e3a: 43 00 1d 10 53 53 02 00                (0043, 101d) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000e42: 28 00                                  b'(\x00'    
+DEBUG    pydicom:filereader.py:153 00000e44: 43 00 1e 10 44 53 08 00                (0043, 101e) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000e4c: 32 2e 30 30 30 30 30 30                b'2.000000'    
+DEBUG    pydicom:filereader.py:153 00000e54: 43 00 1f 10 53 4c 04 00                (0043, 101f) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00000e5c: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000e60: 43 00 20 10 44 53 08 00                (0043, 1020) DS Length: 8
+DEBUG    pydicom:filereader.py:197 00000e68: 30 2e 30 30 30 30 30 30                b'0.000000'    
+DEBUG    pydicom:filereader.py:153 00000e70: 43 00 21 10 53 53 02 00                (0043, 1021) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00000e78: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000e7a: 43 00 25 10 53 53 0c 00                (0043, 1025) SS Length: 12
+DEBUG    pydicom:filereader.py:197 00000e82: 01 00 02 00 03 00 ec 02 ed 02 ee 02     b'\x01\x00\x02\x00\x03\x00\xec\x02\xed\x02\xee\x02'    
+DEBUG    pydicom:filereader.py:153 00000e8e: 43 00 26 10 55 53 0c 00                (0043, 1026) US Length: 12
+DEBUG    pydicom:filereader.py:197 00000e96: 00 00 01 00 01 00 00 00 00 00 00 00     b'\x00\x00\x01\x00\x01\x00\x00\x00\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00000ea2: 43 00 27 10 53 48 06 00                (0043, 1027) SH Length: 6
+DEBUG    pydicom:filereader.py:197 00000eaa: 2f 31 2e 30 3a 31                      b'/1.0:1'    
+DEBUG    pydicom:filereader.py:153 00000eb0: 43 00 28 10 4f 42 00 00 50 00 00 00    (0043, 1028) OB Length: 80
+DEBUG    pydicom:filereader.py:197 00000ebc: 43 54 30 31 00 00 00 48 69 53 70 65 ... b'CT01\x00\x00\x00HiSpe' ...
+DEBUG    pydicom:filereader.py:153 00000f0c: 43 00 29 10 4f 42 00 00 14 08 00 00    (0043, 1029) OB Length: 2068
+DEBUG    pydicom:filereader.py:197 00000f18: 00 00 00 01 43 cf 52 14 02 d7 00 00 ... b'\x00\x00\x00\x01C\xcfR\x14\x02\xd7\x00\x00' ...
+DEBUG    pydicom:filereader.py:153 0000172c: 43 00 2a 10 4f 42 00 00 28 00 00 00    (0043, 102a) OB Length: 40
+DEBUG    pydicom:filereader.py:197 00001738: 43 54 30 31 00 00 00 48 69 53 70 65 ... b'CT01\x00\x00\x00HiSpe' ...
+DEBUG    pydicom:filereader.py:153 00001760: 43 00 2b 10 53 53 08 00                (0043, 102b) SS Length: 8
+DEBUG    pydicom:filereader.py:197 00001768: 04 00 04 00 00 00 00 00                b'\x04\x00\x04\x00\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00001770: 43 00 31 10 44 53 14 00                (0043, 1031) DS Length: 20
+DEBUG    pydicom:filereader.py:197 00001778: 2d 31 31 2e 32 30 30 30 30 30 5c 39 ... b'-11.200000\\9' ...
+DEBUG    pydicom:filereader.py:153 0000178c: 43 00 40 10 46 4c 04 00                (0043, 1040) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00001794: 76 14 32 43                            b'v\x142C'    
+DEBUG    pydicom:filereader.py:153 00001798: 43 00 41 10 46 4c 04 00                (0043, 1041) FL Length: 4
+DEBUG    pydicom:filereader.py:197 000017a0: 83 83 6e 45                            b'\x83\x83nE'    
+DEBUG    pydicom:filereader.py:153 000017a4: 43 00 42 10 53 4c 04 00                (0043, 1042) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017ac: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017b0: 43 00 43 10 53 4c 04 00                (0043, 1043) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017b8: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017bc: 43 00 44 10 53 4c 04 00                (0043, 1044) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017c4: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017c8: 43 00 45 10 53 4c 04 00                (0043, 1045) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017d0: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017d4: 43 00 46 10 53 4c 04 00                (0043, 1046) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017dc: 03 00 00 00                            b'\x03\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017e0: 43 00 47 10 53 4c 04 00                (0043, 1047) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017e8: ff ff ff ff                            b'\xff\xff\xff\xff'    
+DEBUG    pydicom:filereader.py:153 000017ec: 43 00 48 10 53 4c 04 00                (0043, 1048) SL Length: 4
+DEBUG    pydicom:filereader.py:197 000017f4: 01 00 00 00                            b'\x01\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 000017f8: 43 00 49 10 53 4c 04 00                (0043, 1049) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00001800: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00001804: 43 00 4a 10 53 53 02 00                (0043, 104a) SS Length: 2
+DEBUG    pydicom:filereader.py:197 0000180c: 01 00                                  b'\x01\x00'    
+DEBUG    pydicom:filereader.py:153 0000180e: 43 00 4b 10 53 4c 04 00                (0043, 104b) SL Length: 4
+DEBUG    pydicom:filereader.py:197 00001816: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 0000181a: 43 00 4c 10 53 53 02 00                (0043, 104c) SS Length: 2
+DEBUG    pydicom:filereader.py:197 00001822: 00 00                                  b'\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00001824: 43 00 4d 10 46 4c 04 00                (0043, 104d) FL Length: 4
+DEBUG    pydicom:filereader.py:197 0000182c: 00 00 00 00                            b'\x00\x00\x00\x00'    
+DEBUG    pydicom:filereader.py:153 00001830: 43 00 4e 10 46 4c 04 00                (0043, 104e) FL Length: 4
+DEBUG    pydicom:filereader.py:197 00001838: 19 9c 29 41                            b'\x19\x9c)A'    
+DEBUG    pydicom:filereader.py:153 0000183c: e0 7f 10 00 4f 57 00 00 00 80 00 00    (7fe0, 0010) OW Length: 32768
+DEBUG    pydicom:filereader.py:197 00001848: af 00 b4 00 a6 00 8f 00 8b 00 98 00 ... b'\xaf\x00\xb4\x00\xa6\x00\x8f\x00\x8b\x00\x98\x00' ...
+DEBUG    pydicom:filereader.py:153 00009848: fc ff fc ff 4f 42 00 00 7e 00 00 00    (fffc, fffc) OB Length: 126
+DEBUG    pydicom:filereader.py:197 00009854: 0a 00 fe 00 04 00 01 00 00 00 00 00 ... b'\n\x00\xfe\x00\x04\x00\x01\x00\x00\x00\x00\x00' ...
+___________________ TestDebug.test_debug_off_handler_stream ____________________
+----------------------------- Captured stderr call -----------------------------
+Reading file '/home/swe-bench/pydicom__pydicom/pydicom/data/test_files/CT_small.dcm'
+Reading File Meta Information preamble...
+Reading File Meta Information prefix...
+00000080: 'DICM' prefix found
+------------------------------ Captured log call -------------------------------
+DEBUG    pydicom:filereader.py:823 Reading file '/home/swe-bench/pydicom__pydicom/pydicom/data/test_files/CT_small.dcm'
+DEBUG    pydicom:filereader.py:588 Reading File Meta Information preamble...
+DEBUG    pydicom:filereader.py:594 Reading File Meta Information prefix...
+DEBUG    pydicom:filereader.py:609 00000080: 'DICM' prefix found
+=========================== short test summary info ============================
+PASSED pydicom/tests/test_config.py::TestDebug::test_default
+PASSED pydicom/tests/test_config.py::TestDebug::test_debug_on_handler_null
+PASSED pydicom/tests/test_config.py::TestDebug::test_debug_off_handler_null
+PASSED pydicom/tests/test_config.py::TestDebug::test_debug_on_handler_stream
+PASSED pydicom/tests/test_config.py::TestDebug::test_debug_off_handler_stream
+============================== 5 passed in 0.38s ===============================
+
+ 
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Return Code: 0 
+
+>>>>> All Tests Passed
+[pydicom__pydicom__1.3] [pydicom__pydicom-901] Test script run successful 

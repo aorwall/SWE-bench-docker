@@ -1,0 +1,235 @@
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Task Metadata:
+	- Instance ID: marshmallow-code__marshmallow-1359
+	- Testbed: marshmallow-code__marshmallow__3.0
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Command: git status --porcelain 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Std. Output:
+ 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Return Code: 0 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Command: git -c advice.detachedHead=false checkout b40a0f4e33823e6d0f341f7e8684e359a99060d1 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Std. Output:
+Previous HEAD position was 8b3a326 Merge branch '2.x-line' into dev
+HEAD is now at b40a0f4 Merge branch '2.x-line' into dev
+ 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Return Code: 0 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Command: git apply -v /home/swe-bench/temp_marshmallow-code__marshmallow-1359_pred_try.patch 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Std. Output:
+Checking patch src/marshmallow/fields.py...
+Applied patch src/marshmallow/fields.py cleanly.
+ 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Return Code: 0 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Command: git apply -v -R /home/swe-bench/temp_marshmallow-code__marshmallow-1359_pred_try.patch 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Std. Output:
+Checking patch src/marshmallow/fields.py...
+Applied patch src/marshmallow/fields.py cleanly.
+ 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Return Code: 0 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Command: git apply -v /home/swe-bench/temp_marshmallow-code__marshmallow-1359_pred.patch 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Std. Output:
+Checking patch src/marshmallow/fields.py...
+Applied patch src/marshmallow/fields.py cleanly.
+ 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Return Code: 0 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Command: git restore tests/test_fields.py 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Std. Output:
+ 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Return Code: 0 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Command: git apply -v /home/swe-bench/temp_marshmallow-code__marshmallow-1359_test.patch 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Std. Output:
+Checking patch tests/test_fields.py...
+Applied patch tests/test_fields.py cleanly.
+ 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Return Code: 0 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n marshmallow-code__marshmallow__3.0 pytest --no-header -rA -p no:cacheprovider tests/test_fields.py;
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Command: conda run -n marshmallow-code__marshmallow__3.0 pytest --no-header -rA -p no:cacheprovider tests/test_fields.py 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Std. Output:
+============================= test session starts ==============================
+collecting ... collected 77 items
+
+tests/test_fields.py::test_field_aliases[Integer-Integer] PASSED         [  1%]
+tests/test_fields.py::test_field_aliases[String-String] PASSED           [  2%]
+tests/test_fields.py::test_field_aliases[Boolean-Boolean] PASSED         [  3%]
+tests/test_fields.py::test_field_aliases[Url-Url] PASSED                 [  5%]
+tests/test_fields.py::TestField::test_repr PASSED                        [  6%]
+tests/test_fields.py::TestField::test_error_raised_if_uncallable_validator_passed PASSED [  7%]
+tests/test_fields.py::TestField::test_error_raised_if_missing_is_set_on_required_field PASSED [  9%]
+tests/test_fields.py::TestField::test_custom_field_receives_attr_and_obj PASSED [ 10%]
+tests/test_fields.py::TestField::test_custom_field_receives_data_key_if_set PASSED [ 11%]
+tests/test_fields.py::TestField::test_custom_field_follows_data_key_if_set PASSED [ 12%]
+tests/test_fields.py::TestParentAndName::test_simple_field_parent_and_name PASSED [ 14%]
+tests/test_fields.py::TestParentAndName::test_unbound_field_root_returns_none PASSED [ 15%]
+tests/test_fields.py::TestParentAndName::test_list_field_inner_parent_and_name PASSED [ 16%]
+tests/test_fields.py::TestParentAndName::test_tuple_field_inner_parent_and_name PASSED [ 18%]
+tests/test_fields.py::TestParentAndName::test_mapping_field_inner_parent_and_name PASSED [ 19%]
+tests/test_fields.py::TestParentAndName::test_simple_field_root PASSED   [ 20%]
+tests/test_fields.py::TestParentAndName::test_list_field_inner_root PASSED [ 22%]
+tests/test_fields.py::TestParentAndName::test_tuple_field_inner_root PASSED [ 23%]
+tests/test_fields.py::TestParentAndName::test_list_root_inheritance PASSED [ 24%]
+tests/test_fields.py::TestParentAndName::test_dict_root_inheritance PASSED [ 25%]
+tests/test_fields.py::TestParentAndName::test_datetime_list_inner_format PASSED [ 27%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[String] PASSED [ 28%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Integer] PASSED [ 29%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Boolean] PASSED [ 31%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Float] PASSED [ 32%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Number] PASSED [ 33%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[DateTime] PASSED [ 35%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Time] PASSED [ 36%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Date] PASSED [ 37%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[TimeDelta] PASSED [ 38%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Dict] PASSED [ 40%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Url] PASSED [ 41%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Email] PASSED [ 42%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[UUID] PASSED [ 44%]
+tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Decimal] PASSED [ 45%]
+tests/test_fields.py::TestErrorMessages::test_default_error_messages_get_merged_with_parent_error_messages_cstm_msg PASSED [ 46%]
+tests/test_fields.py::TestErrorMessages::test_default_error_messages_get_merged_with_parent_error_messages PASSED [ 48%]
+tests/test_fields.py::TestErrorMessages::test_make_error[required-Missing data for required field.] PASSED [ 49%]
+tests/test_fields.py::TestErrorMessages::test_make_error[null-Field may not be null.] PASSED [ 50%]
+tests/test_fields.py::TestErrorMessages::test_make_error[custom-Custom error message.] PASSED [ 51%]
+tests/test_fields.py::TestErrorMessages::test_make_error[validator_failed-Invalid value.] PASSED [ 53%]
+tests/test_fields.py::TestErrorMessages::test_fail[required-Missing data for required field.] PASSED [ 54%]
+tests/test_fields.py::TestErrorMessages::test_fail[null-Field may not be null.] PASSED [ 55%]
+tests/test_fields.py::TestErrorMessages::test_fail[custom-Custom error message.] PASSED [ 57%]
+tests/test_fields.py::TestErrorMessages::test_fail[validator_failed-Invalid value.] PASSED [ 58%]
+tests/test_fields.py::TestErrorMessages::test_make_error_key_doesnt_exist PASSED [ 59%]
+tests/test_fields.py::TestNestedField::test_nested_only_and_exclude_as_string[only] PASSED [ 61%]
+tests/test_fields.py::TestNestedField::test_nested_only_and_exclude_as_string[exclude] PASSED [ 62%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-exclude] PASSED [ 63%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-include] PASSED [ 64%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-raise] PASSED [ 66%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-exclude] PASSED [ 67%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-include] PASSED [ 68%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-raise] PASSED [ 70%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-exclude] PASSED [ 71%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-include] PASSED [ 72%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-raise] PASSED [ 74%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-exclude] PASSED [ 75%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-include] PASSED [ 76%]
+tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-raise] PASSED [ 77%]
+tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[only] PASSED [ 79%]
+tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[exclude] PASSED [ 80%]
+tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only] PASSED [ 81%]
+tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only] PASSED [ 83%]
+tests/test_fields.py::TestListNested::test_list_nested_only_and_exclude_merged_with_nested[only-expected0] PASSED [ 84%]
+tests/test_fields.py::TestListNested::test_list_nested_only_and_exclude_merged_with_nested[exclude-expected1] PASSED [ 85%]
+tests/test_fields.py::TestListNested::test_list_nested_partial_propagated_to_nested PASSED [ 87%]
+tests/test_fields.py::TestTupleNested::test_tuple_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only] PASSED [ 88%]
+tests/test_fields.py::TestTupleNested::test_tuple_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only] PASSED [ 89%]
+tests/test_fields.py::TestTupleNested::test_tuple_nested_partial_propagated_to_nested PASSED [ 90%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[only] PASSED [ 92%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[exclude] PASSED [ 93%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only] PASSED [ 94%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only] PASSED [ 96%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_and_exclude_merged_with_nested[only-expected0] PASSED [ 97%]
+tests/test_fields.py::TestDictNested::test_dict_nested_only_and_exclude_merged_with_nested[exclude-expected1] PASSED [ 98%]
+tests/test_fields.py::TestDictNested::test_dict_nested_partial_propagated_to_nested PASSED [100%]
+
+=============================== warnings summary ===============================
+src/marshmallow/__init__.py:17
+  /home/swe-bench/marshmallow-code__marshmallow/src/marshmallow/__init__.py:17: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+    __version_info__ = tuple(LooseVersion(__version__).version)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_fields.py::test_field_aliases[Integer-Integer]
+PASSED tests/test_fields.py::test_field_aliases[String-String]
+PASSED tests/test_fields.py::test_field_aliases[Boolean-Boolean]
+PASSED tests/test_fields.py::test_field_aliases[Url-Url]
+PASSED tests/test_fields.py::TestField::test_repr
+PASSED tests/test_fields.py::TestField::test_error_raised_if_uncallable_validator_passed
+PASSED tests/test_fields.py::TestField::test_error_raised_if_missing_is_set_on_required_field
+PASSED tests/test_fields.py::TestField::test_custom_field_receives_attr_and_obj
+PASSED tests/test_fields.py::TestField::test_custom_field_receives_data_key_if_set
+PASSED tests/test_fields.py::TestField::test_custom_field_follows_data_key_if_set
+PASSED tests/test_fields.py::TestParentAndName::test_simple_field_parent_and_name
+PASSED tests/test_fields.py::TestParentAndName::test_unbound_field_root_returns_none
+PASSED tests/test_fields.py::TestParentAndName::test_list_field_inner_parent_and_name
+PASSED tests/test_fields.py::TestParentAndName::test_tuple_field_inner_parent_and_name
+PASSED tests/test_fields.py::TestParentAndName::test_mapping_field_inner_parent_and_name
+PASSED tests/test_fields.py::TestParentAndName::test_simple_field_root
+PASSED tests/test_fields.py::TestParentAndName::test_list_field_inner_root
+PASSED tests/test_fields.py::TestParentAndName::test_tuple_field_inner_root
+PASSED tests/test_fields.py::TestParentAndName::test_list_root_inheritance
+PASSED tests/test_fields.py::TestParentAndName::test_dict_root_inheritance
+PASSED tests/test_fields.py::TestParentAndName::test_datetime_list_inner_format
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[String]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Integer]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Boolean]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Float]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Number]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[DateTime]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Time]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Date]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[TimeDelta]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Dict]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Url]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Email]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[UUID]
+PASSED tests/test_fields.py::TestMetadata::test_extra_metadata_may_be_added_to_field[Decimal]
+PASSED tests/test_fields.py::TestErrorMessages::test_default_error_messages_get_merged_with_parent_error_messages_cstm_msg
+PASSED tests/test_fields.py::TestErrorMessages::test_default_error_messages_get_merged_with_parent_error_messages
+PASSED tests/test_fields.py::TestErrorMessages::test_make_error[required-Missing data for required field.]
+PASSED tests/test_fields.py::TestErrorMessages::test_make_error[null-Field may not be null.]
+PASSED tests/test_fields.py::TestErrorMessages::test_make_error[custom-Custom error message.]
+PASSED tests/test_fields.py::TestErrorMessages::test_make_error[validator_failed-Invalid value.]
+PASSED tests/test_fields.py::TestErrorMessages::test_fail[required-Missing data for required field.]
+PASSED tests/test_fields.py::TestErrorMessages::test_fail[null-Field may not be null.]
+PASSED tests/test_fields.py::TestErrorMessages::test_fail[custom-Custom error message.]
+PASSED tests/test_fields.py::TestErrorMessages::test_fail[validator_failed-Invalid value.]
+PASSED tests/test_fields.py::TestErrorMessages::test_make_error_key_doesnt_exist
+PASSED tests/test_fields.py::TestNestedField::test_nested_only_and_exclude_as_string[only]
+PASSED tests/test_fields.py::TestNestedField::test_nested_only_and_exclude_as_string[exclude]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-exclude]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-include]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[None-raise]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-exclude]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-include]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[exclude-raise]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-exclude]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-include]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[include-raise]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-exclude]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-include]
+PASSED tests/test_fields.py::TestNestedField::test_nested_unknown_override[raise-raise]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[only]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[exclude]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_and_exclude_merged_with_nested[only-expected0]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_only_and_exclude_merged_with_nested[exclude-expected1]
+PASSED tests/test_fields.py::TestListNested::test_list_nested_partial_propagated_to_nested
+PASSED tests/test_fields.py::TestTupleNested::test_tuple_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only]
+PASSED tests/test_fields.py::TestTupleNested::test_tuple_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only]
+PASSED tests/test_fields.py::TestTupleNested::test_tuple_nested_partial_propagated_to_nested
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[only]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[exclude]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[dump_only]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_only_load_only_propagated_to_nested[load_only]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_and_exclude_merged_with_nested[only-expected0]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_and_exclude_merged_with_nested[exclude-expected1]
+PASSED tests/test_fields.py::TestDictNested::test_dict_nested_partial_propagated_to_nested
+======================== 77 passed, 1 warning in 0.10s =========================
+
+ 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Return Code: 0 
+
+>>>>> All Tests Passed
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Test script run successful 
