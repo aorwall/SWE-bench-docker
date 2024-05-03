@@ -260,7 +260,7 @@ MAP_VERSION_TO_INSTALL_MATPLOTLIB = {
             "pyparsing==3.0.9",
             "python-dateutil==2.8.2",
             "six==1.16.0",
-            "setuptools==68.1.2",
+            "setuptools==66.1.1",
             "setuptools-scm==7.1.0",
             "typing-extensions==4.7.1",
         ],
@@ -563,7 +563,7 @@ MAP_VERSION_TO_INSTALL = {
 MAP_REPO_TO_INSTALL = {}
 
 # Constants - Task Instance Test Frameworks
-TEST_PYTEST = "pytest --no-header -rA -p no:cacheprovider"  # --no-header -rA
+TEST_PYTEST = "pytest --no-header -rA --tb=no -p no:cacheprovider"
 MAP_REPO_TO_TEST_FRAMEWORK = {
     "astropy/astropy": TEST_PYTEST,
     "django/django": "./tests/runtests.py --verbosity 2",
@@ -604,7 +604,7 @@ MAP_REPO_TO_ENV_YML_PATHS = {
 }
 
 MAP_REPO_TO_DEB_PACKAGES = {
-    "matplotlib/matplotlib": ["texlive", "dvipng", "ghostscript"],
+    "matplotlib/matplotlib": ["texlive", "texlive-xetex", "dvipng", "ghostscript"],
     "pyvista/pyvista": ["libgl1"]
 }
 

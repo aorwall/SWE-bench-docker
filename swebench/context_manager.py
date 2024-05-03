@@ -6,7 +6,7 @@ from logging import INFO, Logger, DEBUG, ERROR
 from traceback import format_exc
 
 from swebench.constants import KEY_INSTANCE_ID, PatchType, APPLY_PATCH_FAIL, APPLY_PATCH_PASS, TESTS_FAILED, \
-    TESTS_PASSED, TESTS_TIMEOUT, TESTS_ERROR, KEY_MODEL
+    TESTS_PASSED, TESTS_TIMEOUT, TESTS_ERROR, KEY_MODEL, MAP_VERSION_TO_INSTALL, INSTALL_FAIL
 
 base_dir = "/home/swe-bench"
 
@@ -133,20 +133,43 @@ class TaskEnvContextManager:
             enter_msg += f"\n\t- Evaluation Model: {self.instance[KEY_MODEL]}"
         self.log.write(enter_msg, mode="w")
 
-        output = self.exec(["git", "status", "--porcelain"])
-        if output.stdout:
-            self.exec(["git", "stash", "push", "-m", "Temporarily stashed changes"])
-            stash_used = True
-        else:
-            stash_used = False
+        stash_used = False
+        # output = self.exec(["git", "status", "--porcelain"])
+        # if output.stdout:
+        #     self.exec(["git", "stash", "push", "-m", "Temporarily stashed changes"])
+        #     stash_used = True
+        # else:
+        #    stash_used = False
 
         self.exec(
             f"git -c advice.detachedHead=false checkout {self.instance['base_commit']}".split(
                 " "
             )
         )
+
+        specifications = MAP_VERSION_TO_INSTALL[self.instance["repo"]][self.instance["version"]]
+        if "pre_install" in specifications:
+            for cmd_pre_install in specifications["pre_install"]:
+                self.log.write(f"Running pre-test command: {cmd_pre_install}")
+                out_pre_install = self.exec(
+                    cmd_pre_install, timeout=self.timeout, shell=True
+                )
+                with open(self.log_file, "a") as f:
+                    f.write(f"Pre-installation Command: {cmd_pre_install}\n")
+                    f.write(f"Std. Output: {out_pre_install.stdout}\n")
+                    if out_pre_install.stderr:
+                        f.write(f"Std. Error: {out_pre_install.stderr}\n")
+                if out_pre_install.returncode != 0:
+                    self.log.write(f"Pre-install setup failed", level=ERROR)
+                    with open(self.log_file, "a") as f:
+                        f.write(f"\n{INSTALL_FAIL}\n")
+                    return False
+
         if stash_used:
-            self.exec(["git", "stash", "pop"])
+            try:
+                self.exec(["git", "stash", "pop"])
+            except Exception as e:
+                self.log.write(f"Error popping stash: {e}", level=ERROR)
 
         return self
 

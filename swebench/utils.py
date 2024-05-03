@@ -2,8 +2,8 @@ import json
 import os
 import re
 import subprocess
-
 from datetime import datetime
+
 from swebench.constants import (
     MAP_REPO_TO_REQS_PATHS,
     MAP_REPO_TO_ENV_YML_PATHS,

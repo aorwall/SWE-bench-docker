@@ -2,21 +2,16 @@
 
 """Run evaluation"""
 import argparse
-import base64
 import hashlib
-import json
 import logging
 import os
-import subprocess
-import time
-
-from tqdm import tqdm
 
 from swebench.constants import (
     KEY_INSTANCE_ID,
     KEY_MODEL,
     KEY_PREDICTION, MAP_REPO_TO_TEST_FRAMEWORK,
 )
+from swebench.run_docker import run_docker_evaluation
 from swebench.utils import get_instances, get_eval_refs, get_test_directives
 
 logging.basicConfig(
@@ -53,46 +48,6 @@ def validate_predictions(predictions_path, tasks_ids):
             + "found in the tasks file and will not be considered: "
             + ", ".join(not_in_tasks)
         )
-
-
-def run_docker_evaluation(task_instance: dict, log_dir: str, timeout: int = 900, log_suffix: str = ""):
-    repo_name = task_instance['repo'].replace("/", "_")
-
-    # Base64 encode the instance JSON to be sure it can be passed as an environment variable
-    instance_b64 = base64.b64encode(json.dumps(task_instance).encode('utf-8')).decode('utf-8')
-
-    docker_image = f"aorwall/swe-bench-{repo_name}-testbed:{task_instance['version']}"
-
-    container_log_dir = '/home/swe-bench/logs'
-
-    docker_command = [
-        'docker', 'run',
-        '-v', f"{log_dir}:{container_log_dir}",
-        '-e', f"INSTANCE={instance_b64}",
-        '-e', f"LOG_DIR={container_log_dir}",
-        '-e', f"TIMEOUT={timeout}",
-        '-e', f"LOG_SUFFIX={log_suffix}",
-        docker_image
-    ]
-
-    cmd_string = ' '.join(docker_command)
-    start_time = time.time()
-    result = subprocess.run(docker_command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
-    elapsed_time = time.time() - start_time
-
-    if result.returncode != 0:
-        logger.warning(
-            f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Error running container:")
-        logger.warning(f"Command: {cmd_string}")
-        logger.warning(f"Stdout - {result.stdout}")
-        logger.warning(f"Stderr - {result.stderr}")
-
-    elif "Evaluation succeeded" not in result.stdout:
-        logger.warning(f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Container ran successfully in {elapsed_time} seconds, but evaluation failed.")
-        logger.warning(f"Command: {cmd_string}")
-        logger.warning(f"stdout - {result.stdout}")
-    else:
-        logger.info(f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Container ran successfully in {elapsed_time} seconds.")
 
 def main(
     predictions_path: str,
@@ -156,6 +111,10 @@ def main(
                 f"({len(predictions) - len(predictions_filtered)} already evaluated)"
             )
             predictions = predictions_filtered
+    else:
+        logger.info(
+            f"# of predictions to evaluate: {len(predictions)}"
+        )
 
     task_instances = []
 
@@ -179,7 +138,9 @@ def main(
             "test_cmd": test_cmd
         })
 
-    for task_instance in tqdm(task_instances):
+    task_instances = sorted(task_instances, key=lambda x: x[KEY_INSTANCE_ID])
+
+    for task_instance in task_instances:
         run_docker_evaluation(task_instance, log_dir, timeout, log_suffix)
 
 
