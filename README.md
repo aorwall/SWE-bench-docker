@@ -9,27 +9,26 @@ there's no need for reinstallation, speeding up the benchmark process.
 Docker images for testbeds used in the `SWE-Bench_Lite` dataset has been built and tested. See results in the 
 `evaluations` folder. 
 
-The following benchmark instances currently fails when applying the golden patch:
+The following test beds and benchmark instances currently fails when applying the golden patch:
 
-* django__django-11039
-* pydata__xarray-4094
-* pydata__xarray-4493
-* pydicom__pydicom-1139
-* pydicom__pydicom-1413
-* pylint-dev__pylint-7080
-* pytest-dev__pytest-7168
-* pytest-dev__pytest-7220
-* pyvista__pyvista-4315
-* scikit-learn__scikit-learn-13142
-* scikit-learn__scikit-learn-13241
-* scikit-learn__scikit-learn-13496
-* scikit-learn__scikit-learn-13779
-* scikit-learn__scikit-learn-14087
-* scikit-learn__scikit-learn-14092
-* scikit-learn__scikit-learn-14894
-* scikit-learn__scikit-learn-14983
-* scikit-learn__scikit-learn-25638
-* sympy__sympy-13177
+| Instance ID | Repository | Testbed version |
+| ----------- | ---------- | --------------- |
+| [django__django-11039](evaluations/SWE-bench_Lite_golden/logs/django__django-11039.SWE-bench_Lite_golden.eval.log) | django/django | 3.0 |
+| [pydata__xarray-4094](evaluations/SWE-bench_Lite_golden/logs/pydata__xarray-4094.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
+| [pydata__xarray-4493](evaluations/SWE-bench_Lite_golden/logs/pydata__xarray-4493.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
+| [pylint-dev__pylint-7080](evaluations/SWE-bench_Lite_golden/logs/pylint-dev__pylint-7080.SWE-bench_Lite_golden.eval.log) | pylint-dev/pylint | 2.15 |
+| [pytest-dev__pytest-7168](evaluations/SWE-bench_Lite_golden/logs/pytest-dev__pytest-7168.SWE-bench_Lite_golden.eval.log) | pytest-dev/pytest | 5.4 |
+| [pytest-dev__pytest-7220](evaluations/SWE-bench_Lite_golden/logs/pytest-dev__pytest-7220.SWE-bench_Lite_golden.eval.log) | pytest-dev/pytest | 5.4 |
+| [scikit-learn__scikit-learn-13142](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-13142.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.21 |
+| [scikit-learn__scikit-learn-13241](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-13241.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.21 |
+| [scikit-learn__scikit-learn-13496](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-13496.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.21 |
+| [scikit-learn__scikit-learn-13779](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-13779.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.22 |
+| [scikit-learn__scikit-learn-14087](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-14087.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.22 |
+| [scikit-learn__scikit-learn-14092](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-14092.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.22 |
+| [scikit-learn__scikit-learn-14894](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-14894.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.22 |
+| [scikit-learn__scikit-learn-14983](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-14983.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.22 |
+| [scikit-learn__scikit-learn-25638](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-25638.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 1.3 |
+| [sympy__sympy-13177](evaluations/SWE-bench_Lite_golden/logs/sympy__sympy-13177.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
 
 ## Run evaluation
 Run `run_evaluation.py` to evaluate a predictions file. A log for each test is written to log_dir in the same format

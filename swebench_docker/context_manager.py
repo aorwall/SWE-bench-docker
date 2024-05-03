@@ -5,7 +5,7 @@ import subprocess
 from logging import INFO, Logger, DEBUG, ERROR
 from traceback import format_exc
 
-from swebench.constants import KEY_INSTANCE_ID, PatchType, APPLY_PATCH_FAIL, APPLY_PATCH_PASS, TESTS_FAILED, \
+from swebench_docker.constants import KEY_INSTANCE_ID, PatchType, APPLY_PATCH_FAIL, APPLY_PATCH_PASS, TESTS_FAILED, \
     TESTS_PASSED, TESTS_TIMEOUT, TESTS_ERROR, KEY_MODEL, MAP_VERSION_TO_INSTALL, INSTALL_FAIL
 
 base_dir = "/home/swe-bench"

@@ -3,7 +3,7 @@ from enum import Enum
 MAP_VERSION_TO_INSTALL_SKLEARN = {
     k: {
         "python": "3.6",
-        "packages": "numpy scipy cython pytest pandas matplotlib",
+        "packages": "numpy scipy cython pytest pandas matplotlib joblib threadpoolctl",
         "install": "pip install -v --no-use-pep517 --no-build-isolation -e .",
         "arch_specific_packages": {
             "aarch64": "gxx_linux-aarch64 gcc_linux-aarch64 make",
@@ -525,10 +525,10 @@ MAP_VERSION_TO_INSTALL_PYDICOM = {
     for k in ['1.2', '1.3', '1.4', '2.0', '2.1', '2.2', '2.3']
 }
 MAP_VERSION_TO_INSTALL_PYDICOM.update({
-    k: {**MAP_VERSION_TO_INSTALL_PYDICOM[k], "python": "3.8"}
+    k: {**MAP_VERSION_TO_INSTALL_PYDICOM[k], "python": "3.8", "pip_packages": ["pytest==4.6.11"]}
     for k in ['1.4', '2.0']})
 MAP_VERSION_TO_INSTALL_PYDICOM.update({
-    k: {**MAP_VERSION_TO_INSTALL_PYDICOM[k], "python": "3.9"}
+    k: {**MAP_VERSION_TO_INSTALL_PYDICOM[k], "python": "3.9", "pip_packages": ["pytest==4.6.11"]}
     for k in ['2.1', '2.2']})
 MAP_VERSION_TO_INSTALL_PYDICOM.update({
     k: {**MAP_VERSION_TO_INSTALL_PYDICOM[k], "python": "3.10"}
@@ -564,6 +564,7 @@ MAP_REPO_TO_INSTALL = {}
 
 # Constants - Task Instance Test Frameworks
 TEST_PYTEST = "pytest --no-header -rA --tb=no -p no:cacheprovider"
+TEST_PYTEST_SKIP_NO_HEADER = "pytest -rA --tb=no -p no:cacheprovider"
 MAP_REPO_TO_TEST_FRAMEWORK = {
     "astropy/astropy": TEST_PYTEST,
     "django/django": "./tests/runtests.py --verbosity 2",
@@ -574,7 +575,7 @@ MAP_REPO_TO_TEST_FRAMEWORK = {
     "psf/requests": TEST_PYTEST,
     "pvlib/pvlib-python": TEST_PYTEST,
     "pydata/xarray": TEST_PYTEST,
-    "pydicom/pydicom": TEST_PYTEST,
+    "pydicom/pydicom": TEST_PYTEST_SKIP_NO_HEADER,
     "pylint-dev/astroid": TEST_PYTEST,
     "pylint-dev/pylint": TEST_PYTEST,
     "pytest-dev/pytest": "pytest -rA",
@@ -605,7 +606,7 @@ MAP_REPO_TO_ENV_YML_PATHS = {
 
 MAP_REPO_TO_DEB_PACKAGES = {
     "matplotlib/matplotlib": ["texlive", "texlive-xetex", "dvipng", "ghostscript"],
-    "pyvista/pyvista": ["libgl1"]
+    "pyvista/pyvista": ["libgl1", "libxrender1"]
 }
 
 # Constants - Evaluation Keys

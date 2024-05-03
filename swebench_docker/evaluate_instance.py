@@ -4,9 +4,9 @@ import logging
 import os
 import sys
 
-from swebench.constants import PatchType, KEY_PREDICTION
-from swebench.context_manager import TaskEnvContextManager
-from swebench.utils import extract_minimal_patch
+from swebench_docker.constants import PatchType, KEY_PREDICTION
+from swebench_docker.context_manager import TaskEnvContextManager
+from swebench_docker.utils import extract_minimal_patch
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"

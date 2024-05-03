@@ -29,7 +29,7 @@ ENV TESTBED_NAME=sphinx-doc__sphinx__3.2
 
 WORKDIR /home/swe-bench
 
-COPY swebench swebench
+COPY swebench_docker swebench_docker
 COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

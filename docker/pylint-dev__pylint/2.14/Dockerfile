@@ -23,7 +23,7 @@ ENV TESTBED_NAME=pylint-dev__pylint__2.14
 
 WORKDIR /home/swe-bench
 
-COPY swebench swebench
+COPY swebench_docker swebench_docker
 COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

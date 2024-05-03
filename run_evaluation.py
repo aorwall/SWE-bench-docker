@@ -6,13 +6,13 @@ import hashlib
 import logging
 import os
 
-from swebench.constants import (
+from swebench_docker.constants import (
     KEY_INSTANCE_ID,
     KEY_MODEL,
     KEY_PREDICTION, MAP_REPO_TO_TEST_FRAMEWORK,
 )
-from swebench.run_docker import run_docker_evaluation
-from swebench.utils import get_instances, get_eval_refs, get_test_directives
+from swebench_docker.run_docker import run_docker_evaluation
+from swebench_docker.utils import get_instances, get_eval_refs, get_test_directives
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
@@ -141,7 +141,10 @@ def main(
     task_instances = sorted(task_instances, key=lambda x: x[KEY_INSTANCE_ID])
 
     for task_instance in task_instances:
-        run_docker_evaluation(task_instance, log_dir, timeout, log_suffix)
+        if task_instance[KEY_PREDICTION]:
+            run_docker_evaluation(task_instance, log_dir, timeout, log_suffix)
+        else:
+            logger.info(f"[{task_instance[KEY_INSTANCE_ID]}] No prediction found.")
 
 
 if __name__ == "__main__":

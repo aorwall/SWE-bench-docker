@@ -3,11 +3,6 @@
 	- Testbed: pydicom__pydicom__2.0
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: git status --porcelain 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
- 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Return Code: 0 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: git -c advice.detachedHead=false checkout b9fb05c177b685bf683f7f57b2d57374eb7d882d 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
@@ -59,39 +54,17 @@ warning: 1 line adds whitespace errors.
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Return Code: 0 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pydicom__pydicom__2.0 pytest --no-header -rA -p no:cacheprovider pydicom/tests/test_valuerep.py;
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: conda run -n pydicom__pydicom__2.0 pytest --no-header -rA -p no:cacheprovider pydicom/tests/test_valuerep.py 
+Test Script: conda run -n pydicom__pydicom__2.0 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py;
+[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: conda run -n pydicom__pydicom__2.0 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
-ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA -p no:cacheprovider pydicom/tests/test_valuerep.py` failed. (See above for error)
 ============================= test session starts ==============================
+platform linux -- Python 3.8.19, pytest-4.6.11, py-1.11.0, pluggy-0.13.1
+rootdir: /home/swe-bench/pydicom__pydicom
 collected 41 items
 
-pydicom/tests/test_valuerep.py ..................FF..................... [100%]
+pydicom/tests/test_valuerep.py ......................................... [100%]
 
-=================================== FAILURES ===================================
-______________ TestBadValueRead.test_read_bad_value_in_VR_default ______________
-
-self = <pydicom.tests.test_valuerep.TestBadValueRead object at 0x7bad4975cc10>
-
-    def test_read_bad_value_in_VR_default(self):
-        # found a conversion
->       assert "1A" == convert_value("SH", self.tag)
-E       AttributeError: 'TestBadValueRead' object has no attribute 'tag'
-
-pydicom/tests/test_valuerep.py:228: AttributeError
-________ TestBadValueRead.test_read_bad_value_in_VR_enforce_valid_value ________
-
-self = <pydicom.tests.test_valuerep.TestBadValueRead object at 0x7bad4975c250>
-
-    def test_read_bad_value_in_VR_enforce_valid_value(self):
-        pydicom.config.enforce_valid_values = True
-        # found a conversion
->       assert "1A" == convert_value("SH", self.tag)
-E       AttributeError: 'TestBadValueRead' object has no attribute 'tag'
-
-pydicom/tests/test_valuerep.py:239: AttributeError
-==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED pydicom/tests/test_valuerep.py::TestTM::test_pickling
 PASSED pydicom/tests/test_valuerep.py::TestDT::test_pickling
@@ -111,6 +84,8 @@ PASSED pydicom/tests/test_valuerep.py::TestIS::test_longint
 PASSED pydicom/tests/test_valuerep.py::TestIS::test_overflow
 PASSED pydicom/tests/test_valuerep.py::TestIS::test_str
 PASSED pydicom/tests/test_valuerep.py::TestIS::test_repr
+PASSED pydicom/tests/test_valuerep.py::TestBadValueRead::test_read_bad_value_in_VR_default
+PASSED pydicom/tests/test_valuerep.py::TestBadValueRead::test_read_bad_value_in_VR_enforce_valid_value
 PASSED pydicom/tests/test_valuerep.py::TestDecimalString::test_DS_decimal_set
 PASSED pydicom/tests/test_valuerep.py::TestDecimalString::test_valid_decimal_strings
 PASSED pydicom/tests/test_valuerep.py::TestDecimalString::test_invalid_decimal_strings
@@ -132,12 +107,10 @@ PASSED pydicom/tests/test_valuerep.py::TestPersonName::test_contains
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_date
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_date_time
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_time
-FAILED pydicom/tests/test_valuerep.py::TestBadValueRead::test_read_bad_value_in_VR_default
-FAILED pydicom/tests/test_valuerep.py::TestBadValueRead::test_read_bad_value_in_VR_enforce_valid_value
-========================= 2 failed, 39 passed in 0.49s =========================
+========================== 41 passed in 1.10 seconds ===========================
 
  
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Return Code: 1 
+[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Return Code: 0 
 
->>>>> Some Tests Failed
+>>>>> All Tests Passed
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Test script run successful 

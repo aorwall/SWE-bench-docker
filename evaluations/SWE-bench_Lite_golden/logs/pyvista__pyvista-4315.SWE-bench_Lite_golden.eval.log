@@ -3,11 +3,6 @@
 	- Testbed: pyvista__pyvista__0.39
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Command: git status --porcelain 
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Std. Output:
- 
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Return Code: 0 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Command: git -c advice.detachedHead=false checkout db6ee8dd4a747b8864caae36c5d05883976a3ae5 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Std. Output:
@@ -56,77 +51,190 @@ Applied patch tests/test_grid.py cleanly.
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Return Code: 0 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pyvista__pyvista__0.39 pytest --no-header -rA -p no:cacheprovider tests/test_grid.py;
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Command: conda run -n pyvista__pyvista__0.39 pytest --no-header -rA -p no:cacheprovider tests/test_grid.py 
+Test Script: conda run -n pyvista__pyvista__0.39 pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_grid.py;
+[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Command: conda run -n pyvista__pyvista__0.39 pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_grid.py 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Std. Output:
-/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/_pytest/config/__init__.py:328: PluggyTeardownRaisedWarning: A plugin raised an exception during an old-style hookwrapper teardown.
-Plugin: helpconfig, Hook: pytest_cmdline_parse
-ImportError: libXrender.so.1: cannot open shared object file: No such file or directory
-For more information see https://pluggy.readthedocs.io/en/stable/api_reference.html#pluggy.PluggyTeardownRaisedWarning
-  config = pluginmanager.hook.pytest_cmdline_parse(
-Traceback (most recent call last):
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/bin/pytest", line 8, in <module>
-    sys.exit(console_main())
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/_pytest/config/__init__.py", line 189, in console_main
-    code = main()
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/_pytest/config/__init__.py", line 147, in main
-    config = _prepareconfig(args, plugins)
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/_pytest/config/__init__.py", line 328, in _prepareconfig
-    config = pluginmanager.hook.pytest_cmdline_parse(
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/pluggy/_hooks.py", line 513, in __call__
-    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/pluggy/_manager.py", line 120, in _hookexec
-    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/pluggy/_callers.py", line 156, in _multicall
-    teardown[0].send(outcome)
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/_pytest/helpconfig.py", line 103, in pytest_cmdline_parse
-    config: Config = outcome.get_result()
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/pluggy/_result.py", line 100, in get_result
-    raise exc.with_traceback(exc.__traceback__)
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/pluggy/_callers.py", line 103, in _multicall
-    res = hook_impl.function(*args)
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/_pytest/config/__init__.py", line 1077, in pytest_cmdline_parse
-    self.parse(args)
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/_pytest/config/__init__.py", line 1366, in parse
-    self._preparse(args, addopts=addopts)
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/_pytest/config/__init__.py", line 1249, in _preparse
-    self.pluginmanager.load_setuptools_entrypoints("pytest11")
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/pluggy/_manager.py", line 421, in load_setuptools_entrypoints
-    plugin = ep.load()
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/importlib/metadata.py", line 86, in load
-    module = import_module(match.group('module'))
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/importlib/__init__.py", line 127, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/_pytest/assertion/rewrite.py", line 178, in exec_module
-    exec(co, module.__dict__)
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/pytest_pyvista/__init__.py", line 5, in <module>
-    from .pytest_pyvista import VerifyImageCache
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/_pytest/assertion/rewrite.py", line 178, in exec_module
-    exec(co, module.__dict__)
-  File "/home/swe-bench/miniconda3/envs/pyvista__pyvista__0.39/lib/python3.9/site-packages/pytest_pyvista/pytest_pyvista.py", line 8, in <module>
-    import pyvista
-  File "/home/swe-bench/pyvista__pyvista/pyvista/__init__.py", line 10, in <module>
-    from pyvista.plotting import *
-  File "/home/swe-bench/pyvista__pyvista/pyvista/plotting/__init__.py", line 4, in <module>
-    from .charts import Chart, Chart2D, ChartMPL, ChartBox, ChartPie
-  File "/home/swe-bench/pyvista__pyvista/pyvista/plotting/charts.py", line 15, in <module>
-    from pyvista import _vtk
-  File "/home/swe-bench/pyvista__pyvista/pyvista/_vtk.py", line 422, in <module>
-    from vtkmodules.vtkInteractionWidgets import (
-ImportError: libXrender.so.1: cannot open shared object file: No such file or directory
+============================= test session starts ==============================
+collected 116 items
 
-ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA -p no:cacheprovider tests/test_grid.py` failed. (See above for error)
+tests/test_grid.py .s................................................... [ 45%]
+...............................................................          [100%]
+========================= memory consumption estimates =========================
+tests::test_grid.py::test_fft_and_rfft                                       - 75.1 MB
+tests::test_grid.py::test_fft_low_pass                                       - 34.1 MB
+tests::test_grid.py::test_init_bad_filename                                  - 26.2 MB
+tests::test_grid.py::test_save_rectilinear[.vtk-False]                       - 13.8 MB
+tests::test_grid.py::test_grid_extract_selection_points                      - 11.9 MB
+tests::test_grid.py::test_save_rectilinear[.vtr-True]                        - 8.9 MB
+tests::test_grid.py::test_ExplicitStructuredGrid_cell_id                     - 7.9 MB
+tests::test_grid.py::test_ExplicitStructuredGrid_hide_cells                  - 7.4 MB
+tests::test_grid.py::test_save_rectilinear[.vtr-False]                       - 7.2 MB
+tests::test_grid.py::test_init_structured                                    - 7.2 MB
+tests::test_grid.py::test_instantiate_by_filename                            - 7.0 MB
+tests::test_grid.py::test_ExplicitStructuredGrid_save                        - 5.7 MB
+tests::test_grid.py::test_init_from_dict[True-False]                         - 4.0 MB
+tests::test_grid.py::test_cells_dict_hexbeam_file                            - 3.9 MB
+tests::test_grid.py::test_pathlib_read_write                                 - 3.9 MB
+tests::test_grid.py::test_init_from_arrays[False]                            - 3.9 MB
+tests::test_grid.py::test_create_rectilinear_grid_from_file                  - 3.7 MB
+tests::test_grid.py::test_read_uniform_grid_from_file                        - 3.7 MB
+tests::test_grid.py::test_ExplicitStructuredGrid_show_cells                  - 3.7 MB
+tests::test_grid.py::test_init_from_dict[False-True]                         - 3.4 MB
+tests::test_grid.py::test_UnstructuredGrid_cast_to_explicit_structured_grid  - 3.1 MB
+tests::test_grid.py::test_save_structured[.vtk-False]                        - 3.0 MB
+tests::test_grid.py::test_save[.vtu-True]                                    - 2.9 MB
+tests::test_grid.py::test_save_uniform[.vtk-False]                           - 2.2 MB
+tests::test_grid.py::test_uniform_grid_invald_args                           - 2.0 MB
+tests::test_grid.py::test_remove_cells_invalid                               - 2.0 MB
+tests::test_grid.py::test_ExplicitStructuredGrid_compute_connectivity        - 1.9 MB
+tests::test_grid.py::test_copy_no_copy_wrap_object                           - 1.7 MB
+tests::test_grid.py::test_fft_high_pass                                      - 1.5 MB
+tests::test_grid.py::test_extract_feature_edges                              - 1.1 MB
+tests::test_grid.py::test_save[.vtk-False]                                   - 1008.0 KB
+tests::test_grid.py::test_cast_rectilinear_grid                              - 1008.0 KB
+tests::test_grid.py::test_ExplicitStructuredGrid_compute_connections         - 996.0 KB
+tests::test_grid.py::test_volume                                             - 888.0 KB
+tests::test_grid.py::test_slice_structured                                   - 784.0 KB
+tests::test_grid.py::test_save_structured[.vtk-True]                         - 756.0 KB
+tests::test_grid.py::test_remove_cells_not_inplace[ind2]                     - 664.0 KB
+tests::test_grid.py::test_hide_points[ind2]                                  - 620.0 KB
+tests::test_grid.py::test_extract_cells[True]                                - 592.0 KB
+tests::test_grid.py::test_init_from_dict[False-False]                        - 504.0 KB
+tests::test_grid.py::test_gaussian_smooth                                    - 504.0 KB
+tests::test_grid.py::test_ExplicitStructuredGrid_cast_to_unstructured_grid   - 504.0 KB
+tests::test_grid.py::test_ExplicitStructuredGrid_init                        - 468.0 KB
+tests::test_grid.py::test_init_from_structured                               - 464.0 KB
+tests::test_grid.py::test_surface_indices                                    - 420.0 KB
+tests::test_grid.py::test_save_uniform[.vti-True]                            - 248.0 KB
+tests::test_grid.py::test_no_copy_structured_mesh_init                       - 240.0 KB
+tests::test_grid.py::test_ExplicitStructuredGrid_visible_bounds              - 240.0 KB
+tests::test_grid.py::test_ExplicitStructuredGrid_neighbors                   - 212.0 KB
+tests::test_grid.py::test_remove_cells_not_inplace[ind1]                     - 164.0 KB
+tests::test_grid.py::test_remove_cells[ind1]                                 - 84.0 KB
+tests::test_grid.py::test_remove_cells[ind2]                                 - 8.0 KB
+
+=========================== short test summary info ============================
+PASSED tests/test_grid.py::test_volume
+PASSED tests/test_grid.py::test_init_from_polydata
+PASSED tests/test_grid.py::test_init_from_structured
+PASSED tests/test_grid.py::test_init_from_unstructured
+PASSED tests/test_grid.py::test_init_from_numpy_arrays
+PASSED tests/test_grid.py::test_init_bad_input
+PASSED tests/test_grid.py::test_init_from_arrays[False]
+PASSED tests/test_grid.py::test_init_from_arrays[True]
+PASSED tests/test_grid.py::test_init_from_dict[False-False]
+PASSED tests/test_grid.py::test_init_from_dict[False-True]
+PASSED tests/test_grid.py::test_init_from_dict[True-False]
+PASSED tests/test_grid.py::test_init_from_dict[True-True]
+PASSED tests/test_grid.py::test_init_polyhedron
+PASSED tests/test_grid.py::test_cells_dict_hexbeam_file
+PASSED tests/test_grid.py::test_cells_dict_variable_length
+PASSED tests/test_grid.py::test_cells_dict_empty_grid
+PASSED tests/test_grid.py::test_cells_dict_alternating_cells
+PASSED tests/test_grid.py::test_destructor
+PASSED tests/test_grid.py::test_surface_indices
+PASSED tests/test_grid.py::test_extract_feature_edges
+PASSED tests/test_grid.py::test_triangulate_inplace
+PASSED tests/test_grid.py::test_save[.vtu-True]
+PASSED tests/test_grid.py::test_save[.vtu-False]
+PASSED tests/test_grid.py::test_save[.vtk-True]
+PASSED tests/test_grid.py::test_save[.vtk-False]
+PASSED tests/test_grid.py::test_pathlib_read_write
+PASSED tests/test_grid.py::test_init_bad_filename
+PASSED tests/test_grid.py::test_save_bad_extension
+PASSED tests/test_grid.py::test_linear_copy
+PASSED tests/test_grid.py::test_linear_copy_surf_elem
+PASSED tests/test_grid.py::test_extract_cells[True]
+PASSED tests/test_grid.py::test_extract_cells[False]
+PASSED tests/test_grid.py::test_merge
+PASSED tests/test_grid.py::test_merge_not_main
+PASSED tests/test_grid.py::test_merge_list
+PASSED tests/test_grid.py::test_merge_invalid
+PASSED tests/test_grid.py::test_init_structured_raise
+PASSED tests/test_grid.py::test_init_structured
+PASSED tests/test_grid.py::test_no_copy_polydata_init
+PASSED tests/test_grid.py::test_no_copy_polydata_points_setter
+PASSED tests/test_grid.py::test_no_copy_structured_mesh_init
+PASSED tests/test_grid.py::test_no_copy_structured_mesh_points_setter
+PASSED tests/test_grid.py::test_no_copy_pointset_init
+PASSED tests/test_grid.py::test_no_copy_pointset_points_setter
+PASSED tests/test_grid.py::test_no_copy_unstructured_grid_points_setter
+PASSED tests/test_grid.py::test_no_copy_rectilinear_grid
+PASSED tests/test_grid.py::test_grid_repr
+PASSED tests/test_grid.py::test_slice_structured
+PASSED tests/test_grid.py::test_invalid_init_structured
+PASSED tests/test_grid.py::test_save_structured[.vtk-True]
+PASSED tests/test_grid.py::test_save_structured[.vtk-False]
+PASSED tests/test_grid.py::test_save_structured[.vts-True]
+PASSED tests/test_grid.py::test_save_structured[.vts-False]
+PASSED tests/test_grid.py::test_load_structured_bad_filename
+PASSED tests/test_grid.py::test_instantiate_by_filename
+PASSED tests/test_grid.py::test_create_rectilinear_grid_from_specs
+PASSED tests/test_grid.py::test_create_rectilinear_after_init
+PASSED tests/test_grid.py::test_create_rectilinear_grid_from_file
+PASSED tests/test_grid.py::test_read_rectilinear_grid_from_file
+PASSED tests/test_grid.py::test_read_rectilinear_grid_from_pathlib
+PASSED tests/test_grid.py::test_raise_rectilinear_grid_non_unique
+PASSED tests/test_grid.py::test_cast_rectilinear_grid
+PASSED tests/test_grid.py::test_create_uniform_grid_from_specs
+PASSED tests/test_grid.py::test_uniform_grid_invald_args
+PASSED tests/test_grid.py::test_uniform_setters
+PASSED tests/test_grid.py::test_create_uniform_grid_from_file
+PASSED tests/test_grid.py::test_read_uniform_grid_from_file
+PASSED tests/test_grid.py::test_read_uniform_grid_from_pathlib
+PASSED tests/test_grid.py::test_cast_uniform_to_structured
+PASSED tests/test_grid.py::test_cast_uniform_to_rectilinear
+PASSED tests/test_grid.py::test_uniform_grid_to_tetrahedra
+PASSED tests/test_grid.py::test_fft_and_rfft
+PASSED tests/test_grid.py::test_fft_low_pass
+PASSED tests/test_grid.py::test_fft_high_pass
+PASSED tests/test_grid.py::test_save_rectilinear[.vtk-True]
+PASSED tests/test_grid.py::test_save_rectilinear[.vtk-False]
+PASSED tests/test_grid.py::test_save_rectilinear[.vtr-True]
+PASSED tests/test_grid.py::test_save_rectilinear[.vtr-False]
+PASSED tests/test_grid.py::test_save_uniform[.vtk-True]
+PASSED tests/test_grid.py::test_save_uniform[.vtk-False]
+PASSED tests/test_grid.py::test_save_uniform[.vti-True]
+PASSED tests/test_grid.py::test_save_uniform[.vti-False]
+PASSED tests/test_grid.py::test_grid_points
+PASSED tests/test_grid.py::test_grid_extract_selection_points
+PASSED tests/test_grid.py::test_gaussian_smooth
+PASSED tests/test_grid.py::test_remove_cells[ind0]
+PASSED tests/test_grid.py::test_remove_cells[ind1]
+PASSED tests/test_grid.py::test_remove_cells[ind2]
+PASSED tests/test_grid.py::test_remove_cells_not_inplace[ind0]
+PASSED tests/test_grid.py::test_remove_cells_not_inplace[ind1]
+PASSED tests/test_grid.py::test_remove_cells_not_inplace[ind2]
+PASSED tests/test_grid.py::test_remove_cells_invalid
+PASSED tests/test_grid.py::test_hide_cells[ind0]
+PASSED tests/test_grid.py::test_hide_cells[ind1]
+PASSED tests/test_grid.py::test_hide_cells[ind2]
+PASSED tests/test_grid.py::test_hide_points[ind0]
+PASSED tests/test_grid.py::test_hide_points[ind1]
+PASSED tests/test_grid.py::test_hide_points[ind2]
+PASSED tests/test_grid.py::test_set_extent
+PASSED tests/test_grid.py::test_UnstructuredGrid_cast_to_explicit_structured_grid
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_init
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_cast_to_unstructured_grid
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_save
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_hide_cells
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_show_cells
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_dimensions
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_visible_bounds
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_cell_id
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_cell_coords
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_neighbors
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_compute_connectivity
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_compute_connections
+PASSED tests/test_grid.py::test_ExplicitStructuredGrid_raise_init
+PASSED tests/test_grid.py::test_copy_no_copy_wrap_object
+PASSED tests/test_grid.py::test_copy_no_copy_wrap_object_vtk9
+SKIPPED [1] tests/test_grid.py:31: Requires system to support plotting
+======================== 115 passed, 1 skipped in 2.10s ========================
+
  
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Return Code: 1 
+[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Return Code: 0 
 
->>>>> Some Tests Failed
+>>>>> All Tests Passed
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Test script run successful 

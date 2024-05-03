@@ -4,7 +4,7 @@ FROM aorwall/swe-bench-scikit-learn_scikit-learn:latest
 
 RUN git -c advice.detachedHead=false checkout 7813f7efb5b2012412888b69e73d76f2df2b50b6
 
-RUN conda create -n scikit-learn__scikit-learn__0.21 python=3.6 numpy scipy cython pytest pandas matplotlib -y
+RUN conda create -n scikit-learn__scikit-learn__0.21 python=3.6 numpy scipy cython pytest pandas matplotlib joblib threadpoolctl -y
 
 SHELL ["conda", "run", "-n", "scikit-learn__scikit-learn__0.21", "/bin/bash", "-c"]
 
@@ -20,7 +20,7 @@ ENV TESTBED_NAME=scikit-learn__scikit-learn__0.21
 
 WORKDIR /home/swe-bench
 
-COPY swebench swebench
+COPY swebench_docker swebench_docker
 COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

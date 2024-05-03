@@ -9,7 +9,7 @@ RUN conda create -n pydicom__pydicom__2.0 python=3.8 numpy -y
 SHELL ["conda", "run", "-n", "pydicom__pydicom__2.0", "/bin/bash", "-c"]
 
 
-RUN pip install pytest
+RUN pip install pytest==4.6.11
 
 RUN pip install -e .
 
@@ -20,7 +20,7 @@ ENV TESTBED_NAME=pydicom__pydicom__2.0
 
 WORKDIR /home/swe-bench
 
-COPY swebench swebench
+COPY swebench_docker swebench_docker
 COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

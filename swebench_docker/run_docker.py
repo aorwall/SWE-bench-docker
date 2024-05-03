@@ -34,14 +34,14 @@ def run_docker_evaluation(task_instance: dict, log_dir: str, timeout: int = 900,
 
     if result.returncode != 0:
         logger.warning(
-            f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Error running container:")
+            f"[{task_instance['instance_id']}][{docker_image}]  Error running container:")
         logger.warning(f"Command: {cmd_string}")
         logger.warning(f"Stdout - {result.stdout}")
         logger.warning(f"Stderr - {result.stderr}")
 
     elif "Evaluation succeeded" not in result.stdout:
-        logger.warning(f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Container ran successfully in {elapsed_time} seconds, but evaluation failed.")
+        logger.warning(f"[{task_instance['instance_id']}][{docker_image}]  Container ran successfully in {elapsed_time} seconds, but evaluation failed.")
         logger.warning(f"Command: {cmd_string}")
         logger.warning(f"stdout - {result.stdout}")
     else:
-        logger.info(f"[{repo_name}][{task_instance['version']}][{task_instance['instance_id']}] Container ran successfully in {elapsed_time} seconds.")
+        logger.info(f"[{task_instance['instance_id']}][{docker_image}] Container ran successfully in {elapsed_time} seconds.")

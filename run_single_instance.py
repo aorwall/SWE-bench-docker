@@ -2,16 +2,20 @@
 
 """Run evaluation"""
 import argparse
+import json
 import logging
 import os
 import tempfile
 
-from swebench.constants import (
+from swebench.metrics.getters import get_logs_eval, get_id_from_lp
+from swebench.metrics.report import get_eval_report
+
+from swebench_docker.constants import (
     KEY_INSTANCE_ID,
     KEY_MODEL,
     KEY_PREDICTION, MAP_REPO_TO_TEST_FRAMEWORK, )
-from swebench.run_docker import run_docker_evaluation
-from swebench.utils import get_instances, get_eval_refs, get_test_directives
+from swebench_docker.run_docker import run_docker_evaluation
+from swebench_docker.utils import get_instances, get_eval_refs, get_test_directives
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
@@ -72,8 +76,36 @@ def main(
         run_docker_evaluation(instance, temp_dir)
 
         logger.info(f"Instance {instance_id} evaluation logs:")
-        with open(os.path.join(temp_dir, f"{instance_id}.{instance[KEY_MODEL]}.eval.log"), "r") as f:
+        eval_log = os.path.join(temp_dir, f"{instance_id}.{instance[KEY_MODEL]}.eval.log")
+        with open(eval_log, "r") as f:
             logger.info(f.read())
+
+        eval_sm, has_report = get_logs_eval(eval_log)
+        eval_refs = get_eval_refs(swe_bench_tasks)
+
+        instance_id = get_id_from_lp(eval_log)
+        if instance_id not in eval_refs:
+            print(f"Gold results not found for {instance_id}")
+            exit(1)
+
+        gold_results = eval_refs[instance_id]
+
+        report = get_eval_report(eval_sm, gold_results)
+
+        if report["FAIL_TO_PASS"]["failure"] or report["PASS_TO_PASS"]["failure"]:
+            logger.info("Found failing tests")
+            logger.info("Prediction:")
+            logger.info(instance[KEY_PREDICTION])
+
+            if report["PASS_TO_PASS"]["failure"]:
+                logger.info("Pass to pass:")
+                for pass_ in report["PASS_TO_PASS"]["failure"]:
+                    logger.info(f" - {pass_}")
+
+            if report["FAIL_TO_PASS"]["failure"]:
+                logger.info("Fail to pass:")
+                for fail in report["FAIL_TO_PASS"]["failure"]:
+                    logger.info(f" - {fail}")
 
 
 if __name__ == "__main__":

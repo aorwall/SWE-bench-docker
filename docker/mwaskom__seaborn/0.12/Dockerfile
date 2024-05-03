@@ -20,7 +20,7 @@ ENV TESTBED_NAME=mwaskom__seaborn__0.12
 
 WORKDIR /home/swe-bench
 
-COPY swebench swebench
+COPY swebench_docker swebench_docker
 COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

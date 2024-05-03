@@ -23,7 +23,7 @@ ENV TESTBED_NAME=pyvista__pyvista__0.39
 
 WORKDIR /home/swe-bench
 
-COPY swebench swebench
+COPY swebench_docker swebench_docker
 COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

@@ -3,11 +3,6 @@
 	- Testbed: pydicom__pydicom__2.3
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: git status --porcelain 
-[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Std. Output:
- 
-[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Return Code: 0 
 [pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: git -c advice.detachedHead=false checkout f8cf45b6c121e5a4bf4a43f71aba3bc64af3db9c 
 [pydicom__pydicom__2.3] [pydicom__pydicom-1694] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.3] [pydicom__pydicom-1694] Std. Output:
@@ -56,11 +51,13 @@ Applied patch pydicom/tests/test_json.py cleanly.
 [pydicom__pydicom__2.3] [pydicom__pydicom-1694] Return Code: 0 
 [pydicom__pydicom__2.3] [pydicom__pydicom-1694] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pydicom__pydicom__2.3 pytest --no-header -rA -p no:cacheprovider pydicom/tests/test_json.py;
-[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: conda run -n pydicom__pydicom__2.3 pytest --no-header -rA -p no:cacheprovider pydicom/tests/test_json.py 
+Test Script: conda run -n pydicom__pydicom__2.3 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_json.py;
+[pydicom__pydicom__2.3] [pydicom__pydicom-1694] Command: conda run -n pydicom__pydicom__2.3 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_json.py 
 [pydicom__pydicom__2.3] [pydicom__pydicom-1694] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pydicom__pydicom__2.3] [pydicom__pydicom-1694] Std. Output:
 ============================= test session starts ==============================
+platform linux -- Python 3.10.14, pytest-8.2.0, pluggy-1.5.0
+rootdir: /home/swe-bench/pydicom__pydicom
 collected 27 items
 
 pydicom/tests/test_json.py ...........................                   [100%]
@@ -71,15 +68,6 @@ pydicom/tests/test_json.py::TestDataSetToJson::test_suppress_invalid_tags_with_f
     warnings.warn(msg)
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-==================================== PASSES ====================================
-_________________ TestDataSetToJson.test_suppress_invalid_tags _________________
------------------------------- Captured log call -------------------------------
-ERROR    pydicom:dataset.py:2502 Error while processing tag 00100010
-ERROR    pydicom:dataset.py:2502 Error while processing tag 00100010
-_____ TestDataSetToJson.test_suppress_invalid_tags_with_failed_dataelement _____
------------------------------- Captured log call -------------------------------
-ERROR    pydicom:dataset.py:2502 Error while processing tag 00082128
-ERROR    pydicom:dataset.py:2502 Error while processing tag 00082128
 =========================== short test summary info ============================
 PASSED pydicom/tests/test_json.py::TestPersonName::test_json_pn_from_file
 PASSED pydicom/tests/test_json.py::TestPersonName::test_pn_components_to_json
@@ -108,7 +96,7 @@ PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called_2
 PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called_within_SQ
 PASSED pydicom/tests/test_json.py::TestNumeric::test_numeric_values
 PASSED pydicom/tests/test_json.py::TestNumeric::test_numeric_types
-======================== 27 passed, 1 warning in 0.11s =========================
+======================== 27 passed, 1 warning in 0.16s =========================
 
  
 [pydicom__pydicom__2.3] [pydicom__pydicom-1694] Return Code: 0 

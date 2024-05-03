@@ -4,7 +4,7 @@ import re
 import subprocess
 from datetime import datetime
 
-from swebench.constants import (
+from swebench_docker.constants import (
     MAP_REPO_TO_REQS_PATHS,
     MAP_REPO_TO_ENV_YML_PATHS,
     SWE_BENCH_URL_RAW,
@@ -435,6 +435,11 @@ def has_attribute_or_import_error(log_before):
 def get_eval_refs(data_path_or_name):
     from datasets import load_dataset, load_from_disk
 
+    file_name = data_path_or_name.replace("/", "_")
+    if os.path.isfile(f"{file_name}.json"):
+        with open(f"{file_name}.json", "r") as f:
+            return json.loads(f.read())
+
     decode_keys = False
     if os.path.isfile(data_path_or_name):
         if data_path_or_name.endswith(".jsonl"):
@@ -456,5 +461,9 @@ def get_eval_refs(data_path_or_name):
         for datum in data:
             for key in ["PASS_TO_PASS", "FAIL_TO_PASS"]:
                 datum[key] = json.loads(datum[key])
-    return {d[KEY_INSTANCE_ID]: d for d in data}
+    d = {d[KEY_INSTANCE_ID]: d for d in data}
+    with open(f"{file_name}.json", "w") as f:
+        f.write(json.dumps(d))
+
+    return d
 

@@ -20,7 +20,7 @@ ENV TESTBED_NAME=pytest-dev__pytest__5.4
 
 WORKDIR /home/swe-bench
 
-COPY swebench swebench
+COPY swebench_docker swebench_docker
 COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

@@ -18,7 +18,7 @@ ENV TESTBED_NAME=marshmallow-code__marshmallow__3.0
 
 WORKDIR /home/swe-bench
 
-COPY swebench swebench
+COPY swebench_docker swebench_docker
 COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]
