@@ -17,7 +17,11 @@ RUN chown -R swe-bench:swe-bench /home/swe-bench
 # Setup Conda
 ENV PATH="/home/swe-bench/miniconda3/bin:${PATH}"
 
-RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-py311_24.3.0-0-Linux-x86_64.sh -O ~/miniconda.sh && \
+RUN if [ "$TARGETARCH" = "amd64" ]; then \
+        wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-py311_24.3.0-0-Linux-x86_64.sh -O ~/miniconda.sh; \
+    elif [ "$TARGETARCH" = "arm64" ]; then \
+        wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-py311_24.3.0-0-Linux-aarch64.sh -O ~/miniconda.sh; \
+    fi && \
     mkdir ~/.conda && \
     bash miniconda.sh -b && \
     rm ~/miniconda.sh
