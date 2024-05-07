@@ -2,6 +2,7 @@
 
 """Run evaluation"""
 import argparse
+import asyncio
 import hashlib
 import logging
 import os
@@ -49,7 +50,7 @@ def validate_predictions(predictions_path, tasks_ids):
             + ", ".join(not_in_tasks)
         )
 
-def main(
+async def main(
     predictions_path: str,
     swe_bench_tasks: str,
     namespace: str,
@@ -142,11 +143,12 @@ def main(
 
     task_instances = sorted(task_instances, key=lambda x: x[KEY_INSTANCE_ID])
 
-    for task_instance in task_instances:
-        if task_instance[KEY_PREDICTION]:
-            run_docker_evaluation(task_instance, namespace, log_dir, timeout, log_suffix)
-        else:
-            logger.info(f"[{task_instance[KEY_INSTANCE_ID]}] No prediction found.")
+    async with asyncio.TaskGroup() as tg:
+        for task_instance in task_instances:
+            if task_instance[KEY_PREDICTION]:
+                tg.create_task(run_docker_evaluation(task_instance, namespace, log_dir, timeout, log_suffix))
+            else:
+                logger.info(f"[{task_instance[KEY_INSTANCE_ID]}] No prediction found.")
 
 
 if __name__ == "__main__":
@@ -159,4 +161,4 @@ if __name__ == "__main__":
     parser.add_argument("--skip_existing", action="store_true", help="(Optional) Skip existing logs")
     parser.add_argument("--timeout", type=int, help="(Optional) Timeout in seconds (default: 900)", default=900)
     args = parser.parse_args()
-    main(**vars(args))
+    asyncio.run(main(**vars(args)))
