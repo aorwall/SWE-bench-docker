@@ -52,6 +52,7 @@ def validate_predictions(predictions_path, tasks_ids):
 def main(
     predictions_path: str,
     swe_bench_tasks: str,
+    namespace: str,
     log_dir: str,
     log_suffix: str = "",
     skip_existing: bool = False,
@@ -64,6 +65,7 @@ def main(
     Args:
         predictions_path (str): Path to the predictions file.
         swe_bench_tasks (str): Path to the SWE-bench tasks file OR HF dataset name.
+        namespace (str): Docker repository namespace.
         log_dir (str): Path to the directory where logs will be saved.
         log_suffix (str): Suffix to append to log file names.
         skip_existing (bool): Whether to skip evaluations for predictions that already have logs.
@@ -142,7 +144,7 @@ def main(
 
     for task_instance in task_instances:
         if task_instance[KEY_PREDICTION]:
-            run_docker_evaluation(task_instance, log_dir, timeout, log_suffix)
+            run_docker_evaluation(task_instance, namespace, log_dir, timeout, log_suffix)
         else:
             logger.info(f"[{task_instance[KEY_INSTANCE_ID]}] No prediction found.")
 
@@ -152,6 +154,7 @@ if __name__ == "__main__":
     parser.add_argument("--predictions_path", type=str, help="Path to predictions file (must be .json)", required=True)
     parser.add_argument("--log_dir", type=str, help="Path to log directory", required=True)
     parser.add_argument("--swe_bench_tasks", type=str, help="Path to dataset file or HF datasets name", required=True)
+    parser.add_argument("--namespace", type=str, help="Docker repository namespace", required=False, default="aorwall")
     parser.add_argument("--log_suffix", type=str, help="(Optional) Suffix to append to log file names", default="")
     parser.add_argument("--skip_existing", action="store_true", help="(Optional) Skip existing logs")
     parser.add_argument("--timeout", type=int, help="(Optional) Timeout in seconds (default: 900)", default=900)

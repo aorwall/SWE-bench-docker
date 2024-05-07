@@ -7,13 +7,13 @@ import time
 logger = logging.getLogger(__name__)
 
 
-def run_docker_evaluation(task_instance: dict, log_dir: str, timeout: int = 900, log_suffix: str = ""):
+def run_docker_evaluation(task_instance: dict, namespace: str, log_dir: str, timeout: int = 900, log_suffix: str = ""):
     repo_name = task_instance['repo'].replace("/", "_")
 
     # Base64 encode the instance JSON to be sure it can be passed as an environment variable
     instance_b64 = base64.b64encode(json.dumps(task_instance).encode('utf-8')).decode('utf-8')
 
-    docker_image = f"aorwall/swe-bench-{repo_name}-testbed:{task_instance['version']}"
+    docker_image = f"{namespace}/swe-bench-{repo_name}-testbed:{task_instance['version']}"
 
     container_log_dir = '/home/swe-bench/logs'
 
