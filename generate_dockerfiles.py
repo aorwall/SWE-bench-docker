@@ -4,9 +4,10 @@ import os
 from typing import List
 
 from jinja2 import FileSystemLoader, Environment
+from swebench import get_eval_refs
 
 from swebench_docker.constants import MAP_VERSION_TO_INSTALL, MAP_REPO_TO_DEB_PACKAGES
-from swebench_docker.utils import get_eval_refs, get_requirements, get_environment_yml
+from swebench_docker.utils import get_requirements, get_environment_yml
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("build_docker")

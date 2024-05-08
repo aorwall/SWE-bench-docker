@@ -2,12 +2,12 @@
 
 """Run evaluation"""
 import argparse
-import json
+import asyncio
 import logging
 import os
 import tempfile
 
-from swebench.metrics.getters import get_logs_eval, get_id_from_lp
+from swebench.metrics.getters import get_logs_eval, get_id_from_lp, get_eval_refs
 from swebench.metrics.report import get_eval_report
 
 from swebench_docker.constants import (
@@ -15,7 +15,7 @@ from swebench_docker.constants import (
     KEY_MODEL,
     KEY_PREDICTION, MAP_REPO_TO_TEST_FRAMEWORK, )
 from swebench_docker.run_docker import run_docker_evaluation
-from swebench_docker.utils import get_instances, get_eval_refs, get_test_directives
+from swebench_docker.utils import get_instances, get_test_directives
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
@@ -23,7 +23,7 @@ logging.basicConfig(
 logger = logging.getLogger("run_evaluation")
 
 
-def main(
+async def main(
     instance_id: str,
     swe_bench_tasks: str,
     namespace: str,
@@ -75,7 +75,7 @@ def main(
         instance[KEY_MODEL] = "golden"
 
     with tempfile.TemporaryDirectory() as temp_dir:
-        run_docker_evaluation(instance, namespace, temp_dir)
+        await run_docker_evaluation(instance, namespace, temp_dir)
 
         logger.info(f"Instance {instance_id} evaluation logs:")
         eval_log = os.path.join(temp_dir, f"{instance_id}.{instance[KEY_MODEL]}.eval.log")
@@ -117,4 +117,4 @@ if __name__ == "__main__":
     parser.add_argument("--namespace", type=str, help="Docker repository namespace", required=False, default="aorwall")
     parser.add_argument("--predictions_path", type=str, help="Path to predictions file (must be .json)", required=False)
     args = parser.parse_args()
-    main(**vars(args))
+    asyncio.run(main(**vars(args)))
