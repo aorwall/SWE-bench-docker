@@ -26,6 +26,7 @@ logger = logging.getLogger("run_evaluation")
 def main(
     instance_id: str,
     swe_bench_tasks: str,
+    namespace: str,
     predictions_path: str,
 ):
     """
@@ -34,6 +35,7 @@ def main(
     Args:
         instance_id (str): Path to the predictions file.
         swe_bench_tasks (str): Path to the SWE-bench tasks file OR HF dataset name.
+        namespace (str): Docker repository namespace.
         predictions_path (str): Path to the predictions file. If not specified the golden patch will be run.
     """
 
@@ -73,7 +75,7 @@ def main(
         instance[KEY_MODEL] = "golden"
 
     with tempfile.TemporaryDirectory() as temp_dir:
-        run_docker_evaluation(instance, temp_dir)
+        run_docker_evaluation(instance, namespace, temp_dir)
 
         logger.info(f"Instance {instance_id} evaluation logs:")
         eval_log = os.path.join(temp_dir, f"{instance_id}.{instance[KEY_MODEL]}.eval.log")
@@ -112,6 +114,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--instance_id", type=str, help="Instance ID", required=True)
     parser.add_argument("--swe_bench_tasks", type=str, help="Path to dataset file or HF datasets name", required=False, default="princeton-nlp/SWE-bench_Lite")
+    parser.add_argument("--namespace", type=str, help="Docker repository namespace", required=False, default="aorwall")
     parser.add_argument("--predictions_path", type=str, help="Path to predictions file (must be .json)", required=False)
     args = parser.parse_args()
     main(**vars(args))

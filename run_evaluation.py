@@ -2,6 +2,7 @@
 
 """Run evaluation"""
 import argparse
+import asyncio
 import hashlib
 import logging
 import os
@@ -49,14 +50,15 @@ def validate_predictions(predictions_path, tasks_ids):
             + ", ".join(not_in_tasks)
         )
 
-def main(
+async def main(
     predictions_path: str,
     swe_bench_tasks: str,
+    namespace: str,
     log_dir: str,
     log_suffix: str = "",
     skip_existing: bool = False,
     timeout: int = 900,
-    num_processes: int = -1,  # TODO: Implement parallel evaluation
+    num_processes: int = -1,
 ):
     """
     Runs evaluation on predictions for each model/repo/version combination.
@@ -64,10 +66,12 @@ def main(
     Args:
         predictions_path (str): Path to the predictions file.
         swe_bench_tasks (str): Path to the SWE-bench tasks file OR HF dataset name.
+        namespace (str): Docker repository namespace.
         log_dir (str): Path to the directory where logs will be saved.
         log_suffix (str): Suffix to append to log file names.
         skip_existing (bool): Whether to skip evaluations for predictions that already have logs.
         timeout (int): Timeout for each evaluation.
+        num_processes (int): Number of processes to run in parallel (-1 = unlimited)
 
     Raises:
         ValueError: If log_dir is not a directory, testbed is not a directory, or swe_bench_tasks does not exist.
@@ -140,11 +144,17 @@ def main(
 
     task_instances = sorted(task_instances, key=lambda x: x[KEY_INSTANCE_ID])
 
-    for task_instance in task_instances:
-        if task_instance[KEY_PREDICTION]:
-            run_docker_evaluation(task_instance, log_dir, timeout, log_suffix)
-        else:
-            logger.info(f"[{task_instance[KEY_INSTANCE_ID]}] No prediction found.")
+    sem = asyncio.Semaphore(num_processes if num_processes > 0 else len(task_instances))
+    async with asyncio.TaskGroup() as tg:
+        for task_instance in task_instances:
+            if task_instance[KEY_PREDICTION]:
+                async def run_docker_throttled(*args, **kwargs):
+                    async with sem:
+                        return await run_docker_evaluation(*args, **kwargs)
+
+                tg.create_task(run_docker_throttled(task_instance, namespace, log_dir, timeout, log_suffix))
+            else:
+                logger.info(f"[{task_instance[KEY_INSTANCE_ID]}] No prediction found.")
 
 
 if __name__ == "__main__":
@@ -152,8 +162,10 @@ if __name__ == "__main__":
     parser.add_argument("--predictions_path", type=str, help="Path to predictions file (must be .json)", required=True)
     parser.add_argument("--log_dir", type=str, help="Path to log directory", required=True)
     parser.add_argument("--swe_bench_tasks", type=str, help="Path to dataset file or HF datasets name", required=True)
+    parser.add_argument("--namespace", type=str, help="Docker repository namespace", required=False, default="aorwall")
     parser.add_argument("--log_suffix", type=str, help="(Optional) Suffix to append to log file names", default="")
     parser.add_argument("--skip_existing", action="store_true", help="(Optional) Skip existing logs")
     parser.add_argument("--timeout", type=int, help="(Optional) Timeout in seconds (default: 900)", default=900)
+    parser.add_argument("--num_processes", type=int, help="(Optional) Number of processes to run in parallel (-1 for unlimited)", default=-1)
     args = parser.parse_args()
-    main(**vars(args))
+    asyncio.run(main(**vars(args)))
