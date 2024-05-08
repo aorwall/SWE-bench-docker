@@ -9,7 +9,7 @@ RUN conda create -n pytest-dev__pytest__5.4 python=3.9  -y
 SHELL ["conda", "run", "-n", "pytest-dev__pytest__5.4", "/bin/bash", "-c"]
 
 
-RUN pip install py==1.11.0 packaging==23.1 attrs==23.1.0 more-itertools==10.1.0 pluggy==0.13.1
+RUN pip install py==1.11.0 packaging==23.1 attrs==23.1.0 more-itertools==10.1.0 pluggy==0.13.1 wcwidth==0.2.6
 
 RUN pip install -e .
 

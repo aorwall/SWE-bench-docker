@@ -3,20 +3,15 @@
 	- Testbed: pytest-dev__pytest__5.4
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Command: git status --porcelain 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Std. Output:
- 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Command: git -c advice.detachedHead=false checkout 56bf819c2f4eaf8b36bd8c42c06bb59d5a3bfc0f 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Std. Output:
 Previous HEAD position was 678c1a074 assertion: improve diff output of recursive dataclass/attrs
 HEAD is now at 56bf819c2 Do not call TestCase.tearDown for skipped tests (#7236)
  
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-7220_pred_try.patch 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Std. Output:
 Checking patch src/_pytest/nodes.py...
 Applied patch src/_pytest/nodes.py cleanly.
@@ -25,7 +20,7 @@ Applied patch src/_pytest/nodes.py cleanly.
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Command: git apply -v -R /home/swe-bench/temp_pytest-dev__pytest-7220_pred_try.patch 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Std. Output:
 Checking patch src/_pytest/nodes.py...
 Applied patch src/_pytest/nodes.py cleanly.
@@ -34,7 +29,7 @@ Applied patch src/_pytest/nodes.py cleanly.
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-7220_pred.patch 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Std. Output:
 Checking patch src/_pytest/nodes.py...
 Applied patch src/_pytest/nodes.py cleanly.
@@ -43,12 +38,12 @@ Applied patch src/_pytest/nodes.py cleanly.
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Command: git restore testing/test_nodes.py 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Std. Output:
  
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-7220_test.patch 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Std. Output:
 Checking patch testing/test_nodes.py...
 Applied patch testing/test_nodes.py cleanly.
@@ -58,67 +53,25 @@ Applied patch testing/test_nodes.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pytest-dev__pytest__5.4 pytest -rA testing/test_nodes.py;
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Command: conda run -n pytest-dev__pytest__5.4 pytest -rA testing/test_nodes.py 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev626+g678c1a074, py-1.11.0, pluggy-0.13.1
 rootdir: /home/swe-bench/pytest-dev__pytest, inifile: tox.ini
 collected 12 items
 
-testing/test_nodes.py ...........F                                       [100%]
+testing/test_nodes.py ............                                       [100%]
 
-=================================== FAILURES ===================================
+==================================== PASSES ====================================
+_______________________ test_std_warn_not_pytestwarning ________________________
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-5.4.1.dev626+g678c1a074, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_std_warn_not_pytestwarning0
+collected 0 items
+
+============================ no tests ran in 0.00s =============================
 ________________________ test_failure_with_changed_cwd _________________________
-
-testdir = <Testdir local('/tmp/pytest-of-swe-bench/pytest-0/test_failure_with_changed_cwd0')>
-
-    def test_failure_with_changed_cwd(testdir):
-        """
-        Test failure lines should use absolute paths if cwd has changed since
-        invocation, so the path is correct (#6428).
-        """
-        p = testdir.makepyfile(
-            """
-            import os
-            import pytest
-    
-            @pytest.fixture
-            def private_dir():
-                out_dir = 'ddd'
-                os.mkdir(out_dir)
-                old_dir = os.getcwd()
-                os.chdir(out_dir)
-                yield out_dir
-                os.chdir(old_dir)
-    
-            def test_show_wrong_path(private_dir):
-                assert False
-        """
-        )
-        result = testdir.runpytest()
->       result.stdout.fnmatch_lines([str(p) + ":*: AssertionError", "*1 failed in *"])
-E       Failed: nomatch: '/tmp/pytest-of-swe-bench/pytest-0/test_failure_with_changed_cwd0/test_failure_with_changed_cwd.py:*: AssertionError'
-E           and: '============================= test session starts =============================='
-E           and: 'platform linux -- Python 3.9.19, pytest-5.4.1.dev626+g678c1a074, py-1.11.0, pluggy-0.13.1'
-E           and: 'rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_failure_with_changed_cwd0'
-E           and: 'collected 1 item'
-E           and: ''
-E           and: 'test_failure_with_changed_cwd.py F                                       [100%]'
-E           and: ''
-E           and: '=================================== FAILURES ==================================='
-E           and: '_____________________________ test_show_wrong_path _____________________________'
-E           and: ''
-E           and: "private_dir = 'ddd'"
-E           and: ''
-E           and: '    def test_show_wrong_path(private_dir):'
-E           and: '>       assert False'
-E           and: 'E       assert False'
-E           and: ''
-E       fnmatch: '/tmp/pytest-of-swe-bench/pytest-0/test_failure_with_changed_cwd0/test_failure_with_changed_cwd.py:*: AssertionError'
-E          with: '/tmp/pytest-of-swe-bench/pytest-0/test_failure_with_changed_cwd0/test_failure_with_changed_cwd.py:14: AssertionError'
-E       remains unmatched: '*1 failed in *'
-
-/home/swe-bench/pytest-dev__pytest/testing/test_nodes.py:87: Failed
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev626+g678c1a074, py-1.11.0, pluggy-0.13.1
@@ -137,137 +90,26 @@ private_dir = 'ddd'
 E       assert False
 
 /tmp/pytest-of-swe-bench/pytest-0/test_failure_with_changed_cwd0/test_failure_with_changed_cwd.py:14: AssertionError
------------------------------ Captured stderr call -----------------------------
-Traceback (most recent call last):
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/pytester.py", line 978, in runpytest_inprocess
-    reprec = self.inline_run(*args, **kwargs)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/pytester.py", line 944, in inline_run
-    ret = pytest.main(list(args), plugins=plugins)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/config/__init__.py", line 129, in main
-    ret = config.hook.pytest_cmdline_main(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/hooks.py", line 286, in __call__
-    return self._hookexec(self, self.get_hookimpls(), kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 93, in _hookexec
-    return self._inner_hookexec(hook, methods, kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 84, in <lambda>
-    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 208, in _multicall
-    return outcome.get_result()
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 80, in get_result
-    raise ex[1].with_traceback(ex[2])
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 187, in _multicall
-    res = hook_impl.function(*args)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/main.py", line 240, in pytest_cmdline_main
-    return wrap_session(config, _main)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/main.py", line 228, in wrap_session
-    config.hook.pytest_sessionfinish(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/hooks.py", line 286, in __call__
-    return self._hookexec(self, self.get_hookimpls(), kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 93, in _hookexec
-    return self._inner_hookexec(hook, methods, kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 337, in traced_hookexec
-    return outcome.get_result()
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 80, in get_result
-    raise ex[1].with_traceback(ex[2])
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 52, in from_call
-    result = func()
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 335, in <lambda>
-    outcome = _Result.from_call(lambda: oldcall(hook, hook_impls, kwargs))
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 84, in <lambda>
-    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 203, in _multicall
-    gen.send(outcome)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/terminal.py", line 733, in pytest_sessionfinish
-    self.config.hook.pytest_terminal_summary(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/hooks.py", line 286, in __call__
-    return self._hookexec(self, self.get_hookimpls(), kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 93, in _hookexec
-    return self._inner_hookexec(hook, methods, kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 337, in traced_hookexec
-    return outcome.get_result()
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 80, in get_result
-    raise ex[1].with_traceback(ex[2])
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 52, in from_call
-    result = func()
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 335, in <lambda>
-    outcome = _Result.from_call(lambda: oldcall(hook, hook_impls, kwargs))
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 84, in <lambda>
-    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 203, in _multicall
-    gen.send(outcome)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/terminal.py", line 752, in pytest_terminal_summary
-    self.short_test_summary()
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/terminal.py", line 1063, in short_test_summary
-    action(lines)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/terminal.py", line 1012, in show_simple
-    line = _get_line_with_reprcrash_message(config, rep, termwidth)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/terminal.py", line 1125, in _get_line_with_reprcrash_message
-    from wcwidth import wcswidth
-ModuleNotFoundError: No module named 'wcwidth'
-==================================== PASSES ====================================
-_______________________ test_std_warn_not_pytestwarning ________________________
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-5.4.1.dev626+g678c1a074, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_std_warn_not_pytestwarning0
-collected 0 items
-
-============================ no tests ran in 0.00s =============================
-Traceback (most recent call last):
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/bin/pytest", line 8, in <module>
-    sys.exit(console_main())
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/config/__init__.py", line 152, in console_main
-    code = main()
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/config/__init__.py", line 129, in main
-    ret = config.hook.pytest_cmdline_main(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/hooks.py", line 286, in __call__
-    return self._hookexec(self, self.get_hookimpls(), kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 93, in _hookexec
-    return self._inner_hookexec(hook, methods, kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 84, in <lambda>
-    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 208, in _multicall
-    return outcome.get_result()
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 80, in get_result
-    raise ex[1].with_traceback(ex[2])
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 187, in _multicall
-    res = hook_impl.function(*args)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/main.py", line 240, in pytest_cmdline_main
-    return wrap_session(config, _main)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/main.py", line 228, in wrap_session
-    config.hook.pytest_sessionfinish(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/hooks.py", line 286, in __call__
-    return self._hookexec(self, self.get_hookimpls(), kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 93, in _hookexec
-    return self._inner_hookexec(hook, methods, kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 84, in <lambda>
-    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 203, in _multicall
-    gen.send(outcome)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/terminal.py", line 733, in pytest_sessionfinish
-    self.config.hook.pytest_terminal_summary(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/hooks.py", line 286, in __call__
-    return self._hookexec(self, self.get_hookimpls(), kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 93, in _hookexec
-    return self._inner_hookexec(hook, methods, kwargs)
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/manager.py", line 84, in <lambda>
-    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
-  File "/home/swe-bench/miniconda3/envs/pytest-dev__pytest__5.4/lib/python3.9/site-packages/pluggy/callers.py", line 203, in _multicall
-    gen.send(outcome)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/terminal.py", line 752, in pytest_terminal_summary
-    self.short_test_summary()
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/terminal.py", line 1063, in short_test_summary
-    action(lines)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/terminal.py", line 1012, in show_simple
-    line = _get_line_with_reprcrash_message(config, rep, termwidth)
-  File "/home/swe-bench/pytest-dev__pytest/src/_pytest/terminal.py", line 1125, in _get_line_with_reprcrash_message
-    from wcwidth import wcswidth
-ModuleNotFoundError: No module named 'wcwidth'
-
-ERROR conda.cli.main_run:execute(124): `conda run pytest -rA testing/test_nodes.py` failed. (See above for error)
+=========================== short test summary info ============================
+FAILED test_failure_with_changed_cwd.py::test_show_wrong_path - assert False
+============================== 1 failed in 0.01s ===============================
+=========================== short test summary info ============================
+PASSED testing/test_nodes.py::test_ischildnode[--True]
+PASSED testing/test_nodes.py::test_ischildnode[-foo-True]
+PASSED testing/test_nodes.py::test_ischildnode[-foo/bar-True]
+PASSED testing/test_nodes.py::test_ischildnode[-foo/bar::TestBaz-True]
+PASSED testing/test_nodes.py::test_ischildnode[foo-food-False]
+PASSED testing/test_nodes.py::test_ischildnode[foo/bar::TestBaz-foo/bar-False]
+PASSED testing/test_nodes.py::test_ischildnode[foo/bar::TestBaz-foo/bar::TestBop-False]
+PASSED testing/test_nodes.py::test_ischildnode[foo/bar-foo/bar::TestBop-True]
+PASSED testing/test_nodes.py::test_node_from_parent_disallowed_arguments
+PASSED testing/test_nodes.py::test__check_initialpaths_for_relpath
+PASSED testing/test_nodes.py::test_std_warn_not_pytestwarning
+PASSED testing/test_nodes.py::test_failure_with_changed_cwd
+============================== 12 passed in 0.05s ==============================
 
  
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Return Code: 1 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Return Code: 0 
 
->>>>> Some Tests Failed
+>>>>> All Tests Passed
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Test script run successful 

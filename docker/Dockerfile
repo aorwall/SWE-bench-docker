@@ -10,11 +10,10 @@ RUN apt-get update && \
 
 # Create new user
 RUN useradd -ms /bin/bash swe-bench
-USER swe-bench
 WORKDIR /home/swe-bench
 RUN chown -R swe-bench:swe-bench /home/swe-bench
-
 RUN mkdir -p /tmp && chown -R swe-bench:swe-bench /tmp
+USER swe-bench
 
 # Setup Conda
 ENV PATH="/home/swe-bench/miniconda3/bin:${PATH}"
