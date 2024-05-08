@@ -221,6 +221,7 @@ MAP_VERSION_TO_INSTALL_PYTEST["5.3"]["pip_packages"] = [
 MAP_VERSION_TO_INSTALL_PYTEST["5.4"]["pip_packages"] = [
     "py==1.11.0", "packaging==23.1", "attrs==23.1.0",
     "more-itertools==10.1.0", "pluggy==0.13.1", "wcwidth==0.2.6"]
+MAP_VERSION_TO_INSTALL_PYTEST["5.4"]["pre_install"] = ["pip install -e ."]
 MAP_VERSION_TO_INSTALL_PYTEST["6.0"]["pip_packages"] = [
     "attrs==23.1.0", "iniconfig==2.0.0", "more-itertools==10.1.0",
     "packaging==23.1", "pluggy==0.13.1", "py==1.11.0", "toml==0.10.2"]
