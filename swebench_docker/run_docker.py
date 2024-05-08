@@ -5,6 +5,8 @@ import logging
 import subprocess
 import time
 
+from swebench_docker.constants import MAP_VERSION_TO_INSTALL
+
 logger = logging.getLogger(__name__)
 
 
@@ -14,7 +16,11 @@ async def run_docker_evaluation(task_instance: dict, namespace: str, log_dir: st
     # Base64 encode the instance JSON to be sure it can be passed as an environment variable
     instance_b64 = base64.b64encode(json.dumps(task_instance).encode('utf-8')).decode('utf-8')
 
-    docker_image = f"{namespace}/swe-bench-{repo_name}-testbed:{task_instance['version']}"
+    specifications = MAP_VERSION_TO_INSTALL[task_instance["repo"]][task_instance["version"]]
+    if specifications.get("instance_image", False):
+        docker_image = f"{namespace}/swe-bench-{repo_name}-instance:{task_instance['instance_id']}"
+    else:
+        docker_image = f"{namespace}/swe-bench-{repo_name}-testbed:{task_instance['version']}"
 
     container_log_dir = '/home/swe-bench/logs'
 

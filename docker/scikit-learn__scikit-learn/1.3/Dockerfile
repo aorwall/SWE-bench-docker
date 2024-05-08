@@ -9,8 +9,6 @@ RUN conda create -n scikit-learn__scikit-learn__1.3 python=3.9 numpy scipy cytho
 SHELL ["conda", "run", "-n", "scikit-learn__scikit-learn__1.3", "/bin/bash", "-c"]
 
 
-RUN pip install -v --no-use-pep517 --no-build-isolation -e .
-
 
 RUN git checkout 1e8a5b833d1b58f3ab84099c4582239af854b23a .
 
