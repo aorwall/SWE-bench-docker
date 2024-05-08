@@ -39,8 +39,11 @@ python run_evaluation.py
     --predictions_path [Required]  Path to the predictions file 
     --log_dir          [Required]  Path to directory to save evaluation log files 
     --swe_bench_tasks  [Required]  Path to SWE-bench task instances file or dataset 
+    --namespace        [Optional]  Namespace of the Docker repository 
+    --log_suffix       [Optional]  Suffix to append to log file names
     --skip_existing    [Optional]  Skip evaluating task instances with logs that already exist
     --timeout          [Optional]  Timeout for installation + test script execution
+    --num_processes    [Optional]  Number of processes to run in parallel (-1 for unlimited)
 ```
 
 ### Pull Docker images
@@ -83,7 +86,8 @@ Run a single instance and print logs to stdout.
 ```
 python run_single_instance.py 
     --instance_id      [Required]  Instance ID of the task to run
-    --swe_bench_tasks  [Optional]  Path to SWE-bench task instances file or dataset (default is princeton-nlp/SWE-bench_Lite) 
+    --swe_bench_tasks  [Optional]  Path to SWE-bench task instances file or dataset (default is princeton-nlp/SWE-bench_Lite)
+    --namespace        [Optional]  Namespace of the Docker repository
     --predictions_path [Optional]  Path to the predictions file, if not set the golden patch will be used
 ```
 
