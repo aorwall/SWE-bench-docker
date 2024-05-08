@@ -15,7 +15,6 @@ The following test beds and benchmark instances currently fails when applying th
 | ----------- | ---------- | --------------- |
 | [pydata__xarray-4094](evaluations/SWE-bench_Lite_golden/logs/pydata__xarray-4094.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
 | [pydata__xarray-4493](evaluations/SWE-bench_Lite_golden/logs/pydata__xarray-4493.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
-| [pylint-dev__pylint-7080](evaluations/SWE-bench_Lite_golden/logs/pylint-dev__pylint-7080.SWE-bench_Lite_golden.eval.log) | pylint-dev/pylint | 2.15 |
 | [sympy__sympy-13177](evaluations/SWE-bench_Lite_golden/logs/sympy__sympy-13177.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
 
 ## Run evaluation

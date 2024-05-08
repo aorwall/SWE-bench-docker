@@ -1137,6 +1137,7 @@
         "matplotlib__matplotlib-26011",
         "sphinx-doc__sphinx-8273",
         "scikit-learn__scikit-learn-15535",
+        "pylint-dev__pylint-7080",
         "sympy__sympy-22714",
         "django__django-13321",
         "sympy__sympy-12454",

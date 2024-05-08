@@ -410,6 +410,8 @@ MAP_VERSION_TO_INSTALL_PYLINT = {
     for k in ["2.10", "2.11", "2.13", "2.14", "2.15", "2.16", "2.17", "2.8", "2.9", "3.0"]
 }
 
+MAP_VERSION_TO_INSTALL_PYLINT["2.15"]["pre_install"] = ["pip install -e ."]
+
 MAP_VERSION_TO_INSTALL_PYLINT.update({
     k: {**MAP_VERSION_TO_INSTALL_PYLINT[k], "pip_packages": [
         "toml", "pytest"
