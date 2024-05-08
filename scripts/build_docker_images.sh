@@ -67,7 +67,29 @@ build_versioned_images() {
             image_name="$base_image-${tag_base}-testbed"
             echo "Building Docker image: $image_name:$version for $dir/Dockerfile"
             docker build -t "$image_name:$version" -f "$dockerfile_path" .
+
+            for instance_dir in $dir/*/; do
+                build_instance_image "$instance_dir" "$tag_base"
+            done
         fi
+
+    fi
+}
+
+build_instance_image() {
+    dir=$1
+    tag_base=$2
+
+    dockerfile_path="$dir/Dockerfile"
+    if [ -f "$dockerfile_path" ]; then
+        base_dir=$(dirname "$dir")
+        instance_id=$(basename "$dir")
+        tag_base="${base_dir#$root_directory/}"
+        tag_base="${tag_base%/*}"
+        tag_base="$(echo $tag_base | sed 's/__*/_/g')"
+        image_name="$base_image-${tag_base}-instance"
+        echo "Building Docker image: $image_name:$instance_id for $dir/Dockerfile"
+        docker build -t "$image_name:$instance_id" -f "$dockerfile_path" .
     fi
 }
 

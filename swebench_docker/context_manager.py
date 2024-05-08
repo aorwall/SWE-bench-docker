@@ -111,8 +111,8 @@ class TaskEnvContextManager:
                 "cwd": self.testbed,
                 "check": True,
                 "shell": False,
-                "capture_output": False,
-                "text": True,
+                # "capture_output": False,
+                "universal_newlines": True,
                 "stdout": subprocess.PIPE,
                 "stderr": subprocess.STDOUT,
             },
@@ -151,6 +151,8 @@ class TaskEnvContextManager:
         if "pre_install" in specifications:
             for cmd_pre_install in specifications["pre_install"]:
                 self.log.write(f"Running pre-test command: {cmd_pre_install}")
+                cmd_pre_install = f"{self.cmd_conda_run} {cmd_pre_install}"
+
                 out_pre_install = self.exec(
                     cmd_pre_install, timeout=self.timeout, shell=True
                 )
@@ -242,7 +244,12 @@ class TaskEnvContextManager:
         """
         try:
             # Run test command for task instance
-            test_cmd = f"{self.cmd_conda_run} {instance['test_cmd']}"
+            specifications = MAP_VERSION_TO_INSTALL[self.instance["repo"]][self.instance["version"]]
+            if "image" in specifications and specifications["image"] == "python":
+                test_cmd = instance["test_cmd"]
+            else:
+                test_cmd = f"{self.cmd_conda_run} {instance['test_cmd']}"
+
             with open(self.log_file, "a") as f:
                 f.write(f"Test Script: {test_cmd};\n")
 
