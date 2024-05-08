@@ -7,13 +7,15 @@ import hashlib
 import logging
 import os
 
+from swebench import get_eval_refs
+
 from swebench_docker.constants import (
     KEY_INSTANCE_ID,
     KEY_MODEL,
     KEY_PREDICTION, MAP_REPO_TO_TEST_FRAMEWORK,
 )
 from swebench_docker.run_docker import run_docker_evaluation
-from swebench_docker.utils import get_instances, get_eval_refs, get_test_directives
+from swebench_docker.utils import get_instances, get_test_directives
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
