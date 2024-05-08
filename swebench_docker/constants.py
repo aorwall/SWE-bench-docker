@@ -2,16 +2,14 @@ from enum import Enum
 
 MAP_VERSION_TO_INSTALL_SKLEARN = {
     k: {
+        "image": "python",
         "python": "3.6",
-        "packages": "numpy scipy cython pytest pandas matplotlib joblib threadpoolctl",
-        "install": "pip install -v --no-use-pep517 --no-build-isolation -e .",
+        "packages": "numpy==1.19.2 scipy==1.5.2 cython==0.29.7 pytest==4.5.0 pandas matplotlib==3.1.0 joblib threadpoolctl",
+        "install": "pip install -v --no-build-isolation -e .",
+        "pre_install": "pip install -v --no-build-isolation -e .",
         "arch_specific_packages": {
             "aarch64": "gxx_linux-aarch64 gcc_linux-aarch64 make",
         },
-        "pip_packages": [
-            "numpy==1.19.2",
-            "scipy==1.5.2",
-        ],
     }
     for k in ["0.20", "0.21", "0.22"]
 }
@@ -21,6 +19,7 @@ MAP_VERSION_TO_INSTALL_SKLEARN.update(
             "python": "3.9",
             "packages": "numpy scipy cython pytest pandas matplotlib joblib threadpoolctl",
             "install": "pip install -v --no-use-pep517 --no-build-isolation -e .",
+            "pre_install": "pip install -v --no-build-isolation -e .",
             "arch_specific_packages": {
                 "aarch64": "gxx_linux-aarch64 gcc_linux-aarch64 make",
             },
@@ -580,7 +579,7 @@ MAP_REPO_TO_TEST_FRAMEWORK = {
     "pylint-dev/pylint": TEST_PYTEST,
     "pytest-dev/pytest": "pytest -rA",
     "pyvista/pyvista": TEST_PYTEST,
-    "scikit-learn/scikit-learn": TEST_PYTEST,
+    "scikit-learn/scikit-learn": TEST_PYTEST_SKIP_NO_HEADER,
     "sphinx-doc/sphinx": "tox -epy39 -v --",
     "sqlfluff/sqlfluff": TEST_PYTEST,
     "swe-bench/humaneval": "python",

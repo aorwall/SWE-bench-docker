@@ -1,0 +1,32 @@
+FROM python:3.6-slim-bullseye
+
+RUN apt-get update && \
+    apt-get install -y bash gcc git jq wget g++ make libffi-dev build-essential && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /home/swe-bench
+
+RUN git clone https://github.com/swe-bench/scikit-learn__scikit-learn.git
+
+# COPY scikit-learn_scikit-learn .
+
+WORKDIR /home/swe-bench/scikit-learn__scikit-learn
+
+ENV TESTBED=/home/swe-bench/scikit-learn__scikit-learn
+
+RUN git -c advice.detachedHead=false checkout 7813f7efb5b2012412888b69e73d76f2df2b50b6
+
+RUN pip install numpy==1.19.2 scipy==1.5.2 cython==0.29.7 pytest==4.5.0 pandas matplotlib==3.1.0 joblib threadpoolctl
+RUN pip install -v --no-build-isolation -e .
+
+RUN git checkout 7813f7efb5b2012412888b69e73d76f2df2b50b6 .
+
+ENV TESTBED_NAME=scikit-learn__scikit-learn__0.21
+
+WORKDIR /home/swe-bench
+
+COPY swebench_docker swebench_docker
+COPY docker/entrypoint.sh .
+
+ENTRYPOINT ["./entrypoint.sh"]

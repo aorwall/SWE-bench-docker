@@ -15,6 +15,8 @@ base_image="${docker_namespace}/swe-bench"
 echo "Building base Docker image..."
 docker build -t "${base_image}-base:latest" -f "$root_directory/Dockerfile" .
 
+docker build -t "${base_image}-python:3.6" -f "$root_directory/Dockerfile-python36" .
+
 build_docker_images() {
     if [ -z "$repo" ]; then
         # Build testbed base images in the root level directories first
