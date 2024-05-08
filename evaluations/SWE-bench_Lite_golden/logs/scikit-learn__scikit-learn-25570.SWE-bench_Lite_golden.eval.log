@@ -3,20 +3,14 @@
 	- Testbed: scikit-learn__scikit-learn__1.3
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Command: git status --porcelain 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Std. Output:
- 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Command: git -c advice.detachedHead=false checkout cd25abee0ad0ac95225d4a9be8948eff69f49690 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Std. Output:
-Previous HEAD position was 1e8a5b833 TST Fix test_clone_sparse_matrices on scipy dev (#26556)
 HEAD is now at cd25abee0 MAINT ensure that pos_label support all possible types (#25317)
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25570_pred_try.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Std. Output:
 Checking patch sklearn/compose/_column_transformer.py...
 Applied patch sklearn/compose/_column_transformer.py cleanly.
@@ -25,7 +19,7 @@ Applied patch sklearn/compose/_column_transformer.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-25570_pred_try.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Std. Output:
 Checking patch sklearn/compose/_column_transformer.py...
 Applied patch sklearn/compose/_column_transformer.py cleanly.
@@ -34,7 +28,7 @@ Applied patch sklearn/compose/_column_transformer.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25570_pred.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Std. Output:
 Checking patch sklearn/compose/_column_transformer.py...
 Applied patch sklearn/compose/_column_transformer.py cleanly.
@@ -43,12 +37,12 @@ Applied patch sklearn/compose/_column_transformer.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Command: git restore sklearn/compose/tests/test_column_transformer.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Std. Output:
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25570_test.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Std. Output:
 Checking patch sklearn/compose/tests/test_column_transformer.py...
 Applied patch sklearn/compose/tests/test_column_transformer.py cleanly.
@@ -56,11 +50,14 @@ Applied patch sklearn/compose/tests/test_column_transformer.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n scikit-learn__scikit-learn__1.3 pytest --no-header -rA -p no:cacheprovider sklearn/compose/tests/test_column_transformer.py;
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Command: conda run -n scikit-learn__scikit-learn__1.3 pytest --no-header -rA -p no:cacheprovider sklearn/compose/tests/test_column_transformer.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script: conda run -n scikit-learn__scikit-learn__1.3 pytest -rA --tb=no -p no:cacheprovider sklearn/compose/tests/test_column_transformer.py;
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Command: conda run -n scikit-learn__scikit-learn__1.3 pytest -rA --tb=no -p no:cacheprovider sklearn/compose/tests/test_column_transformer.py 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Std. Output:
 [1m============================= test session starts ==============================[0m
+platform linux -- Python 3.9.19, pytest-7.4.0, pluggy-1.0.0
+rootdir: /home/swe-bench/scikit-learn__scikit-learn
+configfile: setup.cfg
 collected 187 items
 
 sklearn/compose/tests/test_column_transformer.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 12%]
@@ -68,7 +65,6 @@ sklearn/compose/tests/test_column_transformer.py [32m.[0m[32m.[0m[32m.[0m
 [0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m [ 89%]
 [0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                                                     [100%][0m
 
-==================================== PASSES ====================================
 [36m[1m=========================== short test summary info ============================[0m
 [32mPASSED[0m sklearn/compose/tests/test_column_transformer.py::[1mtest_column_transformer[0m
 [32mPASSED[0m sklearn/compose/tests/test_column_transformer.py::[1mtest_column_transformer_tuple_transformers_parameter[0m
@@ -257,7 +253,7 @@ sklearn/compose/tests/test_column_transformer.py [32m.[0m[32m.[0m[32m.[0m
 [32mPASSED[0m sklearn/compose/tests/test_column_transformer.py::[1mtest_empty_selection_pandas_output[list][0m
 [32mPASSED[0m sklearn/compose/tests/test_column_transformer.py::[1mtest_empty_selection_pandas_output[bool][0m
 [32mPASSED[0m sklearn/compose/tests/test_column_transformer.py::[1mtest_empty_selection_pandas_output[bool_int][0m
-[33m====================== [32m187 passed[0m, [33m[1m292 warnings[0m[33m in 1.16s[0m[33m =======================[0m
+[33m====================== [32m187 passed[0m, [33m[1m292 warnings[0m[33m in 1.50s[0m[33m =======================[0m
 
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25570] Return Code: 0 

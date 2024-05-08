@@ -3,20 +3,14 @@
 	- Testbed: scikit-learn__scikit-learn__0.22
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Command: git status --porcelain 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Std. Output:
- 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Return Code: 0 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Command: git -c advice.detachedHead=false checkout 70b0ddea992c01df1a41588fa9e2d130fb6b13f8 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Std. Output:
-Previous HEAD position was 7e85a6d1f More explicit binder requirements for 0.22 (#15847)
 HEAD is now at 70b0ddea9 FEA Allow nan/inf in feature selection (#11635)
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Return Code: 0 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-15535_pred_try.patch 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Std. Output:
 Checking patch sklearn/metrics/cluster/_supervised.py...
 Applied patch sklearn/metrics/cluster/_supervised.py cleanly.
@@ -25,7 +19,7 @@ Applied patch sklearn/metrics/cluster/_supervised.py cleanly.
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-15535_pred_try.patch 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Std. Output:
 Checking patch sklearn/metrics/cluster/_supervised.py...
 Applied patch sklearn/metrics/cluster/_supervised.py cleanly.
@@ -34,7 +28,7 @@ Applied patch sklearn/metrics/cluster/_supervised.py cleanly.
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-15535_pred.patch 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Std. Output:
 Checking patch sklearn/metrics/cluster/_supervised.py...
 Applied patch sklearn/metrics/cluster/_supervised.py cleanly.
@@ -43,12 +37,12 @@ Applied patch sklearn/metrics/cluster/_supervised.py cleanly.
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Command: git restore sklearn/metrics/cluster/tests/test_common.py 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Std. Output:
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Return Code: 0 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-15535_test.patch 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Std. Output:
 Checking patch sklearn/metrics/cluster/tests/test_common.py...
 Applied patch sklearn/metrics/cluster/tests/test_common.py cleanly.
@@ -56,17 +50,18 @@ Applied patch sklearn/metrics/cluster/tests/test_common.py cleanly.
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Return Code: 0 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n scikit-learn__scikit-learn__0.22 pytest --no-header -rA -p no:cacheprovider sklearn/metrics/cluster/tests/test_common.py;
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Command: conda run -n scikit-learn__scikit-learn__0.22 pytest --no-header -rA -p no:cacheprovider sklearn/metrics/cluster/tests/test_common.py 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script: conda run -n scikit-learn__scikit-learn__0.22 pytest -rA --tb=no -p no:cacheprovider sklearn/metrics/cluster/tests/test_common.py;
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Command: conda run -n scikit-learn__scikit-learn__0.22 pytest -rA --tb=no -p no:cacheprovider sklearn/metrics/cluster/tests/test_common.py 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Std. Output:
 ============================= test session starts ==============================
+platform linux -- Python 3.6.13, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
+rootdir: /home/swe-bench/scikit-learn__scikit-learn, inifile: setup.cfg
 collected 60 items
 
 sklearn/metrics/cluster/tests/test_common.py ........................... [ 45%]
 .................................                                        [100%]
 
-==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_symmetric_non_symmetric_union
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_symmetry[adjusted_rand_score-y10-y20]
@@ -128,7 +123,7 @@ PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[silhouet
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[silhouette_manhattan-metric_func9]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[calinski_harabasz_score-calinski_harabasz_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[davies_bouldin_score-davies_bouldin_score]
-============================== 60 passed in 0.26s ==============================
+========================== 60 passed in 0.25 seconds ===========================
 
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Return Code: 0 

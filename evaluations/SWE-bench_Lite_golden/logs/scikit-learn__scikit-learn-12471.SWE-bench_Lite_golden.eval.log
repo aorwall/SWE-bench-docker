@@ -3,20 +3,14 @@
 	- Testbed: scikit-learn__scikit-learn__0.21
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: git status --porcelain 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Std. Output:
- 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Return Code: 0 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: git -c advice.detachedHead=false checkout 02dc9ed680e7f53f1b0d410dcdd37341c7958eb1 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Std. Output:
-Previous HEAD position was 7813f7efb DOC fix link in what's new
 HEAD is now at 02dc9ed68 Fix max_depth overshoot in BFS expansion of trees (#12344)
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Return Code: 0 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-12471_pred_try.patch 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Std. Output:
 Checking patch sklearn/preprocessing/_encoders.py...
 Applied patch sklearn/preprocessing/_encoders.py cleanly.
@@ -25,7 +19,7 @@ Applied patch sklearn/preprocessing/_encoders.py cleanly.
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-12471_pred_try.patch 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Std. Output:
 Checking patch sklearn/preprocessing/_encoders.py...
 Applied patch sklearn/preprocessing/_encoders.py cleanly.
@@ -34,7 +28,7 @@ Applied patch sklearn/preprocessing/_encoders.py cleanly.
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-12471_pred.patch 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Std. Output:
 Checking patch sklearn/preprocessing/_encoders.py...
 Applied patch sklearn/preprocessing/_encoders.py cleanly.
@@ -43,12 +37,12 @@ Applied patch sklearn/preprocessing/_encoders.py cleanly.
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: git restore sklearn/preprocessing/tests/test_encoders.py 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Std. Output:
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Return Code: 0 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-12471_test.patch 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Std. Output:
 Checking patch sklearn/preprocessing/tests/test_encoders.py...
 Applied patch sklearn/preprocessing/tests/test_encoders.py cleanly.
@@ -56,17 +50,18 @@ Applied patch sklearn/preprocessing/tests/test_encoders.py cleanly.
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Return Code: 0 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n scikit-learn__scikit-learn__0.21 pytest --no-header -rA -p no:cacheprovider sklearn/preprocessing/tests/test_encoders.py;
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: conda run -n scikit-learn__scikit-learn__0.21 pytest --no-header -rA -p no:cacheprovider sklearn/preprocessing/tests/test_encoders.py 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script: conda run -n scikit-learn__scikit-learn__0.21 pytest -rA --tb=no -p no:cacheprovider sklearn/preprocessing/tests/test_encoders.py;
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: conda run -n scikit-learn__scikit-learn__0.21 pytest -rA --tb=no -p no:cacheprovider sklearn/preprocessing/tests/test_encoders.py 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Std. Output:
 ============================= test session starts ==============================
+platform linux -- Python 3.6.13, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
+rootdir: /home/swe-bench/scikit-learn__scikit-learn, inifile: setup.cfg
 collected 54 items
 
 sklearn/preprocessing/tests/test_encoders.py ........................... [ 50%]
 ...........................                                              [100%]
 
-==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_sparse
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dense
@@ -122,7 +117,7 @@ PASSED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes_pandas
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_warning
-======================== 54 passed, 1 warning in 0.66s =========================
+========================== 54 passed in 0.85 seconds ===========================
 
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Return Code: 0 

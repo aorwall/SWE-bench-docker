@@ -19,15 +19,6 @@ The following test beds and benchmark instances currently fails when applying th
 | [pylint-dev__pylint-7080](evaluations/SWE-bench_Lite_golden/logs/pylint-dev__pylint-7080.SWE-bench_Lite_golden.eval.log) | pylint-dev/pylint | 2.15 |
 | [pytest-dev__pytest-7168](evaluations/SWE-bench_Lite_golden/logs/pytest-dev__pytest-7168.SWE-bench_Lite_golden.eval.log) | pytest-dev/pytest | 5.4 |
 | [pytest-dev__pytest-7220](evaluations/SWE-bench_Lite_golden/logs/pytest-dev__pytest-7220.SWE-bench_Lite_golden.eval.log) | pytest-dev/pytest | 5.4 |
-| [scikit-learn__scikit-learn-13142](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-13142.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.21 |
-| [scikit-learn__scikit-learn-13241](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-13241.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.21 |
-| [scikit-learn__scikit-learn-13496](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-13496.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.21 |
-| [scikit-learn__scikit-learn-13779](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-13779.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.22 |
-| [scikit-learn__scikit-learn-14087](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-14087.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.22 |
-| [scikit-learn__scikit-learn-14092](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-14092.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.22 |
-| [scikit-learn__scikit-learn-14894](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-14894.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.22 |
-| [scikit-learn__scikit-learn-14983](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-14983.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 0.22 |
-| [scikit-learn__scikit-learn-25638](evaluations/SWE-bench_Lite_golden/logs/scikit-learn__scikit-learn-25638.SWE-bench_Lite_golden.eval.log) | scikit-learn/scikit-learn | 1.3 |
 | [sympy__sympy-13177](evaluations/SWE-bench_Lite_golden/logs/sympy__sympy-13177.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
 
 ## Run evaluation

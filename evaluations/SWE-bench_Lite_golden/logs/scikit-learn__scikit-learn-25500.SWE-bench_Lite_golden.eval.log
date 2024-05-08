@@ -3,20 +3,14 @@
 	- Testbed: scikit-learn__scikit-learn__1.3
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Command: git status --porcelain 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Std. Output:
- 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Command: git -c advice.detachedHead=false checkout 4db04923a754b6a2defa1b172f55d492b85d165e 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Std. Output:
-Previous HEAD position was 1e8a5b833 TST Fix test_clone_sparse_matrices on scipy dev (#26556)
 HEAD is now at 4db04923a TST Allow callables as valid parameter regarding cloning estimator (#25498)
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25500_pred_try.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Std. Output:
 Checking patch sklearn/isotonic.py...
 Applied patch sklearn/isotonic.py cleanly.
@@ -25,7 +19,7 @@ Applied patch sklearn/isotonic.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-25500_pred_try.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Std. Output:
 Checking patch sklearn/isotonic.py...
 Applied patch sklearn/isotonic.py cleanly.
@@ -34,7 +28,7 @@ Applied patch sklearn/isotonic.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25500_pred.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Std. Output:
 Checking patch sklearn/isotonic.py...
 Applied patch sklearn/isotonic.py cleanly.
@@ -43,12 +37,12 @@ Applied patch sklearn/isotonic.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Command: git restore sklearn/tests/test_isotonic.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Std. Output:
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25500_test.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Std. Output:
 Checking patch sklearn/tests/test_isotonic.py...
 Applied patch sklearn/tests/test_isotonic.py cleanly.
@@ -56,17 +50,19 @@ Applied patch sklearn/tests/test_isotonic.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n scikit-learn__scikit-learn__1.3 pytest --no-header -rA -p no:cacheprovider sklearn/tests/test_isotonic.py;
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Command: conda run -n scikit-learn__scikit-learn__1.3 pytest --no-header -rA -p no:cacheprovider sklearn/tests/test_isotonic.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script: conda run -n scikit-learn__scikit-learn__1.3 pytest -rA --tb=no -p no:cacheprovider sklearn/tests/test_isotonic.py;
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Command: conda run -n scikit-learn__scikit-learn__1.3 pytest -rA --tb=no -p no:cacheprovider sklearn/tests/test_isotonic.py 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Std. Output:
 [1m============================= test session starts ==============================[0m
+platform linux -- Python 3.9.19, pytest-7.4.0, pluggy-1.0.0
+rootdir: /home/swe-bench/scikit-learn__scikit-learn
+configfile: setup.cfg
 collected 46 items
 
 sklearn/tests/test_isotonic.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 89%]
 [0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                                    [100%][0m
 
-==================================== PASSES ====================================
 [36m[1m=========================== short test summary info ============================[0m
 [32mPASSED[0m sklearn/tests/test_isotonic.py::[1mtest_permutation_invariance[0m
 [32mPASSED[0m sklearn/tests/test_isotonic.py::[1mtest_check_increasing_small_number_of_samples[0m
@@ -114,7 +110,7 @@ sklearn/tests/test_isotonic.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0
 [32mPASSED[0m sklearn/tests/test_isotonic.py::[1mtest_get_feature_names_out[1d][0m
 [32mPASSED[0m sklearn/tests/test_isotonic.py::[1mtest_get_feature_names_out[2d][0m
 [32mPASSED[0m sklearn/tests/test_isotonic.py::[1mtest_isotonic_regression_output_predict[0m
-[32m============================== [32m[1m46 passed[0m[32m in 0.46s[0m[32m ==============================[0m
+[32m============================== [32m[1m46 passed[0m[32m in 0.55s[0m[32m ==============================[0m
 
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Return Code: 0 

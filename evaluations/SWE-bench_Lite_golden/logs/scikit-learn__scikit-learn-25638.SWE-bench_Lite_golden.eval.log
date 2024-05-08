@@ -3,20 +3,14 @@
 	- Testbed: scikit-learn__scikit-learn__1.3
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git status --porcelain 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
- 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git -c advice.detachedHead=false checkout 6adb209acd63825affc884abcd85381f148fb1b0 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
-Previous HEAD position was 1e8a5b833 TST Fix test_clone_sparse_matrices on scipy dev (#26556)
 HEAD is now at 6adb209ac FIX renormalization of y_pred inside log_loss (#25299)
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25638_pred_try.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 Checking patch sklearn/utils/multiclass.py...
 Applied patch sklearn/utils/multiclass.py cleanly.
@@ -25,7 +19,7 @@ Applied patch sklearn/utils/multiclass.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-25638_pred_try.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 Checking patch sklearn/utils/multiclass.py...
 Applied patch sklearn/utils/multiclass.py cleanly.
@@ -34,7 +28,7 @@ Applied patch sklearn/utils/multiclass.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25638_pred.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 Checking patch sklearn/utils/multiclass.py...
 Applied patch sklearn/utils/multiclass.py cleanly.
@@ -43,22 +37,22 @@ Applied patch sklearn/utils/multiclass.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git restore sklearn/metrics/tests/test_classification.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git restore sklearn/preprocessing/tests/test_label.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git restore sklearn/utils/tests/test_multiclass.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25638_test.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 Checking patch sklearn/metrics/tests/test_classification.py...
 Checking patch sklearn/preprocessing/tests/test_label.py...
@@ -70,173 +64,233 @@ Applied patch sklearn/utils/tests/test_multiclass.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n scikit-learn__scikit-learn__1.3 pytest --no-header -rA -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py;
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: conda run -n scikit-learn__scikit-learn__1.3 pytest --no-header -rA -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script: conda run -n scikit-learn__scikit-learn__1.3 pytest -rA --tb=no -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py;
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: conda run -n scikit-learn__scikit-learn__1.3 pytest -rA --tb=no -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 [1m============================= test session starts ==============================[0m
-collected 34 items / 4 errors
+platform linux -- Python 3.9.19, pytest-7.4.0, pluggy-1.0.0
+rootdir: /home/swe-bench/scikit-learn__scikit-learn
+configfile: setup.cfg
+collected 205 items
 
-==================================== ERRORS ====================================
-[31m[1m________ ERROR collecting sklearn/metrics/tests/test_classification.py _________[0m
-[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/runner.py[0m:341: in from_call
-    result: Optional[TResult] = func()
-[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/runner.py[0m:372: in <lambda>
-    call = CallInfo.from_call(lambda: list(collector.collect()), "collect")
-[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/doctest.py[0m:547: in collect
-    module = import_path(
-[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/pathlib.py[0m:565: in import_path
-    importlib.import_module(module_name)
-[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/importlib/__init__.py[0m:127: in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-[1m[31m<frozen importlib._bootstrap>[0m:1030: in _gcd_import
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:1007: in _find_and_load
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:972: in _find_and_load_unlocked
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:228: in _call_with_frames_removed
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:1030: in _gcd_import
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:1007: in _find_and_load
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:972: in _find_and_load_unlocked
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:228: in _call_with_frames_removed
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:1030: in _gcd_import
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:1007: in _find_and_load
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:986: in _find_and_load_unlocked
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:680: in _load_unlocked
-    ???
-[1m[31m<frozen importlib._bootstrap_external>[0m:850: in exec_module
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:228: in _call_with_frames_removed
-    ???
-[1m[31msklearn/metrics/__init__.py[0m:42: in <module>
-    from . import cluster
-[1m[31msklearn/metrics/cluster/__init__.py[0m:22: in <module>
-    from ._unsupervised import silhouette_samples
-[1m[31msklearn/metrics/cluster/_unsupervised.py[0m:16: in <module>
-    from ..pairwise import pairwise_distances_chunked
-[1m[31msklearn/metrics/pairwise.py[0m:34: in <module>
-    from ._pairwise_distances_reduction import ArgKmin
-[1m[31msklearn/metrics/_pairwise_distances_reduction/__init__.py[0m:89: in <module>
-    from ._dispatcher import (
-[1m[31msklearn/metrics/_pairwise_distances_reduction/_dispatcher.py[0m:9: in <module>
-    from .._dist_metrics import BOOL_METRICS, METRIC_MAPPING
-[1m[31mE   ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dist_metrics' (/home/swe-bench/scikit-learn__scikit-learn/sklearn/metrics/_dist_metrics.cpython-39-x86_64-linux-gnu.so)[0m
-[31m[1m________ ERROR collecting sklearn/metrics/tests/test_classification.py _________[0m
-[31mImportError while importing test module '/home/swe-bench/scikit-learn__scikit-learn/sklearn/metrics/tests/test_classification.py'.
-Hint: make sure your test modules/packages have valid Python names.
-Traceback:
-../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/importlib/__init__.py:127: in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-sklearn/metrics/__init__.py:42: in <module>
-    from . import cluster
-sklearn/metrics/cluster/__init__.py:22: in <module>
-    from ._unsupervised import silhouette_samples
-sklearn/metrics/cluster/_unsupervised.py:16: in <module>
-    from ..pairwise import pairwise_distances_chunked
-sklearn/metrics/pairwise.py:34: in <module>
-    from ._pairwise_distances_reduction import ArgKmin
-sklearn/metrics/_pairwise_distances_reduction/__init__.py:89: in <module>
-    from ._dispatcher import (
-sklearn/metrics/_pairwise_distances_reduction/_dispatcher.py:9: in <module>
-    from .._dist_metrics import BOOL_METRICS, METRIC_MAPPING
-E   ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dist_metrics' (/home/swe-bench/scikit-learn__scikit-learn/sklearn/metrics/_dist_metrics.cpython-39-x86_64-linux-gnu.so)[0m
-[31m[1m___________ ERROR collecting sklearn/utils/tests/test_multiclass.py ____________[0m
-[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/runner.py[0m:341: in from_call
-    result: Optional[TResult] = func()
-[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/runner.py[0m:372: in <lambda>
-    call = CallInfo.from_call(lambda: list(collector.collect()), "collect")
-[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/doctest.py[0m:547: in collect
-    module = import_path(
-[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/pathlib.py[0m:565: in import_path
-    importlib.import_module(module_name)
-[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/importlib/__init__.py[0m:127: in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-[1m[31m<frozen importlib._bootstrap>[0m:1030: in _gcd_import
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:1007: in _find_and_load
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:986: in _find_and_load_unlocked
-    ???
-[1m[31m<frozen importlib._bootstrap>[0m:680: in _load_unlocked
-    ???
-[1m[31m../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/site-packages/_pytest/assertion/rewrite.py[0m:178: in exec_module
-    exec(co, module.__dict__)
-[1m[31msklearn/utils/tests/test_multiclass.py[0m:16: in <module>
-    from sklearn.utils.estimator_checks import _NotAnArray
-[1m[31msklearn/utils/estimator_checks.py[0m:31: in <module>
-    from ..linear_model import LinearRegression
-[1m[31msklearn/linear_model/__init__.py[0m:11: in <module>
-    from ._least_angle import (
-[1m[31msklearn/linear_model/_least_angle.py[0m:28: in <module>
-    from ..model_selection import check_cv
-[1m[31msklearn/model_selection/__init__.py[0m:23: in <module>
-    from ._validation import cross_val_score
-[1m[31msklearn/model_selection/_validation.py[0m:32: in <module>
-    from ..metrics import check_scoring
-[1m[31msklearn/metrics/__init__.py[0m:42: in <module>
-    from . import cluster
-[1m[31msklearn/metrics/cluster/__init__.py[0m:22: in <module>
-    from ._unsupervised import silhouette_samples
-[1m[31msklearn/metrics/cluster/_unsupervised.py[0m:16: in <module>
-    from ..pairwise import pairwise_distances_chunked
-[1m[31msklearn/metrics/pairwise.py[0m:34: in <module>
-    from ._pairwise_distances_reduction import ArgKmin
-[1m[31msklearn/metrics/_pairwise_distances_reduction/__init__.py[0m:89: in <module>
-    from ._dispatcher import (
-[1m[31msklearn/metrics/_pairwise_distances_reduction/_dispatcher.py[0m:9: in <module>
-    from .._dist_metrics import BOOL_METRICS, METRIC_MAPPING
-[1m[31mE   ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dist_metrics' (/home/swe-bench/scikit-learn__scikit-learn/sklearn/metrics/_dist_metrics.cpython-39-x86_64-linux-gnu.so)[0m
-[31m[1m___________ ERROR collecting sklearn/utils/tests/test_multiclass.py ____________[0m
-[31mImportError while importing test module '/home/swe-bench/scikit-learn__scikit-learn/sklearn/utils/tests/test_multiclass.py'.
-Hint: make sure your test modules/packages have valid Python names.
-Traceback:
-../miniconda3/envs/scikit-learn__scikit-learn__1.3/lib/python3.9/importlib/__init__.py:127: in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-sklearn/utils/tests/test_multiclass.py:16: in <module>
-    from sklearn.utils.estimator_checks import _NotAnArray
-sklearn/utils/estimator_checks.py:31: in <module>
-    from ..linear_model import LinearRegression
-sklearn/linear_model/__init__.py:11: in <module>
-    from ._least_angle import (
-sklearn/linear_model/_least_angle.py:28: in <module>
-    from ..model_selection import check_cv
-sklearn/model_selection/__init__.py:23: in <module>
-    from ._validation import cross_val_score
-sklearn/model_selection/_validation.py:32: in <module>
-    from ..metrics import check_scoring
-sklearn/metrics/__init__.py:42: in <module>
-    from . import cluster
-sklearn/metrics/cluster/__init__.py:22: in <module>
-    from ._unsupervised import silhouette_samples
-sklearn/metrics/cluster/_unsupervised.py:16: in <module>
-    from ..pairwise import pairwise_distances_chunked
-sklearn/metrics/pairwise.py:34: in <module>
-    from ._pairwise_distances_reduction import ArgKmin
-sklearn/metrics/_pairwise_distances_reduction/__init__.py:89: in <module>
-    from ._dispatcher import (
-sklearn/metrics/_pairwise_distances_reduction/_dispatcher.py:9: in <module>
-    from .._dist_metrics import BOOL_METRICS, METRIC_MAPPING
-E   ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dist_metrics' (/home/swe-bench/scikit-learn__scikit-learn/sklearn/metrics/_dist_metrics.cpython-39-x86_64-linux-gnu.so)[0m
+sklearn/metrics/tests/test_classification.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m [ 13%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m [ 48%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m               [ 76%][0m
+sklearn/preprocessing/tests/test_label.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m [ 91%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                                                                     [ 93%][0m
+sklearn/utils/tests/test_multiclass.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                    [100%][0m
+
 [36m[1m=========================== short test summary info ============================[0m
-[31mERROR[0m sklearn/metrics/tests/test_classification.py - ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dis...
-[31mERROR[0m sklearn/metrics/tests/test_classification.py
-[31mERROR[0m sklearn/utils/tests/test_multiclass.py - ImportError: cannot import name 'METRIC_MAPPING' from 'sklearn.metrics._dis...
-[31mERROR[0m sklearn/utils/tests/test_multiclass.py
-!!!!!!!!!!!!!!!!!!! Interrupted: 4 errors during collection !!!!!!!!!!!!!!!!!!!!
-[31m============================== [31m[1m4 errors[0m[31m in 0.59s[0m[31m ===============================[0m
-ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py` failed. (See above for error)
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_dictionary_output[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_output_dict_empty_input[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_zero_division_warning[warn][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_zero_division_warning[0][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_zero_division_warning[1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_multilabel_accuracy_score_subset_accuracy[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_score_binary[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f_binary_single_class[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f_extra_labels[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f_ignored_labels[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_average_precision_score_score_non_binary_class[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_average_precision_score_duplicate_values[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_average_precision_score_tied_values[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_fscore_support_errors[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f_unused_pos_label[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_binary[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_multilabel_confusion_matrix_binary[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_multilabel_confusion_matrix_multiclass[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_multilabel_confusion_matrix_multilabel[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_multilabel_confusion_matrix_errors[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_normalize[true-f-0.333333333][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_normalize[pred-f-0.333333333][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_normalize[all-f-0.1111111111][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_normalize[None-i-2][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_normalize_single_class[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_likelihood_ratios_warnings[params0-samples of only one class were seen during testing][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_likelihood_ratios_warnings[params1-positive_likelihood_ratio ill-defined and being set to nan][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_likelihood_ratios_warnings[params2-no samples predicted for the positive class][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_likelihood_ratios_warnings[params3-negative_likelihood_ratio ill-defined and being set to nan][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_likelihood_ratios_warnings[params4-no samples of the positive class were present in the testing set][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_likelihood_ratios_errors[params0-class_likelihood_ratios only supports binary classification problems, got targets of type: multiclass][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_likelihood_ratios[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_cohen_kappa[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_matthews_corrcoef_nan[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_matthews_corrcoef_against_numpy_corrcoef[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_matthews_corrcoef_against_jurman[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_matthews_corrcoef[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_matthews_corrcoef_multiclass[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_matthews_corrcoef_overflow[100][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_matthews_corrcoef_overflow[10000][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_score_multiclass[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_refcall_f1_score_multilabel_unordered_labels[samples][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_refcall_f1_score_multilabel_unordered_labels[micro][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_refcall_f1_score_multilabel_unordered_labels[macro][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_refcall_f1_score_multilabel_unordered_labels[weighted][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_refcall_f1_score_multilabel_unordered_labels[None][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_score_binary_averaged[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_zero_precision_recall[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_multiclass_subset_labels[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_error[empty list][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_error[unknown labels][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_on_zero_length_input[None][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_on_zero_length_input[binary][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_on_zero_length_input[multiclass][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_dtype[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_pandas_nullable[Int64][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_pandas_nullable[Float64][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_confusion_matrix_pandas_nullable[boolean][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_multiclass[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_multiclass_balanced[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_multiclass_with_label_detection[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_multiclass_with_digits[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_multiclass_with_string_label[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_multiclass_with_unicode_label[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_multiclass_with_long_string_label[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_labels_target_names_unequal_length[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_report_no_labels_target_names_unequal_length[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_multilabel_classification_report[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_multilabel_zero_one_loss_subset[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_multilabel_hamming_loss[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_jaccard_score_validation[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_multilabel_jaccard_score[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_multiclass_jaccard_score[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_average_binary_jaccard_score[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_jaccard_score_zero_division_warning[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_jaccard_score_zero_division_set_value[0-0][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_jaccard_score_zero_division_set_value[1-0.5][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_score_multilabel_1[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_score_multilabel_2[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_score_with_an_empty_prediction[warn][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_score_with_an_empty_prediction[0][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_score_with_an_empty_prediction[1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels[0-macro-1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels[0-micro-1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels[0-weighted-1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels[0-samples-1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels[1-macro-1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels[1-micro-1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels[1-weighted-1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels[1-samples-1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels_check_warnings[macro][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels_check_warnings[micro][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels_check_warnings[weighted][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels_check_warnings[samples][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels_average_none[0][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels_average_none[1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_recall_f1_no_labels_average_none_warn[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_prf_warnings[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_prf_no_warnings_if_zero_division_set[0][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_prf_no_warnings_if_zero_division_set[1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_recall_warnings[warn][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_recall_warnings[0][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_recall_warnings[1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_warnings[warn][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_warnings[0][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_precision_warnings[1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_fscore_warnings[warn][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_fscore_warnings[0][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_fscore_warnings[1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_prf_average_binary_data_non_binary[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest__check_targets[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest__check_targets_multiclass_with_both_y_true_and_y_pred_binary[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_hinge_loss_binary[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_hinge_loss_multiclass[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_hinge_loss_multiclass_missing_labels_with_labels_none[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_hinge_loss_multiclass_no_consistent_pred_decision_shape[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_hinge_loss_multiclass_with_missing_labels[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_hinge_loss_multiclass_missing_labels_only_two_unq_in_y_true[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_hinge_loss_multiclass_invariance_lists[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_log_loss[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_log_loss_eps_auto[float64][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_log_loss_eps_auto_float16[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_log_loss_pandas_input[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_brier_score_loss[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_balanced_accuracy_score_unseen[0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_balanced_accuracy_score[y_true0-y_pred0][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_balanced_accuracy_score[y_true1-y_pred1][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_balanced_accuracy_score[y_true2-y_pred2][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes0-jaccard_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes0-f1_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes0-metric2][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes0-precision_recall_fscore_support][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes0-precision_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes0-recall_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes0-brier_score_loss][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes1-jaccard_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes1-f1_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes1-metric2][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes1-precision_recall_fscore_support][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes1-precision_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes1-recall_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes1-brier_score_loss][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes2-jaccard_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes2-f1_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes2-metric2][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes2-precision_recall_fscore_support][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes2-precision_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes2-recall_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes2-brier_score_loss][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes3-jaccard_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes3-f1_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes3-metric2][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes3-precision_recall_fscore_support][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes3-precision_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes3-recall_score][0m
+[32mPASSED[0m sklearn/metrics/tests/test_classification.py::[1mtest_classification_metric_pos_label_types[classes3-brier_score_loss][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_binarizer[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_binarizer_unseen_labels[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_binarizer_set_label_encoding[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_binarizer_pandas_nullable[Int64][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_binarizer_pandas_nullable[Float64][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_binarizer_pandas_nullable[boolean][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_binarizer_errors[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_encoder[int64][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_encoder[object][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_encoder[str][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_encoder_negative_ints[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_encoder_str_bad_shape[str][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_encoder_str_bad_shape[object][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_encoder_errors[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_encoder_empty_array[int64][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_encoder_empty_array[object][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_encoder_empty_array[str][0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_sparse_output_multilabel_binarizer[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_multilabel_binarizer[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_multilabel_binarizer_empty_sample[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_multilabel_binarizer_unknown_class[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_multilabel_binarizer_given_classes[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_multilabel_binarizer_multiple_calls[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_multilabel_binarizer_same_length_sequence[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_multilabel_binarizer_non_integer_labels[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_multilabel_binarizer_non_unique[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_multilabel_binarizer_inverse_validation[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_binarize_with_class_order[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_binarize_binary[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_binarize_multiclass[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_label_binarize_multilabel[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_invalid_input_label_binarize[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_inverse_binarize_multiclass[0m
+[32mPASSED[0m sklearn/preprocessing/tests/test_label.py::[1mtest_nan_label_encoder[0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_unique_labels[0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_unique_labels_non_specific[0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_unique_labels_mixed_types[0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_is_multilabel[0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_check_classification_targets[0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_type_of_target[0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_type_of_target_pandas_sparse[0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_type_of_target_pandas_nullable[0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_unique_labels_pandas_nullable[Int64][0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_unique_labels_pandas_nullable[Float64][0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_unique_labels_pandas_nullable[boolean][0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_class_distribution[0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_safe_split_with_precomputed_kernel[0m
+[32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_ovr_decision_function[0m
+[33mSKIPPED[0m [1] sklearn/metrics/tests/test_classification.py:2565: Set SKLEARN_RUN_FLOAT32_TESTS=1 to run float32 dtype tests
+[33m================= [32m204 passed[0m, [33m[1m1 skipped[0m, [33m[1m128 warnings[0m[33m in 3.49s[0m[33m =================[0m
 
  
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 2 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 
->>>>> Some Tests Failed
+>>>>> All Tests Passed
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Test script run successful 
