@@ -151,6 +151,8 @@ class TaskEnvContextManager:
         if "pre_install" in specifications:
             for cmd_pre_install in specifications["pre_install"]:
                 self.log.write(f"Running pre-test command: {cmd_pre_install}")
+                cmd_pre_install = f"{self.cmd_conda_run} {cmd_pre_install}"
+
                 out_pre_install = self.exec(
                     cmd_pre_install, timeout=self.timeout, shell=True
                 )

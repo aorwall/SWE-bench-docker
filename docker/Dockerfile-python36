@@ -1,6 +1,0 @@
-FROM python:3.6-slim-bullseye
-
-RUN apt-get update && \
-    apt-get install -y bash gcc git jq wget g++ make libffi-dev build-essential && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*

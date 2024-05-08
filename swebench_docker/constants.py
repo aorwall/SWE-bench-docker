@@ -2,11 +2,10 @@ from enum import Enum
 
 MAP_VERSION_TO_INSTALL_SKLEARN = {
     k: {
-        "image": "python",
+        "instance_image": True,
         "python": "3.6",
         "packages": "numpy==1.19.2 scipy==1.5.2 cython==0.29.7 pytest==4.5.0 pandas matplotlib==3.1.0 joblib threadpoolctl",
         "install": "pip install -v --no-build-isolation -e .",
-        "pre_install": "pip install -v --no-build-isolation -e .",
         "arch_specific_packages": {
             "aarch64": "gxx_linux-aarch64 gcc_linux-aarch64 make",
         },
@@ -16,10 +15,10 @@ MAP_VERSION_TO_INSTALL_SKLEARN = {
 MAP_VERSION_TO_INSTALL_SKLEARN.update(
     {
         k: {
+            "instance_image": True,
             "python": "3.9",
             "packages": "numpy scipy cython pytest pandas matplotlib joblib threadpoolctl",
             "install": "pip install -v --no-use-pep517 --no-build-isolation -e .",
-            "pre_install": "pip install -v --no-build-isolation -e .",
             "arch_specific_packages": {
                 "aarch64": "gxx_linux-aarch64 gcc_linux-aarch64 make",
             },
