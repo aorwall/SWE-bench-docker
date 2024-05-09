@@ -71,6 +71,9 @@ def generate_testbed_dockerfile(
     repo_name = _repo_name(repo)
     image_name = repo.replace("/", "_")
 
+    if pre_install_cmds:
+        pre_install_cmds = [cmd for cmd in pre_install_cmds if cmd not in install_cmds]
+
     if conda_create_cmd:
         template = env.get_template("Dockerfile.conda_testbed")
         base_image = f"{namespace}/swe-bench-{image_name}:latest"

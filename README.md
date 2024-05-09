@@ -13,9 +13,9 @@ The following test beds and benchmark instances currently fails when applying th
 
 | Instance ID | Repository | Testbed version |
 | ----------- | ---------- | --------------- |
-| [pydata__xarray-4094](evaluations/SWE-bench_Lite_golden/logs/pydata__xarray-4094.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
-| [pydata__xarray-4493](evaluations/SWE-bench_Lite_golden/logs/pydata__xarray-4493.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
-| [sympy__sympy-13177](evaluations/SWE-bench_Lite_golden/logs/sympy__sympy-13177.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
+| [pydata__xarray-4094](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/SWE-bench_Lite_golden/logs/pydata__xarray-4094.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
+| [pydata__xarray-4493](https://github.com/aorwall/SWE-bench-docker/blob//main/evaluations/SWE-bench_Lite_golden/logs/pydata__xarray-4493.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
+| [sympy__sympy-13177](https://github.com/aorwall/SWE-bench-docker/blob//main/evaluations/SWE-bench_Lite_golden/logs/sympy__sympy-13177.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
 
 ## Run evaluation
 Run `run_evaluation.py` to evaluate a predictions file. A log for each test is written to log_dir in the same format
