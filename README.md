@@ -20,12 +20,16 @@ See results in the [evaluations/SWE-bench_check_harness](https://github.com/aorw
 
 ### Comparing results from other benchmarks
 I have tested running Docker benchmarks on the SWE-Agents GPT-4 benchmark and Auto Code Rover's first benchmark run.
+
 The SWE-Agent GPT-4 predictions yield exactly the same
 [results](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/20240402_sweagent_gpt4) as SWE-Agent's own
 [results](https://github.com/swe-bench/experiments/blob/main/evaluation/lite/20240402_sweagent_gpt4/results/results.json), 
-which seems to show that the Docker image approach works with the same accuracy. However, auto-code-rover run 1 provides 
-better [results](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/auto-code-rover-run-1), resolving 54 
-instances compared to 48 in auto-code-rover's [own results](https://github.com/nus-apr/auto-code-rover/blob/main/results/acr-run-1/final_report.json). 
+which seems to show that the Docker image approach works with the same accuracy. 
+
+However, auto-code-rover run 1 provides _better_
+[results](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/auto-code-rover-run-1), resolving **54** 
+instances compared to **48** in auto-code-rover's
+[own results](https://github.com/nus-apr/auto-code-rover/blob/main/results/acr-run-1/final_report.json). 
 This could indicate that other agents' benchmarks _show lower results than they actually achieved_ because it's 
 challenging to conduct evaluations with completely accurate results.
 
