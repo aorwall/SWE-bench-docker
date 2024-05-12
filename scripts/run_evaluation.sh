@@ -12,7 +12,7 @@ python run_evaluation.py \
  --predictions_path $(pwd)/${directory}/predictions.jsonl \
  --log_dir $(pwd)/${directory}/logs \
  --swe_bench_tasks ${swe_bench_tasks} \
- --num_processes 4 \
+ --num_processes 6 \
  --skip_existing
 
 python generate_report.py \

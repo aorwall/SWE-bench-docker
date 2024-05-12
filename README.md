@@ -21,17 +21,23 @@ See results in the [evaluations/SWE-bench_check_harness](https://github.com/aorw
 ### Comparing results from other benchmarks
 I have tested running Docker benchmarks on the SWE-Agents GPT-4 benchmark and Auto Code Rover's first benchmark run.
 
-The SWE-Agent GPT-4 predictions yield exactly the same
+The [SWE-Agent](https://github.com/princeton-nlp/SWE-agent) GPT-4 predictions yield exactly the same
 [results](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/20240402_sweagent_gpt4) as SWE-Agent's own
 [results](https://github.com/swe-bench/experiments/blob/main/evaluation/lite/20240402_sweagent_gpt4/results/results.json), 
 which seems to show that the Docker image approach works with the same accuracy. 
 
-However, auto-code-rover run 1 provides _better_
-[results](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/auto-code-rover-run-1), resolving **54** 
-instances compared to **48** in auto-code-rover's
-[own results](https://github.com/nus-apr/auto-code-rover/blob/main/results/acr-run-1/final_report.json). 
-This could indicate that other agents' benchmarks _show lower results than they actually achieved_ because it's 
-challenging to conduct evaluations with completely accurate results.
+However, the Docker benchmark provides better results for [AutoCodeRover](https://github.com/nus-apr/auto-code-rover). 
+In AutoCodeRover's own benchmarks, they achieve 16.00% (48), 15.67% (47), and 16.67% (50) resolved issues. In 
+swe-bench-docker, the same predictions result in [18.00% (54)](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/auto-code-rover-run-1), 
+[19% (57)](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/auto-code-rover-run-2) and 
+[19% (57)](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/auto-code-rover-run-3) resolved issues. 
+This adds up to a pass@3 of 26% (78) compared to 22.33% (67) reported in the [AutoCodeRover paper](https://arxiv.org/pdf/2404.05427). 
+In each individual run, there are also benchmark instances that fail in swe-bench-docker's evaluation but not in 
+AutoCodeRover's. Thus, it seems there are still false positives or negatives that are not detected when comparing with
+gold patches, likely due to incorrect dependency versions 
+
+But this suggests that other agents' benchmarks may show lower results than they actually achieve because it's challenging
+to conduct evaluations with completely accurate results.
 
 ## Docker images types
 There are currently three different Docker images for running benchmarks.

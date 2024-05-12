@@ -33,15 +33,6 @@ def generate_report(
     predictions = get_instances(predictions_path)
     model_name_or_path = predictions[0]["model_name_or_path"]
 
-    if predictions_path.endswith(".json"):
-        # convert to jsonl
-        with open(predictions_path, "r") as f:
-            data = json.load(f)
-        predictions_path = predictions_path.replace(".json", ".jsonl")
-        with open(predictions_path, "w") as f:
-            for line in data:
-                f.write(json.dumps(line) + "\n")
-
     summary = get_model_eval_summary(
         predicts_path=predictions_path,
         eval_dir=log_dir,
