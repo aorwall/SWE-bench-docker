@@ -15,25 +15,26 @@ logging.getLogger().setLevel(logging.INFO)
 logger = logging.getLogger("evaluate_instance")
 
 
+
 def main(
     task_instance: dict,
     testbed_name: str,
-    testbed: str,
+    repo_dir: str,
     log_dir: str,
     timeout: int,
-    log_suffix: str = None
+    log_suffix: str = None,
+    image_type: str = 'conda'
 ):
-    logger.info(f"Instance ID: {task_instance['instance_id']}\n"
-                f"Testbed: {testbed_name}\n"
-                f"Log dir: {log_dir}")
+    logger.info("Instance ID: " + task_instance['instance_id'] + "\nTestbed: " + testbed_name + "\nLog dir: " + log_dir)
 
     with TaskEnvContextManager(
             task_instance,
             testbed_name,
-            testbed,
+            repo_dir,
             log_dir,
             timeout=timeout,
             log_suffix=log_suffix,
+            image_type=image_type,
     ) as tcm:
 
         # Attempt to apply prediction
@@ -72,7 +73,7 @@ def main(
 if __name__ == "__main__":
     assert os.getenv('INSTANCE') is not None, "INSTANCE environment variable is not set"
     assert os.getenv('LOG_DIR') is not None, "LOG_DIR environment variable is not set"
-    assert os.getenv('TESTBED') is not None, "TESTBED environment variable is not set"
+    assert os.getenv('REPO_DIR') is not None, "REPO_DIR environment variable is not set"
     assert os.getenv('TESTBED_NAME') is not None, "TESTBED_NAME environment variable is not set"
 
     task_instance = json.loads(base64.b64decode(os.getenv('INSTANCE')).decode('utf-8'))
@@ -80,8 +81,9 @@ if __name__ == "__main__":
     main(
         task_instance=task_instance,
         testbed_name=os.getenv('TESTBED_NAME'),
-        testbed=os.getenv('TESTBED'),
+        repo_dir=os.getenv('REPO_DIR'),
         log_dir=os.getenv('LOG_DIR'),
         timeout=int(os.getenv('TIMEOUT')) if os.getenv('TIMEOUT') is not None else None,
-        log_suffix=os.getenv('LOG_SUFFIX')
+        log_suffix=os.getenv('LOG_SUFFIX'),
+        image_type=os.getenv('IMAGE_TYPE', 'conda')
     )

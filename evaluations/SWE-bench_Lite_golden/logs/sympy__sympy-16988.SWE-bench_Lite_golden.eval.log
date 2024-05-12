@@ -3,20 +3,15 @@
 	- Testbed: sympy__sympy__1.5
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[sympy__sympy__1.5] [sympy__sympy-16988] Command: git status --porcelain 
-[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[sympy__sympy__1.5] [sympy__sympy-16988] Std. Output:
- 
-[sympy__sympy__1.5] [sympy__sympy-16988] Return Code: 0 
 [sympy__sympy__1.5] [sympy__sympy-16988] Command: git -c advice.detachedHead=false checkout e727339af6dc22321b00f52d971cda39e4ce89fb 
-[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.5] [sympy__sympy-16988] Std. Output:
 Previous HEAD position was 70381f282f Merge pull request #18084 from oscarbenjamin/pr_lambdify_fix
 HEAD is now at e727339af6 Merge pull request #16969 from kangzhiq/Added_functions_to_AC
  
 [sympy__sympy__1.5] [sympy__sympy-16988] Return Code: 0 
 [sympy__sympy__1.5] [sympy__sympy-16988] Command: git apply -v /home/swe-bench/temp_sympy__sympy-16988_pred_try.patch 
-[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.5] [sympy__sympy-16988] Std. Output:
 Checking patch sympy/sets/sets.py...
 Applied patch sympy/sets/sets.py cleanly.
@@ -25,7 +20,7 @@ Applied patch sympy/sets/sets.py cleanly.
 [sympy__sympy__1.5] [sympy__sympy-16988] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [sympy__sympy__1.5] [sympy__sympy-16988] Command: git apply -v -R /home/swe-bench/temp_sympy__sympy-16988_pred_try.patch 
-[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.5] [sympy__sympy-16988] Std. Output:
 Checking patch sympy/sets/sets.py...
 Applied patch sympy/sets/sets.py cleanly.
@@ -34,7 +29,7 @@ Applied patch sympy/sets/sets.py cleanly.
 [sympy__sympy__1.5] [sympy__sympy-16988] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [sympy__sympy__1.5] [sympy__sympy-16988] Command: git apply -v /home/swe-bench/temp_sympy__sympy-16988_pred.patch 
-[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.5] [sympy__sympy-16988] Std. Output:
 Checking patch sympy/sets/sets.py...
 Applied patch sympy/sets/sets.py cleanly.
@@ -43,12 +38,12 @@ Applied patch sympy/sets/sets.py cleanly.
 [sympy__sympy__1.5] [sympy__sympy-16988] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [sympy__sympy__1.5] [sympy__sympy-16988] Command: git restore sympy/sets/tests/test_sets.py 
-[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.5] [sympy__sympy-16988] Std. Output:
  
 [sympy__sympy__1.5] [sympy__sympy-16988] Return Code: 0 
 [sympy__sympy__1.5] [sympy__sympy-16988] Command: git apply -v /home/swe-bench/temp_sympy__sympy-16988_test.patch 
-[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.5] [sympy__sympy-16988] Std. Output:
 Checking patch sympy/sets/tests/test_sets.py...
 Applied patch sympy/sets/tests/test_sets.py cleanly.
@@ -58,7 +53,7 @@ Applied patch sympy/sets/tests/test_sets.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.5 bin/test -C --verbose sympy/sets/tests/test_sets.py;
 [sympy__sympy__1.5] [sympy__sympy-16988] Command: conda run -n sympy__sympy__1.5 bin/test -C --verbose sympy/sets/tests/test_sets.py 
-[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.5] [sympy__sympy-16988] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/solvers/diophantine.py:3185: SyntaxWarning: "is" with a literal. Did you mean "=="?
   if feasible is 1:  # it's prime and k == 2
@@ -75,8 +70,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        12496043
-hash randomization: on (PYTHONHASHSEED=4063370936)
+random seed:        65191394
+hash randomization: on (PYTHONHASHSEED=3190148395)
 
 sympy/sets/tests/test_sets.py[78] 
 test_imageset ok
@@ -160,9 +155,9 @@ test_issue_16878b f                                                         [OK]
 
 
 ________________________________ slowest tests _________________________________
-test_image_interval - Took 35.132 seconds
-test_issue_10113 - Took 51.919 seconds
-======= tests finished: 74 passed, 4 expected to fail, in 93.67 seconds ========
+test_image_interval - Took 70.490 seconds
+test_issue_10113 - Took 81.871 seconds
+======= tests finished: 74 passed, 4 expected to fail, in 163.96 seconds =======
 
  
 [sympy__sympy__1.5] [sympy__sympy-16988] Return Code: 0 

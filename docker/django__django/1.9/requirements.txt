@@ -1,0 +1,13 @@
+bcrypt
+docutils
+geoip2
+jinja2 >= 2.7
+numpy
+Pillow
+PyYAML
+pytz > dev
+selenium
+sqlparse
+tblib
+
+python3-memcached

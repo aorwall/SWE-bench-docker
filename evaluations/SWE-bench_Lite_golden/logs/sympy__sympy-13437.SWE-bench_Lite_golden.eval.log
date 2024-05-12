@@ -63,7 +63,7 @@ Applied patch sympy/functions/combinatorial/tests/test_comb_numbers.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.1 bin/test -C --verbose sympy/functions/combinatorial/tests/test_comb_numbers.py;
 [sympy__sympy__1.1] [sympy__sympy-13437] Command: conda run -n sympy__sympy__1.1 bin/test -C --verbose sympy/functions/combinatorial/tests/test_comb_numbers.py 
-[sympy__sympy__1.1] [sympy__sympy-13437] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.1] [sympy__sympy-13437] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.1] [sympy__sympy-13437] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
   from collections import Mapping, defaultdict
@@ -86,8 +86,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        75381129
-hash randomization: on (PYTHONHASHSEED=639233897)
+random seed:        9184214
+hash randomization: on (PYTHONHASHSEED=2373423334)
 
 sympy/functions/combinatorial/tests/test_comb_numbers.py[20] 
 test_bernoulli ok
@@ -113,8 +113,8 @@ test_issue_8601 ok                                                          [OK]
 
 
 ________________________________ slowest tests _________________________________
-test_bell - Took 278.418 seconds
-======= tests finished: 17 passed, 3 expected to fail, in 286.24 seconds =======
+test_bell - Took 694.755 seconds
+======= tests finished: 17 passed, 3 expected to fail, in 714.62 seconds =======
 
  
 [sympy__sympy__1.1] [sympy__sympy-13437] Return Code: 0 

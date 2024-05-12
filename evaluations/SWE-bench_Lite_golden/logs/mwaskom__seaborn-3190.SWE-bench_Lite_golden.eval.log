@@ -3,20 +3,15 @@
 	- Testbed: mwaskom__seaborn__0.12
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git status --porcelain 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
- 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git -c advice.detachedHead=false checkout 4a9e54962a29c12a8b103d75f838e0e795a6974d 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
 Previous HEAD position was d25872b0 fix typos (#3193)
 HEAD is now at 4a9e5496 Improve user feedback for errors during plot compilation (#3203)
  
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-3190_pred_try.patch 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
 Checking patch seaborn/_core/scales.py...
 Applied patch seaborn/_core/scales.py cleanly.
@@ -25,7 +20,7 @@ Applied patch seaborn/_core/scales.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git apply -v -R /home/swe-bench/temp_mwaskom__seaborn-3190_pred_try.patch 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
 Checking patch seaborn/_core/scales.py...
 Applied patch seaborn/_core/scales.py cleanly.
@@ -34,7 +29,7 @@ Applied patch seaborn/_core/scales.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-3190_pred.patch 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
 Checking patch seaborn/_core/scales.py...
 Applied patch seaborn/_core/scales.py cleanly.
@@ -43,12 +38,12 @@ Applied patch seaborn/_core/scales.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git restore tests/_core/test_scales.py 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
  
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-3190_test.patch 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
 Checking patch tests/_core/test_scales.py...
 Applied patch tests/_core/test_scales.py cleanly.
@@ -58,7 +53,7 @@ Applied patch tests/_core/test_scales.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n mwaskom__seaborn__0.12 pytest --no-header -rA tests/_core/test_scales.py;
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: conda run -n mwaskom__seaborn__0.12 pytest --no-header -rA tests/_core/test_scales.py 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
 ============================= test session starts ==============================
 collected 86 items
@@ -69,7 +64,7 @@ tests/_core/test_scales.py ............................................. [ 52%]
 ================================== XFAILURES ===================================
 _________________ TestNominal.test_color_numeric_int_float_mix _________________
 
-self = <tests._core.test_scales.TestNominal object at 0x702249c56c10>
+self = <tests._core.test_scales.TestNominal object at 0x7813385efd00>
 
     @pytest.mark.xfail(reason="Need to sort out float/int order")
     def test_color_numeric_int_float_mix(self):
@@ -94,7 +89,7 @@ obj = array([[0.12156863, 0.46666667, 0.70588235],
        [1.        , 0.49803922, 0.05490196]])
 method = 'take', args = (array([2, 3]),)
 kwds = {'axis': 0, 'mode': 'raise', 'out': None}
-bound = <built-in method take of numpy.ndarray object at 0x702248d54db0>
+bound = <built-in method take of numpy.ndarray object at 0x78133841c210>
 
     def _wrapfunc(obj, method, *args, **kwds):
         bound = getattr(obj, method, None)
@@ -208,7 +203,7 @@ PASSED tests/_core/test_scales.py::TestTemporal::test_tick_upto
 PASSED tests/_core/test_scales.py::TestTemporal::test_label_formatter
 PASSED tests/_core/test_scales.py::TestTemporal::test_label_concise
 XFAIL tests/_core/test_scales.py::TestNominal::test_color_numeric_int_float_mix - Need to sort out float/int order
-================== 85 passed, 1 xfailed, 48 warnings in 1.47s ==================
+================== 85 passed, 1 xfailed, 48 warnings in 2.49s ==================
 
  
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 

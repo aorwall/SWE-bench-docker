@@ -3,20 +3,15 @@
 	- Testbed: pvlib__pvlib-python__0.9
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git status --porcelain 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
- 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git -c advice.detachedHead=false checkout 27a3a07ebc84b11014d3753e4923902adf9a38c0 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
 Previous HEAD position was 6072e09 fix invalid escape sequence '\c' (#1879)
 HEAD is now at 27a3a07 `pvsystem.singlediode` with `method='newton'` can be passed `pd.Series` of length one. (#1822)
  
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1854_pred_try.patch 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
 Checking patch pvlib/pvsystem.py...
 Applied patch pvlib/pvsystem.py cleanly.
@@ -25,7 +20,7 @@ Applied patch pvlib/pvsystem.py cleanly.
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git apply -v -R /home/swe-bench/temp_pvlib__pvlib-python-1854_pred_try.patch 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
 Checking patch pvlib/pvsystem.py...
 Applied patch pvlib/pvsystem.py cleanly.
@@ -34,7 +29,7 @@ Applied patch pvlib/pvsystem.py cleanly.
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1854_pred.patch 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
 Checking patch pvlib/pvsystem.py...
 Applied patch pvlib/pvsystem.py cleanly.
@@ -43,12 +38,12 @@ Applied patch pvlib/pvsystem.py cleanly.
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git restore pvlib/tests/test_pvsystem.py 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
  
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1854_test.patch 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
 Checking patch pvlib/tests/test_pvsystem.py...
 Applied patch pvlib/tests/test_pvsystem.py cleanly.
@@ -56,9 +51,9 @@ Applied patch pvlib/tests/test_pvsystem.py cleanly.
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pvlib__pvlib-python__0.9 pytest --no-header -rA -p no:cacheprovider pvlib/tests/test_pvsystem.py;
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: conda run -n pvlib__pvlib-python__0.9 pytest --no-header -rA -p no:cacheprovider pvlib/tests/test_pvsystem.py 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script: conda run -n pvlib__pvlib-python__0.9 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_pvsystem.py;
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: conda run -n pvlib__pvlib-python__0.9 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_pvsystem.py 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
 ============================= test session starts ==============================
 collected 282 items
@@ -78,8 +73,8 @@ pvlib/tests/conftest.py:7
   /home/swe-bench/pvlib__pvlib-python/pvlib/tests/conftest.py:7: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
     from pkg_resources import parse_version
 
-../miniconda3/envs/pvlib__pvlib-python__0.9/lib/python3.9/site-packages/pkg_resources/__init__.py:2871
-  /home/swe-bench/miniconda3/envs/pvlib__pvlib-python__0.9/lib/python3.9/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('sphinxcontrib')`.
+../miniconda3/envs/pvlib__pvlib-python__0.9/lib/python3.9/site-packages/pkg_resources/__init__.py:2832
+  /home/swe-bench/miniconda3/envs/pvlib__pvlib-python__0.9/lib/python3.9/site-packages/pkg_resources/__init__.py:2832: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('sphinxcontrib')`.
   Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
     declare_namespace(pkg)
 
@@ -149,7 +144,6 @@ pvlib/tests/test_pvsystem.py::test_Array_get_irradiance
     times = pd.date_range(start='20160101 1200-0700',
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_iam[ashrae-model_params0]
 PASSED pvlib/tests/test_pvsystem.py::test_PVSystem_get_iam[physical-model_params1]
@@ -433,7 +427,7 @@ PASSED pvlib/tests/test_pvsystem.py::test_Array_dc_ohms_from_percent
 PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[sapm-keys0]
 PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[fuentes-keys1]
 PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[noct_sam-keys2]
-======================= 282 passed, 32 warnings in 0.96s =======================
+======================= 282 passed, 32 warnings in 2.19s =======================
 
  
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 

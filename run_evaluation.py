@@ -161,13 +161,13 @@ async def main(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--predictions_path", type=str, help="Path to predictions file (must be .json)", required=True)
+    parser.add_argument("--predictions_path", type=str, help="Path to predictions file", required=True)
     parser.add_argument("--log_dir", type=str, help="Path to log directory", required=True)
     parser.add_argument("--swe_bench_tasks", type=str, help="Path to dataset file or HF datasets name", required=True)
     parser.add_argument("--namespace", type=str, help="Docker repository namespace", required=False, default="aorwall")
     parser.add_argument("--log_suffix", type=str, help="(Optional) Suffix to append to log file names", default="")
     parser.add_argument("--skip_existing", action="store_true", help="(Optional) Skip existing logs")
-    parser.add_argument("--timeout", type=int, help="(Optional) Timeout in seconds (default: 900)", default=900)
+    parser.add_argument("--timeout", type=int, help="(Optional) Timeout in seconds (default: 900)", default=1800)
     parser.add_argument("--num_processes", type=int, help="(Optional) Number of processes to run in parallel (-1 for unlimited)", default=-1)
     args = parser.parse_args()
     asyncio.run(main(**vars(args)))

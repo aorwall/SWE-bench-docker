@@ -1,22 +1,18 @@
 [django__django__3.1] [django__django-12497] Task Metadata:
 	- Instance ID: django__django-12497
 	- Testbed: django__django__3.1
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.1] [django__django-12497] Command: git status --porcelain 
-[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.1] [django__django-12497] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.1] [django__django-12497] Return Code: 0 
 [django__django__3.1] [django__django-12497] Command: git -c advice.detachedHead=false checkout a4881f5e5d7ee38b7e83301331a0b4962845ef8a 
-[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12497] Std. Output:
 Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at a4881f5e5d Fixed #31307 -- Fixed filter_horizontal add/remove SVG :hover positioning.
  
 [django__django__3.1] [django__django-12497] Return Code: 0 
-[django__django__3.1] [django__django-12497] Command: git apply -v /home/swe-bench/temp_django__django-12497_pred_try.patch 
-[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12497] Command: git apply -v /opt/temp_django__django-12497_pred_try.patch 
+[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12497] Std. Output:
 Checking patch django/db/models/fields/related.py...
 Applied patch django/db/models/fields/related.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/db/models/fields/related.py cleanly.
 [django__django__3.1] [django__django-12497] Return Code: 0 
 [django__django__3.1] [django__django-12497] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-12497] Command: git apply -v -R /home/swe-bench/temp_django__django-12497_pred_try.patch 
-[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12497] Command: git apply -v -R /opt/temp_django__django-12497_pred_try.patch 
+[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12497] Std. Output:
 Checking patch django/db/models/fields/related.py...
 Applied patch django/db/models/fields/related.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/db/models/fields/related.py cleanly.
 [django__django__3.1] [django__django-12497] Return Code: 0 
 [django__django__3.1] [django__django-12497] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-12497] Command: git apply -v /home/swe-bench/temp_django__django-12497_pred.patch 
-[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12497] Command: git apply -v /opt/temp_django__django-12497_pred.patch 
+[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12497] Std. Output:
 Checking patch django/db/models/fields/related.py...
 Applied patch django/db/models/fields/related.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/db/models/fields/related.py cleanly.
 [django__django__3.1] [django__django-12497] Return Code: 0 
 [django__django__3.1] [django__django-12497] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.1] [django__django-12497] Command: git apply -v /home/swe-bench/temp_django__django-12497_test.patch 
-[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12497] Command: git apply -v /opt/temp_django__django-12497_test.patch 
+[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12497] Std. Output:
 Checking patch tests/invalid_models_tests/test_relative_fields.py...
 Applied patch tests/invalid_models_tests/test_relative_fields.py cleanly.
@@ -51,32 +47,36 @@ Applied patch tests/invalid_models_tests/test_relative_fields.py cleanly.
 [django__django__3.1] [django__django-12497] Return Code: 0 
 [django__django__3.1] [django__django-12497] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 invalid_models_tests.test_relative_fields;
-[django__django__3.1] [django__django-12497] Command: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 invalid_models_tests.test_relative_fields 
-[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 invalid_models_tests.test_relative_fields;
+[django__django__3.1] [django__django-12497] Command: ./tests/runtests.py --verbosity 2 invalid_models_tests.test_relative_fields 
+[django__django__3.1] [django__django-12497] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-12497] Std. Output:
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Importing application invalid_models_tests
+Skipping setup of unused database(s): default, other.
+System check identified no issues (0 silenced).
 test_accessor_clash (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
 test_clash_under_explicit_related_name (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
 test_reverse_query_name_clash (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
+test_clash_parent_link (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
+test_complex_clash (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
 test_explicit_field_names (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
 test_intersection_foreign_object (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
 test_invalid_field (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
 test_invalid_order (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
 test_m2m_field_argument_validation (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
 test_superset_foreign_object (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
-test_clash_parent_link (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
-test_complex_clash (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
+test_accessor_clash (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
+test_clash_between_accessors (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
+test_clash_under_explicit_related_name (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
+test_reverse_query_name_clash (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
+test_valid_model (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
 test_fk_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
 test_fk_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
 test_fk_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
 test_m2m_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
 test_m2m_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
 test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_accessor_clash (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
-test_clash_between_accessors (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
-test_clash_under_explicit_related_name (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
-test_reverse_query_name_clash (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
-test_valid_model (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
 test_fk_to_fk (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
 test_fk_to_integer (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
 test_fk_to_m2m (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
@@ -142,15 +142,9 @@ test_unique_m2m (invalid_models_tests.test_relative_fields.RelativeFieldTests) .
 test_valid_foreign_key_without_accessor (invalid_models_tests.test_relative_fields.RelativeFieldTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 84 tests in 0.120s
+Ran 84 tests in 0.271s
 
 OK
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
-Importing application invalid_models_tests
-Skipping setup of unused database(s): default, other.
-System check identified no issues (0 silenced).
-
  
 [django__django__3.1] [django__django-12497] Return Code: 0 
 

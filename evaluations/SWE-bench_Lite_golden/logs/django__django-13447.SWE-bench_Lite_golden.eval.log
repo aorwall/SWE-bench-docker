@@ -1,22 +1,18 @@
 [django__django__4.0] [django__django-13447] Task Metadata:
 	- Instance ID: django__django-13447
 	- Testbed: django__django__4.0
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__4.0] [django__django-13447] Command: git status --porcelain 
-[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__4.0] [django__django-13447] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.8.19
  
-[django__django__4.0] [django__django-13447] Return Code: 0 
 [django__django__4.0] [django__django-13447] Command: git -c advice.detachedHead=false checkout 0456d3e42795481a186db05719300691fe2a1029 
-[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13447] Std. Output:
 Previous HEAD position was 475cffd1d6 Fixed typo in docs/intro/reusable-apps.txt.
 HEAD is now at 0456d3e427 Fixed #26721 -- Doc'd setting UTF-8 on Windows.
  
 [django__django__4.0] [django__django-13447] Return Code: 0 
-[django__django__4.0] [django__django-13447] Command: git apply -v /home/swe-bench/temp_django__django-13447_pred_try.patch 
-[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13447] Command: git apply -v /opt/temp_django__django-13447_pred_try.patch 
+[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13447] Std. Output:
 Checking patch django/contrib/admin/sites.py...
 Applied patch django/contrib/admin/sites.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/contrib/admin/sites.py cleanly.
 [django__django__4.0] [django__django-13447] Return Code: 0 
 [django__django__4.0] [django__django-13447] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__4.0] [django__django-13447] Command: git apply -v -R /home/swe-bench/temp_django__django-13447_pred_try.patch 
-[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13447] Command: git apply -v -R /opt/temp_django__django-13447_pred_try.patch 
+[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13447] Std. Output:
 Checking patch django/contrib/admin/sites.py...
 Applied patch django/contrib/admin/sites.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/contrib/admin/sites.py cleanly.
 [django__django__4.0] [django__django-13447] Return Code: 0 
 [django__django__4.0] [django__django-13447] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__4.0] [django__django-13447] Command: git apply -v /home/swe-bench/temp_django__django-13447_pred.patch 
-[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13447] Command: git apply -v /opt/temp_django__django-13447_pred.patch 
+[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13447] Std. Output:
 Checking patch django/contrib/admin/sites.py...
 Applied patch django/contrib/admin/sites.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/contrib/admin/sites.py cleanly.
 [django__django__4.0] [django__django-13447] Return Code: 0 
 [django__django__4.0] [django__django-13447] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__4.0] [django__django-13447] Command: git apply -v /home/swe-bench/temp_django__django-13447_test.patch 
-[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13447] Command: git apply -v /opt/temp_django__django-13447_test.patch 
+[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13447] Std. Output:
 Checking patch tests/admin_views/test_adminsite.py...
 Applied patch tests/admin_views/test_adminsite.py cleanly.
@@ -51,30 +47,11 @@ Applied patch tests/admin_views/test_adminsite.py cleanly.
 [django__django__4.0] [django__django-13447] Return Code: 0 
 [django__django__4.0] [django__django-13447] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__4.0 ./tests/runtests.py --verbosity 2 admin_views.test_adminsite;
-[django__django__4.0] [django__django-13447] Command: conda run -n django__django__4.0 ./tests/runtests.py --verbosity 2 admin_views.test_adminsite 
-[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 admin_views.test_adminsite;
+[django__django__4.0] [django__django-13447] Command: ./tests/runtests.py --verbosity 2 admin_views.test_adminsite 
+[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.0] [django__django-13447] Std. Output:
-Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_add_action (admin_views.test_adminsite.SiteActionsTests) ... ok
-test_disable_action (admin_views.test_adminsite.SiteActionsTests) ... ok
-test_get_action (admin_views.test_adminsite.SiteActionsTests)
-AdminSite.get_action() returns an action even if it's disabled. ... ok
-test_available_apps (admin_views.test_adminsite.SiteEachContextTest) ... ok
-test_each_context (admin_views.test_adminsite.SiteEachContextTest) ... ok
-test_each_context_site_url_with_script_name (admin_views.test_adminsite.SiteEachContextTest) ... ok
-
-----------------------------------------------------------------------
-Ran 6 tests in 0.047s
-
-OK
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application admin_views
 Found 6 tests.
 Skipping setup of unused database(s): other.
@@ -222,8 +199,25 @@ Running migrations:
   Applying admin.0003_logentry_add_action_flag_choices... OK
   Applying sites.0001_initial... OK
   Applying sites.0002_alter_domain_unique... OK
+Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 System check identified no issues (1 silenced).
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+test_add_action (admin_views.test_adminsite.SiteActionsTests) ... ok
+test_disable_action (admin_views.test_adminsite.SiteActionsTests) ... ok
+test_get_action (admin_views.test_adminsite.SiteActionsTests)
+AdminSite.get_action() returns an action even if it's disabled. ... ok
+test_available_apps (admin_views.test_adminsite.SiteEachContextTest) ... ok
+test_each_context (admin_views.test_adminsite.SiteEachContextTest) ... ok
+test_each_context_site_url_with_script_name (admin_views.test_adminsite.SiteEachContextTest) ... ok
 
+----------------------------------------------------------------------
+Ran 6 tests in 0.248s
+
+OK
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
  
 [django__django__4.0] [django__django-13447] Return Code: 0 
 

@@ -1,22 +1,18 @@
 [django__django__3.0] [django__django-11630] Task Metadata:
 	- Instance ID: django__django-11630
 	- Testbed: django__django__3.0
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.0] [django__django-11630] Command: git status --porcelain 
-[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.0] [django__django-11630] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.0] [django__django-11630] Return Code: 0 
 [django__django__3.0] [django__django-11630] Command: git -c advice.detachedHead=false checkout 65e86948b80262574058a94ccaae3a9b59c3faea 
-[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11630] Std. Output:
 Previous HEAD position was 419a78300f [3.0.x] Fixed typo in docs/ref/contrib/postgres/forms.txt.
 HEAD is now at 65e86948b8 Corrected several typos in string literals and test names.
  
 [django__django__3.0] [django__django-11630] Return Code: 0 
-[django__django__3.0] [django__django-11630] Command: git apply -v /home/swe-bench/temp_django__django-11630_pred_try.patch 
-[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11630] Command: git apply -v /opt/temp_django__django-11630_pred_try.patch 
+[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11630] Std. Output:
 Checking patch django/core/checks/model_checks.py...
 Applied patch django/core/checks/model_checks.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/core/checks/model_checks.py cleanly.
 [django__django__3.0] [django__django-11630] Return Code: 0 
 [django__django__3.0] [django__django-11630] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.0] [django__django-11630] Command: git apply -v -R /home/swe-bench/temp_django__django-11630_pred_try.patch 
-[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11630] Command: git apply -v -R /opt/temp_django__django-11630_pred_try.patch 
+[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11630] Std. Output:
 Checking patch django/core/checks/model_checks.py...
 Applied patch django/core/checks/model_checks.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/core/checks/model_checks.py cleanly.
 [django__django__3.0] [django__django-11630] Return Code: 0 
 [django__django__3.0] [django__django-11630] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.0] [django__django-11630] Command: git apply -v /home/swe-bench/temp_django__django-11630_pred.patch 
-[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11630] Command: git apply -v /opt/temp_django__django-11630_pred.patch 
+[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11630] Std. Output:
 Checking patch django/core/checks/model_checks.py...
 Applied patch django/core/checks/model_checks.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/core/checks/model_checks.py cleanly.
 [django__django__3.0] [django__django-11630] Return Code: 0 
 [django__django__3.0] [django__django-11630] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.0] [django__django-11630] Command: git apply -v /home/swe-bench/temp_django__django-11630_test.patch 
-[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11630] Command: git apply -v /opt/temp_django__django-11630_test.patch 
+[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11630] Std. Output:
 Checking patch tests/check_framework/test_model_checks.py...
 Applied patch tests/check_framework/test_model_checks.py cleanly.
@@ -51,43 +47,11 @@ Applied patch tests/check_framework/test_model_checks.py cleanly.
 [django__django__3.0] [django__django-11630] Return Code: 0 
 [django__django__3.0] [django__django-11630] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.0 ./tests/runtests.py --verbosity 2 check_framework.test_model_checks;
-[django__django__3.0] [django__django-11630] Command: conda run -n django__django__3.0 ./tests/runtests.py --verbosity 2 check_framework.test_model_checks 
-[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 check_framework.test_model_checks;
+[django__django__3.0] [django__django-11630] Command: ./tests/runtests.py --verbosity 2 check_framework.test_model_checks 
+[django__django__3.0] [django__django-11630] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.0] [django__django-11630] Std. Output:
-Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_collision_across_apps (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
-test_collision_across_apps_database_routers_installed (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
-test_collision_in_same_app (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
-test_collision_in_same_app_database_routers_installed (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
-test_no_collision_for_proxy_models (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
-test_no_collision_for_unmanaged_models (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
-test_collision_abstract_model (check_framework.test_model_checks.IndexNameTests) ... ok
-test_collision_across_apps (check_framework.test_model_checks.IndexNameTests) ... ok
-test_collision_in_different_models (check_framework.test_model_checks.IndexNameTests) ... ok
-test_collision_in_same_model (check_framework.test_model_checks.IndexNameTests) ... ok
-test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.IndexNameTests) ... ok
-test_no_collision_across_apps_interpolation (check_framework.test_model_checks.IndexNameTests) ... ok
-test_collision_abstract_model (check_framework.test_model_checks.ConstraintNameTests) ... ok
-test_collision_across_apps (check_framework.test_model_checks.ConstraintNameTests) ... ok
-test_collision_in_different_models (check_framework.test_model_checks.ConstraintNameTests) ... ok
-test_collision_in_same_model (check_framework.test_model_checks.ConstraintNameTests) ... ok
-test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.ConstraintNameTests) ... ok
-test_no_collision_across_apps_interpolation (check_framework.test_model_checks.ConstraintNameTests) ... ok
-
-----------------------------------------------------------------------
-Ran 18 tests in 0.122s
-
-OK
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application check_framework
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -109,7 +73,37 @@ Running migrations:
   Applying sites.0001_initial... OK
   Applying sites.0002_alter_domain_unique... OK
 System check identified no issues (0 silenced).
+Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+test_collision_abstract_model (check_framework.test_model_checks.ConstraintNameTests) ... ok
+test_collision_across_apps (check_framework.test_model_checks.ConstraintNameTests) ... ok
+test_collision_in_different_models (check_framework.test_model_checks.ConstraintNameTests) ... ok
+test_collision_in_same_model (check_framework.test_model_checks.ConstraintNameTests) ... ok
+test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.ConstraintNameTests) ... ok
+test_no_collision_across_apps_interpolation (check_framework.test_model_checks.ConstraintNameTests) ... ok
+test_collision_across_apps (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
+test_collision_across_apps_database_routers_installed (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
+test_collision_in_same_app (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
+test_collision_in_same_app_database_routers_installed (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
+test_no_collision_for_proxy_models (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
+test_no_collision_for_unmanaged_models (check_framework.test_model_checks.DuplicateDBTableTests) ... ok
+test_collision_abstract_model (check_framework.test_model_checks.IndexNameTests) ... ok
+test_collision_across_apps (check_framework.test_model_checks.IndexNameTests) ... ok
+test_collision_in_different_models (check_framework.test_model_checks.IndexNameTests) ... ok
+test_collision_in_same_model (check_framework.test_model_checks.IndexNameTests) ... ok
+test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.IndexNameTests) ... ok
+test_no_collision_across_apps_interpolation (check_framework.test_model_checks.IndexNameTests) ... ok
 
+----------------------------------------------------------------------
+Ran 18 tests in 0.283s
+
+OK
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
  
 [django__django__3.0] [django__django-11630] Return Code: 0 
 

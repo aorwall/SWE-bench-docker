@@ -32,8 +32,8 @@ Requirement already satisfied: wcwidth in /home/swe-bench/miniconda3/envs/pytest
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev380+g56bf819c2-0.editable-py3-none-any.whl size=7990 sha256=b27abf98f346e6f48d6324388ca0e5b3fba8c3b9d537370edbb5241385dc2468
-  Stored in directory: /tmp/pip-ephem-wheel-cache-lx69d59k/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev380+g56bf819c2-0.editable-py3-none-any.whl size=7990 sha256=83782ddf69f2f6318924c205bfe96a90193e169c6a48d9dacc43bc008bbabcc0
+  Stored in directory: /tmp/pip-ephem-wheel-cache-6_lqqcja/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -63,8 +63,8 @@ Requirement already satisfied: wcwidth in /home/swe-bench/miniconda3/envs/pytest
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev380+g56bf819c2-0.editable-py3-none-any.whl size=7990 sha256=b27abf98f346e6f48d6324388ca0e5b3fba8c3b9d537370edbb5241385dc2468
-  Stored in directory: /tmp/pip-ephem-wheel-cache-lx69d59k/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev380+g56bf819c2-0.editable-py3-none-any.whl size=7990 sha256=83782ddf69f2f6318924c205bfe96a90193e169c6a48d9dacc43bc008bbabcc0
+  Stored in directory: /tmp/pip-ephem-wheel-cache-6_lqqcja/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -156,7 +156,7 @@ E       assert False
 /tmp/pytest-of-swe-bench/pytest-0/test_failure_with_changed_cwd0/test_failure_with_changed_cwd.py:14: AssertionError
 =========================== short test summary info ============================
 FAILED test_failure_with_changed_cwd.py::test_show_wrong_path - assert False
-============================== 1 failed in 0.03s ===============================
+============================== 1 failed in 0.05s ===============================
 =========================== short test summary info ============================
 PASSED testing/test_nodes.py::test_ischildnode[--True]
 PASSED testing/test_nodes.py::test_ischildnode[-foo-True]
@@ -170,7 +170,7 @@ PASSED testing/test_nodes.py::test_node_from_parent_disallowed_arguments
 PASSED testing/test_nodes.py::test__check_initialpaths_for_relpath
 PASSED testing/test_nodes.py::test_std_warn_not_pytestwarning
 PASSED testing/test_nodes.py::test_failure_with_changed_cwd
-============================== 12 passed in 0.09s ==============================
+============================== 12 passed in 0.17s ==============================
 
  
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7220] Return Code: 0 

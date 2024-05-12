@@ -8,8 +8,6 @@ from traceback import format_exc
 from swebench_docker.constants import KEY_INSTANCE_ID, PatchType, APPLY_PATCH_FAIL, APPLY_PATCH_PASS, TESTS_FAILED, \
     TESTS_PASSED, TESTS_TIMEOUT, TESTS_ERROR, KEY_MODEL, MAP_VERSION_TO_INSTALL, INSTALL_FAIL
 
-base_dir = "/home/swe-bench"
-
 logger_taskenv = logging.getLogger("taskenv")
 
 
@@ -79,21 +77,27 @@ class TaskEnvContextManager:
         self,
         task_instance: dict,
         testbed_name: str,
-        testbed: str,
+        repo_dir: str,
         log_dir: str,
         log_suffix: str = None,
         timeout: int = None,
         is_eval: bool = True,
+        image_type: str = "conda"
     ):
         self.instance_id = task_instance[KEY_INSTANCE_ID]
         self.instance = task_instance
         self.testbed_name = testbed_name
-        self.testbed = testbed
+        self.repo_dir = repo_dir
         self.cwd = os.getcwd()
         self.is_eval = is_eval
+        self.image_type = image_type
 
         model = task_instance[KEY_MODEL]
-        self.cmd_conda_run = f"conda run -n {testbed_name}"
+        if image_type == "conda":
+            self.cmd_conda_run = f"conda run -n {testbed_name} "
+        else:
+            self.cmd_conda_run = ""
+
         self.timeout = timeout
 
         log_file_name = f"{self.instance_id}.{model}.eval.log"
@@ -108,7 +112,7 @@ class TaskEnvContextManager:
 
         self.exec = ExecWrapper(
             subprocess_args={
-                "cwd": self.testbed,
+                "cwd": self.repo_dir,
                 "check": True,
                 "shell": False,
                 # "capture_output": False,
@@ -123,23 +127,19 @@ class TaskEnvContextManager:
         """
         Enter task environment, set up log file
         """
-        os.chdir(self.testbed)
+        os.chdir(self.repo_dir)
         enter_msg = (
-            f"Task Metadata:\n\t- "
-            f"Instance ID: {self.instance[KEY_INSTANCE_ID]}\n\t- "
-            f"Testbed: {self.testbed_name}\n\t- "
+            f"Task Metadata:"
+            f"\n\t- Instance ID: {self.instance[KEY_INSTANCE_ID]}"
+            f"\n\t- Testbed: {self.testbed_name}"
         )
         if self.is_eval:
             enter_msg += f"\n\t- Evaluation Model: {self.instance[KEY_MODEL]}"
-        self.log.write(enter_msg, mode="w")
 
-        stash_used = False
-        # output = self.exec(["git", "status", "--porcelain"])
-        # if output.stdout:
-        #     self.exec(["git", "stash", "push", "-m", "Temporarily stashed changes"])
-        #     stash_used = True
-        # else:
-        #    stash_used = False
+        output = self.exec("python --version".split())
+        enter_msg += f"\n\t- Python version: {output.stdout}"
+
+        self.log.write(enter_msg, mode="w")
 
         self.exec(
             f"git -c advice.detachedHead=false checkout {self.instance['base_commit']}".split(
@@ -148,8 +148,8 @@ class TaskEnvContextManager:
         )
 
         specifications = MAP_VERSION_TO_INSTALL[self.instance["repo"]][self.instance["version"]]
-        if "pre_install" in specifications:
-            for cmd_pre_install in specifications["pre_install"]:
+        if "pre_test" in specifications:
+            for cmd_pre_install in specifications["pre_test"]:
                 self.log.write(f"Running pre-test command: {cmd_pre_install}")
                 cmd_pre_install = f"{self.cmd_conda_run} {cmd_pre_install}"
 
@@ -166,12 +166,6 @@ class TaskEnvContextManager:
                     with open(self.log_file, "a") as f:
                         f.write(f"\n{INSTALL_FAIL}\n")
                     return False
-
-        if stash_used:
-            try:
-                self.exec(["git", "stash", "pop"])
-            except Exception as e:
-                self.log.write(f"Error popping stash: {e}", level=ERROR)
 
         return self
 
@@ -196,7 +190,7 @@ class TaskEnvContextManager:
 
         # Write patch to temporary patch file in parent directory
         patch_path = os.path.join(
-            os.path.dirname(self.testbed.rstrip("/")),
+            os.path.dirname(self.repo_dir.rstrip("/")),
             f"temp_{self.instance_id}_{patch_type}.patch",
         )
 

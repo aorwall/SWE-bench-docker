@@ -1,0 +1,14 @@
+argon2-cffi >= 16.1.0
+bcrypt
+docutils
+geoip2
+jinja2 >= 2.9.2
+numpy
+Pillow
+pylibmc; sys_platform != 'win32'
+python-memcached >= 1.59
+pytz
+PyYAML
+selenium
+sqlparse
+tblib

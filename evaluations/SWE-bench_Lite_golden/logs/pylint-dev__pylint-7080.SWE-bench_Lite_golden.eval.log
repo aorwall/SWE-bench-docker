@@ -30,7 +30,7 @@ Requirement already satisfied: lazy-object-proxy>=1.4.0 in /home/swe-bench/minic
 Requirement already satisfied: wrapt<2,>=1.11 in /home/swe-bench/miniconda3/envs/pylint-dev__pylint__2.15/lib/python3.9/site-packages (from astroid<=2.12.0-dev0,>=2.11.6->pylint==2.15.0.dev0) (1.16.0)
 Requirement already satisfied: setuptools>=20.0 in /home/swe-bench/miniconda3/envs/pylint-dev__pylint__2.15/lib/python3.9/site-packages (from astroid<=2.12.0-dev0,>=2.11.6->pylint==2.15.0.dev0) (69.5.1)
 Downloading astroid-2.11.7-py3-none-any.whl (251 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 251.2/251.2 kB 845.5 kB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 251.2/251.2 kB 6.6 MB/s eta 0:00:00
 Installing collected packages: astroid, pylint
   Attempting uninstall: astroid
     Found existing installation: astroid 2.12.13
@@ -62,7 +62,7 @@ Requirement already satisfied: lazy-object-proxy>=1.4.0 in /home/swe-bench/minic
 Requirement already satisfied: wrapt<2,>=1.11 in /home/swe-bench/miniconda3/envs/pylint-dev__pylint__2.15/lib/python3.9/site-packages (from astroid<=2.12.0-dev0,>=2.11.6->pylint==2.15.0.dev0) (1.16.0)
 Requirement already satisfied: setuptools>=20.0 in /home/swe-bench/miniconda3/envs/pylint-dev__pylint__2.15/lib/python3.9/site-packages (from astroid<=2.12.0-dev0,>=2.11.6->pylint==2.15.0.dev0) (69.5.1)
 Downloading astroid-2.11.7-py3-none-any.whl (251 kB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 251.2/251.2 kB 845.5 kB/s eta 0:00:00
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 251.2/251.2 kB 6.6 MB/s eta 0:00:00
 Installing collected packages: astroid, pylint
   Attempting uninstall: astroid
     Found existing installation: astroid 2.12.13
@@ -259,7 +259,7 @@ PASSED tests/test_self.py::TestCallbackOptions::test_enable_all_extensions
 XFAIL tests/test_self.py::TestRunTC::test_abbreviations_are_not_supported
 FAILED tests/test_self.py::TestCallbackOptions::test_generate_toml_config - a...
 FAILED tests/test_self.py::TestCallbackOptions::test_generate_toml_config_disable_symbolic_names
-============= 2 failed, 122 passed, 1 xfailed, 1 warning in 13.48s =============
+============= 2 failed, 122 passed, 1 xfailed, 1 warning in 34.33s =============
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_self.py` failed. (See above for error)
 
  

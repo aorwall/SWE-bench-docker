@@ -1,16 +1,17 @@
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Task Metadata:
 	- Instance ID: scikit-learn__scikit-learn-10508
 	- Testbed: scikit-learn__scikit-learn__0.20
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
+ 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: git -c advice.detachedHead=false checkout c753b77ac49e72ebc0fe5e3c2369fe628f975017 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Std. Output:
 HEAD is now at c753b77ac DOC mention default base_estimator of AdaBoost (#10501)
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Return Code: 0 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-10508_pred_try.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-10508_pred_try.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Std. Output:
 Checking patch sklearn/preprocessing/label.py...
 Applied patch sklearn/preprocessing/label.py cleanly.
@@ -18,8 +19,8 @@ Applied patch sklearn/preprocessing/label.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-10508_pred_try.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: git apply -v -R /opt/temp_scikit-learn__scikit-learn-10508_pred_try.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Std. Output:
 Checking patch sklearn/preprocessing/label.py...
 Applied patch sklearn/preprocessing/label.py cleanly.
@@ -27,8 +28,8 @@ Applied patch sklearn/preprocessing/label.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-10508_pred.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-10508_pred.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Std. Output:
 Checking patch sklearn/preprocessing/label.py...
 Applied patch sklearn/preprocessing/label.py cleanly.
@@ -37,12 +38,12 @@ Applied patch sklearn/preprocessing/label.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: git restore sklearn/preprocessing/tests/test_label.py 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Std. Output:
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Return Code: 0 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-10508_test.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-10508_test.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Std. Output:
 Checking patch sklearn/preprocessing/tests/test_label.py...
 Applied patch sklearn/preprocessing/tests/test_label.py cleanly.
@@ -50,40 +51,40 @@ Applied patch sklearn/preprocessing/tests/test_label.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n scikit-learn__scikit-learn__0.20 pytest -rA --tb=no -p no:cacheprovider sklearn/preprocessing/tests/test_label.py;
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: conda run -n scikit-learn__scikit-learn__0.20 pytest -rA --tb=no -p no:cacheprovider sklearn/preprocessing/tests/test_label.py 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  pytest -rA --tb=no -p no:cacheprovider sklearn/preprocessing/tests/test_label.py;
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: pytest -rA --tb=no -p no:cacheprovider sklearn/preprocessing/tests/test_label.py 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Std. Output:
 ============================= test session starts ==============================
-platform linux -- Python 3.6.13, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
-rootdir: /home/swe-bench/scikit-learn__scikit-learn, inifile: setup.cfg
+platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
+rootdir: /opt/scikit-learn__scikit-learn, inifile: setup.cfg
 collected 23 items
 
 sklearn/preprocessing/tests/test_label.py ..................xxx..        [100%]
 
 =============================== warnings summary ===============================
 sklearn/externals/joblib/func_inspect.py:53
-  /home/swe-bench/scikit-learn__scikit-learn/sklearn/externals/joblib/func_inspect.py:53: DeprecationWarning: invalid escape sequence \<
+  /opt/scikit-learn__scikit-learn/sklearn/externals/joblib/func_inspect.py:53: DeprecationWarning: invalid escape sequence \<
     '\<doctest (.*\.rst)\[(.*)\]\>', source_file).groups()
 
 sklearn/externals/joblib/_memory_helpers.py:10
-  /home/swe-bench/scikit-learn__scikit-learn/sklearn/externals/joblib/_memory_helpers.py:10: DeprecationWarning: invalid escape sequence \s
+  /opt/scikit-learn__scikit-learn/sklearn/externals/joblib/_memory_helpers.py:10: DeprecationWarning: invalid escape sequence \s
     cookie_re = re.compile("coding[:=]\s*([-\w.]+)")
 
 sklearn/datasets/samples_generator.py:843
-  /home/swe-bench/scikit-learn__scikit-learn/sklearn/datasets/samples_generator.py:843: DeprecationWarning: invalid escape sequence \#
+  /opt/scikit-learn__scikit-learn/sklearn/datasets/samples_generator.py:843: DeprecationWarning: invalid escape sequence \#
     """
 
 sklearn/datasets/samples_generator.py:905
-  /home/swe-bench/scikit-learn__scikit-learn/sklearn/datasets/samples_generator.py:905: DeprecationWarning: invalid escape sequence \#
+  /opt/scikit-learn__scikit-learn/sklearn/datasets/samples_generator.py:905: DeprecationWarning: invalid escape sequence \#
     """
 
 sklearn/datasets/samples_generator.py:971
-  /home/swe-bench/scikit-learn__scikit-learn/sklearn/datasets/samples_generator.py:971: DeprecationWarning: invalid escape sequence \#
+  /opt/scikit-learn__scikit-learn/sklearn/datasets/samples_generator.py:971: DeprecationWarning: invalid escape sequence \#
     """
 
 sklearn/datasets/samples_generator.py:1433
-  /home/swe-bench/scikit-learn__scikit-learn/sklearn/datasets/samples_generator.py:1433: DeprecationWarning: invalid escape sequence \c
+  /opt/scikit-learn__scikit-learn/sklearn/datasets/samples_generator.py:1433: DeprecationWarning: invalid escape sequence \c
     """
 
 sklearn/preprocessing/tests/test_label.py:470
@@ -99,11 +100,11 @@ sklearn/preprocessing/tests/test_label.py:502
     def test_label_binarize_multilabel():
 
 sklearn/preprocessing/tests/test_label.py::test_multilabel_binarizer_non_integer_labels
-  /home/swe-bench/miniconda3/envs/scikit-learn__scikit-learn__0.20/lib/python3.6/site-packages/numpy/testing/_private/utils.py:703: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  /opt/pyenv/versions/3.6.15/lib/python3.6/site-packages/numpy/testing/_private/utils.py:703: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
     x = array(x, copy=False, subok=True)
 
 sklearn/preprocessing/tests/test_label.py::test_multilabel_binarizer_non_integer_labels
-  /home/swe-bench/miniconda3/envs/scikit-learn__scikit-learn__0.20/lib/python3.6/site-packages/numpy/testing/_private/utils.py:704: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  /opt/pyenv/versions/3.6.15/lib/python3.6/site-packages/numpy/testing/_private/utils.py:704: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
     y = array(y, copy=False, subok=True)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
@@ -134,8 +135,7 @@ PASSED sklearn/preprocessing/tests/test_label.py::test_multilabel_binarizer_inve
 PASSED sklearn/preprocessing/tests/test_label.py::test_label_binarize_with_class_order
 PASSED sklearn/preprocessing/tests/test_label.py::test_invalid_input_label_binarize
 PASSED sklearn/preprocessing/tests/test_label.py::test_inverse_binarize_multiclass
-============== 20 passed, 3 xfailed, 11 warnings in 0.45 seconds ===============
-
+============== 20 passed, 3 xfailed, 11 warnings in 1.52 seconds ===============
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Return Code: 0 
 

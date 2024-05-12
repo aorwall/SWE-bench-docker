@@ -3,20 +3,15 @@
 	- Testbed: pytest-dev__pytest__8.0
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Command: git status --porcelain 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Std. Output:
- 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Return Code: 0 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Command: git -c advice.detachedHead=false checkout 6995257cf470d2143ad1683824962de4071c0eb7 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Std. Output:
 Previous HEAD position was 10056865d Merge pull request #11309 from bluetech/docs-xfail
 HEAD is now at 6995257cf [pre-commit.ci] pre-commit autoupdate (#11165)
  
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Return Code: 0 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-11143_pred_try.patch 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Std. Output:
 Checking patch src/_pytest/assertion/rewrite.py...
 Applied patch src/_pytest/assertion/rewrite.py cleanly.
@@ -25,7 +20,7 @@ Applied patch src/_pytest/assertion/rewrite.py cleanly.
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Command: git apply -v -R /home/swe-bench/temp_pytest-dev__pytest-11143_pred_try.patch 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Std. Output:
 Checking patch src/_pytest/assertion/rewrite.py...
 Applied patch src/_pytest/assertion/rewrite.py cleanly.
@@ -34,7 +29,7 @@ Applied patch src/_pytest/assertion/rewrite.py cleanly.
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-11143_pred.patch 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Std. Output:
 Checking patch src/_pytest/assertion/rewrite.py...
 Applied patch src/_pytest/assertion/rewrite.py cleanly.
@@ -43,12 +38,12 @@ Applied patch src/_pytest/assertion/rewrite.py cleanly.
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Command: git restore testing/test_assertrewrite.py 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Std. Output:
  
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Return Code: 0 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-11143_test.patch 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Std. Output:
 Checking patch testing/test_assertrewrite.py...
 Applied patch testing/test_assertrewrite.py cleanly.
@@ -58,7 +53,7 @@ Applied patch testing/test_assertrewrite.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pytest-dev__pytest__8.0 pytest -rA testing/test_assertrewrite.py;
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Command: conda run -n pytest-dev__pytest__8.0 pytest -rA testing/test_assertrewrite.py 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
@@ -90,7 +85,7 @@ test_rewrites_plugin_as_a_package.py F                                   [100%]
 =================================== FAILURES ===================================
 _____________________________________ test _____________________________________
 
-special_asserter = <function special_asserter.<locals>.special_assert at 0x78dfc065d670>
+special_asserter = <function special_asserter.<locals>.special_assert at 0x73fe9dbfc670>
 
 >   def test(special_asserter): special_asserter(1, 2)
 
@@ -116,7 +111,7 @@ collected 1 item
 
 test_honors_pep_235.py .                                                 [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 _________________ TestAssertionRewrite.test_assertion_message __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -137,7 +132,7 @@ E       assert 1 == 2
 test_assertion_message.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_assertion_message.py::test_foo - AssertionError: The failure message
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 ____________ TestAssertionRewrite.test_assertion_message_multiline _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -159,7 +154,7 @@ E       assert 1 == 2
 test_assertion_message_multiline.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_assertion_message_multiline.py::test_foo - AssertionError: A mult...
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 ______________ TestAssertionRewrite.test_assertion_message_tuple _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -180,7 +175,7 @@ E       assert 1 == 2
 test_assertion_message_tuple.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_assertion_message_tuple.py::test_foo - AssertionError: (1, 2)
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 _______________ TestAssertionRewrite.test_assertion_message_expr _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -201,7 +196,7 @@ E       assert 1 == 2
 test_assertion_message_expr.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_assertion_message_expr.py::test_foo - AssertionError: 3
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 ______________ TestAssertionRewrite.test_assertion_message_escape ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -253,7 +248,7 @@ collected 1 item
 
 test_at_operator_issue1290.py .                                          [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ______________ TestAssertionRewrite.test_starred_with_side_effect ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -263,7 +258,7 @@ collected 1 item
 
 test_starred_with_side_effect.py .                                       [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 __________________ TestRewriteOnImport.test_pycache_is_a_file __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -273,7 +268,7 @@ collected 1 item
 
 test_pycache_is_a_file.py .                                              [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _________________ TestRewriteOnImport.test_pycache_is_readonly _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -283,7 +278,7 @@ collected 1 item
 
 test_pycache_is_readonly.py .                                            [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _______________________ TestRewriteOnImport.test_zipfile _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -291,7 +286,7 @@ platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_zipfile0
 collected 0 items
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 ________ TestRewriteOnImport.test_load_resource_via_files_with_rewrite _________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -302,7 +297,7 @@ collecting ... collected 1 item
 
 test_load.py::test_load PASSED                                           [100%]
 
-============================== 1 passed in 0.02s ===============================
+============================== 1 passed in 0.01s ===============================
 ______________________ TestRewriteOnImport.test_readonly _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -312,7 +307,7 @@ collected 1 item
 
 testing/test_readonly.py .                                               [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 __________________ TestRewriteOnImport.test_orphaned_pyc_file __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -322,7 +317,7 @@ collected 1 item
 
 test_orphaned_pyc_file.py .                                              [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _______________________ TestRewriteOnImport.test_package _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -342,7 +337,7 @@ collected 1 item
 
 test_newlines.py .                                                       [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ______________ TestRewriteOnImport.test_package_without__init__py ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -350,7 +345,7 @@ platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_package_without__init__py0
 collected 0 items
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 __________ TestAssertionRewriteHookDetails.test_sys_meta_path_munged ___________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -404,7 +399,7 @@ E        +    where <bound method LongReprWithBraces.some_method of LongReprWith
 test_issue731.py:10: AssertionError
 =========================== short test summary info ============================
 FAILED test_issue731.py::test_long_repr - assert False
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 ________________________ TestIssue925.test_simple_case _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -444,7 +439,7 @@ E        assert (False == True) == True
 test_long_case.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_long_case.py::test_ternary_display - assert (False == True) == True
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 _______________________ TestIssue925.test_many_brackets ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -464,7 +459,7 @@ E        assert True == ((False == True) == True)
 test_many_brackets.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_many_brackets.py::test_ternary_display - assert True == ((False =...
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 ___________ TestIssue2121.test_rewrite_python_files_contain_subdirs ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -485,7 +480,7 @@ E       assert (1 + 1) == 3
 tests/file.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED tests/file.py::test_simple_failure - assert (1 + 1) == 3
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 ________________ TestIssue10743.test_assertion_walrus_operator _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -505,7 +500,7 @@ collected 1 item
 
 test_assertion_walrus_operator_dont_rewrite.py .                         [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _____________ TestIssue10743.test_assertion_inline_walrus_operator _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -525,7 +520,7 @@ collected 1 item
 
 test_assertion_inline_walrus_operator_reverse.py .                       [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ________ TestIssue10743.test_assertion_walrus_no_variable_name_conflict ________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -658,7 +653,7 @@ collected 1 item
 
 test_assertion_walrus_operator_in_operand.py .                           [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _____ TestIssue11028.test_assertion_walrus_operator_in_operand_json_dumps ______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -668,7 +663,7 @@ collected 1 item
 
 test_assertion_walrus_operator_in_operand_json_dumps.py .                [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ____ TestIssue11028.test_assertion_walrus_operator_equals_operand_function _____
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -678,7 +673,7 @@ collected 1 item
 
 test_assertion_walrus_operator_equals_operand_function.py .              [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _ TestIssue11028.test_assertion_walrus_operator_equals_operand_function_keyword_arg _
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -688,7 +683,7 @@ collected 1 item
 
 test_assertion_walrus_operator_equals_operand_function_keyword_arg.py .  [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _ TestIssue11028.test_assertion_walrus_operator_equals_operand_function_arg_as_function _
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -698,7 +693,7 @@ collected 1 item
 
 test_assertion_walrus_operator_equals_operand_function_arg_as_function.py . [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ______ TestIssue11028.test_assertion_walrus_operator_gt_operand_function _______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -719,7 +714,7 @@ E      +  where 5 = add_one(4)
 test_assertion_walrus_operator_gt_operand_function.py:5: AssertionError
 =========================== short test summary info ============================
 FAILED test_assertion_walrus_operator_gt_operand_function.py::test_gt - asser...
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 _______________________ test_source_mtime_long_long[-1] ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -749,7 +744,7 @@ collected 1 item
 
 test_test.py .                                                           [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _______________________ TestAssertionPass.test_hook_call _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -806,7 +801,7 @@ test_hook_call.py:11: AssertionError
 =========================== short test summary info ============================
 FAILED test_hook_call.py::test_simple - Exception: Assertion Passed: a+b == c...
 FAILED test_hook_call.py::test_fails - assert with message
-============================== 2 failed in 0.04s ===============================
+============================== 2 failed in 0.07s ===============================
 _________________ TestAssertionPass.test_hook_call_with_parens _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -849,7 +844,7 @@ E        +  where 1 = f() at line 3
 conftest.py:2: Exception
 =========================== short test summary info ============================
 FAILED test_hook_call_with_parens.py::test - Exception: Assertion Passed: f() 1
-============================== 1 failed in 0.05s ===============================
+============================== 1 failed in 0.08s ===============================
 ___________ TestAssertionPass.test_hook_not_called_without_hookimpl ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -945,7 +940,7 @@ E       AssertionError: assert 'hello world' in 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 test_max_increased_verbosity.py:3: AssertionError
 =========================== short test summary info ============================
 FAILED test_max_increased_verbosity.py::test_very_long_string - AssertionErro...
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 _________ TestIssue11140.test_constant_not_picked_as_module_docstring __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -955,7 +950,7 @@ collected 1 item
 
 test_constant_not_picked_as_module_docstring.py .                        [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ________________ TestAssertionRewrite.test_dont_rewrite_plugin _________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_dont_rewrite_plugin0/runpytest-0
@@ -991,7 +986,7 @@ collected 1 item
 
 test_foo.py .                                                            [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _____________________ TestRewriteOnImport.test_pyc_vs_pyo ______________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_pyc_vs_pyo0/runpytest-1 --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_pyc_vs_pyo0/runpytest-0
@@ -1010,7 +1005,7 @@ test_pyc_vs_pyo.py .                                                     [100%]
     self._warn_about_missing_assertion(mode)
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-========================= 1 passed, 1 warning in 0.01s =========================
+========================= 1 passed, 1 warning in 0.02s =========================
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_pyc_vs_pyo0/runpytest-2 --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_pyc_vs_pyo0/runpytest-0
      in: /tmp/pytest-of-swe-bench/pytest-0/test_pyc_vs_pyo0
 ============================= test session starts ==============================
@@ -1048,7 +1043,7 @@ conftest.py:2
     pytest.register_assert_rewrite("_pytest")
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-============================== 1 warning in 0.00s ==============================
+============================== 1 warning in 0.01s ==============================
 ________ TestRewriteOnImport.test_rewrite_module_imported_from_conftest ________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_rewrite_module_imported_from_conftest0/runpytest-0
@@ -1060,7 +1055,7 @@ collected 1 item
 
 test_rewrite_module_imported.py .                                        [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ________ TestRewriteOnImport.test_rewrite_warning_using_pytest_plugins _________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_rewrite_warning_using_pytest_plugins0/runpytest-0
@@ -1072,7 +1067,7 @@ collected 1 item
 
 test_rewrite_warning_pytest_plugins.py .                                 [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ____ TestRewriteOnImport.test_rewrite_warning_using_pytest_plugins_env_var _____
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_rewrite_warning_using_pytest_plugins_env_var0/runpytest-0
@@ -1084,7 +1079,7 @@ collected 1 item
 
 test_rewrite_warning_using_pytest_plugins_env_var.py .                   [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ______ TestAssertionRewriteHookDetails.test_resources_provider_for_loader ______
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_resources_provider_for_loader0/runpytest-0
@@ -1102,7 +1097,7 @@ testpkg/test_pkg.py:1
     import pkg_resources
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-========================= 1 passed, 1 warning in 0.05s =========================
+========================= 1 passed, 1 warning in 0.08s =========================
 =========================== short test summary info ============================
 PASSED testing/test_assertrewrite.py::TestAssertionRewrite::test_place_initial_imports
 PASSED testing/test_assertrewrite.py::TestAssertionRewrite::test_location_is_set
@@ -1220,7 +1215,7 @@ PASSED testing/test_assertrewrite.py::TestRewriteOnImport::test_rewrite_module_i
 PASSED testing/test_assertrewrite.py::TestRewriteOnImport::test_rewrite_warning_using_pytest_plugins
 PASSED testing/test_assertrewrite.py::TestRewriteOnImport::test_rewrite_warning_using_pytest_plugins_env_var
 PASSED testing/test_assertrewrite.py::TestAssertionRewriteHookDetails::test_resources_provider_for_loader
-============================= 116 passed in 4.74s ==============================
+============================= 116 passed in 8.56s ==============================
 
  
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Return Code: 0 

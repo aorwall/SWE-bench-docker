@@ -3,20 +3,15 @@
 	- Testbed: sqlfluff__sqlfluff__0.6
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Command: git status --porcelain 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Std. Output:
- 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Return Code: 0 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Command: git -c advice.detachedHead=false checkout a1579a16b1d8913d9d7c7d12add374a290bcc78c 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Std. Output:
 Previous HEAD position was 67023b85 Add __all__ attributes to __init__.py files to resolve F401 (#1949)
 HEAD is now at a1579a16 MySQL: Add drop index support (#1738)
  
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Return Code: 0 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1733_pred_try.patch 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Std. Output:
 Checking patch src/sqlfluff/rules/L039.py...
 Applied patch src/sqlfluff/rules/L039.py cleanly.
@@ -25,7 +20,7 @@ Applied patch src/sqlfluff/rules/L039.py cleanly.
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Command: git apply -v -R /home/swe-bench/temp_sqlfluff__sqlfluff-1733_pred_try.patch 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Std. Output:
 Checking patch src/sqlfluff/rules/L039.py...
 Applied patch src/sqlfluff/rules/L039.py cleanly.
@@ -34,7 +29,7 @@ Applied patch src/sqlfluff/rules/L039.py cleanly.
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1733_pred.patch 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Std. Output:
 Checking patch src/sqlfluff/rules/L039.py...
 Applied patch src/sqlfluff/rules/L039.py cleanly.
@@ -43,7 +38,7 @@ Applied patch src/sqlfluff/rules/L039.py cleanly.
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Command: git apply -v /home/swe-bench/temp_sqlfluff__sqlfluff-1733_test.patch 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Std. Output:
 Checking patch test/rules/std_L003_L036_L039_combo_test.py...
 Checking patch test/rules/std_L016_L36_combo.py => test/rules/std_L016_L36_combo_test.py...
@@ -53,9 +48,9 @@ Applied patch test/rules/std_L016_L36_combo.py => test/rules/std_L016_L36_combo_
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Return Code: 0 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA -p no:cacheprovider test/rules/std_L003_L036_L039_combo_test.py test/rules/std_L016_L36_combo_test.py;
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Command: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA -p no:cacheprovider test/rules/std_L003_L036_L039_combo_test.py test/rules/std_L016_L36_combo_test.py 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA --tb=no -p no:cacheprovider test/rules/std_L003_L036_L039_combo_test.py test/rules/std_L016_L36_combo_test.py;
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Command: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA --tb=no -p no:cacheprovider test/rules/std_L003_L036_L039_combo_test.py test/rules/std_L016_L36_combo_test.py 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Std. Output:
 ============================= test session starts ==============================
 collected 4 items
@@ -69,16 +64,12 @@ src/sqlfluff/__init__.py:9
     import pkg_resources
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-==================================== PASSES ====================================
-__________________ test__rules__std_L016_L036_long_line_fix2 ___________________
------------------------------- Captured log call -------------------------------
-WARNING  sqlfluff.linter:linter.py:286 One fix for L016 not applied, it would re-cause the same error.
 =========================== short test summary info ============================
 PASSED test/rules/std_L003_L036_L039_combo_test.py::test__rules__std_L003_L036_L039
 PASSED test/rules/std_L016_L36_combo_test.py::test__rules__std_L016_L036_long_line_lint
 PASSED test/rules/std_L016_L36_combo_test.py::test__rules__std_L016_L036_long_line_fix
 PASSED test/rules/std_L016_L36_combo_test.py::test__rules__std_L016_L036_long_line_fix2
-========================= 4 passed, 1 warning in 0.72s =========================
+========================= 4 passed, 1 warning in 1.48s =========================
 
  
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Return Code: 0 

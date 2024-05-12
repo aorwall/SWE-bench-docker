@@ -1,16 +1,17 @@
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Task Metadata:
 	- Instance ID: scikit-learn__scikit-learn-11281
 	- Testbed: scikit-learn__scikit-learn__0.20
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
+ 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: git -c advice.detachedHead=false checkout 4143356c3c51831300789e4fdf795d83716dbab6 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Std. Output:
 HEAD is now at 4143356c3 DOC note that greater is better for scorer
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Return Code: 0 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-11281_pred_try.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-11281_pred_try.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Std. Output:
 Checking patch sklearn/mixture/base.py...
 Applied patch sklearn/mixture/base.py cleanly.
@@ -18,8 +19,8 @@ Applied patch sklearn/mixture/base.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-11281_pred_try.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: git apply -v -R /opt/temp_scikit-learn__scikit-learn-11281_pred_try.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Std. Output:
 Checking patch sklearn/mixture/base.py...
 Applied patch sklearn/mixture/base.py cleanly.
@@ -27,8 +28,8 @@ Applied patch sklearn/mixture/base.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-11281_pred.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-11281_pred.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Std. Output:
 Checking patch sklearn/mixture/base.py...
 Applied patch sklearn/mixture/base.py cleanly.
@@ -37,17 +38,17 @@ Applied patch sklearn/mixture/base.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: git restore sklearn/mixture/tests/test_bayesian_mixture.py 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Std. Output:
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: git restore sklearn/mixture/tests/test_gaussian_mixture.py 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Std. Output:
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Return Code: 0 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-11281_test.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-11281_test.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Std. Output:
 Checking patch sklearn/mixture/tests/test_bayesian_mixture.py...
 Checking patch sklearn/mixture/tests/test_gaussian_mixture.py...
@@ -57,13 +58,13 @@ Applied patch sklearn/mixture/tests/test_gaussian_mixture.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n scikit-learn__scikit-learn__0.20 pytest -rA --tb=no -p no:cacheprovider sklearn/mixture/tests/test_bayesian_mixture.py sklearn/mixture/tests/test_gaussian_mixture.py;
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: conda run -n scikit-learn__scikit-learn__0.20 pytest -rA --tb=no -p no:cacheprovider sklearn/mixture/tests/test_bayesian_mixture.py sklearn/mixture/tests/test_gaussian_mixture.py 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  pytest -rA --tb=no -p no:cacheprovider sklearn/mixture/tests/test_bayesian_mixture.py sklearn/mixture/tests/test_gaussian_mixture.py;
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Command: pytest -rA --tb=no -p no:cacheprovider sklearn/mixture/tests/test_bayesian_mixture.py sklearn/mixture/tests/test_gaussian_mixture.py 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Std. Output:
 ============================= test session starts ==============================
-platform linux -- Python 3.6.13, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
-rootdir: /home/swe-bench/scikit-learn__scikit-learn, inifile: setup.cfg
+platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
+rootdir: /opt/scikit-learn__scikit-learn, inifile: setup.cfg
 collected 45 items
 
 sklearn/mixture/tests/test_bayesian_mixture.py ...............           [ 33%]
@@ -79,7 +80,7 @@ sklearn/mixture/tests/test_bayesian_mixture.py::test_bayesian_mixture_fit_predic
 sklearn/mixture/tests/test_bayesian_mixture.py::test_bayesian_mixture_fit_predict
 sklearn/mixture/tests/test_bayesian_mixture.py::test_bayesian_mixture_fit_predict
 sklearn/mixture/tests/test_bayesian_mixture.py::test_bayesian_mixture_fit_predict
-  /home/swe-bench/scikit-learn__scikit-learn/sklearn/mixture/base.py:264: ConvergenceWarning: Initialization 1 did not converge. Try different init parameters, or increase max_iter, tol or check for degenerate data.
+  /opt/scikit-learn__scikit-learn/sklearn/mixture/base.py:264: ConvergenceWarning: Initialization 1 did not converge. Try different init parameters, or increase max_iter, tol or check for degenerate data.
     % (init + 1), ConvergenceWarning)
 
 sklearn/mixture/tests/test_gaussian_mixture.py::test_regularisation
@@ -90,7 +91,7 @@ sklearn/mixture/tests/test_gaussian_mixture.py::test_regularisation
 sklearn/mixture/tests/test_gaussian_mixture.py::test_regularisation
 sklearn/mixture/tests/test_gaussian_mixture.py::test_regularisation
 sklearn/mixture/tests/test_gaussian_mixture.py::test_regularisation
-  /home/swe-bench/scikit-learn__scikit-learn/sklearn/cluster/k_means_.py:959: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (10). Possibly due to duplicate points in X.
+  /opt/scikit-learn__scikit-learn/sklearn/cluster/k_means_.py:959: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (10). Possibly due to duplicate points in X.
     return_n_iter=True)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
@@ -140,8 +141,7 @@ PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_regularisation
 PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_property
 PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_sample
 PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_init
-==================== 45 passed, 16 warnings in 5.07 seconds ====================
-
+=================== 45 passed, 16 warnings in 10.35 seconds ====================
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11281] Return Code: 0 
 

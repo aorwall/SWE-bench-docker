@@ -1,22 +1,18 @@
 [django__django__3.0] [django__django-11019] Task Metadata:
 	- Instance ID: django__django-11019
 	- Testbed: django__django__3.0
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.0] [django__django-11019] Command: git status --porcelain 
-[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.0] [django__django-11019] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.0] [django__django-11019] Return Code: 0 
 [django__django__3.0] [django__django-11019] Command: git -c advice.detachedHead=false checkout 93e892bb645b16ebaf287beb5fe7f3ffe8d10408 
-[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11019] Std. Output:
 Previous HEAD position was 419a78300f [3.0.x] Fixed typo in docs/ref/contrib/postgres/forms.txt.
 HEAD is now at 93e892bb64 Refs #29523 -- Updated admin's collapse.min.js.
  
 [django__django__3.0] [django__django-11019] Return Code: 0 
-[django__django__3.0] [django__django-11019] Command: git apply -v /home/swe-bench/temp_django__django-11019_pred_try.patch 
-[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11019] Command: git apply -v /opt/temp_django__django-11019_pred_try.patch 
+[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11019] Std. Output:
 Checking patch django/forms/widgets.py...
 Applied patch django/forms/widgets.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/forms/widgets.py cleanly.
 [django__django__3.0] [django__django-11019] Return Code: 0 
 [django__django__3.0] [django__django-11019] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.0] [django__django-11019] Command: git apply -v -R /home/swe-bench/temp_django__django-11019_pred_try.patch 
-[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11019] Command: git apply -v -R /opt/temp_django__django-11019_pred_try.patch 
+[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11019] Std. Output:
 Checking patch django/forms/widgets.py...
 Applied patch django/forms/widgets.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/forms/widgets.py cleanly.
 [django__django__3.0] [django__django-11019] Return Code: 0 
 [django__django__3.0] [django__django-11019] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.0] [django__django-11019] Command: git apply -v /home/swe-bench/temp_django__django-11019_pred.patch 
-[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11019] Command: git apply -v /opt/temp_django__django-11019_pred.patch 
+[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11019] Std. Output:
 Checking patch django/forms/widgets.py...
 Applied patch django/forms/widgets.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/forms/widgets.py cleanly.
 [django__django__3.0] [django__django-11019] Return Code: 0 
 [django__django__3.0] [django__django-11019] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.0] [django__django-11019] Command: git apply -v /home/swe-bench/temp_django__django-11019_test.patch 
-[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11019] Command: git apply -v /opt/temp_django__django-11019_test.patch 
+[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11019] Std. Output:
 Checking patch tests/admin_inlines/tests.py...
 Checking patch tests/admin_widgets/test_autocomplete_widget.py...
@@ -55,10 +51,99 @@ Applied patch tests/forms_tests/tests/test_media.py cleanly.
 [django__django__3.0] [django__django-11019] Return Code: 0 
 [django__django__3.0] [django__django-11019] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.0 ./tests/runtests.py --verbosity 2 admin_inlines.tests admin_widgets.test_autocomplete_widget forms_tests.tests.test_media;
-[django__django__3.0] [django__django-11019] Command: conda run -n django__django__3.0 ./tests/runtests.py --verbosity 2 admin_inlines.tests admin_widgets.test_autocomplete_widget forms_tests.tests.test_media 
-[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 admin_inlines.tests admin_widgets.test_autocomplete_widget forms_tests.tests.test_media;
+[django__django__3.0] [django__django-11019] Command: ./tests/runtests.py --verbosity 2 admin_inlines.tests admin_widgets.test_autocomplete_widget forms_tests.tests.test_media 
+[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.0] [django__django-11019] Std. Output:
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Importing application admin_inlines
+Importing application admin_widgets
+Importing application forms_tests
+Skipping setup of unused database(s): other.
+Operations to perform:
+  Synchronize unmigrated apps: admin_inlines, admin_widgets, auth, contenttypes, forms_tests, messages, sessions, staticfiles
+  Apply all migrations: admin, sites
+Synchronizing apps without migrations:
+  Creating tables...
+    Creating table django_content_type
+    Creating table auth_permission
+    Creating table auth_group
+    Creating table auth_user
+    Creating table django_session
+    Creating table admin_inlines_parent
+    Creating table admin_inlines_teacher
+    Creating table admin_inlines_child
+    Creating table admin_inlines_book
+    Creating table admin_inlines_author
+    Creating table admin_inlines_nonautopkbook
+    Creating table admin_inlines_nonautopkbookchild
+    Creating table admin_inlines_editablepkbook
+    Creating table admin_inlines_holder
+    Creating table admin_inlines_inner
+    Creating table admin_inlines_holder2
+    Creating table admin_inlines_inner2
+    Creating table admin_inlines_holder3
+    Creating table admin_inlines_inner3
+    Creating table admin_inlines_holder4
+    Creating table admin_inlines_inner4stacked
+    Creating table admin_inlines_inner4tabular
+    Creating table admin_inlines_person
+    Creating table admin_inlines_outfititem
+    Creating table admin_inlines_fashionista
+    Creating table admin_inlines_shoppingweakness
+    Creating table admin_inlines_titlecollection
+    Creating table admin_inlines_title
+    Creating table admin_inlines_poll
+    Creating table admin_inlines_question
+    Creating table admin_inlines_novel
+    Creating table admin_inlines_chapter
+    Creating table admin_inlines_footnote
+    Creating table admin_inlines_capofamiglia
+    Creating table admin_inlines_consigliere
+    Creating table admin_inlines_sottocapo
+    Creating table admin_inlines_readonlyinline
+    Creating table admin_inlines_parentmodelwithcustompk
+    Creating table admin_inlines_childmodel1
+    Creating table admin_inlines_childmodel2
+    Creating table admin_inlines_binarytree
+    Creating table admin_inlines_lifeform
+    Creating table admin_inlines_extraterrestrial
+    Creating table admin_inlines_sighting
+    Creating table admin_inlines_someparentmodel
+    Creating table admin_inlines_somechildmodel
+    Creating table admin_inlines_profilecollection
+    Creating table admin_inlines_profile
+    Creating table admin_widgets_member
+    Creating table admin_widgets_band
+    Creating table admin_widgets_album
+    Creating table admin_widgets_inventory
+    Creating table admin_widgets_event
+    Creating table admin_widgets_car
+    Creating table admin_widgets_cartire
+    Creating table admin_widgets_honeycomb
+    Creating table admin_widgets_bee
+    Creating table admin_widgets_individual
+    Creating table admin_widgets_company
+    Creating table admin_widgets_advisor
+    Creating table admin_widgets_student
+    Creating table admin_widgets_school
+    Creating table admin_widgets_profile
+    Creating table forms_tests_boundarymodel
+    Creating table forms_tests_defaults
+    Creating table forms_tests_choicemodel
+    Creating table forms_tests_choiceoptionmodel
+    Creating table forms_tests_choicefieldmodel
+    Creating table forms_tests_optionalmultichoicemodel
+    Creating table forms_tests_filemodel
+    Creating table forms_tests_article
+    Running deferred SQL...
+Running migrations:
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying sites.0001_initial... OK
+  Applying sites.0002_alter_domain_unique... OK
+System check identified no issues (0 silenced).
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
@@ -162,7 +247,7 @@ test_tabular_model_form_meta_readonly_field (admin_inlines.tests.TestInline) ...
 test_tabular_non_field_errors (admin_inlines.tests.TestInline) ... ok
 
 ----------------------------------------------------------------------
-Ran 80 tests in 1.530s
+Ran 80 tests in 4.671s
 
 OK (skipped=6)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
@@ -174,97 +259,6 @@ Destroying test database for alias 'default' ('file:memorydb_default?mode=memory
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
-Importing application admin_inlines
-Importing application admin_widgets
-Importing application forms_tests
-Skipping setup of unused database(s): other.
-Operations to perform:
-  Synchronize unmigrated apps: admin_inlines, admin_widgets, auth, contenttypes, forms_tests, messages, sessions, staticfiles
-  Apply all migrations: admin, sites
-Synchronizing apps without migrations:
-  Creating tables...
-    Creating table django_content_type
-    Creating table auth_permission
-    Creating table auth_group
-    Creating table auth_user
-    Creating table django_session
-    Creating table admin_inlines_parent
-    Creating table admin_inlines_teacher
-    Creating table admin_inlines_child
-    Creating table admin_inlines_book
-    Creating table admin_inlines_author
-    Creating table admin_inlines_nonautopkbook
-    Creating table admin_inlines_nonautopkbookchild
-    Creating table admin_inlines_editablepkbook
-    Creating table admin_inlines_holder
-    Creating table admin_inlines_inner
-    Creating table admin_inlines_holder2
-    Creating table admin_inlines_inner2
-    Creating table admin_inlines_holder3
-    Creating table admin_inlines_inner3
-    Creating table admin_inlines_holder4
-    Creating table admin_inlines_inner4stacked
-    Creating table admin_inlines_inner4tabular
-    Creating table admin_inlines_person
-    Creating table admin_inlines_outfititem
-    Creating table admin_inlines_fashionista
-    Creating table admin_inlines_shoppingweakness
-    Creating table admin_inlines_titlecollection
-    Creating table admin_inlines_title
-    Creating table admin_inlines_poll
-    Creating table admin_inlines_question
-    Creating table admin_inlines_novel
-    Creating table admin_inlines_chapter
-    Creating table admin_inlines_footnote
-    Creating table admin_inlines_capofamiglia
-    Creating table admin_inlines_consigliere
-    Creating table admin_inlines_sottocapo
-    Creating table admin_inlines_readonlyinline
-    Creating table admin_inlines_parentmodelwithcustompk
-    Creating table admin_inlines_childmodel1
-    Creating table admin_inlines_childmodel2
-    Creating table admin_inlines_binarytree
-    Creating table admin_inlines_lifeform
-    Creating table admin_inlines_extraterrestrial
-    Creating table admin_inlines_sighting
-    Creating table admin_inlines_someparentmodel
-    Creating table admin_inlines_somechildmodel
-    Creating table admin_inlines_profilecollection
-    Creating table admin_inlines_profile
-    Creating table admin_widgets_member
-    Creating table admin_widgets_band
-    Creating table admin_widgets_album
-    Creating table admin_widgets_inventory
-    Creating table admin_widgets_event
-    Creating table admin_widgets_car
-    Creating table admin_widgets_cartire
-    Creating table admin_widgets_honeycomb
-    Creating table admin_widgets_bee
-    Creating table admin_widgets_individual
-    Creating table admin_widgets_company
-    Creating table admin_widgets_advisor
-    Creating table admin_widgets_student
-    Creating table admin_widgets_school
-    Creating table admin_widgets_profile
-    Creating table forms_tests_boundarymodel
-    Creating table forms_tests_defaults
-    Creating table forms_tests_choicemodel
-    Creating table forms_tests_choiceoptionmodel
-    Creating table forms_tests_choicefieldmodel
-    Creating table forms_tests_optionalmultichoicemodel
-    Creating table forms_tests_filemodel
-    Creating table forms_tests_article
-    Running deferred SQL...
-Running migrations:
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying admin.0003_logentry_add_action_flag_choices... OK
-  Applying sites.0001_initial... OK
-  Applying sites.0002_alter_domain_unique... OK
-System check identified no issues (0 silenced).
-
  
 [django__django__3.0] [django__django-11019] Return Code: 0 
 

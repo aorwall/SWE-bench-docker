@@ -4,14 +4,14 @@
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Command: git -c advice.detachedHead=false checkout db6ee8dd4a747b8864caae36c5d05883976a3ae5 
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Std. Output:
 Previous HEAD position was 4c2d1aed use fullname for auto-summary (#4368)
 HEAD is now at db6ee8dd Update hypothesis requirement from <6.72.1 to <6.72.2 (#4307)
  
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Return Code: 0 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Command: git apply -v /home/swe-bench/temp_pyvista__pyvista-4315_pred_try.patch 
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Std. Output:
 Checking patch pyvista/core/grid.py...
 Applied patch pyvista/core/grid.py cleanly.
@@ -20,7 +20,7 @@ Applied patch pyvista/core/grid.py cleanly.
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Command: git apply -v -R /home/swe-bench/temp_pyvista__pyvista-4315_pred_try.patch 
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Std. Output:
 Checking patch pyvista/core/grid.py...
 Applied patch pyvista/core/grid.py cleanly.
@@ -29,7 +29,7 @@ Applied patch pyvista/core/grid.py cleanly.
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Command: git apply -v /home/swe-bench/temp_pyvista__pyvista-4315_pred.patch 
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Std. Output:
 Checking patch pyvista/core/grid.py...
 Applied patch pyvista/core/grid.py cleanly.
@@ -38,12 +38,12 @@ Applied patch pyvista/core/grid.py cleanly.
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Command: git restore tests/test_grid.py 
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Std. Output:
  
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Return Code: 0 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Command: git apply -v /home/swe-bench/temp_pyvista__pyvista-4315_test.patch 
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Std. Output:
 Checking patch tests/test_grid.py...
 Applied patch tests/test_grid.py cleanly.
@@ -53,7 +53,7 @@ Applied patch tests/test_grid.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pyvista__pyvista__0.39 pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_grid.py;
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Command: conda run -n pyvista__pyvista__0.39 pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_grid.py 
-[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pyvista__pyvista__0.39] [pyvista__pyvista-4315] Subprocess args: {"cwd": "/home/swe-bench/pyvista__pyvista", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Std. Output:
 ============================= test session starts ==============================
 collected 116 items
@@ -61,58 +61,38 @@ collected 116 items
 tests/test_grid.py .s................................................... [ 45%]
 ...............................................................          [100%]
 ========================= memory consumption estimates =========================
-tests::test_grid.py::test_fft_and_rfft                                       - 75.1 MB
-tests::test_grid.py::test_fft_low_pass                                       - 34.1 MB
-tests::test_grid.py::test_init_bad_filename                                  - 26.2 MB
-tests::test_grid.py::test_save_rectilinear[.vtk-False]                       - 13.8 MB
-tests::test_grid.py::test_grid_extract_selection_points                      - 11.9 MB
-tests::test_grid.py::test_save_rectilinear[.vtr-True]                        - 8.9 MB
-tests::test_grid.py::test_ExplicitStructuredGrid_cell_id                     - 7.9 MB
-tests::test_grid.py::test_ExplicitStructuredGrid_hide_cells                  - 7.4 MB
-tests::test_grid.py::test_save_rectilinear[.vtr-False]                       - 7.2 MB
-tests::test_grid.py::test_init_structured                                    - 7.2 MB
-tests::test_grid.py::test_instantiate_by_filename                            - 7.0 MB
-tests::test_grid.py::test_ExplicitStructuredGrid_save                        - 5.7 MB
-tests::test_grid.py::test_init_from_dict[True-False]                         - 4.0 MB
-tests::test_grid.py::test_cells_dict_hexbeam_file                            - 3.9 MB
-tests::test_grid.py::test_pathlib_read_write                                 - 3.9 MB
-tests::test_grid.py::test_init_from_arrays[False]                            - 3.9 MB
-tests::test_grid.py::test_create_rectilinear_grid_from_file                  - 3.7 MB
-tests::test_grid.py::test_read_uniform_grid_from_file                        - 3.7 MB
-tests::test_grid.py::test_ExplicitStructuredGrid_show_cells                  - 3.7 MB
-tests::test_grid.py::test_init_from_dict[False-True]                         - 3.4 MB
-tests::test_grid.py::test_UnstructuredGrid_cast_to_explicit_structured_grid  - 3.1 MB
-tests::test_grid.py::test_save_structured[.vtk-False]                        - 3.0 MB
-tests::test_grid.py::test_save[.vtu-True]                                    - 2.9 MB
-tests::test_grid.py::test_save_uniform[.vtk-False]                           - 2.2 MB
-tests::test_grid.py::test_uniform_grid_invald_args                           - 2.0 MB
-tests::test_grid.py::test_remove_cells_invalid                               - 2.0 MB
-tests::test_grid.py::test_ExplicitStructuredGrid_compute_connectivity        - 1.9 MB
-tests::test_grid.py::test_copy_no_copy_wrap_object                           - 1.7 MB
-tests::test_grid.py::test_fft_high_pass                                      - 1.5 MB
-tests::test_grid.py::test_extract_feature_edges                              - 1.1 MB
-tests::test_grid.py::test_save[.vtk-False]                                   - 1008.0 KB
-tests::test_grid.py::test_cast_rectilinear_grid                              - 1008.0 KB
-tests::test_grid.py::test_ExplicitStructuredGrid_compute_connections         - 996.0 KB
-tests::test_grid.py::test_volume                                             - 888.0 KB
-tests::test_grid.py::test_slice_structured                                   - 784.0 KB
-tests::test_grid.py::test_save_structured[.vtk-True]                         - 756.0 KB
-tests::test_grid.py::test_remove_cells_not_inplace[ind2]                     - 664.0 KB
-tests::test_grid.py::test_hide_points[ind2]                                  - 620.0 KB
-tests::test_grid.py::test_extract_cells[True]                                - 592.0 KB
-tests::test_grid.py::test_init_from_dict[False-False]                        - 504.0 KB
-tests::test_grid.py::test_gaussian_smooth                                    - 504.0 KB
-tests::test_grid.py::test_ExplicitStructuredGrid_cast_to_unstructured_grid   - 504.0 KB
-tests::test_grid.py::test_ExplicitStructuredGrid_init                        - 468.0 KB
-tests::test_grid.py::test_init_from_structured                               - 464.0 KB
-tests::test_grid.py::test_surface_indices                                    - 420.0 KB
-tests::test_grid.py::test_save_uniform[.vti-True]                            - 248.0 KB
-tests::test_grid.py::test_no_copy_structured_mesh_init                       - 240.0 KB
-tests::test_grid.py::test_ExplicitStructuredGrid_visible_bounds              - 240.0 KB
-tests::test_grid.py::test_ExplicitStructuredGrid_neighbors                   - 212.0 KB
-tests::test_grid.py::test_remove_cells_not_inplace[ind1]                     - 164.0 KB
-tests::test_grid.py::test_remove_cells[ind1]                                 - 84.0 KB
-tests::test_grid.py::test_remove_cells[ind2]                                 - 8.0 KB
+tests::test_grid.py::test_init_bad_filename                            - 19.7 MB
+tests::test_grid.py::test_fft_high_pass                                - 8.8 MB
+tests::test_grid.py::test_extract_feature_edges                        - 7.9 MB
+tests::test_grid.py::test_save_rectilinear[.vtk-True]                  - 6.0 MB
+tests::test_grid.py::test_init_bad_input                               - 2.0 MB
+tests::test_grid.py::test_merge_not_main                               - 2.0 MB
+tests::test_grid.py::test_no_copy_unstructured_grid_points_setter      - 2.0 MB
+tests::test_grid.py::test_no_copy_rectilinear_grid                     - 2.0 MB
+tests::test_grid.py::test_copy_no_copy_wrap_object_vtk9                - 2.0 MB
+tests::test_grid.py::test_cast_rectilinear_grid                        - 1.6 MB
+tests::test_grid.py::test_fft_and_rfft                                 - 1.4 MB
+tests::test_grid.py::test_surface_indices                              - 1.1 MB
+tests::test_grid.py::test_pathlib_read_write                           - 1008.0 KB
+tests::test_grid.py::test_hide_points[ind0]                            - 1008.0 KB
+tests::test_grid.py::test_create_rectilinear_after_init                - 992.0 KB
+tests::test_grid.py::test_extract_cells[True]                          - 880.0 KB
+tests::test_grid.py::test_init_from_arrays[False]                      - 756.0 KB
+tests::test_grid.py::test_create_rectilinear_grid_from_file            - 756.0 KB
+tests::test_grid.py::test_read_rectilinear_grid_from_pathlib           - 756.0 KB
+tests::test_grid.py::test_init_from_dict[True-True]                    - 716.0 KB
+tests::test_grid.py::test_save[.vtk-True]                              - 716.0 KB
+tests::test_grid.py::test_ExplicitStructuredGrid_visible_bounds        - 716.0 KB
+tests::test_grid.py::test_ExplicitStructuredGrid_compute_connectivity  - 712.0 KB
+tests::test_grid.py::test_no_copy_polydata_points_setter               - 504.0 KB
+tests::test_grid.py::test_no_copy_structured_mesh_points_setter        - 504.0 KB
+tests::test_grid.py::test_remove_cells_invalid                         - 476.0 KB
+tests::test_grid.py::test_copy_no_copy_wrap_object                     - 356.0 KB
+tests::test_grid.py::test_init_structured                              - 252.0 KB
+tests::test_grid.py::test_create_uniform_grid_from_specs               - 212.0 KB
+tests::test_grid.py::test_save_uniform[.vti-True]                      - 172.0 KB
+tests::test_grid.py::test_hide_points[ind1]                            - 172.0 KB
+tests::test_grid.py::test_fft_low_pass                                 - 64.0 KB
 
 =========================== short test summary info ============================
 PASSED tests/test_grid.py::test_volume
@@ -231,7 +211,7 @@ PASSED tests/test_grid.py::test_ExplicitStructuredGrid_raise_init
 PASSED tests/test_grid.py::test_copy_no_copy_wrap_object
 PASSED tests/test_grid.py::test_copy_no_copy_wrap_object_vtk9
 SKIPPED [1] tests/test_grid.py:31: Requires system to support plotting
-======================== 115 passed, 1 skipped in 2.10s ========================
+======================== 115 passed, 1 skipped in 2.04s ========================
 
  
 [pyvista__pyvista__0.39] [pyvista__pyvista-4315] Return Code: 0 

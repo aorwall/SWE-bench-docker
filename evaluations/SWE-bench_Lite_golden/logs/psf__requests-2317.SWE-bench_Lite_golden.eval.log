@@ -1,16 +1,17 @@
 [psf__requests__2.4] [psf__requests-2317] Task Metadata:
 	- Instance ID: psf__requests-2317
 	- Testbed: psf__requests__2.4
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.9.19
+ 
 [psf__requests__2.4] [psf__requests-2317] Command: git -c advice.detachedHead=false checkout 091991be0da19de9108dbe5e3752917fea3d7fdc 
-[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.4] [psf__requests-2317] Std. Output:
 HEAD is now at 091991be Merge pull request #2306 from ssadler/fix-failing-test-test_prepare_unicode_url
  
 [psf__requests__2.4] [psf__requests-2317] Return Code: 0 
-[psf__requests__2.4] [psf__requests-2317] Command: git apply -v /home/swe-bench/temp_psf__requests-2317_pred_try.patch 
-[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.4] [psf__requests-2317] Command: git apply -v /opt/temp_psf__requests-2317_pred_try.patch 
+[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.4] [psf__requests-2317] Std. Output:
 Checking patch requests/sessions.py...
 Applied patch requests/sessions.py cleanly.
@@ -18,8 +19,8 @@ Applied patch requests/sessions.py cleanly.
 [psf__requests__2.4] [psf__requests-2317] Return Code: 0 
 [psf__requests__2.4] [psf__requests-2317] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[psf__requests__2.4] [psf__requests-2317] Command: git apply -v -R /home/swe-bench/temp_psf__requests-2317_pred_try.patch 
-[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.4] [psf__requests-2317] Command: git apply -v -R /opt/temp_psf__requests-2317_pred_try.patch 
+[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.4] [psf__requests-2317] Std. Output:
 Checking patch requests/sessions.py...
 Applied patch requests/sessions.py cleanly.
@@ -27,8 +28,8 @@ Applied patch requests/sessions.py cleanly.
 [psf__requests__2.4] [psf__requests-2317] Return Code: 0 
 [psf__requests__2.4] [psf__requests-2317] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[psf__requests__2.4] [psf__requests-2317] Command: git apply -v /home/swe-bench/temp_psf__requests-2317_pred.patch 
-[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.4] [psf__requests-2317] Command: git apply -v /opt/temp_psf__requests-2317_pred.patch 
+[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.4] [psf__requests-2317] Std. Output:
 Checking patch requests/sessions.py...
 Applied patch requests/sessions.py cleanly.
@@ -37,12 +38,12 @@ Applied patch requests/sessions.py cleanly.
 [psf__requests__2.4] [psf__requests-2317] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [psf__requests__2.4] [psf__requests-2317] Command: git restore test_requests.py 
-[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.4] [psf__requests-2317] Std. Output:
  
 [psf__requests__2.4] [psf__requests-2317] Return Code: 0 
-[psf__requests__2.4] [psf__requests-2317] Command: git apply -v /home/swe-bench/temp_psf__requests-2317_test.patch 
-[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.4] [psf__requests-2317] Command: git apply -v /opt/temp_psf__requests-2317_test.patch 
+[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.4] [psf__requests-2317] Std. Output:
 Checking patch test_requests.py...
 Applied patch test_requests.py cleanly.
@@ -50,9 +51,9 @@ Applied patch test_requests.py cleanly.
 [psf__requests__2.4] [psf__requests-2317] Return Code: 0 
 [psf__requests__2.4] [psf__requests-2317] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n psf__requests__2.4 pytest --no-header -rA -p no:cacheprovider test_requests.py;
-[psf__requests__2.4] [psf__requests-2317] Command: conda run -n psf__requests__2.4 pytest --no-header -rA -p no:cacheprovider test_requests.py 
-[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.py;
+[psf__requests__2.4] [psf__requests-2317] Command: pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.py 
+[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [psf__requests__2.4] [psf__requests-2317] Std. Output:
 ============================= test session starts ==============================
 collected 143 items
@@ -61,58 +62,45 @@ test_requests.py .......................F............................... [ 38%]
 ........................................................................ [ 88%]
 ................                                                         [100%]
 
-=================================== FAILURES ===================================
-________________ RequestsTestCase.test_conflicting_post_params _________________
-
-self = <test_requests.RequestsTestCase testMethod=test_conflicting_post_params>
-
-    def test_conflicting_post_params(self):
-        url = httpbin('post')
-        with open('requirements.txt') as f:
->           pytest.raises(ValueError, "requests.post(url, data='[{\"some\": \"data\"}]', files={'some': f})")
-E           TypeError: 'requests.post(url, data=\'[{"some": "data"}]\', files={\'some\': f})' object (type: <class 'str'>) must be callable
-
-test_requests.py:439: TypeError
 =============================== warnings summary ===============================
 requests/packages/urllib3/_collections.py:1
 requests/packages/urllib3/_collections.py:1
-  /home/swe-bench/psf__requests/requests/packages/urllib3/_collections.py:1: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  /opt/psf__requests/requests/packages/urllib3/_collections.py:1: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
     from collections import Mapping, MutableMapping
 
 requests/sessions.py:462
-  /home/swe-bench/psf__requests/requests/sessions.py:462: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:462: DeprecationWarning: invalid escape sequence \*
     """Sends a GET request. Returns :class:`Response` object.
 
 requests/sessions.py:472
-  /home/swe-bench/psf__requests/requests/sessions.py:472: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:472: DeprecationWarning: invalid escape sequence \*
     """Sends a OPTIONS request. Returns :class:`Response` object.
 
 requests/sessions.py:482
-  /home/swe-bench/psf__requests/requests/sessions.py:482: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:482: DeprecationWarning: invalid escape sequence \*
     """Sends a HEAD request. Returns :class:`Response` object.
 
 requests/sessions.py:492
-  /home/swe-bench/psf__requests/requests/sessions.py:492: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:492: DeprecationWarning: invalid escape sequence \*
     """Sends a POST request. Returns :class:`Response` object.
 
 requests/sessions.py:503
-  /home/swe-bench/psf__requests/requests/sessions.py:503: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:503: DeprecationWarning: invalid escape sequence \*
     """Sends a PUT request. Returns :class:`Response` object.
 
 requests/sessions.py:513
-  /home/swe-bench/psf__requests/requests/sessions.py:513: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:513: DeprecationWarning: invalid escape sequence \*
     """Sends a PATCH request. Returns :class:`Response` object.
 
 requests/sessions.py:523
-  /home/swe-bench/psf__requests/requests/sessions.py:523: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:523: DeprecationWarning: invalid escape sequence \*
     """Sends a DELETE request. Returns :class:`Response` object.
 
 test_requests.py::RequestsTestCase::test_BASICAUTH_TUPLE_HTTP_200_OK_GET
-  /home/swe-bench/psf__requests/requests/models.py:169: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  /opt/psf__requests/requests/models.py:169: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
     if isinstance(hook, collections.Callable):
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED test_requests.py::RequestsTestCase::test_BASICAUTH_TUPLE_HTTP_200_OK_GET
 PASSED test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE
@@ -257,9 +245,7 @@ PASSED test_requests.py::test_prepared_request_no_cookies_copy
 PASSED test_requests.py::test_prepared_request_complete_copy
 PASSED test_requests.py::test_prepare_unicode_url
 FAILED test_requests.py::RequestsTestCase::test_conflicting_post_params - Typ...
-============ 1 failed, 142 passed, 10 warnings in 304.61s (0:05:04) ============
-ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA -p no:cacheprovider test_requests.py` failed. (See above for error)
-
+============ 1 failed, 142 passed, 10 warnings in 592.14s (0:09:52) ============
  
 [psf__requests__2.4] [psf__requests-2317] Return Code: 1 
 

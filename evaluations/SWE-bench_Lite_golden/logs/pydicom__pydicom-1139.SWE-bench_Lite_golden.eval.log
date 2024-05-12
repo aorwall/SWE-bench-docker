@@ -4,14 +4,14 @@
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: git -c advice.detachedHead=false checkout b9fb05c177b685bf683f7f57b2d57374eb7d882d 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
 Previous HEAD position was 9d69811e5 Update apply_voi_lut (#1236)
 HEAD is now at b9fb05c17 Refactor codedict._filtered (#1134)
  
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Return Code: 0 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1139_pred_try.patch 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
 Checking patch pydicom/valuerep.py...
 Applied patch pydicom/valuerep.py cleanly.
@@ -20,7 +20,7 @@ Applied patch pydicom/valuerep.py cleanly.
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: git apply -v -R /home/swe-bench/temp_pydicom__pydicom-1139_pred_try.patch 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
 Checking patch pydicom/valuerep.py...
 Applied patch pydicom/valuerep.py cleanly.
@@ -29,7 +29,7 @@ Applied patch pydicom/valuerep.py cleanly.
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1139_pred.patch 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
 Checking patch pydicom/valuerep.py...
 Applied patch pydicom/valuerep.py cleanly.
@@ -38,12 +38,12 @@ Applied patch pydicom/valuerep.py cleanly.
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: git restore pydicom/tests/test_valuerep.py 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
  
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Return Code: 0 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1139_test.patch 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
 /home/swe-bench/temp_pydicom__pydicom-1139_test.patch:49: trailing whitespace.
         
@@ -56,7 +56,7 @@ warning: 1 line adds whitespace errors.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pydicom__pydicom__2.0 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py;
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: conda run -n pydicom__pydicom__2.0 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.8.19, pytest-4.6.11, py-1.11.0, pluggy-0.13.1
@@ -107,7 +107,7 @@ PASSED pydicom/tests/test_valuerep.py::TestPersonName::test_contains
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_date
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_date_time
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_time
-========================== 41 passed in 1.10 seconds ===========================
+========================== 41 passed in 0.81 seconds ===========================
 
  
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Return Code: 0 

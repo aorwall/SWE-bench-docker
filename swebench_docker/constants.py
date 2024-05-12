@@ -1,5 +1,15 @@
 from enum import Enum
 
+PYTHON_ENVIRONMENT_VERSIONS = {
+    "3.5": "3.5.10",
+    "3.6": "3.6.15",
+    "3.7": "3.7.17",
+    "3.8": "3.8.19",
+    "3.9": "3.9.19",
+    "3.10": "3.10.14",
+    "3.11": "3.11.9"
+}
+
 MAP_VERSION_TO_INSTALL_SKLEARN = {
     k: {
         "instance_image": True,
@@ -17,6 +27,7 @@ MAP_VERSION_TO_INSTALL_SKLEARN.update(
         k: {
             "instance_image": True,
             "python": "3.9",
+            "pre_install": ["pip install setuptools wheel"],
             "packages": "numpy scipy cython pytest pandas matplotlib joblib threadpoolctl",
             "install": "pip install -v --no-use-pep517 --no-build-isolation -e .",
             "arch_specific_packages": {
@@ -75,7 +86,7 @@ MAP_VERSION_TO_INSTALL_DJANGO = {
     k: {
         "python": "3.5",
         "packages": "requirements.txt",
-        "install": "python setup.py install",
+        "install": "python -m pip install -e .",
     }
     for k in ["1.7", "1.8", "1.9", "1.10", "1.11", "2.0", "2.1", "2.2"]
 }
@@ -221,7 +232,7 @@ MAP_VERSION_TO_INSTALL_PYTEST["5.3"]["pip_packages"] = [
 MAP_VERSION_TO_INSTALL_PYTEST["5.4"]["pip_packages"] = [
     "py==1.11.0", "packaging==23.1", "attrs==23.1.0",
     "more-itertools==10.1.0", "pluggy==0.13.1", "wcwidth==0.2.6"]
-MAP_VERSION_TO_INSTALL_PYTEST["5.4"]["pre_install"] = ["pip install -e ."]
+MAP_VERSION_TO_INSTALL_PYTEST["5.4"]["pre_test"] = ["pip install -e ."]
 MAP_VERSION_TO_INSTALL_PYTEST["6.0"]["pip_packages"] = [
     "attrs==23.1.0", "iniconfig==2.0.0", "more-itertools==10.1.0",
     "packaging==23.1", "pluggy==0.13.1", "py==1.11.0", "toml==0.10.2"]
@@ -269,12 +280,16 @@ MAP_VERSION_TO_INSTALL_MATPLOTLIB = {
     }
     for k in ["3.5", "3.6", "3.7"]
 }
+
 MAP_VERSION_TO_INSTALL_MATPLOTLIB.update(
     {
         k: {
             "python": "3.8",
             "packages": "requirements.txt",
             "install": "python -m pip install -e .",
+            "pip_packages": [
+                "pandas==0.24.2"
+            ],
             "arch_specific_packages": {
                 "aarch64": "gxx_linux-aarch64 gcc_linux-aarch64 make",
             }
@@ -288,6 +303,9 @@ MAP_VERSION_TO_INSTALL_MATPLOTLIB.update(
             "python": "3.7",
             "packages": "requirements.txt",
             "install": "python -m pip install -e .",
+            "pip_packages": [
+                "freetype"
+            ],
             "arch_specific_packages": {
                 "aarch64": "gxx_linux-aarch64 gcc_linux-aarch64 make",
             }
@@ -358,6 +376,8 @@ for k in ["3.0", "3.1", "3.2", "3.3", "3.4", "3.5", "4.0", "4.1", "4.2", "4.3", 
             "sed -i 's/sphinxcontrib-serializinghtml/sphinxcontrib-serializinghtml<=1.1.9/' setup.py",
         ])
 
+for spec in MAP_VERSION_TO_INSTALL_SPHINX.values():
+    spec["pre_test"] = spec["pre_install"]
 
 MAP_VERSION_TO_INSTALL_ASTROPY = {
     k: {
@@ -365,7 +385,7 @@ MAP_VERSION_TO_INSTALL_ASTROPY = {
         "install": "pip install -e .[test]",
         "pip_packages": [
             "attrs==23.1.0", "exceptiongroup==1.1.3", "execnet==2.0.2", "hypothesis==6.82.6",
-            "iniconfig==2.0.0", "numpy==1.25.2", "packaging==23.1", "pluggy==1.3.0",
+            "iniconfig==2.0.0", "numpy==1.23.4", "packaging==23.1", "pluggy==1.3.0",
             "psutil==5.9.5", "pyerfa==2.0.0.3", "pytest-arraydiff==0.5.0", "pytest-astropy-header==0.2.2",
             "pytest-astropy==0.10.0", "pytest-cov==4.1.0", "pytest-doctestplus==1.0.0", "pytest-filter-subpackage==0.1.2",
             "pytest-mock==3.11.1", "pytest-openfiles==0.5.0", "pytest-remotedata==0.4.0", "pytest-xdist==3.3.1",
@@ -385,9 +405,22 @@ MAP_VERSION_TO_INSTALL_SYMPY = {
         "install": "pip install -e .",
     }
     for k in
-        ["0.7", "1.0", "1.1", "1.10", "1.11", "1.12", "1.2", "1.4", "1.5", "1.6"] + \
+        ["1.10", "1.11", "1.12", "1.2", "1.4", "1.5", "1.6"] + \
         ["1.7", "1.8", "1.9"]
 }
+
+MAP_VERSION_TO_INSTALL_SYMPY.update(
+    {
+        k: {
+            "python": "3.7",
+            "packages": "mpmath flake8",
+            "pip_packages": ["mpmath==1.3.0", "flake8-comprehensions"],
+            "install": "pip install -e .",
+        }
+        for k in ["0.7", "1.0", "1.1"]
+    }
+)
+
 MAP_VERSION_TO_INSTALL_SYMPY.update(
     {
         k: {
@@ -410,7 +443,7 @@ MAP_VERSION_TO_INSTALL_PYLINT = {
     for k in ["2.10", "2.11", "2.13", "2.14", "2.15", "2.16", "2.17", "2.8", "2.9", "3.0"]
 }
 
-MAP_VERSION_TO_INSTALL_PYLINT["2.15"]["pre_install"] = ["pip install -e ."]
+MAP_VERSION_TO_INSTALL_PYLINT["2.15"]["pre_test"] = ["pip install -e ."]
 
 MAP_VERSION_TO_INSTALL_PYLINT.update({
     k: {**MAP_VERSION_TO_INSTALL_PYLINT[k], "pip_packages": [
@@ -606,7 +639,7 @@ MAP_REPO_TO_ENV_YML_PATHS = {
 }
 
 MAP_REPO_TO_DEB_PACKAGES = {
-    "matplotlib/matplotlib": ["texlive", "texlive-xetex", "dvipng", "ghostscript"],
+    "matplotlib/matplotlib": ["texlive", "texlive-xetex", "dvipng", "ghostscript", "libfreetype-dev", "libtiff-dev"],
     "pyvista/pyvista": ["libgl1", "libxrender1"]
 }
 

@@ -1,16 +1,17 @@
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Task Metadata:
 	- Instance ID: scikit-learn__scikit-learn-11040
 	- Testbed: scikit-learn__scikit-learn__0.20
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
+ 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: git -c advice.detachedHead=false checkout 96a02f3934952d486589dddd3f00b40d5a5ab5f2 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Std. Output:
 HEAD is now at 96a02f393 [MRG+1] TST cover sparse matrix case for passing through NaN in transformer (#11012)
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Return Code: 0 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-11040_pred_try.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-11040_pred_try.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Std. Output:
 Checking patch sklearn/neighbors/base.py...
 Applied patch sklearn/neighbors/base.py cleanly.
@@ -18,8 +19,8 @@ Applied patch sklearn/neighbors/base.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-11040_pred_try.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: git apply -v -R /opt/temp_scikit-learn__scikit-learn-11040_pred_try.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Std. Output:
 Checking patch sklearn/neighbors/base.py...
 Applied patch sklearn/neighbors/base.py cleanly.
@@ -27,8 +28,8 @@ Applied patch sklearn/neighbors/base.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-11040_pred.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-11040_pred.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Std. Output:
 Checking patch sklearn/neighbors/base.py...
 Applied patch sklearn/neighbors/base.py cleanly.
@@ -37,12 +38,12 @@ Applied patch sklearn/neighbors/base.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: git restore sklearn/neighbors/tests/test_neighbors.py 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Std. Output:
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Return Code: 0 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-11040_test.patch 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-11040_test.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Std. Output:
 Checking patch sklearn/neighbors/tests/test_neighbors.py...
 Applied patch sklearn/neighbors/tests/test_neighbors.py cleanly.
@@ -50,13 +51,13 @@ Applied patch sklearn/neighbors/tests/test_neighbors.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n scikit-learn__scikit-learn__0.20 pytest -rA --tb=no -p no:cacheprovider sklearn/neighbors/tests/test_neighbors.py;
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: conda run -n scikit-learn__scikit-learn__0.20 pytest -rA --tb=no -p no:cacheprovider sklearn/neighbors/tests/test_neighbors.py 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  pytest -rA --tb=no -p no:cacheprovider sklearn/neighbors/tests/test_neighbors.py;
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Command: pytest -rA --tb=no -p no:cacheprovider sklearn/neighbors/tests/test_neighbors.py 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Std. Output:
 ============================= test session starts ==============================
-platform linux -- Python 3.6.13, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
-rootdir: /home/swe-bench/scikit-learn__scikit-learn, inifile: setup.cfg
+platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
+rootdir: /opt/scikit-learn__scikit-learn, inifile: setup.cfg
 collected 47 items
 
 sklearn/neighbors/tests/test_neighbors.py .............................. [ 63%]
@@ -72,7 +73,7 @@ sklearn/neighbors/tests/test_neighbors.py:1292
     def test_same_radius_neighbors_parallel():
 
 sklearn/neighbors/tests/test_neighbors.py::test_valid_brute_metric_for_auto_algorithm
-  /home/swe-bench/scikit-learn__scikit-learn/sklearn/utils/validation.py:560: DataConversionWarning: Data with input dtype float64 was converted to bool by check_pairwise_arrays.
+  /opt/scikit-learn__scikit-learn/sklearn/utils/validation.py:560: DataConversionWarning: Data with input dtype float64 was converted to bool by check_pairwise_arrays.
     warnings.warn(msg, DataConversionWarning)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
@@ -126,8 +127,7 @@ PASSED sklearn/neighbors/tests/test_neighbors.py::test_include_self_neighbors_gr
 PASSED sklearn/neighbors/tests/test_neighbors.py::test_dtype_convert
 PASSED sklearn/neighbors/tests/test_neighbors.py::test_sparse_metric_callable
 PASSED sklearn/neighbors/tests/test_neighbors.py::test_pairwise_boolean_distance
-=============== 45 passed, 2 xfailed, 3 warnings in 1.31 seconds ===============
-
+=============== 45 passed, 2 xfailed, 3 warnings in 3.75 seconds ===============
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Return Code: 0 
 

@@ -9,7 +9,6 @@ COPY {{ path_to_env_file }} .
 {% endif -%}
 
 RUN {{conda_create_cmd}}
-
 SHELL ["conda", "run", "-n", "{{ testbed }}", "/bin/bash", "-c"]
 
 {% if pre_install_cmds -%}
@@ -29,10 +28,10 @@ RUN {{ cmd }}
 RUN git checkout {{ environment_setup_commit }} .
 
 ENV TESTBED_NAME={{ testbed }}
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

@@ -3,20 +3,15 @@
 	- Testbed: mwaskom__seaborn__0.12
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Command: git status --porcelain 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Std. Output:
- 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Command: git -c advice.detachedHead=false checkout 94621cef29f80282436d73e8d2c0aa76dab81273 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Std. Output:
 Previous HEAD position was d25872b0 fix typos (#3193)
 HEAD is now at 94621cef Fix PairGrid with hue passed in map method (#2847)
  
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-2848_pred_try.patch 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Std. Output:
 Checking patch seaborn/_oldcore.py...
 Applied patch seaborn/_oldcore.py cleanly.
@@ -25,7 +20,7 @@ Applied patch seaborn/_oldcore.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Command: git apply -v -R /home/swe-bench/temp_mwaskom__seaborn-2848_pred_try.patch 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Std. Output:
 Checking patch seaborn/_oldcore.py...
 Applied patch seaborn/_oldcore.py cleanly.
@@ -34,7 +29,7 @@ Applied patch seaborn/_oldcore.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-2848_pred.patch 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Std. Output:
 Checking patch seaborn/_oldcore.py...
 Applied patch seaborn/_oldcore.py cleanly.
@@ -43,12 +38,12 @@ Applied patch seaborn/_oldcore.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Command: git restore tests/test_relational.py 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Std. Output:
  
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-2848_test.patch 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Std. Output:
 Checking patch tests/test_relational.py...
 Applied patch tests/test_relational.py cleanly.
@@ -58,7 +53,7 @@ Applied patch tests/test_relational.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n mwaskom__seaborn__0.12 pytest --no-header -rA tests/test_relational.py;
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Command: conda run -n mwaskom__seaborn__0.12 pytest --no-header -rA tests/test_relational.py 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-2848] Std. Output:
 ============================= test session starts ==============================
 collected 73 items
@@ -69,7 +64,7 @@ F...........F.............                                               [100%]
 =================================== FAILURES ===================================
 __________________ TestRelationalPlotter.test_relplot_simple ___________________
 
-self = <tests.test_relational.TestRelationalPlotter object at 0x7da49d804d60>
+self = <tests.test_relational.TestRelationalPlotter object at 0x737221e2fcd0>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -122,7 +117,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________________ TestRelationalPlotter.test_relplot_legend ___________________
 
-self = <tests.test_relational.TestRelationalPlotter object at 0x7da49da54df0>
+self = <tests.test_relational.TestRelationalPlotter object at 0x73721fae5cd0>
 long_df =      x         y         z  a  b  c  ...  s    f  a_cat  s_cat s_str a_like_b
 0   12  0.449243  6.611886  b  p  0  ......8     8        n
 99  15  0.073484  1.036343  c  p  0  ...  8  0.2      c      8     8        o
@@ -192,7 +187,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________________________ TestLinePlotter.test_color __________________________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d62ec70>
+self = <tests.test_relational.TestLinePlotter object at 0x73721fb6a910>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -235,7 +230,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 ________________________ TestLinePlotter.test_log_scale ________________________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d7ac340>
+self = <tests.test_relational.TestLinePlotter object at 0x737221e50bb0>
 
     def test_log_scale(self):
     
@@ -278,7 +273,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 ____________________ TestLinePlotter.test_matplotlib_kwargs ____________________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d7ef4c0>
+self = <tests.test_relational.TestLinePlotter object at 0x737221e50f40>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -327,7 +322,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 ____________________ TestLinePlotter.test_nonmapped_dashes _____________________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d7eff10>
+self = <tests.test_relational.TestLinePlotter object at 0x737221e506d0>
 
     def test_nonmapped_dashes(self):
     
@@ -364,7 +359,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 ______________________ TestLinePlotter.test_lineplot_axes ______________________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d7ef130>
+self = <tests.test_relational.TestLinePlotter object at 0x737221e50970>
 wide_df =                    a         b         c
 wide_index                              
 10          1.449377  0.547052 -1.23...        -0.305246 -1.329569  0.624981
@@ -409,7 +404,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics0] ___________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d7ef400>
+self = <tests.test_relational.TestLinePlotter object at 0x73722f32e0d0>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -452,7 +447,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics1] ___________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d74ec40>
+self = <tests.test_relational.TestLinePlotter object at 0x73721fbaa370>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -495,7 +490,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics2] ___________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d62e6d0>
+self = <tests.test_relational.TestLinePlotter object at 0x73721fbaa4f0>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -538,7 +533,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics3] ___________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d62e610>
+self = <tests.test_relational.TestLinePlotter object at 0x73721fbaa5b0>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -581,7 +576,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics4] ___________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d62e580>
+self = <tests.test_relational.TestLinePlotter object at 0x73721fbaa670>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -624,7 +619,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics5] ___________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d62e8b0>
+self = <tests.test_relational.TestLinePlotter object at 0x73721fbaa9d0>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -667,7 +662,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics6] ___________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d62e970>
+self = <tests.test_relational.TestLinePlotter object at 0x73721fbaaa90>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -710,7 +705,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics7] ___________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d7ef1c0>
+self = <tests.test_relational.TestLinePlotter object at 0x737221e50df0>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -753,7 +748,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics8] ___________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d7acb20>
+self = <tests.test_relational.TestLinePlotter object at 0x737221e503d0>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -796,7 +791,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics9] ___________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d7ac370>
+self = <tests.test_relational.TestLinePlotter object at 0x737221e501f0>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -839,7 +834,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics10] __________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d7ac070>
+self = <tests.test_relational.TestLinePlotter object at 0x737221e500a0>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -882,7 +877,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestLinePlotter.test_lineplot_vs_relplot[long_semantics11] __________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d7ac9d0>
+self = <tests.test_relational.TestLinePlotter object at 0x73721fc02400>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -925,7 +920,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 _____________________ TestLinePlotter.test_lineplot_smoke ______________________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d62e2b0>
+self = <tests.test_relational.TestLinePlotter object at 0x73721fbaab80>
 wide_df =                    a         b         c
 wide_index                              
 10          1.449377  0.547052 -1.23...        -0.305246 -1.329569  0.624981
@@ -1037,7 +1032,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 _____________________ TestLinePlotter.test_ci_deprecation ______________________
 
-self = <tests.test_relational.TestLinePlotter object at 0x7da49d62eee0>
+self = <tests.test_relational.TestLinePlotter object at 0x73721fbaa250>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -1080,7 +1075,7 @@ E           pandas._config.config.OptionError: "No such keys(s): 'mode.use_inf_a
 ../miniconda3/envs/mwaskom__seaborn__0.12/lib/python3.9/site-packages/pandas/_config/config.py:132: OptionError
 __________ TestScatterPlotter.test_unfilled_marker_edgecolor_warning ___________
 
-self = <tests.test_relational.TestScatterPlotter object at 0x7da49dad6b50>
+self = <tests.test_relational.TestScatterPlotter object at 0x73721fbed7c0>
 long_df =      x         y         z  a  b  ...  s    f a_cat  s_cat  s_str
 0   12  0.449243  6.611886  b  p  ...  2  0.2     b ...  8  0.3     a      8      8
 99  15  0.073484  1.036343  c  p  ...  8  0.2     c      8      8
@@ -1240,7 +1235,7 @@ FAILED tests/test_relational.py::TestLinePlotter::test_lineplot_vs_relplot[long_
 FAILED tests/test_relational.py::TestLinePlotter::test_lineplot_smoke - panda...
 FAILED tests/test_relational.py::TestLinePlotter::test_ci_deprecation - panda...
 FAILED tests/test_relational.py::TestScatterPlotter::test_unfilled_marker_edgecolor_warning
-================ 22 failed, 51 passed, 1499 warnings in 23.55s =================
+================ 22 failed, 51 passed, 1499 warnings in 52.76s =================
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA tests/test_relational.py` failed. (See above for error)
 
  

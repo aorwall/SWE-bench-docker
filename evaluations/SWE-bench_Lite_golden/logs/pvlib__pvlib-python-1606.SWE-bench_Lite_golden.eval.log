@@ -3,20 +3,15 @@
 	- Testbed: pvlib__pvlib-python__0.8
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Command: git status --porcelain 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Std. Output:
- 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Return Code: 0 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Command: git -c advice.detachedHead=false checkout c78b50f4337ecbe536a961336ca91a1176efc0e8 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Std. Output:
 Previous HEAD position was ef8ad2f Update adrinverter parameter database (#1695)
 HEAD is now at c78b50f Create FAQ page in sphinx User Guide (#1549)
  
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Return Code: 0 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1606_pred_try.patch 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Std. Output:
 Checking patch pvlib/tools.py...
 Applied patch pvlib/tools.py cleanly.
@@ -25,7 +20,7 @@ Applied patch pvlib/tools.py cleanly.
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Command: git apply -v -R /home/swe-bench/temp_pvlib__pvlib-python-1606_pred_try.patch 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Std. Output:
 Checking patch pvlib/tools.py...
 Applied patch pvlib/tools.py cleanly.
@@ -34,7 +29,7 @@ Applied patch pvlib/tools.py cleanly.
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1606_pred.patch 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Std. Output:
 Checking patch pvlib/tools.py...
 Applied patch pvlib/tools.py cleanly.
@@ -43,12 +38,12 @@ Applied patch pvlib/tools.py cleanly.
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Command: git restore pvlib/tests/test_tools.py 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Std. Output:
  
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Return Code: 0 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1606_test.patch 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Std. Output:
 Checking patch pvlib/tests/test_tools.py...
 Applied patch pvlib/tests/test_tools.py cleanly.
@@ -56,9 +51,9 @@ Applied patch pvlib/tests/test_tools.py cleanly.
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Return Code: 0 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pvlib__pvlib-python__0.8 pytest --no-header -rA -p no:cacheprovider pvlib/tests/test_tools.py;
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Command: conda run -n pvlib__pvlib-python__0.8 pytest --no-header -rA -p no:cacheprovider pvlib/tests/test_tools.py 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script: conda run -n pvlib__pvlib-python__0.8 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_tools.py;
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Command: conda run -n pvlib__pvlib-python__0.8 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_tools.py 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Std. Output:
 ============================= test session starts ==============================
 collected 11 items
@@ -70,13 +65,12 @@ pvlib/tests/conftest.py:7
   /home/swe-bench/pvlib__pvlib-python/pvlib/tests/conftest.py:7: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
     from pkg_resources import parse_version
 
-../miniconda3/envs/pvlib__pvlib-python__0.8/lib/python3.9/site-packages/pkg_resources/__init__.py:2871
-  /home/swe-bench/miniconda3/envs/pvlib__pvlib-python__0.8/lib/python3.9/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('sphinxcontrib')`.
+../miniconda3/envs/pvlib__pvlib-python__0.8/lib/python3.9/site-packages/pkg_resources/__init__.py:2832
+  /home/swe-bench/miniconda3/envs/pvlib__pvlib-python__0.8/lib/python3.9/site-packages/pkg_resources/__init__.py:2832: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('sphinxcontrib')`.
   Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
     declare_namespace(pkg)
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED pvlib/tests/test_tools.py::test_build_kwargs[keys0-input_dict0-expected0]
 PASSED pvlib/tests/test_tools.py::test_build_kwargs[keys1-input_dict1-expected1]
@@ -89,7 +83,7 @@ PASSED pvlib/tests/test_tools.py::test__golden_sect_DataFrame_atol
 PASSED pvlib/tests/test_tools.py::test__golden_sect_DataFrame_vector
 PASSED pvlib/tests/test_tools.py::test__golden_sect_DataFrame_nans
 PASSED pvlib/tests/test_tools.py::test_degrees_to_index_1
-======================== 11 passed, 2 warnings in 0.04s ========================
+======================== 11 passed, 2 warnings in 0.05s ========================
 
  
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Return Code: 0 

@@ -196,7 +196,7 @@ PASSED tests/lint/unittest_lint.py::test_identically_named_nested_module
 XFAIL tests/checkers/unittest_imports.py::TestImportsChecker::test_relative_beyond_top_level_two - epylint manipulates cwd; these tests should not be using epylint
 FAILED tests/checkers/unittest_imports.py::TestImportsChecker::test_wildcard_import_init
 FAILED tests/checkers/unittest_imports.py::TestImportsChecker::test_wildcard_import_non_init
-=================== 2 failed, 60 passed, 1 xfailed in 2.76s ====================
+=================== 2 failed, 60 passed, 1 xfailed in 6.54s ====================
 
  
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Return Code: 1 

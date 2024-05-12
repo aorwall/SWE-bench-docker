@@ -1,22 +1,18 @@
 [django__django__3.2] [django__django-12908] Task Metadata:
 	- Instance ID: django__django-12908
 	- Testbed: django__django__3.2
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.2] [django__django-12908] Command: git status --porcelain 
-[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.2] [django__django-12908] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.2] [django__django-12908] Return Code: 0 
 [django__django__3.2] [django__django-12908] Command: git -c advice.detachedHead=false checkout 49ae7ce50a874f8a04cd910882fb9571ff3a0d7a 
-[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12908] Std. Output:
 Previous HEAD position was 65dfb06a1a [3.2.x] Fixed #32648 -- Fixed VariableDoesNotExist rendering sitemaps template.
 HEAD is now at 49ae7ce50a Removed redundant assertions in fixtures tests.
  
 [django__django__3.2] [django__django-12908] Return Code: 0 
-[django__django__3.2] [django__django-12908] Command: git apply -v /home/swe-bench/temp_django__django-12908_pred_try.patch 
-[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12908] Command: git apply -v /opt/temp_django__django-12908_pred_try.patch 
+[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12908] Std. Output:
 Checking patch django/db/models/query.py...
 Applied patch django/db/models/query.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/db/models/query.py cleanly.
 [django__django__3.2] [django__django-12908] Return Code: 0 
 [django__django__3.2] [django__django-12908] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-12908] Command: git apply -v -R /home/swe-bench/temp_django__django-12908_pred_try.patch 
-[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12908] Command: git apply -v -R /opt/temp_django__django-12908_pred_try.patch 
+[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12908] Std. Output:
 Checking patch django/db/models/query.py...
 Applied patch django/db/models/query.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/db/models/query.py cleanly.
 [django__django__3.2] [django__django-12908] Return Code: 0 
 [django__django__3.2] [django__django-12908] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-12908] Command: git apply -v /home/swe-bench/temp_django__django-12908_pred.patch 
-[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12908] Command: git apply -v /opt/temp_django__django-12908_pred.patch 
+[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12908] Std. Output:
 Checking patch django/db/models/query.py...
 Applied patch django/db/models/query.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/db/models/query.py cleanly.
 [django__django__3.2] [django__django-12908] Return Code: 0 
 [django__django__3.2] [django__django-12908] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.2] [django__django-12908] Command: git apply -v /home/swe-bench/temp_django__django-12908_test.patch 
-[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12908] Command: git apply -v /opt/temp_django__django-12908_test.patch 
+[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12908] Std. Output:
 Checking patch tests/queries/test_qs_combinators.py...
 Applied patch tests/queries/test_qs_combinators.py cleanly.
@@ -51,9 +47,9 @@ Applied patch tests/queries/test_qs_combinators.py cleanly.
 [django__django__3.2] [django__django-12908] Return Code: 0 
 [django__django__3.2] [django__django-12908] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 queries.test_qs_combinators;
-[django__django__3.2] [django__django-12908] Command: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 queries.test_qs_combinators 
-[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 queries.test_qs_combinators;
+[django__django__3.2] [django__django-12908] Command: ./tests/runtests.py --verbosity 2 queries.test_qs_combinators 
+[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.2] [django__django-12908] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 test_combining_multiple_models (queries.test_qs_combinators.QuerySetSetOperationTests) ... ok
@@ -87,12 +83,11 @@ test_unsupported_operations_on_combined_qs (queries.test_qs_combinators.QuerySet
 test_unsupported_ordering_slicing_raises_db_error (queries.test_qs_combinators.QuerySetSetOperationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 29 tests in 0.066s
+Ran 29 tests in 0.103s
 
 OK (skipped=2)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application queries
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -214,7 +209,6 @@ Running migrations:
   Applying sites.0001_initial... OK
   Applying sites.0002_alter_domain_unique... OK
 System check identified no issues (1 silenced).
-
  
 [django__django__3.2] [django__django-12908] Return Code: 0 
 

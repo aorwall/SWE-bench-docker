@@ -1,16 +1,17 @@
 [psf__requests__0.14] [psf__requests-863] Task Metadata:
 	- Instance ID: psf__requests-863
 	- Testbed: psf__requests__0.14
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.9.19
+ 
 [psf__requests__0.14] [psf__requests-863] Command: git -c advice.detachedHead=false checkout a0df2cbb10419037d11d04352b3175405ab52941 
-[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__0.14] [psf__requests-863] Std. Output:
 HEAD is now at a0df2cbb Merge pull request #853 from plaes/docs-license-missing-ref
  
 [psf__requests__0.14] [psf__requests-863] Return Code: 0 
-[psf__requests__0.14] [psf__requests-863] Command: git apply -v /home/swe-bench/temp_psf__requests-863_pred_try.patch 
-[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__0.14] [psf__requests-863] Command: git apply -v /opt/temp_psf__requests-863_pred_try.patch 
+[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__0.14] [psf__requests-863] Std. Output:
 Checking patch requests/models.py...
 Applied patch requests/models.py cleanly.
@@ -18,8 +19,8 @@ Applied patch requests/models.py cleanly.
 [psf__requests__0.14] [psf__requests-863] Return Code: 0 
 [psf__requests__0.14] [psf__requests-863] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[psf__requests__0.14] [psf__requests-863] Command: git apply -v -R /home/swe-bench/temp_psf__requests-863_pred_try.patch 
-[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__0.14] [psf__requests-863] Command: git apply -v -R /opt/temp_psf__requests-863_pred_try.patch 
+[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__0.14] [psf__requests-863] Std. Output:
 Checking patch requests/models.py...
 Applied patch requests/models.py cleanly.
@@ -27,8 +28,8 @@ Applied patch requests/models.py cleanly.
 [psf__requests__0.14] [psf__requests-863] Return Code: 0 
 [psf__requests__0.14] [psf__requests-863] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[psf__requests__0.14] [psf__requests-863] Command: git apply -v /home/swe-bench/temp_psf__requests-863_pred.patch 
-[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__0.14] [psf__requests-863] Command: git apply -v /opt/temp_psf__requests-863_pred.patch 
+[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__0.14] [psf__requests-863] Std. Output:
 Checking patch requests/models.py...
 Applied patch requests/models.py cleanly.
@@ -37,12 +38,12 @@ Applied patch requests/models.py cleanly.
 [psf__requests__0.14] [psf__requests-863] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [psf__requests__0.14] [psf__requests-863] Command: git restore tests/test_requests.py 
-[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__0.14] [psf__requests-863] Std. Output:
  
 [psf__requests__0.14] [psf__requests-863] Return Code: 0 
-[psf__requests__0.14] [psf__requests-863] Command: git apply -v /home/swe-bench/temp_psf__requests-863_test.patch 
-[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__0.14] [psf__requests-863] Command: git apply -v /opt/temp_psf__requests-863_test.patch 
+[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__0.14] [psf__requests-863] Std. Output:
 Checking patch tests/test_requests.py...
 Applied patch tests/test_requests.py cleanly.
@@ -50,9 +51,9 @@ Applied patch tests/test_requests.py cleanly.
 [psf__requests__0.14] [psf__requests-863] Return Code: 0 
 [psf__requests__0.14] [psf__requests-863] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n psf__requests__0.14 pytest --no-header -rA -p no:cacheprovider tests/test_requests.py;
-[psf__requests__0.14] [psf__requests-863] Command: conda run -n psf__requests__0.14 pytest --no-header -rA -p no:cacheprovider tests/test_requests.py 
-[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_requests.py;
+[psf__requests__0.14] [psf__requests-863] Command: pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_requests.py 
+[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [psf__requests__0.14] [psf__requests-863] Std. Output:
 ============================= test session starts ==============================
 collected 76 items
@@ -60,287 +61,12 @@ collected 76 items
 tests/test_requests.py ..FF..............F.............................. [ 64%]
 .......FF.....F.F..........                                              [100%]
 
-=================================== FAILURES ===================================
-______________ RequestsTestSuite.test_DIGESTAUTH_HTTP_200_OK_GET _______________
-
-self = <test_requests.RequestsTestSuite testMethod=test_DIGESTAUTH_HTTP_200_OK_GET>
-
-    def test_DIGESTAUTH_HTTP_200_OK_GET(self):
-    
-        for service in SERVICES:
-    
-            auth = HTTPDigestAuth('user', 'pass')
-            url = service('digest-auth', 'auth', 'user', 'pass')
-    
->           r = get(url, auth=auth)
-
-tests/test_requests.py:280: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/api.py:65: in get
-    return request('get', url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/safe_mode.py:39: in wrapped
-    return function(method, url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/api.py:51: in request
-    return session.request(method=method, url=url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/sessions.py:241: in request
-    r.send(prefetch=prefetch)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:643: in send
-    self._build_response(r)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:230: in _build_response
-    r = build(resp)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:207: in build
-    extract_cookies_to_jar(self.cookies, self, resp)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/cookies.py:103: in extract_cookies_to_jar
-    jar.extract_cookies(res, req)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:1683: in extract_cookies
-    if self._policy.set_ok(cookie, request):
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:956: in set_ok
-    if not fn(cookie, request):
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <http.cookiejar.DefaultCookiePolicy object at 0x7e10c25fd160>
-cookie = Cookie(version=0, name='stale_after', value='never', port=None, port_specified=False, domain='httpbin.org', domain_spe... path_specified=True, secure=False, expires=None, discard=True, comment=None, comment_url=None, rest={}, rfc2109=False)
-request = <requests.cookies.MockRequest object at 0x7e10c25fd670>
-
-    def set_ok_verifiability(self, cookie, request):
->       if request.unverifiable and is_third_party(request):
-E       AttributeError: 'MockRequest' object has no attribute 'unverifiable'
-
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:977: AttributeError
-_____________ RequestsTestSuite.test_DIGESTAUTH_WRONG_HTTP_401_GET _____________
-
-self = <test_requests.RequestsTestSuite testMethod=test_DIGESTAUTH_WRONG_HTTP_401_GET>
-
-    def test_DIGESTAUTH_WRONG_HTTP_401_GET(self):
-    
-        for service in SERVICES:
-    
-            auth = HTTPDigestAuth('user', 'wrongpass')
-            url = service('digest-auth', 'auth', 'user', 'pass')
-    
->           r = get(url, auth=auth)
-
-tests/test_requests.py:302: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/api.py:65: in get
-    return request('get', url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/safe_mode.py:39: in wrapped
-    return function(method, url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/api.py:51: in request
-    return session.request(method=method, url=url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/sessions.py:241: in request
-    r.send(prefetch=prefetch)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:643: in send
-    self._build_response(r)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:230: in _build_response
-    r = build(resp)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:207: in build
-    extract_cookies_to_jar(self.cookies, self, resp)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/cookies.py:103: in extract_cookies_to_jar
-    jar.extract_cookies(res, req)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:1683: in extract_cookies
-    if self._policy.set_ok(cookie, request):
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:956: in set_ok
-    if not fn(cookie, request):
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <http.cookiejar.DefaultCookiePolicy object at 0x7e10c23e55b0>
-cookie = Cookie(version=0, name='stale_after', value='never', port=None, port_specified=False, domain='httpbin.org', domain_spe... path_specified=True, secure=False, expires=None, discard=True, comment=None, comment_url=None, rest={}, rfc2109=False)
-request = <requests.cookies.MockRequest object at 0x7e10c23e51c0>
-
-    def set_ok_verifiability(self, cookie, request):
->       if request.unverifiable and is_third_party(request):
-E       AttributeError: 'MockRequest' object has no attribute 'unverifiable'
-
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:977: AttributeError
-_________ RequestsTestSuite.test_allow_list_of_hooks_to_register_hook __________
-
-self = <test_requests.RequestsTestSuite testMethod=test_allow_list_of_hooks_to_register_hook>
-
-    def test_allow_list_of_hooks_to_register_hook(self):
-        """Issue 785: https://github.com/kennethreitz/requests/issues/785"""
-        def add_foo_header(args):
-            if not args.get('headers'):
-                args['headers'] = {}
-    
-            args['headers'].update({
-                'X-Foo': 'foo'
-            })
-    
-            return args
-    
-        def add_bar_header(args):
-            if not args.get('headers'):
-                args['headers'] = {}
-    
-            args['headers'].update({
-                'X-Bar': 'bar'
-            })
-    
-            return args
-    
-        def assert_hooks_are_callable(hooks):
-            for h in hooks['args']:
-                assert callable(h) is True
-    
-        hooks = [add_foo_header, add_bar_header]
-        r = requests.models.Request()
-        r.register_hook('args', hooks)
->       assert_hooks_are_callable(r.hooks)
-
-tests/test_requests.py:776: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-hooks = {'args': [[<function RequestsTestSuite.test_allow_list_of_hooks_to_register_hook.<locals>.add_foo_header at 0x7e10c226...register_hook.<locals>.add_bar_header at 0x7e10c226b820>]], 'post_request': [], 'pre_request': [], 'pre_send': [], ...}
-
-    def assert_hooks_are_callable(hooks):
-        for h in hooks['args']:
->           assert callable(h) is True
-E           assert False is True
-E            +  where False = callable([<function RequestsTestSuite.test_allow_list_of_hooks_to_register_hook.<locals>.add_foo_header at 0x7e10c226b790>, <function RequestsTestSuite.test_allow_list_of_hooks_to_register_hook.<locals>.add_bar_header at 0x7e10c226b820>])
-
-tests/test_requests.py:771: AssertionError
-______ RequestsTestSuite.test_session_cookies_with_return_response_false _______
-
-self = <test_requests.RequestsTestSuite testMethod=test_session_cookies_with_return_response_false>
-
-    def test_session_cookies_with_return_response_false(self):
-        s = requests.session()
-        # return_response=False as it does requests.async.get
-        rq = get(httpbin('cookies', 'set', 'k', 'v'), return_response=False,
-                 allow_redirects=True, session=s)
->       rq.send(prefetch=True)
-
-tests/test_requests.py:853: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:643: in send
-    self._build_response(r)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:230: in _build_response
-    r = build(resp)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:207: in build
-    extract_cookies_to_jar(self.cookies, self, resp)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/cookies.py:103: in extract_cookies_to_jar
-    jar.extract_cookies(res, req)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:1683: in extract_cookies
-    if self._policy.set_ok(cookie, request):
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:956: in set_ok
-    if not fn(cookie, request):
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <http.cookiejar.DefaultCookiePolicy object at 0x7e10c25cbdf0>
-cookie = Cookie(version=0, name='k', value='v', port=None, port_specified=False, domain='httpbin.org', domain_specified=False, ... path_specified=True, secure=False, expires=None, discard=True, comment=None, comment_url=None, rest={}, rfc2109=False)
-request = <requests.cookies.MockRequest object at 0x7e10c25cba60>
-
-    def set_ok_verifiability(self, cookie, request):
->       if request.unverifiable and is_third_party(request):
-E       AttributeError: 'MockRequest' object has no attribute 'unverifiable'
-
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:977: AttributeError
-______________ RequestsTestSuite.test_session_persistent_cookies _______________
-
-self = <test_requests.RequestsTestSuite testMethod=test_session_persistent_cookies>
-
-    def test_session_persistent_cookies(self):
-    
-        s = requests.session()
-    
-        # Internally dispatched cookies are sent.
-        _c = {'kenneth': 'reitz', 'bessie': 'monke'}
->       r = get(httpbin('cookies'), cookies=_c, session=s)
-
-tests/test_requests.py:787: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/api.py:65: in get
-    return request('get', url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/safe_mode.py:39: in wrapped
-    return function(method, url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/api.py:51: in request
-    return session.request(method=method, url=url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/sessions.py:241: in request
-    r.send(prefetch=prefetch)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:603: in send
-    cookie_header = get_cookie_header(self.cookies, self)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/cookies.py:109: in get_cookie_header
-    jar.add_cookie_header(r)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:1365: in add_cookie_header
-    cookies = self._cookies_for_request(request)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:1291: in _cookies_for_request
-    cookies.extend(self._cookies_for_domain(domain, request))
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:1280: in _cookies_for_domain
-    if not self._policy.return_ok(cookie, request):
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:1102: in return_ok
-    if not fn(cookie, request):
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <http.cookiejar.DefaultCookiePolicy object at 0x7e10c2cd2280>
-cookie = Cookie(version=0, name='kenneth', value='reitz', port=None, port_specified=False, domain='', domain_specified=False, d...True, secure=False, expires=None, discard=True, comment=None, comment_url=None, rest={'HttpOnly': None}, rfc2109=False)
-request = <requests.cookies.MockRequest object at 0x7e10c25cca00>
-
-    def return_ok_verifiability(self, cookie, request):
->       if request.unverifiable and is_third_party(request):
-E       AttributeError: 'MockRequest' object has no attribute 'unverifiable'
-
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:1116: AttributeError
-_________________ RequestsTestSuite.test_str_data_content_type _________________
-
-self = <test_requests.RequestsTestSuite testMethod=test_str_data_content_type>
-
-    def test_str_data_content_type(self):
-        data = 'test string data'
-        r = post(httpbin('post'), data=data)
-        t = json.loads(r.text)
->       self.assertEqual(t.get('headers').get('Content-Type'), '')
-E       AssertionError: None != ''
-
-tests/test_requests.py:1090: AssertionError
-______________ RequestsTestSuite.test_unpickled_session_requests _______________
-
-self = <test_requests.RequestsTestSuite testMethod=test_unpickled_session_requests>
-
-    def test_unpickled_session_requests(self):
-        s = requests.session()
->       r = get(httpbin('cookies', 'set', 'k', 'v'), allow_redirects=True, session=s)
-
-tests/test_requests.py:877: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/api.py:65: in get
-    return request('get', url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/safe_mode.py:39: in wrapped
-    return function(method, url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/api.py:51: in request
-    return session.request(method=method, url=url, **kwargs)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/sessions.py:241: in request
-    r.send(prefetch=prefetch)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:643: in send
-    self._build_response(r)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:230: in _build_response
-    r = build(resp)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/models.py:207: in build
-    extract_cookies_to_jar(self.cookies, self, resp)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/cookies.py:103: in extract_cookies_to_jar
-    jar.extract_cookies(res, req)
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:1683: in extract_cookies
-    if self._policy.set_ok(cookie, request):
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:956: in set_ok
-    if not fn(cookie, request):
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <http.cookiejar.DefaultCookiePolicy object at 0x7e10c245e280>
-cookie = Cookie(version=0, name='k', value='v', port=None, port_specified=False, domain='httpbin.org', domain_specified=False, ... path_specified=True, secure=False, expires=None, discard=True, comment=None, comment_url=None, rest={}, rfc2109=False)
-request = <requests.cookies.MockRequest object at 0x7e10c240d310>
-
-    def set_ok_verifiability(self, cookie, request):
->       if request.unverifiable and is_third_party(request):
-E       AttributeError: 'MockRequest' object has no attribute 'unverifiable'
-
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/http/cookiejar.py:977: AttributeError
 =============================== warnings summary ===============================
-../miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/packages/urllib3/_collections.py:7
-  /home/swe-bench/miniconda3/envs/psf__requests__0.14/lib/python3.9/site-packages/requests/packages/urllib3/_collections.py:7: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+../pyenv/versions/3.9.19/lib/python3.9/site-packages/requests/packages/urllib3/_collections.py:7
+  /opt/pyenv/versions/3.9.19/lib/python3.9/site-packages/requests/packages/urllib3/_collections.py:7: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
     from collections import MutableMapping
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED tests/test_requests.py::RequestsTestSuite::test_BASICAUTH_HTTP_200_OK_GET
 PASSED tests/test_requests.py::RequestsTestSuite::test_BASICAUTH_TUPLE_HTTP_200_OK_GET
@@ -418,9 +144,7 @@ FAILED tests/test_requests.py::RequestsTestSuite::test_session_cookies_with_retu
 FAILED tests/test_requests.py::RequestsTestSuite::test_session_persistent_cookies
 FAILED tests/test_requests.py::RequestsTestSuite::test_str_data_content_type
 FAILED tests/test_requests.py::RequestsTestSuite::test_unpickled_session_requests
-=================== 7 failed, 69 passed, 1 warning in 35.68s ===================
-ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA -p no:cacheprovider tests/test_requests.py` failed. (See above for error)
-
+=================== 7 failed, 69 passed, 1 warning in 34.38s ===================
  
 [psf__requests__0.14] [psf__requests-863] Return Code: 1 
 

@@ -1,22 +1,18 @@
 [django__django__4.0] [django__django-14752] Task Metadata:
 	- Instance ID: django__django-14752
 	- Testbed: django__django__4.0
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__4.0] [django__django-14752] Command: git status --porcelain 
-[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__4.0] [django__django-14752] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.8.19
  
-[django__django__4.0] [django__django-14752] Return Code: 0 
 [django__django__4.0] [django__django-14752] Command: git -c advice.detachedHead=false checkout b64db05b9cedd96905d637a2d824cbbf428e40e7 
-[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14752] Std. Output:
 Previous HEAD position was 475cffd1d6 Fixed typo in docs/intro/reusable-apps.txt.
 HEAD is now at b64db05b9c Removed unnecessary WhereNode.is_summary.
  
 [django__django__4.0] [django__django-14752] Return Code: 0 
-[django__django__4.0] [django__django-14752] Command: git apply -v /home/swe-bench/temp_django__django-14752_pred_try.patch 
-[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14752] Command: git apply -v /opt/temp_django__django-14752_pred_try.patch 
+[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14752] Std. Output:
 Checking patch django/contrib/admin/views/autocomplete.py...
 Applied patch django/contrib/admin/views/autocomplete.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/contrib/admin/views/autocomplete.py cleanly.
 [django__django__4.0] [django__django-14752] Return Code: 0 
 [django__django__4.0] [django__django-14752] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__4.0] [django__django-14752] Command: git apply -v -R /home/swe-bench/temp_django__django-14752_pred_try.patch 
-[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14752] Command: git apply -v -R /opt/temp_django__django-14752_pred_try.patch 
+[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14752] Std. Output:
 Checking patch django/contrib/admin/views/autocomplete.py...
 Applied patch django/contrib/admin/views/autocomplete.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/contrib/admin/views/autocomplete.py cleanly.
 [django__django__4.0] [django__django-14752] Return Code: 0 
 [django__django__4.0] [django__django-14752] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__4.0] [django__django-14752] Command: git apply -v /home/swe-bench/temp_django__django-14752_pred.patch 
-[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14752] Command: git apply -v /opt/temp_django__django-14752_pred.patch 
+[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14752] Std. Output:
 Checking patch django/contrib/admin/views/autocomplete.py...
 Applied patch django/contrib/admin/views/autocomplete.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/contrib/admin/views/autocomplete.py cleanly.
 [django__django__4.0] [django__django-14752] Return Code: 0 
 [django__django__4.0] [django__django-14752] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__4.0] [django__django-14752] Command: git apply -v /home/swe-bench/temp_django__django-14752_test.patch 
-[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14752] Command: git apply -v /opt/temp_django__django-14752_test.patch 
+[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14752] Std. Output:
 Checking patch tests/admin_views/test_autocomplete_view.py...
 Applied patch tests/admin_views/test_autocomplete_view.py cleanly.
@@ -51,46 +47,11 @@ Applied patch tests/admin_views/test_autocomplete_view.py cleanly.
 [django__django__4.0] [django__django-14752] Return Code: 0 
 [django__django__4.0] [django__django-14752] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__4.0 ./tests/runtests.py --verbosity 2 admin_views.test_autocomplete_view;
-[django__django__4.0] [django__django-14752] Command: conda run -n django__django__4.0 ./tests/runtests.py --verbosity 2 admin_views.test_autocomplete_view 
-[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 admin_views.test_autocomplete_view;
+[django__django__4.0] [django__django-14752] Command: ./tests/runtests.py --verbosity 2 admin_views.test_autocomplete_view 
+[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.0] [django__django-14752] Std. Output:
-Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_inline_add_another_widgets (admin_views.test_autocomplete_view.SeleniumTests) ... skipped 'No browsers specified.'
-test_select (admin_views.test_autocomplete_view.SeleniumTests) ... skipped 'No browsers specified.'
-test_select_multiple (admin_views.test_autocomplete_view.SeleniumTests) ... skipped 'No browsers specified.'
-test_custom_to_field (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_custom_to_field_custom_pk (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_custom_to_field_permission_denied (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_field_does_not_allowed (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_field_does_not_exist (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_field_no_related_field (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_get_paginator (admin_views.test_autocomplete_view.AutocompleteJsonViewTests)
-Search results are paginated. ... ok
-test_has_view_or_change_permission_required (admin_views.test_autocomplete_view.AutocompleteJsonViewTests)
-Users require the change permission for the related model to the ... ok
-test_limit_choices_to (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_missing_search_fields (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_must_be_logged_in (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_search_use_distinct (admin_views.test_autocomplete_view.AutocompleteJsonViewTests)
-Searching across model relations use QuerySet.distinct() to avoid ... ok
-test_serialize_result (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_success (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_to_field_resolution_with_fk_pk (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
-test_to_field_resolution_with_mti (admin_views.test_autocomplete_view.AutocompleteJsonViewTests)
-to_field resolution should correctly resolve for target models using ... ok
-
-----------------------------------------------------------------------
-Ran 19 tests in 0.335s
-
-OK (skipped=3)
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application admin_views
 Found 19 test(s).
 Skipping setup of unused database(s): other.
@@ -238,8 +199,41 @@ Running migrations:
   Applying admin.0003_logentry_add_action_flag_choices... OK
   Applying sites.0001_initial... OK
   Applying sites.0002_alter_domain_unique... OK
+Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 System check identified no issues (1 silenced).
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+test_inline_add_another_widgets (admin_views.test_autocomplete_view.SeleniumTests) ... skipped 'No browsers specified.'
+test_select (admin_views.test_autocomplete_view.SeleniumTests) ... skipped 'No browsers specified.'
+test_select_multiple (admin_views.test_autocomplete_view.SeleniumTests) ... skipped 'No browsers specified.'
+test_custom_to_field (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_custom_to_field_custom_pk (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_custom_to_field_permission_denied (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_field_does_not_allowed (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_field_does_not_exist (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_field_no_related_field (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_get_paginator (admin_views.test_autocomplete_view.AutocompleteJsonViewTests)
+Search results are paginated. ... ok
+test_has_view_or_change_permission_required (admin_views.test_autocomplete_view.AutocompleteJsonViewTests)
+Users require the change permission for the related model to the ... ok
+test_limit_choices_to (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_missing_search_fields (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_must_be_logged_in (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_search_use_distinct (admin_views.test_autocomplete_view.AutocompleteJsonViewTests)
+Searching across model relations use QuerySet.distinct() to avoid ... ok
+test_serialize_result (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_success (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_to_field_resolution_with_fk_pk (admin_views.test_autocomplete_view.AutocompleteJsonViewTests) ... ok
+test_to_field_resolution_with_mti (admin_views.test_autocomplete_view.AutocompleteJsonViewTests)
+to_field resolution should correctly resolve for target models using ... ok
 
+----------------------------------------------------------------------
+Ran 19 tests in 2.604s
+
+OK (skipped=3)
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
  
 [django__django__4.0] [django__django-14752] Return Code: 0 
 

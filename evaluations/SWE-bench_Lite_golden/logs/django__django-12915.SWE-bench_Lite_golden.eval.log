@@ -1,22 +1,18 @@
 [django__django__3.2] [django__django-12915] Task Metadata:
 	- Instance ID: django__django-12915
 	- Testbed: django__django__3.2
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.2] [django__django-12915] Command: git status --porcelain 
-[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.2] [django__django-12915] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.2] [django__django-12915] Return Code: 0 
 [django__django__3.2] [django__django-12915] Command: git -c advice.detachedHead=false checkout 4652f1f0aa459a7b980441d629648707c32e36bf 
-[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12915] Std. Output:
 Previous HEAD position was 65dfb06a1a [3.2.x] Fixed #32648 -- Fixed VariableDoesNotExist rendering sitemaps template.
 HEAD is now at 4652f1f0aa Fixed #31662 -- Added detection for GDAL 3.0 and 3.1 on Windows.
  
 [django__django__3.2] [django__django-12915] Return Code: 0 
-[django__django__3.2] [django__django-12915] Command: git apply -v /home/swe-bench/temp_django__django-12915_pred_try.patch 
-[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12915] Command: git apply -v /opt/temp_django__django-12915_pred_try.patch 
+[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12915] Std. Output:
 Checking patch django/contrib/staticfiles/handlers.py...
 Applied patch django/contrib/staticfiles/handlers.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/contrib/staticfiles/handlers.py cleanly.
 [django__django__3.2] [django__django-12915] Return Code: 0 
 [django__django__3.2] [django__django-12915] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-12915] Command: git apply -v -R /home/swe-bench/temp_django__django-12915_pred_try.patch 
-[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12915] Command: git apply -v -R /opt/temp_django__django-12915_pred_try.patch 
+[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12915] Std. Output:
 Checking patch django/contrib/staticfiles/handlers.py...
 Applied patch django/contrib/staticfiles/handlers.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/contrib/staticfiles/handlers.py cleanly.
 [django__django__3.2] [django__django-12915] Return Code: 0 
 [django__django__3.2] [django__django-12915] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-12915] Command: git apply -v /home/swe-bench/temp_django__django-12915_pred.patch 
-[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12915] Command: git apply -v /opt/temp_django__django-12915_pred.patch 
+[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12915] Std. Output:
 Checking patch django/contrib/staticfiles/handlers.py...
 Applied patch django/contrib/staticfiles/handlers.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/contrib/staticfiles/handlers.py cleanly.
 [django__django__3.2] [django__django-12915] Return Code: 0 
 [django__django__3.2] [django__django-12915] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.2] [django__django-12915] Command: git apply -v /home/swe-bench/temp_django__django-12915_test.patch 
-[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12915] Command: git apply -v /opt/temp_django__django-12915_test.patch 
+[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12915] Std. Output:
 Checking patch tests/asgi/project/static/file.txt...
 Checking patch tests/asgi/tests.py...
@@ -55,10 +51,15 @@ Applied patch tests/staticfiles_tests/test_handlers.py cleanly.
 [django__django__3.2] [django__django-12915] Return Code: 0 
 [django__django__3.2] [django__django-12915] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 asgi.tests staticfiles_tests.test_handlers;
-[django__django__3.2] [django__django-12915] Command: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 asgi.tests staticfiles_tests.test_handlers 
-[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 asgi.tests staticfiles_tests.test_handlers;
+[django__django__3.2] [django__django-12915] Command: ./tests/runtests.py --verbosity 2 asgi.tests staticfiles_tests.test_handlers 
+[django__django__3.2] [django__django-12915] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.2] [django__django-12915] Std. Output:
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Importing application staticfiles_tests
+Importing application asgi
+Skipping setup of unused database(s): default, other.
+System check identified no issues (0 silenced).
 test_get_async_response (staticfiles_tests.test_handlers.TestASGIStaticFilesHandler) ... ok
 test_get_async_response_not_found (staticfiles_tests.test_handlers.TestASGIStaticFilesHandler) ... ok
 test_disconnect (asgi.tests.ASGITest) ... ok
@@ -72,16 +73,9 @@ test_static_file_response (asgi.tests.ASGITest) ... ok
 test_wrong_connection_type (asgi.tests.ASGITest) ... ok
 
 ----------------------------------------------------------------------
-Ran 11 tests in 2.126s
+Ran 11 tests in 2.279s
 
 OK
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
-Importing application staticfiles_tests
-Importing application asgi
-Skipping setup of unused database(s): default, other.
-System check identified no issues (0 silenced).
-
  
 [django__django__3.2] [django__django-12915] Return Code: 0 
 

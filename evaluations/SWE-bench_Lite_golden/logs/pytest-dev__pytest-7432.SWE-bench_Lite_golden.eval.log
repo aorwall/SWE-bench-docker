@@ -33,8 +33,8 @@ Requirement already satisfied: toml in /home/swe-bench/miniconda3/envs/pytest-de
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev593+ge6e300e72-0.editable-py3-none-any.whl size=5134 sha256=70838088818c924c0df2421db34742288aa9e1bfc879122fe99d7d3dbb2a2b7e
-  Stored in directory: /tmp/pip-ephem-wheel-cache-6_57thr0/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev593+ge6e300e72-0.editable-py3-none-any.whl size=5134 sha256=409f351aaf03e090d569218a17d7b2f9ece955fc51a3a6e63e258b79e3dd4222
+  Stored in directory: /tmp/pip-ephem-wheel-cache-9kde1my6/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -65,8 +65,8 @@ Requirement already satisfied: toml in /home/swe-bench/miniconda3/envs/pytest-de
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev593+ge6e300e72-0.editable-py3-none-any.whl size=5134 sha256=70838088818c924c0df2421db34742288aa9e1bfc879122fe99d7d3dbb2a2b7e
-  Stored in directory: /tmp/pip-ephem-wheel-cache-6_57thr0/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev593+ge6e300e72-0.editable-py3-none-any.whl size=5134 sha256=409f351aaf03e090d569218a17d7b2f9ece955fc51a3a6e63e258b79e3dd4222
+  Stored in directory: /tmp/pip-ephem-wheel-cache-9kde1my6/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -276,7 +276,7 @@ E       assert 0
 test_xfail_run_anyway.py:4: AssertionError
 =========================== short test summary info ============================
 FAILED test_xfail_run_anyway.py::test_func - assert 0
-========================= 1 failed, 1 passed in 0.00s ==========================
+========================= 1 failed, 1 passed in 0.01s ==========================
 ________ TestXFail.test_xfail_run_with_skip_mark[test_input0-expected0] ________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -288,7 +288,7 @@ test_sample.py s                                                         [100%]
 
 =========================== short test summary info ============================
 SKIPPED [1] test_sample.py:2: unconditional skip
-============================== 1 skipped in 0.00s ==============================
+============================== 1 skipped in 0.01s ==============================
 ________ TestXFail.test_xfail_run_with_skip_mark[test_input1-expected1] ________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -300,7 +300,7 @@ test_sample.py s                                                         [100%]
 
 =========================== short test summary info ============================
 SKIPPED [1] test_sample.py:2: unconditional skip
-============================== 1 skipped in 0.00s ==============================
+============================== 1 skipped in 0.01s ==============================
 ___________________ TestXFail.test_xfail_evalfalse_but_fails ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -319,7 +319,7 @@ collecting ... collected 1 item
 
 test_one.py::test_this XFAIL                                             [100%]
 
-============================== 1 xfailed in 0.00s ==============================
+============================== 1 xfailed in 0.01s ==============================
 _________________ TestXFail.test_xfail_not_run_xfail_reporting _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -334,7 +334,7 @@ XFAIL test_one.py::test_this
   reason: [NOTRUN] noway
 XFAIL test_one.py::test_this_true
   reason: [NOTRUN] condition: True
-========================= 1 passed, 2 xfailed in 0.04s =========================
+========================= 1 passed, 2 xfailed in 0.08s =========================
 __________________ TestXFail.test_xfail_not_run_no_setup_run ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -347,7 +347,7 @@ test_one.py x                                                            [100%]
 =========================== short test summary info ============================
 XFAIL test_one.py::test_this
   reason: [NOTRUN] hello
-============================== 1 xfailed in 0.02s ==============================
+============================== 1 xfailed in 0.04s ==============================
 __________________________ TestXFail.test_xfail_xpass __________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -359,7 +359,7 @@ test_one.py X                                                            [100%]
 
 =========================== short test summary info ============================
 XPASS test_one.py::test_that 
-============================== 1 xpassed in 0.00s ==============================
+============================== 1 xpassed in 0.01s ==============================
 _______________________ TestXFail.test_xfail_imperative ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -369,7 +369,7 @@ collected 1 item
 
 test_xfail_imperative.py x                                               [100%]
 
-============================== 1 xfailed in 0.00s ==============================
+============================== 1 xfailed in 0.01s ==============================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_imperative0
@@ -380,7 +380,7 @@ test_xfail_imperative.py x                                               [100%]
 =========================== short test summary info ============================
 XFAIL test_xfail_imperative.py::test_this
   reason: hello
-============================== 1 xfailed in 0.00s ==============================
+============================== 1 xfailed in 0.01s ==============================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_imperative0
@@ -398,7 +398,7 @@ collected 1 item
 
 test_xfail_imperative_in_setup_function.py x                             [100%]
 
-============================== 1 xfailed in 0.00s ==============================
+============================== 1 xfailed in 0.01s ==============================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_imperative_in_setup_function0
@@ -409,7 +409,7 @@ test_xfail_imperative_in_setup_function.py x                             [100%]
 =========================== short test summary info ============================
 XFAIL test_xfail_imperative_in_setup_function.py::test_this
   reason: hello
-============================== 1 xfailed in 0.00s ==============================
+============================== 1 xfailed in 0.01s ==============================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_imperative_in_setup_function0
@@ -427,7 +427,7 @@ E       assert 0
 test_xfail_imperative_in_setup_function.py:6: AssertionError
 =========================== short test summary info ============================
 FAILED test_xfail_imperative_in_setup_function.py::test_this - assert 0
-============================== 1 failed in 0.00s ===============================
+============================== 1 failed in 0.01s ===============================
 _____________________ TestXFail.test_dynamic_xfail_no_run ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -440,7 +440,7 @@ test_dynamic_xfail_no_run.py x                                           [100%]
 =========================== short test summary info ============================
 XFAIL test_dynamic_xfail_no_run.py::test_this
   reason: [NOTRUN] 
-============================== 1 xfailed in 0.04s ==============================
+============================== 1 xfailed in 0.07s ==============================
 ____________ TestXFail.test_dynamic_xfail_set_during_funcarg_setup _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -450,7 +450,7 @@ collected 1 item
 
 test_dynamic_xfail_set_during_funcarg_setup.py x                         [100%]
 
-============================== 1 xfailed in 0.00s ==============================
+============================== 1 xfailed in 0.01s ==============================
 _________ TestXFail.test_xfail_raises[TypeError-TypeError-*1 xfailed*] _________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -460,7 +460,7 @@ collected 1 item
 
 test_xfail_raises.py x                                                   [100%]
 
-============================== 1 xfailed in 0.00s ==============================
+============================== 1 xfailed in 0.01s ==============================
 _ TestXFail.test_xfail_raises[(AttributeError, TypeError)-TypeError-*1 xfailed*] _
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -470,7 +470,7 @@ collected 1 item
 
 test_xfail_raises.py x                                                   [100%]
 
-============================== 1 xfailed in 0.00s ==============================
+============================== 1 xfailed in 0.01s ==============================
 _________ TestXFail.test_xfail_raises[TypeError-IndexError-*1 failed*] _________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -491,7 +491,7 @@ E       IndexError
 test_xfail_raises.py:4: IndexError
 =========================== short test summary info ============================
 FAILED test_xfail_raises.py::test_raises - IndexError
-============================== 1 failed in 0.00s ===============================
+============================== 1 failed in 0.01s ===============================
 _ TestXFail.test_xfail_raises[(AttributeError, TypeError)-IndexError-*1 failed*] _
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -512,7 +512,7 @@ E       IndexError
 test_xfail_raises.py:4: IndexError
 =========================== short test summary info ============================
 FAILED test_xfail_raises.py::test_raises - IndexError
-============================== 1 failed in 0.00s ===============================
+============================== 1 failed in 0.01s ===============================
 _________________________ TestXFail.test_strict_sanity _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -538,7 +538,7 @@ test_strict_xfail.py F                                                   [100%]
 =================================== FAILURES ===================================
 ___________________________________ test_foo ___________________________________
 [XPASS(strict)] unsupported feature
-============================== 1 failed in 0.00s ===============================
+============================== 1 failed in 0.01s ===============================
 ______________________ TestXFail.test_strict_xfail[False] ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -560,7 +560,7 @@ collected 1 item
 
 test_strict_xfail_condition.py .                                         [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _________________ TestXFail.test_strict_xfail_condition[False] _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -570,7 +570,7 @@ collected 1 item
 
 test_strict_xfail_condition.py .                                         [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _________________ TestXFail.test_xfail_condition_keyword[True] _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -580,7 +580,7 @@ collected 1 item
 
 test_xfail_condition_keyword.py .                                        [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ________________ TestXFail.test_xfail_condition_keyword[False] _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -590,7 +590,7 @@ collected 1 item
 
 test_xfail_condition_keyword.py .                                        [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _____________ TestXFail.test_strict_xfail_default_from_file[true] ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -603,7 +603,7 @@ test_strict_xfail_default_from_file.py F                                 [100%]
 =================================== FAILURES ===================================
 ___________________________________ test_foo ___________________________________
 [XPASS(strict)] unsupported feature
-============================== 1 failed in 0.00s ===============================
+============================== 1 failed in 0.01s ===============================
 _____________ TestXFail.test_strict_xfail_default_from_file[false] _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -615,7 +615,7 @@ test_strict_xfail_default_from_file.py X                                 [100%]
 
 =========================== short test summary info ============================
 XPASS test_strict_xfail_default_from_file.py::test_foo unsupported feature
-============================== 1 xpassed in 0.00s ==============================
+============================== 1 xpassed in 0.01s ==============================
 _____________ TestXFailwithSetupTeardown.test_failing_setup_issue9 _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -625,7 +625,7 @@ collected 1 item
 
 test_failing_setup_issue9.py x                                           [100%]
 
-============================== 1 xfailed in 0.00s ==============================
+============================== 1 xfailed in 0.01s ==============================
 ___________ TestXFailwithSetupTeardown.test_failing_teardown_issue9 ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -635,7 +635,7 @@ collected 1 item
 
 test_failing_teardown_issue9.py Xx                                       [100%]
 
-======================== 1 xfailed, 1 xpassed in 0.00s =========================
+======================== 1 xfailed, 1 xpassed in 0.01s =========================
 ___________________________ TestSkip.test_skip_class ___________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -645,7 +645,7 @@ collected 3 items
 
 test_skip_class.py ss.                                                   [100%]
 
-========================= 1 passed, 2 skipped in 0.00s =========================
+========================= 1 passed, 2 skipped in 0.01s =========================
 _____________________ TestSkip.test_skips_on_false_string ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -655,7 +655,7 @@ collected 1 item
 
 test_skips_on_false_string.py s                                          [100%]
 
-============================== 1 skipped in 0.00s ==============================
+============================== 1 skipped in 0.01s ==============================
 _________________________ TestSkip.test_arg_as_reason __________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -679,7 +679,7 @@ test_skip_no_reason.py s                                                 [100%]
 
 =========================== short test summary info ============================
 SKIPPED [1] test_skip_no_reason.py:2: unconditional skip
-============================== 1 skipped in 0.00s ==============================
+============================== 1 skipped in 0.01s ==============================
 ________________________ TestSkip.test_skip_with_reason ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -691,7 +691,7 @@ test_skip_with_reason.py s                                               [100%]
 
 =========================== short test summary info ============================
 SKIPPED [1] test_skip_with_reason.py:2: for lolz
-============================== 1 skipped in 0.00s ==============================
+============================== 1 skipped in 0.01s ==============================
 _____________________ TestSkip.test_only_skips_marked_test _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -704,7 +704,7 @@ test_only_skips_marked_test.py ss.                                       [100%]
 =========================== short test summary info ============================
 SKIPPED [1] test_only_skips_marked_test.py:2: unconditional skip
 SKIPPED [1] test_only_skips_marked_test.py:5: nothing in particular
-========================= 1 passed, 2 skipped in 0.00s =========================
+========================= 1 passed, 2 skipped in 0.01s =========================
 ________________________ TestSkip.test_strict_and_skip _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -716,7 +716,7 @@ test_strict_and_skip.py s                                                [100%]
 
 =========================== short test summary info ============================
 SKIPPED [1] test_strict_and_skip.py:2: unconditional skip
-============================== 1 skipped in 0.00s ==============================
+============================== 1 skipped in 0.01s ==============================
 ______________________ TestSkipif.test_skipif_conditional ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -736,7 +736,7 @@ test_foo.py s
 
 =========================== short test summary info ============================
 SKIPPED [1] test_foo.py:2: condition: hasattr(sys, 'platform')
-============================== 1 skipped in 0.00s ==============================
+============================== 1 skipped in 0.01s ==============================
 ______ TestSkipif.test_skipif_reporting[True, reason="invalid platform"] _______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -801,7 +801,7 @@ collected 2 items
 
 test_skipif_class.py ss                                                  [100%]
 
-============================== 2 skipped in 0.00s ==============================
+============================== 2 skipped in 0.01s ==============================
 _______________________ test_skipped_reasons_functional ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -814,7 +814,7 @@ test_one.py sss                                                          [100%]
 =========================== short test summary info ============================
 SKIPPED [2] conftest.py:4: test
 SKIPPED [1] test_one.py:14: via_decorator
-============================== 3 skipped in 0.00s ==============================
+============================== 3 skipped in 0.01s ==============================
 _____________________________ test_skipped_folding _____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -826,7 +826,7 @@ test_one.py ss                                                           [100%]
 
 =========================== short test summary info ============================
 SKIPPED [2] test_one.py: Folding
-============================== 2 skipped in 0.00s ==============================
+============================== 2 skipped in 0.01s ==============================
 _______________________________ test_reportchars _______________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -869,7 +869,7 @@ E       assert 0
 conftest.py:2: AssertionError
 =========================== short test summary info ============================
 ERROR test_simple.py::test_foo - assert 0
-========================== 1 passed, 1 error in 0.00s ==========================
+========================== 1 passed, 1 error in 0.01s ==========================
 _____________________________ test_reportchars_all _____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -922,7 +922,7 @@ E       assert 0
 conftest.py:2: AssertionError
 =========================== short test summary info ============================
 ERROR test_simple.py::test_foo - assert 0
-========================== 1 passed, 1 error in 0.00s ==========================
+========================== 1 passed, 1 error in 0.01s ==========================
 ____________________ test_errors_in_xfail_skip_expressions _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -956,7 +956,7 @@ SyntaxError: invalid syntax
 =========================== short test summary info ============================
 ERROR test_errors_in_xfail_skip_expressions.py::test_nameerror
 ERROR test_errors_in_xfail_skip_expressions.py::test_syntax
-========================= 1 passed, 2 errors in 0.00s ==========================
+========================= 1 passed, 2 errors in 0.01s ==========================
 ________________________ test_xfail_skipif_with_globals ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -970,7 +970,7 @@ test_xfail_skipif_with_globals.py sx                                     [100%]
 SKIPPED [1] test_xfail_skipif_with_globals.py:3: condition: x == 3
 XFAIL test_xfail_skipif_with_globals.py::test_boolean
   condition: x == 3
-======================== 1 skipped, 1 xfailed in 0.00s =========================
+======================== 1 skipped, 1 xfailed in 0.01s =========================
 _____________________________ test_default_markers _____________________________
 ----------------------------- Captured stdout call -----------------------------
 @pytest.mark.filterwarnings(warning): add a warning filter to the given test. see https://docs.pytest.org/en/latest/warnings.html#pytest-mark-filterwarnings 
@@ -998,7 +998,7 @@ collected 1 item
 
 test_xfail_test_setup_exception.py x                                     [100%]
 
-============================== 1 xfailed in 0.00s ==============================
+============================== 1 xfailed in 0.01s ==============================
 ______________________ test_imperativeskip_on_xfail_test _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1011,7 +1011,7 @@ test_imperativeskip_on_xfail_test.py ss                                  [100%]
 =========================== short test summary info ============================
 SKIPPED [1] conftest.py:3: abc
 SKIPPED [1] test_imperativeskip_on_xfail_test.py:6: condition: True
-============================== 2 skipped in 0.00s ==============================
+============================== 2 skipped in 0.01s ==============================
 _______________________ TestBooleanCondition.test_skipif _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1021,7 +1021,7 @@ collected 2 items
 
 test_skipif.py s.                                                        [100%]
 
-========================= 1 passed, 1 skipped in 0.00s =========================
+========================= 1 passed, 1 skipped in 0.01s =========================
 __________________ TestBooleanCondition.test_skipif_noreason ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1034,7 +1034,7 @@ test_skipif_noreason.py E                                                [100%]
 ==================================== ERRORS ====================================
 _________________________ ERROR at setup of test_func __________________________
 Error evaluating 'skipif': you need to specify reason=STRING when using booleans as conditions.
-=============================== 1 error in 0.00s ===============================
+=============================== 1 error in 0.01s ===============================
 _______________________ TestBooleanCondition.test_xfail ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1047,7 +1047,7 @@ test_xfail.py x                                                          [100%]
 =========================== short test summary info ============================
 XFAIL test_xfail.py::test_func
   True123
-============================== 1 xfailed in 0.00s ==============================
+============================== 1 xfailed in 0.02s ==============================
 _______________________________ test_xfail_item ________________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1064,7 +1064,7 @@ conftest.py:9
     return MyItem("foo", parent)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
-======================== 1 xfailed, 1 warning in 0.03s =========================
+======================== 1 xfailed, 1 warning in 0.04s =========================
 _________________________ test_module_level_skip_error _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1078,7 +1078,7 @@ Using pytest.skip outside of a test is not allowed. To decorate a test function,
 =========================== short test summary info ============================
 ERROR test_module_level_skip_error.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.03s ===============================
+=============================== 1 error in 0.04s ===============================
 ________________ test_module_level_skip_with_allow_module_level ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1104,7 +1104,7 @@ E   TypeError: skip() got an unexpected keyword argument 'unknown'
 =========================== short test summary info ============================
 ERROR test_invalid_skip_keyword_parameter.py - TypeError: skip() got an unexp...
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.03s ===============================
+=============================== 1 error in 0.04s ===============================
 _____________________________ test_mark_xfail_item _____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1121,7 +1121,7 @@ conftest.py:14
     return MyItem("foo", parent)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
-======================== 1 xfailed, 1 warning in 0.02s =========================
+======================== 1 xfailed, 1 warning in 0.04s =========================
 ________________________ test_summary_list_after_errors ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1153,7 +1153,7 @@ tests/test_1.py s                                                        [100%]
 
 =========================== short test summary info ============================
 SKIPPED [1] tests/test_1.py:2: unconditional skip
-============================== 1 skipped in 0.01s ==============================
+============================== 1 skipped in 0.00s ==============================
 =========================== short test summary info ============================
 PASSED testing/test_skipping.py::test_importorskip
 PASSED testing/test_skipping.py::TestEvaluation::test_no_marker
@@ -1234,7 +1234,7 @@ PASSED testing/test_skipping.py::test_invalid_skip_keyword_parameter
 PASSED testing/test_skipping.py::test_mark_xfail_item
 PASSED testing/test_skipping.py::test_summary_list_after_errors
 PASSED testing/test_skipping.py::test_relpath_rootdir
-============================== 79 passed in 1.57s ==============================
+============================== 79 passed in 2.94s ==============================
 
  
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7432] Return Code: 0 

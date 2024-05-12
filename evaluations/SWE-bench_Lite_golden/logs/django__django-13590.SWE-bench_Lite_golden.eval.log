@@ -1,22 +1,18 @@
 [django__django__3.2] [django__django-13590] Task Metadata:
 	- Instance ID: django__django-13590
 	- Testbed: django__django__3.2
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.2] [django__django-13590] Command: git status --porcelain 
-[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.2] [django__django-13590] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.2] [django__django-13590] Return Code: 0 
 [django__django__3.2] [django__django-13590] Command: git -c advice.detachedHead=false checkout 755dbf39fcdc491fe9b588358303e259c7750be4 
-[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13590] Std. Output:
 Previous HEAD position was 65dfb06a1a [3.2.x] Fixed #32648 -- Fixed VariableDoesNotExist rendering sitemaps template.
 HEAD is now at 755dbf39fc Replaced @no_oracle skips with DatabaseFeatures.allows_group_by_lob.
  
 [django__django__3.2] [django__django-13590] Return Code: 0 
-[django__django__3.2] [django__django-13590] Command: git apply -v /home/swe-bench/temp_django__django-13590_pred_try.patch 
-[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13590] Command: git apply -v /opt/temp_django__django-13590_pred_try.patch 
+[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13590] Std. Output:
 Checking patch django/db/models/sql/query.py...
 Applied patch django/db/models/sql/query.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/db/models/sql/query.py cleanly.
 [django__django__3.2] [django__django-13590] Return Code: 0 
 [django__django__3.2] [django__django-13590] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-13590] Command: git apply -v -R /home/swe-bench/temp_django__django-13590_pred_try.patch 
-[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13590] Command: git apply -v -R /opt/temp_django__django-13590_pred_try.patch 
+[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13590] Std. Output:
 Checking patch django/db/models/sql/query.py...
 Applied patch django/db/models/sql/query.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/db/models/sql/query.py cleanly.
 [django__django__3.2] [django__django-13590] Return Code: 0 
 [django__django__3.2] [django__django-13590] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-13590] Command: git apply -v /home/swe-bench/temp_django__django-13590_pred.patch 
-[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13590] Command: git apply -v /opt/temp_django__django-13590_pred.patch 
+[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13590] Std. Output:
 Checking patch django/db/models/sql/query.py...
 Applied patch django/db/models/sql/query.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/db/models/sql/query.py cleanly.
 [django__django__3.2] [django__django-13590] Return Code: 0 
 [django__django__3.2] [django__django-13590] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.2] [django__django-13590] Command: git apply -v /home/swe-bench/temp_django__django-13590_test.patch 
-[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13590] Command: git apply -v /opt/temp_django__django-13590_test.patch 
+[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13590] Std. Output:
 Checking patch tests/expressions/tests.py...
 Applied patch tests/expressions/tests.py cleanly.
@@ -51,11 +47,43 @@ Applied patch tests/expressions/tests.py cleanly.
 [django__django__3.2] [django__django-13590] Return Code: 0 
 [django__django__3.2] [django__django-13590] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 expressions.tests;
-[django__django__3.2] [django__django-13590] Command: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 expressions.tests 
-[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 expressions.tests;
+[django__django__3.2] [django__django-13590] Command: ./tests/runtests.py --verbosity 2 expressions.tests 
+[django__django__3.2] [django__django-13590] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.2] [django__django-13590] Std. Output:
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Importing application expressions
+Skipping setup of unused database(s): other.
+Operations to perform:
+  Synchronize unmigrated apps: auth, contenttypes, expressions, messages, sessions, staticfiles
+  Apply all migrations: admin, sites
+Synchronizing apps without migrations:
+  Creating tables...
+    Creating table django_content_type
+    Creating table auth_permission
+    Creating table auth_group
+    Creating table auth_user
+    Creating table django_session
+    Creating table expressions_manager
+    Creating table expressions_employee
+    Creating table expressions_remoteemployee
+    Creating table expressions_company
+    Creating table expressions_number
+    Creating table expressions_ExPeRiMeNt
+    Creating table expressions_result
+    Creating table expressions_time
+    Creating table expressions_simulationrun
+    Creating table expressions_uuidpk
+    Creating table expressions_uuid
+    Running deferred SQL...
+Running migrations:
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying sites.0001_initial... OK
+  Applying sites.0002_alter_domain_unique... OK
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+System check identified no issues (0 silenced).
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
@@ -68,54 +96,25 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
-test_non_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
-test_and (expressions.tests.CombinableTests) ... ok
-test_negation (expressions.tests.CombinableTests) ... ok
-test_or (expressions.tests.CombinableTests) ... ok
-test_reversed_and (expressions.tests.CombinableTests) ... ok
-test_reversed_or (expressions.tests.CombinableTests) ... ok
+test_resolve_output_field (expressions.tests.CombinedExpressionTests) ... ok
 test_deconstruct (expressions.tests.FTests) ... ok
 test_deepcopy (expressions.tests.FTests) ... ok
 test_equal (expressions.tests.FTests) ... ok
 test_hash (expressions.tests.FTests) ... ok
 test_not_equal_Value (expressions.tests.FTests) ... ok
-test_resolve_output_field (expressions.tests.CombinedExpressionTests) ... ok
+test_optimizations (expressions.tests.ExistsTests) ... ok
+test_and (expressions.tests.CombinableTests) ... ok
+test_negation (expressions.tests.CombinableTests) ... ok
+test_or (expressions.tests.CombinableTests) ... ok
+test_reversed_and (expressions.tests.CombinableTests) ... ok
+test_reversed_or (expressions.tests.CombinableTests) ... ok
 test_aggregates (expressions.tests.ReprTests) ... ok
 test_distinct_aggregates (expressions.tests.ReprTests) ... ok
 test_expressions (expressions.tests.ReprTests) ... ok
 test_filtered_aggregates (expressions.tests.ReprTests) ... ok
 test_functions (expressions.tests.ReprTests) ... ok
-test_optimizations (expressions.tests.ExistsTests) ... ok
-test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
-test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
-test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
-test_equal (expressions.tests.SimpleExpressionTests) ... ok
-test_hash (expressions.tests.SimpleExpressionTests) ... ok
-test_complex_expressions (expressions.tests.ExpressionsNumericTests) ... ok
-test_fill_with_value_from_same_object (expressions.tests.ExpressionsNumericTests) ... ok
-test_filter_not_equals_other_field (expressions.tests.ExpressionsNumericTests) ... ok
-test_increment_value (expressions.tests.ExpressionsNumericTests) ... ok
-test_F_reuse (expressions.tests.ExpressionsTests) ... ok
-test_insensitive_patterns_escape (expressions.tests.ExpressionsTests) ... ok
-test_patterns_escape (expressions.tests.ExpressionsTests) ... ok
-test_compile_unresolved (expressions.tests.ValueTests) ... ok
-test_deconstruct (expressions.tests.ValueTests) ... ok
-test_deconstruct_output_field (expressions.tests.ValueTests) ... ok
-test_equal (expressions.tests.ValueTests) ... ok
-test_equal_output_field (expressions.tests.ValueTests) ... ok
-test_hash (expressions.tests.ValueTests) ... ok
-test_raise_empty_expressionlist (expressions.tests.ValueTests) ... ok
-test_resolve_output_field (expressions.tests.ValueTests) ... ok
-test_resolve_output_field_failure (expressions.tests.ValueTests) ... ok
-test_update_TimeField_using_Value (expressions.tests.ValueTests) ... ok
-test_update_UUIDField_using_Value (expressions.tests.ValueTests) ... ok
-test_complex_expressions_do_not_introduce_sql_injection_via_untrusted_string_inclusion (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_expressions_in_lookups_join_choice (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_in_lookup_allows_F_expressions_and_expressions_for_datetimes (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_in_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_range_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_range_lookup_namedtuple (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
+test_non_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
 test_lefthand_addition (expressions.tests.ExpressionOperatorTests) ... ok
 test_lefthand_bitwise_and (expressions.tests.ExpressionOperatorTests) ... ok
 test_lefthand_bitwise_left_shift_operator (expressions.tests.ExpressionOperatorTests) ... ok
@@ -135,6 +134,35 @@ test_right_hand_modulo (expressions.tests.ExpressionOperatorTests) ... ok
 test_right_hand_multiplication (expressions.tests.ExpressionOperatorTests) ... ok
 test_right_hand_subtraction (expressions.tests.ExpressionOperatorTests) ... ok
 test_righthand_power (expressions.tests.ExpressionOperatorTests) ... ok
+test_equal (expressions.tests.SimpleExpressionTests) ... ok
+test_hash (expressions.tests.SimpleExpressionTests) ... ok
+test_F_reuse (expressions.tests.ExpressionsTests) ... ok
+test_insensitive_patterns_escape (expressions.tests.ExpressionsTests) ... ok
+test_patterns_escape (expressions.tests.ExpressionsTests) ... ok
+test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
+test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
+test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
+test_complex_expressions (expressions.tests.ExpressionsNumericTests) ... ok
+test_fill_with_value_from_same_object (expressions.tests.ExpressionsNumericTests) ... ok
+test_filter_not_equals_other_field (expressions.tests.ExpressionsNumericTests) ... ok
+test_increment_value (expressions.tests.ExpressionsNumericTests) ... ok
+test_compile_unresolved (expressions.tests.ValueTests) ... ok
+test_deconstruct (expressions.tests.ValueTests) ... ok
+test_deconstruct_output_field (expressions.tests.ValueTests) ... ok
+test_equal (expressions.tests.ValueTests) ... ok
+test_equal_output_field (expressions.tests.ValueTests) ... ok
+test_hash (expressions.tests.ValueTests) ... ok
+test_raise_empty_expressionlist (expressions.tests.ValueTests) ... ok
+test_resolve_output_field (expressions.tests.ValueTests) ... ok
+test_resolve_output_field_failure (expressions.tests.ValueTests) ... ok
+test_update_TimeField_using_Value (expressions.tests.ValueTests) ... ok
+test_update_UUIDField_using_Value (expressions.tests.ValueTests) ... ok
+test_complex_expressions_do_not_introduce_sql_injection_via_untrusted_string_inclusion (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_expressions_in_lookups_join_choice (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_in_lookup_allows_F_expressions_and_expressions_for_datetimes (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_in_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_range_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_range_lookup_namedtuple (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
 test_date_case_subtraction (expressions.tests.FTimeDeltaTests) ... ok
 test_date_comparison (expressions.tests.FTimeDeltaTests) ... ok
 test_date_minus_duration (expressions.tests.FTimeDeltaTests) ... ok
@@ -219,7 +247,7 @@ test_update_with_none (expressions.tests.BasicExpressionsTests) ... ok
 test_uuid_pk_subquery (expressions.tests.BasicExpressionsTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 149 tests in 0.118s
+Ran 149 tests in 1.382s
 
 OK (skipped=2)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
@@ -235,40 +263,6 @@ Destroying test database for alias 'default' ('file:memorydb_default?mode=memory
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
-Importing application expressions
-Skipping setup of unused database(s): other.
-Operations to perform:
-  Synchronize unmigrated apps: auth, contenttypes, expressions, messages, sessions, staticfiles
-  Apply all migrations: admin, sites
-Synchronizing apps without migrations:
-  Creating tables...
-    Creating table django_content_type
-    Creating table auth_permission
-    Creating table auth_group
-    Creating table auth_user
-    Creating table django_session
-    Creating table expressions_manager
-    Creating table expressions_employee
-    Creating table expressions_remoteemployee
-    Creating table expressions_company
-    Creating table expressions_number
-    Creating table expressions_ExPeRiMeNt
-    Creating table expressions_result
-    Creating table expressions_time
-    Creating table expressions_simulationrun
-    Creating table expressions_uuidpk
-    Creating table expressions_uuid
-    Running deferred SQL...
-Running migrations:
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying admin.0003_logentry_add_action_flag_choices... OK
-  Applying sites.0001_initial... OK
-  Applying sites.0002_alter_domain_unique... OK
-System check identified no issues (0 silenced).
-
  
 [django__django__3.2] [django__django-13590] Return Code: 0 
 

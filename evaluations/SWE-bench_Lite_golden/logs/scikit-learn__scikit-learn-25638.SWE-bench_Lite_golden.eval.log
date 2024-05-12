@@ -1,16 +1,17 @@
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Task Metadata:
 	- Instance ID: scikit-learn__scikit-learn-25638
 	- Testbed: scikit-learn__scikit-learn__1.3
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.9.19
+ 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git -c advice.detachedHead=false checkout 6adb209acd63825affc884abcd85381f148fb1b0 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 HEAD is now at 6adb209ac FIX renormalization of y_pred inside log_loss (#25299)
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25638_pred_try.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-25638_pred_try.patch 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 Checking patch sklearn/utils/multiclass.py...
 Applied patch sklearn/utils/multiclass.py cleanly.
@@ -18,8 +19,8 @@ Applied patch sklearn/utils/multiclass.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-25638_pred_try.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v -R /opt/temp_scikit-learn__scikit-learn-25638_pred_try.patch 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 Checking patch sklearn/utils/multiclass.py...
 Applied patch sklearn/utils/multiclass.py cleanly.
@@ -27,8 +28,8 @@ Applied patch sklearn/utils/multiclass.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25638_pred.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-25638_pred.patch 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 Checking patch sklearn/utils/multiclass.py...
 Applied patch sklearn/utils/multiclass.py cleanly.
@@ -37,22 +38,22 @@ Applied patch sklearn/utils/multiclass.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git restore sklearn/metrics/tests/test_classification.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git restore sklearn/preprocessing/tests/test_label.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git restore sklearn/utils/tests/test_multiclass.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-25638_test.patch 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-25638_test.patch 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 Checking patch sklearn/metrics/tests/test_classification.py...
 Checking patch sklearn/preprocessing/tests/test_label.py...
@@ -64,13 +65,13 @@ Applied patch sklearn/utils/tests/test_multiclass.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n scikit-learn__scikit-learn__1.3 pytest -rA --tb=no -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py;
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: conda run -n scikit-learn__scikit-learn__1.3 pytest -rA --tb=no -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  pytest -rA --tb=no -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py;
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: pytest -rA --tb=no -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 [1m============================= test session starts ==============================[0m
-platform linux -- Python 3.9.19, pytest-7.4.0, pluggy-1.0.0
-rootdir: /home/swe-bench/scikit-learn__scikit-learn
+platform linux -- Python 3.9.19, pytest-8.2.0, pluggy-1.5.0
+rootdir: /opt/scikit-learn__scikit-learn
 configfile: setup.cfg
 collected 205 items
 
@@ -287,8 +288,7 @@ sklearn/utils/tests/test_multiclass.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m
 [32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_safe_split_with_precomputed_kernel[0m
 [32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_ovr_decision_function[0m
 [33mSKIPPED[0m [1] sklearn/metrics/tests/test_classification.py:2565: Set SKLEARN_RUN_FLOAT32_TESTS=1 to run float32 dtype tests
-[33m================= [32m204 passed[0m, [33m[1m1 skipped[0m, [33m[1m128 warnings[0m[33m in 3.49s[0m[33m =================[0m
-
+[33m================= [32m204 passed[0m, [33m[1m1 skipped[0m, [33m[1m150 warnings[0m[33m in 3.95s[0m[33m =================[0m
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 

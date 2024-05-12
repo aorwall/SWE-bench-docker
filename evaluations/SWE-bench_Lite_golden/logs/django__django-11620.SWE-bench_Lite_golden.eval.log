@@ -1,22 +1,18 @@
 [django__django__3.0] [django__django-11620] Task Metadata:
 	- Instance ID: django__django-11620
 	- Testbed: django__django__3.0
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.0] [django__django-11620] Command: git status --porcelain 
-[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.0] [django__django-11620] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Command: git -c advice.detachedHead=false checkout 514efa3129792ec2abb2444f3e7aeb3f21a38386 
-[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11620] Std. Output:
 Previous HEAD position was 419a78300f [3.0.x] Fixed typo in docs/ref/contrib/postgres/forms.txt.
 HEAD is now at 514efa3129 Fixed #30688 -- Clarified base_manager_name docs.
  
 [django__django__3.0] [django__django-11620] Return Code: 0 
-[django__django__3.0] [django__django-11620] Command: git apply -v /home/swe-bench/temp_django__django-11620_pred_try.patch 
-[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11620] Command: git apply -v /opt/temp_django__django-11620_pred_try.patch 
+[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11620] Std. Output:
 Checking patch django/views/debug.py...
 Applied patch django/views/debug.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/views/debug.py cleanly.
 [django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.0] [django__django-11620] Command: git apply -v -R /home/swe-bench/temp_django__django-11620_pred_try.patch 
-[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11620] Command: git apply -v -R /opt/temp_django__django-11620_pred_try.patch 
+[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11620] Std. Output:
 Checking patch django/views/debug.py...
 Applied patch django/views/debug.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/views/debug.py cleanly.
 [django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.0] [django__django-11620] Command: git apply -v /home/swe-bench/temp_django__django-11620_pred.patch 
-[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11620] Command: git apply -v /opt/temp_django__django-11620_pred.patch 
+[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11620] Std. Output:
 Checking patch django/views/debug.py...
 Applied patch django/views/debug.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/views/debug.py cleanly.
 [django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.0] [django__django-11620] Command: git apply -v /home/swe-bench/temp_django__django-11620_test.patch 
-[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11620] Command: git apply -v /opt/temp_django__django-11620_test.patch 
+[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11620] Std. Output:
 Checking patch tests/view_tests/tests/test_debug.py...
 Applied patch tests/view_tests/tests/test_debug.py cleanly.
@@ -51,10 +47,35 @@ Applied patch tests/view_tests/tests/test_debug.py cleanly.
 [django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.0 ./tests/runtests.py --verbosity 2 view_tests.tests.test_debug;
-[django__django__3.0] [django__django-11620] Command: conda run -n django__django__3.0 ./tests/runtests.py --verbosity 2 view_tests.tests.test_debug 
-[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 view_tests.tests.test_debug;
+[django__django__3.0] [django__django-11620] Command: ./tests/runtests.py --verbosity 2 view_tests.tests.test_debug 
+[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.0] [django__django-11620] Std. Output:
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Importing application view_tests
+Skipping setup of unused database(s): other.
+Operations to perform:
+  Synchronize unmigrated apps: auth, contenttypes, messages, sessions, staticfiles, view_tests
+  Apply all migrations: admin, sites
+Synchronizing apps without migrations:
+  Creating tables...
+    Creating table django_content_type
+    Creating table auth_permission
+    Creating table auth_group
+    Creating table auth_user
+    Creating table django_session
+    Creating table view_tests_author
+    Creating table view_tests_article
+    Creating table view_tests_urlarticle
+    Creating table view_tests_datearticle
+    Running deferred SQL...
+Running migrations:
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying sites.0001_initial... OK
+  Applying sites.0002_alter_domain_unique... OK
+System check identified no issues (0 silenced).
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
@@ -69,11 +90,6 @@ test_repr (view_tests.tests.test_debug.CallableSettingWrapperTests) ... ok
 test_cleanse_setting_basic (view_tests.tests.test_debug.HelperFunctionTests) ... ok
 test_cleanse_setting_ignore_case (view_tests.tests.test_debug.HelperFunctionTests) ... ok
 test_cleanse_setting_recurses_in_dictionary (view_tests.tests.test_debug.HelperFunctionTests) ... ok
-test_handle_db_exception (view_tests.tests.test_debug.DebugViewQueriesAllowedTests) ... ok
-test_400 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
-test_403 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
-test_404 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
-test_template_not_found_error (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
 test_disallowed_host (view_tests.tests.test_debug.PlainTextReportTests)
 An exception report can be generated even for a disallowed host. ... ok
 test_message_only (view_tests.tests.test_debug.PlainTextReportTests) ... ok
@@ -87,6 +103,11 @@ test_request_and_message (view_tests.tests.test_debug.PlainTextReportTests)
 A message can be provided in addition to a request ... ok
 test_request_with_items_key (view_tests.tests.test_debug.PlainTextReportTests) ... ok
 test_template_exception (view_tests.tests.test_debug.PlainTextReportTests) ... ok
+test_handle_db_exception (view_tests.tests.test_debug.DebugViewQueriesAllowedTests) ... ok
+test_400 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
+test_403 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
+test_404 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
+test_template_not_found_error (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
 test_ajax_response_encoding (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
 test_custom_exception_reporter_filter (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
 test_non_sensitive_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
@@ -155,7 +176,7 @@ test_sensitive_settings (view_tests.tests.test_debug.ExceptionReporterFilterTest
 test_settings_with_sensitive_keys (view_tests.tests.test_debug.ExceptionReporterFilterTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 72 tests in 2.042s
+Ran 72 tests in 4.952s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
@@ -168,33 +189,6 @@ Destroying test database for alias 'default' ('file:memorydb_default?mode=memory
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
-Importing application view_tests
-Skipping setup of unused database(s): other.
-Operations to perform:
-  Synchronize unmigrated apps: auth, contenttypes, messages, sessions, staticfiles, view_tests
-  Apply all migrations: admin, sites
-Synchronizing apps without migrations:
-  Creating tables...
-    Creating table django_content_type
-    Creating table auth_permission
-    Creating table auth_group
-    Creating table auth_user
-    Creating table django_session
-    Creating table view_tests_author
-    Creating table view_tests_article
-    Creating table view_tests_urlarticle
-    Creating table view_tests_datearticle
-    Running deferred SQL...
-Running migrations:
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying admin.0003_logentry_add_action_flag_choices... OK
-  Applying sites.0001_initial... OK
-  Applying sites.0002_alter_domain_unique... OK
-System check identified no issues (0 silenced).
-
  
 [django__django__3.0] [django__django-11620] Return Code: 0 
 

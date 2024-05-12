@@ -1,22 +1,18 @@
 [django__django__3.2] [django__django-13448] Task Metadata:
 	- Instance ID: django__django-13448
 	- Testbed: django__django__3.2
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.2] [django__django-13448] Command: git status --porcelain 
-[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.2] [django__django-13448] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.2] [django__django-13448] Return Code: 0 
 [django__django__3.2] [django__django-13448] Command: git -c advice.detachedHead=false checkout 7b9596b974fb0ad1868b10c8c2174e10b72be403 
-[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13448] Std. Output:
 Previous HEAD position was 65dfb06a1a [3.2.x] Fixed #32648 -- Fixed VariableDoesNotExist rendering sitemaps template.
 HEAD is now at 7b9596b974 Fixed #32034 -- Removed redundant get_app_config() call in AdminSite.app_index.
  
 [django__django__3.2] [django__django-13448] Return Code: 0 
-[django__django__3.2] [django__django-13448] Command: git apply -v /home/swe-bench/temp_django__django-13448_pred_try.patch 
-[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13448] Command: git apply -v /opt/temp_django__django-13448_pred_try.patch 
+[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13448] Std. Output:
 Checking patch django/db/backends/base/creation.py...
 Applied patch django/db/backends/base/creation.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/db/backends/base/creation.py cleanly.
 [django__django__3.2] [django__django-13448] Return Code: 0 
 [django__django__3.2] [django__django-13448] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-13448] Command: git apply -v -R /home/swe-bench/temp_django__django-13448_pred_try.patch 
-[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13448] Command: git apply -v -R /opt/temp_django__django-13448_pred_try.patch 
+[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13448] Std. Output:
 Checking patch django/db/backends/base/creation.py...
 Applied patch django/db/backends/base/creation.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/db/backends/base/creation.py cleanly.
 [django__django__3.2] [django__django-13448] Return Code: 0 
 [django__django__3.2] [django__django-13448] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-13448] Command: git apply -v /home/swe-bench/temp_django__django-13448_pred.patch 
-[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13448] Command: git apply -v /opt/temp_django__django-13448_pred.patch 
+[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13448] Std. Output:
 Checking patch django/db/backends/base/creation.py...
 Applied patch django/db/backends/base/creation.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/db/backends/base/creation.py cleanly.
 [django__django__3.2] [django__django-13448] Return Code: 0 
 [django__django__3.2] [django__django-13448] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.2] [django__django-13448] Command: git apply -v /home/swe-bench/temp_django__django-13448_test.patch 
-[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13448] Command: git apply -v /opt/temp_django__django-13448_test.patch 
+[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13448] Std. Output:
 Checking patch tests/backends/base/app_unmigrated/__init__.py...
 Checking patch tests/backends/base/app_unmigrated/migrations/0001_initial.py...
@@ -59,33 +55,11 @@ Applied patch tests/backends/base/test_creation.py cleanly.
 [django__django__3.2] [django__django-13448] Return Code: 0 
 [django__django__3.2] [django__django-13448] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 backends.base.app_unmigrated.__init__ backends.base.app_unmigrated.migrations.0001_initial backends.base.app_unmigrated.migrations.__init__ backends.base.app_unmigrated.models backends.base.test_creation;
-[django__django__3.2] [django__django-13448] Command: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 backends.base.app_unmigrated.__init__ backends.base.app_unmigrated.migrations.0001_initial backends.base.app_unmigrated.migrations.__init__ backends.base.app_unmigrated.models backends.base.test_creation 
-[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 backends.base.app_unmigrated.__init__ backends.base.app_unmigrated.migrations.0001_initial backends.base.app_unmigrated.migrations.__init__ backends.base.app_unmigrated.models backends.base.test_creation;
+[django__django__3.2] [django__django-13448] Command: ./tests/runtests.py --verbosity 2 backends.base.app_unmigrated.__init__ backends.base.app_unmigrated.migrations.0001_initial backends.base.app_unmigrated.migrations.__init__ backends.base.app_unmigrated.models backends.base.test_creation 
+[django__django__3.2] [django__django-13448] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.2] [django__django-13448] Std. Output:
-Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_custom_test_name (backends.base.test_creation.TestDbSignatureTests) ... ok
-test_custom_test_name_with_test_prefix (backends.base.test_creation.TestDbSignatureTests) ... ok
-test_default_name (backends.base.test_creation.TestDbSignatureTests) ... ok
-test_migrate_test_setting_false (backends.base.test_creation.TestDbCreationTests) ... ok
-test_migrate_test_setting_true (backends.base.test_creation.TestDbCreationTests) ... ok
-test_circular_reference (backends.base.test_creation.TestDeserializeDbFromString) ... ok
-test_circular_reference_with_natural_key (backends.base.test_creation.TestDeserializeDbFromString) ... ok
-test_self_reference (backends.base.test_creation.TestDeserializeDbFromString) ... ok
-
-----------------------------------------------------------------------
-Ran 8 tests in 0.129s
-
-OK
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application backends
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -123,7 +97,27 @@ Running migrations:
   Applying sites.0001_initial... OK
   Applying sites.0002_alter_domain_unique... OK
 System check identified no issues (0 silenced).
+Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+test_custom_test_name (backends.base.test_creation.TestDbSignatureTests) ... ok
+test_custom_test_name_with_test_prefix (backends.base.test_creation.TestDbSignatureTests) ... ok
+test_default_name (backends.base.test_creation.TestDbSignatureTests) ... ok
+test_migrate_test_setting_false (backends.base.test_creation.TestDbCreationTests) ... ok
+test_migrate_test_setting_true (backends.base.test_creation.TestDbCreationTests) ... ok
+test_circular_reference (backends.base.test_creation.TestDeserializeDbFromString) ... ok
+test_circular_reference_with_natural_key (backends.base.test_creation.TestDeserializeDbFromString) ... ok
+test_self_reference (backends.base.test_creation.TestDeserializeDbFromString) ... ok
 
+----------------------------------------------------------------------
+Ran 8 tests in 0.291s
+
+OK
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
  
 [django__django__3.2] [django__django-13448] Return Code: 0 
 

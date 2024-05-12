@@ -1,22 +1,18 @@
 [django__django__3.2] [django__django-13768] Task Metadata:
 	- Instance ID: django__django-13768
 	- Testbed: django__django__3.2
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.2] [django__django-13768] Command: git status --porcelain 
-[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.2] [django__django-13768] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.2] [django__django-13768] Return Code: 0 
 [django__django__3.2] [django__django-13768] Command: git -c advice.detachedHead=false checkout 965d2d95c630939b53eb60d9c169f5dfc77ee0c6 
-[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13768] Std. Output:
 Previous HEAD position was 65dfb06a1a [3.2.x] Fixed #32648 -- Fixed VariableDoesNotExist rendering sitemaps template.
 HEAD is now at 965d2d95c6 Fixed typo in tests/servers/tests.py.
  
 [django__django__3.2] [django__django-13768] Return Code: 0 
-[django__django__3.2] [django__django-13768] Command: git apply -v /home/swe-bench/temp_django__django-13768_pred_try.patch 
-[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13768] Command: git apply -v /opt/temp_django__django-13768_pred_try.patch 
+[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13768] Std. Output:
 Checking patch django/dispatch/dispatcher.py...
 Applied patch django/dispatch/dispatcher.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/dispatch/dispatcher.py cleanly.
 [django__django__3.2] [django__django-13768] Return Code: 0 
 [django__django__3.2] [django__django-13768] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-13768] Command: git apply -v -R /home/swe-bench/temp_django__django-13768_pred_try.patch 
-[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13768] Command: git apply -v -R /opt/temp_django__django-13768_pred_try.patch 
+[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13768] Std. Output:
 Checking patch django/dispatch/dispatcher.py...
 Applied patch django/dispatch/dispatcher.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/dispatch/dispatcher.py cleanly.
 [django__django__3.2] [django__django-13768] Return Code: 0 
 [django__django__3.2] [django__django-13768] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-13768] Command: git apply -v /home/swe-bench/temp_django__django-13768_pred.patch 
-[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13768] Command: git apply -v /opt/temp_django__django-13768_pred.patch 
+[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13768] Std. Output:
 Checking patch django/dispatch/dispatcher.py...
 Applied patch django/dispatch/dispatcher.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/dispatch/dispatcher.py cleanly.
 [django__django__3.2] [django__django-13768] Return Code: 0 
 [django__django__3.2] [django__django-13768] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.2] [django__django-13768] Command: git apply -v /home/swe-bench/temp_django__django-13768_test.patch 
-[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13768] Command: git apply -v /opt/temp_django__django-13768_test.patch 
+[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13768] Std. Output:
 Checking patch tests/dispatch/tests.py...
 Applied patch tests/dispatch/tests.py cleanly.
@@ -51,10 +47,14 @@ Applied patch tests/dispatch/tests.py cleanly.
 [django__django__3.2] [django__django-13768] Return Code: 0 
 [django__django__3.2] [django__django-13768] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 dispatch.tests;
-[django__django__3.2] [django__django-13768] Command: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 dispatch.tests 
-[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 dispatch.tests;
+[django__django__3.2] [django__django-13768] Command: ./tests/runtests.py --verbosity 2 dispatch.tests 
+[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.2] [django__django-13768] Std. Output:
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Importing application dispatch
+Skipping setup of unused database(s): default, other.
+System check identified no issues (0 silenced).
 test_receiver_signal_list (dispatch.tests.ReceiverTestCase) ... ok
 test_receiver_single_signal (dispatch.tests.ReceiverTestCase) ... ok
 test_cached_garbaged_collected (dispatch.tests.DispatcherTests) ... ok
@@ -76,15 +76,9 @@ test_uid_registration (dispatch.tests.DispatcherTests) ... ok
 test_values_returned_by_disconnection (dispatch.tests.DispatcherTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 19 tests in 0.118s
+Ran 19 tests in 0.338s
 
 OK
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
-Importing application dispatch
-Skipping setup of unused database(s): default, other.
-System check identified no issues (0 silenced).
-
  
 [django__django__3.2] [django__django-13768] Return Code: 0 
 

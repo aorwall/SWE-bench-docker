@@ -1,22 +1,18 @@
 [django__django__3.1] [django__django-12125] Task Metadata:
 	- Instance ID: django__django-12125
 	- Testbed: django__django__3.1
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.1] [django__django-12125] Command: git status --porcelain 
-[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.1] [django__django-12125] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.1] [django__django-12125] Return Code: 0 
 [django__django__3.1] [django__django-12125] Command: git -c advice.detachedHead=false checkout 89d41cba392b759732ba9f1db4ff29ed47da6a56 
-[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12125] Std. Output:
 Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at 89d41cba39 Fixed #31025 -- Fixed highlightlinenothreshold deprecation warning on Sphinx 1.8+.
  
 [django__django__3.1] [django__django-12125] Return Code: 0 
-[django__django__3.1] [django__django-12125] Command: git apply -v /home/swe-bench/temp_django__django-12125_pred_try.patch 
-[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12125] Command: git apply -v /opt/temp_django__django-12125_pred_try.patch 
+[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12125] Std. Output:
 Checking patch django/db/migrations/serializer.py...
 Applied patch django/db/migrations/serializer.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/db/migrations/serializer.py cleanly.
 [django__django__3.1] [django__django-12125] Return Code: 0 
 [django__django__3.1] [django__django-12125] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-12125] Command: git apply -v -R /home/swe-bench/temp_django__django-12125_pred_try.patch 
-[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12125] Command: git apply -v -R /opt/temp_django__django-12125_pred_try.patch 
+[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12125] Std. Output:
 Checking patch django/db/migrations/serializer.py...
 Applied patch django/db/migrations/serializer.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/db/migrations/serializer.py cleanly.
 [django__django__3.1] [django__django-12125] Return Code: 0 
 [django__django__3.1] [django__django-12125] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-12125] Command: git apply -v /home/swe-bench/temp_django__django-12125_pred.patch 
-[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12125] Command: git apply -v /opt/temp_django__django-12125_pred.patch 
+[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12125] Std. Output:
 Checking patch django/db/migrations/serializer.py...
 Applied patch django/db/migrations/serializer.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/db/migrations/serializer.py cleanly.
 [django__django__3.1] [django__django-12125] Return Code: 0 
 [django__django__3.1] [django__django-12125] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.1] [django__django-12125] Command: git apply -v /home/swe-bench/temp_django__django-12125_test.patch 
-[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12125] Command: git apply -v /opt/temp_django__django-12125_test.patch 
+[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12125] Std. Output:
 Checking patch tests/migrations/test_writer.py...
 Applied patch tests/migrations/test_writer.py cleanly.
@@ -51,10 +47,14 @@ Applied patch tests/migrations/test_writer.py cleanly.
 [django__django__3.1] [django__django-12125] Return Code: 0 
 [django__django__3.1] [django__django-12125] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 migrations.test_writer;
-[django__django__3.1] [django__django-12125] Command: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 migrations.test_writer 
-[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 migrations.test_writer;
+[django__django__3.1] [django__django-12125] Command: ./tests/runtests.py --verbosity 2 migrations.test_writer 
+[django__django__3.1] [django__django-12125] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-12125] Std. Output:
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Importing application migrations
+Skipping setup of unused database(s): default, other.
+System check identified no issues (0 silenced).
 test_args_kwargs_signature (migrations.test_writer.OperationWriterTests) ... ok
 test_args_signature (migrations.test_writer.OperationWriterTests) ... ok
 test_empty_signature (migrations.test_writer.OperationWriterTests) ... ok
@@ -106,15 +106,9 @@ test_simple_migration (migrations.test_writer.WriterTests) ... ok
 test_sorted_imports (migrations.test_writer.WriterTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 47 tests in 0.119s
+Ran 47 tests in 0.280s
 
 OK
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
-Importing application migrations
-Skipping setup of unused database(s): default, other.
-System check identified no issues (0 silenced).
-
  
 [django__django__3.1] [django__django-12125] Return Code: 0 
 

@@ -66,7 +66,7 @@ Applied patch sympy/functions/elementary/tests/test_trigonometric.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.1 bin/test -C --verbose sympy/functions/elementary/tests/test_trigonometric.py;
 [sympy__sympy__1.1] [sympy__sympy-11870] Command: conda run -n sympy__sympy__1.1 bin/test -C --verbose sympy/functions/elementary/tests/test_trigonometric.py 
-[sympy__sympy__1.1] [sympy__sympy-11870] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.1] [sympy__sympy-11870] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.1] [sympy__sympy-11870] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
   from collections import Mapping, defaultdict
@@ -89,8 +89,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        68136075
-hash randomization: on (PYTHONHASHSEED=3898790717)
+random seed:        33334444
+hash randomization: on (PYTHONHASHSEED=3741895320)
 
 sympy/functions/elementary/tests/test_trigonometric.py[63] 
 test_sin ok
@@ -159,12 +159,15 @@ test_issue_11864 ok                                                         [OK]
 
 
 ________________________________ slowest tests _________________________________
-test_cot_rewrite - Took 10.304 seconds
-test_atan2_expansion - Took 26.166 seconds
-test_sec - Took 34.873 seconds
-test_tan_rewrite - Took 36.963 seconds
-test_sin_cos - Took 589.496 seconds
-= tests finished: 60 passed, 2 skipped, 1 expected to fail, in 744.00 seconds ==
+test_cot_series - Took 21.985 seconds
+test_cos - Took 22.777 seconds
+test_cot_rewrite - Took 31.351 seconds
+test_sin - Took 33.628 seconds
+test_sec - Took 66.767 seconds
+test_atan2_expansion - Took 88.134 seconds
+test_tan_rewrite - Took 118.176 seconds
+test_sin_cos - Took 1222.742 seconds
+= tests finished: 60 passed, 2 skipped, 1 expected to fail, in 1666.28 seconds =
 
  
 [sympy__sympy__1.1] [sympy__sympy-11870] Return Code: 0 

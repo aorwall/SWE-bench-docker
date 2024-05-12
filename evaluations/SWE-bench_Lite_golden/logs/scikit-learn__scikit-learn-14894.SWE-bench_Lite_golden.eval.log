@@ -1,16 +1,17 @@
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Task Metadata:
 	- Instance ID: scikit-learn__scikit-learn-14894
 	- Testbed: scikit-learn__scikit-learn__0.22
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
+ 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: git -c advice.detachedHead=false checkout fdbaa58acbead5a254f2e6d597dc1ab3b947f4c6 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Std. Output:
 HEAD is now at fdbaa58ac TST Skip some doctests if pillow not installed (#15131)
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Return Code: 0 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-14894_pred_try.patch 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-14894_pred_try.patch 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Std. Output:
 Checking patch sklearn/svm/base.py...
 Applied patch sklearn/svm/base.py cleanly.
@@ -18,8 +19,8 @@ Applied patch sklearn/svm/base.py cleanly.
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Return Code: 0 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: git apply -v -R /home/swe-bench/temp_scikit-learn__scikit-learn-14894_pred_try.patch 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: git apply -v -R /opt/temp_scikit-learn__scikit-learn-14894_pred_try.patch 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Std. Output:
 Checking patch sklearn/svm/base.py...
 Applied patch sklearn/svm/base.py cleanly.
@@ -27,8 +28,8 @@ Applied patch sklearn/svm/base.py cleanly.
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Return Code: 0 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-14894_pred.patch 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-14894_pred.patch 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Std. Output:
 Checking patch sklearn/svm/base.py...
 Applied patch sklearn/svm/base.py cleanly.
@@ -37,12 +38,12 @@ Applied patch sklearn/svm/base.py cleanly.
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: git restore sklearn/svm/tests/test_svm.py 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Std. Output:
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Return Code: 0 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: git apply -v /home/swe-bench/temp_scikit-learn__scikit-learn-14894_test.patch 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-14894_test.patch 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Std. Output:
 Checking patch sklearn/svm/tests/test_svm.py...
 Applied patch sklearn/svm/tests/test_svm.py cleanly.
@@ -50,13 +51,13 @@ Applied patch sklearn/svm/tests/test_svm.py cleanly.
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Return Code: 0 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n scikit-learn__scikit-learn__0.22 pytest -rA --tb=no -p no:cacheprovider sklearn/svm/tests/test_svm.py;
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: conda run -n scikit-learn__scikit-learn__0.22 pytest -rA --tb=no -p no:cacheprovider sklearn/svm/tests/test_svm.py 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/home/swe-bench/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  pytest -rA --tb=no -p no:cacheprovider sklearn/svm/tests/test_svm.py;
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Command: pytest -rA --tb=no -p no:cacheprovider sklearn/svm/tests/test_svm.py 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Std. Output:
 ============================= test session starts ==============================
-platform linux -- Python 3.6.13, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
-rootdir: /home/swe-bench/scikit-learn__scikit-learn, inifile: setup.cfg
+platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
+rootdir: /opt/scikit-learn__scikit-learn, inifile: setup.cfg
 collected 86 items
 
 sklearn/svm/tests/test_svm.py .......................................... [ 48%]
@@ -75,7 +76,7 @@ sklearn/svm/tests/test_svm.py::test_linearsvc_crammer_singer
 sklearn/svm/tests/test_svm.py::test_crammer_singer_binary
 sklearn/svm/tests/test_svm.py::test_linearsvc_iris
 sklearn/svm/tests/test_svm.py::test_liblinear_set_coef
-  /home/swe-bench/scikit-learn__scikit-learn/sklearn/svm/base.py:946: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  /opt/scikit-learn__scikit-learn/sklearn/svm/base.py:946: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
     "the number of iterations.", ConvergenceWarning)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
@@ -166,8 +167,7 @@ PASSED sklearn/svm/tests/test_svm.py::test_svc_ovr_tie_breaking[NuSVC]
 PASSED sklearn/svm/tests/test_svm.py::test_gamma_auto
 PASSED sklearn/svm/tests/test_svm.py::test_gamma_scale
 PASSED sklearn/svm/tests/test_svm.py::test_n_support_oneclass_svr
-==================== 86 passed, 12 warnings in 5.25 seconds ====================
-
+==================== 86 passed, 12 warnings in 9.50 seconds ====================
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Return Code: 0 
 

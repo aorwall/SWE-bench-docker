@@ -3,20 +3,15 @@
 	- Testbed: pvlib__pvlib-python__0.7
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: git status --porcelain 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Std. Output:
- 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Return Code: 0 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: git -c advice.detachedHead=false checkout 04a523fafbd61bc2e49420963b84ed8e2bd1b3cf 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Std. Output:
 Previous HEAD position was 6e5148f remove duplicated calcparams_pvsyst (#1101)
 HEAD is now at 04a523f more asv tests for solar position, fix fuentes asv bug (#1059)
  
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Return Code: 0 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1072_pred_try.patch 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Std. Output:
 Checking patch pvlib/temperature.py...
 Applied patch pvlib/temperature.py cleanly.
@@ -25,7 +20,7 @@ Applied patch pvlib/temperature.py cleanly.
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: git apply -v -R /home/swe-bench/temp_pvlib__pvlib-python-1072_pred_try.patch 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Std. Output:
 Checking patch pvlib/temperature.py...
 Applied patch pvlib/temperature.py cleanly.
@@ -34,7 +29,7 @@ Applied patch pvlib/temperature.py cleanly.
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1072_pred.patch 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Std. Output:
 Checking patch pvlib/temperature.py...
 Applied patch pvlib/temperature.py cleanly.
@@ -43,12 +38,12 @@ Applied patch pvlib/temperature.py cleanly.
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: git restore pvlib/tests/test_temperature.py 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Std. Output:
  
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Return Code: 0 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: git apply -v /home/swe-bench/temp_pvlib__pvlib-python-1072_test.patch 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Std. Output:
 Checking patch pvlib/tests/test_temperature.py...
 Applied patch pvlib/tests/test_temperature.py cleanly.
@@ -56,9 +51,9 @@ Applied patch pvlib/tests/test_temperature.py cleanly.
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Return Code: 0 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pvlib__pvlib-python__0.7 pytest --no-header -rA -p no:cacheprovider pvlib/tests/test_temperature.py;
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: conda run -n pvlib__pvlib-python__0.7 pytest --no-header -rA -p no:cacheprovider pvlib/tests/test_temperature.py 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script: conda run -n pvlib__pvlib-python__0.7 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_temperature.py;
+[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: conda run -n pvlib__pvlib-python__0.7 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_temperature.py 
+[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Std. Output:
 ============================= test session starts ==============================
 collected 19 items
@@ -70,8 +65,8 @@ pvlib/tests/conftest.py:6
   /home/swe-bench/pvlib__pvlib-python/pvlib/tests/conftest.py:6: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
     from pkg_resources import parse_version
 
-../miniconda3/envs/pvlib__pvlib-python__0.7/lib/python3.9/site-packages/pkg_resources/__init__.py:2871
-  /home/swe-bench/miniconda3/envs/pvlib__pvlib-python__0.7/lib/python3.9/site-packages/pkg_resources/__init__.py:2871: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('sphinxcontrib')`.
+../miniconda3/envs/pvlib__pvlib-python__0.7/lib/python3.9/site-packages/pkg_resources/__init__.py:2832
+  /home/swe-bench/miniconda3/envs/pvlib__pvlib-python__0.7/lib/python3.9/site-packages/pkg_resources/__init__.py:2832: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('sphinxcontrib')`.
   Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
     declare_namespace(pkg)
 
@@ -88,7 +83,6 @@ pvlib/tests/test_temperature.py::test_faiman_series
     times = pd.date_range(start="2015-01-01", end="2015-01-02", freq="12H")
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED pvlib/tests/test_temperature.py::test_sapm_cell
 PASSED pvlib/tests/test_temperature.py::test_sapm_module
@@ -109,7 +103,7 @@ PASSED pvlib/tests/test_temperature.py::test_fuentes[pvwatts_8760_rackmount.csv-
 PASSED pvlib/tests/test_temperature.py::test_fuentes[pvwatts_8760_roofmount.csv-49]
 PASSED pvlib/tests/test_temperature.py::test_fuentes_timezone[None]
 PASSED pvlib/tests/test_temperature.py::test_fuentes_timezone[Etc/GMT+5]
-======================== 19 passed, 5 warnings in 0.42s ========================
+======================== 19 passed, 5 warnings in 0.58s ========================
 
  
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Return Code: 0 

@@ -1,22 +1,18 @@
 [sympy__sympy__1.1] [sympy__sympy-13895] Task Metadata:
 	- Instance ID: sympy__sympy-13895
 	- Testbed: sympy__sympy__1.1
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[sympy__sympy__1.1] [sympy__sympy-13895] Command: git status --porcelain 
-[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[sympy__sympy__1.1] [sympy__sympy-13895] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.7.17
  
-[sympy__sympy__1.1] [sympy__sympy-13895] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-13895] Command: git -c advice.detachedHead=false checkout 4da0b64558e9551a11a99bccc63557ba34f50c58 
-[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-13895] Std. Output:
 Previous HEAD position was ec9e3c0436 Merge pull request #14817 from jashan498/print_mat_fix
 HEAD is now at 4da0b64558 Merge pull request #13844 from Yathartha22/exponential
  
 [sympy__sympy__1.1] [sympy__sympy-13895] Return Code: 0 
-[sympy__sympy__1.1] [sympy__sympy-13895] Command: git apply -v /home/swe-bench/temp_sympy__sympy-13895_pred_try.patch 
-[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-13895] Command: git apply -v /opt/temp_sympy__sympy-13895_pred_try.patch 
+[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-13895] Std. Output:
 Checking patch sympy/core/numbers.py...
 Applied patch sympy/core/numbers.py cleanly.
@@ -24,8 +20,8 @@ Applied patch sympy/core/numbers.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-13895] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-13895] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[sympy__sympy__1.1] [sympy__sympy-13895] Command: git apply -v -R /home/swe-bench/temp_sympy__sympy-13895_pred_try.patch 
-[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-13895] Command: git apply -v -R /opt/temp_sympy__sympy-13895_pred_try.patch 
+[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-13895] Std. Output:
 Checking patch sympy/core/numbers.py...
 Applied patch sympy/core/numbers.py cleanly.
@@ -33,8 +29,8 @@ Applied patch sympy/core/numbers.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-13895] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-13895] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[sympy__sympy__1.1] [sympy__sympy-13895] Command: git apply -v /home/swe-bench/temp_sympy__sympy-13895_pred.patch 
-[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-13895] Command: git apply -v /opt/temp_sympy__sympy-13895_pred.patch 
+[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-13895] Std. Output:
 Checking patch sympy/core/numbers.py...
 Applied patch sympy/core/numbers.py cleanly.
@@ -43,12 +39,12 @@ Applied patch sympy/core/numbers.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-13895] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [sympy__sympy__1.1] [sympy__sympy-13895] Command: git restore sympy/core/tests/test_numbers.py 
-[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-13895] Std. Output:
  
 [sympy__sympy__1.1] [sympy__sympy-13895] Return Code: 0 
-[sympy__sympy__1.1] [sympy__sympy-13895] Command: git apply -v /home/swe-bench/temp_sympy__sympy-13895_test.patch 
-[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-13895] Command: git apply -v /opt/temp_sympy__sympy-13895_test.patch 
+[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-13895] Std. Output:
 Checking patch sympy/core/tests/test_numbers.py...
 Applied patch sympy/core/tests/test_numbers.py cleanly.
@@ -56,33 +52,18 @@ Applied patch sympy/core/tests/test_numbers.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-13895] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-13895] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.1 bin/test -C --verbose sympy/core/tests/test_numbers.py;
-[sympy__sympy__1.1] [sympy__sympy-13895] Command: conda run -n sympy__sympy__1.1 bin/test -C --verbose sympy/core/tests/test_numbers.py 
-[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  bin/test -C --verbose sympy/core/tests/test_numbers.py;
+[sympy__sympy__1.1] [sympy__sympy-13895] Command: bin/test -C --verbose sympy/core/tests/test_numbers.py 
+[sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.1] [sympy__sympy-13895] Std. Output:
-/home/swe-bench/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
-  from collections import Mapping, defaultdict
-/home/swe-bench/sympy__sympy/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
-  class OrderedSet(collections.MutableSet):
-/home/swe-bench/sympy__sympy/sympy/solvers/diophantine.py:3188: SyntaxWarning: "is" with a literal. Did you mean "=="?
-  if feasible is 1:  # it's prime and k == 2
-/home/swe-bench/sympy__sympy/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
-  from collections import Callable
-/home/swe-bench/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
-  from collections import Mapping, defaultdict
-/home/swe-bench/sympy__sympy/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
-  class OrderedSet(collections.MutableSet):
-/home/swe-bench/sympy__sympy/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
-  from collections import Callable
-
 ============================= test process starts ==============================
-executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.1/bin/python  (3.9.19-final-0) [CPython]
+executable:         /opt/pyenv/versions/3.7.17/bin/python  (3.7.17-final-0) [CPython]
 architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        95922163
-hash randomization: on (PYTHONHASHSEED=481560168)
+random seed:        70760068
+hash randomization: on (PYTHONHASHSEED=1749844858)
 
 sympy/core/tests/test_numbers.py[86] 
 test_integers_cache ok
@@ -173,8 +154,19 @@ test_Integer_precision ok
 test_numpy_to_float numpy not installed. Abort numpy tests. s               [OK]
 
 
-== tests finished: 84 passed, 1 skipped, 1 expected to fail, in 1.06 seconds ===
-
+== tests finished: 84 passed, 1 skipped, 1 expected to fail, in 3.11 seconds ===
+/opt/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  from collections import Mapping, defaultdict
+/opt/sympy__sympy/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  class OrderedSet(collections.MutableSet):
+/opt/sympy__sympy/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  from collections import Callable
+/opt/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  from collections import Mapping, defaultdict
+/opt/sympy__sympy/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  class OrderedSet(collections.MutableSet):
+/opt/sympy__sympy/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  from collections import Callable
  
 [sympy__sympy__1.1] [sympy__sympy-13895] Return Code: 0 
 

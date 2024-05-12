@@ -1,22 +1,18 @@
 [django__django__3.1] [django__django-12470] Task Metadata:
 	- Instance ID: django__django-12470
 	- Testbed: django__django__3.1
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.1] [django__django-12470] Command: git status --porcelain 
-[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.1] [django__django-12470] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Command: git -c advice.detachedHead=false checkout 142ab6846ac09d6d401e26fc8b6b988a583ac0f5 
-[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12470] Std. Output:
 Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at 142ab6846a Fixed #31123 -- Added --include-stale-apps option to the remove_stale_contenttypes management command.
  
 [django__django__3.1] [django__django-12470] Return Code: 0 
-[django__django__3.1] [django__django-12470] Command: git apply -v /home/swe-bench/temp_django__django-12470_pred_try.patch 
-[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12470] Command: git apply -v /opt/temp_django__django-12470_pred_try.patch 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12470] Std. Output:
 Checking patch django/db/models/sql/compiler.py...
 Applied patch django/db/models/sql/compiler.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/db/models/sql/compiler.py cleanly.
 [django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-12470] Command: git apply -v -R /home/swe-bench/temp_django__django-12470_pred_try.patch 
-[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12470] Command: git apply -v -R /opt/temp_django__django-12470_pred_try.patch 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12470] Std. Output:
 Checking patch django/db/models/sql/compiler.py...
 Applied patch django/db/models/sql/compiler.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/db/models/sql/compiler.py cleanly.
 [django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-12470] Command: git apply -v /home/swe-bench/temp_django__django-12470_pred.patch 
-[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12470] Command: git apply -v /opt/temp_django__django-12470_pred.patch 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12470] Std. Output:
 Checking patch django/db/models/sql/compiler.py...
 Applied patch django/db/models/sql/compiler.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/db/models/sql/compiler.py cleanly.
 [django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.1] [django__django-12470] Command: git apply -v /home/swe-bench/temp_django__django-12470_test.patch 
-[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12470] Command: git apply -v /opt/temp_django__django-12470_test.patch 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12470] Std. Output:
 Checking patch tests/model_inheritance/models.py...
 Checking patch tests/model_inheritance/tests.py...
@@ -53,10 +49,50 @@ Applied patch tests/model_inheritance/tests.py cleanly.
 [django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 model_inheritance.models model_inheritance.tests;
-[django__django__3.1] [django__django-12470] Command: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 model_inheritance.models model_inheritance.tests 
-[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 model_inheritance.models model_inheritance.tests;
+[django__django__3.1] [django__django-12470] Command: ./tests/runtests.py --verbosity 2 model_inheritance.models model_inheritance.tests 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-12470] Std. Output:
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Importing application model_inheritance
+Skipping setup of unused database(s): other.
+Operations to perform:
+  Synchronize unmigrated apps: auth, contenttypes, messages, model_inheritance, sessions, staticfiles
+  Apply all migrations: admin, sites
+Synchronizing apps without migrations:
+  Creating tables...
+    Creating table django_content_type
+    Creating table auth_permission
+    Creating table auth_group
+    Creating table auth_user
+    Creating table django_session
+    Creating table model_inheritance_worker
+    Creating table model_inheritance_student
+    Creating table model_inheritance_post
+    Creating table model_inheritance_comment
+    Creating table model_inheritance_link
+    Creating table model_inheritance_chef
+    Creating table model_inheritance_place
+    Creating table my_restaurant
+    Creating table model_inheritance_italianrestaurant
+    Creating table model_inheritance_supplier
+    Creating table model_inheritance_parkinglot
+    Creating table model_inheritance_title
+    Creating table model_inheritance_mixinmodel
+    Creating table model_inheritance_base
+    Creating table model_inheritance_subbase
+    Creating table model_inheritance_grandparent
+    Creating table model_inheritance_parent
+    Creating table model_inheritance_child
+    Creating table model_inheritance_grandchild
+    Running deferred SQL...
+Running migrations:
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying sites.0001_initial... OK
+  Applying sites.0002_alter_domain_unique... OK
+System check identified no issues (0 silenced).
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
@@ -99,7 +135,7 @@ test_update_works_on_parent_and_child_models_at_once (model_inheritance.tests.Mo
 test_values_works_on_parent_model_fields (model_inheritance.tests.ModelInheritanceDataTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 34 tests in 0.124s
+Ran 34 tests in 0.281s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
@@ -107,48 +143,6 @@ Destroying test database for alias 'default' ('file:memorydb_default?mode=memory
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
-Importing application model_inheritance
-Skipping setup of unused database(s): other.
-Operations to perform:
-  Synchronize unmigrated apps: auth, contenttypes, messages, model_inheritance, sessions, staticfiles
-  Apply all migrations: admin, sites
-Synchronizing apps without migrations:
-  Creating tables...
-    Creating table django_content_type
-    Creating table auth_permission
-    Creating table auth_group
-    Creating table auth_user
-    Creating table django_session
-    Creating table model_inheritance_worker
-    Creating table model_inheritance_student
-    Creating table model_inheritance_post
-    Creating table model_inheritance_comment
-    Creating table model_inheritance_link
-    Creating table model_inheritance_chef
-    Creating table model_inheritance_place
-    Creating table my_restaurant
-    Creating table model_inheritance_italianrestaurant
-    Creating table model_inheritance_supplier
-    Creating table model_inheritance_parkinglot
-    Creating table model_inheritance_title
-    Creating table model_inheritance_mixinmodel
-    Creating table model_inheritance_base
-    Creating table model_inheritance_subbase
-    Creating table model_inheritance_grandparent
-    Creating table model_inheritance_parent
-    Creating table model_inheritance_child
-    Creating table model_inheritance_grandchild
-    Running deferred SQL...
-Running migrations:
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying admin.0003_logentry_add_action_flag_choices... OK
-  Applying sites.0001_initial... OK
-  Applying sites.0002_alter_domain_unique... OK
-System check identified no issues (0 silenced).
-
  
 [django__django__3.1] [django__django-12470] Return Code: 0 
 

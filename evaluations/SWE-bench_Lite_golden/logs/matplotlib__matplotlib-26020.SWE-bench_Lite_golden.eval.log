@@ -4,14 +4,14 @@
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Command: git -c advice.detachedHead=false checkout f6a781f77f5ddf1204c60ca7c544809407d4a807 
-[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Std. Output:
 Previous HEAD position was 0849036fd9 Merge pull request #26201 from melissawm/add-codespaces-docs
 HEAD is now at f6a781f77f Merge pull request #25825 from QuLogic/marker-types
  
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Return Code: 0 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-26020_pred_try.patch 
-[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Std. Output:
 Checking patch lib/mpl_toolkits/axes_grid1/axes_grid.py...
 Applied patch lib/mpl_toolkits/axes_grid1/axes_grid.py cleanly.
@@ -20,7 +20,7 @@ Applied patch lib/mpl_toolkits/axes_grid1/axes_grid.py cleanly.
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Command: git apply -v -R /home/swe-bench/temp_matplotlib__matplotlib-26020_pred_try.patch 
-[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Std. Output:
 Checking patch lib/mpl_toolkits/axes_grid1/axes_grid.py...
 Applied patch lib/mpl_toolkits/axes_grid1/axes_grid.py cleanly.
@@ -29,7 +29,7 @@ Applied patch lib/mpl_toolkits/axes_grid1/axes_grid.py cleanly.
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-26020_pred.patch 
-[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Std. Output:
 Checking patch lib/mpl_toolkits/axes_grid1/axes_grid.py...
 Applied patch lib/mpl_toolkits/axes_grid1/axes_grid.py cleanly.
@@ -38,12 +38,12 @@ Applied patch lib/mpl_toolkits/axes_grid1/axes_grid.py cleanly.
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Command: git restore lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py 
-[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Std. Output:
  
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Return Code: 0 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-26020_test.patch 
-[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Std. Output:
 Checking patch lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py...
 Applied patch lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py cleanly.
@@ -53,7 +53,7 @@ Applied patch lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n matplotlib__matplotlib__3.7 pytest --no-header -rA --tb=no -p no:cacheprovider lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py;
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Command: conda run -n matplotlib__matplotlib__3.7 pytest --no-header -rA --tb=no -p no:cacheprovider lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py 
-[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Std. Output:
 ============================= test session starts ==============================
 collected 49 items
@@ -111,7 +111,7 @@ PASSED lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_imagegrid
 PASSED lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_removal
 PASSED lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_anchored_locator_base_call[png]
 PASSED lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_grid_with_axes_class_not_overriding_axis
-============================= 49 passed in 10.28s ==============================
+============================= 49 passed in 11.83s ==============================
 
  
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Return Code: 0 

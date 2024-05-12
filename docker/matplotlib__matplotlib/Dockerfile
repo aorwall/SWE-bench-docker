@@ -6,7 +6,7 @@ FROM aorwall/swe-bench-base:latest
 USER root
 
 RUN apt-get update && \
-    apt-get install -y texlive texlive-xetex dvipng ghostscript && \
+    apt-get install -y texlive texlive-xetex dvipng ghostscript libfreetype-dev libfreetype6 libfreetype6-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 

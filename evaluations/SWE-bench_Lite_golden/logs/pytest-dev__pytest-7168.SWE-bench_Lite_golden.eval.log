@@ -32,8 +32,8 @@ Requirement already satisfied: wcwidth in /home/swe-bench/miniconda3/envs/pytest
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev195+g4787fd64a-0.editable-py3-none-any.whl size=7937 sha256=5a03fe0cd96287b4eac90368f718c23597380982c307508f35cdec65415e0607
-  Stored in directory: /tmp/pip-ephem-wheel-cache-eh87bmw6/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev195+g4787fd64a-0.editable-py3-none-any.whl size=7937 sha256=39a800839dca59092c7eb3f51ee5eedca9346328a6661c9deb69ef45cf9f1ab9
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ze5jgncu/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -63,8 +63,8 @@ Requirement already satisfied: wcwidth in /home/swe-bench/miniconda3/envs/pytest
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev195+g4787fd64a-0.editable-py3-none-any.whl size=7937 sha256=5a03fe0cd96287b4eac90368f718c23597380982c307508f35cdec65415e0607
-  Stored in directory: /tmp/pip-ephem-wheel-cache-eh87bmw6/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev195+g4787fd64a-0.editable-py3-none-any.whl size=7937 sha256=39a800839dca59092c7eb3f51ee5eedca9346328a6661c9deb69ef45cf9f1ab9
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ze5jgncu/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -139,7 +139,7 @@ PASSED testing/io/test_saferepr.py::test_repr_on_newstyle
 PASSED testing/io/test_saferepr.py::test_unicode
 PASSED testing/io/test_saferepr.py::test_pformat_dispatch
 PASSED testing/io/test_saferepr.py::test_broken_getattribute
-============================== 11 passed in 0.02s ==============================
+============================== 11 passed in 0.04s ==============================
 
  
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Return Code: 0 

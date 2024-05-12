@@ -5,16 +5,45 @@ image. Each test is then run in its own Docker container. This approach ensures 
 environment is completely isolated and is reset for each test. Since the Docker container can be recreated each time,
 there's no need for reinstallation, speeding up the benchmark process.
 
-## Progress
-Docker images for testbeds used in the `SWE-Bench_Lite` dataset has been built and tested. See results in the 
-`evaluations` folder. 
+## Validation
 
-The following test beds and benchmark instances currently fails when applying the golden patch:
+### SWE-Bench_Lite
+Docker images for testbeds used in the `SWE-Bench_Lite` dataset has been built and tested on _gold predictions_. 
+2 benchmark instances are currently failing. 
+See results in the [evaluations/SWE-bench_Lite_golden](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/SWE-bench_Lite_golden) folder. 
 
-| Instance ID | Repository | Testbed version |
-| ----------- | ---------- | --------------- |
-| [pydata__xarray-4094](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/SWE-bench_Lite_golden/logs/pydata__xarray-4094.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
-| [pydata__xarray-4493](https://github.com/aorwall/SWE-bench-docker/blob//main/evaluations/SWE-bench_Lite_golden/logs/pydata__xarray-4493.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
+### SWE-Bench
+Docker images for testbeds used in the `SWE-Bench` dataset has been built and tested on the `check-harness` predictions
+[published by SWE-bench](https://github.com/princeton-nlp/SWE-bench/tree/main/docs/20240415_eval_bug). 
+10 benchmark instances are currently failing. 
+See results in the [evaluations/SWE-bench_check_harness](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/SWE-bench_Lite_golden_harness) folder.
+
+### Comparing results from other benchmarks
+I have tested running Docker benchmarks on the SWE-Agents GPT-4 benchmark and Auto Code Rover's first benchmark run.
+The SWE-Agent GPT-4 predictions yield exactly the same
+[results](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/20240402_sweagent_gpt4) as SWE-Agent's own
+[results](https://github.com/swe-bench/experiments/blob/main/evaluation/lite/20240402_sweagent_gpt4/results/results.json), 
+which seems to show that the Docker image approach works with the same accuracy. However, auto-code-rover run 1 provides 
+better [results](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/auto-code-rover-run-1), resolving 54 
+instances compared to 48 in auto-code-rover's [own results](https://github.com/nus-apr/auto-code-rover/blob/main/results/acr-run-1/final_report.json). 
+This could indicate that other agents' benchmarks _show lower results than they actually achieved_ because it's 
+challenging to conduct evaluations with completely accurate results.
+
+## Docker images types
+There are currently three different Docker images for running benchmarks.
+
+### Conda
+Testbeds are set up in a Conda environment similar to the original SWE-bench environment.
+
+### Pyenv
+Since each benchmark is tested in its own container, using Conda may be overkill. Testbeds are set up with only the
+correct Python version installed via Pyenv. This approach has been shown to result in fewer erroneous benchmark 
+instances in repositories where it has been tested, and the image becomes smaller. Currently, `django`, `psf/requests` 
+and `scikit-learn` use this type of Docker image. Hopefully, more repositories can be run this way.
+
+### Instance image
+In `scikit-learn`, some benchmarks seem to fail because Cython code isn't compiled. To avoid building the project before each test, an image is built for each benchmark instance.
+
 
 ## Run evaluation
 Run `run_evaluation.py` to evaluate a predictions file. A log for each test is written to log_dir in the same format
@@ -39,6 +68,13 @@ It might be worth pulling all Images before running the script to achieve more c
 scripts/pull_docker_images.sh [Dockerfiles directory] [Namespace]
 ```
 ## Build Docker images
+
+### Base images
+```commandline
+docker build -t aorwall/swe-bench-base:bookworm-slim -f docker/Dockerfile .                                 
+docker build -t aorwall/swe-bench-pyenvs:bookworm-slim -f docker/Dockerfile-pyenvs .                                 
+
+```
 
 ### Generate Dockerfiles
 Generates Dockerfiles for all test beds in a SWE-Bench benchmark dataset. These can then be used to build Docker images.

@@ -1,22 +1,18 @@
 [django__django__4.2] [django__django-15789] Task Metadata:
 	- Instance ID: django__django-15789
 	- Testbed: django__django__4.2
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__4.2] [django__django-15789] Command: git status --porcelain 
-[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__4.2] [django__django-15789] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.9.19
  
-[django__django__4.2] [django__django-15789] Return Code: 0 
 [django__django__4.2] [django__django-15789] Command: git -c advice.detachedHead=false checkout d4d5427571b4bf3a21c902276c2a00215c2a37cc 
-[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15789] Std. Output:
 Previous HEAD position was 0fbdb9784d Fixed #23718 -- Doc'd that test mirrors require TransactionTestCase.
 HEAD is now at d4d5427571 Refs #33697 -- Used django.utils.http.parse_header_parameters() for parsing boundary streams.
  
 [django__django__4.2] [django__django-15789] Return Code: 0 
-[django__django__4.2] [django__django-15789] Command: git apply -v /home/swe-bench/temp_django__django-15789_pred_try.patch 
-[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15789] Command: git apply -v /opt/temp_django__django-15789_pred_try.patch 
+[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15789] Std. Output:
 Checking patch django/utils/html.py...
 Applied patch django/utils/html.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/utils/html.py cleanly.
 [django__django__4.2] [django__django-15789] Return Code: 0 
 [django__django__4.2] [django__django-15789] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__4.2] [django__django-15789] Command: git apply -v -R /home/swe-bench/temp_django__django-15789_pred_try.patch 
-[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15789] Command: git apply -v -R /opt/temp_django__django-15789_pred_try.patch 
+[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15789] Std. Output:
 Checking patch django/utils/html.py...
 Applied patch django/utils/html.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/utils/html.py cleanly.
 [django__django__4.2] [django__django-15789] Return Code: 0 
 [django__django__4.2] [django__django-15789] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__4.2] [django__django-15789] Command: git apply -v /home/swe-bench/temp_django__django-15789_pred.patch 
-[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15789] Command: git apply -v /opt/temp_django__django-15789_pred.patch 
+[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15789] Std. Output:
 Checking patch django/utils/html.py...
 Applied patch django/utils/html.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/utils/html.py cleanly.
 [django__django__4.2] [django__django-15789] Return Code: 0 
 [django__django__4.2] [django__django-15789] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__4.2] [django__django-15789] Command: git apply -v /home/swe-bench/temp_django__django-15789_test.patch 
-[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15789] Command: git apply -v /opt/temp_django__django-15789_test.patch 
+[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15789] Std. Output:
 Checking patch tests/utils_tests/test_html.py...
 Applied patch tests/utils_tests/test_html.py cleanly.
@@ -51,9 +47,9 @@ Applied patch tests/utils_tests/test_html.py cleanly.
 [django__django__4.2] [django__django-15789] Return Code: 0 
 [django__django__4.2] [django__django-15789] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__4.2 ./tests/runtests.py --verbosity 2 utils_tests.test_html;
-[django__django__4.2] [django__django-15789] Command: conda run -n django__django__4.2 ./tests/runtests.py --verbosity 2 utils_tests.test_html 
-[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 utils_tests.test_html;
+[django__django__4.2] [django__django-15789] Command: ./tests/runtests.py --verbosity 2 utils_tests.test_html 
+[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.2] [django__django-15789] Std. Output:
 test_conditional_escape (utils_tests.test_html.TestUtilsHtml) ... ok
 test_escape (utils_tests.test_html.TestUtilsHtml) ... ok
@@ -75,16 +71,14 @@ test_urlize (utils_tests.test_html.TestUtilsHtml) ... ok
 test_urlize_unchanged_inputs (utils_tests.test_html.TestUtilsHtml) ... ok
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.145s
+Ran 18 tests in 0.702s
 
 OK
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application utils_tests
 Found 18 test(s).
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
-
  
 [django__django__4.2] [django__django-15789] Return Code: 0 
 

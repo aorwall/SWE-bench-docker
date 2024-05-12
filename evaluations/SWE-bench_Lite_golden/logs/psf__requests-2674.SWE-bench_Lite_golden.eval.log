@@ -1,17 +1,18 @@
 [psf__requests__2.7] [psf__requests-2674] Task Metadata:
 	- Instance ID: psf__requests-2674
 	- Testbed: psf__requests__2.7
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.9.19
+ 
 [psf__requests__2.7] [psf__requests-2674] Command: git -c advice.detachedHead=false checkout 0be38a0c37c59c4b66ce908731da15b401655113 
-[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
 Previous HEAD position was bf436ea0 Merge pull request #2746 from csparpa/master
 HEAD is now at 0be38a0c Merge pull request #2672 from petedmarsh/fix-custom-headers-example
  
 [psf__requests__2.7] [psf__requests-2674] Return Code: 0 
-[psf__requests__2.7] [psf__requests-2674] Command: git apply -v /home/swe-bench/temp_psf__requests-2674_pred_try.patch 
-[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.7] [psf__requests-2674] Command: git apply -v /opt/temp_psf__requests-2674_pred_try.patch 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
 Checking patch requests/adapters.py...
 Applied patch requests/adapters.py cleanly.
@@ -19,8 +20,8 @@ Applied patch requests/adapters.py cleanly.
 [psf__requests__2.7] [psf__requests-2674] Return Code: 0 
 [psf__requests__2.7] [psf__requests-2674] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[psf__requests__2.7] [psf__requests-2674] Command: git apply -v -R /home/swe-bench/temp_psf__requests-2674_pred_try.patch 
-[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.7] [psf__requests-2674] Command: git apply -v -R /opt/temp_psf__requests-2674_pred_try.patch 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
 Checking patch requests/adapters.py...
 Applied patch requests/adapters.py cleanly.
@@ -28,8 +29,8 @@ Applied patch requests/adapters.py cleanly.
 [psf__requests__2.7] [psf__requests-2674] Return Code: 0 
 [psf__requests__2.7] [psf__requests-2674] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[psf__requests__2.7] [psf__requests-2674] Command: git apply -v /home/swe-bench/temp_psf__requests-2674_pred.patch 
-[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.7] [psf__requests-2674] Command: git apply -v /opt/temp_psf__requests-2674_pred.patch 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
 Checking patch requests/adapters.py...
 Applied patch requests/adapters.py cleanly.
@@ -38,12 +39,12 @@ Applied patch requests/adapters.py cleanly.
 [psf__requests__2.7] [psf__requests-2674] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [psf__requests__2.7] [psf__requests-2674] Command: git restore test_requests.py 
-[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
  
 [psf__requests__2.7] [psf__requests-2674] Return Code: 0 
-[psf__requests__2.7] [psf__requests-2674] Command: git apply -v /home/swe-bench/temp_psf__requests-2674_test.patch 
-[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.7] [psf__requests-2674] Command: git apply -v /opt/temp_psf__requests-2674_test.patch 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
 Checking patch test_requests.py...
 Applied patch test_requests.py cleanly.
@@ -51,9 +52,9 @@ Applied patch test_requests.py cleanly.
 [psf__requests__2.7] [psf__requests-2674] Return Code: 0 
 [psf__requests__2.7] [psf__requests-2674] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n psf__requests__2.7 pytest --no-header -rA -p no:cacheprovider test_requests.py;
-[psf__requests__2.7] [psf__requests-2674] Command: conda run -n psf__requests__2.7 pytest --no-header -rA -p no:cacheprovider test_requests.py 
-[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/home/swe-bench/psf__requests", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.py;
+[psf__requests__2.7] [psf__requests-2674] Command: pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.py 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
 ============================= test session starts ==============================
 collected 162 items
@@ -62,359 +63,90 @@ test_requests.py ..........................F............................ [ 33%]
 ............................X........................................... [ 78%]
 .................................F.                                      [100%]
 
-=================================== FAILURES ===================================
-________________ RequestsTestCase.test_conflicting_post_params _________________
-
-self = <test_requests.RequestsTestCase testMethod=test_conflicting_post_params>
-
-    def test_conflicting_post_params(self):
-        url = httpbin('post')
-        with open('requirements.txt') as f:
->           pytest.raises(ValueError, "requests.post(url, data='[{\"some\": \"data\"}]', files={'some': f})")
-E           TypeError: 'requests.post(url, data=\'[{"some": "data"}]\', files={\'some\': f})' object (type: <class 'str'>) must be callable
-
-test_requests.py:455: TypeError
-_____________________ test_urllib3_pool_connection_closed ______________________
-
-self = <requests.packages.urllib3.connectionpool.HTTPConnectionPool object at 0x7018c093e310>
-timeout = None
-
-    def _get_conn(self, timeout=None):
-        """
-        Get a connection. Will return a pooled connection if one is available.
-    
-        If no connections are available and :prop:`.block` is ``False``, then a
-        fresh connection is returned.
-    
-        :param timeout:
-            Seconds to wait before giving up and raising
-            :class:`urllib3.exceptions.EmptyPoolError` if the pool is empty and
-            :prop:`.block` is ``True``.
-        """
-        conn = None
-        try:
->           conn = self.pool.get(block=self.block, timeout=timeout)
-E           AttributeError: 'NoneType' object has no attribute 'get'
-
-requests/packages/urllib3/connectionpool.py:224: AttributeError
-
-During handling of the above exception, another exception occurred:
-
-self = <requests.adapters.HTTPAdapter object at 0x7018c0a9aee0>
-request = <PreparedRequest [GET]>, stream = False
-timeout = <requests.packages.urllib3.util.timeout.Timeout object at 0x7018c0a9ae50>
-verify = True, cert = None
-proxies = {'no': '192.168.0.0/24,127.0.0.1,localhost.localdomain,172.16.1.1'}
-
-    def send(self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None):
-        """Sends PreparedRequest object. Returns Response object.
-    
-        :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.
-        :param stream: (optional) Whether to stream the request content.
-        :param timeout: (optional) How long to wait for the server to send
-            data before giving up, as a float, or a (`connect timeout, read
-            timeout <user/advanced.html#timeouts>`_) tuple.
-        :type timeout: float or tuple
-        :param verify: (optional) Whether to verify SSL certificates.
-        :param cert: (optional) Any user-provided SSL certificate to be trusted.
-        :param proxies: (optional) The proxies dictionary to apply to the request.
-        """
-    
-        conn = self.get_connection(request.url, proxies)
-    
-        self.cert_verify(conn, request.url, verify, cert)
-        url = self.request_url(request, proxies)
-        self.add_headers(request)
-    
-        chunked = not (request.body is None or 'Content-Length' in request.headers)
-    
-        if isinstance(timeout, tuple):
-            try:
-                connect, read = timeout
-                timeout = TimeoutSauce(connect=connect, read=read)
-            except ValueError as e:
-                # this may raise a string formatting error.
-                err = ("Invalid timeout {0}. Pass a (connect, read) "
-                       "timeout tuple, or a single float to set "
-                       "both timeouts to the same value".format(timeout))
-                raise ValueError(err)
-        else:
-            timeout = TimeoutSauce(connect=timeout, read=timeout)
-    
-        try:
-            if not chunked:
->               resp = conn.urlopen(
-                    method=request.method,
-                    url=url,
-                    body=request.body,
-                    headers=request.headers,
-                    redirect=False,
-                    assert_same_host=False,
-                    preload_content=False,
-                    decode_content=False,
-                    retries=self.max_retries,
-                    timeout=timeout
-                )
-
-requests/adapters.py:362: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-requests/packages/urllib3/connectionpool.py:533: in urlopen
-    conn = self._get_conn(timeout=pool_timeout)
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <requests.packages.urllib3.connectionpool.HTTPConnectionPool object at 0x7018c093e310>
-timeout = None
-
-    def _get_conn(self, timeout=None):
-        """
-        Get a connection. Will return a pooled connection if one is available.
-    
-        If no connections are available and :prop:`.block` is ``False``, then a
-        fresh connection is returned.
-    
-        :param timeout:
-            Seconds to wait before giving up and raising
-            :class:`urllib3.exceptions.EmptyPoolError` if the pool is empty and
-            :prop:`.block` is ``True``.
-        """
-        conn = None
-        try:
-            conn = self.pool.get(block=self.block, timeout=timeout)
-    
-        except AttributeError:  # self.pool is None
->           raise ClosedPoolError(self, "Pool is closed.")
-E           requests.packages.urllib3.exceptions.ClosedPoolError: HTTPConnectionPool(host='httpbin.org', port=80): Pool is closed.
-
-requests/packages/urllib3/connectionpool.py:227: ClosedPoolError
-
-During handling of the above exception, another exception occurred:
-
-    def test_urllib3_pool_connection_closed():
-        s = requests.Session()
-        s.mount('http://', HTTPAdapter(pool_connections=0, pool_maxsize=0))
-    
-        try:
->           s.get(httpbin('status/200'))
-
-test_requests.py:1664: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-requests/sessions.py:477: in get
-    return self.request('GET', url, **kwargs)
-requests/sessions.py:465: in request
-    resp = self.send(prep, **send_kwargs)
-requests/sessions.py:573: in send
-    r = adapter.send(request, **kwargs)
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <requests.adapters.HTTPAdapter object at 0x7018c0a9aee0>
-request = <PreparedRequest [GET]>, stream = False
-timeout = <requests.packages.urllib3.util.timeout.Timeout object at 0x7018c0a9ae50>
-verify = True, cert = None
-proxies = {'no': '192.168.0.0/24,127.0.0.1,localhost.localdomain,172.16.1.1'}
-
-    def send(self, request, stream=False, timeout=None, verify=True, cert=None, proxies=None):
-        """Sends PreparedRequest object. Returns Response object.
-    
-        :param request: The :class:`PreparedRequest <PreparedRequest>` being sent.
-        :param stream: (optional) Whether to stream the request content.
-        :param timeout: (optional) How long to wait for the server to send
-            data before giving up, as a float, or a (`connect timeout, read
-            timeout <user/advanced.html#timeouts>`_) tuple.
-        :type timeout: float or tuple
-        :param verify: (optional) Whether to verify SSL certificates.
-        :param cert: (optional) Any user-provided SSL certificate to be trusted.
-        :param proxies: (optional) The proxies dictionary to apply to the request.
-        """
-    
-        conn = self.get_connection(request.url, proxies)
-    
-        self.cert_verify(conn, request.url, verify, cert)
-        url = self.request_url(request, proxies)
-        self.add_headers(request)
-    
-        chunked = not (request.body is None or 'Content-Length' in request.headers)
-    
-        if isinstance(timeout, tuple):
-            try:
-                connect, read = timeout
-                timeout = TimeoutSauce(connect=connect, read=read)
-            except ValueError as e:
-                # this may raise a string formatting error.
-                err = ("Invalid timeout {0}. Pass a (connect, read) "
-                       "timeout tuple, or a single float to set "
-                       "both timeouts to the same value".format(timeout))
-                raise ValueError(err)
-        else:
-            timeout = TimeoutSauce(connect=timeout, read=timeout)
-    
-        try:
-            if not chunked:
-                resp = conn.urlopen(
-                    method=request.method,
-                    url=url,
-                    body=request.body,
-                    headers=request.headers,
-                    redirect=False,
-                    assert_same_host=False,
-                    preload_content=False,
-                    decode_content=False,
-                    retries=self.max_retries,
-                    timeout=timeout
-                )
-    
-            # Send the request.
-            else:
-                if hasattr(conn, 'proxy_pool'):
-                    conn = conn.proxy_pool
-    
-                low_conn = conn._get_conn(timeout=DEFAULT_POOL_TIMEOUT)
-    
-                try:
-                    low_conn.putrequest(request.method,
-                                        url,
-                                        skip_accept_encoding=True)
-    
-                    for header, value in request.headers.items():
-                        low_conn.putheader(header, value)
-    
-                    low_conn.endheaders()
-    
-                    for i in request.body:
-                        low_conn.send(hex(len(i))[2:].encode('utf-8'))
-                        low_conn.send(b'\r\n')
-                        low_conn.send(i)
-                        low_conn.send(b'\r\n')
-                    low_conn.send(b'0\r\n\r\n')
-    
-                    r = low_conn.getresponse()
-                    resp = HTTPResponse.from_httplib(
-                        r,
-                        pool=conn,
-                        connection=low_conn,
-                        preload_content=False,
-                        decode_content=False
-                    )
-                except:
-                    # If we hit any problems here, clean up the connection.
-                    # Then, reraise so that we can handle the actual exception.
-                    low_conn.close()
-                    raise
-    
-        except (ProtocolError, socket.error) as err:
-            raise ConnectionError(err, request=request)
-    
-        except MaxRetryError as e:
-            if isinstance(e.reason, ConnectTimeoutError):
-                raise ConnectTimeout(e, request=request)
-    
-            if isinstance(e.reason, ResponseError):
-                raise RetryError(e, request=request)
-    
-            raise ConnectionError(e, request=request)
-    
-        except ClosedPoolError as e:
->           raise ConnectionError(e, request=request)
-E           requests.exceptions.ConnectionError: HTTPConnectionPool(host='httpbin.org', port=80): Pool is closed.
-
-requests/adapters.py:426: ConnectionError
-
-During handling of the above exception, another exception occurred:
-
-    def test_urllib3_pool_connection_closed():
-        s = requests.Session()
-        s.mount('http://', HTTPAdapter(pool_connections=0, pool_maxsize=0))
-    
-        try:
-            s.get(httpbin('status/200'))
-        except ConnectionError as e:
->           assert u"HTTPConnectionPool(host='httpbin.org', port=80): Pool is closed." in str(e.message)
-E           AttributeError: 'ConnectionError' object has no attribute 'message'
-
-test_requests.py:1666: AttributeError
 =============================== warnings summary ===============================
 requests/packages/urllib3/connectionpool.py:95
-  /home/swe-bench/psf__requests/requests/packages/urllib3/connectionpool.py:95: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/packages/urllib3/connectionpool.py:95: DeprecationWarning: invalid escape sequence \*
     """
 
 requests/packages/urllib3/connectionpool.py:424
-  /home/swe-bench/psf__requests/requests/packages/urllib3/connectionpool.py:424: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/packages/urllib3/connectionpool.py:424: DeprecationWarning: invalid escape sequence \*
     """
 
 requests/packages/urllib3/connectionpool.py:772
-  /home/swe-bench/psf__requests/requests/packages/urllib3/connectionpool.py:772: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/packages/urllib3/connectionpool.py:772: DeprecationWarning: invalid escape sequence \*
     """
 
 requests/packages/urllib3/_collections.py:1
 requests/packages/urllib3/_collections.py:1
-  /home/swe-bench/psf__requests/requests/packages/urllib3/_collections.py:1: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  /opt/psf__requests/requests/packages/urllib3/_collections.py:1: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
     from collections import Mapping, MutableMapping
 
 requests/packages/urllib3/poolmanager.py:32
-  /home/swe-bench/psf__requests/requests/packages/urllib3/poolmanager.py:32: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/packages/urllib3/poolmanager.py:32: DeprecationWarning: invalid escape sequence \*
     """
 
 requests/models.py:783
-  /home/swe-bench/psf__requests/requests/models.py:783: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/models.py:783: DeprecationWarning: invalid escape sequence \*
     """Returns the json-encoded content of a response, if any.
 
 requests/api.py:59
-  /home/swe-bench/psf__requests/requests/api.py:59: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/api.py:59: DeprecationWarning: invalid escape sequence \*
     """Sends a GET request.
 
 requests/api.py:73
-  /home/swe-bench/psf__requests/requests/api.py:73: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/api.py:73: DeprecationWarning: invalid escape sequence \*
     """Sends a OPTIONS request.
 
 requests/api.py:86
-  /home/swe-bench/psf__requests/requests/api.py:86: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/api.py:86: DeprecationWarning: invalid escape sequence \*
     """Sends a HEAD request.
 
 requests/api.py:99
-  /home/swe-bench/psf__requests/requests/api.py:99: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/api.py:99: DeprecationWarning: invalid escape sequence \*
     """Sends a POST request.
 
 requests/api.py:113
-  /home/swe-bench/psf__requests/requests/api.py:113: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/api.py:113: DeprecationWarning: invalid escape sequence \*
     """Sends a PUT request.
 
 requests/api.py:126
-  /home/swe-bench/psf__requests/requests/api.py:126: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/api.py:126: DeprecationWarning: invalid escape sequence \*
     """Sends a PATCH request.
 
 requests/api.py:139
-  /home/swe-bench/psf__requests/requests/api.py:139: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/api.py:139: DeprecationWarning: invalid escape sequence \*
     """Sends a DELETE request.
 
 requests/sessions.py:470
-  /home/swe-bench/psf__requests/requests/sessions.py:470: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:470: DeprecationWarning: invalid escape sequence \*
     """Sends a GET request. Returns :class:`Response` object.
 
 requests/sessions.py:480
-  /home/swe-bench/psf__requests/requests/sessions.py:480: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:480: DeprecationWarning: invalid escape sequence \*
     """Sends a OPTIONS request. Returns :class:`Response` object.
 
 requests/sessions.py:490
-  /home/swe-bench/psf__requests/requests/sessions.py:490: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:490: DeprecationWarning: invalid escape sequence \*
     """Sends a HEAD request. Returns :class:`Response` object.
 
 requests/sessions.py:500
-  /home/swe-bench/psf__requests/requests/sessions.py:500: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:500: DeprecationWarning: invalid escape sequence \*
     """Sends a POST request. Returns :class:`Response` object.
 
 requests/sessions.py:511
-  /home/swe-bench/psf__requests/requests/sessions.py:511: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:511: DeprecationWarning: invalid escape sequence \*
     """Sends a PUT request. Returns :class:`Response` object.
 
 requests/sessions.py:521
-  /home/swe-bench/psf__requests/requests/sessions.py:521: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:521: DeprecationWarning: invalid escape sequence \*
     """Sends a PATCH request. Returns :class:`Response` object.
 
 requests/sessions.py:531
-  /home/swe-bench/psf__requests/requests/sessions.py:531: DeprecationWarning: invalid escape sequence \*
+  /opt/psf__requests/requests/sessions.py:531: DeprecationWarning: invalid escape sequence \*
     """Sends a DELETE request. Returns :class:`Response` object.
 
 test_requests.py::RequestsTestCase::test_BASICAUTH_TUPLE_HTTP_200_OK_GET
-  /home/swe-bench/psf__requests/requests/models.py:168: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  /opt/psf__requests/requests/models.py:168: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
     if isinstance(hook, collections.Callable):
 
 test_requests.py::TestContentEncodingDetection::test_html4_pragma
@@ -423,11 +155,10 @@ test_requests.py::TestContentEncodingDetection::test_none
 test_requests.py::TestContentEncodingDetection::test_precedence
 test_requests.py::TestContentEncodingDetection::test_xhtml_pragma
 test_requests.py::TestContentEncodingDetection::test_xml
-  /home/swe-bench/psf__requests/requests/utils.py:294: DeprecationWarning: In requests 3.0, get_encodings_from_content will be removed. For more information, please see the discussion on issue #2266. (This warning should only appear once.)
+  /opt/psf__requests/requests/utils.py:294: DeprecationWarning: In requests 3.0, get_encodings_from_content will be removed. For more information, please see the discussion on issue #2266. (This warning should only appear once.)
     warnings.warn((
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED test_requests.py::RequestsTestCase::test_BASICAUTH_TUPLE_HTTP_200_OK_GET
 PASSED test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE
@@ -588,12 +319,10 @@ PASSED test_requests.py::test_prepared_request_complete_copy
 PASSED test_requests.py::test_prepare_unicode_url
 PASSED test_requests.py::test_urllib3_retries
 PASSED test_requests.py::test_vendor_aliases
-XPASS test_requests.py::RequestsTestCase::test_response_iter_lines_reentrant 
+XPASS test_requests.py::RequestsTestCase::test_response_iter_lines_reentrant
 FAILED test_requests.py::RequestsTestCase::test_conflicting_post_params - Typ...
 FAILED test_requests.py::test_urllib3_pool_connection_closed - AttributeError...
-============ 2 failed, 159 passed, 1 xpassed, 28 warnings in 40.32s ============
-ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA -p no:cacheprovider test_requests.py` failed. (See above for error)
-
+======= 2 failed, 159 passed, 1 xpassed, 28 warnings in 63.18s (0:01:03) =======
  
 [psf__requests__2.7] [psf__requests-2674] Return Code: 1 
 

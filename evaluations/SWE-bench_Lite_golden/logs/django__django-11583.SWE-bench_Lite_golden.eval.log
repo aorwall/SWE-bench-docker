@@ -1,22 +1,18 @@
 [django__django__3.0] [django__django-11583] Task Metadata:
 	- Instance ID: django__django-11583
 	- Testbed: django__django__3.0
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.0] [django__django-11583] Command: git status --porcelain 
-[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.0] [django__django-11583] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.0] [django__django-11583] Return Code: 0 
 [django__django__3.0] [django__django-11583] Command: git -c advice.detachedHead=false checkout 60dc957a825232fdda9138e2f8878b2ca407a7c9 
-[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11583] Std. Output:
 Previous HEAD position was 419a78300f [3.0.x] Fixed typo in docs/ref/contrib/postgres/forms.txt.
 HEAD is now at 60dc957a82 Removed unnecessary code in Model.__init__().
  
 [django__django__3.0] [django__django-11583] Return Code: 0 
-[django__django__3.0] [django__django-11583] Command: git apply -v /home/swe-bench/temp_django__django-11583_pred_try.patch 
-[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11583] Command: git apply -v /opt/temp_django__django-11583_pred_try.patch 
+[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11583] Std. Output:
 Checking patch django/utils/autoreload.py...
 Applied patch django/utils/autoreload.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/utils/autoreload.py cleanly.
 [django__django__3.0] [django__django-11583] Return Code: 0 
 [django__django__3.0] [django__django-11583] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.0] [django__django-11583] Command: git apply -v -R /home/swe-bench/temp_django__django-11583_pred_try.patch 
-[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11583] Command: git apply -v -R /opt/temp_django__django-11583_pred_try.patch 
+[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11583] Std. Output:
 Checking patch django/utils/autoreload.py...
 Applied patch django/utils/autoreload.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/utils/autoreload.py cleanly.
 [django__django__3.0] [django__django-11583] Return Code: 0 
 [django__django__3.0] [django__django-11583] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.0] [django__django-11583] Command: git apply -v /home/swe-bench/temp_django__django-11583_pred.patch 
-[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11583] Command: git apply -v /opt/temp_django__django-11583_pred.patch 
+[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11583] Std. Output:
 Checking patch django/utils/autoreload.py...
 Applied patch django/utils/autoreload.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/utils/autoreload.py cleanly.
 [django__django__3.0] [django__django-11583] Return Code: 0 
 [django__django__3.0] [django__django-11583] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.0] [django__django-11583] Command: git apply -v /home/swe-bench/temp_django__django-11583_test.patch 
-[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11583] Command: git apply -v /opt/temp_django__django-11583_test.patch 
+[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11583] Std. Output:
 Checking patch tests/utils_tests/test_autoreload.py...
 Applied patch tests/utils_tests/test_autoreload.py cleanly.
@@ -51,23 +47,22 @@ Applied patch tests/utils_tests/test_autoreload.py cleanly.
 [django__django__3.0] [django__django-11583] Return Code: 0 
 [django__django__3.0] [django__django-11583] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.0 ./tests/runtests.py --verbosity 2 utils_tests.test_autoreload;
-[django__django__3.0] [django__django-11583] Command: conda run -n django__django__3.0 ./tests/runtests.py --verbosity 2 utils_tests.test_autoreload 
-[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 utils_tests.test_autoreload;
+[django__django__3.0] [django__django-11583] Command: ./tests/runtests.py --verbosity 2 utils_tests.test_autoreload 
+[django__django__3.0] [django__django-11583] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.0] [django__django-11583] Std. Output:
-test_common_roots (utils_tests.test_autoreload.TestCommonRoots) ... ok
-test_mutates_error_files (utils_tests.test_autoreload.TestCheckErrors) ... ok
-test_no_exception (utils_tests.test_autoreload.TestRaiseLastException) ... ok
-test_raises_custom_exception (utils_tests.test_autoreload.TestRaiseLastException) ... ok
-test_raises_exception (utils_tests.test_autoreload.TestRaiseLastException) ... ok
-test_raises_exception_with_context (utils_tests.test_autoreload.TestRaiseLastException) ... ok
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Importing application utils_tests
+Skipping setup of unused database(s): default, other.
+System check identified no issues (0 silenced).
 test_watchman_available (utils_tests.test_autoreload.GetReloaderTests) ... ok
 test_watchman_unavailable (utils_tests.test_autoreload.GetReloaderTests) ... ok
 test_manage_py (utils_tests.test_autoreload.RestartWithReloaderTests) ... ok
 test_python_m_django (utils_tests.test_autoreload.RestartWithReloaderTests) ... ok
-test_calls_start_django (utils_tests.test_autoreload.RunWithReloaderTests) ... ok
-test_calls_sys_exit (utils_tests.test_autoreload.RunWithReloaderTests) ... ok
-test_swallows_keyboard_interrupt (utils_tests.test_autoreload.RunWithReloaderTests) ... ok
+test_no_exception (utils_tests.test_autoreload.TestRaiseLastException) ... ok
+test_raises_custom_exception (utils_tests.test_autoreload.TestRaiseLastException) ... ok
+test_raises_exception (utils_tests.test_autoreload.TestRaiseLastException) ... ok
+test_raises_exception_with_context (utils_tests.test_autoreload.TestRaiseLastException) ... ok
 test_check_availability (utils_tests.test_autoreload.WatchmanReloaderTests) ... skipped 'Watchman unavailable: Cannot connect to the watchman service.'
 test_check_availability_lower_version (utils_tests.test_autoreload.WatchmanReloaderTests) ... skipped 'Watchman unavailable: Cannot connect to the watchman service.'
 test_check_server_status (utils_tests.test_autoreload.WatchmanReloaderTests) ... skipped 'Watchman unavailable: Cannot connect to the watchman service.'
@@ -89,10 +84,19 @@ test_watch_glob_uses_existing_parent_directories (utils_tests.test_autoreload.Wa
 test_watched_roots_contains_directory_globs (utils_tests.test_autoreload.WatchmanReloaderTests) ... skipped 'Watchman unavailable: Cannot connect to the watchman service.'
 test_watched_roots_contains_files (utils_tests.test_autoreload.WatchmanReloaderTests) ... skipped 'Watchman unavailable: Cannot connect to the watchman service.'
 test_watched_roots_contains_sys_path (utils_tests.test_autoreload.WatchmanReloaderTests) ... skipped 'Watchman unavailable: Cannot connect to the watchman service.'
+test_mutates_error_files (utils_tests.test_autoreload.TestCheckErrors) ... ok
+test_calls_start_django (utils_tests.test_autoreload.RunWithReloaderTests) ... ok
+test_calls_sys_exit (utils_tests.test_autoreload.RunWithReloaderTests) ... ok
+test_swallows_keyboard_interrupt (utils_tests.test_autoreload.RunWithReloaderTests) ... ok
+test_common_roots (utils_tests.test_autoreload.TestCommonRoots) ... ok
 test_sys_paths_absolute (utils_tests.test_autoreload.TestSysPathDirectories) ... ok
 test_sys_paths_directories (utils_tests.test_autoreload.TestSysPathDirectories) ... ok
 test_sys_paths_non_existing (utils_tests.test_autoreload.TestSysPathDirectories) ... ok
 test_sys_paths_with_directories (utils_tests.test_autoreload.TestSysPathDirectories) ... ok
+test_check_errors_called (utils_tests.test_autoreload.StartDjangoTests) ... ok
+test_echo_on_called (utils_tests.test_autoreload.StartDjangoTests) ... ok
+test_starts_thread_with_args (utils_tests.test_autoreload.StartDjangoTests) ... ok
+test_watchman_becomes_unavailable (utils_tests.test_autoreload.StartDjangoTests) ... ok
 test_run_loop_catches_stopiteration (utils_tests.test_autoreload.BaseReloaderTests) ... ok
 test_run_loop_stop_and_return (utils_tests.test_autoreload.BaseReloaderTests) ... ok
 test_wait_for_apps_ready_checks_for_exception (utils_tests.test_autoreload.BaseReloaderTests) ... ok
@@ -101,10 +105,6 @@ test_watch_files_with_recursive_glob (utils_tests.test_autoreload.BaseReloaderTe
 test_watch_with_glob (utils_tests.test_autoreload.BaseReloaderTests) ... ok
 test_watch_with_single_file (utils_tests.test_autoreload.BaseReloaderTests) ... ok
 test_watch_without_absolute (utils_tests.test_autoreload.BaseReloaderTests) ... ok
-test_check_errors_called (utils_tests.test_autoreload.StartDjangoTests) ... ok
-test_echo_on_called (utils_tests.test_autoreload.StartDjangoTests) ... ok
-test_starts_thread_with_args (utils_tests.test_autoreload.StartDjangoTests) ... ok
-test_watchman_becomes_unavailable (utils_tests.test_autoreload.StartDjangoTests) ... ok
 test_file (utils_tests.test_autoreload.StatReloaderTests) ... ok
 test_glob (utils_tests.test_autoreload.StatReloaderTests) ... ok
 test_glob_recursive (utils_tests.test_autoreload.StatReloaderTests) ... ok
@@ -132,15 +132,9 @@ iter_all_python_module_file() ignores weakref modules. ... ok
 test_zip_reload (utils_tests.test_autoreload.TestIterModulesAndFiles) ... ok
 
 ----------------------------------------------------------------------
-Ran 73 tests in 0.442s
+Ran 73 tests in 1.297s
 
 OK (skipped=21)
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
-Importing application utils_tests
-Skipping setup of unused database(s): default, other.
-System check identified no issues (0 silenced).
-
  
 [django__django__3.0] [django__django-11583] Return Code: 0 
 

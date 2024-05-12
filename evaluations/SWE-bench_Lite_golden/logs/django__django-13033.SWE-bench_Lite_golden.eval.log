@@ -1,22 +1,18 @@
 [django__django__3.2] [django__django-13033] Task Metadata:
 	- Instance ID: django__django-13033
 	- Testbed: django__django__3.2
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.2] [django__django-13033] Command: git status --porcelain 
-[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.2] [django__django-13033] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.2] [django__django-13033] Return Code: 0 
 [django__django__3.2] [django__django-13033] Command: git -c advice.detachedHead=false checkout a59de6e89e8dc1f3e71c9a5a5bbceb373ea5247e 
-[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13033] Std. Output:
 Previous HEAD position was 65dfb06a1a [3.2.x] Fixed #32648 -- Fixed VariableDoesNotExist rendering sitemaps template.
 HEAD is now at a59de6e89e Fixed #31675 -- Added warning to ExceptionReporter when exception chain has a cycle.
  
 [django__django__3.2] [django__django-13033] Return Code: 0 
-[django__django__3.2] [django__django-13033] Command: git apply -v /home/swe-bench/temp_django__django-13033_pred_try.patch 
-[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13033] Command: git apply -v /opt/temp_django__django-13033_pred_try.patch 
+[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13033] Std. Output:
 Checking patch django/db/models/sql/compiler.py...
 Applied patch django/db/models/sql/compiler.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/db/models/sql/compiler.py cleanly.
 [django__django__3.2] [django__django-13033] Return Code: 0 
 [django__django__3.2] [django__django-13033] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-13033] Command: git apply -v -R /home/swe-bench/temp_django__django-13033_pred_try.patch 
-[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13033] Command: git apply -v -R /opt/temp_django__django-13033_pred_try.patch 
+[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13033] Std. Output:
 Checking patch django/db/models/sql/compiler.py...
 Applied patch django/db/models/sql/compiler.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/db/models/sql/compiler.py cleanly.
 [django__django__3.2] [django__django-13033] Return Code: 0 
 [django__django__3.2] [django__django-13033] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.2] [django__django-13033] Command: git apply -v /home/swe-bench/temp_django__django-13033_pred.patch 
-[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13033] Command: git apply -v /opt/temp_django__django-13033_pred.patch 
+[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13033] Std. Output:
 Checking patch django/db/models/sql/compiler.py...
 Applied patch django/db/models/sql/compiler.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/db/models/sql/compiler.py cleanly.
 [django__django__3.2] [django__django-13033] Return Code: 0 
 [django__django__3.2] [django__django-13033] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.2] [django__django-13033] Command: git apply -v /home/swe-bench/temp_django__django-13033_test.patch 
-[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13033] Command: git apply -v /opt/temp_django__django-13033_test.patch 
+[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13033] Std. Output:
 Checking patch tests/ordering/models.py...
 Checking patch tests/ordering/tests.py...
@@ -53,9 +49,9 @@ Applied patch tests/ordering/tests.py cleanly.
 [django__django__3.2] [django__django-13033] Return Code: 0 
 [django__django__3.2] [django__django-13033] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 ordering.models ordering.tests;
-[django__django__3.2] [django__django-13033] Command: conda run -n django__django__3.2 ./tests/runtests.py --verbosity 2 ordering.models ordering.tests 
-[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 ordering.models ordering.tests;
+[django__django__3.2] [django__django-13033] Command: ./tests/runtests.py --verbosity 2 ordering.models ordering.tests 
+[django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.2] [django__django-13033] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 test_default_ordering (ordering.tests.OrderingTests) ... ok
@@ -88,12 +84,11 @@ test_stop_slicing (ordering.tests.OrderingTests) ... ok
 test_stop_start_slicing (ordering.tests.OrderingTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 27 tests in 0.062s
+Ran 27 tests in 0.102s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application ordering
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -118,7 +113,6 @@ Running migrations:
   Applying sites.0001_initial... OK
   Applying sites.0002_alter_domain_unique... OK
 System check identified no issues (0 silenced).
-
  
 [django__django__3.2] [django__django-13033] Return Code: 0 
 

@@ -3,20 +3,15 @@
 	- Testbed: pytest-dev__pytest__5.0
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Command: git status --porcelain 
-[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Std. Output:
- 
-[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Return Code: 0 
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Command: git -c advice.detachedHead=false checkout 29e336bd9bf87eaef8e2683196ee1975f1ad4088 
-[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Std. Output:
 Previous HEAD position was c2f762460 Merge pull request #5673 from bluetech/type-annotations-3
 HEAD is now at 29e336bd9 Merge pull request #5687 from blueyed/merge-master
  
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Return Code: 0 
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-5692_pred_try.patch 
-[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Std. Output:
 Checking patch src/_pytest/junitxml.py...
 Applied patch src/_pytest/junitxml.py cleanly.
@@ -25,7 +20,7 @@ Applied patch src/_pytest/junitxml.py cleanly.
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Command: git apply -v -R /home/swe-bench/temp_pytest-dev__pytest-5692_pred_try.patch 
-[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Std. Output:
 Checking patch src/_pytest/junitxml.py...
 Applied patch src/_pytest/junitxml.py cleanly.
@@ -34,7 +29,7 @@ Applied patch src/_pytest/junitxml.py cleanly.
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-5692_pred.patch 
-[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Std. Output:
 Checking patch src/_pytest/junitxml.py...
 Applied patch src/_pytest/junitxml.py cleanly.
@@ -43,12 +38,12 @@ Applied patch src/_pytest/junitxml.py cleanly.
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Command: git restore testing/test_junitxml.py 
-[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Std. Output:
  
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Return Code: 0 
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-5692_test.patch 
-[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Std. Output:
 Checking patch testing/test_junitxml.py...
 Applied patch testing/test_junitxml.py cleanly.
@@ -58,7 +53,7 @@ Applied patch testing/test_junitxml.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pytest-dev__pytest__5.0 pytest -rA testing/test_junitxml.py;
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Command: conda run -n pytest-dev__pytest__5.0 pytest -rA testing/test_junitxml.py 
-[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.0.2.dev262+gc2f762460, py-1.11.0, pluggy-0.13.1
@@ -87,7 +82,7 @@ E       assert 0
 
 test_summing_simple.py:5: AssertionError
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_summing_simple0/junit.xml -
-===== 1 failed, 1 passed, 1 skipped, 1 xfailed, 1 xpassed in 0.03 seconds ======
+===== 1 failed, 1 passed, 1 skipped, 1 xfailed, 1 xpassed in 0.05 seconds ======
 __________________ TestPython.test_summing_simple_with_errors __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -117,7 +112,7 @@ test_summing_simple_with_errors.py:8: AssertionError
 __________________________________ test_xpass __________________________________
 [XPASS(strict)] 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_summing_simple_with_errors0/junit.xml -
-============ 2 failed, 1 passed, 1 xfailed, 1 error in 0.02 seconds ============
+============ 2 failed, 1 passed, 1 xfailed, 1 error in 0.04 seconds ============
 _______________________ TestPython.test_hostname_in_xml ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -128,7 +123,7 @@ collected 1 item
 test_hostname_in_xml.py .                                                [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_hostname_in_xml0/junit.xml -
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 _______________________ TestPython.test_timestamp_in_xml _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -139,7 +134,7 @@ collected 1 item
 test_timestamp_in_xml.py .                                               [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_timestamp_in_xml0/junit.xml -
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 _______________________ TestPython.test_timing_function ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -150,7 +145,7 @@ collected 1 item
 test_timing_function.py .                                                [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_timing_function0/junit.xml -
-=========================== 1 passed in 0.05 seconds ===========================
+=========================== 1 passed in 0.06 seconds ===========================
 _________________ TestPython.test_junit_duration_report[call] __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -161,7 +156,7 @@ collected 1 item
 test_junit_duration_report.py .                                          [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_junit_duration_report0/junit.xml -
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 _________________ TestPython.test_junit_duration_report[total] _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -172,7 +167,7 @@ collected 1 item
 test_junit_duration_report.py .                                          [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_junit_duration_report1/junit.xml -
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 _________________________ TestPython.test_setup_error __________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -194,7 +189,7 @@ E       ValueError
 
 test_setup_error.py:5: ValueError
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_setup_error0/junit.xml -
-=========================== 1 error in 0.02 seconds ============================
+=========================== 1 error in 0.03 seconds ============================
 ________________________ TestPython.test_teardown_error ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -215,7 +210,7 @@ E       ValueError
 
 test_teardown_error.py:6: ValueError
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_teardown_error0/junit.xml -
-====================== 1 passed, 1 error in 0.02 seconds =======================
+====================== 1 passed, 1 error in 0.03 seconds =======================
 _________________ TestPython.test_call_failure_teardown_error __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -246,7 +241,7 @@ E       Exception: Call Exception
 
 test_call_failure_teardown_error.py:8: Exception
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_call_failure_teardown_error0/junit.xml -
-====================== 1 failed, 1 error in 0.02 seconds =======================
+====================== 1 failed, 1 error in 0.03 seconds =======================
 __________________ TestPython.test_skip_contains_name_reason ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -257,7 +252,7 @@ collected 1 item
 test_skip_contains_name_reason.py s                                      [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_skip_contains_name_reason0/junit.xml -
-========================== 1 skipped in 0.01 seconds ===========================
+========================== 1 skipped in 0.02 seconds ===========================
 ________________ TestPython.test_mark_skip_contains_name_reason ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -268,7 +263,7 @@ collected 1 item
 test_mark_skip_contains_name_reason.py s                                 [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_mark_skip_contains_name_reason0/junit.xml -
-========================== 1 skipped in 0.01 seconds ===========================
+========================== 1 skipped in 0.03 seconds ===========================
 _______________ TestPython.test_mark_skipif_contains_name_reason _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -279,7 +274,7 @@ collected 1 item
 test_mark_skipif_contains_name_reason.py s                               [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_mark_skipif_contains_name_reason0/junit.xml -
-========================== 1 skipped in 0.01 seconds ===========================
+========================== 1 skipped in 0.02 seconds ===========================
 _______________ TestPython.test_mark_skip_doesnt_capture_output ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -290,7 +285,7 @@ collected 1 item
 test_mark_skip_doesnt_capture_output.py s                                [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_mark_skip_doesnt_capture_output0/junit.xml -
-========================== 1 skipped in 0.01 seconds ===========================
+========================== 1 skipped in 0.02 seconds ===========================
 ______________________ TestPython.test_classname_instance ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -303,7 +298,7 @@ test_classname_instance.py F                                             [100%]
 =================================== FAILURES ===================================
 ____________________________ TestClass.test_method _____________________________
 
-self = <test_classname_instance.TestClass object at 0x7694f6653190>
+self = <test_classname_instance.TestClass object at 0x7a6780cd41c0>
 
     def test_method(self):
 >       assert 0
@@ -311,7 +306,7 @@ E       assert 0
 
 test_classname_instance.py:3: AssertionError
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_classname_instance0/junit.xml -
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.04 seconds ===========================
 _____________________ TestPython.test_classname_nested_dir _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -329,7 +324,7 @@ E   ZeroDivisionError: division by zero
 
 sub/test_hello.py:1: ZeroDivisionError
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_classname_nested_dir0/junit.xml -
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.03 seconds ===========================
 ________________________ TestPython.test_internal_error ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -551,7 +546,7 @@ test_failure_escape.py:5: AssertionError
 ----------------------------- Captured stdout call -----------------------------
 '
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_failure_escape0/junit.xml -
-=========================== 3 failed in 0.02 seconds ===========================
+=========================== 3 failed in 0.03 seconds ===========================
 _______________________ TestPython.test_junit_prefixing ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -614,7 +609,7 @@ collected 1 item
 test_xfailure_xpass.py X                                                 [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_xfailure_xpass0/junit.xml -
-========================== 1 xpassed in 0.01 seconds ===========================
+========================== 1 xpassed in 0.02 seconds ===========================
 ____________________ TestPython.test_xfailure_xpass_strict _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -660,7 +655,7 @@ E              ^
 E   SyntaxError: invalid syntax
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_collect_error0/junit.xml -
 !!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
-=========================== 1 error in 0.10 seconds ============================
+=========================== 1 error in 0.15 seconds ============================
 ___________________________ TestPython.test_unicode ____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -707,7 +702,7 @@ E         ?    ^
 test_assertion_binchars.py:5: AssertionError
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_assertion_binchars0/junit.xml -
 =========================== 1 failed in 0.02 seconds ===========================
-<?xml version="1.0" ?><testsuites><testsuite errors="0" failures="1" hostname="80f18b93aae8" name="pytest" skipped="0" tests="1" time="0.018" timestamp="2024-05-02T18:25:49.170119"><testcase classname="test_assertion_binchars" file="test_assertion_binchars.py" line="3" name="test_str_compare" time="0.001"><failure message="AssertionError: assert '\x01\x02\x03\x04' == '\x01\x02\x03\x05'   - #x01#x02#x03#x04   ?    ^   + #x01#x02#x03#x05   ?    ^">def test_str_compare():
+<?xml version="1.0" ?><testsuites><testsuite errors="0" failures="1" hostname="0c07acbc54a6" name="pytest" skipped="0" tests="1" time="0.025" timestamp="2024-05-12T15:18:28.231622"><testcase classname="test_assertion_binchars" file="test_assertion_binchars.py" line="3" name="test_str_compare" time="0.001"><failure message="AssertionError: assert '\x01\x02\x03\x04' == '\x01\x02\x03\x05'   - #x01#x02#x03#x04   ?    ^   + #x01#x02#x03#x05   ?    ^">def test_str_compare():
 &gt;       assert M1 == M2
 E       AssertionError: assert '\x01\x02\x03\x04' == '\x01\x02\x03\x05'
 E         - #x01#x02#x03#x04
@@ -726,7 +721,7 @@ collected 1 item
 test_pass_captures_stdout.py .                                           [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_pass_captures_stdout0/junit.xml -
-=========================== 1 passed in 0.01 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 _____________________ TestPython.test_pass_captures_stderr _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -737,7 +732,7 @@ collected 1 item
 test_pass_captures_stderr.py .                                           [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_pass_captures_stderr0/junit.xml -
-=========================== 1 passed in 0.01 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 _________________ TestPython.test_setup_error_captures_stdout __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -829,7 +824,7 @@ collected 1 item
 _________________________________ test session _________________________________
 custom item runtest failed
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_summing_simple1/junit.xml -
-=========================== 1 failed in 0.00 seconds ===========================
+=========================== 1 failed in 0.01 seconds ===========================
 ________________________________ test_nullbyte _________________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -897,7 +892,7 @@ collected 1 item
 test_logxml_makedir.py .                                                 [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_logxml_makedir0/path/to/results.xml -
-=========================== 1 passed in 0.01 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ___________________________ test_logxml_check_isdir ____________________________
 ----------------------------- Captured stderr call -----------------------------
 ERROR: --junitxml must be a filename, given: .
@@ -912,7 +907,7 @@ collected 1 item
 test_escaped_parametrized_names_xml.py .                                 [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_escaped_parametrized_names_xml0/junit.xml -
-=========================== 1 passed in 0.01 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 __________________ test_double_colon_split_function_issue469 ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -923,7 +918,7 @@ collected 1 item
 test_double_colon_split_function_issue469.py .                           [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_double_colon_split_function_issue4690/junit.xml -
-=========================== 1 passed in 0.01 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ___________________ test_double_colon_split_method_issue469 ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -945,7 +940,7 @@ collected 1 item
 test_record_property.py .                                                [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_record_property0/junit.xml -
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 ________________________ test_record_property_same_name ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -966,7 +961,7 @@ collected 1 item
 
 test_record_fixtures_without_junitxml.py .                               [100%]
 
-=========================== 1 passed in 0.01 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 _________ test_record_fixtures_without_junitxml[record_xml_attribute] __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -976,7 +971,7 @@ collected 1 item
 
 test_record_fixtures_without_junitxml.py .                               [100%]
 
-=========================== 1 passed in 0.01 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ____________________________ test_record_attribute _____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -993,7 +988,7 @@ test_record_attribute.py::test_record
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_record_attribute0/junit.xml -
-===================== 1 passed, 1 warnings in 0.02 seconds =====================
+===================== 1 passed, 1 warnings in 0.03 seconds =====================
 ______________ test_record_fixtures_xunit2[record_xml_attribute] _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1065,7 +1060,7 @@ conftest.py ...                                                          [ 28%]
 test_fancy_items_regression.py ....
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_fancy_items_regression0/junit.xml -
-=========================== 7 passed in 0.03 seconds ===========================
+=========================== 7 passed in 0.02 seconds ===========================
 ['conftest a',
  'conftest a',
  'conftest b',
@@ -1093,7 +1088,7 @@ collected 1 item
 
 test_record_testsuite_property_junit_disabled.py .                       [100%]
 
-=========================== 1 passed in 0.01 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ______________ test_record_testsuite_property_type_checking[True] ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1106,7 +1101,7 @@ test_record_testsuite_property_type_checking.py F                        [100%]
 =================================== FAILURES ===================================
 __________________________________ test_func1 __________________________________
 
-record_testsuite_property = <bound method LogXML.add_global_property of <_pytest.junitxml.LogXML object at 0x7694f56a73d0>>
+record_testsuite_property = <bound method LogXML.add_global_property of <_pytest.junitxml.LogXML object at 0x7a677fdcb070>>
 
     def test_func1(record_testsuite_property):
 >       record_testsuite_property(1, 2)
@@ -1127,7 +1122,7 @@ test_record_testsuite_property_type_checking.py F                        [100%]
 =================================== FAILURES ===================================
 __________________________________ test_func1 __________________________________
 
-record_testsuite_property = <function record_testsuite_property.<locals>.record_func at 0x7694f56caca0>
+record_testsuite_property = <function record_testsuite_property.<locals>.record_func at 0x7a677fd7b4c0>
 
     def test_func1(record_testsuite_property):
 >       record_testsuite_property(1, 2)
@@ -1145,7 +1140,7 @@ collected 1 item
 test_set_suite_name.py .                                                 [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_set_suite_name0/junit.xml -
-=========================== 1 passed in 0.01 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ____________________________ test_set_suite_name[] _____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1156,7 +1151,7 @@ collected 1 item
 test_set_suite_name.py .                                                 [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_set_suite_name1/junit.xml -
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.07 seconds ===========================
 ______________________ test_escaped_skipreason_issue3533 _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1255,7 +1250,7 @@ PASSED testing/test_junitxml.py::test_logging_passing_tests_disabled_does_not_lo
 SKIPPED [1] /home/swe-bench/pytest-dev__pytest/testing/test_junitxml.py:1114: could not import 'xdist': No module named 'xdist'
 XFAIL testing/test_junitxml.py::test_runs_twice_xdist
   reason: [NOTRUN] hangs
-=============== 70 passed, 1 skipped, 1 xfailed in 2.38 seconds ================
+=============== 70 passed, 1 skipped, 1 xfailed in 4.39 seconds ================
 
  
 [pytest-dev__pytest__5.0] [pytest-dev__pytest-5692] Return Code: 0 

@@ -1,22 +1,18 @@
 [django__django__3.1] [django__django-12708] Task Metadata:
 	- Instance ID: django__django-12708
 	- Testbed: django__django__3.1
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.1] [django__django-12708] Command: git status --porcelain 
-[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.1] [django__django-12708] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Command: git -c advice.detachedHead=false checkout 447980e72ac01da1594dd3373a03ba40b7ee6f80 
-[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12708] Std. Output:
 Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at 447980e72a Fixed #31500 -- Fixed detecting of unique fields in QuerySet.in_bulk() when using Meta.constraints.
  
 [django__django__3.1] [django__django-12708] Return Code: 0 
-[django__django__3.1] [django__django-12708] Command: git apply -v /home/swe-bench/temp_django__django-12708_pred_try.patch 
-[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12708] Command: git apply -v /opt/temp_django__django-12708_pred_try.patch 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12708] Std. Output:
 Checking patch django/db/backends/base/schema.py...
 Applied patch django/db/backends/base/schema.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/db/backends/base/schema.py cleanly.
 [django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-12708] Command: git apply -v -R /home/swe-bench/temp_django__django-12708_pred_try.patch 
-[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12708] Command: git apply -v -R /opt/temp_django__django-12708_pred_try.patch 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12708] Std. Output:
 Checking patch django/db/backends/base/schema.py...
 Applied patch django/db/backends/base/schema.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/db/backends/base/schema.py cleanly.
 [django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-12708] Command: git apply -v /home/swe-bench/temp_django__django-12708_pred.patch 
-[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12708] Command: git apply -v /opt/temp_django__django-12708_pred.patch 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12708] Std. Output:
 Checking patch django/db/backends/base/schema.py...
 Applied patch django/db/backends/base/schema.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/db/backends/base/schema.py cleanly.
 [django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.1] [django__django-12708] Command: git apply -v /home/swe-bench/temp_django__django-12708_test.patch 
-[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12708] Command: git apply -v /opt/temp_django__django-12708_test.patch 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12708] Std. Output:
 Checking patch tests/migrations/test_base.py...
 Checking patch tests/migrations/test_operations.py...
@@ -53,10 +49,51 @@ Applied patch tests/migrations/test_operations.py cleanly.
 [django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 migrations.test_base migrations.test_operations;
-[django__django__3.1] [django__django-12708] Command: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 migrations.test_base migrations.test_operations 
-[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 migrations.test_base migrations.test_operations;
+[django__django__3.1] [django__django-12708] Command: ./tests/runtests.py --verbosity 2 migrations.test_base migrations.test_operations 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-12708] Std. Output:
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Importing application migrations
+Operations to perform:
+  Synchronize unmigrated apps: auth, contenttypes, messages, migrations, sessions, staticfiles
+  Apply all migrations: admin, sites
+Synchronizing apps without migrations:
+  Creating tables...
+    Creating table django_content_type
+    Creating table auth_permission
+    Creating table auth_group
+    Creating table auth_user
+    Creating table django_session
+    Creating table migrations_modelwithcustombase
+    Creating table migrations_unmigratedmodel
+    Running deferred SQL...
+Running migrations:
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying sites.0001_initial... OK
+  Applying sites.0002_alter_domain_unique... OK
+Operations to perform:
+  Synchronize unmigrated apps: auth, contenttypes, messages, migrations, sessions, staticfiles
+  Apply all migrations: admin, sites
+Synchronizing apps without migrations:
+  Creating tables...
+    Creating table django_content_type
+    Creating table auth_permission
+    Creating table auth_group
+    Creating table auth_user
+    Creating table django_session
+    Creating table migrations_modelwithcustombase
+    Creating table migrations_unmigratedmodel
+    Running deferred SQL...
+Running migrations:
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying sites.0001_initial... OK
+  Applying sites.0002_alter_domain_unique... OK
+System check identified no issues (0 silenced).
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
@@ -175,7 +212,7 @@ test_smallfield_bigautofield_foreignfield_growth (migrations.test_operations.Ope
 A field may be migrated from SmallAutoField to BigAutoField. ... ok
 
 ----------------------------------------------------------------------
-Ran 102 tests in 1.131s
+Ran 102 tests in 4.435s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
@@ -188,49 +225,6 @@ Destroying test database for alias 'other' ('file:memorydb_other?mode=memory&cac
 Destroying test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')...
 Destroying test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')...
 Destroying test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
-Importing application migrations
-Operations to perform:
-  Synchronize unmigrated apps: auth, contenttypes, messages, migrations, sessions, staticfiles
-  Apply all migrations: admin, sites
-Synchronizing apps without migrations:
-  Creating tables...
-    Creating table django_content_type
-    Creating table auth_permission
-    Creating table auth_group
-    Creating table auth_user
-    Creating table django_session
-    Creating table migrations_modelwithcustombase
-    Creating table migrations_unmigratedmodel
-    Running deferred SQL...
-Running migrations:
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying admin.0003_logentry_add_action_flag_choices... OK
-  Applying sites.0001_initial... OK
-  Applying sites.0002_alter_domain_unique... OK
-Operations to perform:
-  Synchronize unmigrated apps: auth, contenttypes, messages, migrations, sessions, staticfiles
-  Apply all migrations: admin, sites
-Synchronizing apps without migrations:
-  Creating tables...
-    Creating table django_content_type
-    Creating table auth_permission
-    Creating table auth_group
-    Creating table auth_user
-    Creating table django_session
-    Creating table migrations_modelwithcustombase
-    Creating table migrations_unmigratedmodel
-    Running deferred SQL...
-Running migrations:
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying admin.0003_logentry_add_action_flag_choices... OK
-  Applying sites.0001_initial... OK
-  Applying sites.0002_alter_domain_unique... OK
-System check identified no issues (0 silenced).
-
  
 [django__django__3.1] [django__django-12708] Return Code: 0 
 

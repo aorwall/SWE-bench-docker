@@ -1,0 +1,31 @@
+FROM aorwall/swe-bench-base:bookworm-slim
+
+ARG PYENV_VERSIONS="3.5.10 3.6.15 3.7.17 3.8.19 3.9.19 3.10.14 3.11.9"
+ARG ALLOW_FAILURES=
+
+RUN set -eux; \
+    for version in ${PYENV_VERSIONS}; do \
+        env PYTHON_CONFIGURE_OPTS=" \
+            --enable-shared \
+            --enable-loadable-sqlite-extensions \
+            --with-lto \
+            --with-system-expat \
+            --with-system-ffi \
+            --with-system-mpdec \
+            " \
+            pyenv install ${version} || test -n "${ALLOW_FAILURES}"; \
+    done; \
+    pyenv global $(pyenv versions --bare | tac); \
+    pyenv versions; \
+    \
+    find ${PYENV_ROOT}/versions -depth \
+        \( \
+            \( -type d -a \( -name test -o -name tests -o -name idle_test \) \) \
+            -o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name '*.a' \) \) \
+            -o \( -type f -a -name 'wininst-*.exe' \) \
+        \) -exec rm -rf '{}' +
+
+
+RUN for version in ${PYENV_VERSIONS}; do \
+    ${PYENV_ROOT}/versions/${version}/bin/pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org --upgrade pip; \
+done

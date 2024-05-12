@@ -1,22 +1,18 @@
 [django__django__3.1] [django__django-12589] Task Metadata:
 	- Instance ID: django__django-12589
 	- Testbed: django__django__3.1
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.1] [django__django-12589] Command: git status --porcelain 
-[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.1] [django__django-12589] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Command: git -c advice.detachedHead=false checkout 895f28f9cbed817c00ab68770433170d83132d90 
-[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12589] Std. Output:
 Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at 895f28f9cb Reverted "Pinned asgiref == 3.2.5 in test requirements."
  
 [django__django__3.1] [django__django-12589] Return Code: 0 
-[django__django__3.1] [django__django-12589] Command: git apply -v /home/swe-bench/temp_django__django-12589_pred_try.patch 
-[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12589] Command: git apply -v /opt/temp_django__django-12589_pred_try.patch 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12589] Std. Output:
 Checking patch django/db/models/sql/query.py...
 Applied patch django/db/models/sql/query.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/db/models/sql/query.py cleanly.
 [django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-12589] Command: git apply -v -R /home/swe-bench/temp_django__django-12589_pred_try.patch 
-[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12589] Command: git apply -v -R /opt/temp_django__django-12589_pred_try.patch 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12589] Std. Output:
 Checking patch django/db/models/sql/query.py...
 Applied patch django/db/models/sql/query.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/db/models/sql/query.py cleanly.
 [django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-12589] Command: git apply -v /home/swe-bench/temp_django__django-12589_pred.patch 
-[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12589] Command: git apply -v /opt/temp_django__django-12589_pred.patch 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12589] Std. Output:
 Checking patch django/db/models/sql/query.py...
 Applied patch django/db/models/sql/query.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/db/models/sql/query.py cleanly.
 [django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.1] [django__django-12589] Command: git apply -v /home/swe-bench/temp_django__django-12589_test.patch 
-[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12589] Command: git apply -v /opt/temp_django__django-12589_test.patch 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12589] Std. Output:
 Checking patch tests/aggregation/models.py...
 Checking patch tests/aggregation/tests.py...
@@ -53,9 +49,9 @@ Applied patch tests/aggregation/tests.py cleanly.
 [django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 aggregation.models aggregation.tests;
-[django__django__3.1] [django__django-12589] Command: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 aggregation.models aggregation.tests 
-[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 aggregation.models aggregation.tests;
+[django__django__3.1] [django__django-12589] Command: ./tests/runtests.py --verbosity 2 aggregation.models aggregation.tests 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-12589] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 test_add_implementation (aggregation.tests.AggregateTestCase) ... ok
@@ -128,12 +124,11 @@ test_values_aggregation (aggregation.tests.AggregateTestCase) ... ok
 test_values_annotation_with_expression (aggregation.tests.AggregateTestCase) ... ok
 
 ----------------------------------------------------------------------
-Ran 67 tests in 0.105s
+Ran 67 tests in 0.291s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application aggregation
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -158,7 +153,6 @@ Running migrations:
   Applying sites.0001_initial... OK
   Applying sites.0002_alter_domain_unique... OK
 System check identified no issues (0 silenced).
-
  
 [django__django__3.1] [django__django-12589] Return Code: 0 
 

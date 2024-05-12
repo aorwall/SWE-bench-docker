@@ -1,22 +1,18 @@
 [django__django__3.1] [django__django-11797] Task Metadata:
 	- Instance ID: django__django-11797
 	- Testbed: django__django__3.1
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
-[django__django__3.1] [django__django-11797] Command: git status --porcelain 
-[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[django__django__3.1] [django__django-11797] Std. Output:
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.6.15
  
-[django__django__3.1] [django__django-11797] Return Code: 0 
 [django__django__3.1] [django__django-11797] Command: git -c advice.detachedHead=false checkout 3346b78a8a872286a245d1e77ef4718fc5e6be1a 
-[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11797] Std. Output:
 Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at 3346b78a8a Fixed #30786 -- Used CONVERT_TZ to check if the time zone definitions are installed on MySQL.
  
 [django__django__3.1] [django__django-11797] Return Code: 0 
-[django__django__3.1] [django__django-11797] Command: git apply -v /home/swe-bench/temp_django__django-11797_pred_try.patch 
-[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11797] Command: git apply -v /opt/temp_django__django-11797_pred_try.patch 
+[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11797] Std. Output:
 Checking patch django/db/models/lookups.py...
 Applied patch django/db/models/lookups.py cleanly.
@@ -24,8 +20,8 @@ Applied patch django/db/models/lookups.py cleanly.
 [django__django__3.1] [django__django-11797] Return Code: 0 
 [django__django__3.1] [django__django-11797] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-11797] Command: git apply -v -R /home/swe-bench/temp_django__django-11797_pred_try.patch 
-[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11797] Command: git apply -v -R /opt/temp_django__django-11797_pred_try.patch 
+[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11797] Std. Output:
 Checking patch django/db/models/lookups.py...
 Applied patch django/db/models/lookups.py cleanly.
@@ -33,8 +29,8 @@ Applied patch django/db/models/lookups.py cleanly.
 [django__django__3.1] [django__django-11797] Return Code: 0 
 [django__django__3.1] [django__django-11797] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[django__django__3.1] [django__django-11797] Command: git apply -v /home/swe-bench/temp_django__django-11797_pred.patch 
-[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11797] Command: git apply -v /opt/temp_django__django-11797_pred.patch 
+[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11797] Std. Output:
 Checking patch django/db/models/lookups.py...
 Applied patch django/db/models/lookups.py cleanly.
@@ -42,8 +38,8 @@ Applied patch django/db/models/lookups.py cleanly.
 [django__django__3.1] [django__django-11797] Return Code: 0 
 [django__django__3.1] [django__django-11797] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
-[django__django__3.1] [django__django-11797] Command: git apply -v /home/swe-bench/temp_django__django-11797_test.patch 
-[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11797] Command: git apply -v /opt/temp_django__django-11797_test.patch 
+[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11797] Std. Output:
 Checking patch tests/lookup/tests.py...
 Applied patch tests/lookup/tests.py cleanly.
@@ -51,9 +47,9 @@ Applied patch tests/lookup/tests.py cleanly.
 [django__django__3.1] [django__django-11797] Return Code: 0 
 [django__django__3.1] [django__django-11797] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 lookup.tests;
-[django__django__3.1] [django__django-11797] Command: conda run -n django__django__3.1 ./tests/runtests.py --verbosity 2 lookup.tests 
-[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/home/swe-bench/django__django", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script:  ./tests/runtests.py --verbosity 2 lookup.tests;
+[django__django__3.1] [django__django-11797] Command: ./tests/runtests.py --verbosity 2 lookup.tests 
+[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-11797] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 test_chain_date_time_lookups (lookup.tests.LookupTests) ... ok
@@ -99,12 +95,11 @@ test_values (lookup.tests.LookupTests) ... ok
 test_values_list (lookup.tests.LookupTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 39 tests in 0.208s
+Ran 39 tests in 0.487s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-
-Testing against Django installed in '/home/swe-bench/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application lookup
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -134,7 +129,6 @@ Running migrations:
   Applying sites.0001_initial... OK
   Applying sites.0002_alter_domain_unique... OK
 System check identified no issues (0 silenced).
-
  
 [django__django__3.1] [django__django-11797] Return Code: 0 
 

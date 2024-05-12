@@ -33,8 +33,8 @@ Requirement already satisfied: toml in /home/swe-bench/miniconda3/envs/pytest-de
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev522+g7b77fc086-0.editable-py3-none-any.whl size=5136 sha256=9cd0c847896a5203fdc9bb63b566982734faab4d6297089a3b30b159734a63e7
-  Stored in directory: /tmp/pip-ephem-wheel-cache-89o2b7m5/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev522+g7b77fc086-0.editable-py3-none-any.whl size=5136 sha256=ad5638d0acde5f21563eeebc6547e18bb8083a4249b39c883386cfaa92bf9573
+  Stored in directory: /tmp/pip-ephem-wheel-cache-6ia4mccy/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -65,8 +65,8 @@ Requirement already satisfied: toml in /home/swe-bench/miniconda3/envs/pytest-de
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev522+g7b77fc086-0.editable-py3-none-any.whl size=5136 sha256=9cd0c847896a5203fdc9bb63b566982734faab4d6297089a3b30b159734a63e7
-  Stored in directory: /tmp/pip-ephem-wheel-cache-89o2b7m5/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev522+g7b77fc086-0.editable-py3-none-any.whl size=5136 sha256=ad5638d0acde5f21563eeebc6547e18bb8083a4249b39c883386cfaa92bf9573
+  Stored in directory: /tmp/pip-ephem-wheel-cache-6ia4mccy/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -139,7 +139,7 @@ collected 6 items
 
 test_marked_class_run_twice.py ......
 
-============================== 6 passed in 0.01s ===============================
+============================== 6 passed in 0.03s ===============================
 _______________________________ test_ini_markers _______________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -149,7 +149,7 @@ collected 1 item
 
 test_ini_markers.py .                                                    [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 _____________________________ test_markers_option ______________________________
 ----------------------------- Captured stdout call -----------------------------
 @pytest.mark.a1: this is a webtest marker
@@ -183,7 +183,7 @@ collected 1 item
 
 test_ini_markers_whitespace.py .                                         [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _______________________ test_marker_without_description ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -191,7 +191,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_marker_without_description0, configfile: setup.cfg
 collected 0 items
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 ________________ test_markers_option_with_plugin_in_current_dir ________________
 ----------------------------- Captured stdout call -----------------------------
 @pytest.mark.flip:flop
@@ -221,7 +221,7 @@ collected 1 item
 
 test_mark_on_pseudo_function.py .                                        [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _________ test_strict_prohibits_unregistered_markers[--strict-markers] _________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -235,7 +235,7 @@ ________ ERROR collecting test_strict_prohibits_unregistered_markers.py ________
 =========================== short test summary info ============================
 ERROR test_strict_prohibits_unregistered_markers.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.03s ===============================
+=============================== 1 error in 0.11s ===============================
 _____________ test_strict_prohibits_unregistered_markers[--strict] _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -249,7 +249,7 @@ ________ ERROR collecting test_strict_prohibits_unregistered_markers.py ________
 =========================== short test summary info ============================
 ERROR test_strict_prohibits_unregistered_markers.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.04s ===============================
+=============================== 1 error in 0.10s ===============================
 ____________________ test_mark_option[xyz-expected_passed0] ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -259,7 +259,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_mark_option.py .                                                    [100%]
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 _______________ test_mark_option[(((  xyz))  )-expected_passed1] _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -269,7 +269,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_mark_option.py .                                                    [100%]
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 ________________ test_mark_option[not not xyz-expected_passed2] ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -279,7 +279,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_mark_option.py .                                                    [100%]
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 _______________ test_mark_option[xyz and xyz2-expected_passed3] ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -287,7 +287,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_mark_option3
 collected 2 items / 2 deselected
 
-============================ 2 deselected in 0.00s =============================
+============================ 2 deselected in 0.01s =============================
 ___________________ test_mark_option[xyz2-expected_passed4] ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -297,7 +297,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_mark_option.py .                                                    [100%]
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 ________________ test_mark_option[xyz or xyz2-expected_passed5] ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -307,7 +307,7 @@ collected 2 items
 
 test_mark_option.py ..                                                   [100%]
 
-============================== 2 passed in 0.00s ===============================
+============================== 2 passed in 0.01s ===============================
 _____________ test_mark_option_custom[interface-expected_passed0] ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -317,7 +317,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_mark_option_custom.py .                                             [100%]
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 ___________ test_mark_option_custom[not interface-expected_passed1] ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -337,7 +337,7 @@ collected 5 items / 4 deselected / 1 selected
 
 test_keyword_option_custom.py .                                          [100%]
 
-======================= 1 passed, 4 deselected in 0.00s ========================
+======================= 1 passed, 4 deselected in 0.01s ========================
 __________ test_keyword_option_custom[not interface-expected_passed1] __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -347,7 +347,7 @@ collected 5 items / 1 deselected / 4 selected
 
 test_keyword_option_custom.py ....                                       [100%]
 
-======================= 4 passed, 1 deselected in 0.00s ========================
+======================= 4 passed, 1 deselected in 0.01s ========================
 ______________ test_keyword_option_custom[pass-expected_passed2] _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -357,7 +357,7 @@ collected 5 items / 4 deselected / 1 selected
 
 test_keyword_option_custom.py .                                          [100%]
 
-======================= 1 passed, 4 deselected in 0.00s ========================
+======================= 1 passed, 4 deselected in 0.01s ========================
 ____________ test_keyword_option_custom[not pass-expected_passed3] _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -367,7 +367,7 @@ collected 5 items / 1 deselected / 4 selected
 
 test_keyword_option_custom.py ....                                       [100%]
 
-======================= 4 passed, 1 deselected in 0.00s ========================
+======================= 4 passed, 1 deselected in 0.02s ========================
 _______ test_keyword_option_custom[not not not (pass)-expected_passed4] ________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -377,7 +377,7 @@ collected 5 items / 1 deselected / 4 selected
 
 test_keyword_option_custom.py ....                                       [100%]
 
-======================= 4 passed, 1 deselected in 0.00s ========================
+======================= 4 passed, 1 deselected in 0.02s ========================
 _____________ test_keyword_option_custom[1 or 2-expected_passed5] ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -387,7 +387,7 @@ collected 5 items / 3 deselected / 2 selected
 
 test_keyword_option_custom.py ..                                         [100%]
 
-======================= 2 passed, 3 deselected in 0.00s ========================
+======================= 2 passed, 3 deselected in 0.01s ========================
 __________ test_keyword_option_custom[not (1 or 2)-expected_passed6] ___________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -397,7 +397,7 @@ collected 5 items / 2 deselected / 3 selected
 
 test_keyword_option_custom.py ...                                        [100%]
 
-======================= 3 passed, 2 deselected in 0.00s ========================
+======================= 3 passed, 2 deselected in 0.02s ========================
 ______________________ test_keyword_option_considers_mark ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -407,7 +407,7 @@ collected 1 item
 
 test_marks_as_keywords.py .                                              [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ____________ test_keyword_option_parametrize[None-expected_passed0] ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -417,7 +417,7 @@ collected 3 items / 2 deselected / 1 selected
 
 test_keyword_option_parametrize.py .                                     [100%]
 
-======================= 1 passed, 2 deselected in 0.00s ========================
+======================= 1 passed, 2 deselected in 0.01s ========================
 ___________ test_keyword_option_parametrize[[1.3]-expected_passed1] ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -427,7 +427,7 @@ collected 3 items / 2 deselected / 1 selected
 
 test_keyword_option_parametrize.py .                                     [100%]
 
-======================= 1 passed, 2 deselected in 0.00s ========================
+======================= 1 passed, 2 deselected in 0.01s ========================
 ____________ test_keyword_option_parametrize[2-3-expected_passed2] _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -437,7 +437,7 @@ collected 3 items / 2 deselected / 1 selected
 
 test_keyword_option_parametrize.py .                                     [100%]
 
-======================= 1 passed, 2 deselected in 0.00s ========================
+======================= 1 passed, 2 deselected in 0.01s ========================
 _________________________ test_parametrize_with_module _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -447,7 +447,7 @@ collected 1 item
 
 test_parametrize_with_module.py .                                        [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ________________ test_parametrized_collected_from_command_line _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -457,7 +457,7 @@ collected 3 items
 
 test_parametrized_collected_from_command_line.py ...                     [100%]
 
-============================== 3 passed in 0.00s ===============================
+============================== 3 passed in 0.01s ===============================
 __________________ test_parametrized_collect_with_wrong_args ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -474,7 +474,7 @@ must be equal to the number of values (3):
 =========================== short test summary info ============================
 ERROR test_parametrized_collect_with_wrong_args.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.02s ===============================
+=============================== 1 error in 0.08s ===============================
 ________________________ test_parametrized_with_kwargs _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -484,7 +484,7 @@ collected 4 items
 
 test_parametrized_with_kwargs.py ....                                    [100%]
 
-============================== 4 passed in 0.00s ===============================
+============================== 4 passed in 0.02s ===============================
 __________________________ test_parametrize_iterator ___________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -494,7 +494,7 @@ collected 3 items
 
 test_parametrize_iterator.py ...                                         [100%]
 
-============================== 3 passed in 0.00s ===============================
+============================== 3 passed in 0.02s ===============================
 ___________________ TestFunctional.test_merging_markers_deep ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -508,7 +508,7 @@ collected 2 items
       <Class TestC>
           <Function test_d>
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 <Function test_b> <NodeKeywords for node <Function test_b>>
 <Function test_d> <NodeKeywords for node <Function test_d>>
 ____ TestFunctional.test_mark_decorator_subclass_does_not_propagate_to_base ____
@@ -524,7 +524,7 @@ collected 2 items
   <Class Test2>
       <Function test_bar>
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 __________ TestFunctional.test_mark_should_not_pass_to_siebling_class __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -540,7 +540,7 @@ collected 3 items
   <Class TestOtherSub>
       <Function test_foo>
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 [<Function test_foo>, <Function test_foo>, <Function test_foo>] ['test_mark_should_not_pass_to_siebling_class.py::TestBase::test_foo', 'test_mark_should_not_pass_to_siebling_class.py::TestSub::test_foo', 'test_mark_should_not_pass_to_siebling_class.py::TestOtherSub::test_foo']
 ____________ TestFunctional.test_mark_decorator_baseclasses_merged _____________
 ----------------------------- Captured stdout call -----------------------------
@@ -555,7 +555,7 @@ collected 2 items
   <Class Test2>
       <Function test_bar>
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 _______________________ TestFunctional.test_mark_closest _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -568,7 +568,7 @@ collected 2 items
       <Function test_has_own>
       <Function test_has_inherited>
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 __________________ TestFunctional.test_mark_with_wrong_marker __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -596,7 +596,7 @@ E   TypeError: got <class 'test_mark_with_wrong_marker.pytestmark'> instead of M
 =========================== short test summary info ============================
 ERROR test_mark_with_wrong_marker.py - TypeError: got <class 'test_mark_with_...
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.05s ===============================
+=============================== 1 error in 0.18s ===============================
 _______________ TestFunctional.test_mark_dynamically_in_funcarg ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -605,9 +605,9 @@ rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_mark_dynamically_in_funcarg0
 collected 1 item
 
 test_mark_dynamically_in_funcarg.py .                                    [100%]
-keyword: {'hello': 1, 'test_func': 1, 'test_mark_dynamically_in_funcarg.py': 1, 'test_mark_dynamically_in_funcarg0': 1}
+keyword: {'test_mark_dynamically_in_funcarg0': 1, 'test_mark_dynamically_in_funcarg.py': 1, 'hello': 1, 'test_func': 1}
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ____________ TestFunctional.test_no_marker_match_on_unmarked_names _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -615,7 +615,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_no_marker_match_on_unmarked_names0
 collected 2 items / 2 deselected
 
-============================ 2 deselected in 0.00s =============================
+============================ 2 deselected in 0.01s =============================
 __________________ TestFunctional.test_keywords_at_node_level __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -625,7 +625,7 @@ collected 1 item
 
 test_keywords_at_node_level.py .                                         [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ________________ TestFunctional.test_keyword_added_for_session _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -635,7 +635,7 @@ collected 1 item
 
 test_keyword_added_for_session.py .                                      [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.02s ===============================
 ___________________ TestFunctional.test_mark_from_parameters ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -645,7 +645,7 @@ collected 1 item
 
 test_mark_from_parameters.py s                                           [100%]
 
-============================== 1 skipped in 0.00s ==============================
+============================== 1 skipped in 0.01s ==============================
 _________________ TestFunctional.test_reevaluate_dynamic_expr __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -656,7 +656,7 @@ collected 2 items
 test_reevaluate_dynamic_expr1.py s                                       [ 50%]
 test_reevaluate_dynamic_expr2.py .                                       [100%]
 
-========================= 1 passed, 1 skipped in 0.00s =========================
+========================= 1 passed, 1 skipped in 0.02s =========================
 ___________________ TestKeywordSelection.test_select_simple ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -676,7 +676,7 @@ E       assert 0
 test_select_simple.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_select_simple.py::test_one - assert 0
-======================= 1 failed, 1 deselected in 0.00s ========================
+======================= 1 failed, 1 deselected in 0.02s ========================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_select_simple0
@@ -694,7 +694,7 @@ E       assert 0
 test_select_simple.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_select_simple.py::test_one - assert 0
-======================= 1 failed, 1 deselected in 0.00s ========================
+======================= 1 failed, 1 deselected in 0.01s ========================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_select_simple0
@@ -705,7 +705,7 @@ test_select_simple.py F
 =================================== FAILURES ===================================
 __________________________ TestClass.test_method_one ___________________________
 
-self = <test_select_simple.TestClass object at 0x77130a7a9100>
+self = <test_select_simple.TestClass object at 0x736cc2af0040>
 
     def test_method_one(self):
 >       assert 42 == 43
@@ -714,7 +714,7 @@ E       assert 42 == 43
 test_select_simple.py:5: AssertionError
 =========================== short test summary info ============================
 FAILED test_select_simple.py::TestClass::test_method_one - assert 42 == 43
-======================= 1 failed, 1 deselected in 0.00s ========================
+======================= 1 failed, 1 deselected in 0.01s ========================
 _____________ TestKeywordSelection.test_select_extra_keywords[xxx] _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -724,7 +724,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_select.py .
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 keyword 'xxx'
 _______ TestKeywordSelection.test_select_extra_keywords[xxx and test_2] ________
 ----------------------------- Captured stdout call -----------------------------
@@ -735,7 +735,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_select.py .
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 keyword 'xxx and test_2'
 __________ TestKeywordSelection.test_select_extra_keywords[TestClass] __________
 ----------------------------- Captured stdout call -----------------------------
@@ -746,7 +746,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_select.py .
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 keyword 'TestClass'
 _____ TestKeywordSelection.test_select_extra_keywords[xxx and not test_1] ______
 ----------------------------- Captured stdout call -----------------------------
@@ -757,7 +757,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_select.py .
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 keyword 'xxx and not test_1'
 ____ TestKeywordSelection.test_select_extra_keywords[TestClass and test_2] _____
 ----------------------------- Captured stdout call -----------------------------
@@ -768,7 +768,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_select.py .
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 keyword 'TestClass and test_2'
 _ TestKeywordSelection.test_select_extra_keywords[xxx and TestClass and test_2] _
 ----------------------------- Captured stdout call -----------------------------
@@ -779,7 +779,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_select.py .
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 keyword 'xxx and TestClass and test_2'
 ___________________ TestKeywordSelection.test_select_starton ___________________
 ----------------------------- Captured stdout call -----------------------------
@@ -797,7 +797,7 @@ test_threepass.py ..                                                     [100%]
     deselect_by_keyword(items, config)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
-================== 2 passed, 1 deselected, 1 warning in 0.00s ==================
+================== 2 passed, 1 deselected, 1 warning in 0.01s ==================
 ___________________ TestKeywordSelection.test_keyword_extra ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -817,7 +817,7 @@ E       assert 0
 test_keyword_extra.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_keyword_extra.py::test_one - assert 0
-============================== 1 failed in 0.00s ===============================
+============================== 1 failed in 0.01s ===============================
 ________________ TestKeywordSelection.test_no_magic_values[__] _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -825,7 +825,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_no_magic_values0
 collected 1 item / 1 deselected
 
-============================ 1 deselected in 0.00s =============================
+============================ 1 deselected in 0.01s =============================
 _________________ TestKeywordSelection.test_no_magic_values[+] _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -833,7 +833,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_no_magic_values1
 collected 1 item / 1 deselected
 
-============================ 1 deselected in 0.00s =============================
+============================ 1 deselected in 0.01s =============================
 ________________ TestKeywordSelection.test_no_magic_values[..] _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -841,7 +841,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_no_magic_values2
 collected 1 item / 1 deselected
 
-============================ 1 deselected in 0.00s =============================
+============================ 1 deselected in 0.01s =============================
 _______ TestKeywordSelection.test_no_match_directories_outside_the_suite _______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -854,13 +854,13 @@ collected 2 items
     <Function test_aaa>
     <Function test_ddd>
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_no_match_directories_outside_the_suite0
 collected 2 items / 2 deselected
 
-============================ 2 deselected in 0.00s =============================
+============================ 2 deselected in 0.01s =============================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_no_match_directories_outside_the_suite0
@@ -870,7 +870,7 @@ collected 2 items / 1 deselected / 1 selected
   <Module test_foo.py>
     <Function test_ddd>
 
-============================ 1 deselected in 0.00s =============================
+============================ 1 deselected in 0.01s =============================
 ____________________ test_parameterset_for_fail_at_collect _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -884,7 +884,7 @@ Empty parameter set in 'test' at line 3
 =========================== short test summary info ============================
 ERROR test_parameterset_for_fail_at_collect.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.02s ===============================
+=============================== 1 error in 0.07s ===============================
 ________________________ test_mark_expressions_no_smear ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -894,7 +894,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_mark_expressions_no_smear.py .                                      [100%]
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 ________________________ test_markers_from_parametrize _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -904,7 +904,7 @@ collected 4 items
 
 test_markers_from_parametrize.py ....                                    [100%]
 
-============================== 4 passed in 0.00s ===============================
+============================== 4 passed in 0.01s ===============================
 ___________ test_marker_expr_eval_failure_handling[NOT internal_err] ___________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -912,7 +912,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_marker_expr_eval_failure_handling0
 collected 1 item
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 ----------------------------- Captured stderr call -----------------------------
 ERROR: Wrong expression passed to '-m': NOT internal_err: at column 5: expected end of input; got identifier
 
@@ -923,7 +923,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_marker_expr_eval_failure_handling1
 collected 1 item
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 ----------------------------- Captured stderr call -----------------------------
 ERROR: Wrong expression passed to '-m': NOT (internal_err): at column 5: expected end of input; got left parenthesis
 
@@ -934,7 +934,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_marker_expr_eval_failure_handling2
 collected 1 item
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 ----------------------------- Captured stderr call -----------------------------
 ERROR: Wrong expression passed to '-m': bogus/: at column 6: unexpected character "/"
 
@@ -1031,7 +1031,7 @@ PASSED testing/test_mark.py::test_marker_expr_eval_failure_handling[NOT internal
 PASSED testing/test_mark.py::test_marker_expr_eval_failure_handling[NOT (internal_err)]
 PASSED testing/test_mark.py::test_marker_expr_eval_failure_handling[bogus/]
 XFAIL testing/test_mark.py::TestKeywordSelection::test_keyword_extra_dash
-======================== 91 passed, 1 xfailed in 1.39s =========================
+======================== 91 passed, 1 xfailed in 4.68s =========================
 
  
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Return Code: 0 

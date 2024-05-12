@@ -3,20 +3,15 @@
 	- Testbed: pylint-dev__astroid__2.10
 	- 
 	- Evaluation Model: SWE-bench_Lite_golden 
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Command: git status --porcelain 
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Std. Output:
- 
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Return Code: 0 
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Command: git -c advice.detachedHead=false checkout d2a5b3c7b1e203fec3c7ca73c30eb1785d3d4d0a 
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Std. Output:
 Previous HEAD position was da745538 Add additional tests for positions with docstrings (#1411)
 HEAD is now at d2a5b3c7 Fix a typo in the changelog
  
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Return Code: 0 
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Command: git apply -v /home/swe-bench/temp_pylint-dev__astroid-1333_pred_try.patch 
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Std. Output:
 Checking patch astroid/modutils.py...
 Applied patch astroid/modutils.py cleanly.
@@ -25,7 +20,7 @@ Applied patch astroid/modutils.py cleanly.
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Command: git apply -v -R /home/swe-bench/temp_pylint-dev__astroid-1333_pred_try.patch 
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Std. Output:
 Checking patch astroid/modutils.py...
 Applied patch astroid/modutils.py cleanly.
@@ -34,7 +29,7 @@ Applied patch astroid/modutils.py cleanly.
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Command: git apply -v /home/swe-bench/temp_pylint-dev__astroid-1333_pred.patch 
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Std. Output:
 Checking patch astroid/modutils.py...
 Applied patch astroid/modutils.py cleanly.
@@ -43,12 +38,12 @@ Applied patch astroid/modutils.py cleanly.
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Command: git restore tests/unittest_modutils.py 
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Std. Output:
  
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Return Code: 0 
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Command: git apply -v /home/swe-bench/temp_pylint-dev__astroid-1333_test.patch 
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Std. Output:
 Checking patch tests/unittest_modutils.py...
 Applied patch tests/unittest_modutils.py cleanly.
@@ -56,9 +51,9 @@ Applied patch tests/unittest_modutils.py cleanly.
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Return Code: 0 
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pylint-dev__astroid__2.10 pytest --no-header -rA -p no:cacheprovider tests/unittest_modutils.py;
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Command: conda run -n pylint-dev__astroid__2.10 pytest --no-header -rA -p no:cacheprovider tests/unittest_modutils.py 
-[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script: conda run -n pylint-dev__astroid__2.10 pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_modutils.py;
+[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Command: conda run -n pylint-dev__astroid__2.10 pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_modutils.py 
+[pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Std. Output:
 ============================= test session starts ==============================
 collected 47 items
@@ -72,7 +67,6 @@ astroid/interpreter/_import/util.py:7
     import pkg_resources
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-==================================== PASSES ====================================
 =========================== short test summary info ============================
 PASSED tests/unittest_modutils.py::ModuleFileTest::test_find_egg_module
 PASSED tests/unittest_modutils.py::ModuleFileTest::test_find_zipped_module
@@ -121,7 +115,7 @@ PASSED tests/unittest_modutils.py::GetModuleFilesTest::test_get_module_files_1
 PASSED tests/unittest_modutils.py::GetModuleFilesTest::test_load_module_set_attribute
 PASSED tests/unittest_modutils.py::ExtensionPackageWhitelistTest::test_is_module_name_part_of_extension_package_whitelist_success
 PASSED tests/unittest_modutils.py::ExtensionPackageWhitelistTest::test_is_module_name_part_of_extension_package_whitelist_true
-======================== 47 passed, 1 warning in 0.55s =========================
+======================== 47 passed, 1 warning in 0.88s =========================
 
  
 [pylint-dev__astroid__2.10] [pylint-dev__astroid-1333] Return Code: 0 

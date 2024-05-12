@@ -12,8 +12,8 @@ repo=${3:-""}
 
 base_image="${docker_namespace}/swe-bench"
 
-echo "Building base Docker image..."
-docker build -t "${base_image}-base:latest" -f "$root_directory/Dockerfile" .
+# echo "Building base Docker image..."
+# docker build -t "${base_image}-base:latest" -f "$root_directory/Dockerfile" .
 
 build_docker_images() {
     if [ -z "$repo" ]; then

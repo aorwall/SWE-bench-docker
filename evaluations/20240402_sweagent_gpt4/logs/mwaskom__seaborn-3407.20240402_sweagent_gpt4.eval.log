@@ -1,0 +1,398 @@
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Task Metadata:
+	- Instance ID: mwaskom__seaborn-3407
+	- Testbed: mwaskom__seaborn__0.13
+	- 
+	- Evaluation Model: 20240402_sweagent_gpt4 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Command: git -c advice.detachedHead=false checkout 515286e02be3e4c0ff2ef4addb34a53c4a676ee4 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Std. Output:
+Previous HEAD position was 23860365 Address inf_as_na pandas deprecation (#3424)
+HEAD is now at 515286e0 Improve handling of edge cases with nullable dtypes (#3394)
+ 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Return Code: 0 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-3407_pred_try.patch 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Std. Output:
+Checking patch reproduce_bug.py...
+Checking patch seaborn/axisgrid.py...
+Applied patch reproduce_bug.py cleanly.
+Applied patch seaborn/axisgrid.py cleanly.
+ 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Return Code: 0 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Apply patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Command: git apply -v -R /home/swe-bench/temp_mwaskom__seaborn-3407_pred_try.patch 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Std. Output:
+Checking patch seaborn/axisgrid.py...
+Checking patch reproduce_bug.py...
+Applied patch seaborn/axisgrid.py cleanly.
+Applied patch reproduce_bug.py cleanly.
+ 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Return Code: 0 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Revert patch successful (pred_try) 
+>>>>> Applied Patch (pred_try)
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-3407_pred.patch 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Std. Output:
+Checking patch reproduce_bug.py...
+Checking patch seaborn/axisgrid.py...
+Applied patch reproduce_bug.py cleanly.
+Applied patch seaborn/axisgrid.py cleanly.
+ 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Return Code: 0 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Apply patch successful (pred) 
+>>>>> Applied Patch (pred)
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Command: git restore tests/test_axisgrid.py 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Std. Output:
+ 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Return Code: 0 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-3407_test.patch 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Std. Output:
+Checking patch tests/test_axisgrid.py...
+Applied patch tests/test_axisgrid.py cleanly.
+ 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Return Code: 0 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Apply patch successful (test) 
+>>>>> Applied Patch (test)
+Test Script: conda run -n mwaskom__seaborn__0.13 pytest --no-header -rA tests/test_axisgrid.py;
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Command: conda run -n mwaskom__seaborn__0.13 pytest --no-header -rA tests/test_axisgrid.py 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Std. Output:
+============================= test session starts ==============================
+collected 121 items
+
+tests/test_axisgrid.py ................................................. [ 40%]
+.......................FF.F..F...F...................................... [100%]
+
+=================================== FAILURES ===================================
+____________________ TestPairGrid.test_dropna[scatterplot] _____________________
+
+self = <tests.test_axisgrid.TestPairGrid object at 0x7751327c8700>
+func = <function scatterplot at 0x7751327f9ca0>
+
+    @pytest.mark.parametrize("func", [scatterplot, plt.scatter])
+    def test_dropna(self, func):
+    
+        df = self.df.copy()
+        n_null = 20
+        df.loc[np.arange(n_null), "x"] = np.nan
+    
+        plot_vars = ["x", "y", "z"]
+    
+        g1 = ag.PairGrid(df, vars=plot_vars, dropna=True)
+        g1.map(func)
+    
+        for i, axes_i in enumerate(g1.axes):
+            for j, ax in enumerate(axes_i):
+                x_in = df[plot_vars[j]]
+                y_in = df[plot_vars[i]]
+                x_out, y_out = ax.collections[0].get_offsets().T
+    
+                n_valid = (x_in * y_in).notnull().sum()
+    
+                assert n_valid == len(x_out)
+                assert n_valid == len(y_out)
+    
+        g1.map_diag(histplot)
+        for i, ax in enumerate(g1.diag_axes):
+            var = plot_vars[i]
+            count = sum(p.get_height() for p in ax.patches)
+>           assert count == df[var].notna().sum()
+E           assert 80 == 40
+E            +  where 40 = <bound method Series.sum of 0     False\n1     False\n2     False\n3     False\n4     False\n5     False\n6     False\n7     ...e\n52     True\n53     True\n54     True\n55     True\n56     True\n57     True\n58     True\n59     True\nName: x, dtype: bool>()
+E            +    where <bound method Series.sum of 0     False\n1     False\n2     False\n3     False\n4     False\n5     False\n6     False\n7     ...e\n52     True\n53     True\n54     True\n55     True\n56     True\n57     True\n58     True\n59     True\nName: x, dtype: bool> = 0     False\n1     False\n2     False\n3     False\n4     False\n5     False\n6     False\n7     False\n8     False\n9     Fals...ue\n52     True\n53     True\n54     True\n55     True\n56     True\n57     True\n58     True\n59     True\nName: x, dtype: bool.sum
+E            +      where 0     False\n1     False\n2     False\n3     False\n4     False\n5     False\n6     False\n7     False\n8     False\n9     Fals...ue\n52     True\n53     True\n54     True\n55     True\n56     True\n57     True\n58     True\n59     True\nName: x, dtype: bool = <bound method Series.notna of 0          NaN\n1          NaN\n2          NaN\n3          NaN\n4          NaN\n5          Na...7925\n54   -1.051579\n55   -0.029121\n56    0.336730\n57    1.005867\n58    1.189909\n59    0.364216\nName: x, dtype: float64>()
+E            +        where <bound method Series.notna of 0          NaN\n1          NaN\n2          NaN\n3          NaN\n4          NaN\n5          Na...7925\n54   -1.051579\n55   -0.029121\n56    0.336730\n57    1.005867\n58    1.189909\n59    0.364216\nName: x, dtype: float64> = 0          NaN\n1          NaN\n2          NaN\n3          NaN\n4          NaN\n5          NaN\n6          NaN\n7          Na...77925\n54   -1.051579\n55   -0.029121\n56    0.336730\n57    1.005867\n58    1.189909\n59    0.364216\nName: x, dtype: float64.notna
+
+tests/test_axisgrid.py:1272: AssertionError
+______________________ TestPairGrid.test_dropna[scatter] _______________________
+
+self = <tests.test_axisgrid.TestPairGrid object at 0x7751327c87c0>
+func = <function scatter at 0x7751404a50d0>
+
+    @pytest.mark.parametrize("func", [scatterplot, plt.scatter])
+    def test_dropna(self, func):
+    
+        df = self.df.copy()
+        n_null = 20
+        df.loc[np.arange(n_null), "x"] = np.nan
+    
+        plot_vars = ["x", "y", "z"]
+    
+        g1 = ag.PairGrid(df, vars=plot_vars, dropna=True)
+        g1.map(func)
+    
+        for i, axes_i in enumerate(g1.axes):
+            for j, ax in enumerate(axes_i):
+                x_in = df[plot_vars[j]]
+                y_in = df[plot_vars[i]]
+                x_out, y_out = ax.collections[0].get_offsets().T
+    
+                n_valid = (x_in * y_in).notnull().sum()
+    
+                assert n_valid == len(x_out)
+                assert n_valid == len(y_out)
+    
+        g1.map_diag(histplot)
+        for i, ax in enumerate(g1.diag_axes):
+            var = plot_vars[i]
+            count = sum(p.get_height() for p in ax.patches)
+>           assert count == df[var].notna().sum()
+E           assert 80 == 40
+E            +  where 40 = <bound method Series.sum of 0     False\n1     False\n2     False\n3     False\n4     False\n5     False\n6     False\n7     ...e\n52     True\n53     True\n54     True\n55     True\n56     True\n57     True\n58     True\n59     True\nName: x, dtype: bool>()
+E            +    where <bound method Series.sum of 0     False\n1     False\n2     False\n3     False\n4     False\n5     False\n6     False\n7     ...e\n52     True\n53     True\n54     True\n55     True\n56     True\n57     True\n58     True\n59     True\nName: x, dtype: bool> = 0     False\n1     False\n2     False\n3     False\n4     False\n5     False\n6     False\n7     False\n8     False\n9     Fals...ue\n52     True\n53     True\n54     True\n55     True\n56     True\n57     True\n58     True\n59     True\nName: x, dtype: bool.sum
+E            +      where 0     False\n1     False\n2     False\n3     False\n4     False\n5     False\n6     False\n7     False\n8     False\n9     Fals...ue\n52     True\n53     True\n54     True\n55     True\n56     True\n57     True\n58     True\n59     True\nName: x, dtype: bool = <bound method Series.notna of 0          NaN\n1          NaN\n2          NaN\n3          NaN\n4          NaN\n5          Na...7925\n54   -1.051579\n55   -0.029121\n56    0.336730\n57    1.005867\n58    1.189909\n59    0.364216\nName: x, dtype: float64>()
+E            +        where <bound method Series.notna of 0          NaN\n1          NaN\n2          NaN\n3          NaN\n4          NaN\n5          Na...7925\n54   -1.051579\n55   -0.029121\n56    0.336730\n57    1.005867\n58    1.189909\n59    0.364216\nName: x, dtype: float64> = 0          NaN\n1          NaN\n2          NaN\n3          NaN\n4          NaN\n5          NaN\n6          NaN\n7          Na...77925\n54   -1.051579\n55   -0.029121\n56    0.336730\n57    1.005867\n58    1.189909\n59    0.364216\nName: x, dtype: float64.notna
+
+tests/test_axisgrid.py:1272: AssertionError
+__________________________ TestPairGrid.test_pairplot __________________________
+
+self = <tests.test_axisgrid.TestPairGrid object at 0x77513276f820>
+
+    def test_pairplot(self):
+    
+        vars = ["x", "y", "z"]
+        g = ag.pairplot(self.df)
+    
+        for ax in g.diag_axes:
+            assert len(ax.patches) > 1
+    
+        for i, j in zip(*np.triu_indices_from(g.axes, 1)):
+            ax = g.axes[i, j]
+            x_in = self.df[vars[j]]
+            y_in = self.df[vars[i]]
+            x_out, y_out = ax.collections[0].get_offsets().T
+            npt.assert_array_equal(x_in, x_out)
+            npt.assert_array_equal(y_in, y_out)
+    
+        for i, j in zip(*np.tril_indices_from(g.axes, -1)):
+            ax = g.axes[i, j]
+            x_in = self.df[vars[j]]
+            y_in = self.df[vars[i]]
+            x_out, y_out = ax.collections[0].get_offsets().T
+            npt.assert_array_equal(x_in, x_out)
+            npt.assert_array_equal(y_in, y_out)
+    
+        for i, j in zip(*np.diag_indices_from(g.axes)):
+            ax = g.axes[i, j]
+            assert len(ax.collections) == 0
+    
+        g = ag.pairplot(self.df, hue="a")
+        n = len(self.df.a.unique())
+    
+        for ax in g.diag_axes:
+>           assert len(ax.collections) == n
+E           AssertionError: assert 6 == 3
+E            +  where 6 = len(<Axes.ArtistList of 6 collections>)
+E            +    where <Axes.ArtistList of 6 collections> = <Axes: xlabel='x', ylabel='Density'>.collections
+
+tests/test_axisgrid.py:1315: AssertionError
+_____________________ TestPairGrid.test_pairplot_diag_kde ______________________
+
+self = <tests.test_axisgrid.TestPairGrid object at 0x7751326edac0>
+
+    def test_pairplot_diag_kde(self):
+    
+        vars = ["x", "y", "z"]
+        g = ag.pairplot(self.df, diag_kind="kde")
+    
+        for ax in g.diag_axes:
+>           assert len(ax.collections) == 1
+E           AssertionError: assert 2 == 1
+E            +  where 2 = len(<Axes.ArtistList of 2 collections>)
+E            +    where <Axes.ArtistList of 2 collections> = <Axes: xlabel='x', ylabel='Density'>.collections
+
+tests/test_axisgrid.py:1371: AssertionError
+_________________ TestPairGrid.test_pairplot_column_multiindex _________________
+
+self = <tests.test_axisgrid.TestPairGrid object at 0x7751327c8ac0>
+
+    def test_pairplot_column_multiindex(self):
+    
+        cols = pd.MultiIndex.from_arrays([["x", "y"], [1, 2]])
+        df = self.df[["x", "y"]].set_axis(cols, axis=1)
+>       g = ag.pairplot(df)
+
+tests/test_axisgrid.py:1429: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+seaborn/axisgrid.py:2147: in pairplot
+    grid.map_diag(histplot, **diag_kws)
+seaborn/axisgrid.py:1490: in map_diag
+    vector = self.data[var]
+../miniconda3/envs/mwaskom__seaborn__0.13/lib/python3.9/site-packages/pandas/core/frame.py:3902: in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+../miniconda3/envs/mwaskom__seaborn__0.13/lib/python3.9/site-packages/pandas/core/indexes/multi.py:2648: in _get_indexer_strict
+    self._raise_if_missing(key, indexer, axis_name)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = MultiIndex([('x', 1),
+            ('y', 2)],
+           )
+key = array(['x', 1], dtype=object), indexer = array([ 0, -1])
+axis_name = 'columns'
+
+    def _raise_if_missing(self, key, indexer, axis_name: str) -> None:
+        keyarr = key
+        if not isinstance(key, Index):
+            keyarr = com.asarray_tuplesafe(key)
+    
+        if len(keyarr) and not isinstance(keyarr[0], tuple):
+            # i.e. same condition for special case in MultiIndex._get_indexer_strict
+    
+            mask = indexer == -1
+            if mask.any():
+                check = self.levels[0].get_indexer(keyarr)
+                cmask = check == -1
+                if cmask.any():
+>                   raise KeyError(f"{keyarr[cmask]} not in index")
+E                   KeyError: '[1] not in index'
+
+../miniconda3/envs/mwaskom__seaborn__0.13/lib/python3.9/site-packages/pandas/core/indexes/multi.py:2666: KeyError
+=============================== warnings summary ===============================
+tests/test_axisgrid.py: 31 warnings
+  /home/swe-bench/mwaskom__seaborn/seaborn/axisgrid.py:118: UserWarning: The figure layout has changed to tight
+    self._figure.tight_layout(*args, **kwargs)
+
+tests/test_axisgrid.py::TestFacetGrid::test_gridspec_kws
+  /home/swe-bench/mwaskom__seaborn/tests/test_axisgrid.py:344: UserWarning: The figure layout has changed to tight
+    g.figure.tight_layout()
+
+tests/test_axisgrid.py: 228 warnings
+  /home/swe-bench/mwaskom__seaborn/seaborn/_oldcore.py:1124: FutureWarning: use_inf_as_na option is deprecated and will be removed in a future version. Convert inf values to NaN before operating instead.
+    with pd.option_context('mode.use_inf_as_na', True):
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_self_data
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_self_figure
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_self_axes
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_axes_array_size
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_single_axes
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_col_wrap
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_normal_axes
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_wrapped_axes
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_axes_dict
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_figure_size
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_figure_size_with_legend
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_legend_data
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_legend_data_missing_level
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_get_boolean_legend_data
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_legend_tuples
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_legend_options
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_legendout_with_colwrap
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_legend_tight_layout
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_subplot_kws
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_gridspec_kws
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_gridspec_kws_col_wrap
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_data_generator
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_map
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_map_dataframe
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_set
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_set_titles
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_set_titles_margin_titles
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_set_ticklabels
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_set_axis_labels
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_axis_lims
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_data_orders
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_palette
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_hue_kws
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_dropna
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_categorical_column_missing_categories
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_categorical_warning
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_refline
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_apply
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_pipe
+PASSED tests/test_axisgrid.py::TestFacetGrid::test_tick_params
+PASSED tests/test_axisgrid.py::TestPairGrid::test_self_data
+PASSED tests/test_axisgrid.py::TestPairGrid::test_ignore_datelike_data
+PASSED tests/test_axisgrid.py::TestPairGrid::test_self_figure
+PASSED tests/test_axisgrid.py::TestPairGrid::test_self_axes
+PASSED tests/test_axisgrid.py::TestPairGrid::test_default_axes
+PASSED tests/test_axisgrid.py::TestPairGrid::test_specific_square_axes[vars0]
+PASSED tests/test_axisgrid.py::TestPairGrid::test_specific_square_axes[vars1]
+PASSED tests/test_axisgrid.py::TestPairGrid::test_remove_hue_from_default
+PASSED tests/test_axisgrid.py::TestPairGrid::test_specific_nonsquare_axes[x_vars0-y_vars0]
+PASSED tests/test_axisgrid.py::TestPairGrid::test_specific_nonsquare_axes[x_vars1-z]
+PASSED tests/test_axisgrid.py::TestPairGrid::test_specific_nonsquare_axes[x_vars2-y_vars2]
+PASSED tests/test_axisgrid.py::TestPairGrid::test_corner
+PASSED tests/test_axisgrid.py::TestPairGrid::test_size
+PASSED tests/test_axisgrid.py::TestPairGrid::test_empty_grid
+PASSED tests/test_axisgrid.py::TestPairGrid::test_map
+PASSED tests/test_axisgrid.py::TestPairGrid::test_map_nonsquare
+PASSED tests/test_axisgrid.py::TestPairGrid::test_map_lower
+PASSED tests/test_axisgrid.py::TestPairGrid::test_map_upper
+PASSED tests/test_axisgrid.py::TestPairGrid::test_map_mixed_funcsig
+PASSED tests/test_axisgrid.py::TestPairGrid::test_map_diag
+PASSED tests/test_axisgrid.py::TestPairGrid::test_map_diag_rectangular
+PASSED tests/test_axisgrid.py::TestPairGrid::test_map_diag_color
+PASSED tests/test_axisgrid.py::TestPairGrid::test_map_diag_palette
+PASSED tests/test_axisgrid.py::TestPairGrid::test_map_diag_and_offdiag
+PASSED tests/test_axisgrid.py::TestPairGrid::test_diag_sharey
+PASSED tests/test_axisgrid.py::TestPairGrid::test_map_diag_matplotlib
+PASSED tests/test_axisgrid.py::TestPairGrid::test_palette
+PASSED tests/test_axisgrid.py::TestPairGrid::test_hue_kws
+PASSED tests/test_axisgrid.py::TestPairGrid::test_hue_order
+PASSED tests/test_axisgrid.py::TestPairGrid::test_hue_order_missing_level
+PASSED tests/test_axisgrid.py::TestPairGrid::test_hue_in_map
+PASSED tests/test_axisgrid.py::TestPairGrid::test_nondefault_index
+PASSED tests/test_axisgrid.py::TestPairGrid::test_histplot_legend
+PASSED tests/test_axisgrid.py::TestPairGrid::test_pairplot_reg
+PASSED tests/test_axisgrid.py::TestPairGrid::test_pairplot_reg_hue
+PASSED tests/test_axisgrid.py::TestPairGrid::test_pairplot_kde
+PASSED tests/test_axisgrid.py::TestPairGrid::test_pairplot_hist
+PASSED tests/test_axisgrid.py::TestPairGrid::test_pairplot_markers
+PASSED tests/test_axisgrid.py::TestPairGrid::test_corner_despine
+PASSED tests/test_axisgrid.py::TestPairGrid::test_corner_set
+PASSED tests/test_axisgrid.py::TestPairGrid::test_legend
+PASSED tests/test_axisgrid.py::TestPairGrid::test_tick_params
+PASSED tests/test_axisgrid.py::TestJointGrid::test_margin_grid_from_lists
+PASSED tests/test_axisgrid.py::TestJointGrid::test_margin_grid_from_arrays
+PASSED tests/test_axisgrid.py::TestJointGrid::test_margin_grid_from_series
+PASSED tests/test_axisgrid.py::TestJointGrid::test_margin_grid_from_dataframe
+PASSED tests/test_axisgrid.py::TestJointGrid::test_margin_grid_from_dataframe_bad_variable
+PASSED tests/test_axisgrid.py::TestJointGrid::test_margin_grid_axis_labels
+PASSED tests/test_axisgrid.py::TestJointGrid::test_dropna
+PASSED tests/test_axisgrid.py::TestJointGrid::test_axlims
+PASSED tests/test_axisgrid.py::TestJointGrid::test_marginal_ticks
+PASSED tests/test_axisgrid.py::TestJointGrid::test_bivariate_plot
+PASSED tests/test_axisgrid.py::TestJointGrid::test_univariate_plot
+PASSED tests/test_axisgrid.py::TestJointGrid::test_univariate_plot_distplot
+PASSED tests/test_axisgrid.py::TestJointGrid::test_univariate_plot_matplotlib
+PASSED tests/test_axisgrid.py::TestJointGrid::test_plot
+PASSED tests/test_axisgrid.py::TestJointGrid::test_space
+PASSED tests/test_axisgrid.py::TestJointGrid::test_hue[True]
+PASSED tests/test_axisgrid.py::TestJointGrid::test_hue[False]
+PASSED tests/test_axisgrid.py::TestJointGrid::test_refline
+PASSED tests/test_axisgrid.py::TestJointPlot::test_scatter
+PASSED tests/test_axisgrid.py::TestJointPlot::test_scatter_hue
+PASSED tests/test_axisgrid.py::TestJointPlot::test_reg
+PASSED tests/test_axisgrid.py::TestJointPlot::test_resid
+PASSED tests/test_axisgrid.py::TestJointPlot::test_hist
+PASSED tests/test_axisgrid.py::TestJointPlot::test_hex
+PASSED tests/test_axisgrid.py::TestJointPlot::test_kde
+PASSED tests/test_axisgrid.py::TestJointPlot::test_kde_hue
+PASSED tests/test_axisgrid.py::TestJointPlot::test_color
+PASSED tests/test_axisgrid.py::TestJointPlot::test_palette
+PASSED tests/test_axisgrid.py::TestJointPlot::test_hex_customise
+PASSED tests/test_axisgrid.py::TestJointPlot::test_bad_kind
+PASSED tests/test_axisgrid.py::TestJointPlot::test_unsupported_hue_kind
+PASSED tests/test_axisgrid.py::TestJointPlot::test_leaky_dict
+PASSED tests/test_axisgrid.py::TestJointPlot::test_distplot_kwarg_warning
+PASSED tests/test_axisgrid.py::TestJointPlot::test_ax_warning
+FAILED tests/test_axisgrid.py::TestPairGrid::test_dropna[scatterplot] - asser...
+FAILED tests/test_axisgrid.py::TestPairGrid::test_dropna[scatter] - assert 80...
+FAILED tests/test_axisgrid.py::TestPairGrid::test_pairplot - AssertionError: ...
+FAILED tests/test_axisgrid.py::TestPairGrid::test_pairplot_diag_kde - Asserti...
+FAILED tests/test_axisgrid.py::TestPairGrid::test_pairplot_column_multiindex
+=========== 5 failed, 116 passed, 260 warnings in 135.94s (0:02:15) ============
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA tests/test_axisgrid.py` failed. (See above for error)
+
+ 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Return Code: 1 
+
+>>>>> Some Tests Failed
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Test script run successful 
