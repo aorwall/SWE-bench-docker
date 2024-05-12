@@ -22,8 +22,8 @@ See results in the [evaluations/SWE-bench_check_harness](https://github.com/aorw
 I have tested running Docker benchmarks on the SWE-Agents GPT-4 benchmark and Auto Code Rover's first benchmark run.
 
 The [SWE-Agent](https://github.com/princeton-nlp/SWE-agent) GPT-4 predictions yield exactly the same
-[results](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/20240402_sweagent_gpt4) as SWE-Agent's own
-[results](https://github.com/swe-bench/experiments/blob/main/evaluation/lite/20240402_sweagent_gpt4/results/results.json), 
+[results of 18% (54) resolved issues](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/20240402_sweagent_gpt4) 
+as SWE-Agent's own [results](https://github.com/swe-bench/experiments/blob/main/evaluation/lite/20240402_sweagent_gpt4/results/results.json), 
 which seems to show that the Docker image approach works with the same accuracy. 
 
 However, the Docker benchmark provides better results for [AutoCodeRover](https://github.com/nus-apr/auto-code-rover). 
