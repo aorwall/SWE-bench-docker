@@ -18,7 +18,7 @@ Docker images for testbeds used in the `SWE-Bench` dataset has been built and te
 10 benchmark instances are currently failing. 
 See results in the [evaluations/SWE-bench_check_harness](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/SWE-bench_Lite_golden_harness) folder.
 
-### Comparing results from other benchmarks
+### Comparing results from other agents
 I have tested running Docker benchmarks on the SWE-Agents GPT-4 benchmark and Auto Code Rover's first benchmark run.
 
 The [SWE-Agent](https://github.com/princeton-nlp/SWE-agent) GPT-4 predictions yield exactly the same
