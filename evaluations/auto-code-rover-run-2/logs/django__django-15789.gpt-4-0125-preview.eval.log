@@ -71,7 +71,7 @@ test_urlize (utils_tests.test_html.TestUtilsHtml) ... ok
 test_urlize_unchanged_inputs (utils_tests.test_html.TestUtilsHtml) ... ok
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.492s
+Ran 18 tests in 0.404s
 
 OK
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes

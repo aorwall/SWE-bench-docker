@@ -171,7 +171,7 @@ PASSED sklearn/utils/tests/test_validation.py::test_suppress_validation
 PASSED sklearn/utils/tests/test_validation.py::test_check_memory
 PASSED sklearn/utils/tests/test_validation.py::test_check_array_memmap[True]
 PASSED sklearn/utils/tests/test_validation.py::test_check_array_memmap[False]
-=============== 1 failed, 52 passed, 26 warnings in 3.59 seconds ===============
+=============== 1 failed, 52 passed, 26 warnings in 2.87 seconds ===============
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 1 
 

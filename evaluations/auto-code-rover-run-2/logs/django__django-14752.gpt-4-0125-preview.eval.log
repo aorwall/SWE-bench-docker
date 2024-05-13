@@ -228,7 +228,7 @@ test_to_field_resolution_with_mti (admin_views.test_autocomplete_view.Autocomple
 to_field resolution should correctly resolve for target models using ... ok
 
 ----------------------------------------------------------------------
-Ran 19 tests in 1.545s
+Ran 19 tests in 2.855s
 
 OK (skipped=3)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

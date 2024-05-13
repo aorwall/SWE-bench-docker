@@ -179,7 +179,7 @@ FAILED astropy/io/fits/tests/test_table.py::TestTableFunctions::test_numpy_ndarr
 FAILED astropy/io/fits/tests/test_table.py::TestTableFunctions::test_new_table_from_recarray
 FAILED astropy/io/fits/tests/test_table.py::test_regression_5383 - AttributeE...
 FAILED astropy/io/fits/tests/test_table.py::test_table_to_hdu - AttributeErro...
-============= 21 failed, 13 passed, 2 skipped, 72 errors in 1.40s ==============
+============= 21 failed, 13 passed, 2 skipped, 72 errors in 3.11s ==============
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider astropy/io/fits/tests/test_checksum.py astropy/io/fits/tests/test_table.py` failed. (See above for error)
 
  

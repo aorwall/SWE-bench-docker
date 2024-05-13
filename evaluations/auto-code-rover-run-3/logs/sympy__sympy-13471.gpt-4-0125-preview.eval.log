@@ -82,8 +82,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        52284257
-hash randomization: on (PYTHONHASHSEED=1300229235)
+random seed:        40530615
+hash randomization: on (PYTHONHASHSEED=4289339220)
 
 sympy/core/tests/test_numbers.py[85] 
 test_integers_cache ok
@@ -182,7 +182,7 @@ ____________ sympy/core/tests/test_numbers.py:test_Float_from_tuple ____________
 ValueError: invalid literal for int() with base 16: '1L'
 
  tests finished: 82 passed, 1 skipped, 1 expected to fail, 1 exceptions, 
-in 1.89 seconds 
+in 2.20 seconds 
 DO *NOT* COMMIT!
 
  

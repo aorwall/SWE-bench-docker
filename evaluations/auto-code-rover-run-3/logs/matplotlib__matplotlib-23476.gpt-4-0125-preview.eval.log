@@ -13,9 +13,7 @@ HEAD is now at 33a0599711 Merge pull request #16931 from anntzer/reevents
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-23476_pred_try.patch 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Std. Output:
-Checking patch lib/matplotlib/backends/backend_macosx.py...
 Checking patch lib/matplotlib/figure.py...
-Applied patch lib/matplotlib/backends/backend_macosx.py cleanly.
 Applied patch lib/matplotlib/figure.py cleanly.
  
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Return Code: 0 
@@ -25,9 +23,7 @@ Applied patch lib/matplotlib/figure.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Std. Output:
 Checking patch lib/matplotlib/figure.py...
-Checking patch lib/matplotlib/backends/backend_macosx.py...
 Applied patch lib/matplotlib/figure.py cleanly.
-Applied patch lib/matplotlib/backends/backend_macosx.py cleanly.
  
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Revert patch successful (pred_try) 
@@ -35,9 +31,7 @@ Applied patch lib/matplotlib/backends/backend_macosx.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-23476_pred.patch 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Std. Output:
-Checking patch lib/matplotlib/backends/backend_macosx.py...
 Checking patch lib/matplotlib/figure.py...
-Applied patch lib/matplotlib/backends/backend_macosx.py cleanly.
 Applied patch lib/matplotlib/figure.py cleanly.
  
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Return Code: 0 
@@ -176,7 +170,7 @@ PASSED lib/matplotlib/tests/test_figure.py::test_deepcopy
 SKIPPED [6] ../miniconda3/envs/matplotlib__matplotlib__3.5/lib/python3.11/contextlib.py:81: Cannot compare svg files on this system
 SKIPPED [1] lib/matplotlib/testing/compare.py:285: Don't know how to convert .svg files to png
 FAILED lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio
-================== 1 failed, 104 passed, 7 skipped in 38.24s ===================
+================== 1 failed, 104 passed, 7 skipped in 35.81s ===================
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_figure.py` failed. (See above for error)
 
  

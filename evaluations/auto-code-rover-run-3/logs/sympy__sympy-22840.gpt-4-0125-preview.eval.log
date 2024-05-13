@@ -13,8 +13,13 @@ HEAD is now at d822fcba18 Merge pull request #22829 from smichr/parse
 [sympy__sympy__1.10] [sympy__sympy-22840] Command: git apply -v /home/swe-bench/temp_sympy__sympy-22840_pred_try.patch 
 [sympy__sympy__1.10] [sympy__sympy-22840] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.10] [sympy__sympy-22840] Std. Output:
+/home/swe-bench/temp_sympy__sympy-22840_pred_try.patch:17: trailing whitespace.
+            
+Checking patch sympy/core/basic.py...
 Checking patch sympy/simplify/cse_main.py...
+Applied patch sympy/core/basic.py cleanly.
 Applied patch sympy/simplify/cse_main.py cleanly.
+warning: 1 line adds whitespace errors.
  
 [sympy__sympy__1.10] [sympy__sympy-22840] Return Code: 0 
 [sympy__sympy__1.10] [sympy__sympy-22840] Apply patch successful (pred_try) 
@@ -23,7 +28,9 @@ Applied patch sympy/simplify/cse_main.py cleanly.
 [sympy__sympy__1.10] [sympy__sympy-22840] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.10] [sympy__sympy-22840] Std. Output:
 Checking patch sympy/simplify/cse_main.py...
+Checking patch sympy/core/basic.py...
 Applied patch sympy/simplify/cse_main.py cleanly.
+Applied patch sympy/core/basic.py cleanly.
  
 [sympy__sympy__1.10] [sympy__sympy-22840] Return Code: 0 
 [sympy__sympy__1.10] [sympy__sympy-22840] Revert patch successful (pred_try) 
@@ -31,8 +38,13 @@ Applied patch sympy/simplify/cse_main.py cleanly.
 [sympy__sympy__1.10] [sympy__sympy-22840] Command: git apply -v /home/swe-bench/temp_sympy__sympy-22840_pred.patch 
 [sympy__sympy__1.10] [sympy__sympy-22840] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.10] [sympy__sympy-22840] Std. Output:
+/home/swe-bench/temp_sympy__sympy-22840_pred.patch:17: trailing whitespace.
+            
+Checking patch sympy/core/basic.py...
 Checking patch sympy/simplify/cse_main.py...
+Applied patch sympy/core/basic.py cleanly.
 Applied patch sympy/simplify/cse_main.py cleanly.
+warning: 1 line adds whitespace errors.
  
 [sympy__sympy__1.10] [sympy__sympy-22840] Return Code: 0 
 [sympy__sympy__1.10] [sympy__sympy-22840] Apply patch successful (pred) 
@@ -68,8 +80,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        63354038
-hash randomization: on (PYTHONHASHSEED=1128821173)
+random seed:        76909676
+hash randomization: on (PYTHONHASHSEED=498252861)
 
 sympy/simplify/tests/test_cse.py[47] 
 test_numbered_symbols ok
@@ -180,8 +192,6 @@ test_c_with_printer ok
 test_fcode_complex ok                                                     [FAIL]
 
 
-________________________________ slowest tests _________________________________
-sympy/simplify/tests/test_cse.py::test_ignore_order_terms - Took 13.275 seconds
 ________________________________________________________________________________
 _______________ sympy/simplify/tests/test_cse.py:test_cse_single _______________
 Traceback (most recent call last):
@@ -345,10 +355,12 @@ NameError: name 'MatrixSymbol' is not defined
 ________________________________________________________________________________
 ___________ sympy/simplify/tests/test_cse.py:test_ignore_order_terms ___________
 Traceback (most recent call last):
-  File "/home/swe-bench/sympy__sympy/sympy/simplify/tests/test_cse.py", line 380, in test_ignore_order_terms
-    assert cse(eq) == ([], [sin(x**3 + y) + x + x**2/2 + O(x**3)])
-  File "/home/swe-bench/sympy__sympy/sympy/simplify/cse_main.py", line 793, in cse
-    if isinstance(e, (Matrix, ImmutableMatrix, MatrixSymbol)):
+  File "/home/swe-bench/sympy__sympy/sympy/simplify/tests/test_cse.py", line 379, in test_ignore_order_terms
+    eq = exp(x).series(x,0,3) + sin(y+x**3) - 1
+  File "/home/swe-bench/sympy__sympy/sympy/core/expr.py", line 2987, in series
+    rv = self.subs(x, xpos).series(xpos, x0, n, dir, logx=logx, cdir=cdir)
+  File "/home/swe-bench/sympy__sympy/sympy/core/basic.py", line 976, in subs
+    if isinstance(old, MatrixSymbol) and isinstance(new, Matrix):
 NameError: name 'MatrixSymbol' is not defined
 ________________________________________________________________________________
 _____________ sympy/simplify/tests/test_cse.py:test_name_conflict ______________
@@ -377,10 +389,10 @@ NameError: name 'MatrixSymbol' is not defined
 ________________________________________________________________________________
 _______________ sympy/simplify/tests/test_cse.py:test_issue_7840 _______________
 Traceback (most recent call last):
-  File "/home/swe-bench/sympy__sympy/sympy/simplify/tests/test_cse.py", line 422, in test_issue_7840
-    substitutions,new_eqn = cse(C393)
-  File "/home/swe-bench/sympy__sympy/sympy/simplify/cse_main.py", line 793, in cse
-    if isinstance(e, (Matrix, ImmutableMatrix, MatrixSymbol)):
+  File "/home/swe-bench/sympy__sympy/sympy/simplify/tests/test_cse.py", line 415, in test_issue_7840
+    C393 = C393.subs('C391',C391)
+  File "/home/swe-bench/sympy__sympy/sympy/core/basic.py", line 976, in subs
+    if isinstance(old, MatrixSymbol) and isinstance(new, Matrix):
 NameError: name 'MatrixSymbol' is not defined
 ________________________________________________________________________________
 _______________ sympy/simplify/tests/test_cse.py:test_issue_8891 _______________
@@ -479,7 +491,7 @@ Traceback (most recent call last):
     _cse = lambda x: cse(x, list=False)
   File "/home/swe-bench/sympy__sympy/sympy/simplify/cse_main.py", line 779, in cse
     return _cse_homogeneous(exprs,
-  File "/home/swe-bench/sympy__sympy/sympy/simplify/cse_main.py", line 918, in _cse_homogeneous
+  File "/home/swe-bench/sympy__sympy/sympy/simplify/cse_main.py", line 912, in _cse_homogeneous
     replacements, (reduced_exprs,) = cse(exprs, **kwargs)
   File "/home/swe-bench/sympy__sympy/sympy/simplify/cse_main.py", line 793, in cse
     if isinstance(e, (Matrix, ImmutableMatrix, MatrixSymbol)):
@@ -515,7 +527,7 @@ Traceback (most recent call last):
     if isinstance(e, (Matrix, ImmutableMatrix, MatrixSymbol)):
 NameError: name 'MatrixSymbol' is not defined
 
- tests finished: 59 passed, 5 expected to fail, 40 exceptions, in 17.58 seconds 
+ tests finished: 59 passed, 5 expected to fail, 40 exceptions, in 4.90 seconds =
 DO *NOT* COMMIT!
 ERROR conda.cli.main_run:execute(124): `conda run bin/test -C --verbose sympy/simplify/tests/test_cse.py sympy/utilities/tests/test_codegen.py` failed. (See above for error)
 

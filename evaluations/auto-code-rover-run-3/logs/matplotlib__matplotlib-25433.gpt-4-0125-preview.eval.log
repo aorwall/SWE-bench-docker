@@ -13,8 +13,19 @@ HEAD is now at 7eafdd8af3 Merge pull request #25423 from jklymak/bld-pst013-comp
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-25433_pred_try.patch 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Std. Output:
-Checking patch lib/matplotlib/pyplot.py...
-Applied patch lib/matplotlib/pyplot.py cleanly.
+/home/swe-bench/temp_matplotlib__matplotlib-25433_pred_try.patch:10: trailing whitespace.
+    
+/home/swe-bench/temp_matplotlib__matplotlib-25433_pred_try.patch:17: trailing whitespace.
+    
+/home/swe-bench/temp_matplotlib__matplotlib-25433_pred_try.patch:22: trailing whitespace.
+    
+/home/swe-bench/temp_matplotlib__matplotlib-25433_pred_try.patch:30: trailing whitespace.
+    
+/home/swe-bench/temp_matplotlib__matplotlib-25433_pred_try.patch:32: trailing whitespace.
+    
+Checking patch lib/matplotlib/widgets.py...
+Applied patch lib/matplotlib/widgets.py cleanly.
+warning: 5 lines add whitespace errors.
  
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Return Code: 0 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Apply patch successful (pred_try) 
@@ -22,8 +33,8 @@ Applied patch lib/matplotlib/pyplot.py cleanly.
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Command: git apply -v -R /home/swe-bench/temp_matplotlib__matplotlib-25433_pred_try.patch 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Std. Output:
-Checking patch lib/matplotlib/pyplot.py...
-Applied patch lib/matplotlib/pyplot.py cleanly.
+Checking patch lib/matplotlib/widgets.py...
+Applied patch lib/matplotlib/widgets.py cleanly.
  
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Return Code: 0 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Revert patch successful (pred_try) 
@@ -31,8 +42,19 @@ Applied patch lib/matplotlib/pyplot.py cleanly.
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-25433_pred.patch 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Std. Output:
-Checking patch lib/matplotlib/pyplot.py...
-Applied patch lib/matplotlib/pyplot.py cleanly.
+/home/swe-bench/temp_matplotlib__matplotlib-25433_pred.patch:10: trailing whitespace.
+    
+/home/swe-bench/temp_matplotlib__matplotlib-25433_pred.patch:17: trailing whitespace.
+    
+/home/swe-bench/temp_matplotlib__matplotlib-25433_pred.patch:22: trailing whitespace.
+    
+/home/swe-bench/temp_matplotlib__matplotlib-25433_pred.patch:30: trailing whitespace.
+    
+/home/swe-bench/temp_matplotlib__matplotlib-25433_pred.patch:32: trailing whitespace.
+    
+Checking patch lib/matplotlib/widgets.py...
+Applied patch lib/matplotlib/widgets.py cleanly.
+warning: 5 lines add whitespace errors.
  
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Return Code: 0 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Apply patch successful (pred) 
@@ -119,7 +141,7 @@ PASSED lib/matplotlib/tests/test_backend_bases.py::test_toolmanager_remove
 PASSED lib/matplotlib/tests/test_backend_bases.py::test_toolmanager_get_tool
 PASSED lib/matplotlib/tests/test_backend_bases.py::test_toolmanager_update_keymap
 FAILED lib/matplotlib/tests/test_backend_bases.py::test_grab_clear - assert <...
-======================== 1 failed, 55 passed in 17.26s =========================
+======================== 1 failed, 55 passed in 19.78s =========================
 
  
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25433] Return Code: 1 

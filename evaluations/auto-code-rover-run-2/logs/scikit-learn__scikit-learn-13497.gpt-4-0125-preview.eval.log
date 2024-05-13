@@ -60,18 +60,18 @@ platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
 rootdir: /opt/scikit-learn__scikit-learn, inifile: setup.cfg
 collected 8 items
 
-sklearn/feature_selection/tests/test_mutual_info.py .......F             [100%]
+sklearn/feature_selection/tests/test_mutual_info.py ....FF.F             [100%]
 
 =========================== short test summary info ============================
+FAILED sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_classif_discrete
+FAILED sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_regression
 FAILED sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_options
 PASSED sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_dd
 PASSED sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_cc
 PASSED sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_cd
 PASSED sklearn/feature_selection/tests/test_mutual_info.py::test_compute_mi_cd_unique_label
-PASSED sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_classif_discrete
-PASSED sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_regression
 PASSED sklearn/feature_selection/tests/test_mutual_info.py::test_mutual_info_classif_mixed
-====================== 1 failed, 7 passed in 2.12 seconds ======================
+====================== 3 failed, 5 passed in 2.75 seconds ======================
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13497] Return Code: 1 
 

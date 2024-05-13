@@ -13,9 +13,7 @@ HEAD is now at d8c37f43 Merge pull request #4026 from greyli/improve-type-hints
 [pallets__flask__2.0] [pallets__flask-4045] Command: git apply -v /home/swe-bench/temp_pallets__flask-4045_pred_try.patch 
 [pallets__flask__2.0] [pallets__flask-4045] Subprocess args: {"cwd": "/home/swe-bench/pallets__flask", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pallets__flask__2.0] [pallets__flask-4045] Std. Output:
-Checking patch src/flask/app.py...
 Checking patch src/flask/blueprints.py...
-Applied patch src/flask/app.py cleanly.
 Applied patch src/flask/blueprints.py cleanly.
  
 [pallets__flask__2.0] [pallets__flask-4045] Return Code: 0 
@@ -25,9 +23,7 @@ Applied patch src/flask/blueprints.py cleanly.
 [pallets__flask__2.0] [pallets__flask-4045] Subprocess args: {"cwd": "/home/swe-bench/pallets__flask", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pallets__flask__2.0] [pallets__flask-4045] Std. Output:
 Checking patch src/flask/blueprints.py...
-Checking patch src/flask/app.py...
 Applied patch src/flask/blueprints.py cleanly.
-Applied patch src/flask/app.py cleanly.
  
 [pallets__flask__2.0] [pallets__flask-4045] Return Code: 0 
 [pallets__flask__2.0] [pallets__flask-4045] Revert patch successful (pred_try) 
@@ -35,9 +31,7 @@ Applied patch src/flask/app.py cleanly.
 [pallets__flask__2.0] [pallets__flask-4045] Command: git apply -v /home/swe-bench/temp_pallets__flask-4045_pred.patch 
 [pallets__flask__2.0] [pallets__flask-4045] Subprocess args: {"cwd": "/home/swe-bench/pallets__flask", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pallets__flask__2.0] [pallets__flask-4045] Std. Output:
-Checking patch src/flask/app.py...
 Checking patch src/flask/blueprints.py...
-Applied patch src/flask/app.py cleanly.
 Applied patch src/flask/blueprints.py cleanly.
  
 [pallets__flask__2.0] [pallets__flask-4045] Return Code: 0 
@@ -74,7 +68,7 @@ collected 179 items
 tests/test_basic.py FFFFFFF.FFF.FFFFFFFFFFFFFFFFFFEFFFFFFFFF.FFFFFFFFFFF [ 29%]
 FEEEEEEEEFFFFFFFFFFF.F.........................FFFFFFFFFFF..FFFFFFF..... [ 69%]
 ....F.                                                                   [ 72%]
-tests/test_blueprints.py FFFFFFFFFFFFFFFFEFEFFFFFF....FFFFF....FFFFFF.FF [ 98%]
+tests/test_blueprints.py FFFFFFFFFFFFFFFFEFE.FFFFF....FFFFF....FFFFFF.FF [ 98%]
 FF                                                                       [100%]
 
 =========================== short test summary info ============================
@@ -119,6 +113,7 @@ PASSED tests/test_basic.py::test_run_from_config[localhost-0-localhost:8080-loca
 PASSED tests/test_basic.py::test_run_from_config[None-None-localhost:8080-localhost-8080]
 PASSED tests/test_basic.py::test_run_from_config[None-None-localhost:0-localhost-0]
 PASSED tests/test_basic.py::test_app_freed_on_zero_refcount
+PASSED tests/test_blueprints.py::test_dotted_name_not_allowed
 PASSED tests/test_blueprints.py::test_template_filter
 PASSED tests/test_blueprints.py::test_add_template_filter
 PASSED tests/test_blueprints.py::test_template_filter_with_name
@@ -236,7 +231,6 @@ FAILED tests/test_blueprints.py::test_blueprint_prefix_slash[/foo//-/bar-/foo/ba
 FAILED tests/test_blueprints.py::test_blueprint_url_defaults - DeprecationWar...
 FAILED tests/test_blueprints.py::test_blueprint_url_processors - DeprecationW...
 FAILED tests/test_blueprints.py::test_default_static_max_age - DeprecationWar...
-FAILED tests/test_blueprints.py::test_dotted_name_not_allowed - Failed: DID N...
 FAILED tests/test_blueprints.py::test_dotted_names_from_app - DeprecationWarn...
 FAILED tests/test_blueprints.py::test_empty_url_defaults - DeprecationWarning...
 FAILED tests/test_blueprints.py::test_route_decorator_custom_endpoint - Depre...
@@ -257,7 +251,7 @@ FAILED tests/test_blueprints.py::test_request_processing - DeprecationWarning...
 FAILED tests/test_blueprints.py::test_app_request_processing - DeprecationWar...
 FAILED tests/test_blueprints.py::test_app_url_processors - DeprecationWarning...
 FAILED tests/test_blueprints.py::test_nested_blueprint - DeprecationWarning: ...
-================== 118 failed, 50 passed, 11 errors in 1.92s ===================
+================== 117 failed, 51 passed, 11 errors in 1.88s ===================
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_basic.py tests/test_blueprints.py` failed. (See above for error)
 
  

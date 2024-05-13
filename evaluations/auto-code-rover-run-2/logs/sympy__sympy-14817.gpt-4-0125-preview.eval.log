@@ -67,8 +67,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        9199440
-hash randomization: on (PYTHONHASHSEED=2036595966)
+random seed:        76820067
+hash randomization: on (PYTHONHASHSEED=975638374)
 
 sympy/printing/pretty/tests/test_pretty.py[117] 
 test_pretty_ascii_str ok
@@ -259,7 +259,7 @@ __________ sympy/printing/pretty/tests/test_pretty.py:test_issue_8344 __________
 ValueError: Name node can't be used with 'False' constant
 
  tests finished: 113 passed, 1 expected to fail but passed, 3 exceptions, 
-in 7.14 seconds 
+in 11.56 seconds 
 DO *NOT* COMMIT!
 /home/swe-bench/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
   from collections import Mapping, defaultdict

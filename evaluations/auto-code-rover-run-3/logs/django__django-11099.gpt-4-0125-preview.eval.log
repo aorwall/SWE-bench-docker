@@ -93,15 +93,15 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_help_text (auth_tests.test_validators.NumericPasswordValidatorTest) ... ok
-test_validate (auth_tests.test_validators.NumericPasswordValidatorTest) ... ok
 test_help_text (auth_tests.test_validators.MinimumLengthValidatorTest) ... ok
 test_validate (auth_tests.test_validators.MinimumLengthValidatorTest) ... ok
-test_ascii_validator (auth_tests.test_validators.UsernameValidatorsTests) ... ok
-test_unicode_validator (auth_tests.test_validators.UsernameValidatorsTests) ... ok
+test_help_text (auth_tests.test_validators.NumericPasswordValidatorTest) ... ok
+test_validate (auth_tests.test_validators.NumericPasswordValidatorTest) ... ok
 test_help_text (auth_tests.test_validators.UserAttributeSimilarityValidatorTest) ... ok
 test_validate (auth_tests.test_validators.UserAttributeSimilarityValidatorTest) ... ok
 test_validate_property (auth_tests.test_validators.UserAttributeSimilarityValidatorTest) ... ok
+test_ascii_validator (auth_tests.test_validators.UsernameValidatorsTests) ... ok
+test_unicode_validator (auth_tests.test_validators.UsernameValidatorsTests) ... ok
 test_empty_password_validator_help_text_html (auth_tests.test_validators.PasswordValidationTest) ... ok
 test_get_default_password_validators (auth_tests.test_validators.PasswordValidationTest) ... ok
 test_get_password_validators_custom (auth_tests.test_validators.PasswordValidationTest) ... ok
@@ -117,7 +117,7 @@ test_validate_custom_list (auth_tests.test_validators.CommonPasswordValidatorTes
 test_validate_django_supplied_file (auth_tests.test_validators.CommonPasswordValidatorTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 22 tests in 0.298s
+Ran 22 tests in 0.154s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

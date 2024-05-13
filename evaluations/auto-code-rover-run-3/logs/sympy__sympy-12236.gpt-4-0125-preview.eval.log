@@ -68,8 +68,8 @@ executable:         /opt/pyenv/versions/3.7.17/bin/python  (3.7.17-final-0) [CPy
 architecture:       64-bit
 cache:              no
 ground types:       python 
-random seed:        39561337
-hash randomization: on (PYTHONHASHSEED=3145231493)
+random seed:        73219856
+hash randomization: on (PYTHONHASHSEED=4048836774)
 
 sympy/polys/tests/test_partfrac.py[11] 
 test_apart E
@@ -226,7 +226,7 @@ test_issue_11198 ok                                                       [FAIL]
 
 
 ________________________________ slowest tests _________________________________
-test_apart_symbolic - Took 41.139 seconds
+test_apart_symbolic - Took 39.237 seconds
 ________________________________________________________________________________
 ________________ sympy/polys/tests/test_partfrac.py:test_apart _________________
   File "/opt/sympy__sympy/sympy/polys/tests/test_partfrac.py", line 35, in test_apart
@@ -2252,16 +2252,16 @@ ___________ sympy/polys/tests/test_partfrac.py:test_apart_extension ____________
     return _ask(fact, self)
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
     _ask(pk, obj)
-  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
-    _ask(pk, obj)
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
     a = evaluate(obj)
-  File "/opt/sympy__sympy/sympy/core/mul.py", line 1114, in _eval_is_real
-    return self._eval_real_imag(True)
-  File "/opt/sympy__sympy/sympy/core/mul.py", line 1122, in _eval_real_imag
-    elif t.is_imaginary:
+  File "/opt/sympy__sympy/sympy/core/mul.py", line 1200, in _eval_is_irrational
+    a = t.is_irrational
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 247, in getit
     return _ask(fact, self)
+  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
+    _ask(pk, obj)
+  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
+    _ask(pk, obj)
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
     a = evaluate(obj)
   File "/opt/sympy__sympy/sympy/core/power.py", line 511, in _eval_is_imaginary
@@ -2284,8 +2284,12 @@ ___________ sympy/polys/tests/test_partfrac.py:test_apart_extension ____________
     _ask(pk, obj)
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
     _ask(pk, obj)
-  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
-    _ask(pk, obj)
+  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/opt/sympy__sympy/sympy/core/mul.py", line 1311, in _eval_is_prime
+    return r.is_prime
+  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
     a = evaluate(obj)
   File "/opt/sympy__sympy/sympy/core/mul.py", line 1311, in _eval_is_prime
@@ -4180,7 +4184,7 @@ ___________ sympy/polys/tests/test_partfrac.py:test_apart_extension ____________
     if isinstance(p, fractions.Fraction):
   File "/opt/pyenv/versions/3.7.17/lib/python3.7/abc.py", line 139, in __instancecheck__
     return _abc_instancecheck(cls, instance)
-RecursionError: maximum recursion depth exceeded in comparison
+RecursionError: maximum recursion depth exceeded while calling a Python object
 ________________________________________________________________________________
 ________________ sympy/polys/tests/test_polytools.py:test_sturm ________________
   File "/opt/sympy__sympy/sympy/polys/tests/test_polytools.py", line 2181, in test_sturm
@@ -8177,22 +8181,22 @@ ______________ sympy/polys/tests/test_polytools.py:test_intervals ______________
     _ask(pk, obj)
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
     a = evaluate(obj)
-  File "/opt/sympy__sympy/sympy/core/mul.py", line 1311, in _eval_is_prime
-    return r.is_prime
+  File "/opt/sympy__sympy/sympy/core/mul.py", line 1288, in _eval_is_even
+    is_integer = self.is_integer
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 247, in getit
     return _ask(fact, self)
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
     a = evaluate(obj)
-  File "/opt/sympy__sympy/sympy/core/mul.py", line 1311, in _eval_is_prime
-    return r.is_prime
+  File "/opt/sympy__sympy/sympy/core/mul.py", line 1097, in _eval_is_integer
+    is_rational = self.is_rational
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 247, in getit
     return _ask(fact, self)
-  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
-    a = evaluate(obj)
-  File "/opt/sympy__sympy/sympy/core/mul.py", line 1311, in _eval_is_prime
-    return r.is_prime
-  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 247, in getit
-    return _ask(fact, self)
+  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
+    _ask(pk, obj)
+  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
+    _ask(pk, obj)
+  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
+    _ask(pk, obj)
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
     a = evaluate(obj)
   File "/opt/sympy__sympy/sympy/core/mul.py", line 1311, in _eval_is_prime
@@ -10150,19 +10154,20 @@ _______________ sympy/polys/tests/test_polytools.py:test_nroots ________________
     return _ask(fact, self)
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
     _ask(pk, obj)
+  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
+    _ask(pk, obj)
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
     a = evaluate(obj)
-  File "/opt/sympy__sympy/sympy/core/mul.py", line 1097, in _eval_is_integer
-    is_rational = self.is_rational
+  File "/opt/sympy__sympy/sympy/core/mul.py", line 1311, in _eval_is_prime
+    return r.is_prime
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 247, in getit
     return _ask(fact, self)
-  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
-    _ask(pk, obj)
-  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
-    _ask(pk, obj)
-  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
-    _ask(pk, obj)
-  [Previous line repeated 2 more times]
+  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
+    a = evaluate(obj)
+  File "/opt/sympy__sympy/sympy/core/mul.py", line 1311, in _eval_is_prime
+    return r.is_prime
+  File "/opt/sympy__sympy/sympy/core/assumptions.py", line 247, in getit
+    return _ask(fact, self)
   File "/opt/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
     a = evaluate(obj)
   File "/opt/sympy__sympy/sympy/core/mul.py", line 1311, in _eval_is_prime
@@ -12111,7 +12116,7 @@ _______________ sympy/polys/tests/test_polytools.py:test_nroots ________________
     if isinstance(p, fractions.Fraction):
   File "/opt/pyenv/versions/3.7.17/lib/python3.7/abc.py", line 139, in __instancecheck__
     return _abc_instancecheck(cls, instance)
-RecursionError: maximum recursion depth exceeded while calling a Python object
+RecursionError: maximum recursion depth exceeded in comparison
 ________________________________________________________________________________
 _______ sympy/polys/tests/test_polytools.py:test_torational_factor_list ________
   File "/opt/sympy__sympy/sympy/polys/tests/test_polytools.py", line 2800, in test_torational_factor_list
@@ -16093,7 +16098,7 @@ _________________ sympy/polys/tests/test_polytools.py:test_div _________________
 AssertionError
 
  tests finished: 135 passed, 2 failed, 4 expected to fail, 8 exceptions, 
-in 63.81 seconds 
+in 59.66 seconds 
 DO *NOT* COMMIT!
 /opt/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
   from collections import Mapping

@@ -85,8 +85,8 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_invalid_regex (urlpatterns_reverse.tests.ErroneousViewTests) ... ok
-test_noncallable_view (urlpatterns_reverse.tests.ErroneousViewTests) ... ok
+test_callable_handlers (urlpatterns_reverse.tests.ErrorHandlerResolutionTests) ... ok
+test_named_handlers (urlpatterns_reverse.tests.ErrorHandlerResolutionTests) ... ok
 test_include_2_tuple (urlpatterns_reverse.tests.IncludeTests) ... ok
 test_include_2_tuple_namespace (urlpatterns_reverse.tests.IncludeTests) ... ok
 test_include_3_tuple (urlpatterns_reverse.tests.IncludeTests) ... ok
@@ -96,10 +96,10 @@ test_include_app_name (urlpatterns_reverse.tests.IncludeTests) ... ok
 test_include_app_name_namespace (urlpatterns_reverse.tests.IncludeTests) ... ok
 test_include_namespace (urlpatterns_reverse.tests.IncludeTests) ... ok
 test_include_urls (urlpatterns_reverse.tests.IncludeTests) ... ok
+test_invalid_regex (urlpatterns_reverse.tests.ErroneousViewTests) ... ok
+test_noncallable_view (urlpatterns_reverse.tests.ErroneousViewTests) ... ok
 test_no_urls_exception (urlpatterns_reverse.tests.NoURLPatternsTests)
 URLResolver should raise an exception when no urlpatterns exist. ... ok
-test_callable_handlers (urlpatterns_reverse.tests.ErrorHandlerResolutionTests) ... ok
-test_named_handlers (urlpatterns_reverse.tests.ErrorHandlerResolutionTests) ... ok
 test_attributeerror_not_hidden (urlpatterns_reverse.tests.ViewLoadingTests) ... ok
 test_module_does_not_exist (urlpatterns_reverse.tests.ViewLoadingTests) ... ok
 test_non_string_value (urlpatterns_reverse.tests.ViewLoadingTests) ... ok
@@ -108,23 +108,20 @@ test_parent_module_does_not_exist (urlpatterns_reverse.tests.ViewLoadingTests) .
 test_string_without_dot (urlpatterns_reverse.tests.ViewLoadingTests) ... ok
 test_view_does_not_exist (urlpatterns_reverse.tests.ViewLoadingTests) ... ok
 test_view_loading (urlpatterns_reverse.tests.ViewLoadingTests) ... ok
-test_default_handler (urlpatterns_reverse.tests.DefaultErrorHandlerTests)
-If the urls.py doesn't specify handlers, the defaults are used ... ok
-test_no_handler_exception (urlpatterns_reverse.tests.NoRootUrlConfTests) ... ok
-test_invalid_resolve (urlpatterns_reverse.tests.LookaheadTests) ... ok
-test_invalid_reverse (urlpatterns_reverse.tests.LookaheadTests) ... ok
-test_valid_resolve (urlpatterns_reverse.tests.LookaheadTests) ... ok
-test_valid_reverse (urlpatterns_reverse.tests.LookaheadTests) ... ok
-test_build_absolute_uri (urlpatterns_reverse.tests.ReverseLazyTest) ... ok
-test_inserting_reverse_lazy_into_string (urlpatterns_reverse.tests.ReverseLazyTest) ... ok
-test_redirect_with_lazy_reverse (urlpatterns_reverse.tests.ReverseLazyTest) ... ok
-test_user_permission_with_lazy_reverse (urlpatterns_reverse.tests.ReverseLazyTest) ... ok
 test_no_illegal_imports (urlpatterns_reverse.tests.ReverseShortcutTests) ... ok
 test_redirect_to_object (urlpatterns_reverse.tests.ReverseShortcutTests) ... ok
 test_redirect_to_url (urlpatterns_reverse.tests.ReverseShortcutTests) ... ok
 test_redirect_to_view_name (urlpatterns_reverse.tests.ReverseShortcutTests) ... ok
 test_redirect_view_object (urlpatterns_reverse.tests.ReverseShortcutTests) ... ok
 test_reverse_by_path_nested (urlpatterns_reverse.tests.ReverseShortcutTests) ... ok
+test_build_absolute_uri (urlpatterns_reverse.tests.ReverseLazyTest) ... ok
+test_inserting_reverse_lazy_into_string (urlpatterns_reverse.tests.ReverseLazyTest) ... ok
+test_redirect_with_lazy_reverse (urlpatterns_reverse.tests.ReverseLazyTest) ... ok
+test_user_permission_with_lazy_reverse (urlpatterns_reverse.tests.ReverseLazyTest) ... ok
+test_invalid_resolve (urlpatterns_reverse.tests.LookaheadTests) ... ok
+test_invalid_reverse (urlpatterns_reverse.tests.LookaheadTests) ... ok
+test_valid_resolve (urlpatterns_reverse.tests.LookaheadTests) ... ok
+test_valid_reverse (urlpatterns_reverse.tests.LookaheadTests) ... ok
 test_illegal_args_message (urlpatterns_reverse.tests.URLPatternReverse) ... ok
 test_illegal_kwargs_message (urlpatterns_reverse.tests.URLPatternReverse) ... ok
 test_mixing_args_and_kwargs (urlpatterns_reverse.tests.URLPatternReverse) ... ok
@@ -142,6 +139,7 @@ test_repr (urlpatterns_reverse.tests.ResolverMatchTests) ... FAIL
 test_repr_functools_partial (urlpatterns_reverse.tests.ResolverMatchTests) ... test_resolver_match_on_request (urlpatterns_reverse.tests.ResolverMatchTests) ... ok
 test_resolver_match_on_request_before_resolution (urlpatterns_reverse.tests.ResolverMatchTests) ... ok
 test_urlpattern_resolve (urlpatterns_reverse.tests.ResolverMatchTests) ... ok
+test_no_handler_exception (urlpatterns_reverse.tests.NoRootUrlConfTests) ... ok
 test_reverse_inner_in_response_middleware (urlpatterns_reverse.tests.RequestURLconfTests)
 Test reversing an URL from the *overridden* URLconf from inside ... ok
 test_reverse_inner_in_streaming (urlpatterns_reverse.tests.RequestURLconfTests)
@@ -156,6 +154,23 @@ The URLconf is reset after each request. ... ok
 test_urlconf_overridden (urlpatterns_reverse.tests.RequestURLconfTests) ... ok
 test_urlconf_overridden_with_null (urlpatterns_reverse.tests.RequestURLconfTests)
 Overriding request.urlconf with None will fall back to the default ... ok
+test_default_handler (urlpatterns_reverse.tests.DefaultErrorHandlerTests)
+If the urls.py doesn't specify handlers, the defaults are used ... ok
+test_404_tried_urls_have_names (urlpatterns_reverse.tests.ResolverTests)
+The list of URLs that come back from a Resolver404 exception contains ... ok
+test_namespaced_view_detail (urlpatterns_reverse.tests.ResolverTests) ... ok
+test_non_regex (urlpatterns_reverse.tests.ResolverTests)
+A Resolver404 is raised if resolving doesn't meet the basic ... ok
+test_populate_concurrency (urlpatterns_reverse.tests.ResolverTests)
+URLResolver._populate() can be called concurrently, but not more ... ok
+test_resolver_repr (urlpatterns_reverse.tests.ResolverTests)
+Test repr of URLResolver, especially when urlconf_name is a list ... ok
+test_resolver_reverse (urlpatterns_reverse.tests.ResolverTests) ... ok
+test_resolver_reverse_conflict (urlpatterns_reverse.tests.ResolverTests)
+URL pattern name arguments don't need to be unique. The last registered ... ok
+test_reverse_lazy_object_coercion_by_resolve (urlpatterns_reverse.tests.ResolverTests)
+Verifies lazy object returned by reverse_lazy is coerced to ... ok
+test_view_detail_as_method (urlpatterns_reverse.tests.ResolverTests) ... ok
 test_ambiguous_object (urlpatterns_reverse.tests.NamespaceTests)
 Names deployed via dynamic URL objects that require namespaces can't ... ok
 test_ambiguous_urlpattern (urlpatterns_reverse.tests.NamespaceTests)
@@ -197,21 +212,6 @@ Normal lookups work as expected. ... ok
 test_simple_included_name (urlpatterns_reverse.tests.NamespaceTests)
 Normal lookups work on names included from other patterns. ... ok
 test_special_chars_namespace (urlpatterns_reverse.tests.NamespaceTests) ... ok
-test_404_tried_urls_have_names (urlpatterns_reverse.tests.ResolverTests)
-The list of URLs that come back from a Resolver404 exception contains ... ok
-test_namespaced_view_detail (urlpatterns_reverse.tests.ResolverTests) ... ok
-test_non_regex (urlpatterns_reverse.tests.ResolverTests)
-A Resolver404 is raised if resolving doesn't meet the basic ... ok
-test_populate_concurrency (urlpatterns_reverse.tests.ResolverTests)
-URLResolver._populate() can be called concurrently, but not more ... ok
-test_resolver_repr (urlpatterns_reverse.tests.ResolverTests)
-Test repr of URLResolver, especially when urlconf_name is a list ... ok
-test_resolver_reverse (urlpatterns_reverse.tests.ResolverTests) ... ok
-test_resolver_reverse_conflict (urlpatterns_reverse.tests.ResolverTests)
-URL pattern name arguments don't need to be unique. The last registered ... ok
-test_reverse_lazy_object_coercion_by_resolve (urlpatterns_reverse.tests.ResolverTests)
-Verifies lazy object returned by reverse_lazy is coerced to ... ok
-test_view_detail_as_method (urlpatterns_reverse.tests.ResolverTests) ... ok
 test_lazy_in_settings (urlpatterns_reverse.tests.ReverseLazySettingsTest) ... ok
 
 ======================================================================
@@ -232,11 +232,14 @@ Traceback (most recent call last):
     self.fail(self._formatMessage(msg, standardMsg))
   File "/opt/pyenv/versions/3.8.19/lib/python3.8/unittest/case.py", line 753, in fail
     raise self.failureException(msg)
-AssertionError: "Reso[87 chars]name=no-kwargs, app_names=[], namespaces=[], r[68 chars]=())" != "Reso[87 chars]name='no-kwargs', app_names=[], namespaces=[],[36 chars]/$')"
-Diff is 783 characters long. Set self.maxDiff to None to see it.
+AssertionError: "Reso[87 chars]name=no-kwargs, app_names=[], namespaces=[], r[32 chars])/$)" != "Reso[87 chars]name='no-kwargs', app_names=[], namespaces=[],[36 chars]/$')"
+- ResolverMatch(func=urlpatterns_reverse.views.empty_view, args=('42', '37'), kwargs={}, url_name=no-kwargs, app_names=[], namespaces=[], route=^no_kwargs/([0-9]+)/([0-9]+)/$)
++ ResolverMatch(func=urlpatterns_reverse.views.empty_view, args=('42', '37'), kwargs={}, url_name='no-kwargs', app_names=[], namespaces=[], route='^no_kwargs/([0-9]+)/([0-9]+)/$')
+?                                                                                                 +         +                                     +                              +
+
 
 ======================================================================
-FAIL: test_repr_functools_partial (urlpatterns_reverse.tests.ResolverMatchTests) [<object object at 0x7c9dbec74e80>] (name='partial')
+FAIL: test_repr_functools_partial (urlpatterns_reverse.tests.ResolverMatchTests) [<object object at 0x7d12359c9e70>] (name='partial')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.8.19/lib/python3.8/unittest/case.py", line 60, in testPartExecutor
@@ -251,13 +254,15 @@ Traceback (most recent call last):
     self.fail(self._formatMessage(msg, standardMsg))
   File "/opt/pyenv/versions/3.8.19/lib/python3.8/unittest/case.py", line 753, in fail
     raise self.failureException(msg)
-AssertionError: 'ResolverMatch(func=urlpatterns_reverse.v[158 chars]ml))' != "ResolverMatch(func=functools.partial(<fu[152 chars]l/')"
-- ResolverMatch(func=urlpatterns_reverse.views.empty_view, args=(), kwargs={}, url_name=partial, app_names=[], namespaces=[], route=partial/, partial_args=(), partial_kwargs=(template_name=template.html))
-+ ResolverMatch(func=functools.partial(<function empty_view at 0x7c9dbe6ba790>, template_name='template.html'), args=(), kwargs={}, url_name='partial', app_names=[], namespaces=[], route='partial/')
+AssertionError: "ResolverMatch(func=empty_view(template_name='template.html')[80 chars]al/)" != "ResolverMatch(func=functools.partial(<function empty_view at[132 chars]l/')"
+- ResolverMatch(func=empty_view(template_name='template.html'), args=(), kwargs={}, url_name=partial, app_names=[], namespaces=[], route=partial/)
+?                              ^
++ ResolverMatch(func=functools.partial(<function empty_view at 0x7d12353d4700>, template_name='template.html'), args=(), kwargs={}, url_name='partial', app_names=[], namespaces=[], route='partial/')
+?                    ++++++++++++++++++++++++++++          ^^^^^^^^^^^^^^^^^^^^^                                                             +       +                                     +        +
 
 
 ======================================================================
-FAIL: test_repr_functools_partial (urlpatterns_reverse.tests.ResolverMatchTests) [<object object at 0x7c9dbec74e80>] (name='partial_nested')
+FAIL: test_repr_functools_partial (urlpatterns_reverse.tests.ResolverMatchTests) [<object object at 0x7d12359c9e70>] (name='partial_nested')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.8.19/lib/python3.8/unittest/case.py", line 60, in testPartExecutor
@@ -272,13 +277,11 @@ Traceback (most recent call last):
     self.fail(self._formatMessage(msg, standardMsg))
   File "/opt/pyenv/versions/3.8.19/lib/python3.8/unittest/case.py", line 753, in fail
     raise self.failureException(msg)
-AssertionError: 'ResolverMatch(func=urlpatterns_reverse.v[178 chars]ml))' != "ResolverMatch(func=functools.partial(<fu[172 chars]d/')"
-- ResolverMatch(func=urlpatterns_reverse.views.empty_view, args=(), kwargs={}, url_name=partial_nested, app_names=[], namespaces=[], route=partial_nested/, partial_args=(), partial_kwargs=(template_name=nested_partial.html))
-+ ResolverMatch(func=functools.partial(<function empty_view at 0x7c9dbe6ba790>, template_name='nested_partial.html'), args=(), kwargs={}, url_name='partial_nested', app_names=[], namespaces=[], route='partial_nested/')
-
+AssertionError: "ResolverMatch(func=empty_view(template_name='nested_partial.[100 chars]ed/)" != "ResolverMatch(func=functools.partial(<function empty_view at[152 chars]d/')"
+Diff is 720 characters long. Set self.maxDiff to None to see it.
 
 ======================================================================
-FAIL: test_repr_functools_partial (urlpatterns_reverse.tests.ResolverMatchTests) [<object object at 0x7c9dbec74e80>] (name='partial_wrapped')
+FAIL: test_repr_functools_partial (urlpatterns_reverse.tests.ResolverMatchTests) [<object object at 0x7d12359c9e70>] (name='partial_wrapped')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.8.19/lib/python3.8/unittest/case.py", line 60, in testPartExecutor
@@ -293,13 +296,11 @@ Traceback (most recent call last):
     self.fail(self._formatMessage(msg, standardMsg))
   File "/opt/pyenv/versions/3.8.19/lib/python3.8/unittest/case.py", line 753, in fail
     raise self.failureException(msg)
-AssertionError: 'ResolverMatch(func=urlpatterns_reverse.v[174 chars]ml))' != "ResolverMatch(func=functools.partial(<fu[168 chars]d/')"
-- ResolverMatch(func=urlpatterns_reverse.views.empty_view, args=(), kwargs={}, url_name=partial_wrapped, app_names=[], namespaces=[], route=partial_wrapped/, partial_args=(), partial_kwargs=(template_name=template.html))
-+ ResolverMatch(func=functools.partial(<function empty_view at 0x7c9dbe6ba790>, template_name='template.html'), args=(), kwargs={}, url_name='partial_wrapped', app_names=[], namespaces=[], route='partial_wrapped/')
-
+AssertionError: "ResolverMatch(func=empty_view(template_name='template.html')[96 chars]ed/)" != "ResolverMatch(func=functools.partial(<function empty_view at[148 chars]d/')"
+Diff is 703 characters long. Set self.maxDiff to None to see it.
 
 ----------------------------------------------------------------------
-Ran 95 tests in 2.162s
+Ran 95 tests in 1.628s
 
 FAILED (failures=4)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

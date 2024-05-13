@@ -15,9 +15,7 @@ HEAD is now at d90e34c61b Fixed #33561 -- Allowed synchronization of user attrib
 [django__django__4.1] [django__django-15498] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15498] Std. Output:
 Checking patch django/utils/cache.py...
-Checking patch django/views/static.py...
 Applied patch django/utils/cache.py cleanly.
-Applied patch django/views/static.py cleanly.
  
 [django__django__4.1] [django__django-15498] Return Code: 0 
 [django__django__4.1] [django__django-15498] Apply patch successful (pred_try) 
@@ -25,9 +23,7 @@ Applied patch django/views/static.py cleanly.
 [django__django__4.1] [django__django-15498] Command: git apply -v -R /opt/temp_django__django-15498_pred_try.patch 
 [django__django__4.1] [django__django-15498] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15498] Std. Output:
-Checking patch django/views/static.py...
 Checking patch django/utils/cache.py...
-Applied patch django/views/static.py cleanly.
 Applied patch django/utils/cache.py cleanly.
  
 [django__django__4.1] [django__django-15498] Return Code: 0 
@@ -37,9 +33,7 @@ Applied patch django/utils/cache.py cleanly.
 [django__django__4.1] [django__django-15498] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15498] Std. Output:
 Checking patch django/utils/cache.py...
-Checking patch django/views/static.py...
 Applied patch django/utils/cache.py cleanly.
-Applied patch django/views/static.py cleanly.
  
 [django__django__4.1] [django__django-15498] Return Code: 0 
 [django__django__4.1] [django__django-15498] Apply patch successful (pred) 
@@ -62,7 +56,7 @@ Importing application view_tests
 Found 30 test(s).
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
-test_was_modified_since_empty_string (view_tests.tests.test_static.StaticUtilsTests) ... ok
+test_was_modified_since_empty_string (view_tests.tests.test_static.StaticUtilsTests) ... ERROR
 test_was_modified_since_fp (view_tests.tests.test_static.StaticUtilsTests)
 A floating point mtime does not disturb was_modified_since (#18675). ... ok
 test_404 (view_tests.tests.test_static.StaticHelperTest) ... ok
@@ -104,12 +98,28 @@ test_serve (view_tests.tests.test_static.StaticTests)
 The static view can serve static media ... ok
 test_unknown_mime_type (view_tests.tests.test_static.StaticTests) ... ok
 
+======================================================================
+ERROR: test_was_modified_since_empty_string (view_tests.tests.test_static.StaticUtilsTests)
 ----------------------------------------------------------------------
-Ran 30 tests in 0.494s
+Traceback (most recent call last):
+  File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 592, in run
+    self._callTestMethod(testMethod)
+  File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
+    method()
+  File "/opt/django__django/tests/view_tests/tests/test_static.py", line 196, in test_was_modified_since_empty_string
+    self.assertTrue(was_modified_since(header="", mtime=1))
+  File "/opt/django__django/django/views/static.py", line 132, in was_modified_since
+    header_mtime = parse_http_date(matches[1])
+TypeError: 'NoneType' object is not subscriptable
 
-OK
+----------------------------------------------------------------------
+Ran 30 tests in 0.463s
+
+FAILED (errors=1)
  
-[django__django__4.1] [django__django-15498] Return Code: 0 
+[django__django__4.1] [django__django-15498] Return Code: 1 
 
->>>>> All Tests Passed
+>>>>> Some Tests Failed
 [django__django__4.1] [django__django-15498] Test script run successful 

@@ -153,7 +153,7 @@ The Last-Modified header is omitted when lastmod isn't found in all ... ok
 test_x_robots_sitemap (sitemaps_tests.test_http.HTTPSitemapTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 40 tests in 0.418s
+Ran 40 tests in 0.479s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

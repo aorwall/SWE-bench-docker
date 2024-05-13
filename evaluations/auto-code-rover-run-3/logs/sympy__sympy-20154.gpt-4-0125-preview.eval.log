@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        88837902
-hash randomization: on (PYTHONHASHSEED=3305123472)
+random seed:        15729122
+hash randomization: on (PYTHONHASHSEED=3778029404)
 
 sympy/utilities/tests/test_iterables.py[43] 
 test_is_palindromic ok
@@ -124,7 +124,7 @@ Traceback (most recent call last):
     assert list(uniq(p for p in partitions(4))) == \
 AssertionError
 
-============= tests finished: 41 passed, 2 failed, in 0.53 seconds =============
+============= tests finished: 41 passed, 2 failed, in 0.54 seconds =============
 DO *NOT* COMMIT!
 
  

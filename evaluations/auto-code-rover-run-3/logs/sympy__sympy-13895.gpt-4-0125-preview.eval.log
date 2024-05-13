@@ -18,8 +18,15 @@ HEAD is now at 4da0b64558 Merge pull request #13844 from Yathartha22/exponential
 [sympy__sympy__1.1] [sympy__sympy-13895] Command: git apply -v /home/swe-bench/temp_sympy__sympy-13895_pred_try.patch 
 [sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-13895] Std. Output:
+/home/swe-bench/temp_sympy__sympy-13895_pred_try.patch:14: trailing whitespace.
+    
+/home/swe-bench/temp_sympy__sympy-13895_pred_try.patch:18: trailing whitespace.
+    
+/home/swe-bench/temp_sympy__sympy-13895_pred_try.patch:21: trailing whitespace.
+    
 Checking patch sympy/simplify/simplify.py...
 Applied patch sympy/simplify/simplify.py cleanly.
+warning: 3 lines add whitespace errors.
  
 [sympy__sympy__1.1] [sympy__sympy-13895] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-13895] Apply patch successful (pred_try) 
@@ -36,8 +43,15 @@ Applied patch sympy/simplify/simplify.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-13895] Command: git apply -v /home/swe-bench/temp_sympy__sympy-13895_pred.patch 
 [sympy__sympy__1.1] [sympy__sympy-13895] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-13895] Std. Output:
+/home/swe-bench/temp_sympy__sympy-13895_pred.patch:14: trailing whitespace.
+    
+/home/swe-bench/temp_sympy__sympy-13895_pred.patch:18: trailing whitespace.
+    
+/home/swe-bench/temp_sympy__sympy-13895_pred.patch:21: trailing whitespace.
+    
 Checking patch sympy/simplify/simplify.py...
 Applied patch sympy/simplify/simplify.py cleanly.
+warning: 3 lines add whitespace errors.
  
 [sympy__sympy__1.1] [sympy__sympy-13895] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-13895] Apply patch successful (pred) 
@@ -82,8 +96,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        69603264
-hash randomization: on (PYTHONHASHSEED=153266943)
+random seed:        73557376
+hash randomization: on (PYTHONHASHSEED=3305742682)
 
 sympy/core/tests/test_numbers.py[86] 
 test_integers_cache ok
@@ -132,7 +146,7 @@ test_issue_3321 ok
 test_issue_3692 ok
 test_issue_3423 ok
 test_issue_3449 ok
-test_issue_13890 F
+test_issue_13890 E
 test_Integer_factors ok
 test_Rational_factors ok
 test_issue_4107 ok
@@ -175,18 +189,21 @@ test_numpy_to_float numpy not installed. Abort numpy tests. s             [FAIL]
 
 
 ________________________________________________________________________________
+______________ sympy/core/tests/test_numbers.py:test_issue_13890 _______________
+  File "/home/swe-bench/sympy__sympy/sympy/core/tests/test_numbers.py", line 1206, in test_issue_13890
+    f = simplify(e)
+  File "/home/swe-bench/sympy__sympy/sympy/simplify/simplify.py", line 594, in simplify
+    expr = targeted_simplify_for_symbolic_powers(expr)
+UnboundLocalError: local variable 'targeted_simplify_for_symbolic_powers' referenced before assignment
+
+________________________________________________________________________________
 _____________ sympy/core/tests/test_numbers.py:test_powers_Integer _____________
   File "/home/swe-bench/sympy__sympy/sympy/core/tests/test_numbers.py", line 1025, in test_powers_Integer
     assert (-8) ** Rational(2, 5) == \
 AssertionError
-________________________________________________________________________________
-______________ sympy/core/tests/test_numbers.py:test_issue_13890 _______________
-  File "/home/swe-bench/sympy__sympy/sympy/core/tests/test_numbers.py", line 1208, in test_issue_13890
-    assert abs(e.subs(x,a).evalf() - f.subs(x,a).evalf()) < 1e-15
-AssertionError
 
- tests finished: 82 passed, 2 failed, 1 skipped, 1 expected to fail, 
-in 1.81 seconds 
+ tests finished: 82 passed, 1 failed, 1 skipped, 1 expected to fail, 
+1 exceptions, in 2.31 seconds 
 DO *NOT* COMMIT!
 
  

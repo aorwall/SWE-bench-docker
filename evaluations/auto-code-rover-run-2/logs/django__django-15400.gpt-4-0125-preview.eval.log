@@ -112,7 +112,7 @@ test_list_set (utils_tests.test_lazyobject.SimpleLazyObjectTestCase) ... ok
 test_lt (utils_tests.test_lazyobject.SimpleLazyObjectTestCase) ... ok
 test_none (utils_tests.test_lazyobject.SimpleLazyObjectTestCase) ... ok
 test_pickle (utils_tests.test_lazyobject.SimpleLazyObjectTestCase) ... ok
-test_radd (utils_tests.test_lazyobject.SimpleLazyObjectTestCase) ... ERROR
+test_radd (utils_tests.test_lazyobject.SimpleLazyObjectTestCase) ... ok
 test_repr (utils_tests.test_lazyobject.SimpleLazyObjectTestCase) ... ok
 test_setattr (utils_tests.test_lazyobject.SimpleLazyObjectTestCase) ... ok
 test_setattr2 (utils_tests.test_lazyobject.SimpleLazyObjectTestCase) ... ok
@@ -137,20 +137,6 @@ Traceback (most recent call last):
   File "/opt/django__django/tests/utils_tests/test_lazyobject.py", line 322, in test_add
     self.assertEqual(obj1 + 1, 2)
 TypeError: unsupported operand type(s) for +: 'SimpleLazyObject' and 'int'
-
-======================================================================
-ERROR: test_radd (utils_tests.test_lazyobject.SimpleLazyObjectTestCase)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
-    yield
-  File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 592, in run
-    self._callTestMethod(testMethod)
-  File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
-    method()
-  File "/opt/django__django/tests/utils_tests/test_lazyobject.py", line 329, in test_radd
-    self.assertEqual(1 + obj1, 2)
-TypeError: unsupported operand type(s) for +: 'int' and 'SimpleLazyObject'
 
 ======================================================================
 ERROR: test_pickle_model (utils_tests.test_lazyobject.SimpleLazyObjectPickleTestCase)
@@ -207,9 +193,9 @@ Traceback (most recent call last):
 django.db.utils.OperationalError: no such table: utils_tests_category
 
 ----------------------------------------------------------------------
-Ran 65 tests in 0.311s
+Ran 65 tests in 0.216s
 
-FAILED (errors=3)
+FAILED (errors=2)
  
 [django__django__4.1] [django__django-15400] Return Code: 1 
 

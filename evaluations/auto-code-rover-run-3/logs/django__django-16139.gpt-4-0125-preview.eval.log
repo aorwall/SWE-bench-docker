@@ -201,7 +201,7 @@ test_username_field_autocapitalize_none (auth_tests.test_forms.UserChangeFormTes
 test_username_validity (auth_tests.test_forms.UserChangeFormTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 87 tests in 0.486s
+Ran 87 tests in 0.388s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

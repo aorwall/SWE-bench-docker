@@ -61,8 +61,8 @@ executable:         /opt/pyenv/versions/3.7.17/bin/python  (3.7.17-final-0) [CPy
 architecture:       64-bit
 cache:              no
 ground types:       python 
-random seed:        94791781
-hash randomization: on (PYTHONHASHSEED=1773706012)
+random seed:        38025957
+hash randomization: on (PYTHONHASHSEED=3298358320)
 
 sympy/printing/tests/test_ccode.py[32] 
 test_printmethod ok
@@ -110,7 +110,7 @@ ______________ sympy/printing/tests/test_ccode.py:test_ccode_sinc ______________
     "((x != 0) ? (\n"
 AssertionError
 
-============= tests finished: 30 passed, 2 failed, in 0.31 seconds =============
+============= tests finished: 30 passed, 2 failed, in 0.66 seconds =============
 DO *NOT* COMMIT!
 /opt/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
   from collections import Mapping

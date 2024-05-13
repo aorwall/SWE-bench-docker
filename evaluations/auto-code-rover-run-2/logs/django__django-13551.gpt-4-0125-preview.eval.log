@@ -171,9 +171,9 @@ test_set_password (auth_tests.test_models.AnonymousUserTests) ... ok
 test_str (auth_tests.test_models.AnonymousUserTests) ... ok
 test_create_superuser (auth_tests.test_models.TestCreateSuperUserSignals) ... ok
 test_create_user (auth_tests.test_models.TestCreateSuperUserSignals) ... ok
+test_load_data_with_user_permissions (auth_tests.test_models.LoadDataWithNaturalKeysAndMultipleDatabasesTestCase) ... ok
 test_group_natural_key (auth_tests.test_models.NaturalKeysTestCase) ... ok
 test_user_natural_key (auth_tests.test_models.NaturalKeysTestCase) ... ok
-test_load_data_with_user_permissions (auth_tests.test_models.LoadDataWithNaturalKeysAndMultipleDatabasesTestCase) ... ok
 test_10265 (auth_tests.test_tokens.TokenGeneratorTest) ... ok
 test_check_token_with_nonexistent_token_and_user (auth_tests.test_tokens.TokenGeneratorTest) ... ok
 test_legacy_token_validation (auth_tests.test_tokens.TokenGeneratorTest) ... ok
@@ -185,13 +185,13 @@ test_token_with_different_email (auth_tests.test_tokens.TokenGeneratorTest)
 Updating the user email address invalidates the token. ... test_token_with_different_secret (auth_tests.test_tokens.TokenGeneratorTest) ... ok
 test_builtin_user_isactive (auth_tests.test_models.IsActiveTestCase) ... ok
 test_is_active_field_default (auth_tests.test_models.IsActiveTestCase) ... ok
-test_user_is_created_and_added_to_group (auth_tests.test_models.LoadDataWithoutNaturalKeysTestCase) ... ok
+test_user_is_created_and_added_to_group (auth_tests.test_models.LoadDataWithNaturalKeysTestCase) ... ok
 test_clean_normalize_username (auth_tests.test_models.AbstractBaseUserTests) ... ok
 test_custom_email (auth_tests.test_models.AbstractBaseUserTests) ... ok
 test_default_email (auth_tests.test_models.AbstractBaseUserTests) ... ok
 test_has_usable_password (auth_tests.test_models.AbstractBaseUserTests) ... ok
 test_normalize_username (auth_tests.test_models.AbstractBaseUserTests) ... ok
-test_user_is_created_and_added_to_group (auth_tests.test_models.LoadDataWithNaturalKeysTestCase) ... ok
+test_user_is_created_and_added_to_group (auth_tests.test_models.LoadDataWithoutNaturalKeysTestCase) ... ok
 test_backend_without_with_perm (auth_tests.test_models.UserWithPermTestCase) ... ok
 test_basic (auth_tests.test_models.UserWithPermTestCase) ... ok
 test_custom_backend (auth_tests.test_models.UserWithPermTestCase) ... ok
@@ -219,7 +219,7 @@ test_user_clean_normalize_email (auth_tests.test_models.AbstractUserTestCase) ..
 test_user_double_save (auth_tests.test_models.AbstractUserTestCase) ... ok
 
 ======================================================================
-ERROR: test_token_with_different_email (auth_tests.test_tokens.TokenGeneratorTest) [<object object at 0x7357d0b81800>] (email=None, model='CustomEmailField')
+ERROR: test_token_with_different_email (auth_tests.test_tokens.TokenGeneratorTest) [<object object at 0x74ad9ef48800>] (email=None, model='CustomEmailField')
 Updating the user email address invalidates the token.
 ----------------------------------------------------------------------
 Traceback (most recent call last):
@@ -233,14 +233,33 @@ Traceback (most recent call last):
     return self._make_token_with_timestamp(user, self._num_seconds(self._now()))
   File "/opt/django__django/django/contrib/auth/tokens.py", line 70, in _make_token_with_timestamp
     self._make_hash_value(user, timestamp),
-  File "/opt/django__django/django/contrib/auth/tokens.py", line 102, in _make_hash_value
-    return str(user.pk) + user.password + str(login_timestamp) + str(timestamp) + email
-TypeError: must be str, not NoneType
+  File "/opt/django__django/django/contrib/auth/tokens.py", line 100, in _make_hash_value
+    return str(user.pk) + user.password + str(login_timestamp) + str(timestamp) + user.email
+AttributeError: 'CustomEmailField' object has no attribute 'email'
+
+======================================================================
+ERROR: test_token_with_different_email (auth_tests.test_tokens.TokenGeneratorTest) [<object object at 0x74ad9ef48800>] (email='test4@example.com', model='CustomEmailField')
+Updating the user email address invalidates the token.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 523, in subTest
+    yield
+  File "/opt/django__django/tests/auth_tests/test_tokens.py", line 57, in test_token_with_different_email
+    tk1 = p0.make_token(user)
+  File "/opt/django__django/django/contrib/auth/tokens.py", line 28, in make_token
+    return self._make_token_with_timestamp(user, self._num_seconds(self._now()))
+  File "/opt/django__django/django/contrib/auth/tokens.py", line 70, in _make_token_with_timestamp
+    self._make_hash_value(user, timestamp),
+  File "/opt/django__django/django/contrib/auth/tokens.py", line 100, in _make_hash_value
+    return str(user.pk) + user.password + str(login_timestamp) + str(timestamp) + user.email
+AttributeError: 'CustomEmailField' object has no attribute 'email'
 
 ----------------------------------------------------------------------
-Ran 58 tests in 6.419s
+Ran 58 tests in 5.035s
 
-FAILED (errors=1)
+FAILED (errors=2)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

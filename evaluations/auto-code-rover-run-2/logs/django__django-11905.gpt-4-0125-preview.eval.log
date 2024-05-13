@@ -145,7 +145,7 @@ Traceback (most recent call last):
 AssertionError: RemovedInDjango40Warning not triggered
 
 ----------------------------------------------------------------------
-Ran 40 tests in 0.334s
+Ran 40 tests in 0.504s
 
 FAILED (failures=4)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

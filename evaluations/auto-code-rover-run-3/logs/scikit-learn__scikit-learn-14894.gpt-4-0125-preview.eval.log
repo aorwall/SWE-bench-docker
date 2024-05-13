@@ -68,7 +68,6 @@ sklearn/svm/tests/test_svm.py::test_linearsvr
 sklearn/svm/tests/test_svm.py::test_linearsvr_fit_sampleweight
 sklearn/svm/tests/test_svm.py::test_linearsvr_fit_sampleweight
 sklearn/svm/tests/test_svm.py::test_linearsvr_fit_sampleweight
-sklearn/svm/tests/test_svm.py::test_linearsvr_fit_sampleweight
 sklearn/svm/tests/test_svm.py::test_auto_weight
 sklearn/svm/tests/test_svm.py::test_auto_weight
 sklearn/svm/tests/test_svm.py::test_linearsvc_crammer_singer
@@ -76,7 +75,7 @@ sklearn/svm/tests/test_svm.py::test_linearsvc_crammer_singer
 sklearn/svm/tests/test_svm.py::test_crammer_singer_binary
 sklearn/svm/tests/test_svm.py::test_linearsvc_iris
 sklearn/svm/tests/test_svm.py::test_liblinear_set_coef
-  /opt/scikit-learn__scikit-learn/sklearn/svm/base.py:948: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  /opt/scikit-learn__scikit-learn/sklearn/svm/base.py:949: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
     "the number of iterations.", ConvergenceWarning)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
@@ -167,7 +166,7 @@ PASSED sklearn/svm/tests/test_svm.py::test_svc_ovr_tie_breaking[NuSVC]
 PASSED sklearn/svm/tests/test_svm.py::test_gamma_auto
 PASSED sklearn/svm/tests/test_svm.py::test_gamma_scale
 PASSED sklearn/svm/tests/test_svm.py::test_n_support_oneclass_svr
-============== 1 failed, 85 passed, 12 warnings in 10.66 seconds ===============
+=============== 1 failed, 85 passed, 11 warnings in 8.67 seconds ===============
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-14894] Return Code: 1 
 

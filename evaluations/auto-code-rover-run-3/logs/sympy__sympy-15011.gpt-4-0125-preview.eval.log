@@ -65,8 +65,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        11381514
-hash randomization: on (PYTHONHASHSEED=2077942193)
+random seed:        53450111
+hash randomization: on (PYTHONHASHSEED=196446047)
 
 sympy/utilities/tests/test_lambdify.py[84] 
 test_no_args ok
@@ -160,14 +160,14 @@ _______ sympy/utilities/tests/test_lambdify.py:test_curly_matrix_symbol ________
 Traceback (most recent call last):
   File "/home/swe-bench/sympy__sympy/sympy/utilities/tests/test_lambdify.py", line 734, in test_curly_matrix_symbol
     lam = lambdify(curlyv, curlyv)
-  File "/home/swe-bench/sympy__sympy/sympy/utilities/lambdify.py", line 470, in lambdify
+  File "/home/swe-bench/sympy__sympy/sympy/utilities/lambdify.py", line 471, in lambdify
     c = compile(funcstr, filename, 'exec')
   File "<lambdifygenerated-77>", line 1
     def _lambdifygenerated({v}):
                            ^
 SyntaxError: invalid syntax
 
-===== tests finished: 54 passed, 29 skipped, 1 exceptions, in 3.26 seconds =====
+===== tests finished: 54 passed, 29 skipped, 1 exceptions, in 3.93 seconds =====
 DO *NOT* COMMIT!
 
  

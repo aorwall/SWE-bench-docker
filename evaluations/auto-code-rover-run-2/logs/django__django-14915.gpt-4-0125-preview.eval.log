@@ -152,7 +152,7 @@ test_queryset_none (model_forms.test_modelchoicefield.ModelChoiceFieldTests) ...
 test_result_cache_not_shared (model_forms.test_modelchoicefield.ModelChoiceFieldTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 24 tests in 0.283s
+Ran 24 tests in 0.223s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

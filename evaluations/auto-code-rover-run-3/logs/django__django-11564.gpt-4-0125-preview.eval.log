@@ -96,13 +96,13 @@ test_method_override (settings_tests.tests.ClassDecoratedTestCase) ... ok
 test_override (settings_tests.tests.ClassDecoratedTestCase) ... ok
 test_setupclass_override (settings_tests.tests.ClassDecoratedTestCase)
 Settings are overridden within setUpClass (#21281). ... ok
-test_directory_with_dot (file_storage.tests.FileStoragePathParsing)
-Regression test for #9610. ... ok
-test_first_character_dot (file_storage.tests.FileStoragePathParsing) ... ok
 test_get_filesystem_storage (file_storage.tests.GetStorageClassTests) ... ok
 test_get_invalid_storage_module (file_storage.tests.GetStorageClassTests) ... ok
 test_get_nonexistent_storage_class (file_storage.tests.GetStorageClassTests) ... ok
 test_get_nonexistent_storage_module (file_storage.tests.GetStorageClassTests) ... ok
+test_directory_with_dot (file_storage.tests.FileStoragePathParsing)
+Regression test for #9610. ... ok
+test_first_character_dot (file_storage.tests.FileStoragePathParsing) ... ok
 test_configure (settings_tests.tests.IsOverriddenTest) ... ok
 test_evaluated_lazysettings_repr (settings_tests.tests.IsOverriddenTest) ... ok
 test_module (settings_tests.tests.IsOverriddenTest) ... ok
@@ -110,11 +110,30 @@ test_override (settings_tests.tests.IsOverriddenTest) ... ok
 test_settings_repr (settings_tests.tests.IsOverriddenTest) ... ok
 test_unevaluated_lazysettings_repr (settings_tests.tests.IsOverriddenTest) ... ok
 test_usersettingsholder_repr (settings_tests.tests.IsOverriddenTest) ... ok
+test_method_override (settings_tests.tests.FullyDecoratedTestCase) ... ok
+test_override (settings_tests.tests.FullyDecoratedTestCase) ... ok
 test_none (settings_tests.tests.SecureProxySslHeaderTest) ... ok
 test_set_with_xheader_right (settings_tests.tests.SecureProxySslHeaderTest) ... ok
 test_set_with_xheader_wrong (settings_tests.tests.SecureProxySslHeaderTest) ... ok
 test_set_without_xheader (settings_tests.tests.SecureProxySslHeaderTest) ... ok
 test_xheader_preferred_to_underlying_request (settings_tests.tests.SecureProxySslHeaderTest) ... ok
+test_override_settings_both (settings_tests.tests.OverrideSettingsIsolationOnExceptionTests)
+Receiver fails on both enter and exit. ... ok
+test_override_settings_enter (settings_tests.tests.OverrideSettingsIsolationOnExceptionTests)
+Receiver fails on enter only. ... ok
+test_override_settings_exit (settings_tests.tests.OverrideSettingsIsolationOnExceptionTests)
+Receiver fails on exit only. ... ok
+test_override_settings_reusable_on_enter (settings_tests.tests.OverrideSettingsIsolationOnExceptionTests) ... ok
+test_complex_override_warning (settings_tests.tests.TestComplexSettingOverride)
+Regression test for #19031 ... ok
+test_content_saving (file_storage.tests.ContentFileStorageTestCase) ... ok
+test_file_upload_default_permissions (file_storage.tests.FileStoragePermissions) ... ok
+test_file_upload_directory_default_permissions (file_storage.tests.FileStoragePermissions) ... ok
+test_file_upload_directory_permissions (file_storage.tests.FileStoragePermissions) ... ok
+test_file_upload_permissions (file_storage.tests.FileStoragePermissions) ... ok
+test_deconstruction (file_storage.tests.FileSystemStorageTests) ... ok
+test_lazy_base_url_init (file_storage.tests.FileSystemStorageTests) ... ok
+test_tuple_settings (settings_tests.tests.TestListSettings) ... ok
 test_already_configured (settings_tests.tests.SettingsTests) ... ok
 test_class_decorator (settings_tests.tests.SettingsTests) ... ok
 test_context_manager (settings_tests.tests.SettingsTests) ... ok
@@ -133,50 +152,6 @@ test_settings_delete (settings_tests.tests.SettingsTests) ... ok
 test_settings_delete_wrapped (settings_tests.tests.SettingsTests) ... ok
 test_signal_callback_context_manager (settings_tests.tests.SettingsTests) ... ok
 test_signal_callback_decorator (settings_tests.tests.SettingsTests) ... ok
-test_method_override (settings_tests.tests.FullyDecoratedTestCase) ... ok
-test_override (settings_tests.tests.FullyDecoratedTestCase) ... ok
-test_override_settings_both (settings_tests.tests.OverrideSettingsIsolationOnExceptionTests)
-Receiver fails on both enter and exit. ... ok
-test_override_settings_enter (settings_tests.tests.OverrideSettingsIsolationOnExceptionTests)
-Receiver fails on enter only. ... ok
-test_override_settings_exit (settings_tests.tests.OverrideSettingsIsolationOnExceptionTests)
-Receiver fails on exit only. ... ok
-test_override_settings_reusable_on_enter (settings_tests.tests.OverrideSettingsIsolationOnExceptionTests) ... ok
-test_complex_override_warning (settings_tests.tests.TestComplexSettingOverride)
-Regression test for #19031 ... ok
-test_deconstruction (file_storage.tests.FileSystemStorageTests) ... ok
-test_lazy_base_url_init (file_storage.tests.FileSystemStorageTests) ... ok
-test_tuple_settings (settings_tests.tests.TestListSettings) ... ok
-test_file_upload_default_permissions (file_storage.tests.FileStoragePermissions) ... ok
-test_file_upload_directory_default_permissions (file_storage.tests.FileStoragePermissions) ... ok
-test_file_upload_directory_permissions (file_storage.tests.FileStoragePermissions) ... ok
-test_file_upload_permissions (file_storage.tests.FileStoragePermissions) ... ok
-test_content_saving (file_storage.tests.ContentFileStorageTestCase) ... ok
-test_base_url (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_custom_storage_discarding_empty_content (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_delete_deletes_directories (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_delete_no_name (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_empty_location (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_access_options (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_chunks_error (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_get_accessed_time (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_get_accessed_time_timezone (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_get_created_time (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_get_created_time_timezone (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_get_modified_time (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_get_modified_time_timezone (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_path (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_save_with_path (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_save_without_name (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_storage_preserves_filename_case (file_storage.tests.DiscardingFalseContentStorageTests)
-The storage backend should preserve case of filenames. ... ok
-test_file_storage_prevents_directory_traversal (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_file_url (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_listdir (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_makedirs_race_handling (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_remove_race_handling (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_save_doesnt_close (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
-test_setting_changed (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
 test_decorated_testcase_module (settings_tests.tests.FullyDecoratedTranTestCase) ... ok
 test_decorated_testcase_name (settings_tests.tests.FullyDecoratedTranTestCase) ... ok
 test_method_list_override (settings_tests.tests.FullyDecoratedTranTestCase) ... ok
@@ -251,6 +226,31 @@ test_makedirs_race_handling (file_storage.tests.CustomStorageTests) ... ok
 test_remove_race_handling (file_storage.tests.CustomStorageTests) ... ok
 test_save_doesnt_close (file_storage.tests.CustomStorageTests) ... ok
 test_setting_changed (file_storage.tests.CustomStorageTests) ... ok
+test_base_url (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_custom_storage_discarding_empty_content (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_delete_deletes_directories (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_delete_no_name (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_empty_location (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_access_options (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_chunks_error (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_get_accessed_time (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_get_accessed_time_timezone (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_get_created_time (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_get_created_time_timezone (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_get_modified_time (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_get_modified_time_timezone (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_path (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_save_with_path (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_save_without_name (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_storage_preserves_filename_case (file_storage.tests.DiscardingFalseContentStorageTests)
+The storage backend should preserve case of filenames. ... ok
+test_file_storage_prevents_directory_traversal (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_file_url (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_listdir (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_makedirs_race_handling (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_remove_race_handling (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_save_doesnt_close (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
+test_setting_changed (file_storage.tests.DiscardingFalseContentStorageTests) ... ok
 test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) ... test_not_prefixed (settings_tests.tests.MediaURLStaticURLPrefixTest) ... ok
 test_base_url (file_storage.tests.FileStorageTests) ... ok
 test_delete_deletes_directories (file_storage.tests.FileStorageTests) ... ok
@@ -280,7 +280,7 @@ test_urllib_request_urlopen (file_storage.tests.FileLikeObjectTestCase) ... ok
 test_race_condition (file_storage.tests.FileSaveRaceConditionTest) ... ok
 
 ======================================================================
-FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x737681620e80>] (MEDIA_URL='path/', script_name='/somesubpath')
+FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x79e905a23e80>] (MEDIA_URL='path/', script_name='/somesubpath')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -301,7 +301,7 @@ AssertionError: 'path/' != '/somesubpath/path/'
 
 
 ======================================================================
-FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x737681620e80>] (MEDIA_URL='path/', script_name='/somesubpath/')
+FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x79e905a23e80>] (MEDIA_URL='path/', script_name='/somesubpath/')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -322,7 +322,7 @@ AssertionError: 'path/' != '/somesubpath/path/'
 
 
 ======================================================================
-FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x737681620e80>] (MEDIA_URL='path/', script_name='/')
+FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x79e905a23e80>] (MEDIA_URL='path/', script_name='/')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -344,7 +344,7 @@ AssertionError: 'path/' != '/path/'
 
 
 ======================================================================
-FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x737681620e80>] (MEDIA_URL='htp://myhost.com/path/', script_name='/somesubpath/')
+FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x79e905a23e80>] (MEDIA_URL='htp://myhost.com/path/', script_name='/somesubpath/')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -366,7 +366,7 @@ AssertionError: 'htp://myhost.com/path/' != '/somesubpath/htp://myhost.com/path/
 
 
 ======================================================================
-FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x737681620e80>] (MEDIA_URL='', script_name='/somesubpath/')
+FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x79e905a23e80>] (MEDIA_URL='', script_name='/somesubpath/')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -385,7 +385,7 @@ AssertionError: '' != '/somesubpath/'
 + /somesubpath/
 
 ======================================================================
-FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x737681620e80>] (STATIC_URL='path/', script_name='/somesubpath')
+FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x79e905a23e80>] (STATIC_URL='path/', script_name='/somesubpath')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -406,7 +406,7 @@ AssertionError: 'path/' != '/somesubpath/path/'
 
 
 ======================================================================
-FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x737681620e80>] (STATIC_URL='path/', script_name='/somesubpath/')
+FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x79e905a23e80>] (STATIC_URL='path/', script_name='/somesubpath/')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -427,7 +427,7 @@ AssertionError: 'path/' != '/somesubpath/path/'
 
 
 ======================================================================
-FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x737681620e80>] (STATIC_URL='path/', script_name='/')
+FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x79e905a23e80>] (STATIC_URL='path/', script_name='/')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -449,7 +449,7 @@ AssertionError: 'path/' != '/path/'
 
 
 ======================================================================
-FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x737681620e80>] (STATIC_URL='htp://myhost.com/path/', script_name='/somesubpath/')
+FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x79e905a23e80>] (STATIC_URL='htp://myhost.com/path/', script_name='/somesubpath/')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -471,7 +471,7 @@ AssertionError: 'htp://myhost.com/path/' != '/somesubpath/htp://myhost.com/path/
 
 
 ======================================================================
-FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x737681620e80>] (STATIC_URL='', script_name='/somesubpath/')
+FAIL: test_add_script_name_prefix (settings_tests.tests.MediaURLStaticURLPrefixTest) [<object object at 0x79e905a23e80>] (STATIC_URL='', script_name='/somesubpath/')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -490,7 +490,7 @@ AssertionError: '' != '/somesubpath/'
 + /somesubpath/
 
 ----------------------------------------------------------------------
-Ran 179 tests in 1.186s
+Ran 179 tests in 1.152s
 
 FAILED (failures=10)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

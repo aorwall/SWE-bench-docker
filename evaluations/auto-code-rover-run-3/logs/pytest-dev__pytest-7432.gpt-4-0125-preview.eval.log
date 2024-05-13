@@ -33,8 +33,8 @@ Requirement already satisfied: toml in /home/swe-bench/miniconda3/envs/pytest-de
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev593+ge6e300e72-0.editable-py3-none-any.whl size=5134 sha256=188c72ac470fa1f5c6a4e05afe40188ebc9ad74e82d58af27d059618d9e36867
-  Stored in directory: /tmp/pip-ephem-wheel-cache-u2y82ep6/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev593+ge6e300e72-0.editable-py3-none-any.whl size=5134 sha256=fe0f9b0aefd774ddfd05ec30257c46b151a7c127a81ccc8cfbfc575e25ed1e6b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-1t_s52fb/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -65,8 +65,8 @@ Requirement already satisfied: toml in /home/swe-bench/miniconda3/envs/pytest-de
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev593+ge6e300e72-0.editable-py3-none-any.whl size=5134 sha256=188c72ac470fa1f5c6a4e05afe40188ebc9ad74e82d58af27d059618d9e36867
-  Stored in directory: /tmp/pip-ephem-wheel-cache-u2y82ep6/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev593+ge6e300e72-0.editable-py3-none-any.whl size=5134 sha256=fe0f9b0aefd774ddfd05ec30257c46b151a7c127a81ccc8cfbfc575e25ed1e6b
+  Stored in directory: /tmp/pip-ephem-wheel-cache-1t_s52fb/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -126,220 +126,9 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, plug
 rootdir: /home/swe-bench/pytest-dev__pytest, configfile: pyproject.toml
 collected 79 items
 
-testing/test_skipping.py .................FF............................ [ 59%]
-...........F...................F                                         [100%]
+testing/test_skipping.py ............................................... [ 59%]
+................................                                         [100%]
 
-=================================== FAILURES ===================================
-________ TestXFail.test_xfail_run_with_skip_mark[test_input0-expected0] ________
-
-self = <test_skipping.TestXFail object at 0x75802feee2e0>
-testdir = <Testdir local('/tmp/pytest-of-swe-bench/pytest-0/test_xfail_run_with_skip_mark0')>
-test_input = ['-rs']
-expected = ['SKIPPED [1] test_sample.py:2: unconditional skip', '*1 skipped*']
-
-    @pytest.mark.parametrize(
-        "test_input,expected",
-        [
-            (
-                ["-rs"],
-                ["SKIPPED [1] test_sample.py:2: unconditional skip", "*1 skipped*"],
-            ),
-            (
-                ["-rs", "--runxfail"],
-                ["SKIPPED [1] test_sample.py:2: unconditional skip", "*1 skipped*"],
-            ),
-        ],
-    )
-    def test_xfail_run_with_skip_mark(self, testdir, test_input, expected):
-        testdir.makepyfile(
-            test_sample="""
-            import pytest
-            @pytest.mark.skip
-            def test_skip_location() -> None:
-                assert 0
-        """
-        )
-        result = testdir.runpytest(*test_input)
->       result.stdout.fnmatch_lines(expected)
-E       Failed: nomatch: 'SKIPPED [1] test_sample.py:2: unconditional skip'
-E           and: '============================= test session starts =============================='
-E           and: 'platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1'
-E           and: 'rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_run_with_skip_mark0'
-E           and: 'collected 1 item'
-E           and: ''
-E           and: 'test_sample.py s                                                         [100%]'
-E           and: ''
-E           and: '=========================== short test summary info ============================'
-E           and: 'SKIPPED [1] test_sample.py:1: unconditional skip'
-E           and: '============================== 1 skipped in 0.01s =============================='
-E       remains unmatched: 'SKIPPED [1] test_sample.py:2: unconditional skip'
-
-/home/swe-bench/pytest-dev__pytest/testing/test_skipping.py:261: Failed
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_run_with_skip_mark0
-collected 1 item
-
-test_sample.py s                                                         [100%]
-
-=========================== short test summary info ============================
-SKIPPED [1] test_sample.py:1: unconditional skip
-============================== 1 skipped in 0.01s ==============================
-________ TestXFail.test_xfail_run_with_skip_mark[test_input1-expected1] ________
-
-self = <test_skipping.TestXFail object at 0x75802fe39a00>
-testdir = <Testdir local('/tmp/pytest-of-swe-bench/pytest-0/test_xfail_run_with_skip_mark1')>
-test_input = ['-rs', '--runxfail']
-expected = ['SKIPPED [1] test_sample.py:2: unconditional skip', '*1 skipped*']
-
-    @pytest.mark.parametrize(
-        "test_input,expected",
-        [
-            (
-                ["-rs"],
-                ["SKIPPED [1] test_sample.py:2: unconditional skip", "*1 skipped*"],
-            ),
-            (
-                ["-rs", "--runxfail"],
-                ["SKIPPED [1] test_sample.py:2: unconditional skip", "*1 skipped*"],
-            ),
-        ],
-    )
-    def test_xfail_run_with_skip_mark(self, testdir, test_input, expected):
-        testdir.makepyfile(
-            test_sample="""
-            import pytest
-            @pytest.mark.skip
-            def test_skip_location() -> None:
-                assert 0
-        """
-        )
-        result = testdir.runpytest(*test_input)
->       result.stdout.fnmatch_lines(expected)
-E       Failed: nomatch: 'SKIPPED [1] test_sample.py:2: unconditional skip'
-E           and: '============================= test session starts =============================='
-E           and: 'platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1'
-E           and: 'rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_run_with_skip_mark1'
-E           and: 'collected 1 item'
-E           and: ''
-E           and: 'test_sample.py s                                                         [100%]'
-E           and: ''
-E           and: '=========================== short test summary info ============================'
-E           and: 'SKIPPED [1] ../../../../home/swe-bench/pytest-dev__pytest/src/_pytest/skipping.py:239: unconditional skip'
-E           and: '============================== 1 skipped in 0.00s =============================='
-E       remains unmatched: 'SKIPPED [1] test_sample.py:2: unconditional skip'
-
-/home/swe-bench/pytest-dev__pytest/testing/test_skipping.py:261: Failed
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_run_with_skip_mark1
-collected 1 item
-
-test_sample.py s                                                         [100%]
-
-=========================== short test summary info ============================
-SKIPPED [1] ../../../../home/swe-bench/pytest-dev__pytest/src/_pytest/skipping.py:239: unconditional skip
-============================== 1 skipped in 0.00s ==============================
-_______________________ test_skipped_reasons_functional ________________________
-
-testdir = <Testdir local('/tmp/pytest-of-swe-bench/pytest-0/test_skipped_reasons_functional0')>
-
-    def test_skipped_reasons_functional(testdir):
-        testdir.makepyfile(
-            test_one="""
-                import pytest
-                from conftest import doskip
-    
-                def setup_function(func):
-                    doskip()
-    
-                def test_func():
-                    pass
-    
-                class TestClass(object):
-                    def test_method(self):
-                        doskip()
-    
-                    @pytest.mark.skip("via_decorator")
-                    def test_deco(self):
-                        assert 0
-            """,
-            conftest="""
-                import pytest, sys
-                def doskip():
-                    assert sys._getframe().f_lineno == 3
-                    pytest.skip('test')
-            """,
-        )
-        result = testdir.runpytest("-rs")
->       result.stdout.fnmatch_lines_random(
-            [
-                "SKIPPED [[]2[]] conftest.py:4: test",
-                "SKIPPED [[]1[]] test_one.py:14: via_decorator",
-            ]
-        )
-E       Failed: matched:  'SKIPPED [[]2[]] conftest.py:4: test'
-E       line 'SKIPPED [[]1[]] test_one.py:14: via_decorator' not found in output
-
-/home/swe-bench/pytest-dev__pytest/testing/test_skipping.py:806: Failed
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_skipped_reasons_functional0
-collected 3 items
-
-test_one.py sss                                                          [100%]
-
-=========================== short test summary info ============================
-SKIPPED [2] conftest.py:4: test
-SKIPPED [1] test_one.py:13: via_decorator
-============================== 3 skipped in 0.03s ==============================
-_____________________________ test_relpath_rootdir _____________________________
-
-testdir = <Testdir local('/tmp/pytest-of-swe-bench/pytest-0/test_relpath_rootdir0')>
-
-    def test_relpath_rootdir(testdir):
-        testdir.makepyfile(
-            **{
-                "tests/test_1.py": """
-            import pytest
-            @pytest.mark.skip()
-            def test_pass():
-                pass
-                """,
-            }
-        )
-        result = testdir.runpytest("-rs", "tests/test_1.py", "--rootdir=tests")
->       result.stdout.fnmatch_lines(
-            ["SKIPPED [[]1[]] tests/test_1.py:2: unconditional skip"]
-        )
-E       Failed: nomatch: 'SKIPPED [[]1[]] tests/test_1.py:2: unconditional skip'
-E           and: '============================= test session starts =============================='
-E           and: 'platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1'
-E           and: 'rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_relpath_rootdir0/tests'
-E           and: 'collected 1 item'
-E           and: ''
-E           and: 'tests/test_1.py s                                                        [100%]'
-E           and: ''
-E           and: '=========================== short test summary info ============================'
-E           and: 'SKIPPED [1] tests/test_1.py:1: unconditional skip'
-E           and: '============================== 1 skipped in 0.01s =============================='
-E       remains unmatched: 'SKIPPED [[]1[]] tests/test_1.py:2: unconditional skip'
-
-/home/swe-bench/pytest-dev__pytest/testing/test_skipping.py:1230: Failed
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_relpath_rootdir0/tests
-collected 1 item
-
-tests/test_1.py s                                                        [100%]
-
-=========================== short test summary info ============================
-SKIPPED [1] tests/test_1.py:1: unconditional skip
-============================== 1 skipped in 0.01s ==============================
 ==================================== PASSES ====================================
 ________________________ TestEvaluation.test_no_marker _________________________
 ----------------------------- Captured stdout call -----------------------------
@@ -418,7 +207,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_marked_skipif_with_invalid_boolean0
 collected 0 items
 
-============================ no tests ran in 0.01s =============================
+============================ no tests ran in 0.00s =============================
 _______________________ TestEvaluation.test_skipif_class _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -487,7 +276,31 @@ E       assert 0
 test_xfail_run_anyway.py:4: AssertionError
 =========================== short test summary info ============================
 FAILED test_xfail_run_anyway.py::test_func - assert 0
-========================= 1 failed, 1 passed in 0.01s ==========================
+========================= 1 failed, 1 passed in 0.02s ==========================
+________ TestXFail.test_xfail_run_with_skip_mark[test_input0-expected0] ________
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_run_with_skip_mark0
+collected 1 item
+
+test_sample.py s                                                         [100%]
+
+=========================== short test summary info ============================
+SKIPPED [1] test_sample.py:2: unconditional skip
+============================== 1 skipped in 0.01s ==============================
+________ TestXFail.test_xfail_run_with_skip_mark[test_input1-expected1] ________
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_run_with_skip_mark1
+collected 1 item
+
+test_sample.py s                                                         [100%]
+
+=========================== short test summary info ============================
+SKIPPED [1] test_sample.py:2: unconditional skip
+============================== 1 skipped in 0.01s ==============================
 ___________________ TestXFail.test_xfail_evalfalse_but_fails ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -506,7 +319,7 @@ collecting ... collected 1 item
 
 test_one.py::test_this XFAIL                                             [100%]
 
-============================== 1 xfailed in 0.01s ==============================
+============================== 1 xfailed in 0.02s ==============================
 _________________ TestXFail.test_xfail_not_run_xfail_reporting _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -521,7 +334,7 @@ XFAIL test_one.py::test_this
   reason: [NOTRUN] noway
 XFAIL test_one.py::test_this_true
   reason: [NOTRUN] condition: True
-========================= 1 passed, 2 xfailed in 0.13s =========================
+========================= 1 passed, 2 xfailed in 0.16s =========================
 __________________ TestXFail.test_xfail_not_run_no_setup_run ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -567,7 +380,7 @@ test_xfail_imperative.py x                                               [100%]
 =========================== short test summary info ============================
 XFAIL test_xfail_imperative.py::test_this
   reason: hello
-============================== 1 xfailed in 0.01s ==============================
+============================== 1 xfailed in 0.00s ==============================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_imperative0
@@ -575,7 +388,7 @@ collected 1 item
 
 test_xfail_imperative.py .                                               [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.00s ===============================
 ______________ TestXFail.test_xfail_imperative_in_setup_function _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -725,7 +538,7 @@ test_strict_xfail.py F                                                   [100%]
 =================================== FAILURES ===================================
 ___________________________________ test_foo ___________________________________
 [XPASS(strict)] unsupported feature
-============================== 1 failed in 0.00s ===============================
+============================== 1 failed in 0.01s ===============================
 ______________________ TestXFail.test_strict_xfail[False] ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -737,7 +550,7 @@ test_strict_xfail.py X                                                   [100%]
 
 =========================== short test summary info ============================
 XPASS test_strict_xfail.py::test_foo unsupported feature
-============================== 1 xpassed in 0.00s ==============================
+============================== 1 xpassed in 0.01s ==============================
 _________________ TestXFail.test_strict_xfail_condition[True] __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -757,7 +570,7 @@ collected 1 item
 
 test_strict_xfail_condition.py .                                         [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _________________ TestXFail.test_xfail_condition_keyword[True] _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -767,7 +580,7 @@ collected 1 item
 
 test_xfail_condition_keyword.py .                                        [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ________________ TestXFail.test_xfail_condition_keyword[False] _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -790,7 +603,7 @@ test_strict_xfail_default_from_file.py F                                 [100%]
 =================================== FAILURES ===================================
 ___________________________________ test_foo ___________________________________
 [XPASS(strict)] unsupported feature
-============================== 1 failed in 0.00s ===============================
+============================== 1 failed in 0.01s ===============================
 _____________ TestXFail.test_strict_xfail_default_from_file[false] _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -842,7 +655,7 @@ collected 1 item
 
 test_skips_on_false_string.py s                                          [100%]
 
-============================== 1 skipped in 0.00s ==============================
+============================== 1 skipped in 0.01s ==============================
 _________________________ TestSkip.test_arg_as_reason __________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -853,7 +666,7 @@ collected 1 item
 test_arg_as_reason.py s                                                  [100%]
 
 =========================== short test summary info ============================
-SKIPPED [1] test_arg_as_reason.py:1: testing stuff
+SKIPPED [1] test_arg_as_reason.py:2: testing stuff
 ============================== 1 skipped in 0.01s ==============================
 _________________________ TestSkip.test_skip_no_reason _________________________
 ----------------------------- Captured stdout call -----------------------------
@@ -865,8 +678,8 @@ collected 1 item
 test_skip_no_reason.py s                                                 [100%]
 
 =========================== short test summary info ============================
-SKIPPED [1] test_skip_no_reason.py:1: unconditional skip
-============================== 1 skipped in 0.00s ==============================
+SKIPPED [1] test_skip_no_reason.py:2: unconditional skip
+============================== 1 skipped in 0.01s ==============================
 ________________________ TestSkip.test_skip_with_reason ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -877,8 +690,8 @@ collected 1 item
 test_skip_with_reason.py s                                               [100%]
 
 =========================== short test summary info ============================
-SKIPPED [1] test_skip_with_reason.py:1: for lolz
-============================== 1 skipped in 0.00s ==============================
+SKIPPED [1] test_skip_with_reason.py:2: for lolz
+============================== 1 skipped in 0.01s ==============================
 _____________________ TestSkip.test_only_skips_marked_test _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -889,9 +702,9 @@ collected 3 items
 test_only_skips_marked_test.py ss.                                       [100%]
 
 =========================== short test summary info ============================
-SKIPPED [1] test_only_skips_marked_test.py:1: unconditional skip
-SKIPPED [1] test_only_skips_marked_test.py:4: nothing in particular
-========================= 1 passed, 2 skipped in 0.01s =========================
+SKIPPED [1] test_only_skips_marked_test.py:2: unconditional skip
+SKIPPED [1] test_only_skips_marked_test.py:5: nothing in particular
+========================= 1 passed, 2 skipped in 0.02s =========================
 ________________________ TestSkip.test_strict_and_skip _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -902,8 +715,8 @@ collected 1 item
 test_strict_and_skip.py s                                                [100%]
 
 =========================== short test summary info ============================
-SKIPPED [1] test_strict_and_skip.py:1: unconditional skip
-============================== 1 skipped in 0.00s ==============================
+SKIPPED [1] test_strict_and_skip.py:2: unconditional skip
+============================== 1 skipped in 0.01s ==============================
 ______________________ TestSkipif.test_skipif_conditional ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -922,7 +735,7 @@ collected 1 item
 test_foo.py s
 
 =========================== short test summary info ============================
-SKIPPED [1] test_foo.py:1: condition: hasattr(sys, 'platform')
+SKIPPED [1] test_foo.py:2: condition: hasattr(sys, 'platform')
 ============================== 1 skipped in 0.01s ==============================
 ______ TestSkipif.test_skipif_reporting[True, reason="invalid platform"] _______
 ----------------------------- Captured stdout call -----------------------------
@@ -934,8 +747,8 @@ collected 1 item
 test_foo.py s
 
 =========================== short test summary info ============================
-SKIPPED [1] test_foo.py:1: invalid platform
-============================== 1 skipped in 0.01s ==============================
+SKIPPED [1] test_foo.py:2: invalid platform
+============================== 1 skipped in 0.00s ==============================
 ____________________ TestSkipif.test_skipif_using_platform _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -954,7 +767,7 @@ collected 1 item
 test_foo.py s
 
 =========================== short test summary info ============================
-SKIPPED [1] test_foo.py:1: second_condition
+SKIPPED [1] test_foo.py:2: second_condition
 ============================== 1 skipped in 0.01s ==============================
 ________ TestSkipif.test_skipif_reporting_multiple[xfail-XPASS-xpassed] ________
 ----------------------------- Captured stdout call -----------------------------
@@ -988,7 +801,20 @@ collected 2 items
 
 test_skipif_class.py ss                                                  [100%]
 
-============================== 2 skipped in 0.02s ==============================
+============================== 2 skipped in 0.01s ==============================
+_______________________ test_skipped_reasons_functional ________________________
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_skipped_reasons_functional0
+collected 3 items
+
+test_one.py sss                                                          [100%]
+
+=========================== short test summary info ============================
+SKIPPED [2] conftest.py:4: test
+SKIPPED [1] test_one.py:14: via_decorator
+============================== 3 skipped in 0.04s ==============================
 _____________________________ test_skipped_folding _____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1023,7 +849,7 @@ FAILED test_reportchars.py::test_1 - assert 0
 XFAIL test_reportchars.py::test_2
 XPASS test_reportchars.py::test_3 
 SKIPPED [1] test_reportchars.py:11: four
-============== 1 failed, 1 skipped, 1 xfailed, 1 xpassed in 0.03s ==============
+============== 1 failed, 1 skipped, 1 xfailed, 1 xpassed in 0.02s ==============
 ____________________________ test_reportchars_error ____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1043,7 +869,7 @@ E       assert 0
 conftest.py:2: AssertionError
 =========================== short test summary info ============================
 ERROR test_simple.py::test_foo - assert 0
-========================== 1 passed, 1 error in 0.02s ==========================
+========================== 1 passed, 1 error in 0.01s ==========================
 _____________________________ test_reportchars_all _____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1076,7 +902,7 @@ XFAIL test_reportchars_all.py::test_2
 XPASS test_reportchars_all.py::test_3 
 ERROR test_reportchars_all.py::test_5 - assert 0
 FAILED test_reportchars_all.py::test_1 - assert 0
-========= 1 failed, 1 skipped, 1 xfailed, 1 xpassed, 1 error in 0.04s ==========
+========= 1 failed, 1 skipped, 1 xfailed, 1 xpassed, 1 error in 0.02s ==========
 __________________________ test_reportchars_all_error __________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1096,7 +922,7 @@ E       assert 0
 conftest.py:2: AssertionError
 =========================== short test summary info ============================
 ERROR test_simple.py::test_foo - assert 0
-========================== 1 passed, 1 error in 0.02s ==========================
+========================== 1 passed, 1 error in 0.01s ==========================
 ____________________ test_errors_in_xfail_skip_expressions _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1130,7 +956,7 @@ SyntaxError: invalid syntax
 =========================== short test summary info ============================
 ERROR test_errors_in_xfail_skip_expressions.py::test_nameerror
 ERROR test_errors_in_xfail_skip_expressions.py::test_syntax
-========================= 1 passed, 2 errors in 0.02s ==========================
+========================= 1 passed, 2 errors in 0.01s ==========================
 ________________________ test_xfail_skipif_with_globals ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1141,7 +967,7 @@ collected 2 items
 test_xfail_skipif_with_globals.py sx                                     [100%]
 
 =========================== short test summary info ============================
-SKIPPED [1] test_xfail_skipif_with_globals.py:2: condition: x == 3
+SKIPPED [1] test_xfail_skipif_with_globals.py:3: condition: x == 3
 XFAIL test_xfail_skipif_with_globals.py::test_boolean
   condition: x == 3
 ======================== 1 skipped, 1 xfailed in 0.01s =========================
@@ -1172,7 +998,7 @@ collected 1 item
 
 test_xfail_test_setup_exception.py x                                     [100%]
 
-============================== 1 xfailed in 0.01s ==============================
+============================== 1 xfailed in 0.02s ==============================
 ______________________ test_imperativeskip_on_xfail_test _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1184,7 +1010,7 @@ test_imperativeskip_on_xfail_test.py ss                                  [100%]
 
 =========================== short test summary info ============================
 SKIPPED [1] conftest.py:3: abc
-SKIPPED [1] test_imperativeskip_on_xfail_test.py:5: condition: True
+SKIPPED [1] test_imperativeskip_on_xfail_test.py:6: condition: True
 ============================== 2 skipped in 0.01s ==============================
 _______________________ TestBooleanCondition.test_skipif _______________________
 ----------------------------- Captured stdout call -----------------------------
@@ -1238,7 +1064,7 @@ conftest.py:9
     return MyItem("foo", parent)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
-======================== 1 xfailed, 1 warning in 0.07s =========================
+======================== 1 xfailed, 1 warning in 0.04s =========================
 _________________________ test_module_level_skip_error _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1262,7 +1088,7 @@ collected 0 items / 1 skipped
 
 =========================== short test summary info ============================
 SKIPPED [1] test_module_level_skip_with_allow_module_level.py:2: skip_module_level
-============================== 1 skipped in 0.00s ==============================
+============================== 1 skipped in 0.01s ==============================
 _____________________ test_invalid_skip_keyword_parameter ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1278,7 +1104,7 @@ E   TypeError: skip() got an unexpected keyword argument 'unknown'
 =========================== short test summary info ============================
 ERROR test_invalid_skip_keyword_parameter.py - TypeError: skip() got an unexp...
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.05s ===============================
+=============================== 1 error in 0.06s ===============================
 _____________________________ test_mark_xfail_item _____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1295,7 +1121,7 @@ conftest.py:14
     return MyItem("foo", parent)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
-======================== 1 xfailed, 1 warning in 0.06s =========================
+======================== 1 xfailed, 1 warning in 0.04s =========================
 ________________________ test_summary_list_after_errors ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1316,6 +1142,18 @@ test_summary_list_after_errors.py:3: AssertionError
 =========================== short test summary info ============================
 FAILED test_summary_list_after_errors.py::test_fail - assert 0
 ============================== 1 failed in 0.01s ===============================
+_____________________________ test_relpath_rootdir _____________________________
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-5.4.1.dev593+ge6e300e72, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_relpath_rootdir0/tests
+collected 1 item
+
+tests/test_1.py s                                                        [100%]
+
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_1.py:2: unconditional skip
+============================== 1 skipped in 0.00s ==============================
 =========================== short test summary info ============================
 PASSED testing/test_skipping.py::test_importorskip
 PASSED testing/test_skipping.py::TestEvaluation::test_no_marker
@@ -1334,6 +1172,8 @@ PASSED testing/test_skipping.py::TestXFail::test_xfail_xpassed
 PASSED testing/test_skipping.py::TestXFail::test_xfail_using_platform
 PASSED testing/test_skipping.py::TestXFail::test_xfail_xpassed_strict
 PASSED testing/test_skipping.py::TestXFail::test_xfail_run_anyway
+PASSED testing/test_skipping.py::TestXFail::test_xfail_run_with_skip_mark[test_input0-expected0]
+PASSED testing/test_skipping.py::TestXFail::test_xfail_run_with_skip_mark[test_input1-expected1]
 PASSED testing/test_skipping.py::TestXFail::test_xfail_evalfalse_but_fails
 PASSED testing/test_skipping.py::TestXFail::test_xfail_not_report_default
 PASSED testing/test_skipping.py::TestXFail::test_xfail_not_run_xfail_reporting
@@ -1373,6 +1213,7 @@ PASSED testing/test_skipping.py::TestSkipif::test_skipif_reporting_multiple[skip
 PASSED testing/test_skipping.py::TestSkipif::test_skipif_reporting_multiple[xfail-XPASS-xpassed]
 PASSED testing/test_skipping.py::test_skip_not_report_default
 PASSED testing/test_skipping.py::test_skipif_class
+PASSED testing/test_skipping.py::test_skipped_reasons_functional
 PASSED testing/test_skipping.py::test_skipped_folding
 PASSED testing/test_skipping.py::test_reportchars
 PASSED testing/test_skipping.py::test_reportchars_error
@@ -1392,15 +1233,11 @@ PASSED testing/test_skipping.py::test_module_level_skip_with_allow_module_level
 PASSED testing/test_skipping.py::test_invalid_skip_keyword_parameter
 PASSED testing/test_skipping.py::test_mark_xfail_item
 PASSED testing/test_skipping.py::test_summary_list_after_errors
-FAILED testing/test_skipping.py::TestXFail::test_xfail_run_with_skip_mark[test_input0-expected0]
-FAILED testing/test_skipping.py::TestXFail::test_xfail_run_with_skip_mark[test_input1-expected1]
-FAILED testing/test_skipping.py::test_skipped_reasons_functional - Failed: ma...
-FAILED testing/test_skipping.py::test_relpath_rootdir - Failed: nomatch: 'SKI...
-========================= 4 failed, 75 passed in 4.02s =========================
-ERROR conda.cli.main_run:execute(124): `conda run pytest -rA testing/test_skipping.py` failed. (See above for error)
+PASSED testing/test_skipping.py::test_relpath_rootdir
+============================== 79 passed in 4.04s ==============================
 
  
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7432] Return Code: 1 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7432] Return Code: 0 
 
->>>>> Some Tests Failed
+>>>>> All Tests Passed
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7432] Test script run successful 

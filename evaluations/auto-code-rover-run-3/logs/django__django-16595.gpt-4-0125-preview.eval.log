@@ -62,7 +62,7 @@ test_add_field_delete_field (migrations.test_optimizer.OptimizerTests.test_add_f
 RemoveField should cancel AddField ... ok
 test_add_field_rename_field (migrations.test_optimizer.OptimizerTests.test_add_field_rename_field)
 RenameField should optimize into AddField ... ok
-test_alter_alter_field (migrations.test_optimizer.OptimizerTests.test_alter_alter_field) ... ok
+test_alter_alter_field (migrations.test_optimizer.OptimizerTests.test_alter_alter_field) ... FAIL
 test_alter_alter_index_model (migrations.test_optimizer.OptimizerTests.test_alter_alter_index_model) ... ok
 test_alter_alter_owrt_model (migrations.test_optimizer.OptimizerTests.test_alter_alter_owrt_model) ... ok
 test_alter_alter_table_model (migrations.test_optimizer.OptimizerTests.test_alter_alter_table_model) ... ok
@@ -115,12 +115,39 @@ test_single (migrations.test_optimizer.OptimizerTests.test_single)
 The optimizer does nothing on a single operation, ... ok
 test_swapping_fields_names (migrations.test_optimizer.OptimizerTests.test_swapping_fields_names) ... ok
 
+======================================================================
+FAIL: test_alter_alter_field (migrations.test_optimizer.OptimizerTests.test_alter_alter_field)
 ----------------------------------------------------------------------
-Ran 38 tests in 0.031s
+Traceback (most recent call last):
+  File "/opt/django__django/tests/migrations/test_optimizer.py", line 264, in test_alter_alter_field
+    self._test_alter_alter(
+  File "/opt/django__django/tests/migrations/test_optimizer.py", line 229, in _test_alter_alter
+    self.assertOptimizesTo(
+  File "/opt/django__django/tests/migrations/test_optimizer.py", line 31, in assertOptimizesTo
+    self.assertEqual(expected, result)
+AssertionError: Lists differ: ["mig[52 chars]='name',\n    field=models.IntegerField(help_text='help'),\n)"] != ["mig[52 chars]='name',\n    field=models.CharField(help_text='help'),\n)"]
 
-OK
+First differing element 0:
+"migr[50 chars]e='name',\n    field=models.IntegerField(help_text='help'),\n)"
+"migr[50 chars]e='name',\n    field=models.CharField(help_text='help'),\n)"
+
+  ['migrations.AlterField(\n'
+   "    model_name='Foo',\n"
+   "    name='name',\n"
+-  "    field=models.IntegerField(help_text='help'),\n"
+?                    ^^^^^^
+
++  "    field=models.CharField(help_text='help'),\n"
+?                    ^^^
+
+   ')']
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.037s
+
+FAILED (failures=1)
  
-[django__django__5.0] [django__django-16595] Return Code: 0 
+[django__django__5.0] [django__django-16595] Return Code: 1 
 
->>>>> All Tests Passed
+>>>>> Some Tests Failed
 [django__django__5.0] [django__django-16595] Test script run successful 

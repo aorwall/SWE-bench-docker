@@ -13,7 +13,9 @@ HEAD is now at 4a9e5496 Improve user feedback for errors during plot compilation
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-3190_pred_try.patch 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
+Checking patch seaborn/_core/plot.py...
 Checking patch seaborn/_core/scales.py...
+Applied patch seaborn/_core/plot.py cleanly.
 Applied patch seaborn/_core/scales.py cleanly.
  
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
@@ -23,7 +25,9 @@ Applied patch seaborn/_core/scales.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
 Checking patch seaborn/_core/scales.py...
+Checking patch seaborn/_core/plot.py...
 Applied patch seaborn/_core/scales.py cleanly.
+Applied patch seaborn/_core/plot.py cleanly.
  
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Revert patch successful (pred_try) 
@@ -31,7 +35,9 @@ Applied patch seaborn/_core/scales.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-3190_pred.patch 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
+Checking patch seaborn/_core/plot.py...
 Checking patch seaborn/_core/scales.py...
+Applied patch seaborn/_core/plot.py cleanly.
 Applied patch seaborn/_core/scales.py cleanly.
  
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
@@ -58,13 +64,72 @@ Test Script: conda run -n mwaskom__seaborn__0.12 pytest --no-header -rA tests/_c
 ============================= test session starts ==============================
 collected 86 items
 
-tests/_core/test_scales.py ............................................. [ 52%]
+tests/_core/test_scales.py ........F.................................... [ 52%]
 ..........x..............................                                [100%]
 
+=================================== FAILURES ===================================
+___________________ TestContinuous.test_interval_with_bools ____________________
+
+self = <tests._core.test_scales.TestContinuous object at 0x7f1314571940>
+
+    def test_interval_with_bools(self):
+    
+        x = pd.Series([True, False, False])
+>       s = Continuous()._setup(x, IntervalProperty())
+
+tests/_core/test_scales.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Continuous(values=None, norm=None, trans=None)
+data = 0     True
+1    False
+2    False
+dtype: bool
+prop = <seaborn._core.properties.IntervalProperty object at 0x7f13145cfac0>
+axis = <seaborn._core.scales.PseudoAxis object at 0x7f1314965700>
+
+    def _setup(
+        self, data: Series, prop: Property, axis: Axis | None = None,
+    ) -> Scale:
+    
+        new = copy(self)
+        if new._tick_params is None:
+            new = new.tick()
+        if new._label_params is None:
+            new = new.label()
+    
+        forward, inverse = new._get_transform()
+    
+        mpl_scale = new._get_scale(str(data.name), forward, inverse)
+    
+        if axis is None:
+            axis = PseudoAxis(mpl_scale)
+            axis.update_units(data)
+    
+        mpl_scale.set_default_locators_and_formatters(axis)
+        new._matplotlib_scale = mpl_scale
+    
+        normalize: Optional[Callable[[ArrayLike], ArrayLike]]
+        if prop.normed:
+            if new.norm is None:
+                vmin, vmax = data.min(), data.max()
+            else:
+                vmin, vmax = new.norm
+            vmin, vmax = axis.convert_units((vmin, vmax))
+            a = forward(vmin)
+            # Check if data is boolean before performing subtraction
+            if isinstance(vmin, bool) or isinstance(vmax, bool):
+                # Handle boolean data differently to avoid subtraction
+                b = 1  # Since boolean data can be treated as 0 and 1
+            else:
+>               b = forward(vmax) - forward(vmin)
+E               TypeError: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
+
+seaborn/_core/scales.py:356: TypeError
 ================================== XFAILURES ===================================
 _________________ TestNominal.test_color_numeric_int_float_mix _________________
 
-self = <tests._core.test_scales.TestNominal object at 0x78243eeae070>
+self = <tests._core.test_scales.TestNominal object at 0x7f1314570d00>
 
     @pytest.mark.xfail(reason="Need to sort out float/int order")
     def test_color_numeric_int_float_mix(self):
@@ -89,7 +154,7 @@ obj = array([[0.12156863, 0.46666667, 0.70588235],
        [1.        , 0.49803922, 0.05490196]])
 method = 'take', args = (array([2, 3]),)
 kwds = {'axis': 0, 'mode': 'raise', 'out': None}
-bound = <built-in method take of numpy.ndarray object at 0x78243c282db0>
+bound = <built-in method take of numpy.ndarray object at 0x7f131435fd50>
 
     def _wrapfunc(obj, method, *args, **kwds):
         bound = getattr(obj, method, None)
@@ -125,7 +190,6 @@ PASSED tests/_core/test_scales.py::TestContinuous::test_interval_defaults
 PASSED tests/_core/test_scales.py::TestContinuous::test_interval_with_range
 PASSED tests/_core/test_scales.py::TestContinuous::test_interval_with_norm
 PASSED tests/_core/test_scales.py::TestContinuous::test_interval_with_range_norm_and_transform
-PASSED tests/_core/test_scales.py::TestContinuous::test_interval_with_bools
 PASSED tests/_core/test_scales.py::TestContinuous::test_color_defaults
 PASSED tests/_core/test_scales.py::TestContinuous::test_color_named_values
 PASSED tests/_core/test_scales.py::TestContinuous::test_color_tuple_values
@@ -203,10 +267,12 @@ PASSED tests/_core/test_scales.py::TestTemporal::test_tick_upto
 PASSED tests/_core/test_scales.py::TestTemporal::test_label_formatter
 PASSED tests/_core/test_scales.py::TestTemporal::test_label_concise
 XFAIL tests/_core/test_scales.py::TestNominal::test_color_numeric_int_float_mix - Need to sort out float/int order
-================== 85 passed, 1 xfailed, 48 warnings in 2.43s ==================
+FAILED tests/_core/test_scales.py::TestContinuous::test_interval_with_bools
+============= 1 failed, 84 passed, 1 xfailed, 48 warnings in 2.49s =============
+ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA tests/_core/test_scales.py` failed. (See above for error)
 
  
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 1 
 
->>>>> All Tests Passed
+>>>>> Some Tests Failed
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Test script run successful 

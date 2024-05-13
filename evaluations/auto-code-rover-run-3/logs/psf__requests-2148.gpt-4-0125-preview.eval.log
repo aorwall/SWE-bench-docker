@@ -60,8 +60,8 @@ Test Script:  pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.p
 collected 133 items
 
 test_requests.py .......................F............................F.. [ 41%]
-...........F............................................................ [ 95%]
-......                                                                   [100%]
+...........F.....FF..................................................... [ 95%]
+.F....                                                                   [100%]
 
 =============================== warnings summary ===============================
 requests/packages/urllib3/_collections.py:1
@@ -69,8 +69,8 @@ requests/packages/urllib3/_collections.py:1
   /opt/psf__requests/requests/packages/urllib3/_collections.py:1: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
     from collections import Mapping, MutableMapping
 
-requests/models.py:757
-  /opt/psf__requests/requests/models.py:757: DeprecationWarning: invalid escape sequence \*
+requests/models.py:758
+  /opt/psf__requests/requests/models.py:758: DeprecationWarning: invalid escape sequence \*
     """Returns the json-encoded content of a response, if any.
 
 test_requests.py::RequestsTestCase::test_BASICAUTH_TUPLE_HTTP_200_OK_GET
@@ -148,8 +148,6 @@ PASSED test_requests.py::RequestsTestCase::test_request_cookie_overrides_session
 PASSED test_requests.py::RequestsTestCase::test_request_cookies_not_persisted
 PASSED test_requests.py::RequestsTestCase::test_request_ok_set
 PASSED test_requests.py::RequestsTestCase::test_requests_in_history_are_not_overridden
-PASSED test_requests.py::RequestsTestCase::test_response_decode_unicode
-PASSED test_requests.py::RequestsTestCase::test_response_is_iterable
 PASSED test_requests.py::RequestsTestCase::test_session_hooks_are_overriden_by_request_hooks
 PASSED test_requests.py::RequestsTestCase::test_session_hooks_are_used_with_no_request_hooks
 PASSED test_requests.py::RequestsTestCase::test_session_pickling
@@ -204,7 +202,6 @@ PASSED test_requests.py::TestMorselToCookieExpires::test_expires_valid_str
 PASSED test_requests.py::TestMorselToCookieMaxAge::test_max_age_invalid_str
 PASSED test_requests.py::TestMorselToCookieMaxAge::test_max_age_valid_int
 PASSED test_requests.py::TestTimeout::test_stream_timeout
-PASSED test_requests.py::TestRedirects::test_requests_are_updated_each_time
 PASSED test_requests.py::test_data_argument_accepts_tuples
 PASSED test_requests.py::test_prepared_request_empty_copy
 PASSED test_requests.py::test_prepared_request_no_cookies_copy
@@ -212,7 +209,10 @@ PASSED test_requests.py::test_prepared_request_complete_copy
 FAILED test_requests.py::RequestsTestCase::test_conflicting_post_params - Typ...
 FAILED test_requests.py::RequestsTestCase::test_iter_content_handles_socket_error
 FAILED test_requests.py::RequestsTestCase::test_redirect_with_wrong_gzipped_header
-================== 3 failed, 130 passed, 4 warnings in 39.00s ==================
+FAILED test_requests.py::RequestsTestCase::test_response_decode_unicode - Nam...
+FAILED test_requests.py::RequestsTestCase::test_response_is_iterable - NameEr...
+FAILED test_requests.py::TestRedirects::test_requests_are_updated_each_time
+================== 6 failed, 127 passed, 4 warnings in 39.59s ==================
  
 [psf__requests__2.3] [psf__requests-2148] Return Code: 1 
 

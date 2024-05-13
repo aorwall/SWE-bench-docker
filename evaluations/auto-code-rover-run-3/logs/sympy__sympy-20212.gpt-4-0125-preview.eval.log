@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        6740180
-hash randomization: on (PYTHONHASHSEED=3005527951)
+random seed:        92463461
+hash randomization: on (PYTHONHASHSEED=3297816910)
 
 sympy/core/tests/test_power.py[34] 
 test_rational ok
@@ -103,7 +103,7 @@ test_power_dispatcher ok                                                  [FAIL]
 
 
 ________________________________ slowest tests _________________________________
-sympy/core/tests/test_power.py::test_nseries - Took 11.514 seconds
+sympy/core/tests/test_power.py::test_nseries - Took 10.422 seconds
 ________________________________________________________________________________
 ___________________ sympy/core/tests/test_power.py:test_zero ___________________
 Traceback (most recent call last):
@@ -111,7 +111,7 @@ Traceback (most recent call last):
     assert 0 ** -oo is zoo
 AssertionError
 
-============ tests finished: 33 passed, 1 failed, in 33.35 seconds =============
+============ tests finished: 33 passed, 1 failed, in 38.13 seconds =============
 DO *NOT* COMMIT!
 
  

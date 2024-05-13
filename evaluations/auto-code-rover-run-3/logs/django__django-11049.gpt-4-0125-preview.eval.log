@@ -15,9 +15,7 @@ HEAD is now at 17455e924e Removed executable bit from static asset xregexp.js.
 [django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11049] Std. Output:
 Checking patch django/db/models/fields/__init__.py...
-Checking patch django/forms/fields.py...
 Applied patch django/db/models/fields/__init__.py cleanly.
-Applied patch django/forms/fields.py cleanly.
  
 [django__django__3.0] [django__django-11049] Return Code: 0 
 [django__django__3.0] [django__django-11049] Apply patch successful (pred_try) 
@@ -25,9 +23,7 @@ Applied patch django/forms/fields.py cleanly.
 [django__django__3.0] [django__django-11049] Command: git apply -v -R /opt/temp_django__django-11049_pred_try.patch 
 [django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11049] Std. Output:
-Checking patch django/forms/fields.py...
 Checking patch django/db/models/fields/__init__.py...
-Applied patch django/forms/fields.py cleanly.
 Applied patch django/db/models/fields/__init__.py cleanly.
  
 [django__django__3.0] [django__django-11049] Return Code: 0 
@@ -37,9 +33,7 @@ Applied patch django/db/models/fields/__init__.py cleanly.
 [django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11049] Std. Output:
 Checking patch django/db/models/fields/__init__.py...
-Checking patch django/forms/fields.py...
 Applied patch django/db/models/fields/__init__.py cleanly.
-Applied patch django/forms/fields.py cleanly.
  
 [django__django__3.0] [django__django-11049] Return Code: 0 
 [django__django__3.0] [django__django-11049] Apply patch successful (pred) 
@@ -133,14 +127,14 @@ test_formfield (model_fields.test_durationfield.TestFormField) ... ok
 test_invalid_string (model_fields.test_durationfield.TestValidation) ... ok
 test_dumping (model_fields.test_durationfield.TestSerialization) ... ok
 test_loading (model_fields.test_durationfield.TestSerialization) ... ok
-test_exact (model_fields.test_durationfield.TestQuerying) ... ok
-test_gt (model_fields.test_durationfield.TestQuerying) ... ok
 test_create_empty (model_fields.test_durationfield.TestSaveLoad) ... ok
 test_fractional_seconds (model_fields.test_durationfield.TestSaveLoad) ... ok
 test_simple_roundtrip (model_fields.test_durationfield.TestSaveLoad) ... ok
+test_exact (model_fields.test_durationfield.TestQuerying) ... ok
+test_gt (model_fields.test_durationfield.TestQuerying) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.202s
+Ran 9 tests in 0.134s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

@@ -67,8 +67,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        27451745
-hash randomization: on (PYTHONHASHSEED=823743481)
+random seed:        79084866
+hash randomization: on (PYTHONHASHSEED=1183669741)
 
 sympy/printing/tests/test_latex.py[116] 
 test_printmethod ok
@@ -313,7 +313,7 @@ ________ sympy/printing/tests/test_latex.py:test_TensorProduct_printing ________
     warnings.warn("Using or importing the ABCs from 'collections' instead "
 DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
 
- tests finished: 105 passed, 2 expected to fail, 9 exceptions, in 2.36 seconds =
+ tests finished: 105 passed, 2 expected to fail, 9 exceptions, in 2.00 seconds =
 DO *NOT* COMMIT!
 /home/swe-bench/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
   from collections import Mapping, defaultdict

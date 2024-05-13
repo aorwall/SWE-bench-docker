@@ -95,12 +95,12 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 test_custom_test_name (backends.base.test_creation.TestDbSignatureTests) ... ok
 test_custom_test_name_with_test_prefix (backends.base.test_creation.TestDbSignatureTests) ... ok
 test_default_name (backends.base.test_creation.TestDbSignatureTests) ... ok
+test_circular_reference (backends.base.test_creation.TestDeserializeDbFromString) ... ok
 test_migrate_test_setting_false (backends.base.test_creation.TestDbCreationTests) ... ok
 test_migrate_test_setting_true (backends.base.test_creation.TestDbCreationTests) ... ok
-test_circular_reference (backends.base.test_creation.TestDeserializeDbFromString) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.161s
+Ran 6 tests in 0.152s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

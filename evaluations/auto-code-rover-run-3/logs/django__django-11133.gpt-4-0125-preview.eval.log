@@ -55,8 +55,13 @@ Testing against Django installed in '/opt/django__django/django' with up to 12 p
 Importing application httpwrappers
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
-test_response (httpwrappers.tests.FileCloseTests) ... ok
-test_streaming_response (httpwrappers.tests.FileCloseTests) ... ok
+test_json_response_custom_encoder (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_list (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_non_ascii (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_passing_arguments_to_json_dumps (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_raises_type_error_with_default_setting (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_text (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_uuid (httpwrappers.tests.JsonResponseTests) ... ok
 test_invalid_redirect_repr (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
 test_not_allowed (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
 test_not_allowed_repr (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
@@ -67,13 +72,8 @@ test_redirect (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
 test_redirect_lazy (httpwrappers.tests.HttpResponseSubclassesTests)
 Make sure HttpResponseRedirect works with lazy strings. ... ok
 test_redirect_repr (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
-test_json_response_custom_encoder (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_list (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_non_ascii (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_passing_arguments_to_json_dumps (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_raises_type_error_with_default_setting (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_text (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_uuid (httpwrappers.tests.JsonResponseTests) ... ok
+test_response (httpwrappers.tests.FileCloseTests) ... ok
+test_streaming_response (httpwrappers.tests.FileCloseTests) ... ok
 test_streaming_response (httpwrappers.tests.StreamingHttpResponseTests) ... ok
 test_cookie_edgecases (httpwrappers.tests.CookieTests) ... ok
 test_decode (httpwrappers.tests.CookieTests)
@@ -130,7 +130,7 @@ test_urlencode (httpwrappers.tests.QueryDictTests) ... ok
 test_urlencode_int (httpwrappers.tests.QueryDictTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 65 tests in 0.173s
+Ran 65 tests in 0.132s
 
 OK
  

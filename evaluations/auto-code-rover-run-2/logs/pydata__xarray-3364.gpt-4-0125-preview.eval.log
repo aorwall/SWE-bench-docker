@@ -289,7 +289,7 @@ PASSED xarray/tests/test_concat.py::TestConcatDataArray::test_concat_join_kwarg
 XFAIL xarray/tests/test_combine.py::TestNestedCombine::test_nested_concat_too_many_dims_at_once
 FAILED xarray/tests/test_combine.py::TestAutoCombineOldAPI::test_auto_combine_with_new_variables
 FAILED xarray/tests/test_concat.py::TestConcatDataset::test_concat_merge_variables_present_in_some_datasets
-============ 2 failed, 110 passed, 1 xfailed, 68 warnings in 7.89s =============
+============ 2 failed, 110 passed, 1 xfailed, 68 warnings in 7.31s =============
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider xarray/tests/test_combine.py xarray/tests/test_concat.py` failed. (See above for error)
 
  

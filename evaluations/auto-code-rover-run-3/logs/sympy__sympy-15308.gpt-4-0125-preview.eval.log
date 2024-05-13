@@ -73,8 +73,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        53102203
-hash randomization: on (PYTHONHASHSEED=1736082052)
+random seed:        77163629
+hash randomization: on (PYTHONHASHSEED=420905958)
 
 sympy/printing/tests/test_latex.py[126] 
 test_printmethod ok
@@ -201,7 +201,7 @@ test_WedgeProduct_printing ok
 test_issue_14041 ok
 test_issue_9216 ok
 test_latex_printer_tensor ok
-test_trace F
+test_trace E
 test_print_basic F                                                        [FAIL]
 
 
@@ -221,13 +221,21 @@ Traceback (most recent call last):
   File "/home/swe-bench/sympy__sympy/sympy/parsing/sympy_parser.py", line 963, in parse_expr
     code = compile(evaluateFalse(code), '<string>', 'eval')
 ValueError: Name node can't be used with 'False' constant
-
 ________________________________________________________________________________
 ________________ sympy/printing/tests/test_latex.py:test_trace _________________
 Traceback (most recent call last):
   File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 1875, in test_trace
     assert latex(trace(A)) == r"\mathrm{tr}\left (A \right )"
-AssertionError
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/trace.py", line 104, in trace
+    return Trace(expr)
+  File "/home/swe-bench/sympy__sympy/sympy/core/function.py", line 440, in __new__
+    result = super(Function, cls).__new__(cls, *args, **options)
+  File "/home/swe-bench/sympy__sympy/sympy/core/function.py", line 249, in __new__
+    evaluated = cls.eval(*args)
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/trace.py", line 99, in eval
+    return arg.trace()
+AttributeError: 'MatrixSymbol' object has no attribute 'trace'
+
 ________________________________________________________________________________
 _____________ sympy/printing/tests/test_latex.py:test_print_basic ______________
 Traceback (most recent call last):
@@ -235,8 +243,8 @@ Traceback (most recent call last):
     assert latex(unimplemented_expr(x)) == r'UnimplementedExpr\left(x\right)'
 AssertionError
 
- tests finished: 120 passed, 2 failed, 2 expected to fail, 2 exceptions, 
-in 5.34 seconds 
+ tests finished: 120 passed, 1 failed, 2 expected to fail, 3 exceptions, 
+in 4.84 seconds 
 DO *NOT* COMMIT!
 
  

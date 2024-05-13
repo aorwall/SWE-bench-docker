@@ -245,7 +245,7 @@ PASSED test_requests.py::test_prepared_request_no_cookies_copy
 PASSED test_requests.py::test_prepared_request_complete_copy
 PASSED test_requests.py::test_prepare_unicode_url
 FAILED test_requests.py::RequestsTestCase::test_conflicting_post_params - Typ...
-============ 1 failed, 142 passed, 10 warnings in 570.13s (0:09:30) ============
+============ 1 failed, 142 passed, 10 warnings in 572.61s (0:09:32) ============
  
 [psf__requests__2.4] [psf__requests-2317] Return Code: 1 
 

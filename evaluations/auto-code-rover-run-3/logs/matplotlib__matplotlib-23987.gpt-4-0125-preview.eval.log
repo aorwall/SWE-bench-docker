@@ -107,7 +107,7 @@ PASSED lib/matplotlib/tests/test_constrainedlayout.py::test_set_constrained_layo
 PASSED lib/matplotlib/tests/test_constrainedlayout.py::test_set_constrained_layout[arg2-True]
 PASSED lib/matplotlib/tests/test_constrainedlayout.py::test_set_constrained_layout[arg3-True]
 FAILED lib/matplotlib/tests/test_constrainedlayout.py::test_set_constrained_layout[False-False]
-======================== 1 failed, 43 passed in 31.28s =========================
+======================== 1 failed, 43 passed in 30.07s =========================
 
  
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23987] Return Code: 1 

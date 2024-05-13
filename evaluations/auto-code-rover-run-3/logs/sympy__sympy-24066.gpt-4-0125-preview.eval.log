@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        2850403
-hash randomization: on (PYTHONHASHSEED=1341126927)
+random seed:        56457888
+hash randomization: on (PYTHONHASHSEED=2966238884)
 
 sympy/physics/units/tests/test_quantities.py[33] 
 test_str_repr ok
@@ -93,7 +93,7 @@ test_eval_subs ok
 test_issue_14932 ok
 test_issue_14547 ok
 test_deprecated_quantity_methods ok
-test_issue_22164 E
+test_issue_22164 ok
 test_issue_22819 ok
 test_issue_20288 E
 test_issue_24062 F
@@ -102,19 +102,11 @@ test_physics_constant ok                                                  [FAIL]
 
 
 ________________________________________________________________________________
-________ sympy/physics/units/tests/test_quantities.py:test_issue_22164 _________
-Traceback (most recent call last):
-  File "/home/swe-bench/sympy__sympy/sympy/physics/units/tests/test_quantities.py", line 520, in test_issue_22164
-    SI._collect_factor_and_dimension(expr)
-  File "/home/swe-bench/sympy__sympy/sympy/physics/units/unitsystem.py", line 174, in _collect_factor_and_dimension
-    raise ValueError(f"Exponent in expression must be dimensionless, got {exp_dim}")
-ValueError: Exponent in expression must be dimensionless, got Dimension(length, L)
-________________________________________________________________________________
 ________ sympy/physics/units/tests/test_quantities.py:test_issue_20288 _________
 Traceback (most recent call last):
   File "/home/swe-bench/sympy__sympy/sympy/physics/units/tests/test_quantities.py", line 541, in test_issue_20288
     assert SI._collect_factor_and_dimension(expr) == (1 + E, Dimension(1))
-  File "/home/swe-bench/sympy__sympy/sympy/physics/units/unitsystem.py", line 181, in _collect_factor_and_dimension
+  File "/home/swe-bench/sympy__sympy/sympy/physics/units/unitsystem.py", line 182, in _collect_factor_and_dimension
     raise ValueError(
 ValueError: Dimension of "exp(u**2/v**2)" is Dimension(energy**2), but it should be Dimension(1)
 
@@ -137,8 +129,8 @@ Traceback (most recent call last):
     assert SI.get_dimension_system().is_dimensionless(dim)
 AssertionError
 
- tests finished: 27 passed, 3 failed, 1 expected to fail, 2 exceptions, 
-in 3.18 seconds 
+ tests finished: 28 passed, 3 failed, 1 expected to fail, 1 exceptions, 
+in 3.01 seconds 
 DO *NOT* COMMIT!
 
  

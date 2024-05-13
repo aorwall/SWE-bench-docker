@@ -13,8 +13,15 @@ HEAD is now at 02dc9ed68 Fix max_depth overshoot in BFS expansion of trees (#123
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-12471_pred_try.patch 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Std. Output:
+/opt/temp_scikit-learn__scikit-learn-12471_pred_try.patch:10: trailing whitespace.
+        """New implementation assuming categorical input. 
+/opt/temp_scikit-learn__scikit-learn-12471_pred_try.patch:11: trailing whitespace.
+        Note: When handling_unknown is set to 'ignore' and the input data contains unknown categories, 
+/opt/temp_scikit-learn__scikit-learn-12471_pred_try.patch:12: trailing whitespace.
+        these entries will be ignored in the output encoding. Ensure that string data is properly 
 Checking patch sklearn/preprocessing/_encoders.py...
 Applied patch sklearn/preprocessing/_encoders.py cleanly.
+warning: 3 lines add whitespace errors.
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Return Code: 0 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Apply patch successful (pred_try) 
@@ -31,8 +38,15 @@ Applied patch sklearn/preprocessing/_encoders.py cleanly.
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-12471_pred.patch 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Std. Output:
+/opt/temp_scikit-learn__scikit-learn-12471_pred.patch:10: trailing whitespace.
+        """New implementation assuming categorical input. 
+/opt/temp_scikit-learn__scikit-learn-12471_pred.patch:11: trailing whitespace.
+        Note: When handling_unknown is set to 'ignore' and the input data contains unknown categories, 
+/opt/temp_scikit-learn__scikit-learn-12471_pred.patch:12: trailing whitespace.
+        these entries will be ignored in the output encoding. Ensure that string data is properly 
 Checking patch sklearn/preprocessing/_encoders.py...
 Applied patch sklearn/preprocessing/_encoders.py cleanly.
+warning: 3 lines add whitespace errors.
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Return Code: 0 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Apply patch successful (pred) 
@@ -60,17 +74,11 @@ platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
 rootdir: /opt/scikit-learn__scikit-learn, inifile: setup.cfg
 collected 54 items
 
-sklearn/preprocessing/tests/test_encoders.py ........................... [ 50%]
-................FFFFF.FF...                                              [100%]
+sklearn/preprocessing/tests/test_encoders.py ........F.................. [ 50%]
+...........................                                              [100%]
 
 =========================== short test summary info ============================
-FAILED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[numeric]
-FAILED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[object]
-FAILED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[object]
-FAILED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[numeric]
-FAILED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[object-string-cat]
-FAILED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_missing[numeric]
-FAILED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_missing[object]
+FAILED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_handle_unknown_strings
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_sparse
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dense
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_deprecationwarnings
@@ -79,7 +87,6 @@ PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_catego
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_handle_unknown
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_not_fitted
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_no_categorical_features
-PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_handle_unknown_strings
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-int32]
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-float32]
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_dtype[int32-float64]
@@ -114,11 +121,18 @@ PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[ignore-numeric]
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_raise_missing[ignore-object]
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[mixed]
+PASSED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[numeric]
+PASSED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder[object]
+PASSED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[object]
+PASSED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[numeric]
+PASSED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_specified_categories[object-string-cat]
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_inverse
+PASSED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_missing[numeric]
+PASSED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_missing[object]
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes_pandas
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_warning
-===================== 7 failed, 47 passed in 2.50 seconds ======================
+===================== 1 failed, 53 passed in 1.82 seconds ======================
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Return Code: 1 
 

@@ -60,7 +60,7 @@ ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no
 collected 71 items
 
 lib/matplotlib/tests/test_colorbar.py .................................. [ 47%]
-...F....................s............                                    [100%]
+FFFF....................s............                                    [100%]
 
 =========================== short test summary info ============================
 PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_extension_shape[png]
@@ -97,9 +97,6 @@ PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_lognorm_extension[ma
 PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_powernorm_extension
 PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_axes_kw
 PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_log_minortick_labels
-PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_renorm
-PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_format[%4.2e]
-PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_format[{x:.2e}]
 PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_get_ticks_2
 PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_inverted_ticks
 PASSED lib/matplotlib/tests/test_colorbar.py::test_mappable_no_alpha
@@ -133,8 +130,11 @@ PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_errors[kwargs2-Value
 PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_errors[kwargs3-ValueError-invalid value for extendfrac]
 PASSED lib/matplotlib/tests/test_colorbar.py::test_colorbar_axes_parmeters
 SKIPPED [1] ../miniconda3/envs/matplotlib__matplotlib__3.7/lib/python3.11/contextlib.py:81: Cannot compare svg files because Inkscape is not installed
-FAILED lib/matplotlib/tests/test_colorbar.py::test_colorbar_scale_reset - Val...
-=================== 1 failed, 69 passed, 1 skipped in 23.55s ===================
+FAILED lib/matplotlib/tests/test_colorbar.py::test_colorbar_renorm - NameErro...
+FAILED lib/matplotlib/tests/test_colorbar.py::test_colorbar_format[%4.2e] - N...
+FAILED lib/matplotlib/tests/test_colorbar.py::test_colorbar_format[{x:.2e}]
+FAILED lib/matplotlib/tests/test_colorbar.py::test_colorbar_scale_reset - Nam...
+=================== 4 failed, 66 passed, 1 skipped in 24.53s ===================
 
  
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25498] Return Code: 1 

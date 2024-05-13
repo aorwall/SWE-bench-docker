@@ -86,71 +86,47 @@ Running migrations:
   Applying admin.0003_logentry_add_action_flag_choices... OK
   Applying sites.0001_initial... OK
   Applying sites.0002_alter_domain_unique... OK
-System check identified no issues (0 silenced).
-test_batch_same_vals (bulk_create.tests.BulkCreateTests.test_batch_same_vals) ... ok
-test_bulk_insert_expressions (bulk_create.tests.BulkCreateTests.test_bulk_insert_expressions) ... ok
-test_bulk_insert_now (bulk_create.tests.BulkCreateTests.test_bulk_insert_now) ... ok
-test_bulk_insert_nullable_fields (bulk_create.tests.BulkCreateTests.test_bulk_insert_nullable_fields) ... ok
-test_efficiency (bulk_create.tests.BulkCreateTests.test_efficiency) ... ok
-test_empty_model (bulk_create.tests.BulkCreateTests.test_empty_model) ... ok
-test_explicit_batch_size (bulk_create.tests.BulkCreateTests.test_explicit_batch_size) ... ok
-test_explicit_batch_size_efficiency (bulk_create.tests.BulkCreateTests.test_explicit_batch_size_efficiency) ... ok
-test_explicit_batch_size_respects_max_batch_size (bulk_create.tests.BulkCreateTests.test_explicit_batch_size_respects_max_batch_size) ... ok
-test_ignore_conflicts_ignore (bulk_create.tests.BulkCreateTests.test_ignore_conflicts_ignore) ... ok
-test_ignore_conflicts_value_error (bulk_create.tests.BulkCreateTests.test_ignore_conflicts_value_error) ... skipped 'Database has feature(s) supports_ignore_conflicts'
-test_ignore_update_conflicts_exclusive (bulk_create.tests.BulkCreateTests.test_ignore_update_conflicts_exclusive) ... ok
-test_invalid_batch_size_exception (bulk_create.tests.BulkCreateTests.test_invalid_batch_size_exception) ... ok
-test_large_batch (bulk_create.tests.BulkCreateTests.test_large_batch) ... ok
-test_large_batch_efficiency (bulk_create.tests.BulkCreateTests.test_large_batch_efficiency) ... ok
-test_large_batch_mixed (bulk_create.tests.BulkCreateTests.test_large_batch_mixed)
-Test inserting a large batch with objects having primary key set ... ok
-test_large_batch_mixed_efficiency (bulk_create.tests.BulkCreateTests.test_large_batch_mixed_efficiency)
-Test inserting a large batch with objects having primary key set ... ok
-test_large_single_field_batch (bulk_create.tests.BulkCreateTests.test_large_single_field_batch) ... ok
-test_long_and_short_text (bulk_create.tests.BulkCreateTests.test_long_and_short_text) ... ok
-test_long_non_ascii_text (bulk_create.tests.BulkCreateTests.test_long_non_ascii_text)
-Inserting non-ASCII values with a length in the range 2001 to 4000 ... ok
-test_multi_table_inheritance_unsupported (bulk_create.tests.BulkCreateTests.test_multi_table_inheritance_unsupported) ... ok
-test_non_auto_increment_pk (bulk_create.tests.BulkCreateTests.test_non_auto_increment_pk) ... ok
-test_non_auto_increment_pk_efficiency (bulk_create.tests.BulkCreateTests.test_non_auto_increment_pk_efficiency) ... ok
-test_nullable_fk_after_parent (bulk_create.tests.BulkCreateTests.test_nullable_fk_after_parent) ... ok
-test_nullable_fk_after_parent_bulk_create (bulk_create.tests.BulkCreateTests.test_nullable_fk_after_parent_bulk_create) ... ok
-test_proxy_inheritance_supported (bulk_create.tests.BulkCreateTests.test_proxy_inheritance_supported) ... ok
-test_set_pk_and_insert_single_item (bulk_create.tests.BulkCreateTests.test_set_pk_and_insert_single_item) ... ok
-test_set_pk_and_query_efficiency (bulk_create.tests.BulkCreateTests.test_set_pk_and_query_efficiency) ... ok
-test_set_state (bulk_create.tests.BulkCreateTests.test_set_state) ... ok
-test_set_state_with_pk_specified (bulk_create.tests.BulkCreateTests.test_set_state_with_pk_specified) ... ok
-test_simple (bulk_create.tests.BulkCreateTests.test_simple) ... ok
-test_unsaved_parent (bulk_create.tests.BulkCreateTests.test_unsaved_parent) ... ok
-test_update_conflicts_invalid_unique_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_invalid_unique_fields) ... ok
-test_update_conflicts_invalid_update_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_invalid_update_fields) ... ok
-test_update_conflicts_no_unique_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_no_unique_fields) ... skipped 'Database has feature(s) supports_update_conflicts_with_target'
-test_update_conflicts_no_update_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_no_update_fields) ... ok
-test_update_conflicts_nonexistent_update_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_nonexistent_update_fields) ... ok
-test_update_conflicts_pk_in_update_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_pk_in_update_fields) ... ok
-test_update_conflicts_two_fields_no_unique_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_two_fields_no_unique_fields) ... skipped 'Database has feature(s) supports_update_conflicts_with_target'
-test_update_conflicts_two_fields_unique_fields_both (bulk_create.tests.BulkCreateTests.test_update_conflicts_two_fields_unique_fields_both) ... ok
-test_update_conflicts_two_fields_unique_fields_first (bulk_create.tests.BulkCreateTests.test_update_conflicts_two_fields_unique_fields_first) ... ok
-test_update_conflicts_two_fields_unique_fields_second (bulk_create.tests.BulkCreateTests.test_update_conflicts_two_fields_unique_fields_second) ... ok
-test_update_conflicts_unique_field_unsupported (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_field_unsupported) ... skipped 'Database has feature(s) supports_update_conflicts_with_target'
-test_update_conflicts_unique_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_fields) ... ok
-test_update_conflicts_unique_fields_pk (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_fields_pk) ... ok
-test_update_conflicts_unique_fields_required (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_fields_required) ... ok
-test_update_conflicts_unique_fields_update_fields_db_column (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_fields_update_fields_db_column) ... ok
-test_update_conflicts_unique_two_fields_unique_fields_both (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_two_fields_unique_fields_both) ... ok
-test_update_conflicts_unique_two_fields_unique_fields_one (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_two_fields_unique_fields_one) ... ok
-test_update_conflicts_unique_two_fields_unique_no_unique_fields (bulk_create.tests.BulkCreateTests.test_update_conflicts_unique_two_fields_unique_no_unique_fields) ... skipped 'Database has feature(s) supports_update_conflicts_with_target'
-test_update_conflicts_unsupported (bulk_create.tests.BulkCreateTests.test_update_conflicts_unsupported) ... skipped 'Database has feature(s) supports_update_conflicts'
-test_zero_as_autoval (bulk_create.tests.BulkCreateTests.test_zero_as_autoval)
-Zero as id for AutoField should raise exception in MySQL, because MySQL ... skipped 'Database has feature(s) allows_auto_pk_0'
-
-----------------------------------------------------------------------
-Ran 52 tests in 0.666s
-
-OK (skipped=7)
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Traceback (most recent call last):
+  File "/opt/django__django/./tests/runtests.py", line 770, in <module>
+    failures = django_tests(
+               ^^^^^^^^^^^^^
+  File "/opt/django__django/./tests/runtests.py", line 429, in django_tests
+    failures = test_runner.run_tests(test_labels)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/django__django/django/test/runner.py", line 1037, in run_tests
+    old_config = self.setup_databases(
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/django__django/django/test/runner.py", line 939, in setup_databases
+    return _setup_databases(
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/django__django/django/test/utils.py", line 203, in setup_databases
+    connection.creation.create_test_db(
+  File "/opt/django__django/django/db/backends/base/creation.py", line 78, in create_test_db
+    call_command(
+  File "/opt/django__django/django/core/management/__init__.py", line 194, in call_command
+    return command.execute(*args, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/django__django/django/core/management/base.py", line 458, in execute
+    output = self.handle(*args, **options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/django__django/django/core/management/base.py", line 106, in wrapper
+    res = handle_func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/django__django/django/core/management/commands/migrate.py", line 383, in handle
+    emit_post_migrate_signal(
+  File "/opt/django__django/django/core/management/sql.py", line 52, in emit_post_migrate_signal
+    models.signals.post_migrate.send(
+  File "/opt/django__django/django/dispatch/dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/django__django/django/contrib/contenttypes/management/__init__.py", line 142, in create_contenttypes
+    ContentType.objects.using(using).bulk_create(cts)
+  File "/opt/django__django/django/db/models/query.py", line 817, in bulk_create
+    assert len(returned_columns) == len(objs_without_pk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
  
-[django__django__5.0] [django__django-17051] Return Code: 0 
+[django__django__5.0] [django__django-17051] Return Code: 1 
 
->>>>> All Tests Passed
+>>>>> Some Tests Failed
 [django__django__5.0] [django__django-17051] Test script run successful 

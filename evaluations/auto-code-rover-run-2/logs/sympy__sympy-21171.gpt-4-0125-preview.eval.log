@@ -55,19 +55,18 @@ Test Script: conda run -n sympy__sympy__1.8 bin/test -C --verbose sympy/printing
 [sympy__sympy__1.8] [sympy__sympy-21171] Command: conda run -n sympy__sympy__1.8 bin/test -C --verbose sympy/printing/tests/test_latex.py 
 [sympy__sympy__1.8] [sympy__sympy-21171] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.8] [sympy__sympy-21171] Std. Output:
-ERROR conda.cli.main_run:execute(124): `conda run bin/test -C --verbose sympy/printing/tests/test_latex.py` failed. (See above for error)
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.8/bin/python  (3.9.19-final-0) [CPython]
 architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        61383596
-hash randomization: on (PYTHONHASHSEED=3133350934)
+random seed:        23024657
+hash randomization: on (PYTHONHASHSEED=192710284)
 
 sympy/printing/tests/test_latex.py[156] 
 test_printmethod ok
-test_latex_basic ok
+test_latex_basic F
 test_latex_builtins ok
 test_latex_SingularityFunction F
 test_latex_cycle ok
@@ -76,11 +75,11 @@ test_latex_Float ok
 test_latex_vector_expressions ok
 test_latex_symbols ok
 test_latex_symbols_failing f
-test_latex_functions ok
+test_latex_functions F
 test_function_subclass_different_name ok
 test_hyper_printing ok
-test_latex_bessel ok
-test_latex_fresnel ok
+test_latex_bessel F
+test_latex_fresnel F
 test_latex_brackets ok
 test_latex_indexed ok
 test_latex_derivatives ok
@@ -114,19 +113,19 @@ test_latex_Contains ok
 test_latex_sum ok
 test_latex_product ok
 test_latex_limits ok
-test_latex_log ok
+test_latex_log F
 test_issue_3568 ok
 test_latex ok
 test_latex_dict ok
 test_latex_list ok
 test_latex_rational ok
 test_latex_inverse ok
-test_latex_DiracDelta ok
-test_latex_Heaviside ok
-test_latex_KroneckerDelta ok
-test_latex_LeviCivita ok
+test_latex_DiracDelta F
+test_latex_Heaviside F
+test_latex_KroneckerDelta F
+test_latex_LeviCivita F
 test_mode ok
-test_latex_mathieu ok
+test_latex_mathieu F
 test_latex_Piecewise ok
 test_latex_Matrix ok
 test_latex_matrix_with_functions ok
@@ -145,8 +144,8 @@ test_latex_Poly_order ok
 test_latex_ComplexRootOf ok
 test_latex_RootSum ok
 test_settings ok
-test_latex_numbers ok
-test_latex_euler ok
+test_latex_numbers F
+test_latex_euler F
 test_lamda ok
 test_custom_symbol_names ok
 test_matAdd ok
@@ -225,14 +224,89 @@ test_printing_latex_array_expressions ok                                  [FAIL]
 
 
 ________________________________________________________________________________
+_____________ sympy/printing/tests/test_latex.py:test_latex_basic ______________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 161, in test_latex_basic
+    assert latex(sin(x)**Rational(3, 2)) == \
+AssertionError
+________________________________________________________________________________
 ______ sympy/printing/tests/test_latex.py:test_latex_SingularityFunction _______
 Traceback (most recent call last):
   File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 217, in test_latex_SingularityFunction
     assert latex(SingularityFunction(x, 4, 5)**3) == \
 AssertionError
+________________________________________________________________________________
+___________ sympy/printing/tests/test_latex.py:test_latex_functions ____________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/testing/pytest.py", line 230, in func_wrap
+    func()
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 381, in test_latex_functions
+    assert latex(beta(x, y)**2) == r'\operatorname{B}^{2}\left(x, y\right)'
+AssertionError
+________________________________________________________________________________
+_____________ sympy/printing/tests/test_latex.py:test_latex_bessel _____________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 641, in test_latex_bessel
+    assert latex(besselj(n, z**2)**k) == r'J^{k}_{n}\left(z^{2}\right)'
+AssertionError
+________________________________________________________________________________
+____________ sympy/printing/tests/test_latex.py:test_latex_fresnel _____________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 659, in test_latex_fresnel
+    assert latex(fresnels(z)**2) == r'S^{2}\left(z\right)'
+AssertionError
+________________________________________________________________________________
+______________ sympy/printing/tests/test_latex.py:test_latex_log _______________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 1176, in test_latex_log
+    assert latex(pow(log(x), x)) == r"\log{\left(x \right)}^{x}"
+AssertionError
+________________________________________________________________________________
+___________ sympy/printing/tests/test_latex.py:test_latex_DiracDelta ___________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 1233, in test_latex_DiracDelta
+    assert latex(DiracDelta(x)**2) == r"\left(\delta\left(x\right)\right)^{2}"
+AssertionError
+________________________________________________________________________________
+___________ sympy/printing/tests/test_latex.py:test_latex_Heaviside ____________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 1243, in test_latex_Heaviside
+    assert latex(Heaviside(x)**2) == r"\left(\theta\left(x\right)\right)^{2}"
+AssertionError
+________________________________________________________________________________
+_________ sympy/printing/tests/test_latex.py:test_latex_KroneckerDelta _________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 1251, in test_latex_KroneckerDelta
+    assert latex(Pow(KroneckerDelta(x, y), 2, evaluate=False)) == \
+AssertionError
+________________________________________________________________________________
+___________ sympy/printing/tests/test_latex.py:test_latex_LeviCivita ___________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 1257, in test_latex_LeviCivita
+    assert latex(LeviCivita(x, y, z)**2) == \
+AssertionError
+________________________________________________________________________________
+____________ sympy/printing/tests/test_latex.py:test_latex_mathieu _____________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 1279, in test_latex_mathieu
+    assert latex(mathieuc(x, y, z)**2) == r"C\left(x, y, z\right)^{2}"
+AssertionError
+________________________________________________________________________________
+____________ sympy/printing/tests/test_latex.py:test_latex_numbers _____________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 1553, in test_latex_numbers
+    assert latex(catalan(n)**2) == r"C_{n}^{2}"
+AssertionError
+________________________________________________________________________________
+_____________ sympy/printing/tests/test_latex.py:test_latex_euler ______________
+Traceback (most recent call last):
+  File "/home/swe-bench/sympy__sympy/sympy/printing/tests/test_latex.py", line 1579, in test_latex_euler
+    assert latex(euler(n, x)**2) == r"E_{n}^{2}\left(x\right)"
+AssertionError
 
-== tests finished: 153 passed, 1 failed, 2 expected to fail, in 6.63 seconds ===
+== tests finished: 141 passed, 13 failed, 2 expected to fail, in 4.97 seconds ==
 DO *NOT* COMMIT!
+ERROR conda.cli.main_run:execute(124): `conda run bin/test -C --verbose sympy/printing/tests/test_latex.py` failed. (See above for error)
 
  
 [sympy__sympy__1.8] [sympy__sympy-21171] Return Code: 1 

@@ -60,13 +60,13 @@ platform linux -- Python 3.9.19, pytest-6.3.0.dev425+g634312b14, py-1.11.0, plug
 rootdir: /home/swe-bench/pytest-dev__pytest, configfile: pyproject.toml
 collected 34 items
 
-testing/test_tmpdir.py ...s............F...F.FF..........                [100%]
+testing/test_tmpdir.py ...s............F.................                [100%]
 
 =================================== FAILURES ===================================
 _____________ test_tmp_path_factory_handles_invalid_dir_characters _____________
 
-tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x7ac59deaaeb0>, _basetemp=None)
-monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7ac59defe040>
+tmp_path_factory = TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x7cda6b49e820>, _basetemp=PosixPath('/tmp/pytest-of-os;agnostic/pytest-0'))
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7cda6b69c910>
 
     def test_tmp_path_factory_handles_invalid_dir_characters(
         tmp_path_factory: TempPathFactory, monkeypatch: MonkeyPatch
@@ -75,134 +75,12 @@ monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7ac59defe040>
         # _basetemp / _given_basetemp are cached / set in parallel runs, patch them
         monkeypatch.setattr(tmp_path_factory, "_basetemp", None)
         monkeypatch.setattr(tmp_path_factory, "_given_basetemp", None)
->       p = tmp_path_factory.getbasetemp()
+        p = tmp_path_factory.getbasetemp()
+>       assert "pytest-of-unknown" in str(p)
+E       AssertionError: assert 'pytest-of-unknown' in '/tmp/pytest-of-os;agnostic/pytest-0'
+E        +  where '/tmp/pytest-of-os;agnostic/pytest-0' = str(PosixPath('/tmp/pytest-of-os;agnostic/pytest-0'))
 
-testing/test_tmpdir.py:458: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-src/_pytest/tmpdir.py:122: in getbasetemp
-    rootdir.mkdir(exist_ok=True)
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = PosixPath('/tmp/pytest-of-os/<:*?;>agnostic'), mode = 511
-parents = False, exist_ok = True
-
-    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
-        """
-        Create a new directory at this given path.
-        """
-        try:
->           self._accessor.mkdir(self, mode)
-E           FileNotFoundError: [Errno 2] No such file or directory: '/tmp/pytest-of-os/<:*?;>agnostic'
-
-../miniconda3/envs/pytest-dev__pytest__6.3/lib/python3.9/pathlib.py:1323: FileNotFoundError
-_________________________ test_mktemp[/mypath1-False] __________________________
-
-pytester = <Pytester PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp2')>
-basename = '/mypath1', is_ok = False
-
-    @pytest.mark.parametrize("basename, is_ok", testdata)
-    def test_mktemp(pytester: Pytester, basename: str, is_ok: bool) -> None:
-        mytemp = pytester.mkdir("mytemp")
-        p = pytester.makepyfile(
-            """
-            def test_abs_path(tmpdir_factory):
-                tmpdir_factory.mktemp('{}', numbered=False)
-            """.format(
-                basename
-            )
-        )
-    
-        result = pytester.runpytest(p, "--basetemp=%s" % mytemp)
-        if is_ok:
-            assert result.ret == 0
-            assert mytemp.joinpath(basename).exists()
-        else:
->           assert result.ret == 1
-E           assert <ExitCode.OK: 0> == 1
-E            +  where <ExitCode.OK: 0> = <RunResult ret=ExitCode.OK len(stdout.lines)=8 len(stderr.lines)=0 duration=0.02s>.ret
-
-/home/swe-bench/pytest-dev__pytest/testing/test_tmpdir.py:119: AssertionError
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-6.3.0.dev425+g634312b14, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_mktemp2
-collected 1 item
-
-test_mktemp.py .                                                         [100%]
-
-============================== 1 passed in 0.01s ===============================
-________________________ test_mktemp[../mypath3-False] _________________________
-
-pytester = <Pytester PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp4')>
-basename = '../mypath3', is_ok = False
-
-    @pytest.mark.parametrize("basename, is_ok", testdata)
-    def test_mktemp(pytester: Pytester, basename: str, is_ok: bool) -> None:
-        mytemp = pytester.mkdir("mytemp")
-        p = pytester.makepyfile(
-            """
-            def test_abs_path(tmpdir_factory):
-                tmpdir_factory.mktemp('{}', numbered=False)
-            """.format(
-                basename
-            )
-        )
-    
-        result = pytester.runpytest(p, "--basetemp=%s" % mytemp)
-        if is_ok:
-            assert result.ret == 0
-            assert mytemp.joinpath(basename).exists()
-        else:
->           assert result.ret == 1
-E           assert <ExitCode.OK: 0> == 1
-E            +  where <ExitCode.OK: 0> = <RunResult ret=ExitCode.OK len(stdout.lines)=8 len(stderr.lines)=0 duration=0.02s>.ret
-
-/home/swe-bench/pytest-dev__pytest/testing/test_tmpdir.py:119: AssertionError
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-6.3.0.dev425+g634312b14, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_mktemp4
-collected 1 item
-
-test_mktemp.py .                                                         [100%]
-
-============================== 1 passed in 0.01s ===============================
-_______________________ test_mktemp[../../mypath4-False] _______________________
-
-pytester = <Pytester PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp5')>
-basename = '../../mypath4', is_ok = False
-
-    @pytest.mark.parametrize("basename, is_ok", testdata)
-    def test_mktemp(pytester: Pytester, basename: str, is_ok: bool) -> None:
-        mytemp = pytester.mkdir("mytemp")
-        p = pytester.makepyfile(
-            """
-            def test_abs_path(tmpdir_factory):
-                tmpdir_factory.mktemp('{}', numbered=False)
-            """.format(
-                basename
-            )
-        )
-    
-        result = pytester.runpytest(p, "--basetemp=%s" % mytemp)
-        if is_ok:
-            assert result.ret == 0
-            assert mytemp.joinpath(basename).exists()
-        else:
->           assert result.ret == 1
-E           assert <ExitCode.OK: 0> == 1
-E            +  where <ExitCode.OK: 0> = <RunResult ret=ExitCode.OK len(stdout.lines)=8 len(stderr.lines)=0 duration=0.02s>.ret
-
-/home/swe-bench/pytest-dev__pytest/testing/test_tmpdir.py:119: AssertionError
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-6.3.0.dev425+g634312b14, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_mktemp5
-collected 1 item
-
-test_mktemp.py .                                                         [100%]
-
-============================== 1 passed in 0.00s ===============================
+testing/test_tmpdir.py:459: AssertionError
 ==================================== PASSES ====================================
 ______________________ TestNumberedDir.test_cleanup_keep _______________________
 ----------------------------- Captured stdout call -----------------------------
@@ -234,7 +112,7 @@ collected 1 item
 
 test_getbasetemp_custom_removes_old.py .                                 [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ___________________________ test_mktemp[mypath-True] ___________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -245,6 +123,44 @@ collected 1 item
 test_mktemp.py .                                                         [100%]
 
 ============================== 1 passed in 0.01s ===============================
+_________________________ test_mktemp[/mypath1-False] __________________________
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-6.3.0.dev425+g634312b14, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_mktemp2
+collected 1 item
+
+test_mktemp.py F                                                         [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_abs_path _________________________________
+
+tmpdir_factory = TempdirFactory(_tmppath_factory=TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mkte....TagTracerSub object at 0x7cda6b10e100>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp2/mytemp')))
+
+    def test_abs_path(tmpdir_factory):
+>       tmpdir_factory.mktemp('/mypath1', numbered=False)
+
+test_mktemp.py:2: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:146: in mktemp
+    return py.path.local(self._tmppath_factory.mktemp(basename, numbered).resolve())
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:93: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp2/mytemp'), _trace=<pluggy._tr...g.TagTracerSub object at 0x7cda6b10e100>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp2/mytemp'))
+basename = '/mypath1'
+
+    def _ensure_relative_to_basetemp(self, basename: str) -> str:
+        basename = os.path.normpath(basename)
+        if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+>           raise ValueError(f"{basename} is not a normalized and relative path")
+E           ValueError: /mypath1 is not a normalized and relative path
+
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:75: ValueError
+=========================== short test summary info ============================
+FAILED test_mktemp.py::test_abs_path - ValueError: /mypath1 is not a normaliz...
+============================== 1 failed in 0.03s ===============================
 _________________________ test_mktemp[./mypath1-True] __________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -255,6 +171,82 @@ collected 1 item
 test_mktemp.py .                                                         [100%]
 
 ============================== 1 passed in 0.01s ===============================
+________________________ test_mktemp[../mypath3-False] _________________________
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-6.3.0.dev425+g634312b14, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_mktemp4
+collected 1 item
+
+test_mktemp.py F                                                         [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_abs_path _________________________________
+
+tmpdir_factory = TempdirFactory(_tmppath_factory=TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mkte....TagTracerSub object at 0x7cda6b047ee0>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp4/mytemp')))
+
+    def test_abs_path(tmpdir_factory):
+>       tmpdir_factory.mktemp('../mypath3', numbered=False)
+
+test_mktemp.py:2: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:146: in mktemp
+    return py.path.local(self._tmppath_factory.mktemp(basename, numbered).resolve())
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:93: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp4/mytemp'), _trace=<pluggy._tr...g.TagTracerSub object at 0x7cda6b047ee0>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp4/mytemp'))
+basename = '../mypath3'
+
+    def _ensure_relative_to_basetemp(self, basename: str) -> str:
+        basename = os.path.normpath(basename)
+        if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+>           raise ValueError(f"{basename} is not a normalized and relative path")
+E           ValueError: ../mypath3 is not a normalized and relative path
+
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:75: ValueError
+=========================== short test summary info ============================
+FAILED test_mktemp.py::test_abs_path - ValueError: ../mypath3 is not a normal...
+============================== 1 failed in 0.03s ===============================
+_______________________ test_mktemp[../../mypath4-False] _______________________
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-6.3.0.dev425+g634312b14, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_mktemp5
+collected 1 item
+
+test_mktemp.py F                                                         [100%]
+
+=================================== FAILURES ===================================
+________________________________ test_abs_path _________________________________
+
+tmpdir_factory = TempdirFactory(_tmppath_factory=TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mkte....TagTracerSub object at 0x7cda6b039a90>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp5/mytemp')))
+
+    def test_abs_path(tmpdir_factory):
+>       tmpdir_factory.mktemp('../../mypath4', numbered=False)
+
+test_mktemp.py:2: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:146: in mktemp
+    return py.path.local(self._tmppath_factory.mktemp(basename, numbered).resolve())
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:93: in mktemp
+    basename = self._ensure_relative_to_basetemp(basename)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp5/mytemp'), _trace=<pluggy._tr...g.TagTracerSub object at 0x7cda6b039a90>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp5/mytemp'))
+basename = '../../mypath4'
+
+    def _ensure_relative_to_basetemp(self, basename: str) -> str:
+        basename = os.path.normpath(basename)
+        if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
+>           raise ValueError(f"{basename} is not a normalized and relative path")
+E           ValueError: ../../mypath4 is not a normalized and relative path
+
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:75: ValueError
+=========================== short test summary info ============================
+FAILED test_mktemp.py::test_abs_path - ValueError: ../../mypath4 is not a nor...
+============================== 1 failed in 0.03s ===============================
 ________________________ test_mktemp[mypath5/..-False] _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -267,35 +259,32 @@ test_mktemp.py F                                                         [100%]
 =================================== FAILURES ===================================
 ________________________________ test_abs_path _________________________________
 
-tmpdir_factory = TempdirFactory(_tmppath_factory=TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mkte....TagTracerSub object at 0x7ac59d740be0>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp6/mytemp')))
+tmpdir_factory = TempdirFactory(_tmppath_factory=TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mkte....TagTracerSub object at 0x7cda6af7cc70>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp6/mytemp')))
 
     def test_abs_path(tmpdir_factory):
 >       tmpdir_factory.mktemp('mypath5/..', numbered=False)
 
 test_mktemp.py:2: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:148: in mktemp
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:146: in mktemp
     return py.path.local(self._tmppath_factory.mktemp(basename, numbered).resolve())
-/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:97: in mktemp
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:93: in mktemp
     basename = self._ensure_relative_to_basetemp(basename)
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp6/mytemp'), _trace=<pluggy._tr...g.TagTracerSub object at 0x7ac59d740be0>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp6/mytemp'))
+self = TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp6/mytemp'), _trace=<pluggy._tr...g.TagTracerSub object at 0x7cda6af7cc70>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp6/mytemp'))
 basename = '.'
 
     def _ensure_relative_to_basetemp(self, basename: str) -> str:
-        import re
         basename = os.path.normpath(basename)
-        # Sanitize basename to remove illegal characters for directory names
-        basename = re.sub(r'[\\/*?:"<>|]', "", basename)
         if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
 >           raise ValueError(f"{basename} is not a normalized and relative path")
 E           ValueError: . is not a normalized and relative path
 
-/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:78: ValueError
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:75: ValueError
 =========================== short test summary info ============================
 FAILED test_mktemp.py::test_abs_path - ValueError: . is not a normalized and ...
-============================== 1 failed in 0.02s ===============================
+============================== 1 failed in 0.03s ===============================
 _____________________ test_mktemp[mypath6/../mypath6-True] _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -318,35 +307,32 @@ test_mktemp.py F                                                         [100%]
 =================================== FAILURES ===================================
 ________________________________ test_abs_path _________________________________
 
-tmpdir_factory = TempdirFactory(_tmppath_factory=TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mkte....TagTracerSub object at 0x7ac59d6e7550>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp8/mytemp')))
+tmpdir_factory = TempdirFactory(_tmppath_factory=TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mkte....TagTracerSub object at 0x7cda6aeafb80>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp8/mytemp')))
 
     def test_abs_path(tmpdir_factory):
 >       tmpdir_factory.mktemp('mypath7/../mypath7/..', numbered=False)
 
 test_mktemp.py:2: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:148: in mktemp
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:146: in mktemp
     return py.path.local(self._tmppath_factory.mktemp(basename, numbered).resolve())
-/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:97: in mktemp
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:93: in mktemp
     basename = self._ensure_relative_to_basetemp(basename)
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp8/mytemp'), _trace=<pluggy._tr...g.TagTracerSub object at 0x7ac59d6e7550>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp8/mytemp'))
+self = TempPathFactory(_given_basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp8/mytemp'), _trace=<pluggy._tr...g.TagTracerSub object at 0x7cda6aeafb80>, _basetemp=PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_mktemp8/mytemp'))
 basename = '.'
 
     def _ensure_relative_to_basetemp(self, basename: str) -> str:
-        import re
         basename = os.path.normpath(basename)
-        # Sanitize basename to remove illegal characters for directory names
-        basename = re.sub(r'[\\/*?:"<>|]', "", basename)
         if (self.getbasetemp() / basename).resolve().parent != self.getbasetemp():
 >           raise ValueError(f"{basename} is not a normalized and relative path")
 E           ValueError: . is not a normalized and relative path
 
-/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:78: ValueError
+/home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:75: ValueError
 =========================== short test summary info ============================
 FAILED test_mktemp.py::test_abs_path - ValueError: . is not a normalized and ...
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.03s ===============================
 ________________________ test_tmpdir_always_is_realpath ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -366,7 +352,7 @@ collected 1 item
 
 test_tmp_path_always_is_realpath.py .                                    [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 ___________________ test_tmpdir_too_long_on_parametrization ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -376,7 +362,7 @@ collected 1 item
 
 test_tmpdir_too_long_on_parametrization.py .                             [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 _____________________________ test_tmpdir_factory ______________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -444,7 +430,10 @@ PASSED testing/test_tmpdir.py::test_tmpdir_equals_tmp_path
 PASSED testing/test_tmpdir.py::test_tmpdir_fixture
 PASSED testing/test_tmpdir.py::TestConfigTmpdir::test_getbasetemp_custom_removes_old
 PASSED testing/test_tmpdir.py::test_mktemp[mypath-True]
+PASSED testing/test_tmpdir.py::test_mktemp[/mypath1-False]
 PASSED testing/test_tmpdir.py::test_mktemp[./mypath1-True]
+PASSED testing/test_tmpdir.py::test_mktemp[../mypath3-False]
+PASSED testing/test_tmpdir.py::test_mktemp[../../mypath4-False]
 PASSED testing/test_tmpdir.py::test_mktemp[mypath5/..-False]
 PASSED testing/test_tmpdir.py::test_mktemp[mypath6/../mypath6-True]
 PASSED testing/test_tmpdir.py::test_mktemp[mypath7/../mypath7/..-False]
@@ -457,10 +446,7 @@ PASSED testing/test_tmpdir.py::test_tmpdir_fallback_uid_not_found
 PASSED testing/test_tmpdir.py::test_basetemp_with_read_only_files
 SKIPPED [1] testing/test_tmpdir.py:239: win only
 FAILED testing/test_tmpdir.py::test_tmp_path_factory_handles_invalid_dir_characters
-FAILED testing/test_tmpdir.py::test_mktemp[/mypath1-False] - assert <ExitCode...
-FAILED testing/test_tmpdir.py::test_mktemp[../mypath3-False] - assert <ExitCo...
-FAILED testing/test_tmpdir.py::test_mktemp[../../mypath4-False] - assert <Exi...
-=================== 4 failed, 29 passed, 1 skipped in 0.71s ====================
+=================== 1 failed, 32 passed, 1 skipped in 1.54s ====================
 ERROR conda.cli.main_run:execute(124): `conda run pytest -rA testing/test_tmpdir.py` failed. (See above for error)
 
  

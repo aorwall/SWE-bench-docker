@@ -65,18 +65,18 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        93537799
-hash randomization: on (PYTHONHASHSEED=2977988099)
+random seed:        9060177
+hash randomization: on (PYTHONHASHSEED=54141506)
 
 sympy/geometry/tests/test_point.py[13] 
 test_point ok
 test_point3D ok
-test_Point2D E
+test_Point2D ok
 test_issue_9214 ok
-test_issue_11617 E
+test_issue_11617 ok
 test_transform ok
 test_concyclic_doctest_bug ok
-test_arguments E
+test_arguments ok
 test_unit ok
 test_dot ok
 test__normalize_dimension ok
@@ -85,31 +85,7 @@ test_direction_cosine ok                                                  [FAIL]
 
 
 ________________________________ slowest tests _________________________________
-sympy/geometry/tests/test_point.py::test_point - Took 10.746 seconds
-________________________________________________________________________________
-_______________ sympy/geometry/tests/test_point.py:test_Point2D ________________
-Traceback (most recent call last):
-  File "/home/swe-bench/sympy__sympy/sympy/geometry/tests/test_point.py", line 312, in test_Point2D
-    p1 = Point2D(1, 5)
-  File "/home/swe-bench/sympy__sympy/sympy/geometry/point.py", line 916, in __new__
-    with evaluate(False):
-NameError: name 'evaluate' is not defined
-________________________________________________________________________________
-_____________ sympy/geometry/tests/test_point.py:test_issue_11617 ______________
-Traceback (most recent call last):
-  File "/home/swe-bench/sympy__sympy/sympy/geometry/tests/test_point.py", line 339, in test_issue_11617
-    p2 = Point2D(2,0)
-  File "/home/swe-bench/sympy__sympy/sympy/geometry/point.py", line 916, in __new__
-    with evaluate(False):
-NameError: name 'evaluate' is not defined
-________________________________________________________________________________
-______________ sympy/geometry/tests/test_point.py:test_arguments _______________
-Traceback (most recent call last):
-  File "/home/swe-bench/sympy__sympy/sympy/geometry/tests/test_point.py", line 371, in test_arguments
-    p2d = Point2D(1,2)
-  File "/home/swe-bench/sympy__sympy/sympy/geometry/point.py", line 916, in __new__
-    with evaluate(False):
-NameError: name 'evaluate' is not defined
+sympy/geometry/tests/test_point.py::test_point - Took 10.091 seconds
 ________________________________________________________________________________
 _____________ sympy/geometry/tests/test_point.py:test_issue_22684 ______________
 Traceback (most recent call last):
@@ -119,7 +95,7 @@ Traceback (most recent call last):
     raise ValueError('Imaginary coordinates are not permitted.')
 ValueError: Imaginary coordinates are not permitted.
 
-=========== tests finished: 9 passed, 4 exceptions, in 12.82 seconds ===========
+========== tests finished: 12 passed, 1 exceptions, in 11.91 seconds ===========
 DO *NOT* COMMIT!
 
  

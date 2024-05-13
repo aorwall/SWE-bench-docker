@@ -69,7 +69,7 @@ test_get_query_string (asgi.tests.ASGITest) ... ok
 test_headers (asgi.tests.ASGITest) ... ok
 test_non_unicode_query_string (asgi.tests.ASGITest) ... ok
 test_request_lifecycle_signals_dispatched_with_thread_sensitive (asgi.tests.ASGITest) ... ok
-test_static_file_response (asgi.tests.ASGITest) ... ERROR
+test_static_file_response (asgi.tests.ASGITest) ... FAIL
 test_wrong_connection_type (asgi.tests.ASGITest) ... ok
 
 ======================================================================
@@ -88,11 +88,9 @@ Traceback (most recent call last):
     raise self._exception
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/site-packages/asgiref/sync.py", line 292, in main_wrap
     result = await self.awaitable(*args, **kwargs)
-  File "/opt/django__django/tests/staticfiles_tests/test_handlers.py", line 13, in test_get_async_response
-    handler = ASGIStaticFilesHandler(ASGIHandler())
-  File "/opt/django__django/django/contrib/staticfiles/handlers.py", line 86, in __init__
-    self.base_url = urlparse(self.get_base_url())
-AttributeError: 'ASGIStaticFilesHandler' object has no attribute 'get_base_url'
+  File "/opt/django__django/tests/staticfiles_tests/test_handlers.py", line 15, in test_get_async_response
+    response.close()
+AttributeError: 'NoneType' object has no attribute 'close'
 
 ======================================================================
 ERROR: test_get_async_response_not_found (staticfiles_tests.test_handlers.TestASGIStaticFilesHandler)
@@ -110,14 +108,12 @@ Traceback (most recent call last):
     raise self._exception
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/site-packages/asgiref/sync.py", line 292, in main_wrap
     result = await self.awaitable(*args, **kwargs)
-  File "/opt/django__django/tests/staticfiles_tests/test_handlers.py", line 20, in test_get_async_response_not_found
-    handler = ASGIStaticFilesHandler(ASGIHandler())
-  File "/opt/django__django/django/contrib/staticfiles/handlers.py", line 86, in __init__
-    self.base_url = urlparse(self.get_base_url())
-AttributeError: 'ASGIStaticFilesHandler' object has no attribute 'get_base_url'
+  File "/opt/django__django/tests/staticfiles_tests/test_handlers.py", line 22, in test_get_async_response_not_found
+    self.assertEqual(response.status_code, 404)
+AttributeError: 'NoneType' object has no attribute 'status_code'
 
 ======================================================================
-ERROR: test_static_file_response (asgi.tests.ASGITest)
+FAIL: test_static_file_response (asgi.tests.ASGITest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -136,16 +132,18 @@ Traceback (most recent call last):
     return await func(*args, **kwargs)
   File "/opt/django__django/django/test/utils.py", line 374, in inner
     return await func(*args, **kwargs)
-  File "/opt/django__django/tests/asgi/tests.py", line 99, in test_static_file_response
-    application = ASGIStaticFilesHandler(get_asgi_application())
-  File "/opt/django__django/django/contrib/staticfiles/handlers.py", line 86, in __init__
-    self.base_url = urlparse(self.get_base_url())
-AttributeError: 'ASGIStaticFilesHandler' object has no attribute 'get_base_url'
+  File "/opt/django__django/tests/asgi/tests.py", line 112, in test_static_file_response
+    self.assertEqual(response_start['status'], 200)
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 404 != 200
 
 ----------------------------------------------------------------------
-Ran 11 tests in 2.271s
+Ran 11 tests in 2.245s
 
-FAILED (errors=3)
+FAILED (failures=1, errors=2)
  
 [django__django__3.2] [django__django-12915] Return Code: 1 
 

@@ -60,7 +60,7 @@ Test Script:  pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.p
 collected 121 items
 
 test_requests.py ....................F.................................. [ 45%]
-.................................................................F       [100%]
+.........F.......................................................F       [100%]
 
 =============================== warnings summary ===============================
 requests/packages/urllib3/connectionpool.py:385
@@ -83,32 +83,32 @@ requests/models.py:741
   /opt/psf__requests/requests/models.py:741: DeprecationWarning: invalid escape sequence \*
     """Returns the json-encoded content of a response, if any.
 
-requests/sessions.py:405
-  /opt/psf__requests/requests/sessions.py:405: DeprecationWarning: invalid escape sequence \*
+requests/sessions.py:413
+  /opt/psf__requests/requests/sessions.py:413: DeprecationWarning: invalid escape sequence \*
     """Sends a GET request. Returns :class:`Response` object.
 
-requests/sessions.py:415
-  /opt/psf__requests/requests/sessions.py:415: DeprecationWarning: invalid escape sequence \*
+requests/sessions.py:423
+  /opt/psf__requests/requests/sessions.py:423: DeprecationWarning: invalid escape sequence \*
     """Sends a OPTIONS request. Returns :class:`Response` object.
 
-requests/sessions.py:425
-  /opt/psf__requests/requests/sessions.py:425: DeprecationWarning: invalid escape sequence \*
+requests/sessions.py:433
+  /opt/psf__requests/requests/sessions.py:433: DeprecationWarning: invalid escape sequence \*
     """Sends a HEAD request. Returns :class:`Response` object.
 
-requests/sessions.py:435
-  /opt/psf__requests/requests/sessions.py:435: DeprecationWarning: invalid escape sequence \*
+requests/sessions.py:443
+  /opt/psf__requests/requests/sessions.py:443: DeprecationWarning: invalid escape sequence \*
     """Sends a POST request. Returns :class:`Response` object.
 
-requests/sessions.py:445
-  /opt/psf__requests/requests/sessions.py:445: DeprecationWarning: invalid escape sequence \*
+requests/sessions.py:453
+  /opt/psf__requests/requests/sessions.py:453: DeprecationWarning: invalid escape sequence \*
     """Sends a PUT request. Returns :class:`Response` object.
 
-requests/sessions.py:455
-  /opt/psf__requests/requests/sessions.py:455: DeprecationWarning: invalid escape sequence \*
+requests/sessions.py:463
+  /opt/psf__requests/requests/sessions.py:463: DeprecationWarning: invalid escape sequence \*
     """Sends a PATCH request. Returns :class:`Response` object.
 
-requests/sessions.py:465
-  /opt/psf__requests/requests/sessions.py:465: DeprecationWarning: invalid escape sequence \*
+requests/sessions.py:473
+  /opt/psf__requests/requests/sessions.py:473: DeprecationWarning: invalid escape sequence \*
     """Sends a DELETE request. Returns :class:`Response` object.
 
 requests/sessions.py:12
@@ -184,7 +184,6 @@ PASSED test_requests.py::RequestsTestCase::test_request_and_response_are_picklea
 PASSED test_requests.py::RequestsTestCase::test_request_cookie_overrides_session_cookie
 PASSED test_requests.py::RequestsTestCase::test_request_cookies_not_persisted
 PASSED test_requests.py::RequestsTestCase::test_request_ok_set
-PASSED test_requests.py::RequestsTestCase::test_requests_in_history_are_not_overridden
 PASSED test_requests.py::RequestsTestCase::test_response_is_iterable
 PASSED test_requests.py::RequestsTestCase::test_session_hooks_are_overriden_by_request_hooks
 PASSED test_requests.py::RequestsTestCase::test_session_hooks_are_used_with_no_request_hooks
@@ -241,8 +240,9 @@ PASSED test_requests.py::TestMorselToCookieMaxAge::test_max_age_invalid_str
 PASSED test_requests.py::TestMorselToCookieMaxAge::test_max_age_valid_int
 PASSED test_requests.py::TestTimeout::test_stream_timeout
 FAILED test_requests.py::RequestsTestCase::test_conflicting_post_params - Typ...
+FAILED test_requests.py::RequestsTestCase::test_requests_in_history_are_not_overridden
 FAILED test_requests.py::TestRedirects::test_requests_are_updated_each_time
-================= 2 failed, 119 passed, 14 warnings in 32.42s ==================
+================= 3 failed, 118 passed, 14 warnings in 31.57s ==================
  
 [psf__requests__2.3] [psf__requests-1963] Return Code: 1 
 

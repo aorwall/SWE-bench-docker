@@ -18,11 +18,8 @@ HEAD is now at f35ad6411f Merge pull request #14383 from normalhuman/distributio
 [sympy__sympy__1.1] [sympy__sympy-14396] Command: git apply -v /home/swe-bench/temp_sympy__sympy-14396_pred_try.patch 
 [sympy__sympy__1.1] [sympy__sympy-14396] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-14396] Std. Output:
-/home/swe-bench/temp_sympy__sympy-14396_pred_try.patch:14: trailing whitespace.
-                
 Checking patch sympy/polys/polyoptions.py...
 Applied patch sympy/polys/polyoptions.py cleanly.
-warning: 1 line adds whitespace errors.
  
 [sympy__sympy__1.1] [sympy__sympy-14396] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-14396] Apply patch successful (pred_try) 
@@ -39,11 +36,8 @@ Applied patch sympy/polys/polyoptions.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-14396] Command: git apply -v /home/swe-bench/temp_sympy__sympy-14396_pred.patch 
 [sympy__sympy__1.1] [sympy__sympy-14396] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-14396] Std. Output:
-/home/swe-bench/temp_sympy__sympy-14396_pred.patch:14: trailing whitespace.
-                
 Checking patch sympy/polys/polyoptions.py...
 Applied patch sympy/polys/polyoptions.py cleanly.
-warning: 1 line adds whitespace errors.
  
 [sympy__sympy__1.1] [sympy__sympy-14396] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-14396] Apply patch successful (pred) 
@@ -92,11 +86,11 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        33315466
-hash randomization: on (PYTHONHASHSEED=3831420119)
+random seed:        91880597
+hash randomization: on (PYTHONHASHSEED=56492365)
 
 sympy/polys/tests/test_polyoptions.py[46] 
-test_Options_clone E
+test_Options_clone ok
 test_Expand_preprocess ok
 test_Expand_postprocess ok
 test_Gens_preprocess ok
@@ -145,23 +139,14 @@ test_Method_postprocess ok                                                [FAIL]
 
 
 ________________________________________________________________________________
-___________ sympy/polys/tests/test_polyoptions.py:test_Options_clone ___________
-  File "/home/swe-bench/sympy__sympy/sympy/polys/tests/test_polyoptions.py", line 19, in test_Options_clone
-    opt = Options((x, y, z), {'domain': 'ZZ'})
-  File "/home/swe-bench/sympy__sympy/sympy/polys/polyoptions.py", line 167, in __init__
-    preprocess_options(args)
-  File "/home/swe-bench/sympy__sympy/sympy/polys/polyoptions.py", line 153, in preprocess_options
-    self[option] = self._preprocess_domain(value)
-AttributeError: 'Options' object has no attribute '_preprocess_domain'
-________________________________________________________________________________
 _________ sympy/polys/tests/test_polyoptions.py:test_Domain_preprocess _________
   File "/home/swe-bench/sympy__sympy/sympy/polys/tests/test_polyoptions.py", line 179, in test_Domain_preprocess
     assert Domain.preprocess('R[x]') == RR[x]
-  File "/home/swe-bench/sympy__sympy/sympy/polys/polyoptions.py", line 496, in preprocess
+  File "/home/swe-bench/sympy__sympy/sympy/polys/polyoptions.py", line 490, in preprocess
     raise OptionError('expected a valid domain specification, got %s' % domain)
 sympy.polys.polyerrors.OptionError: expected a valid domain specification, got R[x]
 
-=========== tests finished: 44 passed, 2 exceptions, in 0.05 seconds ===========
+=========== tests finished: 45 passed, 1 exceptions, in 0.05 seconds ===========
 DO *NOT* COMMIT!
 
  

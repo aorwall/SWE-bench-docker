@@ -13,8 +13,13 @@ HEAD is now at 475cffd1d6 Fixed typo in docs/intro/reusable-apps.txt.
 [django__django__4.0] [django__django-14855] Command: git apply -v /opt/temp_django__django-14855_pred_try.patch 
 [django__django__4.0] [django__django-14855] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14855] Std. Output:
+/opt/temp_django__django-14855_pred_try.patch:11: trailing whitespace.
+                url_name, 
+/opt/temp_django__django-14855_pred_try.patch:12: trailing whitespace.
+                args=[quote(remote_obj.pk)], 
 Checking patch django/contrib/admin/helpers.py...
 Applied patch django/contrib/admin/helpers.py cleanly.
+warning: 2 lines add whitespace errors.
  
 [django__django__4.0] [django__django-14855] Return Code: 0 
 [django__django__4.0] [django__django-14855] Apply patch successful (pred_try) 
@@ -31,8 +36,13 @@ Applied patch django/contrib/admin/helpers.py cleanly.
 [django__django__4.0] [django__django-14855] Command: git apply -v /opt/temp_django__django-14855_pred.patch 
 [django__django__4.0] [django__django-14855] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14855] Std. Output:
+/opt/temp_django__django-14855_pred.patch:11: trailing whitespace.
+                url_name, 
+/opt/temp_django__django-14855_pred.patch:12: trailing whitespace.
+                args=[quote(remote_obj.pk)], 
 Checking patch django/contrib/admin/helpers.py...
 Applied patch django/contrib/admin/helpers.py cleanly.
+warning: 2 lines add whitespace errors.
  
 [django__django__4.0] [django__django-14855] Return Code: 0 
 [django__django__4.0] [django__django-14855] Apply patch successful (pred) 
@@ -215,16 +225,17 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_inline (admin_views.tests.AdminInheritedInlinesTest)
-Inline models which inherit from a common parent are correctly handled. ... ok
-test_form_has_multipart_enctype (admin_views.tests.AdminInlineFileUploadTest) ... ok
-test_inline_file_upload_edit_validation_error_post (admin_views.tests.AdminInlineFileUploadTest)
-Inline file uploads correctly display prior data (#10002). ... ok
 test_should_be_able_to_edit_related_objects_on_add_view (admin_views.tests.AdminCustomSaveRelatedTests) ... ok
 test_should_be_able_to_edit_related_objects_on_change_view (admin_views.tests.AdminCustomSaveRelatedTests) ... ok
 test_should_be_able_to_edit_related_objects_on_changelist_view (admin_views.tests.AdminCustomSaveRelatedTests) ... ok
-test_js_minified_only_if_debug_is_false (admin_views.tests.AdminJavaScriptTest)
-The minified versions of the JS files are only used when DEBUG is False. ... ok
+test_inline (admin_views.tests.AdminInheritedInlinesTest)
+Inline models which inherit from a common parent are correctly handled. ... ok
+test_message_debug (admin_views.tests.AdminUserMessageTest) ... ok
+test_message_error (admin_views.tests.AdminUserMessageTest) ... ok
+test_message_extra_tags (admin_views.tests.AdminUserMessageTest) ... ok
+test_message_info (admin_views.tests.AdminUserMessageTest) ... ok
+test_message_success (admin_views.tests.AdminUserMessageTest) ... ok
+test_message_warning (admin_views.tests.AdminUserMessageTest) ... ok
 test_known_url_missing_slash_redirects_login_if_not_authenticated (admin_views.tests.AdminSiteFinalCatchAllPatternTests) ... ok
 test_known_url_missing_slash_redirects_with_slash_if_not_authenticated_without_final_catch_all_view (admin_views.tests.AdminSiteFinalCatchAllPatternTests) ... ok
 test_known_url_redirects_login_if_not_authenticated (admin_views.tests.AdminSiteFinalCatchAllPatternTests) ... ok
@@ -250,46 +261,15 @@ test_unkown_url_without_trailing_slash_if_not_authenticated (admin_views.tests.A
 test_unkown_url_without_trailing_slash_if_not_authenticated_without_final_catch_all_view (admin_views.tests.AdminSiteFinalCatchAllPatternTests) ... ok
 test_url_without_trailing_slash_if_not_authenticated (admin_views.tests.AdminSiteFinalCatchAllPatternTests) ... ok
 test_url_without_trailing_slash_if_not_authenticated_without_final_catch_all_view (admin_views.tests.AdminSiteFinalCatchAllPatternTests) ... ok
+test_js_minified_only_if_debug_is_false (admin_views.tests.AdminJavaScriptTest)
+The minified versions of the JS files are only used when DEBUG is False. ... ok
+test_form_has_multipart_enctype (admin_views.tests.AdminInlineFileUploadTest) ... ok
+test_inline_file_upload_edit_validation_error_post (admin_views.tests.AdminInlineFileUploadTest)
+Inline file uploads correctly display prior data (#10002). ... ok
 test_change_form_URL_has_correct_value (admin_views.tests.AdminViewFormUrlTest)
 change_view has form_url in response.context ... ok
 test_initial_data_can_be_overridden (admin_views.tests.AdminViewFormUrlTest)
 The behavior for setting initial form data can be overridden in the ... ok
-test_change_password_template (admin_views.tests.AdminCustomTemplateTests) ... ok
-test_custom_model_admin_templates (admin_views.tests.AdminCustomTemplateTests) ... ok
-test_extended_bodyclass_change_list (admin_views.tests.AdminCustomTemplateTests)
-The admin/change_list.html' template uses block.super ... ok
-test_extended_bodyclass_template_change_form (admin_views.tests.AdminCustomTemplateTests)
-The admin/change_form.html template uses block.super in the ... ok
-test_extended_bodyclass_template_delete_confirmation (admin_views.tests.AdminCustomTemplateTests)
-The admin/delete_confirmation.html template uses ... ok
-test_extended_bodyclass_template_delete_selected_confirmation (admin_views.tests.AdminCustomTemplateTests)
-The admin/delete_selected_confirmation.html template uses ... ok
-test_extended_bodyclass_template_index (admin_views.tests.AdminCustomTemplateTests)
-The admin/index.html template uses block.super in the bodyclass block. ... ok
-test_extended_bodyclass_template_login (admin_views.tests.AdminCustomTemplateTests)
-The admin/login.html template uses block.super in the ... ok
-test_filter_with_custom_template (admin_views.tests.AdminCustomTemplateTests)
-A custom template can be used to render an admin filter. ... ok
-test_client_logout_url_can_be_used_to_login (admin_views.tests.AdminViewLogoutTests) ... ok
-test_logout (admin_views.tests.AdminViewLogoutTests) ... ok
-test_message_debug (admin_views.tests.AdminUserMessageTest) ... ok
-test_message_error (admin_views.tests.AdminUserMessageTest) ... ok
-test_message_extra_tags (admin_views.tests.AdminUserMessageTest) ... ok
-test_message_info (admin_views.tests.AdminUserMessageTest) ... ok
-test_message_success (admin_views.tests.AdminUserMessageTest) ... ok
-test_message_warning (admin_views.tests.AdminUserMessageTest) ... ok
-test_beginning_matches (admin_views.tests.AdminSearchTest) ... ok
-test_exact_matches (admin_views.tests.AdminSearchTest) ... ok
-test_no_total_count (admin_views.tests.AdminSearchTest)
-#8408 -- "Show all" should be displayed instead of the total count if ... ok
-test_pluggable_search (admin_views.tests.AdminSearchTest) ... ok
-test_reset_link (admin_views.tests.AdminSearchTest)
-Test presence of reset link in search bar ("1 result (_x total_)"). ... ok
-test_search_on_sibling_models (admin_views.tests.AdminSearchTest)
-A search that mentions sibling models ... ok
-test_search_with_spaces (admin_views.tests.AdminSearchTest) ... ok
-test_with_fk_to_field (admin_views.tests.AdminSearchTest)
-The to_field GET parameter is preserved when a search is performed. ... ok
 test_cyclic (admin_views.tests.AdminViewDeletedObjectsTest)
 Cyclic relationships should still cause each object to only be ... ok
 test_delete_view_uses_get_deleted_objects (admin_views.tests.AdminViewDeletedObjectsTest)
@@ -313,6 +293,24 @@ A POST request to delete protected objects should display the page ... ok
 test_post_delete_restricted (admin_views.tests.AdminViewDeletedObjectsTest) ... ok
 test_protected (admin_views.tests.AdminViewDeletedObjectsTest) ... ok
 test_restricted (admin_views.tests.AdminViewDeletedObjectsTest) ... ok
+test_change_password_template (admin_views.tests.AdminCustomTemplateTests) ... ok
+test_custom_model_admin_templates (admin_views.tests.AdminCustomTemplateTests) ... ok
+test_extended_bodyclass_change_list (admin_views.tests.AdminCustomTemplateTests)
+The admin/change_list.html' template uses block.super ... ok
+test_extended_bodyclass_template_change_form (admin_views.tests.AdminCustomTemplateTests)
+The admin/change_form.html template uses block.super in the ... ok
+test_extended_bodyclass_template_delete_confirmation (admin_views.tests.AdminCustomTemplateTests)
+The admin/delete_confirmation.html template uses ... ok
+test_extended_bodyclass_template_delete_selected_confirmation (admin_views.tests.AdminCustomTemplateTests)
+The admin/delete_selected_confirmation.html template uses ... ok
+test_extended_bodyclass_template_index (admin_views.tests.AdminCustomTemplateTests)
+The admin/index.html template uses block.super in the bodyclass block. ... ok
+test_extended_bodyclass_template_login (admin_views.tests.AdminCustomTemplateTests)
+The admin/login.html template uses block.super in the ... ok
+test_filter_with_custom_template (admin_views.tests.AdminCustomTemplateTests)
+A custom template can be used to render an admin filter. ... ok
+test_client_logout_url_can_be_used_to_login (admin_views.tests.AdminViewLogoutTests) ... ok
+test_logout (admin_views.tests.AdminViewLogoutTests) ... ok
 test_add_view_form_and_formsets_run_validation (admin_views.tests.AdminViewOnSiteTests)
 Issue #20522 ... ok
 test_callable (admin_views.tests.AdminViewOnSiteTests)
@@ -327,50 +325,22 @@ test_missing_get_absolute_url (admin_views.tests.AdminViewOnSiteTests)
 None is returned if model doesn't have get_absolute_url ... ok
 test_true (admin_views.tests.AdminViewOnSiteTests)
 The default behavior is followed if view_on_site is True ... ok
-test_no_standard_modeladmin_urls (admin_views.tests.AdminViewsNoUrlTest)
-Admin index views don't break when user's ModelAdmin removes standard urls ... ok
-test_unicode_delete (admin_views.tests.AdminViewUnicodeTest)
-The delete_view handles non-ASCII characters ... ok
-test_unicode_edit (admin_views.tests.AdminViewUnicodeTest)
-A test to ensure that POST on edit_view handles non-ASCII characters. ... ok
-test_char_pk_inline (admin_views.tests.AdminInlineTests)
-A model with a character PK can be saved as inlines. Regression for #10992 ... ok
-test_explicit_autofield_inline (admin_views.tests.AdminInlineTests)
-A model with an explicit autofield primary key can be saved as inlines. Regression for #8093 ... ok
-test_inherited_inline (admin_views.tests.AdminInlineTests)
-An inherited model can be saved as inlines. Regression for #11042 ... ok
-test_integer_pk_inline (admin_views.tests.AdminInlineTests)
-A model with an integer PK can be saved as inlines. Regression for #10992 ... ok
-test_ordered_inline (admin_views.tests.AdminInlineTests)
-An inline with an editable ordering fields is updated correctly. ... ok
-test_simple_inline (admin_views.tests.AdminInlineTests)
-A simple model can be saved as inlines ... ok
+test_beginning_matches (admin_views.tests.AdminSearchTest) ... ok
+test_exact_matches (admin_views.tests.AdminSearchTest) ... ok
+test_no_total_count (admin_views.tests.AdminSearchTest)
+#8408 -- "Show all" should be displayed instead of the total count if ... ok
+test_pluggable_search (admin_views.tests.AdminSearchTest) ... ok
+test_reset_link (admin_views.tests.AdminSearchTest)
+Test presence of reset link in search bar ("1 result (_x total_)"). ... ok
+test_search_on_sibling_models (admin_views.tests.AdminSearchTest)
+A search that mentions sibling models ... ok
+test_search_with_spaces (admin_views.tests.AdminSearchTest) ... ok
+test_with_fk_to_field (admin_views.tests.AdminSearchTest)
+The to_field GET parameter is preserved when a search is performed. ... ok
 test_add (admin_views.tests.AdminViewProxyModelPermissionsTests) ... ok
 test_change (admin_views.tests.AdminViewProxyModelPermissionsTests) ... ok
 test_delete (admin_views.tests.AdminViewProxyModelPermissionsTests) ... ok
 test_view (admin_views.tests.AdminViewProxyModelPermissionsTests) ... ok
-test_change_view_history_link (admin_views.tests.AdminViewStringPrimaryKeyTest)
-Object history button link should work and contain the pk value quoted. ... ok
-test_changelist_to_changeform_link (admin_views.tests.AdminViewStringPrimaryKeyTest)
-Link to the changeform of the object in changelist should use reverse() and be quoted -- #18072 ... ok
-test_deleteconfirmation_link (admin_views.tests.AdminViewStringPrimaryKeyTest)
-The link from the delete confirmation page referring back to the changeform of the object should be quoted ... ok
-test_get_change_view (admin_views.tests.AdminViewStringPrimaryKeyTest)
-Retrieving the object using urlencoded form of primary key should work ... ok
-test_get_history_view (admin_views.tests.AdminViewStringPrimaryKeyTest)
-Retrieving the history for an object using urlencoded form of primary ... ok
-test_recentactions_link (admin_views.tests.AdminViewStringPrimaryKeyTest)
-The link from the recent actions list referring to the changeform of the object should be quoted ... ok
-test_redirect_on_add_view_continue_button (admin_views.tests.AdminViewStringPrimaryKeyTest)
-As soon as an object is added using "Save and continue editing" ... ok
-test_shortcut_view_with_escaping (admin_views.tests.AdminViewStringPrimaryKeyTest)
-'View on site should' work properly with char fields ... ok
-test_url_conflicts_with_add (admin_views.tests.AdminViewStringPrimaryKeyTest)
-A model with a primary key that ends with add or is `add` should be visible ... ok
-test_url_conflicts_with_delete (admin_views.tests.AdminViewStringPrimaryKeyTest)
-A model with a primary key that ends with delete should be visible ... ok
-test_url_conflicts_with_history (admin_views.tests.AdminViewStringPrimaryKeyTest)
-A model with a primary key that ends with history should be visible ... ok
 test_add_model_modeladmin_defer_qs (admin_views.tests.AdminCustomQuerysetTest) ... ok
 test_add_model_modeladmin_only_qs (admin_views.tests.AdminCustomQuerysetTest) ... ok
 test_change_view (admin_views.tests.AdminCustomQuerysetTest) ... ok
@@ -380,42 +350,10 @@ test_edit_model_modeladmin_defer_qs (admin_views.tests.AdminCustomQuerysetTest) 
 test_edit_model_modeladmin_only_qs (admin_views.tests.AdminCustomQuerysetTest) ... ok
 test_history_view_custom_qs (admin_views.tests.AdminCustomQuerysetTest)
 Custom querysets are considered for the admin history view. ... ok
-test_app_model_in_app_index_body_class (admin_views.tests.CSSTest)
-Ensure app and model tag are correctly read by app_index template ... ok
-test_app_model_in_delete_confirmation_body_class (admin_views.tests.CSSTest)
-Ensure app and model tag are correctly read by delete_confirmation ... ok
-test_app_model_in_delete_selected_confirmation_body_class (admin_views.tests.CSSTest)
-Ensure app and model tag are correctly read by ... ok
-test_app_model_in_form_body_class (admin_views.tests.CSSTest)
-Ensure app and model tag are correctly read by change_form template ... ok
-test_app_model_in_list_body_class (admin_views.tests.CSSTest)
-Ensure app and model tag are correctly read by change_list template ... ok
-test_changelist_field_classes (admin_views.tests.CSSTest)
-Cells of the change list table should contain the field name in their class attribute ... ok
-test_field_prefix_css_classes (admin_views.tests.CSSTest)
-Fields have a CSS class name with a 'field-' prefix. ... ok
-test_index_css_classes (admin_views.tests.CSSTest)
-CSS class names are used for each app and model on the admin index ... ok
-test_custom_admin_site_app_index_view_and_template (admin_views.tests.CustomModelAdminTest) ... ok
-test_custom_admin_site_index_view_and_template (admin_views.tests.CustomModelAdminTest) ... ok
-test_custom_admin_site_login_form (admin_views.tests.CustomModelAdminTest) ... ok
-test_custom_admin_site_login_template (admin_views.tests.CustomModelAdminTest) ... ok
-test_custom_admin_site_logout_template (admin_views.tests.CustomModelAdminTest) ... ok
-test_custom_admin_site_password_change_done_template (admin_views.tests.CustomModelAdminTest) ... ok
-test_custom_admin_site_password_change_template (admin_views.tests.CustomModelAdminTest) ... ok
-test_custom_admin_site_password_change_with_extra_context (admin_views.tests.CustomModelAdminTest) ... ok
-test_custom_admin_site_view (admin_views.tests.CustomModelAdminTest) ... ok
-test_pwd_change_custom_template (admin_views.tests.CustomModelAdminTest) ... ok
-test_filters (admin_views.tests.AdminDocsTest) ... ok
-test_tags (admin_views.tests.AdminDocsTest) ... ok
-test_explicitly_provided_pk (admin_views.tests.GetFormsetsWithInlinesArgumentTest) ... ok
-test_implicitly_generated_pk (admin_views.tests.GetFormsetsWithInlinesArgumentTest) ... ok
-test_callable (admin_views.tests.InlineAdminViewOnSiteTest)
-The right link is displayed if view_on_site is a callable ... ok
-test_false (admin_views.tests.InlineAdminViewOnSiteTest)
-The 'View on site' button is not displayed if view_on_site is False ... ok
-test_true (admin_views.tests.InlineAdminViewOnSiteTest)
-The 'View on site' button is displayed if view_on_site is True ... ok
+test_unicode_delete (admin_views.tests.AdminViewUnicodeTest)
+The delete_view handles non-ASCII characters ... ok
+test_unicode_edit (admin_views.tests.AdminViewUnicodeTest)
+A test to ensure that POST on edit_view handles non-ASCII characters. ... ok
 test_add_view (admin_views.tests.AdminKeepChangeListFiltersTests) ... ok
 test_add_view_without_preserved_filters (admin_views.tests.AdminKeepChangeListFiltersTests) ... ok
 test_assert_url_equal (admin_views.tests.AdminKeepChangeListFiltersTests) ... ok
@@ -424,21 +362,8 @@ test_change_view_without_preserved_filters (admin_views.tests.AdminKeepChangeLis
 test_changelist_view (admin_views.tests.AdminKeepChangeListFiltersTests) ... ok
 test_delete_view (admin_views.tests.AdminKeepChangeListFiltersTests) ... ok
 test_url_prefix (admin_views.tests.AdminKeepChangeListFiltersTests) ... ok
-test_limit_choices_to_as_callable (admin_views.tests.LimitChoicesToInAdminTest)
-Test for ticket 2445 changes to admin. ... ok
-test_group_permission_performance (admin_views.tests.GroupAdminTest) ... ok
-test_save_button (admin_views.tests.GroupAdminTest) ... ok
-test_prepopulated_maxlength_localized (admin_views.tests.PrePopulatedTest)
-Regression test for #15938: if USE_THOUSAND_SEPARATOR is set, make sure ... ok
-test_prepopulated_off (admin_views.tests.PrePopulatedTest) ... ok
-test_prepopulated_on (admin_views.tests.PrePopulatedTest) ... ok
-test_view_only_add_form (admin_views.tests.PrePopulatedTest)
-PrePopulatedPostReadOnlyAdmin.prepopulated_fields includes 'slug' ... ok
-test_view_only_change_form (admin_views.tests.PrePopulatedTest)
-PrePopulatedPostReadOnlyAdmin.prepopulated_fields includes 'slug'. That ... ok
-test_secure_view_shows_login_if_not_logged_in (admin_views.tests.SecureViewTests) ... ok
-test_staff_member_required_decorator_works_with_argument (admin_views.tests.SecureViewTests)
-Staff_member_required decorator works with an argument ... ok
+test_no_standard_modeladmin_urls (admin_views.tests.AdminViewsNoUrlTest)
+Admin index views don't break when user's ModelAdmin removes standard urls ... ok
 test_changelist_input_html (admin_views.tests.AdminViewListEditable) ... ok
 test_custom_pk (admin_views.tests.AdminViewListEditable) ... ok
 test_inheritance (admin_views.tests.AdminViewListEditable) ... ok
@@ -460,74 +385,42 @@ test_pk_hidden_fields_with_list_display_links (admin_views.tests.AdminViewListEd
 Similarly as test_pk_hidden_fields, but when the hidden pk fields are ... ok
 test_post_messages (admin_views.tests.AdminViewListEditable) ... ok
 test_post_submission (admin_views.tests.AdminViewListEditable) ... ok
-test_add_view (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
-test_add_view_without_preserved_filters (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
-test_assert_url_equal (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
-test_change_view (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
-test_change_view_without_preserved_filters (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
-test_changelist_view (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
-test_delete_view (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
-test_url_prefix (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
-test_limit_choices_to (admin_views.tests.RawIdFieldsTest)
-Regression test for 14880 ... ok
-test_limit_choices_to_isnull_false (admin_views.tests.RawIdFieldsTest)
-Regression test for 20182 ... ok
-test_limit_choices_to_isnull_true (admin_views.tests.RawIdFieldsTest)
-Regression test for 20182 ... ok
-test_list_display_method_same_name_as_reverse_accessor (admin_views.tests.RawIdFieldsTest)
-Should be able to use a ModelAdmin method in list_display that has the ... ok
-test_GET_parent_add (admin_views.tests.TestInlineNotEditable)
-InlineModelAdmin broken? ... ok
-test_cancel_delete_confirmation (admin_views.tests.SeleniumTests)
-Cancelling the deletion of an object takes the user back one page. ... skipped 'No browsers specified.'
-test_cancel_delete_related_confirmation (admin_views.tests.SeleniumTests)
-Cancelling the deletion of an object with relations takes the user back ... skipped 'No browsers specified.'
-test_collapsible_fieldset (admin_views.tests.SeleniumTests)
-The 'collapse' class in fieldsets definition allows to ... skipped 'No browsers specified.'
-test_first_field_focus (admin_views.tests.SeleniumTests)
-JavaScript-assisted auto-focus on first usable form field. ... skipped 'No browsers specified.'
-test_inline_uuid_pk_add_with_popup (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
-test_inline_uuid_pk_delete_with_popup (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
-test_inline_uuid_pk_edit_with_popup (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
-test_inline_with_popup_cancel_delete (admin_views.tests.SeleniumTests)
-Clicking ""No, take me back" on a delete popup closes the window. ... skipped 'No browsers specified.'
-test_input_element_font (admin_views.tests.SeleniumTests)
-Browsers' default stylesheets override the font of inputs. The admin ... skipped 'No browsers specified.'
-test_list_editable_popups (admin_views.tests.SeleniumTests)
-list_editable foreign keys have add/change popups. ... skipped 'No browsers specified.'
-test_list_editable_raw_id_fields (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
-test_login_button_centered (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
-test_populate_existing_object (admin_views.tests.SeleniumTests)
-The prepopulation works for existing objects too, as long as ... skipped 'No browsers specified.'
-test_prepopulated_fields (admin_views.tests.SeleniumTests)
-The JavaScript-automated prepopulated fields work with the main form ... skipped 'No browsers specified.'
-test_search_input_filtered_page (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
-test_save_as_continue_false (admin_views.tests.SaveAsTests)
-Saving a new object using "Save as new" redirects to the changelist ... ok
-test_save_as_duplication (admin_views.tests.SaveAsTests)
-'save as' creates a new person ... ok
-test_save_as_new_with_inlines_with_validation_errors (admin_views.tests.SaveAsTests) ... ok
-test_save_as_new_with_validation_errors (admin_views.tests.SaveAsTests)
-When you click "Save as new" and have a validation error, ... ok
-test_save_as_new_with_validation_errors_with_inlines (admin_views.tests.SaveAsTests) ... ok
-test_empty (admin_views.tests.DateHierarchyTests)
-No date hierarchy links display with empty changelist. ... ok
-test_multiple_years (admin_views.tests.DateHierarchyTests)
-year-level links appear for year-spanning changelist. ... ok
-test_related_field (admin_views.tests.DateHierarchyTests) ... ok
-test_single (admin_views.tests.DateHierarchyTests)
-Single day-level date hierarchy appears for single object. ... ok
-test_within_month (admin_views.tests.DateHierarchyTests)
-day-level links appear for changelist within single month. ... ok
-test_within_year (admin_views.tests.DateHierarchyTests)
-month-level links appear for changelist within single year. ... ok
-test_custom_changelist (admin_views.tests.TestCustomChangeList)
-Validate that a custom ChangeList class can be used (#9749) ... ok
-test_lang_name_present (admin_views.tests.ValidXHTMLTests) ... ok
-test_generic_content_object_in_list_display (admin_views.tests.TestGenericRelations) ... ok
-test_all_fields_hidden (admin_views.tests.TestLabelVisibility) ... ok
-test_all_fields_visible (admin_views.tests.TestLabelVisibility) ... ok
-test_mixin (admin_views.tests.TestLabelVisibility) ... ok
+test_char_pk_inline (admin_views.tests.AdminInlineTests)
+A model with a character PK can be saved as inlines. Regression for #10992 ... ok
+test_explicit_autofield_inline (admin_views.tests.AdminInlineTests)
+A model with an explicit autofield primary key can be saved as inlines. Regression for #8093 ... ok
+test_inherited_inline (admin_views.tests.AdminInlineTests)
+An inherited model can be saved as inlines. Regression for #11042 ... ok
+test_integer_pk_inline (admin_views.tests.AdminInlineTests)
+A model with an integer PK can be saved as inlines. Regression for #10992 ... ok
+test_ordered_inline (admin_views.tests.AdminInlineTests)
+An inline with an editable ordering fields is updated correctly. ... ok
+test_simple_inline (admin_views.tests.AdminInlineTests)
+A simple model can be saved as inlines ... ok
+test_explicitly_provided_pk (admin_views.tests.GetFormsetsWithInlinesArgumentTest) ... ok
+test_implicitly_generated_pk (admin_views.tests.GetFormsetsWithInlinesArgumentTest) ... ok
+test_filters (admin_views.tests.AdminDocsTest) ... ok
+test_tags (admin_views.tests.AdminDocsTest) ... ok
+test_custom_admin_site_app_index_view_and_template (admin_views.tests.CustomModelAdminTest) ... ok
+test_custom_admin_site_index_view_and_template (admin_views.tests.CustomModelAdminTest) ... ok
+test_custom_admin_site_login_form (admin_views.tests.CustomModelAdminTest) ... ok
+test_custom_admin_site_login_template (admin_views.tests.CustomModelAdminTest) ... ok
+test_custom_admin_site_logout_template (admin_views.tests.CustomModelAdminTest) ... ok
+test_custom_admin_site_password_change_done_template (admin_views.tests.CustomModelAdminTest) ... ok
+test_custom_admin_site_password_change_template (admin_views.tests.CustomModelAdminTest) ... ok
+test_custom_admin_site_password_change_with_extra_context (admin_views.tests.CustomModelAdminTest) ... ok
+test_custom_admin_site_view (admin_views.tests.CustomModelAdminTest) ... ok
+test_pwd_change_custom_template (admin_views.tests.CustomModelAdminTest) ... ok
+test_callable (admin_views.tests.InlineAdminViewOnSiteTest)
+The right link is displayed if view_on_site is a callable ... ok
+test_false (admin_views.tests.InlineAdminViewOnSiteTest)
+The 'View on site' button is not displayed if view_on_site is False ... ok
+test_true (admin_views.tests.InlineAdminViewOnSiteTest)
+The 'View on site' button is displayed if view_on_site is True ... ok
+test_limit_choices_to_as_callable (admin_views.tests.LimitChoicesToInAdminTest)
+Test for ticket 2445 changes to admin. ... ok
+test_group_permission_performance (admin_views.tests.GroupAdminTest) ... ok
+test_save_button (admin_views.tests.GroupAdminTest) ... ok
 test_JS_i18n (admin_views.tests.NeverCacheTests)
 Check the never-cache status of the JavaScript i18n view ... ok
 test_admin_index (admin_views.tests.NeverCacheTests)
@@ -552,18 +445,123 @@ test_password_change (admin_views.tests.NeverCacheTests)
 Check the never-cache status of the password change view ... ok
 test_password_change_done (admin_views.tests.NeverCacheTests)
 Check the never-cache status of the password change done view ... ok
-test_form_url_present_in_context (admin_views.tests.UserAdminTest) ... ok
-test_password_mismatch (admin_views.tests.UserAdminTest) ... ok
-test_save_add_another_button (admin_views.tests.UserAdminTest) ... ok
-test_save_button (admin_views.tests.UserAdminTest) ... ok
-test_save_continue_editing_button (admin_views.tests.UserAdminTest) ... ok
-test_user_fk_add_popup (admin_views.tests.UserAdminTest)
-User addition through a FK popup should return the appropriate JavaScript response. ... ok
-test_user_fk_change_popup (admin_views.tests.UserAdminTest)
-User change through a FK popup should return the appropriate JavaScript response. ... ok
-test_user_fk_delete_popup (admin_views.tests.UserAdminTest)
-User deletion through a FK popup should return the appropriate JavaScript response. ... ok
-test_user_permission_performance (admin_views.tests.UserAdminTest) ... ok
+test_app_model_in_app_index_body_class (admin_views.tests.CSSTest)
+Ensure app and model tag are correctly read by app_index template ... ok
+test_app_model_in_delete_confirmation_body_class (admin_views.tests.CSSTest)
+Ensure app and model tag are correctly read by delete_confirmation ... ok
+test_app_model_in_delete_selected_confirmation_body_class (admin_views.tests.CSSTest)
+Ensure app and model tag are correctly read by ... ok
+test_app_model_in_form_body_class (admin_views.tests.CSSTest)
+Ensure app and model tag are correctly read by change_form template ... ok
+test_app_model_in_list_body_class (admin_views.tests.CSSTest)
+Ensure app and model tag are correctly read by change_list template ... ok
+test_changelist_field_classes (admin_views.tests.CSSTest)
+Cells of the change list table should contain the field name in their class attribute ... ok
+test_field_prefix_css_classes (admin_views.tests.CSSTest)
+Fields have a CSS class name with a 'field-' prefix. ... ok
+test_index_css_classes (admin_views.tests.CSSTest)
+CSS class names are used for each app and model on the admin index ... ok
+test_change_view_history_link (admin_views.tests.AdminViewStringPrimaryKeyTest)
+Object history button link should work and contain the pk value quoted. ... ok
+test_changelist_to_changeform_link (admin_views.tests.AdminViewStringPrimaryKeyTest)
+Link to the changeform of the object in changelist should use reverse() and be quoted -- #18072 ... ok
+test_deleteconfirmation_link (admin_views.tests.AdminViewStringPrimaryKeyTest)
+The link from the delete confirmation page referring back to the changeform of the object should be quoted ... ok
+test_get_change_view (admin_views.tests.AdminViewStringPrimaryKeyTest)
+Retrieving the object using urlencoded form of primary key should work ... ok
+test_get_history_view (admin_views.tests.AdminViewStringPrimaryKeyTest)
+Retrieving the history for an object using urlencoded form of primary ... ok
+test_recentactions_link (admin_views.tests.AdminViewStringPrimaryKeyTest)
+The link from the recent actions list referring to the changeform of the object should be quoted ... ok
+test_redirect_on_add_view_continue_button (admin_views.tests.AdminViewStringPrimaryKeyTest)
+As soon as an object is added using "Save and continue editing" ... ok
+test_shortcut_view_with_escaping (admin_views.tests.AdminViewStringPrimaryKeyTest)
+'View on site should' work properly with char fields ... ok
+test_url_conflicts_with_add (admin_views.tests.AdminViewStringPrimaryKeyTest)
+A model with a primary key that ends with add or is `add` should be visible ... ok
+test_url_conflicts_with_delete (admin_views.tests.AdminViewStringPrimaryKeyTest)
+A model with a primary key that ends with delete should be visible ... ok
+test_url_conflicts_with_history (admin_views.tests.AdminViewStringPrimaryKeyTest)
+A model with a primary key that ends with history should be visible ... ok
+test_prepopulated_maxlength_localized (admin_views.tests.PrePopulatedTest)
+Regression test for #15938: if USE_THOUSAND_SEPARATOR is set, make sure ... ok
+test_prepopulated_off (admin_views.tests.PrePopulatedTest) ... ok
+test_prepopulated_on (admin_views.tests.PrePopulatedTest) ... ok
+test_view_only_add_form (admin_views.tests.PrePopulatedTest)
+PrePopulatedPostReadOnlyAdmin.prepopulated_fields includes 'slug' ... ok
+test_view_only_change_form (admin_views.tests.PrePopulatedTest)
+PrePopulatedPostReadOnlyAdmin.prepopulated_fields includes 'slug'. That ... ok
+test_secure_view_shows_login_if_not_logged_in (admin_views.tests.SecureViewTests) ... ok
+test_staff_member_required_decorator_works_with_argument (admin_views.tests.SecureViewTests)
+Staff_member_required decorator works with an argument ... ok
+test_save_as_continue_false (admin_views.tests.SaveAsTests)
+Saving a new object using "Save as new" redirects to the changelist ... ok
+test_save_as_duplication (admin_views.tests.SaveAsTests)
+'save as' creates a new person ... ok
+test_save_as_new_with_inlines_with_validation_errors (admin_views.tests.SaveAsTests) ... ok
+test_save_as_new_with_validation_errors (admin_views.tests.SaveAsTests)
+When you click "Save as new" and have a validation error, ... ok
+test_save_as_new_with_validation_errors_with_inlines (admin_views.tests.SaveAsTests) ... ok
+test_generic_content_object_in_list_display (admin_views.tests.TestGenericRelations) ... ok
+test_cancel_delete_confirmation (admin_views.tests.SeleniumTests)
+Cancelling the deletion of an object takes the user back one page. ... skipped 'No browsers specified.'
+test_cancel_delete_related_confirmation (admin_views.tests.SeleniumTests)
+Cancelling the deletion of an object with relations takes the user back ... skipped 'No browsers specified.'
+test_collapsible_fieldset (admin_views.tests.SeleniumTests)
+The 'collapse' class in fieldsets definition allows to ... skipped 'No browsers specified.'
+test_first_field_focus (admin_views.tests.SeleniumTests)
+JavaScript-assisted auto-focus on first usable form field. ... skipped 'No browsers specified.'
+test_inline_uuid_pk_add_with_popup (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
+test_inline_uuid_pk_delete_with_popup (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
+test_inline_uuid_pk_edit_with_popup (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
+test_inline_with_popup_cancel_delete (admin_views.tests.SeleniumTests)
+Clicking ""No, take me back" on a delete popup closes the window. ... skipped 'No browsers specified.'
+test_input_element_font (admin_views.tests.SeleniumTests)
+Browsers' default stylesheets override the font of inputs. The admin ... skipped 'No browsers specified.'
+test_list_editable_popups (admin_views.tests.SeleniumTests)
+list_editable foreign keys have add/change popups. ... skipped 'No browsers specified.'
+test_list_editable_raw_id_fields (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
+test_login_button_centered (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
+test_populate_existing_object (admin_views.tests.SeleniumTests)
+The prepopulation works for existing objects too, as long as ... skipped 'No browsers specified.'
+test_prepopulated_fields (admin_views.tests.SeleniumTests)
+The JavaScript-automated prepopulated fields work with the main form ... skipped 'No browsers specified.'
+test_search_input_filtered_page (admin_views.tests.SeleniumTests) ... skipped 'No browsers specified.'
+test_empty (admin_views.tests.DateHierarchyTests)
+No date hierarchy links display with empty changelist. ... ok
+test_multiple_years (admin_views.tests.DateHierarchyTests)
+year-level links appear for year-spanning changelist. ... ok
+test_related_field (admin_views.tests.DateHierarchyTests) ... ok
+test_single (admin_views.tests.DateHierarchyTests)
+Single day-level date hierarchy appears for single object. ... ok
+test_within_month (admin_views.tests.DateHierarchyTests)
+day-level links appear for changelist within single month. ... ok
+test_within_year (admin_views.tests.DateHierarchyTests)
+month-level links appear for changelist within single year. ... ok
+test_custom_changelist (admin_views.tests.TestCustomChangeList)
+Validate that a custom ChangeList class can be used (#9749) ... ok
+test_add_view (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
+test_add_view_without_preserved_filters (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
+test_assert_url_equal (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
+test_change_view (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
+test_change_view_without_preserved_filters (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
+test_changelist_view (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
+test_delete_view (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
+test_url_prefix (admin_views.tests.NamespacedAdminKeepChangeListFiltersTests) ... ok
+test_limit_choices_to (admin_views.tests.RawIdFieldsTest)
+Regression test for 14880 ... ok
+test_limit_choices_to_isnull_false (admin_views.tests.RawIdFieldsTest)
+Regression test for 20182 ... ok
+test_limit_choices_to_isnull_true (admin_views.tests.RawIdFieldsTest)
+Regression test for 20182 ... ok
+test_list_display_method_same_name_as_reverse_accessor (admin_views.tests.RawIdFieldsTest)
+Should be able to use a ModelAdmin method in list_display that has the ... ok
+test_GET_parent_add (admin_views.tests.TestInlineNotEditable)
+InlineModelAdmin broken? ... ok
+test_lang_name_present (admin_views.tests.ValidXHTMLTests) ... ok
+test_all_fields_hidden (admin_views.tests.TestLabelVisibility) ... ok
+test_all_fields_visible (admin_views.tests.TestLabelVisibility) ... ok
+test_mixin (admin_views.tests.TestLabelVisibility) ... ok
 test_change_form_renders_correct_null_choice_value (admin_views.tests.ReadonlyTest)
 Regression test for #17911. ... ok
 test_correct_autoescaping (admin_views.tests.ReadonlyTest)
@@ -584,6 +582,18 @@ Can reference a reverse OneToOneField in ModelAdmin.readonly_fields. ... ok
 test_readonly_post (admin_views.tests.ReadonlyTest) ... ok
 test_readonly_text_field (admin_views.tests.ReadonlyTest) ... ok
 test_user_password_change_limited_queryset (admin_views.tests.ReadonlyTest) ... ok
+test_form_url_present_in_context (admin_views.tests.UserAdminTest) ... ok
+test_password_mismatch (admin_views.tests.UserAdminTest) ... ok
+test_save_add_another_button (admin_views.tests.UserAdminTest) ... ok
+test_save_button (admin_views.tests.UserAdminTest) ... ok
+test_save_continue_editing_button (admin_views.tests.UserAdminTest) ... ok
+test_user_fk_add_popup (admin_views.tests.UserAdminTest)
+User addition through a FK popup should return the appropriate JavaScript response. ... ok
+test_user_fk_change_popup (admin_views.tests.UserAdminTest)
+User change through a FK popup should return the appropriate JavaScript response. ... ok
+test_user_fk_delete_popup (admin_views.tests.UserAdminTest)
+User deletion through a FK popup should return the appropriate JavaScript response. ... ok
+test_user_permission_performance (admin_views.tests.UserAdminTest) ... ok
 test_add_view (admin_views.tests.AdminViewPermissionsTest)
 Test add view restricts access and actually adds items. ... ok
 test_add_view_with_view_only_inlines (admin_views.tests.AdminViewPermissionsTest)
@@ -741,7 +751,7 @@ If you leave off the trailing slash, app should redirect and add it. ... ok
 test_view_subtitle_per_object (admin_views.tests.AdminViewBasicTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 345 tests in 45.802s
+Ran 345 tests in 36.670s
 
 OK (skipped=15)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

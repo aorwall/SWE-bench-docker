@@ -13,20 +13,8 @@ HEAD is now at 4c288bc9 Merge pull request #4998 from pallets/deprecate-locked_c
 [pallets__flask__2.3] [pallets__flask-4992] Command: git apply -v /home/swe-bench/temp_pallets__flask-4992_pred_try.patch 
 [pallets__flask__2.3] [pallets__flask-4992] Subprocess args: {"cwd": "/home/swe-bench/pallets__flask", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pallets__flask__2.3] [pallets__flask-4992] Std. Output:
-/home/swe-bench/temp_pallets__flask-4992_pred_try.patch:59: trailing whitespace.
-    
-/home/swe-bench/temp_pallets__flask-4992_pred_try.patch:61: trailing whitespace.
-    
-/home/swe-bench/temp_pallets__flask-4992_pred_try.patch:64: trailing whitespace.
-    
-/home/swe-bench/temp_pallets__flask-4992_pred_try.patch:67: trailing whitespace.
-    
-/home/swe-bench/temp_pallets__flask-4992_pred_try.patch:77: trailing whitespace.
-    
 Checking patch src/flask/config.py...
 Applied patch src/flask/config.py cleanly.
-warning: squelched 3 whitespace errors
-warning: 8 lines add whitespace errors.
  
 [pallets__flask__2.3] [pallets__flask-4992] Return Code: 0 
 [pallets__flask__2.3] [pallets__flask-4992] Apply patch successful (pred_try) 
@@ -43,20 +31,8 @@ Applied patch src/flask/config.py cleanly.
 [pallets__flask__2.3] [pallets__flask-4992] Command: git apply -v /home/swe-bench/temp_pallets__flask-4992_pred.patch 
 [pallets__flask__2.3] [pallets__flask-4992] Subprocess args: {"cwd": "/home/swe-bench/pallets__flask", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pallets__flask__2.3] [pallets__flask-4992] Std. Output:
-/home/swe-bench/temp_pallets__flask-4992_pred.patch:59: trailing whitespace.
-    
-/home/swe-bench/temp_pallets__flask-4992_pred.patch:61: trailing whitespace.
-    
-/home/swe-bench/temp_pallets__flask-4992_pred.patch:64: trailing whitespace.
-    
-/home/swe-bench/temp_pallets__flask-4992_pred.patch:67: trailing whitespace.
-    
-/home/swe-bench/temp_pallets__flask-4992_pred.patch:77: trailing whitespace.
-    
 Checking patch src/flask/config.py...
 Applied patch src/flask/config.py cleanly.
-warning: squelched 3 whitespace errors
-warning: 8 lines add whitespace errors.
  
 [pallets__flask__2.3] [pallets__flask-4992] Return Code: 0 
 [pallets__flask__2.3] [pallets__flask-4992] Apply patch successful (pred) 
@@ -107,7 +83,7 @@ PASSED tests/test_config.py::test_from_pyfile_weird_encoding[utf-8]
 PASSED tests/test_config.py::test_from_pyfile_weird_encoding[iso-8859-15]
 PASSED tests/test_config.py::test_from_pyfile_weird_encoding[latin-1]
 FAILED tests/test_config.py::test_config_from_file_toml - TypeError: Config.f...
-========================= 1 failed, 18 passed in 0.14s =========================
+========================= 1 failed, 18 passed in 0.16s =========================
 
  
 [pallets__flask__2.3] [pallets__flask-4992] Return Code: 1 

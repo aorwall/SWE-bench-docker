@@ -14,8 +14,13 @@ HEAD is now at a59de6e89e Fixed #31675 -- Added warning to ExceptionReporter whe
 [django__django__3.2] [django__django-13033] Command: git apply -v /opt/temp_django__django-13033_pred_try.patch 
 [django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13033] Std. Output:
+/opt/temp_django__django-13033_pred_try.patch:13: trailing whitespace.
+        
+/opt/temp_django__django-13033_pred_try.patch:22: trailing whitespace.
+        
 Checking patch django/db/models/query.py...
 Applied patch django/db/models/query.py cleanly.
+warning: 2 lines add whitespace errors.
  
 [django__django__3.2] [django__django-13033] Return Code: 0 
 [django__django__3.2] [django__django-13033] Apply patch successful (pred_try) 
@@ -32,8 +37,13 @@ Applied patch django/db/models/query.py cleanly.
 [django__django__3.2] [django__django-13033] Command: git apply -v /opt/temp_django__django-13033_pred.patch 
 [django__django__3.2] [django__django-13033] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13033] Std. Output:
+/opt/temp_django__django-13033_pred.patch:13: trailing whitespace.
+        
+/opt/temp_django__django-13033_pred.patch:22: trailing whitespace.
+        
 Checking patch django/db/models/query.py...
 Applied patch django/db/models/query.py cleanly.
+warning: 2 lines add whitespace errors.
  
 [django__django__3.2] [django__django-13033] Return Code: 0 
 [django__django__3.2] [django__django-13033] Apply patch successful (pred) 
@@ -73,7 +83,7 @@ test_order_by_nulls_last (ordering.tests.OrderingTests) ... ERROR
 test_order_by_override (ordering.tests.OrderingTests) ... ok
 test_order_by_pk (ordering.tests.OrderingTests) ... ok
 test_order_by_ptr_field_with_default_ordering_by_expression (ordering.tests.OrderingTests) ... ok
-test_order_by_self_referential_fk (ordering.tests.OrderingTests) ... FAIL
+test_order_by_self_referential_fk (ordering.tests.OrderingTests) ... ERROR
 test_orders_nulls_first_on_filtered_subquery (ordering.tests.OrderingTests) ... ERROR
 test_random_ordering (ordering.tests.OrderingTests) ... ok
 test_related_ordering_duplicate_table_reference (ordering.tests.OrderingTests) ... ok
@@ -91,8 +101,8 @@ Traceback (most recent call last):
     qs = Article.objects.order_by(Value('1', output_field=CharField()), '-headline')
   File "/opt/django__django/django/db/models/manager.py", line 85, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/opt/django__django/django/db/models/query.py", line 1139, in order_by
-    if "__" in field_name and field_name.split("__")[0] == field_name.split("__")[-1]:
+  File "/opt/django__django/django/db/models/query.py", line 1137, in order_by
+    if "__" in field_name and field_name.endswith("_id"):
 TypeError: argument of type 'Value' is not iterable
 
 ======================================================================
@@ -103,8 +113,8 @@ Traceback (most recent call last):
     Article.objects.order_by(Value('1')),
   File "/opt/django__django/django/db/models/manager.py", line 85, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/opt/django__django/django/db/models/query.py", line 1139, in order_by
-    if "__" in field_name and field_name.split("__")[0] == field_name.split("__")[-1]:
+  File "/opt/django__django/django/db/models/query.py", line 1137, in order_by
+    if "__" in field_name and field_name.endswith("_id"):
 TypeError: argument of type 'Value' is not iterable
 
 ======================================================================
@@ -115,8 +125,8 @@ Traceback (most recent call last):
     Article.objects.order_by(F('headline')), [
   File "/opt/django__django/django/db/models/manager.py", line 85, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/opt/django__django/django/db/models/query.py", line 1139, in order_by
-    if "__" in field_name and field_name.split("__")[0] == field_name.split("__")[-1]:
+  File "/opt/django__django/django/db/models/query.py", line 1137, in order_by
+    if "__" in field_name and field_name.endswith("_id"):
 TypeError: argument of type 'F' is not iterable
 
 ======================================================================
@@ -127,8 +137,8 @@ Traceback (most recent call last):
     qs = Article.objects.order_by(F('headline').asc(), F('headline').desc())
   File "/opt/django__django/django/db/models/manager.py", line 85, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/opt/django__django/django/db/models/query.py", line 1139, in order_by
-    if "__" in field_name and field_name.split("__")[0] == field_name.split("__")[-1]:
+  File "/opt/django__django/django/db/models/query.py", line 1137, in order_by
+    if "__" in field_name and field_name.endswith("_id"):
 TypeError: argument of type 'OrderBy' is not iterable
 
 ======================================================================
@@ -139,8 +149,8 @@ Traceback (most recent call last):
     Article.objects.order_by(F("author").asc(nulls_first=True), 'headline'),
   File "/opt/django__django/django/db/models/manager.py", line 85, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/opt/django__django/django/db/models/query.py", line 1139, in order_by
-    if "__" in field_name and field_name.split("__")[0] == field_name.split("__")[-1]:
+  File "/opt/django__django/django/db/models/query.py", line 1137, in order_by
+    if "__" in field_name and field_name.endswith("_id"):
 TypeError: argument of type 'OrderBy' is not iterable
 
 ======================================================================
@@ -151,9 +161,19 @@ Traceback (most recent call last):
     Article.objects.order_by(F("author").desc(nulls_last=True), 'headline'),
   File "/opt/django__django/django/db/models/manager.py", line 85, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/opt/django__django/django/db/models/query.py", line 1139, in order_by
-    if "__" in field_name and field_name.split("__")[0] == field_name.split("__")[-1]:
+  File "/opt/django__django/django/db/models/query.py", line 1137, in order_by
+    if "__" in field_name and field_name.endswith("_id"):
 TypeError: argument of type 'OrderBy' is not iterable
+
+======================================================================
+ERROR: test_order_by_self_referential_fk (ordering.tests.OrderingTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/opt/django__django/tests/ordering/tests.py", line 357, in test_order_by_self_referential_fk
+    Article.objects.filter(author__isnull=False).order_by('author__editor_id'),
+  File "/opt/django__django/django/db/models/query.py", line 1139, in order_by
+    if parts[-2] == parts[-3]:  # Indicates a self-reference
+IndexError: list index out of range
 
 ======================================================================
 ERROR: test_orders_nulls_first_on_filtered_subquery (ordering.tests.OrderingTests)
@@ -161,8 +181,8 @@ ERROR: test_orders_nulls_first_on_filtered_subquery (ordering.tests.OrderingTest
 Traceback (most recent call last):
   File "/opt/django__django/tests/ordering/tests.py", line 160, in test_orders_nulls_first_on_filtered_subquery
     F('last_date').asc(nulls_first=True)
-  File "/opt/django__django/django/db/models/query.py", line 1139, in order_by
-    if "__" in field_name and field_name.split("__")[0] == field_name.split("__")[-1]:
+  File "/opt/django__django/django/db/models/query.py", line 1137, in order_by
+    if "__" in field_name and field_name.endswith("_id"):
 TypeError: argument of type 'OrderBy' is not iterable
 
 ======================================================================
@@ -173,35 +193,14 @@ Traceback (most recent call last):
     qs1 = Article.objects.order_by(F('headline').asc())
   File "/opt/django__django/django/db/models/manager.py", line 85, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
-  File "/opt/django__django/django/db/models/query.py", line 1139, in order_by
-    if "__" in field_name and field_name.split("__")[0] == field_name.split("__")[-1]:
+  File "/opt/django__django/django/db/models/query.py", line 1137, in order_by
+    if "__" in field_name and field_name.endswith("_id"):
 TypeError: argument of type 'OrderBy' is not iterable
 
-======================================================================
-FAIL: test_order_by_self_referential_fk (ordering.tests.OrderingTests)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/opt/django__django/tests/ordering/tests.py", line 359, in test_order_by_self_referential_fk
-    attrgetter('headline'),
-  File "/opt/django__django/django/test/testcases.py", line 1054, in assertQuerysetEqual
-    return self.assertEqual(list(items), values, msg=msg)
-AssertionError: Lists differ: ['Article 2', 'Article 1'] != ['Article 1', 'Article 2']
+Ran 27 tests in 0.131s
 
-First differing element 0:
-'Article 2'
-'Article 1'
-
-- ['Article 2', 'Article 1']
-?           ^            ^
-
-+ ['Article 1', 'Article 2']
-?           ^            ^
-
-
-----------------------------------------------------------------------
-Ran 27 tests in 0.160s
-
-FAILED (failures=1, errors=8)
+FAILED (errors=9)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application ordering

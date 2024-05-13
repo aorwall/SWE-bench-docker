@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        91489832
-hash randomization: on (PYTHONHASHSEED=3223551718)
+random seed:        41850477
+hash randomization: on (PYTHONHASHSEED=2126770968)
 
 sympy/physics/vector/tests/test_point.py[14] 
 test_point_v1pt_theorys ok
@@ -130,7 +130,7 @@ Traceback (most recent call last):
     assert P.vel(N) == (u + q1.diff(t)) * N.x + q2.diff(t) * B.y - q2 * q.diff(t) * B.z
 AssertionError
 
-====== tests finished: 7 passed, 5 failed, 2 exceptions, in 1.22 seconds =======
+====== tests finished: 7 passed, 5 failed, 2 exceptions, in 2.10 seconds =======
 DO *NOT* COMMIT!
 
  

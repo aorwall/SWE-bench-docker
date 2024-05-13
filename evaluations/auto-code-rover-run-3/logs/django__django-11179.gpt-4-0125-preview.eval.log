@@ -133,33 +133,21 @@ test_instance_update (delete.tests.DeletionTests) ... ok
 test_large_delete (delete.tests.DeletionTests) ... ok
 test_large_delete_related (delete.tests.DeletionTests) ... ok
 test_m2m (delete.tests.DeletionTests) ... ok
-test_model_delete_returns_num_rows (delete.tests.DeletionTests) ... ERROR
+test_model_delete_returns_num_rows (delete.tests.DeletionTests) ... ok
 test_proxied_model_duplicate_queries (delete.tests.DeletionTests) ... ok
 test_queryset_delete_returns_num_rows (delete.tests.DeletionTests) ... ok
 test_relational_post_delete_signals_happen_before_parent_object (delete.tests.DeletionTests) ... ok
 
-======================================================================
-ERROR: test_model_delete_returns_num_rows (delete.tests.DeletionTests)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
-    yield
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 605, in run
-    testMethod()
-  File "/opt/django__django/tests/delete/tests.py", line 424, in test_model_delete_returns_num_rows
-    deleted, deleted_objs = r.delete()
-TypeError: 'NoneType' object is not iterable
+Ran 42 tests in 0.748s
 
-----------------------------------------------------------------------
-Ran 42 tests in 1.453s
-
-FAILED (errors=1, skipped=1)
+OK (skipped=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
  
-[django__django__3.0] [django__django-11179] Return Code: 1 
+[django__django__3.0] [django__django-11179] Return Code: 0 
 
->>>>> Some Tests Failed
+>>>>> All Tests Passed
 [django__django__3.0] [django__django-11179] Test script run successful 

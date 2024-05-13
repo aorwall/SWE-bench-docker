@@ -178,7 +178,7 @@ E       assert 0
 test_log_cli_level_log_level_interaction.py:9: AssertionError
 ------------------------------ Captured log call -------------------------------
 ERROR    root:test_log_cli_level_log_level_interaction.py:8 error text going to logger
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.03 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 INFO     root:test_log_cli_level_log_level_interaction.py:6 info text going to logger
 WARNING  root:test_log_cli_level_log_level_interaction.py:7 warning text going to logger
@@ -221,7 +221,7 @@ test_teardown_logging.py .E                                              [100%]
 ==================================== ERRORS ====================================
 ________________________ ERROR at teardown of test_foo _________________________
 
-function = <function test_foo at 0x71c7de6c3670>
+function = <function test_foo at 0x7653b2668670>
 
     def teardown_function(function):
         logger.info('text going to logger from teardown')
@@ -233,7 +233,7 @@ test_teardown_logging.py:10: AssertionError
 INFO     test_teardown_logging:test_teardown_logging.py:6 text going to logger from call
 ---------------------------- Captured log teardown -----------------------------
 INFO     test_teardown_logging:test_teardown_logging.py:9 text going to logger from teardown
-====================== 1 passed, 1 error in 0.05 seconds =======================
+====================== 1 passed, 1 error in 0.03 seconds =======================
 ------------------------------ Captured log call -------------------------------
 INFO     test_teardown_logging:test_teardown_logging.py:6 text going to logger from call
 INFO     test_teardown_logging:test_teardown_logging.py:9 text going to logger from teardown
@@ -261,8 +261,8 @@ test_disable_log_capturing.py:10: AssertionError
 text going to stdout
 ----------------------------- Captured stderr call -----------------------------
 text going to stderr
-=========================== 1 failed in 0.04 seconds ===========================
-<_pytest.pytester.LineMatcher object at 0x71c7de61f730>
+=========================== 1 failed in 0.03 seconds ===========================
+<_pytest.pytester.LineMatcher object at 0x7653b25c4760>
 ------------------------------ Captured log call -------------------------------
 WARNING  test_disable_log_capturing:test_disable_log_capturing.py:8 catch me if you can!
 ________________________ test_disable_log_capturing_ini ________________________
@@ -290,7 +290,7 @@ text going to stdout
 ----------------------------- Captured stderr call -----------------------------
 text going to stderr
 =========================== 1 failed in 0.03 seconds ===========================
-<_pytest.pytester.LineMatcher object at 0x71c7de64b280>
+<_pytest.pytester.LineMatcher object at 0x7653b25f02e0>
 ------------------------------ Captured log call -------------------------------
 WARNING  test_disable_log_capturing_ini:test_disable_log_capturing_ini.py:8 catch me if you can!
 _____________________ test_log_cli_enabled_disabled[True] ______________________
@@ -334,7 +334,7 @@ test_log_cli_default_level.py::test_log_cli
 WARNING  catchlog:test_log_cli_default_level.py:7 WARNING message will be shown
 PASSED                                                                   [100%]
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 WARNING  catchlog:test_log_cli_default_level.py:7 WARNING message will be shown
 __________________ test_log_cli_default_level_multiple_tests ___________________
@@ -393,7 +393,7 @@ WARNING  root:test_log_cli_default_level_sections.py:8 log message from teardown
 WARNING  root:conftest.py:8 <<<<< END <<<<<<<
 
 
-=========================== 2 passed in 0.03 seconds ===========================
+=========================== 2 passed in 0.02 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 WARNING  root:conftest.py:5 >>>>> START >>>>>
 WARNING  root:test_log_cli_default_level_sections.py:6 log message from setup of test_log_1
@@ -430,7 +430,7 @@ WARNING  root:test_live_logs_unknown_sections.py:8 log message from teardown of 
 WARNING  root:conftest.py:11 <<<<< END <<<<<<<
 
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 WARNING  root:conftest.py:5 Unknown Section!
 WARNING  root:conftest.py:8 >>>>> START >>>>>
@@ -462,7 +462,7 @@ WARNING  root:conftest.py:8 <<<<< END <<<<<<<
 WARNING  root:conftest.py:9 <<<<< END <<<<<<<
 
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 WARNING  root:conftest.py:5 >>>>> START >>>>>
 WARNING  root:test_sections_single_new_line_after_test_outcome.py:6 log message from setup of test_log_1
@@ -528,7 +528,7 @@ collected 1 item
 
 test_log_cli_auto_enable.py .                                            [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 INFO     root:test_log_cli_auto_enable.py:4 log message from test_log_1 not to be shown
 WARNING  root:test_log_cli_auto_enable.py:5 log message from test_log_1
@@ -553,7 +553,7 @@ collected 1 item
 
 test_log_cli_auto_enable.py .                                            [100%]
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 INFO     root:test_log_cli_auto_enable.py:4 log message from test_log_1 not to be shown
 WARNING  root:test_log_cli_auto_enable.py:5 log message from test_log_1
@@ -570,7 +570,7 @@ test_log_cli_auto_enable.py::test_log_1
 WARNING  root:test_log_cli_auto_enable.py:5 log message from test_log_1
 PASSED                                                                   [100%]
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 INFO     root:test_log_cli_auto_enable.py:4 log message from test_log_1 not to be shown
 WARNING  root:test_log_cli_auto_enable.py:5 log message from test_log_1
@@ -609,7 +609,7 @@ collected 1 item
 
 test_log_level_not_changed_by_default.py .
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 ______________________________ test_log_file_ini _______________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -620,7 +620,7 @@ collected 1 item
 test_log_file_ini.py PASSED
 .
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 WARNING  catchlog:test_log_file_ini.py:7 This log message will be shown
 ___________________________ test_log_file_ini_level ____________________________
@@ -633,7 +633,7 @@ collected 1 item
 test_log_file_ini_level.py PASSED
 .
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 INFO     catchlog:test_log_file_ini_level.py:7 This log message will be shown
 ____________________________ test_log_file_unicode _____________________________
@@ -645,7 +645,7 @@ collected 1 item
 
 test_log_file_unicode.py .                                               [100%]
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 INFO     catchlog:test_log_file_unicode.py:6 Normal message
 INFO     catchlog:test_log_file_unicode.py:7 ├
@@ -673,7 +673,7 @@ collected 1 item
 
 test_collection_logging_to_file.py .                                     [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 INFO     root:test_collection_logging_to_file.py:3 Normal message
 INFO     root:test_collection_logging_to_file.py:7 info message in test_simple
@@ -692,7 +692,7 @@ INFO     root:conftest.py:4 runtestloop
 ---------------------------- live log sessionfinish ----------------------------
 INFO     root:conftest.py:10 sessionfinish
 
-========================= no tests ran in 0.01 seconds =========================
+========================= no tests ran in 0.00 seconds =========================
 ------------------------------ Captured log call -------------------------------
 INFO     root:conftest.py:7 sessionstart
 INFO     root:conftest.py:4 runtestloop
@@ -714,7 +714,7 @@ INFO     conftest:conftest.py:5 logreport
 INFO     conftest:conftest.py:5 logreport
 
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ------------------------------ Captured log call -------------------------------
 INFO     conftest:conftest.py:5 logreport
 INFO     conftest:conftest.py:5 logreport
@@ -781,7 +781,7 @@ PASSED testing/logging/test_reporting.py::test_collection_logging_to_file
 PASSED testing/logging/test_reporting.py::test_log_in_hooks
 PASSED testing/logging/test_reporting.py::test_log_in_runtest_logreport
 PASSED testing/logging/test_reporting.py::test_log_set_path
-========================== 34 passed in 2.59 seconds ===========================
+========================== 34 passed in 2.29 seconds ===========================
 
  
 [pytest-dev__pytest__4.4] [pytest-dev__pytest-5227] Return Code: 0 

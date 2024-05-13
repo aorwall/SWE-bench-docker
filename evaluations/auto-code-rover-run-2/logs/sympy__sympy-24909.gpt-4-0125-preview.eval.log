@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        22189791
-hash randomization: on (PYTHONHASHSEED=1046357641)
+random seed:        23103047
+hash randomization: on (PYTHONHASHSEED=3002866314)
 
 sympy/physics/units/tests/test_prefixes.py[4] 
 test_prefix_operations E
@@ -77,11 +77,11 @@ ______ sympy/physics/units/tests/test_prefixes.py:test_prefix_operations _______
 Traceback (most recent call last):
   File "/home/swe-bench/sympy__sympy/sympy/physics/units/tests/test_prefixes.py", line 21, in test_prefix_operations
     assert m * W == W / 1000
-  File "/home/swe-bench/sympy__sympy/sympy/physics/units/prefixes.py", line 96, in __mul__
-    new_quantity = other.__class__(other.name, other.abbrev, other.scale * self.scale_factor, other.dimension)
-AttributeError: 'Quantity' object has no attribute 'scale'
+  File "/home/swe-bench/sympy__sympy/sympy/physics/units/prefixes.py", line 98, in __mul__
+    return other.with_scale_factor(self.scale_factor)
+AttributeError: 'Quantity' object has no attribute 'with_scale_factor'
 
-=========== tests finished: 3 passed, 1 exceptions, in 0.44 seconds ============
+=========== tests finished: 3 passed, 1 exceptions, in 0.64 seconds ============
 DO *NOT* COMMIT!
 
  

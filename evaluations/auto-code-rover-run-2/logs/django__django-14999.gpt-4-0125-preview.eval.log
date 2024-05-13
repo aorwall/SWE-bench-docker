@@ -14,7 +14,9 @@ HEAD is now at a754b82dac Refs #33182 -- Adjusted custom admin theming example t
 [django__django__4.1] [django__django-14999] Command: git apply -v /opt/temp_django__django-14999_pred_try.patch 
 [django__django__4.1] [django__django-14999] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-14999] Std. Output:
+Checking patch django/db/backends/sqlite3/schema.py...
 Checking patch django/db/migrations/operations/models.py...
+Applied patch django/db/backends/sqlite3/schema.py cleanly.
 Applied patch django/db/migrations/operations/models.py cleanly.
  
 [django__django__4.1] [django__django-14999] Return Code: 0 
@@ -24,7 +26,9 @@ Applied patch django/db/migrations/operations/models.py cleanly.
 [django__django__4.1] [django__django-14999] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-14999] Std. Output:
 Checking patch django/db/migrations/operations/models.py...
+Checking patch django/db/backends/sqlite3/schema.py...
 Applied patch django/db/migrations/operations/models.py cleanly.
+Applied patch django/db/backends/sqlite3/schema.py cleanly.
  
 [django__django__4.1] [django__django-14999] Return Code: 0 
 [django__django__4.1] [django__django-14999] Revert patch successful (pred_try) 
@@ -32,7 +36,9 @@ Applied patch django/db/migrations/operations/models.py cleanly.
 [django__django__4.1] [django__django-14999] Command: git apply -v /opt/temp_django__django-14999_pred.patch 
 [django__django__4.1] [django__django-14999] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-14999] Std. Output:
+Checking patch django/db/backends/sqlite3/schema.py...
 Checking patch django/db/migrations/operations/models.py...
+Applied patch django/db/backends/sqlite3/schema.py cleanly.
 Applied patch django/db/migrations/operations/models.py cleanly.
  
 [django__django__4.1] [django__django-14999] Return Code: 0 
@@ -316,7 +322,7 @@ Captured queries were:
 5. CREATE INDEX "test_rmwdbtn_pony_rider_id_7b3213e0" ON "test_rmwdbtn_pony" ("rider_id")
 
 ----------------------------------------------------------------------
-Ran 120 tests in 7.093s
+Ran 120 tests in 5.420s
 
 FAILED (failures=1, skipped=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

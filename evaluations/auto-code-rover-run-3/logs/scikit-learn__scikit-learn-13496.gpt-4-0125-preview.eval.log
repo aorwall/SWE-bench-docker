@@ -13,11 +13,8 @@ HEAD is now at 3aefc834d MNT CI Fix for sphinx-gallery 0.3.1 + 404 errors on Deb
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13496] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-13496_pred_try.patch 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13496] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13496] Std. Output:
-/opt/temp_scikit-learn__scikit-learn-13496_pred_try.patch:60: trailing whitespace.
-    
 Checking patch sklearn/ensemble/iforest.py...
 Applied patch sklearn/ensemble/iforest.py cleanly.
-warning: 1 line adds whitespace errors.
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13496] Return Code: 0 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13496] Apply patch successful (pred_try) 
@@ -34,11 +31,8 @@ Applied patch sklearn/ensemble/iforest.py cleanly.
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13496] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-13496_pred.patch 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13496] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13496] Std. Output:
-/opt/temp_scikit-learn__scikit-learn-13496_pred.patch:60: trailing whitespace.
-    
 Checking patch sklearn/ensemble/iforest.py...
 Applied patch sklearn/ensemble/iforest.py cleanly.
-warning: 1 line adds whitespace errors.
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13496] Return Code: 0 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13496] Apply patch successful (pred) 
@@ -89,7 +83,7 @@ PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works1[0.25-3
 PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works1[auto-2]
 PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works2[0.25-3]
 PASSED sklearn/ensemble/tests/test_iforest.py::test_iforest_chunks_works2[auto-2]
-========================== 20 passed in 15.40 seconds ==========================
+========================== 20 passed in 13.28 seconds ==========================
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13496] Return Code: 0 
 

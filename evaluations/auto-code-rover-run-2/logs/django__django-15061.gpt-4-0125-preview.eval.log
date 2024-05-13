@@ -117,30 +117,6 @@ test_not_lt (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL sp
 test_overlap (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
 test_startswith (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
 test_startswith_chaining (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_all_fields (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
-test_empty (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
-test_model_set_on_base_field (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
-test_null (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
-test_range_object (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
-test_range_object_boundaries (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
-test_range_object_boundaries_range_with_default_bounds (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
-test_tuple (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
-test_tuple_range_with_default_bounds (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
-test_unbounded (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
-test_continuous_range_fields_default_bounds (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
-test_deconstruct (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
-test_discrete_range_fields_unsupported_default_bounds (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
-test_get_field_display (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
-test_invalid_default_bounds (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
-test_dumping (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
-test_loading (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
-test_serialize_range_with_null (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
-test_choices_tuple_list (postgres_tests.test_ranges.TestChecks) ... skipped 'PostgreSQL specific tests'
-test_max (postgres_tests.test_ranges.TestValidators) ... skipped 'PostgreSQL specific tests'
-test_min (postgres_tests.test_ranges.TestValidators) ... skipped 'PostgreSQL specific tests'
-test_range_widget (postgres_tests.test_ranges.TestWidget) ... skipped 'PostgreSQL specific tests'
-test_date_range_contains (postgres_tests.test_ranges.TestRangeContainsLookup) ... skipped 'PostgreSQL specific tests'
-test_datetime_range_contains (postgres_tests.test_ranges.TestRangeContainsLookup) ... skipped 'PostgreSQL specific tests'
 test_auto_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
 test_big_auto_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
 test_biginteger_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
@@ -154,6 +130,30 @@ test_float_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped
 test_integer_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
 test_small_auto_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
 test_small_integer_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_continuous_range_fields_default_bounds (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
+test_deconstruct (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
+test_discrete_range_fields_unsupported_default_bounds (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
+test_get_field_display (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
+test_invalid_default_bounds (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
+test_dumping (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
+test_loading (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
+test_serialize_range_with_null (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
+test_range_widget (postgres_tests.test_ranges.TestWidget) ... skipped 'PostgreSQL specific tests'
+test_choices_tuple_list (postgres_tests.test_ranges.TestChecks) ... skipped 'PostgreSQL specific tests'
+test_max (postgres_tests.test_ranges.TestValidators) ... skipped 'PostgreSQL specific tests'
+test_min (postgres_tests.test_ranges.TestValidators) ... skipped 'PostgreSQL specific tests'
+test_date_range_contains (postgres_tests.test_ranges.TestRangeContainsLookup) ... skipped 'PostgreSQL specific tests'
+test_datetime_range_contains (postgres_tests.test_ranges.TestRangeContainsLookup) ... skipped 'PostgreSQL specific tests'
+test_all_fields (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
+test_empty (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
+test_model_set_on_base_field (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
+test_null (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
+test_range_object (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
+test_range_object_boundaries (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
+test_range_object_boundaries_range_with_default_bounds (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
+test_tuple (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
+test_tuple_range_with_default_bounds (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
+test_unbounded (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
 test_date_has_changed_first (postgres_tests.test_ranges.TestFormField) ... skipped 'PostgreSQL specific tests'
 test_date_has_changed_last (postgres_tests.test_ranges.TestFormField) ... skipped 'PostgreSQL specific tests'
 test_date_incorrect_data_type (postgres_tests.test_ranges.TestFormField) ... skipped 'PostgreSQL specific tests'
@@ -239,11 +239,11 @@ Traceback (most recent call last):
     raise self.failureException(msg)
 AssertionError: <tr>
 <th>
-<label for="id_datetime">
+<label for="id_datetime_0">
 Datetime:
 </label>
 </th><td>
-<input id="id_d [truncated]... != <tr>
+<input id="id [truncated]... != <tr>
 <th>
 <label>
 Datetime:
@@ -252,7 +252,7 @@ Datetime:
 <input id="id_datetime_0" name="d [truncated]...
   <tr>
   <th>
-- <label for="id_datetime">
+- <label for="id_datetime_0">
 + <label>
   Datetime:
   </label>
@@ -279,11 +279,11 @@ Traceback (most recent call last):
     raise self.failureException(msg)
 AssertionError: <tr>
 <th>
-<label for="id_field1">
+<label for="id_field1_0">
 Field1:
 </label>
 </th><td>
-<input id="id_field [truncated]... != <tr>
+<input id="id_fie [truncated]... != <tr>
 <th>
 <label>
 Field1:
@@ -292,7 +292,7 @@ Field1:
 <input id="id_field1_0" name="field [truncated]...
   <tr>
   <th>
-- <label for="id_field1">
+- <label for="id_field1_0">
 + <label>
   Field1:
   </label>
@@ -329,11 +329,11 @@ Traceback (most recent call last):
     raise self.failureException(msg)
 AssertionError: <tr>
 <th>
-<label for="id_field1">
+<label for="id_field1_0">
 Field1:
 </label>
 </th><td>
-<input id="id_field [truncated]... != <tr>
+<input id="id_fie [truncated]... != <tr>
 <th>
 <label>
 Field1:
@@ -342,7 +342,7 @@ Field1:
 <input id="id_field1_0" name="field [truncated]...
   <tr>
   <th>
-- <label for="id_field1">
+- <label for="id_field1_0">
 + <label>
   Field1:
   </label>
@@ -362,7 +362,7 @@ Field1:
   </tr>
 
 ----------------------------------------------------------------------
-Ran 116 tests in 0.627s
+Ran 116 tests in 0.719s
 
 FAILED (failures=3, skipped=99)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

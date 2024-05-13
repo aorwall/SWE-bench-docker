@@ -92,8 +92,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        33987740
-hash randomization: on (PYTHONHASHSEED=3634455309)
+random seed:        89762642
+hash randomization: on (PYTHONHASHSEED=3383639069)
 
 sympy/printing/tests/test_latex.py[121] 
 test_printmethod ok
@@ -234,7 +234,7 @@ _____________ sympy/printing/tests/test_latex.py:test_issue_13559 ______________
     code = compile(evaluateFalse(code), '<string>', 'eval')
 ValueError: Name node can't be used with 'False' constant
 
- tests finished: 117 passed, 2 expected to fail, 2 exceptions, in 3.71 seconds =
+ tests finished: 117 passed, 2 expected to fail, 2 exceptions, in 4.50 seconds =
 DO *NOT* COMMIT!
 
  

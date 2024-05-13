@@ -64,12 +64,6 @@ test_roundtrip (utils_tests.test_http.Base36IntTests) ... ok
 test_to_base36_errors (utils_tests.test_http.Base36IntTests) ... ok
 test_to_int_errors (utils_tests.test_http.Base36IntTests) ... ok
 test_values (utils_tests.test_http.Base36IntTests) ... ok
-test (utils_tests.test_http.EscapeLeadingSlashesTests) ... ok
-test_quote (utils_tests.test_http.URLQuoteTests) ... ok
-test_quote_plus (utils_tests.test_http.URLQuoteTests) ... ok
-test_unquote (utils_tests.test_http.URLQuoteTests) ... ok
-test_unquote_plus (utils_tests.test_http.URLQuoteTests) ... ok
-test_roundtrip (utils_tests.test_http.URLSafeBase64Tests) ... ok
 test_custom_iterable_not_doseq (utils_tests.test_http.URLEncodeTests) ... ok
 test_dict (utils_tests.test_http.URLEncodeTests) ... ok
 test_dict_containing_empty_sequence_doseq (utils_tests.test_http.URLEncodeTests) ... ok
@@ -85,6 +79,12 @@ test_none (utils_tests.test_http.URLEncodeTests) ... ok
 test_none_in_generator (utils_tests.test_http.URLEncodeTests) ... ok
 test_none_in_sequence (utils_tests.test_http.URLEncodeTests) ... ok
 test_tuples (utils_tests.test_http.URLEncodeTests) ... ok
+test_quote (utils_tests.test_http.URLQuoteTests) ... ok
+test_quote_plus (utils_tests.test_http.URLQuoteTests) ... ok
+test_unquote (utils_tests.test_http.URLQuoteTests) ... ok
+test_unquote_plus (utils_tests.test_http.URLQuoteTests) ... ok
+test (utils_tests.test_http.EscapeLeadingSlashesTests) ... ok
+test_roundtrip (utils_tests.test_http.URLSafeBase64Tests) ... ok
 test_bad (utils_tests.test_http.IsSameDomainTests) ... ok
 test_good (utils_tests.test_http.IsSameDomainTests) ... ok
 test_allowed_hosts_str (utils_tests.test_http.IsSafeURLTests) ... ok
@@ -98,15 +98,15 @@ test_secure_param_non_https_urls (utils_tests.test_http.IsSafeURLTests) ... ok
 test_http_date (utils_tests.test_http.HttpDateProcessingTests) ... ok
 test_parsing_asctime (utils_tests.test_http.HttpDateProcessingTests) ... ok
 test_parsing_rfc1123 (utils_tests.test_http.HttpDateProcessingTests) ... ok
-test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) ... test_parsing_year_less_than_70 (utils_tests.test_http.HttpDateProcessingTests) ... ok
+test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) ... test_parsing_year_less_than_70 (utils_tests.test_http.HttpDateProcessingTests) ... FAIL
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x759d18da47e0>] (rfc850str='Tuesday, 31-Dec-69 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7ead5d6257e0>] (rfc850str='Tuesday, 31-Dec-69 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/opt/django__django/django/utils/http.py", line 184, in parse_http_date
-    if assumed_year > current_year + 50:
-TypeError: '>' not supported between instances of 'MagicMock' and 'MagicMock'
+  File "/opt/django__django/django/utils/http.py", line 185, in parse_http_date
+    if year <= current_year_last_two_digits:
+TypeError: '<=' not supported between instances of 'int' and 'MagicMock'
 
 The above exception was the direct cause of the following exception:
 
@@ -117,17 +117,17 @@ Traceback (most recent call last):
     yield
   File "/opt/django__django/tests/utils_tests/test_http.py", line 339, in test_parsing_rfc850
     parsed = parse_http_date(rfc850str)
-  File "/opt/django__django/django/utils/http.py", line 195, in parse_http_date
+  File "/opt/django__django/django/utils/http.py", line 198, in parse_http_date
     raise ValueError("%r is not a valid date" % date) from exc
 ValueError: 'Tuesday, 31-Dec-69 08:49:37 GMT' is not a valid date
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x759d18da47e0>] (rfc850str='Tuesday, 10-Nov-70 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7ead5d6257e0>] (rfc850str='Tuesday, 10-Nov-70 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/opt/django__django/django/utils/http.py", line 184, in parse_http_date
-    if assumed_year > current_year + 50:
-TypeError: '>' not supported between instances of 'MagicMock' and 'MagicMock'
+  File "/opt/django__django/django/utils/http.py", line 185, in parse_http_date
+    if year <= current_year_last_two_digits:
+TypeError: '<=' not supported between instances of 'int' and 'MagicMock'
 
 The above exception was the direct cause of the following exception:
 
@@ -138,17 +138,17 @@ Traceback (most recent call last):
     yield
   File "/opt/django__django/tests/utils_tests/test_http.py", line 339, in test_parsing_rfc850
     parsed = parse_http_date(rfc850str)
-  File "/opt/django__django/django/utils/http.py", line 195, in parse_http_date
+  File "/opt/django__django/django/utils/http.py", line 198, in parse_http_date
     raise ValueError("%r is not a valid date" % date) from exc
 ValueError: 'Tuesday, 10-Nov-70 08:49:37 GMT' is not a valid date
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x759d18da47e0>] (rfc850str='Sunday, 06-Nov-94 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7ead5d6257e0>] (rfc850str='Sunday, 06-Nov-94 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/opt/django__django/django/utils/http.py", line 184, in parse_http_date
-    if assumed_year > current_year + 50:
-TypeError: '>' not supported between instances of 'MagicMock' and 'MagicMock'
+  File "/opt/django__django/django/utils/http.py", line 185, in parse_http_date
+    if year <= current_year_last_two_digits:
+TypeError: '<=' not supported between instances of 'int' and 'MagicMock'
 
 The above exception was the direct cause of the following exception:
 
@@ -159,17 +159,17 @@ Traceback (most recent call last):
     yield
   File "/opt/django__django/tests/utils_tests/test_http.py", line 339, in test_parsing_rfc850
     parsed = parse_http_date(rfc850str)
-  File "/opt/django__django/django/utils/http.py", line 195, in parse_http_date
+  File "/opt/django__django/django/utils/http.py", line 198, in parse_http_date
     raise ValueError("%r is not a valid date" % date) from exc
 ValueError: 'Sunday, 06-Nov-94 08:49:37 GMT' is not a valid date
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x759d18da47e0>] (rfc850str='Wednesday, 31-Dec-70 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7ead5d6257e0>] (rfc850str='Wednesday, 31-Dec-70 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/opt/django__django/django/utils/http.py", line 184, in parse_http_date
-    if assumed_year > current_year + 50:
-TypeError: '>' not supported between instances of 'MagicMock' and 'MagicMock'
+  File "/opt/django__django/django/utils/http.py", line 185, in parse_http_date
+    if year <= current_year_last_two_digits:
+TypeError: '<=' not supported between instances of 'int' and 'MagicMock'
 
 The above exception was the direct cause of the following exception:
 
@@ -180,17 +180,17 @@ Traceback (most recent call last):
     yield
   File "/opt/django__django/tests/utils_tests/test_http.py", line 339, in test_parsing_rfc850
     parsed = parse_http_date(rfc850str)
-  File "/opt/django__django/django/utils/http.py", line 195, in parse_http_date
+  File "/opt/django__django/django/utils/http.py", line 198, in parse_http_date
     raise ValueError("%r is not a valid date" % date) from exc
 ValueError: 'Wednesday, 31-Dec-70 08:49:37 GMT' is not a valid date
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x759d18da47e0>] (rfc850str='Friday, 31-Dec-71 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7ead5d6257e0>] (rfc850str='Friday, 31-Dec-71 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/opt/django__django/django/utils/http.py", line 184, in parse_http_date
-    if assumed_year > current_year + 50:
-TypeError: '>' not supported between instances of 'MagicMock' and 'MagicMock'
+  File "/opt/django__django/django/utils/http.py", line 185, in parse_http_date
+    if year <= current_year_last_two_digits:
+TypeError: '<=' not supported between instances of 'int' and 'MagicMock'
 
 The above exception was the direct cause of the following exception:
 
@@ -201,17 +201,17 @@ Traceback (most recent call last):
     yield
   File "/opt/django__django/tests/utils_tests/test_http.py", line 339, in test_parsing_rfc850
     parsed = parse_http_date(rfc850str)
-  File "/opt/django__django/django/utils/http.py", line 195, in parse_http_date
+  File "/opt/django__django/django/utils/http.py", line 198, in parse_http_date
     raise ValueError("%r is not a valid date" % date) from exc
 ValueError: 'Friday, 31-Dec-71 08:49:37 GMT' is not a valid date
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x759d18da47e0>] (rfc850str='Sunday, 31-Dec-00 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7ead5d6257e0>] (rfc850str='Sunday, 31-Dec-00 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/opt/django__django/django/utils/http.py", line 184, in parse_http_date
-    if assumed_year > current_year + 50:
-TypeError: '>' not supported between instances of 'MagicMock' and 'MagicMock'
+  File "/opt/django__django/django/utils/http.py", line 185, in parse_http_date
+    if year <= current_year_last_two_digits:
+TypeError: '<=' not supported between instances of 'int' and 'MagicMock'
 
 The above exception was the direct cause of the following exception:
 
@@ -222,17 +222,17 @@ Traceback (most recent call last):
     yield
   File "/opt/django__django/tests/utils_tests/test_http.py", line 339, in test_parsing_rfc850
     parsed = parse_http_date(rfc850str)
-  File "/opt/django__django/django/utils/http.py", line 195, in parse_http_date
+  File "/opt/django__django/django/utils/http.py", line 198, in parse_http_date
     raise ValueError("%r is not a valid date" % date) from exc
 ValueError: 'Sunday, 31-Dec-00 08:49:37 GMT' is not a valid date
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x759d18da47e0>] (rfc850str='Friday, 31-Dec-99 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7ead5d6257e0>] (rfc850str='Friday, 31-Dec-99 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/opt/django__django/django/utils/http.py", line 184, in parse_http_date
-    if assumed_year > current_year + 50:
-TypeError: '>' not supported between instances of 'MagicMock' and 'MagicMock'
+  File "/opt/django__django/django/utils/http.py", line 185, in parse_http_date
+    if year <= current_year_last_two_digits:
+TypeError: '<=' not supported between instances of 'int' and 'MagicMock'
 
 The above exception was the direct cause of the following exception:
 
@@ -243,14 +243,30 @@ Traceback (most recent call last):
     yield
   File "/opt/django__django/tests/utils_tests/test_http.py", line 339, in test_parsing_rfc850
     parsed = parse_http_date(rfc850str)
-  File "/opt/django__django/django/utils/http.py", line 195, in parse_http_date
+  File "/opt/django__django/django/utils/http.py", line 198, in parse_http_date
     raise ValueError("%r is not a valid date" % date) from exc
 ValueError: 'Friday, 31-Dec-99 08:49:37 GMT' is not a valid date
 
+======================================================================
+FAIL: test_parsing_year_less_than_70 (utils_tests.test_http.HttpDateProcessingTests)
 ----------------------------------------------------------------------
-Ran 45 tests in 0.222s
+Traceback (most recent call last):
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/opt/django__django/tests/utils_tests/test_http.py", line 348, in test_parsing_year_less_than_70
+    self.assertEqual(datetime.utcfromtimestamp(parsed), datetime(2037, 11, 6, 8, 49, 37))
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 829, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: datetime.datetime(1937, 11, 6, 8, 49, 37) != datetime.datetime(2037, 11, 6, 8, 49, 37)
 
-FAILED (errors=7)
+----------------------------------------------------------------------
+Ran 45 tests in 0.144s
+
+FAILED (failures=1, errors=7)
  
 [django__django__3.1] [django__django-11848] Return Code: 1 
 

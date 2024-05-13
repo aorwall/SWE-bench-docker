@@ -13,8 +13,15 @@ HEAD is now at 1c8668b0a DOC what's new: Fix class name
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-13142_pred_try.patch 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Std. Output:
+/opt/temp_scikit-learn__scikit-learn-13142_pred_try.patch:13: trailing whitespace.
+        
+/opt/temp_scikit-learn__scikit-learn-13142_pred_try.patch:16: trailing whitespace.
+        
+/opt/temp_scikit-learn__scikit-learn-13142_pred_try.patch:28: trailing whitespace.
+        
 Checking patch sklearn/mixture/base.py...
 Applied patch sklearn/mixture/base.py cleanly.
+warning: 3 lines add whitespace errors.
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Return Code: 0 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Apply patch successful (pred_try) 
@@ -31,8 +38,15 @@ Applied patch sklearn/mixture/base.py cleanly.
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-13142_pred.patch 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Std. Output:
+/opt/temp_scikit-learn__scikit-learn-13142_pred.patch:13: trailing whitespace.
+        
+/opt/temp_scikit-learn__scikit-learn-13142_pred.patch:16: trailing whitespace.
+        
+/opt/temp_scikit-learn__scikit-learn-13142_pred.patch:28: trailing whitespace.
+        
 Checking patch sklearn/mixture/base.py...
 Applied patch sklearn/mixture/base.py cleanly.
+warning: 3 lines add whitespace errors.
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Return Code: 0 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Apply patch successful (pred) 
@@ -73,7 +87,7 @@ sklearn/mixture/tests/test_gaussian_mixture.py ......................... [ 78%]
 
 =============================== warnings summary ===============================
 sklearn/mixture/tests/test_bayesian_mixture.py::test_bayesian_mixture_fit_predict_n_init
-  /opt/scikit-learn__scikit-learn/sklearn/mixture/base.py:270: ConvergenceWarning: Initialization 10 did not converge. Try different init parameters, or increase max_iter, tol or check for degenerate data.
+  /opt/scikit-learn__scikit-learn/sklearn/mixture/base.py:275: ConvergenceWarning: Initialization 10 did not converge. Try different init parameters, or increase max_iter, tol or check for degenerate data.
     % (init + 1), ConvergenceWarning)
 
 sklearn/mixture/tests/test_gaussian_mixture.py::test_regularisation
@@ -145,7 +159,7 @@ PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_regularisation
 PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_property
 PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_sample
 PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_init
-==================== 56 passed, 9 warnings in 25.38 seconds ====================
+==================== 56 passed, 9 warnings in 20.50 seconds ====================
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Return Code: 0 
 

@@ -68,8 +68,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        49876340
-hash randomization: on (PYTHONHASHSEED=2184301066)
+random seed:        63602756
+hash randomization: on (PYTHONHASHSEED=3081654750)
 
 sympy/simplify/tests/test_fu.py[27] 
 test_TR1 ok
@@ -150,12 +150,11 @@ test_issue_7971 ok                                                          [OK]
 
 
 ________________________________ slowest tests _________________________________
-test_besselsimp - Took 10.067 seconds
-test_nthroot - Took 11.167 seconds
-test_simplify_ratio - Took 14.543 seconds
-test_simplify_other - Took 31.991 seconds
-test_simplify_expr - Took 124.097 seconds
-======= tests finished: 71 passed, 2 expected to fail, in 241.91 seconds =======
+test_simplify_ratio - Took 12.290 seconds
+test_besselsimp - Took 18.796 seconds
+test_simplify_other - Took 33.246 seconds
+test_simplify_expr - Took 132.399 seconds
+======= tests finished: 71 passed, 2 expected to fail, in 255.15 seconds =======
 
  
 [sympy__sympy__1.5] [sympy__sympy-17139] Return Code: 0 

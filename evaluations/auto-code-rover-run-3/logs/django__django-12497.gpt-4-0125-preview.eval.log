@@ -55,28 +55,22 @@ Testing against Django installed in '/opt/django__django/django' with up to 12 p
 Importing application invalid_models_tests
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
-test_clash_parent_link (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
-test_complex_clash (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
-test_accessor_clash (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
-test_clash_under_explicit_related_name (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
-test_reverse_query_name_clash (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
 test_explicit_field_names (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
 test_intersection_foreign_object (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
 test_invalid_field (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
 test_invalid_order (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
 test_m2m_field_argument_validation (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
 test_superset_foreign_object (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
+test_clash_parent_link (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
+test_complex_clash (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
+test_accessor_clash (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
+test_clash_under_explicit_related_name (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
+test_reverse_query_name_clash (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
 test_accessor_clash (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
 test_clash_between_accessors (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
 test_clash_under_explicit_related_name (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
 test_reverse_query_name_clash (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
 test_valid_model (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
-test_fk_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_fk_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_fk_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_m2m_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_m2m_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
 test_clash_between_accessors (invalid_models_tests.test_relative_fields.AccessorClashTests) ... ok
 test_fk_to_fk (invalid_models_tests.test_relative_fields.AccessorClashTests) ... ok
 test_fk_to_integer (invalid_models_tests.test_relative_fields.AccessorClashTests) ... ok
@@ -87,6 +81,18 @@ test_m2m_to_m2m (invalid_models_tests.test_relative_fields.AccessorClashTests) .
 test_m2m_to_m2m_with_inheritance (invalid_models_tests.test_relative_fields.AccessorClashTests)
 Ref #22047. ... ok
 test_no_clash_for_hidden_related_name (invalid_models_tests.test_relative_fields.AccessorClashTests) ... ok
+test_fk_to_fk (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_fk_to_integer (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_fk_to_m2m (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_m2m_to_fk (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_m2m_to_integer (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_fk_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
+test_fk_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
+test_fk_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
+test_m2m_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
+test_m2m_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
+test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
 test_fk_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
 test_fk_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
 test_fk_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
@@ -99,13 +105,7 @@ test_hidden_m2m_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelate
 test_m2m_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
 test_m2m_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
 test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_fk_to_fk (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_fk_to_integer (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_fk_to_m2m (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_m2m_to_fk (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_m2m_to_integer (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_ambiguous_relationship_model_from (invalid_models_tests.test_relative_fields.RelativeFieldTests) ... FAIL
+test_ambiguous_relationship_model_from (invalid_models_tests.test_relative_fields.RelativeFieldTests) ... ok
 test_ambiguous_relationship_model_to (invalid_models_tests.test_relative_fields.RelativeFieldTests) ... FAIL
 test_foreign_key_to_abstract_model (invalid_models_tests.test_relative_fields.RelativeFieldTests) ... ok
 test_foreign_key_to_isolate_apps_model (invalid_models_tests.test_relative_fields.RelativeFieldTests) ... ok
@@ -142,32 +142,6 @@ test_unique_m2m (invalid_models_tests.test_relative_fields.RelativeFieldTests) .
 test_valid_foreign_key_without_accessor (invalid_models_tests.test_relative_fields.RelativeFieldTests) ... ok
 
 ======================================================================
-FAIL: test_ambiguous_relationship_model_from (invalid_models_tests.test_relative_fields.RelativeFieldTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
-    yield
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 605, in run
-    testMethod()
-  File "/opt/django__django/tests/invalid_models_tests/test_relative_fields.py", line 156, in test_ambiguous_relationship_model_from
-    id='fields.E334',
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 829, in assertEqual
-    assertion_func(first, second, msg=msg)
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 1028, in assertListEqual
-    self.assertSequenceEqual(list1, list2, msg, seq_type=list)
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 1010, in assertSequenceEqual
-    self.fail(msg)
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 670, in fail
-    raise self.failureException(msg)
-AssertionError: Lists differ: [<Err[345 chars]lf", symmetrical=False, through="AmbiguousRela[89 chars]34'>] != [<Err[345 chars]lf", through="AmbiguousRelationship").', obj=<[70 chars]34'>]
-
-First differing element 0:
-<Erro[344 chars]lf", symmetrical=False, through="AmbiguousRela[88 chars]334'>
-<Erro[344 chars]lf", through="AmbiguousRelationship").', obj=<[69 chars]334'>
-
-Diff is 1871 characters long. Set self.maxDiff to None to see it.
-
-======================================================================
 FAIL: test_ambiguous_relationship_model_to (invalid_models_tests.test_relative_fields.RelativeFieldTests)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
@@ -194,9 +168,9 @@ First differing element 0:
 Diff is 1857 characters long. Set self.maxDiff to None to see it.
 
 ----------------------------------------------------------------------
-Ran 84 tests in 0.279s
+Ran 84 tests in 0.340s
 
-FAILED (failures=2)
+FAILED (failures=1)
  
 [django__django__3.1] [django__django-12497] Return Code: 1 
 

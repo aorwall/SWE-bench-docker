@@ -416,7 +416,7 @@ Traceback (most recent call last):
 AttributeError: 'Query' object has no attribute 'immediate_loading'
 
 ----------------------------------------------------------------------
-Ran 30 tests in 0.309s
+Ran 30 tests in 0.297s
 
 FAILED (errors=17)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

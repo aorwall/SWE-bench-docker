@@ -70,7 +70,8 @@ ____________________________ test_excinfo_repr_str _____________________________
         excinfo = pytest.raises(ValueError, h)
         assert repr(excinfo) == "<ExceptionInfo ValueError tblen=4>"
 >       assert str(excinfo) == "<ExceptionInfo ValueError tblen=4>"
-E       AssertionError: assert '' == '<ExceptionInfo ValueError tblen=4>'
+E       AssertionError: assert '/home/swe-be...xcinfo.py:98:' == '<ExceptionInf...rror tblen=4>'
+E         - /home/swe-bench/pytest-dev__pytest/testing/code/test_excinfo.py:98:
 E         + <ExceptionInfo ValueError tblen=4>
 
 testing/code/test_excinfo.py:339: AssertionError
@@ -103,13 +104,13 @@ ________________ TestFormattedExcinfo.test_traceback_repr_style ________________
     def f():
 >       g()
 
-(<object object at 0x7c6643248030>, '/tmp/pytest-of-swe-bench/pytest-0/test_traceback_repr_style0/mod.py')
+(<object object at 0x79f83a65a030>, '/tmp/pytest-of-swe-bench/pytest-0/test_traceback_repr_style0/mod.py')
 :3: 
 ('_ ', None)
-(<object object at 0x7c6643248030>, '/tmp/pytest-of-swe-bench/pytest-0/test_traceback_repr_style0/mod.py')
+(<object object at 0x79f83a65a030>, '/tmp/pytest-of-swe-bench/pytest-0/test_traceback_repr_style0/mod.py')
 :5: in g
     h()
-(<object object at 0x7c6643248030>, '/tmp/pytest-of-swe-bench/pytest-0/test_traceback_repr_style0/mod.py')
+(<object object at 0x79f83a65a030>, '/tmp/pytest-of-swe-bench/pytest-0/test_traceback_repr_style0/mod.py')
 :7: in h
     i()
 ('_ ', None)
@@ -118,7 +119,7 @@ ________________ TestFormattedExcinfo.test_traceback_repr_style ________________
 >       raise ValueError()
 E       ValueError
 
-(<object object at 0x7c6643248030>, '/tmp/pytest-of-swe-bench/pytest-0/test_traceback_repr_style0/mod.py')
+(<object object at 0x79f83a65a030>, '/tmp/pytest-of-swe-bench/pytest-0/test_traceback_repr_style0/mod.py')
 :9: ValueError
 ___________________ TestFormattedExcinfo.test_exc_chain_repr ___________________
 ----------------------------- Captured stdout call -----------------------------
@@ -127,7 +128,7 @@ ___________________ TestFormattedExcinfo.test_exc_chain_repr ___________________
         try:
 >           g()
 
-(<object object at 0x7c6643248030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_chain_repr0/mod.py')
+(<object object at 0x79f83a65a030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_chain_repr0/mod.py')
 :6: 
 ('_ ', None)
 
@@ -135,7 +136,7 @@ ___________________ TestFormattedExcinfo.test_exc_chain_repr ___________________
 >       raise ValueError()
 E       ValueError
 
-(<object object at 0x7c6643248030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_chain_repr0/mod.py')
+(<object object at 0x79f83a65a030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_chain_repr0/mod.py')
 :12: ValueError
 
 The above exception was the direct cause of the following exception:
@@ -147,7 +148,7 @@ The above exception was the direct cause of the following exception:
 >           raise Err() from e
 E           test_exc_chain_repr0.mod.Err
 
-(<object object at 0x7c6643248030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_chain_repr0/mod.py')
+(<object object at 0x79f83a65a030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_chain_repr0/mod.py')
 :8: Err
 
 During handling of the above exception, another exception occurred:
@@ -160,7 +161,7 @@ During handling of the above exception, another exception occurred:
         finally:
 >           h()
 
-(<object object at 0x7c6643248030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_chain_repr0/mod.py')
+(<object object at 0x79f83a65a030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_chain_repr0/mod.py')
 :10: 
 ('_ ', None)
 
@@ -168,7 +169,7 @@ During handling of the above exception, another exception occurred:
 >       raise AttributeError()
 E       AttributeError
 
-(<object object at 0x7c6643248030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_chain_repr0/mod.py')
+(<object object at 0x79f83a65a030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_chain_repr0/mod.py')
 :15: AttributeError
 _______ TestFormattedExcinfo.test_exc_repr_chain_suppression[from_none] ________
 ----------------------------- Captured stdout call -----------------------------
@@ -180,7 +181,7 @@ _______ TestFormattedExcinfo.test_exc_repr_chain_suppression[from_none] ________
 >           raise AttributeError() from None
 E           AttributeError
 
-(<object object at 0x7c6643248030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_repr_chain_suppressio0/mod.py')
+(<object object at 0x79f83a65a030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_repr_chain_suppressio0/mod.py')
 :6: AttributeError
 ___ TestFormattedExcinfo.test_exc_repr_chain_suppression[explicit_suppress] ____
 ----------------------------- Captured stdout call -----------------------------
@@ -192,7 +193,7 @@ ___ TestFormattedExcinfo.test_exc_repr_chain_suppression[explicit_suppress] ____
 >           raise AttributeError()
 E           AttributeError
 
-(<object object at 0x7c6643248030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_repr_chain_suppressio1/mod.py')
+(<object object at 0x79f83a65a030>, '/tmp/pytest-of-swe-bench/pytest-0/test_exc_repr_chain_suppressio1/mod.py')
 :6: AttributeError
 ___________________________ test_match_raises_error ____________________________
 ----------------------------- Captured stdout call -----------------------------
@@ -213,7 +214,7 @@ ______________________________ test_division_zero ______________________________
 E       AssertionError: Pattern '[123]+' not found in 'division by zero'
 
 test_match_raises_error.py:5: AssertionError
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.03 seconds ===========================
 _______________________________ test_cwd_deleted _______________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -332,7 +333,7 @@ PASSED testing/code/test_excinfo.py::test_cwd_deleted
 SKIPPED [1] /home/swe-bench/pytest-dev__pytest/testing/code/test_excinfo.py:270: could not import 'decorator': No module named 'decorator'
 SKIPPED [1] /home/swe-bench/pytest-dev__pytest/testing/code/test_excinfo.py:367: could not import 'jinja2': No module named 'jinja2'
 FAILED testing/code/test_excinfo.py::test_excinfo_repr_str - AssertionError: ...
-================ 1 failed, 92 passed, 2 skipped in 2.90 seconds ================
+================ 1 failed, 92 passed, 2 skipped in 2.09 seconds ================
 ERROR conda.cli.main_run:execute(124): `conda run pytest -rA testing/code/test_excinfo.py` failed. (See above for error)
 
  

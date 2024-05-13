@@ -69,8 +69,8 @@ executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.1/bin/python
 architecture:       64-bit
 cache:              no
 ground types:       python 
-random seed:        54528366
-hash randomization: on (PYTHONHASHSEED=472346244)
+random seed:        56884141
+hash randomization: on (PYTHONHASHSEED=4063758394)
 
 sympy/matrices/tests/test_sparse.py[11] 
 test_sparse_matrix F
@@ -92,7 +92,7 @@ ____________ sympy/matrices/tests/test_sparse.py:test_sparse_matrix ____________
     assert SparseMatrix.hstack(*sparse_matrices) == Matrix(0, 6, [])
 AssertionError
 
-============= tests finished: 10 passed, 1 failed, in 0.50 seconds =============
+============= tests finished: 10 passed, 1 failed, in 0.33 seconds =============
 DO *NOT* COMMIT!
 
  

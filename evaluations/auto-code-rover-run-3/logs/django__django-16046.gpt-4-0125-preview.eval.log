@@ -60,7 +60,7 @@ test_format_string (utils_tests.test_numberformat.TestNumberFormat) ... ok
 test_large_number (utils_tests.test_numberformat.TestNumberFormat) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.035s
+Ran 7 tests in 0.010s
 
 OK
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes

@@ -14,7 +14,9 @@ HEAD is now at 36bc47069c Fixed #32127 -- Fixed admin change-form textarea layou
 [django__django__3.2] [django__django-13315] Command: git apply -v /opt/temp_django__django-13315_pred_try.patch 
 [django__django__3.2] [django__django-13315] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13315] Std. Output:
+Checking patch django/db/models/fields/related.py...
 Checking patch django/forms/models.py...
+Applied patch django/db/models/fields/related.py cleanly.
 Applied patch django/forms/models.py cleanly.
  
 [django__django__3.2] [django__django-13315] Return Code: 0 
@@ -24,7 +26,9 @@ Applied patch django/forms/models.py cleanly.
 [django__django__3.2] [django__django-13315] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13315] Std. Output:
 Checking patch django/forms/models.py...
+Checking patch django/db/models/fields/related.py...
 Applied patch django/forms/models.py cleanly.
+Applied patch django/db/models/fields/related.py cleanly.
  
 [django__django__3.2] [django__django-13315] Return Code: 0 
 [django__django__3.2] [django__django-13315] Revert patch successful (pred_try) 
@@ -32,7 +36,9 @@ Applied patch django/forms/models.py cleanly.
 [django__django__3.2] [django__django-13315] Command: git apply -v /opt/temp_django__django-13315_pred.patch 
 [django__django__3.2] [django__django-13315] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13315] Std. Output:
+Checking patch django/db/models/fields/related.py...
 Checking patch django/forms/models.py...
+Applied patch django/db/models/fields/related.py cleanly.
 Applied patch django/forms/models.py cleanly.
  
 [django__django__3.2] [django__django-13315] Return Code: 0 
@@ -133,7 +139,19 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+test_model_form_applies_localize_to_all_fields (model_forms.tests.LocalizedModelFormTest) ... ok
+test_model_form_applies_localize_to_some_fields (model_forms.tests.LocalizedModelFormTest) ... ok
+test_model_form_refuses_arbitrary_string (model_forms.tests.LocalizedModelFormTest) ... ok
+test_model_form_clean_applies_to_model (model_forms.tests.CustomCleanTests) ... ok
+test_override_clean (model_forms.tests.CustomCleanTests) ... ok
 test_modelform_factory_metaclass (model_forms.tests.CustomMetaclassTestCase) ... ok
+test_field_removal (model_forms.tests.ModelFormInheritanceTests) ... ok
+test_field_removal_name_clashes (model_forms.tests.ModelFormInheritanceTests) ... ok
+test_form_subclass_inheritance (model_forms.tests.ModelFormInheritanceTests) ... ok
+test_custom_error_messages (model_forms.tests.ModelFormCustomErrorTests) ... ok
+test_model_clean_error_messages (model_forms.tests.ModelFormCustomErrorTests) ... ok
+test_setattr_raises_validation_error_field_specific (model_forms.tests.StrictAssignmentTests) ... ok
+test_setattr_raises_validation_error_non_field (model_forms.tests.StrictAssignmentTests) ... ok
 test_bad_callback (model_forms.tests.FormFieldCallbackTests) ... ok
 test_baseform_with_widgets_in_meta (model_forms.tests.FormFieldCallbackTests)
 Regression for #13095: Using base forms with widgets defined in Meta should not raise errors. ... ok
@@ -146,18 +164,8 @@ test_modelform_factory_with_all_fields (model_forms.tests.FormFieldCallbackTests
 Regression for #19733 ... ok
 test_modelform_factory_without_fields (model_forms.tests.FormFieldCallbackTests)
 Regression for #19733 ... ok
-test_model_form_applies_localize_to_all_fields (model_forms.tests.LocalizedModelFormTest) ... ok
-test_model_form_applies_localize_to_some_fields (model_forms.tests.LocalizedModelFormTest) ... ok
-test_model_form_refuses_arbitrary_string (model_forms.tests.LocalizedModelFormTest) ... ok
-test_model_form_clean_applies_to_model (model_forms.tests.CustomCleanTests) ... ok
-test_override_clean (model_forms.tests.CustomCleanTests) ... ok
-test_custom_error_messages (model_forms.tests.ModelFormCustomErrorTests) ... ok
-test_model_clean_error_messages (model_forms.tests.ModelFormCustomErrorTests) ... ok
-test_field_removal (model_forms.tests.ModelFormInheritanceTests) ... ok
-test_field_removal_name_clashes (model_forms.tests.ModelFormInheritanceTests) ... ok
-test_form_subclass_inheritance (model_forms.tests.ModelFormInheritanceTests) ... ok
-test_setattr_raises_validation_error_field_specific (model_forms.tests.StrictAssignmentTests) ... ok
-test_setattr_raises_validation_error_non_field (model_forms.tests.StrictAssignmentTests) ... ok
+test_many_to_many (model_forms.tests.ModelToDictTests)
+Data for a ManyToManyField is a list rather than a lazy QuerySet. ... ok
 test_notrequired_overrides_notblank (model_forms.tests.ValidationTest) ... ok
 test_validates_with_replaced_field_excluded (model_forms.tests.ValidationTest) ... ok
 test_validates_with_replaced_field_not_specified (model_forms.tests.ValidationTest) ... ok
@@ -167,13 +175,6 @@ test_fields_for_model_applies_limit_choices_to (model_forms.tests.LimitChoicesTo
 test_limit_choices_to_callable_for_fk_rel (model_forms.tests.LimitChoicesToTests) ... ok
 test_limit_choices_to_callable_for_m2m_rel (model_forms.tests.LimitChoicesToTests) ... ok
 test_limit_choices_to_no_duplicates (model_forms.tests.LimitChoicesToTests) ... ok
-test_assignment_of_none (model_forms.tests.ModelOneToOneFieldTests) ... ok
-test_assignment_of_none_null_false (model_forms.tests.ModelOneToOneFieldTests) ... ok
-test_modelform_onetoonefield (model_forms.tests.ModelOneToOneFieldTests) ... ok
-test_modelform_subclassed_model (model_forms.tests.ModelOneToOneFieldTests) ... ok
-test_onetoonefield (model_forms.tests.ModelOneToOneFieldTests) ... ok
-test_many_to_many (model_forms.tests.ModelToDictTests)
-Data for a ManyToManyField is a list rather than a lazy QuerySet. ... ok
 test_article_form (model_forms.tests.ModelFormBaseTest) ... ok
 test_bad_form (model_forms.tests.ModelFormBaseTest) ... ok
 test_base_form (model_forms.tests.ModelFormBaseTest) ... ok
@@ -219,6 +220,11 @@ test_save_blank_false_with_required_false (model_forms.tests.ModelFormBaseTest) 
 test_save_blank_null_unique_charfield_saves_null (model_forms.tests.ModelFormBaseTest) ... ok
 test_subcategory_form (model_forms.tests.ModelFormBaseTest) ... ok
 test_subclassmeta_form (model_forms.tests.ModelFormBaseTest) ... ok
+test_assignment_of_none (model_forms.tests.ModelOneToOneFieldTests) ... ok
+test_assignment_of_none_null_false (model_forms.tests.ModelOneToOneFieldTests) ... ok
+test_modelform_onetoonefield (model_forms.tests.ModelOneToOneFieldTests) ... ok
+test_modelform_subclassed_model (model_forms.tests.ModelOneToOneFieldTests) ... ok
+test_onetoonefield (model_forms.tests.ModelOneToOneFieldTests) ... ok
 test_callable_field_default (model_forms.tests.OtherModelFormTests) ... ok
 test_choices_type (model_forms.tests.OtherModelFormTests) ... ok
 test_foreignkeys_which_use_to_field (model_forms.tests.OtherModelFormTests) ... ok
@@ -226,6 +232,21 @@ test_iterable_model_m2m (model_forms.tests.OtherModelFormTests) ... ok
 test_media_on_modelform (model_forms.tests.OtherModelFormTests) ... ok
 test_model_field_that_returns_none_to_exclude_itself_with_explicit_fields (model_forms.tests.OtherModelFormTests) ... ok
 test_prefetch_related_queryset (model_forms.tests.OtherModelFormTests) ... ok
+test_auto_id (model_forms.tests.ModelFormBasicTests) ... ok
+test_base_form (model_forms.tests.ModelFormBasicTests) ... ok
+test_basic_creation (model_forms.tests.ModelFormBasicTests) ... ok
+test_custom_form_fields (model_forms.tests.ModelFormBasicTests) ... ok
+test_initial_values (model_forms.tests.ModelFormBasicTests) ... ok
+test_m2m_editing (model_forms.tests.ModelFormBasicTests) ... ok
+test_m2m_initial_callable (model_forms.tests.ModelFormBasicTests) ... ok
+test_multi_fields (model_forms.tests.ModelFormBasicTests) ... ok
+test_recleaning_model_form_instance (model_forms.tests.ModelFormBasicTests) ... ok
+test_runtime_choicefield_populated (model_forms.tests.ModelFormBasicTests) ... ok
+test_save_commit_false (model_forms.tests.ModelFormBasicTests) ... ok
+test_save_with_data_errors (model_forms.tests.ModelFormBasicTests) ... ok
+test_subset_fields (model_forms.tests.ModelFormBasicTests) ... ok
+test_validate_foreign_key_to_model_with_overridden_manager (model_forms.tests.ModelFormBasicTests) ... ok
+test_validate_foreign_key_uses_default_manager (model_forms.tests.ModelFormBasicTests) ... ok
 test_clean_does_deduplicate_values (model_forms.tests.ModelMultipleChoiceFieldTests) ... ok
 test_model_multiple_choice_field (model_forms.tests.ModelMultipleChoiceFieldTests) ... ok
 test_model_multiple_choice_field_22745 (model_forms.tests.ModelMultipleChoiceFieldTests) ... ok
@@ -235,27 +256,6 @@ test_model_multiple_choice_run_validators (model_forms.tests.ModelMultipleChoice
 test_model_multiple_choice_show_hidden_initial (model_forms.tests.ModelMultipleChoiceFieldTests) ... ok
 test_show_hidden_initial_changed_queries_efficiently (model_forms.tests.ModelMultipleChoiceFieldTests) ... ok
 test_to_field_name_with_initial_data (model_forms.tests.ModelMultipleChoiceFieldTests) ... ok
-test_abstract_inherited_unique (model_forms.tests.UniqueTest) ... ok
-test_abstract_inherited_unique_together (model_forms.tests.UniqueTest) ... ok
-test_explicitpk_unique (model_forms.tests.UniqueTest)
-Ensure keys and blank character strings are tested for uniqueness. ... ok
-test_explicitpk_unspecified (model_forms.tests.UniqueTest)
-Test for primary_key being in the form and failing validation. ... ok
-test_inherited_unique (model_forms.tests.UniqueTest) ... ok
-test_inherited_unique_for_date (model_forms.tests.UniqueTest) ... ok
-test_inherited_unique_together (model_forms.tests.UniqueTest) ... ok
-test_multiple_field_unique_together (model_forms.tests.UniqueTest) ... ok
-test_override_unique_for_date_message (model_forms.tests.UniqueTest) ... ok
-test_override_unique_message (model_forms.tests.UniqueTest) ... ok
-test_override_unique_together_message (model_forms.tests.UniqueTest) ... ok
-test_simple_unique (model_forms.tests.UniqueTest) ... ok
-test_unique_for_date (model_forms.tests.UniqueTest) ... ok
-test_unique_for_date_in_exclude (model_forms.tests.UniqueTest) ... ok
-test_unique_for_date_with_nullable_date (model_forms.tests.UniqueTest) ... ok
-test_unique_null (model_forms.tests.UniqueTest) ... ok
-test_unique_together (model_forms.tests.UniqueTest)
-ModelForm test of unique_together constraint ... ok
-test_unique_together_exclusion (model_forms.tests.UniqueTest) ... ok
 test_clean_false (model_forms.tests.FileAndImageFieldTests) ... ok
 test_clean_false_required (model_forms.tests.FileAndImageFieldTests) ... ok
 test_clear_and_file_contradiction (model_forms.tests.FileAndImageFieldTests) ... ok
@@ -278,24 +278,30 @@ test_http_prefixing (model_forms.tests.ModelOtherFieldTests) ... ok
 test_modelform_non_editable_field (model_forms.tests.ModelOtherFieldTests) ... ok
 test_url_on_modelform (model_forms.tests.ModelOtherFieldTests)
 Check basic URL field validation on model forms ... ok
-test_auto_id (model_forms.tests.ModelFormBasicTests) ... ok
-test_base_form (model_forms.tests.ModelFormBasicTests) ... ok
-test_basic_creation (model_forms.tests.ModelFormBasicTests) ... ok
-test_custom_form_fields (model_forms.tests.ModelFormBasicTests) ... ok
-test_initial_values (model_forms.tests.ModelFormBasicTests) ... ok
-test_m2m_editing (model_forms.tests.ModelFormBasicTests) ... ok
-test_m2m_initial_callable (model_forms.tests.ModelFormBasicTests) ... ok
-test_multi_fields (model_forms.tests.ModelFormBasicTests) ... ok
-test_recleaning_model_form_instance (model_forms.tests.ModelFormBasicTests) ... ok
-test_runtime_choicefield_populated (model_forms.tests.ModelFormBasicTests) ... ok
-test_save_commit_false (model_forms.tests.ModelFormBasicTests) ... ok
-test_save_with_data_errors (model_forms.tests.ModelFormBasicTests) ... ok
-test_subset_fields (model_forms.tests.ModelFormBasicTests) ... ok
-test_validate_foreign_key_to_model_with_overridden_manager (model_forms.tests.ModelFormBasicTests) ... ok
-test_validate_foreign_key_uses_default_manager (model_forms.tests.ModelFormBasicTests) ... ok
+test_abstract_inherited_unique (model_forms.tests.UniqueTest) ... ok
+test_abstract_inherited_unique_together (model_forms.tests.UniqueTest) ... ok
+test_explicitpk_unique (model_forms.tests.UniqueTest)
+Ensure keys and blank character strings are tested for uniqueness. ... ok
+test_explicitpk_unspecified (model_forms.tests.UniqueTest)
+Test for primary_key being in the form and failing validation. ... ok
+test_inherited_unique (model_forms.tests.UniqueTest) ... ok
+test_inherited_unique_for_date (model_forms.tests.UniqueTest) ... ok
+test_inherited_unique_together (model_forms.tests.UniqueTest) ... ok
+test_multiple_field_unique_together (model_forms.tests.UniqueTest) ... ok
+test_override_unique_for_date_message (model_forms.tests.UniqueTest) ... ok
+test_override_unique_message (model_forms.tests.UniqueTest) ... ok
+test_override_unique_together_message (model_forms.tests.UniqueTest) ... ok
+test_simple_unique (model_forms.tests.UniqueTest) ... ok
+test_unique_for_date (model_forms.tests.UniqueTest) ... ok
+test_unique_for_date_in_exclude (model_forms.tests.UniqueTest) ... ok
+test_unique_for_date_with_nullable_date (model_forms.tests.UniqueTest) ... ok
+test_unique_null (model_forms.tests.UniqueTest) ... ok
+test_unique_together (model_forms.tests.UniqueTest)
+ModelForm test of unique_together constraint ... ok
+test_unique_together_exclusion (model_forms.tests.UniqueTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 149 tests in 0.611s
+Ran 149 tests in 0.484s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

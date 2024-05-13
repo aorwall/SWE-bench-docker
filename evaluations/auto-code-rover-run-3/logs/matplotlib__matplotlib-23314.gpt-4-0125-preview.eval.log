@@ -77,7 +77,7 @@ lib/matplotlib/tests/test_axes.py ....s..s..s.......s....s..........s... [  4%]
 ...................s.................................................... [ 74%]
 ........................................................................ [ 81%]
 ....................................................                     [ 87%]
-lib/mpl_toolkits/tests/test_mplot3d.py F................................ [ 90%]
+lib/mpl_toolkits/tests/test_mplot3d.py ................................. [ 90%]
 ........................................................................ [ 98%]
 ............                                                             [100%]
 
@@ -829,6 +829,7 @@ PASSED lib/matplotlib/tests/test_axes.py::test_plot_errors
 PASSED lib/matplotlib/tests/test_axes.py::test_clim
 PASSED lib/matplotlib/tests/test_axes.py::test_bezier_autoscale
 PASSED lib/matplotlib/tests/test_axes.py::test_get_xticklabel
+PASSED lib/mpl_toolkits/tests/test_mplot3d.py::test_invisible_axes[png]
 PASSED lib/mpl_toolkits/tests/test_mplot3d.py::test_aspect_equal_error
 PASSED lib/mpl_toolkits/tests/test_mplot3d.py::test_bar3d[png]
 PASSED lib/mpl_toolkits/tests/test_mplot3d.py::test_bar3d_colors
@@ -947,12 +948,10 @@ PASSED lib/mpl_toolkits/tests/test_mplot3d.py::test_view_init_vertical_axis[y-pr
 PASSED lib/mpl_toolkits/tests/test_mplot3d.py::test_view_init_vertical_axis[x-proj_expected2-axis_lines_expected2-tickdirs_expected2]
 SKIPPED [10] lib/matplotlib/testing/compare.py:285: Don't know how to convert .svg files to png
 SKIPPED [53] ../miniconda3/envs/matplotlib__matplotlib__3.5/lib/python3.11/contextlib.py:81: Cannot compare svg files on this system
-FAILED lib/mpl_toolkits/tests/test_mplot3d.py::test_invisible_axes[png] - mat...
-============ 1 failed, 863 passed, 63 skipped in 191.58s (0:03:11) =============
-ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_axes.py lib/mpl_toolkits/tests/test_mplot3d.py` failed. (See above for error)
+================= 864 passed, 63 skipped in 197.46s (0:03:17) ==================
 
  
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Return Code: 1 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Return Code: 0 
 
->>>>> Some Tests Failed
+>>>>> All Tests Passed
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Test script run successful 

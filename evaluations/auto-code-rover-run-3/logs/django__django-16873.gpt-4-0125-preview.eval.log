@@ -72,7 +72,7 @@ test_join08 (template_tests.filter_tests.test_join.JoinTests.test_join08) ... ok
 test_join_autoescape_off (template_tests.filter_tests.test_join.JoinTests.test_join_autoescape_off) ... ok
 
 ----------------------------------------------------------------------
-Ran 14 tests in 0.114s
+Ran 14 tests in 0.128s
 
 OK
  

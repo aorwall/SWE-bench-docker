@@ -95,6 +95,21 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
+test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
+test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
+test_deconstruct (expressions.tests.FTests) ... ok
+test_deepcopy (expressions.tests.FTests) ... ok
+test_equal (expressions.tests.FTests) ... ok
+test_hash (expressions.tests.FTests) ... ok
+test_not_equal_Value (expressions.tests.FTests) ... ok
+test_equal (expressions.tests.SimpleExpressionTests) ... ok
+test_hash (expressions.tests.SimpleExpressionTests) ... ok
+test_and (expressions.tests.CombinableTests) ... ok
+test_negation (expressions.tests.CombinableTests) ... ok
+test_or (expressions.tests.CombinableTests) ... ok
+test_reversed_and (expressions.tests.CombinableTests) ... ok
+test_reversed_or (expressions.tests.CombinableTests) ... ok
 test_complex_expressions (expressions.tests.ExpressionsNumericTests) ... ok
 test_fill_with_value_from_same_object (expressions.tests.ExpressionsNumericTests) ... ok
 test_filter_not_equals_other_field (expressions.tests.ExpressionsNumericTests) ... ok
@@ -104,24 +119,9 @@ test_distinct_aggregates (expressions.tests.ReprTests) ... ok
 test_expressions (expressions.tests.ReprTests) ... ok
 test_filtered_aggregates (expressions.tests.ReprTests) ... ok
 test_functions (expressions.tests.ReprTests) ... ok
-test_and (expressions.tests.CombinableTests) ... ok
-test_negation (expressions.tests.CombinableTests) ... ok
-test_or (expressions.tests.CombinableTests) ... ok
-test_reversed_and (expressions.tests.CombinableTests) ... ok
-test_reversed_or (expressions.tests.CombinableTests) ... ok
-test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
-test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
-test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
-test_deconstruct (expressions.tests.FTests) ... ok
-test_deepcopy (expressions.tests.FTests) ... ok
-test_equal (expressions.tests.FTests) ... ok
-test_hash (expressions.tests.FTests) ... ok
-test_not_equal_Value (expressions.tests.FTests) ... ok
 test_F_reuse (expressions.tests.ExpressionsTests) ... ok
 test_insensitive_patterns_escape (expressions.tests.ExpressionsTests) ... ok
 test_patterns_escape (expressions.tests.ExpressionsTests) ... ok
-test_equal (expressions.tests.SimpleExpressionTests) ... ok
-test_hash (expressions.tests.SimpleExpressionTests) ... ok
 test_deconstruct (expressions.tests.ValueTests) ... ok
 test_deconstruct_output_field (expressions.tests.ValueTests) ... ok
 test_equal (expressions.tests.ValueTests) ... ok
@@ -217,7 +217,7 @@ test_query_clone (expressions.tests.FTimeDeltaTests) ... ok
 test_time_subtraction (expressions.tests.FTimeDeltaTests) ... ok
 
 ======================================================================
-ERROR: test_order_by_multiline_sql (expressions.tests.BasicExpressionsTests) [<object object at 0x77611fd99af0>] (qs=<QuerySet [<Company: Example Inc.>, <Company: Foobar Ltd.>, <Company: Test GmbH>]>)
+ERROR: test_order_by_multiline_sql (expressions.tests.BasicExpressionsTests) [<object object at 0x7f2568dd3af0>] (qs=<QuerySet [<Company: Example Inc.>, <Company: Foobar Ltd.>, <Company: Test GmbH>]>)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/django__django/django/db/backends/utils.py", line 85, in _execute
@@ -260,7 +260,7 @@ Traceback (most recent call last):
 django.db.utils.OperationalError: near ")": syntax error
 
 ----------------------------------------------------------------------
-Ran 121 tests in 0.509s
+Ran 121 tests in 0.256s
 
 FAILED (errors=1, skipped=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

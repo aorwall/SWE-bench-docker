@@ -94,10 +94,6 @@ test_cleansed_substitute_override (view_tests.tests.test_debug.CustomExceptionRe
 test_hidden_settings_override (view_tests.tests.test_debug.CustomExceptionReporterFilterTests) ... ok
 test_setting_allows_custom_subclass (view_tests.tests.test_debug.CustomExceptionReporterFilterTests) ... ok
 test_handle_db_exception (view_tests.tests.test_debug.DebugViewQueriesAllowedTests) ... ok
-test_400 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
-test_403 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
-test_404 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
-test_template_not_found_error (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
 test_disallowed_host (view_tests.tests.test_debug.PlainTextReportTests)
 An exception report can be generated even for a disallowed host. ... ok
 test_message_only (view_tests.tests.test_debug.PlainTextReportTests) ... ok
@@ -111,11 +107,10 @@ test_request_and_message (view_tests.tests.test_debug.PlainTextReportTests)
 A message can be provided in addition to a request ... ok
 test_request_with_items_key (view_tests.tests.test_debug.PlainTextReportTests) ... ok
 test_template_exception (view_tests.tests.test_debug.PlainTextReportTests) ... ok
-test_custom_exception_reporter_filter (view_tests.tests.test_debug.NonHTMLResponseExceptionReporterFilter) ... ok
-test_non_html_response_encoding (view_tests.tests.test_debug.NonHTMLResponseExceptionReporterFilter) ... ok
-test_non_sensitive_request (view_tests.tests.test_debug.NonHTMLResponseExceptionReporterFilter) ... ok
-test_paranoid_request (view_tests.tests.test_debug.NonHTMLResponseExceptionReporterFilter) ... ok
-test_sensitive_request (view_tests.tests.test_debug.NonHTMLResponseExceptionReporterFilter) ... ok
+test_400 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
+test_403 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
+test_404 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
+test_template_not_found_error (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
 test_400 (view_tests.tests.test_debug.DebugViewTests) ... ok
 test_403 (view_tests.tests.test_debug.DebugViewTests) ... ok
 test_403_template (view_tests.tests.test_debug.DebugViewTests) ... ok
@@ -136,6 +131,11 @@ test_template_encoding (view_tests.tests.test_debug.DebugViewTests) ... ok
 test_template_exceptions (view_tests.tests.test_debug.DebugViewTests) ... ok
 test_template_loader_postmortem (view_tests.tests.test_debug.DebugViewTests)
 Tests for not existing file ... ok
+test_custom_exception_reporter_filter (view_tests.tests.test_debug.NonHTMLResponseExceptionReporterFilter) ... ok
+test_non_html_response_encoding (view_tests.tests.test_debug.NonHTMLResponseExceptionReporterFilter) ... ok
+test_non_sensitive_request (view_tests.tests.test_debug.NonHTMLResponseExceptionReporterFilter) ... ok
+test_paranoid_request (view_tests.tests.test_debug.NonHTMLResponseExceptionReporterFilter) ... ok
+test_sensitive_request (view_tests.tests.test_debug.NonHTMLResponseExceptionReporterFilter) ... ok
 test_disallowed_host (view_tests.tests.test_debug.ExceptionReporterTests)
 An exception report can be generated even for a disallowed host. ... ok
 test_encoding_error (view_tests.tests.test_debug.ExceptionReporterTests) ... ok
@@ -188,7 +188,7 @@ test_sensitive_settings (view_tests.tests.test_debug.ExceptionReporterFilterTest
 test_settings_with_sensitive_keys (view_tests.tests.test_debug.ExceptionReporterFilterTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 83 tests in 5.020s
+Ran 83 tests in 5.611s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

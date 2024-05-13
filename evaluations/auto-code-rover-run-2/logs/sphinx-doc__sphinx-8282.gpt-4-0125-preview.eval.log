@@ -178,19 +178,19 @@ py39: add activators for Bash, CShell, Fish, Nushell, PowerShell, Python
 .pkg: add seed packages via FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/swe-bench/.local/share/virtualenv)
 .pkg: add activators for Bash, CShell, Fish, Nushell, PowerShell, Python
 .pkg: install_requires> python -I -m pip install 'setuptools>=40.8.0' wheel
-.pkg: exit 0 (1.76 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'setuptools>=40.8.0' wheel pid=146
+.pkg: exit 0 (1.69 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'setuptools>=40.8.0' wheel pid=146
 .pkg: _optional_hooks> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.3/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__
-.pkg: exit None (0.25 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.3/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=151
+.pkg: exit None (0.44 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.3/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=151
 .pkg: get_requires_for_build_editable> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.3/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__
-.pkg: exit None (0.48 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.3/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=154
+.pkg: exit None (0.34 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.3/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=154
 .pkg: install_requires_for_build_editable> python -I -m pip install wheel
-.pkg: exit 0 (0.47 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install wheel pid=158
+.pkg: exit 0 (0.74 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install wheel pid=158
 .pkg: build_editable> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.3/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__
-.pkg: exit None (0.90 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.3/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=163
+.pkg: exit None (0.89 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.3/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=163
 py39: install_package_deps> python -I -m pip install 'Jinja2<3.0' 'Pygments>=2.0' 'alabaster<0.7.12,>=0.7' 'babel>=1.3' 'colorama>=0.3.5; sys_platform == "win32"' cython 'docutils>=0.12' html5lib imagesize 'markupsafe<=2.0.1' packaging pytest pytest-cov 'requests>=2.5.0' setuptools 'snowballstemmer>=1.1' 'sphinxcontrib-applehelp<=1.0.7' 'sphinxcontrib-devhelp<=1.0.5' 'sphinxcontrib-htmlhelp<=2.0.4' sphinxcontrib-jsmath 'sphinxcontrib-qthelp<=1.0.6' 'sphinxcontrib-serializinghtml<=1.1.9' typed-ast
-py39: exit 0 (18.90 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'Jinja2<3.0' 'Pygments>=2.0' 'alabaster<0.7.12,>=0.7' 'babel>=1.3' 'colorama>=0.3.5; sys_platform == "win32"' cython 'docutils>=0.12' html5lib imagesize 'markupsafe<=2.0.1' packaging pytest pytest-cov 'requests>=2.5.0' setuptools 'snowballstemmer>=1.1' 'sphinxcontrib-applehelp<=1.0.7' 'sphinxcontrib-devhelp<=1.0.5' 'sphinxcontrib-htmlhelp<=2.0.4' sphinxcontrib-jsmath 'sphinxcontrib-qthelp<=1.0.6' 'sphinxcontrib-serializinghtml<=1.1.9' typed-ast pid=167
+py39: exit 0 (16.15 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'Jinja2<3.0' 'Pygments>=2.0' 'alabaster<0.7.12,>=0.7' 'babel>=1.3' 'colorama>=0.3.5; sys_platform == "win32"' cython 'docutils>=0.12' html5lib imagesize 'markupsafe<=2.0.1' packaging pytest pytest-cov 'requests>=2.5.0' setuptools 'snowballstemmer>=1.1' 'sphinxcontrib-applehelp<=1.0.7' 'sphinxcontrib-devhelp<=1.0.5' 'sphinxcontrib-htmlhelp<=2.0.4' sphinxcontrib-jsmath 'sphinxcontrib-qthelp<=1.0.6' 'sphinxcontrib-serializinghtml<=1.1.9' typed-ast pid=167
 py39: install_package> python -I -m pip install --force-reinstall --no-deps /home/swe-bench/sphinx-doc__sphinx/.tox/.tmp/package/1/Sphinx-3.3.0.dev20240512-0.editable-py3-none-any.whl
-py39: exit 0 (0.81 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install --force-reinstall --no-deps /home/swe-bench/sphinx-doc__sphinx/.tox/.tmp/package/1/Sphinx-3.3.0.dev20240512-0.editable-py3-none-any.whl pid=179
+py39: exit 0 (1.04 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install --force-reinstall --no-deps /home/swe-bench/sphinx-doc__sphinx/.tox/.tmp/package/1/Sphinx-3.3.0.dev20240512-0.editable-py3-none-any.whl pid=179
 py39: commands[0]> pytest -rA --durations 25 tests/test_ext_autodoc_configs.py
 [1m============================= test session starts ==============================[0m
 platform linux -- Python 3.9.19, pytest-8.2.0, pluggy-1.5.0
@@ -202,16 +202,87 @@ configfile: setup.cfg
 plugins: cov-5.0.0
 collected 17 items
 
-tests/test_ext_autodoc_configs.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                      [100%][0m
+tests/test_ext_autodoc_configs.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31mF[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[31m                      [100%][0m
 
 =================================== FAILURES ===================================
-[31m[1m_________________________ test_autodoc_typehints_none __________________________[0m
+[31m[1m__________________________ test_mocked_module_imports __________________________[0m
+
+app = <SphinxTestApp buildername='html'>
+warning = <_io.StringIO object at 0x7282ff24ca60>
+
+    [0m[37m@pytest[39;49;00m.mark.sphinx([33m'[39;49;00m[33mhtml[39;49;00m[33m'[39;49;00m, testroot=[33m'[39;49;00m[33mext-autodoc[39;49;00m[33m'[39;49;00m)[90m[39;49;00m
+    [94mdef[39;49;00m [92mtest_mocked_module_imports[39;49;00m(app, warning):[90m[39;49;00m
+        [90m# no autodoc_mock_imports[39;49;00m[90m[39;49;00m
+        options = {[33m"[39;49;00m[33mmembers[39;49;00m[33m"[39;49;00m: [33m'[39;49;00m[33mTestAutodoc,decoratedFunction,func[39;49;00m[33m'[39;49;00m}[90m[39;49;00m
+        actual = do_autodoc(app, [33m'[39;49;00m[33mmodule[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mtarget.need_mocks[39;49;00m[33m'[39;49;00m, options)[90m[39;49;00m
+        [94massert[39;49;00m [96mlist[39;49;00m(actual) == [][90m[39;49;00m
+        [94massert[39;49;00m [33m"[39;49;00m[33mautodoc: failed to import module [39;49;00m[33m'[39;49;00m[33mneed_mocks[39;49;00m[33m'[39;49;00m[33m"[39;49;00m [95min[39;49;00m warning.getvalue()[90m[39;49;00m
+    [90m[39;49;00m
+        [90m# with autodoc_mock_imports[39;49;00m[90m[39;49;00m
+        app.config.autodoc_mock_imports = [[90m[39;49;00m
+            [33m'[39;49;00m[33mmissing_module[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33mmissing_package1[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33mmissing_package2[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33mmissing_package3[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33msphinx.missing_module4[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+        ][90m[39;49;00m
+    [90m[39;49;00m
+        warning.truncate([94m0[39;49;00m)[90m[39;49;00m
+        actual = do_autodoc(app, [33m'[39;49;00m[33mmodule[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mtarget.need_mocks[39;49;00m[33m'[39;49;00m, options)[90m[39;49;00m
+>       [94massert[39;49;00m [96mlist[39;49;00m(actual) == [[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:module:: target.need_mocks[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:class:: TestAutodoc()[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   :module: target.need_mocks[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   TestAutodoc docstring.[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   .. py:method:: TestAutodoc.decoratedMethod()[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m      :module: target.need_mocks[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m      TestAutodoc::decoratedMethod docstring[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:function:: decoratedFunction()[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   :module: target.need_mocks[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   decoratedFunction docstring[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:function:: func(arg: missing_module.Class)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   :module: target.need_mocks[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   a function takes mocked object as an argument[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+        ][90m[39;49;00m
+[1m[31mE       AssertionError: assert ['', '.. py:m...d_mocks', ...] == ['', '.. py:m...d_mocks', ...][0m
+[1m[31mE         [0m
+[1m[31mE         At index 16 diff: [0m[33m'[39;49;00m[33m.. py:function:: decoratedFunction[39;49;00m[33m'[39;49;00m[90m[39;49;00m != [0m[33m'[39;49;00m[33m.. py:function:: decoratedFunction()[39;49;00m[33m'[39;49;00m[90m[39;49;00m[0m
+[1m[31mE         Use -v to get more diff[0m
+
+[1m[31mtests/test_ext_autodoc_configs.py[0m:450: AssertionError
+--------------------------- Captured stdout teardown ---------------------------
+# testroot: root
+# builder: html
+# srcdir: /tmp/pytest-of-swe-bench/pytest-0/ext-autodoc
+# outdir: /tmp/pytest-of-swe-bench/pytest-0/ext-autodoc/_build/html
+# status: 
+[01mRunning Sphinx v3.3.0+/2c2335bbb[39;49;00m
+
+# warning: 
+                                                                                                                                                                                                                                                                                                                [91mWARNING: error while formatting arguments for target.need_mocks.decoratedFunction: name 'is_overloaded_function' is not defined[39;49;00m
+[91mWARNING: error while formatting arguments for target.need_mocks.func: name 'is_overloaded_function' is not defined[39;49;00m
+
+[31m[1m_______________________ test_autodoc_typehints_signature _______________________[0m
 
 app = <SphinxTestApp buildername='html'>
 
     [0m[37m@pytest[39;49;00m.mark.sphinx([33m'[39;49;00m[33mhtml[39;49;00m[33m'[39;49;00m, testroot=[33m'[39;49;00m[33mext-autodoc[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-                        confoverrides={[33m'[39;49;00m[33mautodoc_typehints[39;49;00m[33m'[39;49;00m: [33m"[39;49;00m[33mnone[39;49;00m[33m"[39;49;00m})[90m[39;49;00m
-    [94mdef[39;49;00m [92mtest_autodoc_typehints_none[39;49;00m(app):[90m[39;49;00m
+                        confoverrides={[33m'[39;49;00m[33mautodoc_typehints[39;49;00m[33m'[39;49;00m: [33m"[39;49;00m[33msignature[39;49;00m[33m"[39;49;00m})[90m[39;49;00m
+    [94mdef[39;49;00m [92mtest_autodoc_typehints_signature[39;49;00m(app):[90m[39;49;00m
         options = {[33m"[39;49;00m[33mmembers[39;49;00m[33m"[39;49;00m: [94mNone[39;49;00m,[90m[39;49;00m
                    [33m"[39;49;00m[33mundoc-members[39;49;00m[33m"[39;49;00m: [94mTrue[39;49;00m}[90m[39;49;00m
         actual = do_autodoc(app, [33m'[39;49;00m[33mmodule[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mtarget.typehints[39;49;00m[33m'[39;49;00m, options)[90m[39;49;00m
@@ -220,64 +291,65 @@ app = <SphinxTestApp buildername='html'>
             [33m'[39;49;00m[33m.. py:module:: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m.. py:class:: Math(s, o=None)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:class:: Math(s: str, o: object = None)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m   :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m   .. py:method:: Math.decr(a, b=1)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   .. py:method:: Math.decr(a: int, b: int = 1) -> int[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m      :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m   .. py:method:: Math.horse(a, b)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   .. py:method:: Math.horse(a: str, b: int) -> None[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m      :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m   .. py:method:: Math.incr(a, b=1)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   .. py:method:: Math.incr(a: int, b: int = 1) -> int[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m      :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m   .. py:method:: Math.nothing()[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   .. py:method:: Math.nothing() -> None[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m      :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m.. py:class:: NewAnnotation(i)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:class:: NewAnnotation(i: int)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m   :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m.. py:class:: NewComment(i)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:class:: NewComment(i: int)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m   :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m.. py:class:: SignatureFromMetaclass(a)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:class:: SignatureFromMetaclass(a: int)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m   :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m.. py:function:: complex_func(arg1, arg2, arg3=None, *args, **kwargs)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:function:: complex_func(arg1: str, arg2: List[int], arg3: Tuple[int, [39;49;00m[33m'[39;49;00m[90m[39;49;00m
+            [33m'[39;49;00m[33mUnion[str, Unknown]] = None, *args: str, **kwargs: str) -> None[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m   :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m.. py:function:: decr(a, b=1)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:function:: decr(a: int, b: int = 1) -> int[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m   :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m.. py:function:: incr(a, b=1)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:function:: incr(a: int, b: int = 1) -> int[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m   :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m.. py:function:: missing_attr(c, a, b=None)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:function:: missing_attr(c, a: str, b: Optional[str] = None) -> str[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m   :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
-            [33m'[39;49;00m[33m.. py:function:: tuple_args(x)[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:function:: tuple_args(x: Tuple[int, Union[int, str]]) -> Tuple[int, int][39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m   :module: target.typehints[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
             [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
         ][90m[39;49;00m
 [1m[31mE       AssertionError: assert ['', '.. py:m...pehints', ...] == ['', '.. py:m...pehints', ...][0m
 [1m[31mE         [0m
-[1m[31mE         At index 36 diff: [0m[33m'[39;49;00m[33m.. py:function:: complex_func[39;49;00m[33m'[39;49;00m[90m[39;49;00m != [0m[33m'[39;49;00m[33m.. py:function:: complex_func(arg1, arg2, arg3=None, *args, **kwargs)[39;49;00m[33m'[39;49;00m[90m[39;49;00m[0m
+[1m[31mE         At index 36 diff: [0m[33m'[39;49;00m[33m.. py:function:: complex_func[39;49;00m[33m'[39;49;00m[90m[39;49;00m != [0m[33m'[39;49;00m[33m.. py:function:: complex_func(arg1: str, arg2: List[int], arg3: Tuple[int, Union[str, Unknown]] = None, *args: str, **kwargs: str) -> None[39;49;00m[33m'[39;49;00m[90m[39;49;00m[0m
 [1m[31mE         Use -v to get more diff[0m
 
-[1m[31mtests/test_ext_autodoc_configs.py[0m:554: AssertionError
+[1m[31mtests/test_ext_autodoc_configs.py[0m:488: AssertionError
 --------------------------- Captured stdout teardown ---------------------------
 # testroot: root
 # builder: html
@@ -288,6 +360,11 @@ app = <SphinxTestApp buildername='html'>
 
 # warning: 
 [91mWARNING: while setting up extension sphinx.addnodes: node class 'meta' is already registered, its visitors will be overridden[39;49;00m
+[91mWARNING: error while formatting arguments for target.typehints.complex_func: name 'is_overloaded_function' is not defined[39;49;00m
+[91mWARNING: error while formatting arguments for target.typehints.decr: name 'is_overloaded_function' is not defined[39;49;00m
+[91mWARNING: error while formatting arguments for target.typehints.incr: name 'is_overloaded_function' is not defined[39;49;00m
+[91mWARNING: error while formatting arguments for target.typehints.missing_attr: name 'is_overloaded_function' is not defined[39;49;00m
+[91mWARNING: error while formatting arguments for target.typehints.tuple_args: name 'is_overloaded_function' is not defined[39;49;00m
 
 [31m[1m___________________ test_autodoc_typehints_none_for_overload ___________________[0m
 
@@ -356,6 +433,53 @@ app = <SphinxTestApp buildername='html'>
 
 # warning: 
 [91mWARNING: while setting up extension sphinx.addnodes: node class 'meta' is already registered, its visitors will be overridden[39;49;00m
+
+[31m[1m__________________________ test_autodoc_type_aliases ___________________________[0m
+
+app = <SphinxTestApp buildername='text'>
+
+    [0m[37m@pytest[39;49;00m.mark.skipif(sys.version_info < ([94m3[39;49;00m, [94m7[39;49;00m), reason=[33m'[39;49;00m[33mpython 3.7+ is required.[39;49;00m[33m'[39;49;00m)[90m[39;49;00m
+    [37m@pytest[39;49;00m.mark.sphinx([33m'[39;49;00m[33mtext[39;49;00m[33m'[39;49;00m, testroot=[33m'[39;49;00m[33mext-autodoc[39;49;00m[33m'[39;49;00m)[90m[39;49;00m
+    [94mdef[39;49;00m [92mtest_autodoc_type_aliases[39;49;00m(app):[90m[39;49;00m
+        [90m# default[39;49;00m[90m[39;49;00m
+        options = {[33m"[39;49;00m[33mmembers[39;49;00m[33m"[39;49;00m: [94mNone[39;49;00m}[90m[39;49;00m
+        actual = do_autodoc(app, [33m'[39;49;00m[33mmodule[39;49;00m[33m'[39;49;00m, [33m'[39;49;00m[33mtarget.annotations[39;49;00m[33m'[39;49;00m, options)[90m[39;49;00m
+>       [94massert[39;49;00m [96mlist[39;49;00m(actual) == [[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:module:: target.annotations[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:function:: mult(x: int, y: int) -> int[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m                 mult(x: float, y: float) -> float[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   :module: target.annotations[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   docstring[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m.. py:function:: sum(x: int, y: int) -> int[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   :module: target.annotations[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m   docstring[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+            [33m'[39;49;00m[33m'[39;49;00m,[90m[39;49;00m
+        ][90m[39;49;00m
+[1m[31mE       AssertionError: assert ['', '.. py:m...> float', ...] == ['', '.. py:m...> float', ...][0m
+[1m[31mE         [0m
+[1m[31mE         At index 11 diff: [0m[33m'[39;49;00m[33m.. py:function:: sum[39;49;00m[33m'[39;49;00m[90m[39;49;00m != [0m[33m'[39;49;00m[33m.. py:function:: sum(x: int, y: int) -> int[39;49;00m[33m'[39;49;00m[90m[39;49;00m[0m
+[1m[31mE         Use -v to get more diff[0m
+
+[1m[31mtests/test_ext_autodoc_configs.py[0m:699: AssertionError
+--------------------------- Captured stdout teardown ---------------------------
+# testroot: root
+# builder: text
+# srcdir: /tmp/pytest-of-swe-bench/pytest-0/ext-autodoc
+# outdir: /tmp/pytest-of-swe-bench/pytest-0/ext-autodoc/_build/text
+# status: 
+[01mRunning Sphinx v3.3.0+/2c2335bbb[39;49;00m
+[01mloading pickled environment... [39;49;00mdone
+
+# warning: 
+[91mWARNING: while setting up extension sphinx.addnodes: node class 'meta' is already registered, its visitors will be overridden[39;49;00m
+[91mWARNING: error while formatting arguments for target.annotations.sum: name 'is_overloaded_function' is not defined[39;49;00m
 
 [33m=============================== warnings summary ===============================[0m
 sphinx/util/docutils.py:45
@@ -634,16 +758,6 @@ tests/test_ext_autodoc_configs.py::test_autodoc_typehints_description
 [01mRunning Sphinx v3.3.0+/2c2335bbb[39;49;00m
 
 # warning: 
-
---------------------------- Captured stdout teardown ---------------------------
-# testroot: root
-# builder: html
-# srcdir: /tmp/pytest-of-swe-bench/pytest-0/ext-autodoc
-# outdir: /tmp/pytest-of-swe-bench/pytest-0/ext-autodoc/_build/html
-# status: 
-[01mRunning Sphinx v3.3.0+/2c2335bbb[39;49;00m
-
-# warning: 
 [91mWARNING: while setting up extension sphinx.addnodes: node class 'meta' is already registered, its visitors will be overridden[39;49;00m
 
 --------------------------- Captured stdout teardown ---------------------------
@@ -665,18 +779,6 @@ tests/test_ext_autodoc_configs.py::test_autodoc_typehints_description
 [01mbuild succeeded, 1 warning.[39;49;00m
 
 The text files are in ../../../tmp/pytest-of-swe-bench/pytest-0/ext-autodoc/_build/text.
-
-# warning: 
-[91mWARNING: while setting up extension sphinx.addnodes: node class 'meta' is already registered, its visitors will be overridden[39;49;00m
-
---------------------------- Captured stdout teardown ---------------------------
-# testroot: root
-# builder: text
-# srcdir: /tmp/pytest-of-swe-bench/pytest-0/ext-autodoc
-# outdir: /tmp/pytest-of-swe-bench/pytest-0/ext-autodoc/_build/text
-# status: 
-[01mRunning Sphinx v3.3.0+/2c2335bbb[39;49;00m
-[01mloading pickled environment... [39;49;00mdone
 
 # warning: 
 [91mWARNING: while setting up extension sphinx.addnodes: node class 'meta' is already registered, its visitors will be overridden[39;49;00m
@@ -718,31 +820,31 @@ The text files are in ../../../tmp/pytest-of-swe-bench/pytest-0/ext-autodoc/_bui
 [91mWARNING: while setting up extension sphinx.addnodes: node class 'meta' is already registered, its visitors will be overridden[39;49;00m
 
 ============================= slowest 25 durations =============================
-0.64s setup    tests/test_ext_autodoc_configs.py::test_autoclass_content_class
-0.56s call     tests/test_ext_autodoc_configs.py::test_autodoc_default_options
-0.27s call     tests/test_ext_autodoc_configs.py::test_autodoc_default_options_with_values
-0.10s call     tests/test_ext_autodoc_configs.py::test_autodoc_typehints_none
-0.10s call     tests/test_ext_autodoc_configs.py::test_autodoc_typehints_description
+0.71s call     tests/test_ext_autodoc_configs.py::test_autodoc_default_options
+0.65s setup    tests/test_ext_autodoc_configs.py::test_autoclass_content_class
+0.33s call     tests/test_ext_autodoc_configs.py::test_autodoc_default_options_with_values
+0.15s call     tests/test_ext_autodoc_configs.py::test_autodoc_typehints_description
+0.08s call     tests/test_ext_autodoc_configs.py::test_mocked_module_imports
 0.06s call     tests/test_ext_autodoc_configs.py::test_autoclass_content_class
-0.06s call     tests/test_ext_autodoc_configs.py::test_autodoc_typehints_signature
+0.06s call     tests/test_ext_autodoc_configs.py::test_autodoc_typehints_none
+0.05s call     tests/test_ext_autodoc_configs.py::test_autodoc_typehints_signature
 0.05s call     tests/test_ext_autodoc_configs.py::test_autodoc_typehints_none_for_overload
+0.05s call     tests/test_ext_autodoc_configs.py::test_autoclass_content_both
 0.05s call     tests/test_ext_autodoc_configs.py::test_autoclass_content_init
-0.04s call     tests/test_ext_autodoc_configs.py::test_autoclass_content_both
-0.03s call     tests/test_ext_autodoc_configs.py::test_autodoc_docstring_signature
-0.03s setup    tests/test_ext_autodoc_configs.py::test_autoclass_content_init
-0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_typehints_none
-0.03s setup    tests/test_ext_autodoc_configs.py::test_mocked_module_imports
-0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_typehints_signature
-0.03s setup    tests/test_ext_autodoc_configs.py::test_autoclass_content_both
-0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_inherit_docstrings
-0.03s setup    tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_both
-0.03s setup    tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_class
-0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_typehints_none_for_overload
+0.04s call     tests/test_ext_autodoc_configs.py::test_autodoc_docstring_signature
 0.03s setup    tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_init
-0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_docstring_signature
 0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_default_options_with_values
-0.02s call     tests/test_ext_autodoc_configs.py::test_mocked_module_imports
-0.02s setup    tests/test_ext_autodoc_configs.py::test_autodoc_typehints_description
+0.03s setup    tests/test_ext_autodoc_configs.py::test_autoclass_content_init
+0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_typehints_none_for_overload
+0.03s setup    tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_class
+0.03s setup    tests/test_ext_autodoc_configs.py::test_autoclass_content_both
+0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_typehints_none
+0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_inherit_docstrings
+0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_docstring_signature
+0.03s setup    tests/test_ext_autodoc_configs.py::test_autoclass_content_and_docstring_signature_both
+0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_typehints_signature
+0.03s setup    tests/test_ext_autodoc_configs.py::test_mocked_module_imports
+0.03s setup    tests/test_ext_autodoc_configs.py::test_autodoc_default_options
 [36m[1m=========================== short test summary info ============================[0m
 [32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autoclass_content_class[0m
 [32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autoclass_content_init[0m
@@ -752,19 +854,19 @@ The text files are in ../../../tmp/pytest-of-swe-bench/pytest-0/ext-autodoc/_bui
 [32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autoclass_content_and_docstring_signature_class[0m
 [32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autoclass_content_and_docstring_signature_init[0m
 [32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autoclass_content_and_docstring_signature_both[0m
-[32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_mocked_module_imports[0m
-[32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autodoc_typehints_signature[0m
+[32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autodoc_typehints_none[0m
 [32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autodoc_typehints_description[0m
 [32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autodoc_typehints_description_for_invalid_node[0m
-[32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autodoc_type_aliases[0m
 [32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autodoc_default_options[0m
 [32mPASSED[0m tests/test_ext_autodoc_configs.py::[1mtest_autodoc_default_options_with_values[0m
-[31mFAILED[0m tests/test_ext_autodoc_configs.py::[1mtest_autodoc_typehints_none[0m - AssertionError: assert ['', '.. py:m...pehints', ...] == ['', '.. py:m...pe...
+[31mFAILED[0m tests/test_ext_autodoc_configs.py::[1mtest_mocked_module_imports[0m - AssertionError: assert ['', '.. py:m...d_mocks', ...] == ['', '.. py:m...d_...
+[31mFAILED[0m tests/test_ext_autodoc_configs.py::[1mtest_autodoc_typehints_signature[0m - AssertionError: assert ['', '.. py:m...pehints', ...] == ['', '.. py:m...pe...
 [31mFAILED[0m tests/test_ext_autodoc_configs.py::[1mtest_autodoc_typehints_none_for_overload[0m - AssertionError: assert ['', '.. py:m...y: str)', ...] == ['', '.. py:m...ve...
-[31m================== [31m[1m2 failed[0m, [32m15 passed[0m, [33m62 warnings[0m[31m in 3.02s[0m[31m ===================[0m
-py39: exit 1 (4.48 seconds) /home/swe-bench/sphinx-doc__sphinx> pytest -rA --durations 25 tests/test_ext_autodoc_configs.py pid=186
-  py39: FAIL code 1 (28.93=setup[24.45]+cmd[4.48] seconds)
-  evaluation failed :( (29.88 seconds)
+[31mFAILED[0m tests/test_ext_autodoc_configs.py::[1mtest_autodoc_type_aliases[0m - AssertionError: assert ['', '.. py:m...> float', ...] == ['', '.. py:m...> ...
+[31m================== [31m[1m4 failed[0m, [32m13 passed[0m, [33m62 warnings[0m[31m in 3.43s[0m[31m ===================[0m
+py39: exit 1 (5.03 seconds) /home/swe-bench/sphinx-doc__sphinx> pytest -rA --durations 25 tests/test_ext_autodoc_configs.py pid=186
+  py39: FAIL code 1 (26.94=setup[21.90]+cmd[5.03] seconds)
+  evaluation failed :( (27.90 seconds)
 ERROR conda.cli.main_run:execute(124): `conda run tox -epy39 -v -- tests/test_ext_autodoc_configs.py` failed. (See above for error)
 
  

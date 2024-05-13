@@ -14,11 +14,8 @@ HEAD is now at 447980e72a Fixed #31500 -- Fixed detecting of unique fields in Qu
 [django__django__3.1] [django__django-12708] Command: git apply -v /opt/temp_django__django-12708_pred_try.patch 
 [django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12708] Std. Output:
-/opt/temp_django__django-12708_pred_try.patch:16: trailing whitespace.
-        # Allow for the deletion of multiple constraints if they match the criteria, 
 Checking patch django/db/backends/base/schema.py...
 Applied patch django/db/backends/base/schema.py cleanly.
-warning: 1 line adds whitespace errors.
  
 [django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Apply patch successful (pred_try) 
@@ -35,11 +32,8 @@ Applied patch django/db/backends/base/schema.py cleanly.
 [django__django__3.1] [django__django-12708] Command: git apply -v /opt/temp_django__django-12708_pred.patch 
 [django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12708] Std. Output:
-/opt/temp_django__django-12708_pred.patch:16: trailing whitespace.
-        # Allow for the deletion of multiple constraints if they match the criteria, 
 Checking patch django/db/backends/base/schema.py...
 Applied patch django/db/backends/base/schema.py cleanly.
-warning: 1 line adds whitespace errors.
  
 [django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Apply patch successful (pred) 
@@ -148,7 +142,7 @@ test_alter_fk (migrations.test_operations.OperationTests) ... ok
 test_alter_fk_non_fk (migrations.test_operations.OperationTests) ... ok
 test_alter_index_together (migrations.test_operations.OperationTests) ... ok
 test_alter_index_together_remove (migrations.test_operations.OperationTests) ... ok
-test_alter_index_together_remove_with_unique_together (migrations.test_operations.OperationTests) ... FAIL
+test_alter_index_together_remove_with_unique_together (migrations.test_operations.OperationTests) ... ERROR
 test_alter_model_managers (migrations.test_operations.OperationTests) ... ok
 test_alter_model_managers_emptying (migrations.test_operations.OperationTests) ... ok
 test_alter_model_options (migrations.test_operations.OperationTests) ... ok
@@ -218,7 +212,7 @@ test_smallfield_bigautofield_foreignfield_growth (migrations.test_operations.Ope
 A field may be migrated from SmallAutoField to BigAutoField. ... ok
 
 ======================================================================
-FAIL: test_alter_index_together_remove_with_unique_together (migrations.test_operations.OperationTests)
+ERROR: test_alter_index_together_remove_with_unique_together (migrations.test_operations.OperationTests)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -227,20 +221,20 @@ Traceback (most recent call last):
     testMethod()
   File "/opt/django__django/django/test/testcases.py", line 1215, in skip_wrapper
     return test_func(*args, **kwargs)
-  File "/opt/django__django/tests/migrations/test_operations.py", line 1783, in test_alter_index_together_remove_with_unique_together
-    self.assertUniqueConstraintExists(table_name, ['pink', 'weight'])
-  File "/opt/django__django/tests/migrations/test_base.py", line 92, in assertUniqueConstraintExists
-    any(c['unique'] for c in constraints if c['columns'] == list(columns)),
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 829, in assertEqual
-    assertion_func(first, second, msg=msg)
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 822, in _baseAssertEqual
-    raise self.failureException(msg)
-AssertionError: True != False
+  File "/opt/django__django/tests/migrations/test_operations.py", line 1781, in test_alter_index_together_remove_with_unique_together
+    operation.database_forwards(app_label, editor, project_state, new_state)
+  File "/opt/django__django/django/db/migrations/operations/models.py", line 511, in database_forwards
+    getattr(new_model._meta, self.option_name, set()),
+  File "/opt/django__django/django/db/backends/base/schema.py", line 396, in alter_index_together
+    self._delete_composed_index(model, fields, {'index': True}, self.sql_delete_index)
+  File "/opt/django__django/django/db/backends/base/schema.py", line 415, in _delete_composed_index
+    constraint_names = constraint_names - unique_constraints
+TypeError: unsupported operand type(s) for -: 'list' and 'set'
 
 ----------------------------------------------------------------------
-Ran 102 tests in 2.885s
+Ran 102 tests in 4.111s
 
-FAILED (failures=1)
+FAILED (errors=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

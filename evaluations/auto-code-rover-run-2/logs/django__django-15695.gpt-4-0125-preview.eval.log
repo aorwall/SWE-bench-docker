@@ -250,12 +250,12 @@ test_rename_field_case (migrations.test_operations.OperationTests) ... ok
 test_rename_field_reloads_state_on_fk_target_changes (migrations.test_operations.OperationTests)
 If RenameField doesn't reload state appropriately, the AlterField ... ok
 test_rename_field_with_db_column (migrations.test_operations.OperationTests) ... ok
-test_rename_index (migrations.test_operations.OperationTests) ... ERROR
+test_rename_index (migrations.test_operations.OperationTests) ... ok
 test_rename_index_arguments (migrations.test_operations.OperationTests) ... ok
 test_rename_index_state_forwards (migrations.test_operations.OperationTests) ... ok
 test_rename_index_state_forwards_unnamed_index (migrations.test_operations.OperationTests) ... ok
 test_rename_index_unknown_unnamed_index (migrations.test_operations.OperationTests) ... ok
-test_rename_index_unnamed_index (migrations.test_operations.OperationTests) ... FAIL
+test_rename_index_unnamed_index (migrations.test_operations.OperationTests) ... ERROR
 test_rename_m2m_model_after_rename_field (migrations.test_operations.OperationTests)
 RenameModel renames a many-to-many column after a RenameField. ... ok
 test_rename_m2m_target_model (migrations.test_operations.OperationTests) ... ok
@@ -301,7 +301,7 @@ test_smallfield_bigautofield_foreignfield_growth (migrations.test_operations.Ope
 A field may be migrated from SmallAutoField to BigAutoField. ... ok
 
 ======================================================================
-ERROR: test_rename_index (migrations.test_operations.OperationTests)
+ERROR: test_rename_index_unnamed_index (migrations.test_operations.OperationTests)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
@@ -310,111 +310,18 @@ Traceback (most recent call last):
     self._callTestMethod(testMethod)
   File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
     method()
-  File "/opt/django__django/tests/migrations/test_operations.py", line 2935, in test_rename_index
-    operation.database_backwards(app_label, editor, new_state, project_state)
-  File "/opt/django__django/django/db/migrations/operations/models.py", line 1000, in database_backwards
-    old_index = from_model_state.get_index_by_name(self.new_name)  # Use self.new_name because names were swapped
+  File "/opt/django__django/tests/migrations/test_operations.py", line 2994, in test_rename_index_unnamed_index
+    operation.database_forwards(app_label, editor, new_state, project_state)
+  File "/opt/django__django/django/db/migrations/operations/models.py", line 966, in database_forwards
+    new_index = to_model_state.get_index_by_name(self.new_name)
   File "/opt/django__django/django/db/migrations/state.py", line 959, in get_index_by_name
     raise ValueError("No index named %s on model %s" % (name, self.name))
-ValueError: No index named pony_pink_idx on model Pony
-
-======================================================================
-FAIL: test_rename_index_unnamed_index (migrations.test_operations.OperationTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
-    yield
-  File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 592, in run
-    self._callTestMethod(testMethod)
-  File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 550, in _callTestMethod
-    method()
-  File "/opt/django__django/tests/migrations/test_operations.py", line 2989, in test_rename_index_unnamed_index
-    operation.database_backwards(app_label, editor, new_state, project_state)
-  File "/opt/django__django/django/test/testcases.py", line 98, in __exit__
-    self.test_case.assertEqual(
-  File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 837, in assertEqual
-    assertion_func(first, second, msg=msg)
-  File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 830, in _baseAssertEqual
-    raise self.failureException(msg)
-AssertionError: 22 != 0 : 22 queries executed, 0 expected
-Captured queries were:
-1. SELECT sql FROM sqlite_master WHERE type='table' and name="test_rninui_pony"
-2. PRAGMA table_info("test_rninui_pony")
-3. 
-            SELECT sql
-            FROM sqlite_master
-            WHERE type = 'table' AND name = 'test_rninui_pony'
-        
-4. 
-                    SELECT sql
-                    FROM sqlite_master
-                    WHERE
-                        type = 'table' AND
-                        name = 'test_rninui_pony' AND
-                        sql LIKE '%json_valid("id")%'
-                
-5. 
-                    SELECT sql
-                    FROM sqlite_master
-                    WHERE
-                        type = 'table' AND
-                        name = 'test_rninui_pony' AND
-                        sql LIKE '%json_valid("pink")%'
-                
-6. 
-                    SELECT sql
-                    FROM sqlite_master
-                    WHERE
-                        type = 'table' AND
-                        name = 'test_rninui_pony' AND
-                        sql LIKE '%json_valid("weight")%'
-                
-7. PRAGMA index_list("test_rninui_pony")
-8. SELECT sql FROM sqlite_master WHERE type='index' AND name="new_pony_test_idx"
-9. PRAGMA index_info("new_pony_test_idx")
-10. PRAGMA table_info("test_rninui_pony")
-11. PRAGMA foreign_key_list("test_rninui_pony")
-12. SELECT sql FROM sqlite_master WHERE type='table' and name="test_rninui_pony"
-13. PRAGMA table_info("test_rninui_pony")
-14. 
-            SELECT sql
-            FROM sqlite_master
-            WHERE type = 'table' AND name = 'test_rninui_pony'
-        
-15. 
-                    SELECT sql
-                    FROM sqlite_master
-                    WHERE
-                        type = 'table' AND
-                        name = 'test_rninui_pony' AND
-                        sql LIKE '%json_valid("id")%'
-                
-16. 
-                    SELECT sql
-                    FROM sqlite_master
-                    WHERE
-                        type = 'table' AND
-                        name = 'test_rninui_pony' AND
-                        sql LIKE '%json_valid("pink")%'
-                
-17. 
-                    SELECT sql
-                    FROM sqlite_master
-                    WHERE
-                        type = 'table' AND
-                        name = 'test_rninui_pony' AND
-                        sql LIKE '%json_valid("weight")%'
-                
-18. PRAGMA index_list("test_rninui_pony")
-19. SELECT sql FROM sqlite_master WHERE type='index' AND name="new_pony_test_idx"
-20. PRAGMA index_info("new_pony_test_idx")
-21. PRAGMA table_info("test_rninui_pony")
-22. PRAGMA foreign_key_list("test_rninui_pony")
+ValueError: No index named new_pony_test_idx on model Pony
 
 ----------------------------------------------------------------------
-Ran 130 tests in 5.949s
+Ran 130 tests in 5.102s
 
-FAILED (failures=1, errors=1, skipped=1)
+FAILED (errors=1, skipped=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

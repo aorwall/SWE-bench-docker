@@ -98,7 +98,7 @@ PASSED lib/matplotlib/tests/test_backend_ps.py::test_no_duplicate_definition
 PASSED lib/matplotlib/tests/test_backend_ps.py::test_path_collection[eps]
 SKIPPED [1] lib/matplotlib/tests/test_backend_ps.py:292: Font may be missing
 SKIPPED [1] lib/matplotlib/tests/test_backend_ps.py:305: Font may be missing
-======================== 34 passed, 2 skipped in 46.59s ========================
+======================== 34 passed, 2 skipped in 49.36s ========================
 
  
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23964] Return Code: 0 

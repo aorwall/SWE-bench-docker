@@ -69,8 +69,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        18755259
-hash randomization: on (PYTHONHASHSEED=1751938365)
+random seed:        22921290
+hash randomization: on (PYTHONHASHSEED=3952409409)
 
 sympy/matrices/expressions/tests/test_blockmatrix.py[17] 
 test_bc_matmul ok
@@ -146,7 +146,7 @@ Traceback (most recent call last):
     raise TypeError("cannot determine truth value of Relational")
 TypeError: cannot determine truth value of Relational
 
-= tests finished: 28 passed, 1 expected to fail, 3 exceptions, in 0.79 seconds =
+= tests finished: 28 passed, 1 expected to fail, 3 exceptions, in 1.12 seconds =
 DO *NOT* COMMIT!
 
  

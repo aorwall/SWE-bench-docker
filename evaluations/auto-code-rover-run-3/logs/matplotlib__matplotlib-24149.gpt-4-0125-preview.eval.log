@@ -843,7 +843,7 @@ PASSED lib/matplotlib/tests/test_axes.py::test_bar_leading_nan
 PASSED lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]
 SKIPPED [10] lib/matplotlib/testing/compare.py:285: Don't know how to convert .svg files to png
 SKIPPED [54] ../miniconda3/envs/matplotlib__matplotlib__3.6/lib/python3.11/contextlib.py:81: Cannot compare svg files because Inkscape is not installed
-================= 768 passed, 64 skipped in 154.70s (0:02:34) ==================
+================= 768 passed, 64 skipped in 159.84s (0:02:39) ==================
 
  
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24149] Return Code: 0 

@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        56845692
-hash randomization: on (PYTHONHASHSEED=3384452426)
+random seed:        38998428
+hash randomization: on (PYTHONHASHSEED=1105226130)
 
 sympy/geometry/tests/test_point.py[12] 
 test_point E
@@ -81,7 +81,7 @@ test_direction_cosine ok                                                  [FAIL]
 
 
 ________________________________ slowest tests _________________________________
-test_point - Took 15.285 seconds
+test_point - Took 27.153 seconds
 ________________________________________________________________________________
 ________________ sympy/geometry/tests/test_point.py:test_point _________________
 Traceback (most recent call last):
@@ -95,7 +95,7 @@ Traceback (most recent call last):
     assert 5 * p4 == Point3D(5, 5, 5)
 TypeError: unsupported operand type(s) for *: 'int' and 'Point3D'
 
-========== tests finished: 10 passed, 2 exceptions, in 15.66 seconds ===========
+========== tests finished: 10 passed, 2 exceptions, in 27.81 seconds ===========
 DO *NOT* COMMIT!
 
  

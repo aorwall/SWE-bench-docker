@@ -14,9 +14,7 @@ HEAD is now at 748ce73479 Merge pull request #20916 from costika1234/fix_convent
 [sympy__sympy__1.8] [sympy__sympy-21055] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.8] [sympy__sympy-21055] Std. Output:
 Checking patch sympy/assumptions/refine.py...
-Checking patch sympy/integrals/integrals.py...
 Applied patch sympy/assumptions/refine.py cleanly.
-Applied patch sympy/integrals/integrals.py cleanly.
  
 [sympy__sympy__1.8] [sympy__sympy-21055] Return Code: 0 
 [sympy__sympy__1.8] [sympy__sympy-21055] Apply patch successful (pred_try) 
@@ -24,9 +22,7 @@ Applied patch sympy/integrals/integrals.py cleanly.
 [sympy__sympy__1.8] [sympy__sympy-21055] Command: git apply -v -R /home/swe-bench/temp_sympy__sympy-21055_pred_try.patch 
 [sympy__sympy__1.8] [sympy__sympy-21055] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.8] [sympy__sympy-21055] Std. Output:
-Checking patch sympy/integrals/integrals.py...
 Checking patch sympy/assumptions/refine.py...
-Applied patch sympy/integrals/integrals.py cleanly.
 Applied patch sympy/assumptions/refine.py cleanly.
  
 [sympy__sympy__1.8] [sympy__sympy-21055] Return Code: 0 
@@ -36,9 +32,7 @@ Applied patch sympy/assumptions/refine.py cleanly.
 [sympy__sympy__1.8] [sympy__sympy-21055] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.8] [sympy__sympy-21055] Std. Output:
 Checking patch sympy/assumptions/refine.py...
-Checking patch sympy/integrals/integrals.py...
 Applied patch sympy/assumptions/refine.py cleanly.
-Applied patch sympy/integrals/integrals.py cleanly.
  
 [sympy__sympy__1.8] [sympy__sympy-21055] Return Code: 0 
 [sympy__sympy__1.8] [sympy__sympy-21055] Apply patch successful (pred) 
@@ -67,8 +61,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        19690055
-hash randomization: on (PYTHONHASHSEED=1174852834)
+random seed:        34235990
+hash randomization: on (PYTHONHASHSEED=3915547882)
 
 sympy/assumptions/tests/test_refine.py[15] 
 test_Abs E
@@ -261,7 +255,7 @@ Traceback (most recent call last):
     if isinstance(expr, Integral) or isinstance(expr, Piecewise):
 NameError: name 'Integral' is not defined
 
-=========== tests finished: 0 passed, 15 exceptions, in 0.46 seconds ===========
+=========== tests finished: 0 passed, 15 exceptions, in 0.48 seconds ===========
 DO *NOT* COMMIT!
 ERROR conda.cli.main_run:execute(124): `conda run bin/test -C --verbose sympy/assumptions/tests/test_refine.py` failed. (See above for error)
 

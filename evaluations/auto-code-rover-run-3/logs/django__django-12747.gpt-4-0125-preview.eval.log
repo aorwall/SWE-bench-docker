@@ -14,8 +14,8 @@ HEAD is now at c86201b6ed Disabled management commands output with verbosity 0 i
 [django__django__3.1] [django__django-12747] Command: git apply -v /opt/temp_django__django-12747_pred_try.patch 
 [django__django__3.1] [django__django-12747] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12747] Std. Output:
-Checking patch django/db/models/query.py...
-Applied patch django/db/models/query.py cleanly.
+Checking patch django/db/models/deletion.py...
+Applied patch django/db/models/deletion.py cleanly.
  
 [django__django__3.1] [django__django-12747] Return Code: 0 
 [django__django__3.1] [django__django-12747] Apply patch successful (pred_try) 
@@ -23,8 +23,8 @@ Applied patch django/db/models/query.py cleanly.
 [django__django__3.1] [django__django-12747] Command: git apply -v -R /opt/temp_django__django-12747_pred_try.patch 
 [django__django__3.1] [django__django-12747] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12747] Std. Output:
-Checking patch django/db/models/query.py...
-Applied patch django/db/models/query.py cleanly.
+Checking patch django/db/models/deletion.py...
+Applied patch django/db/models/deletion.py cleanly.
  
 [django__django__3.1] [django__django-12747] Return Code: 0 
 [django__django__3.1] [django__django-12747] Revert patch successful (pred_try) 
@@ -32,8 +32,8 @@ Applied patch django/db/models/query.py cleanly.
 [django__django__3.1] [django__django-12747] Command: git apply -v /opt/temp_django__django-12747_pred.patch 
 [django__django__3.1] [django__django-12747] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12747] Std. Output:
-Checking patch django/db/models/query.py...
-Applied patch django/db/models/query.py cleanly.
+Checking patch django/db/models/deletion.py...
+Applied patch django/db/models/deletion.py cleanly.
  
 [django__django__3.1] [django__django-12747] Return Code: 0 
 [django__django__3.1] [django__django-12747] Apply patch successful (pred) 
@@ -228,7 +228,7 @@ First has 1, Second has 0:  'delete.M_m2m'
 First has 1, Second has 0:  'delete.MR'
 
 ----------------------------------------------------------------------
-Ran 53 tests in 2.512s
+Ran 53 tests in 2.050s
 
 FAILED (failures=3, skipped=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

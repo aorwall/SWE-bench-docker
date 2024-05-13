@@ -125,7 +125,7 @@ Traceback (most recent call last):
 NameError: name 'django' is not defined
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.040s
+Ran 8 tests in 0.082s
 
 FAILED (errors=4)
  

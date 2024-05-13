@@ -219,7 +219,7 @@ sqlite3.OperationalError: table "django_migrations" already exists
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "/opt/django__django/django/db/migrations/recorder.py", line 68, in ensure_schema
+  File "/opt/django__django/django/db/migrations/recorder.py", line 72, in ensure_schema
     editor.create_model(self.Migration)
   File "/opt/django__django/django/db/backends/base/schema.py", line 355, in create_model
     self.execute(sql, params or None)
@@ -256,7 +256,7 @@ Traceback (most recent call last):
     executor.migrate([], plan=[])
   File "/opt/django__django/django/db/migrations/executor.py", line 100, in migrate
     self.recorder.ensure_schema()
-  File "/opt/django__django/django/db/migrations/recorder.py", line 70, in ensure_schema
+  File "/opt/django__django/django/db/migrations/recorder.py", line 74, in ensure_schema
     raise MigrationSchemaMissing("Unable to create the django_migrations table (%s)" % exc)
 django.db.migrations.exceptions.MigrationSchemaMissing: Unable to create the django_migrations table (table "django_migrations" already exists)
 
@@ -280,7 +280,7 @@ AssertionError: Expected 'ensure_schema' to not have been called. Called 1 times
 Calls: [call()].
 
 ----------------------------------------------------------------------
-Ran 36 tests in 5.973s
+Ran 36 tests in 5.376s
 
 FAILED (failures=1, errors=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

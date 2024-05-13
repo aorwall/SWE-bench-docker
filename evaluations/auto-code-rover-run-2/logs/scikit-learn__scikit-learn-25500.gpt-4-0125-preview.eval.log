@@ -111,7 +111,7 @@ sklearn/tests/test_isotonic.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0
 [32mPASSED[0m sklearn/tests/test_isotonic.py::[1mtest_get_feature_names_out[1d][0m
 [32mPASSED[0m sklearn/tests/test_isotonic.py::[1mtest_get_feature_names_out[2d][0m
 [31mFAILED[0m sklearn/tests/test_isotonic.py::[1mtest_isotonic_regression_output_predict[0m - AssertionError: assert False
-[31m========================= [31m[1m1 failed[0m, [32m45 passed[0m[31m in 0.71s[0m[31m =========================[0m
+[31m========================= [31m[1m1 failed[0m, [32m45 passed[0m[31m in 0.76s[0m[31m =========================[0m
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25500] Return Code: 1 
 

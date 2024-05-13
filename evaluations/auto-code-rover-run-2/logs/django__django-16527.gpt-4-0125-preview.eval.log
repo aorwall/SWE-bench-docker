@@ -219,7 +219,7 @@ submit_row template tag should pass whole context. ... ok
 test_submit_row_save_as_new_add_permission_required (admin_views.test_templatetags.AdminTemplateTagsTest.test_submit_row_save_as_new_add_permission_required) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 2.071s
+Ran 7 tests in 1.340s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

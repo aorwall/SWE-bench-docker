@@ -13,8 +13,8 @@ HEAD is now at 2c867b8f8 MAINT Parameters validation for metrics.label_ranking_l
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-25747_pred_try.patch 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Std. Output:
-Checking patch sklearn/pipeline.py...
-Applied patch sklearn/pipeline.py cleanly.
+Checking patch sklearn/utils/_set_output.py...
+Applied patch sklearn/utils/_set_output.py cleanly.
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Apply patch successful (pred_try) 
@@ -22,8 +22,8 @@ Applied patch sklearn/pipeline.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Command: git apply -v -R /opt/temp_scikit-learn__scikit-learn-25747_pred_try.patch 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Std. Output:
-Checking patch sklearn/pipeline.py...
-Applied patch sklearn/pipeline.py cleanly.
+Checking patch sklearn/utils/_set_output.py...
+Applied patch sklearn/utils/_set_output.py cleanly.
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Revert patch successful (pred_try) 
@@ -31,8 +31,8 @@ Applied patch sklearn/pipeline.py cleanly.
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-25747_pred.patch 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Std. Output:
-Checking patch sklearn/pipeline.py...
-Applied patch sklearn/pipeline.py cleanly.
+Checking patch sklearn/utils/_set_output.py...
+Applied patch sklearn/utils/_set_output.py cleanly.
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Return Code: 0 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Apply patch successful (pred) 
@@ -79,7 +79,7 @@ sklearn/utils/tests/test_set_output.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m
 [32mPASSED[0m sklearn/utils/tests/test_set_output.py::[1mtest__wrap_in_pandas_container_column_errors[0m
 [32mPASSED[0m sklearn/utils/tests/test_set_output.py::[1mtest_set_output_mro[0m
 [31mFAILED[0m sklearn/utils/tests/test_set_output.py::[1mtest_set_output_pandas_keep_index[0m - AssertionError: 
-[31m========================= [31m[1m1 failed[0m, [32m14 passed[0m[31m in 0.77s[0m[31m =========================[0m
+[31m========================= [31m[1m1 failed[0m, [32m14 passed[0m[31m in 0.63s[0m[31m =========================[0m
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25747] Return Code: 1 
 

@@ -180,19 +180,19 @@ py39: add activators for Bash, CShell, Fish, Nushell, PowerShell, Python
 .pkg: add seed packages via FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/swe-bench/.local/share/virtualenv)
 .pkg: add activators for Bash, CShell, Fish, Nushell, PowerShell, Python
 .pkg: install_requires> python -I -m pip install 'setuptools>=40.8.0' wheel
-.pkg: exit 0 (1.39 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'setuptools>=40.8.0' wheel pid=146
+.pkg: exit 0 (1.86 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'setuptools>=40.8.0' wheel pid=146
 .pkg: _optional_hooks> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.4/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__
 .pkg: exit None (0.43 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.4/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=151
 .pkg: get_requires_for_build_editable> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.4/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__
-.pkg: exit None (0.55 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.4/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=154
+.pkg: exit None (0.50 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.4/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=154
 .pkg: install_requires_for_build_editable> python -I -m pip install wheel
-.pkg: exit 0 (0.74 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install wheel pid=158
+.pkg: exit 0 (0.85 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install wheel pid=158
 .pkg: build_editable> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.4/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__
-.pkg: exit None (0.64 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.4/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=163
+.pkg: exit None (0.77 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__3.4/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=163
 py39: install_package_deps> python -I -m pip install 'Jinja2<3.0' 'Pygments>=2.0' 'alabaster<0.7.12,>=0.7' 'babel>=1.3' 'colorama>=0.3.5; sys_platform == "win32"' cython 'docutils>=0.12' html5lib imagesize 'markupsafe<=2.0.1' packaging pytest pytest-cov 'requests>=2.5.0' setuptools 'snowballstemmer>=1.1' 'sphinxcontrib-applehelp<=1.0.7' 'sphinxcontrib-devhelp<=1.0.5' 'sphinxcontrib-htmlhelp<=2.0.4' sphinxcontrib-jsmath 'sphinxcontrib-qthelp<=1.0.6' 'sphinxcontrib-serializinghtml<=1.1.9' 'typed-ast; python_version < "3.8"'
-py39: exit 0 (15.45 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'Jinja2<3.0' 'Pygments>=2.0' 'alabaster<0.7.12,>=0.7' 'babel>=1.3' 'colorama>=0.3.5; sys_platform == "win32"' cython 'docutils>=0.12' html5lib imagesize 'markupsafe<=2.0.1' packaging pytest pytest-cov 'requests>=2.5.0' setuptools 'snowballstemmer>=1.1' 'sphinxcontrib-applehelp<=1.0.7' 'sphinxcontrib-devhelp<=1.0.5' 'sphinxcontrib-htmlhelp<=2.0.4' sphinxcontrib-jsmath 'sphinxcontrib-qthelp<=1.0.6' 'sphinxcontrib-serializinghtml<=1.1.9' 'typed-ast; python_version < "3.8"' pid=167
+py39: exit 0 (15.92 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'Jinja2<3.0' 'Pygments>=2.0' 'alabaster<0.7.12,>=0.7' 'babel>=1.3' 'colorama>=0.3.5; sys_platform == "win32"' cython 'docutils>=0.12' html5lib imagesize 'markupsafe<=2.0.1' packaging pytest pytest-cov 'requests>=2.5.0' setuptools 'snowballstemmer>=1.1' 'sphinxcontrib-applehelp<=1.0.7' 'sphinxcontrib-devhelp<=1.0.5' 'sphinxcontrib-htmlhelp<=2.0.4' sphinxcontrib-jsmath 'sphinxcontrib-qthelp<=1.0.6' 'sphinxcontrib-serializinghtml<=1.1.9' 'typed-ast; python_version < "3.8"' pid=167
 py39: install_package> python -I -m pip install --force-reinstall --no-deps /home/swe-bench/sphinx-doc__sphinx/.tox/.tmp/package/1/Sphinx-3.4.0.dev20240512-0.editable-py3-none-any.whl
-py39: exit 0 (0.90 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install --force-reinstall --no-deps /home/swe-bench/sphinx-doc__sphinx/.tox/.tmp/package/1/Sphinx-3.4.0.dev20240512-0.editable-py3-none-any.whl pid=179
+py39: exit 0 (0.71 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install --force-reinstall --no-deps /home/swe-bench/sphinx-doc__sphinx/.tox/.tmp/package/1/Sphinx-3.4.0.dev20240512-0.editable-py3-none-any.whl pid=179
 py39: commands[0]> python -X dev -m pytest -rA --durations 25 tests/test_domain_std.py
 [1m============================= test session starts ==============================[0m
 platform linux -- Python 3.9.19, pytest-8.2.0, pluggy-1.5.0
@@ -204,14 +204,89 @@ configfile: setup.cfg
 plugins: cov-5.0.0
 collected 16 items
 
-tests/test_domain_std.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[31m                                [100%][0m
+tests/test_domain_std.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[31m                                [100%][0m
 
 =================================== FAILURES ===================================
+[31m[1m____________________ test_cmd_option_starting_with_bracket _____________________[0m
+
+app = <SphinxTestApp buildername='html'>
+
+    [0m[94mdef[39;49;00m [92mtest_cmd_option_starting_with_bracket[39;49;00m(app):[90m[39;49;00m
+        text = [33m"[39;49;00m[33m.. option:: [enable=]PATTERN[39;49;00m[33m"[39;49;00m[90m[39;49;00m
+>       doctree = restructuredtext.parse(app, text)[90m[39;49;00m
+
+[1m[31mtests/test_domain_std.py[0m:107: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+[1m[31msphinx/testing/restructuredtext.py[0m:29: in parse
+    [0m[94mreturn[39;49;00m publish_doctree(text, path.join(app.srcdir, docname + [33m'[39;49;00m[33m.rst[39;49;00m[33m'[39;49;00m),[90m[39;49;00m
+[1m[31m.tox/py39/lib/python3.9/site-packages/docutils/core.py[0m:523: in publish_doctree
+    [0mpub.publish(enable_exit_status=enable_exit_status)[90m[39;49;00m
+[1m[31m.tox/py39/lib/python3.9/site-packages/docutils/core.py[0m:224: in publish
+    [0m[96mself[39;49;00m.document = [96mself[39;49;00m.reader.read([96mself[39;49;00m.source, [96mself[39;49;00m.parser,[90m[39;49;00m
+[1m[31msphinx/io.py[0m:126: in read
+    [0m[96mself[39;49;00m.parse()[90m[39;49;00m
+[1m[31m.tox/py39/lib/python3.9/site-packages/docutils/readers/__init__.py[0m:76: in parse
+    [0m[96mself[39;49;00m.parser.parse([96mself[39;49;00m.input, document)[90m[39;49;00m
+[1m[31msphinx/parsers.py[0m:104: in parse
+    [0m[96mself[39;49;00m.statemachine.run(inputlines, document, inliner=[96mself[39;49;00m.inliner)[90m[39;49;00m
+[1m[31m.tox/py39/lib/python3.9/site-packages/docutils/parsers/rst/states.py[0m:169: in run
+    [0mresults = StateMachineWS.run([96mself[39;49;00m, input_lines, input_offset,[90m[39;49;00m
+[1m[31m.tox/py39/lib/python3.9/site-packages/docutils/statemachine.py[0m:233: in run
+    [0mcontext, next_state, result = [96mself[39;49;00m.check_line([90m[39;49;00m
+[1m[31m.tox/py39/lib/python3.9/site-packages/docutils/statemachine.py[0m:445: in check_line
+    [0m[94mreturn[39;49;00m method(match, context, next_state)[90m[39;49;00m
+[1m[31m.tox/py39/lib/python3.9/site-packages/docutils/parsers/rst/states.py[0m:2355: in explicit_markup
+    [0mnodelist, blank_finish = [96mself[39;49;00m.explicit_construct(match)[90m[39;49;00m
+[1m[31m.tox/py39/lib/python3.9/site-packages/docutils/parsers/rst/states.py[0m:2367: in explicit_construct
+    [0m[94mreturn[39;49;00m method([96mself[39;49;00m, expmatch)[90m[39;49;00m
+[1m[31m.tox/py39/lib/python3.9/site-packages/docutils/parsers/rst/states.py[0m:2104: in directive
+    [0m[94mreturn[39;49;00m [96mself[39;49;00m.run_directive([90m[39;49;00m
+[1m[31m.tox/py39/lib/python3.9/site-packages/docutils/parsers/rst/states.py[0m:2154: in run_directive
+    [0mresult = directive_instance.run()[90m[39;49;00m
+[1m[31msphinx/domains/__init__.py[0m:285: in run
+    [0m[94mreturn[39;49;00m [96msuper[39;49;00m().run()[90m[39;49;00m
+[1m[31msphinx/directives/__init__.py[0m:188: in run
+    [0mname = [96mself[39;49;00m.handle_signature(sig, signode)[90m[39;49;00m
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <sphinx.domains.Domain.directive.<locals>.DirectiveAdapter object at 0x7900dfd65280>
+sig = '[enable=]PATTERN', signode = <desc_signature: >
+
+    [0m[94mdef[39;49;00m [92mhandle_signature[39;49;00m([96mself[39;49;00m, sig: [96mstr[39;49;00m, signode: desc_signature) -> [96mstr[39;49;00m:[90m[39;49;00m
+    [90m    [39;49;00m[33m"""Transform an option description into RST nodes."""[39;49;00m[90m[39;49;00m
+        count = [94m0[39;49;00m[90m[39;49;00m
+        firstname = [33m'[39;49;00m[33m'[39;49;00m[90m[39;49;00m
+        [94mfor[39;49;00m potential_option [95min[39;49;00m sig.split([33m'[39;49;00m[33m, [39;49;00m[33m'[39;49;00m):[90m[39;49;00m
+            potential_option = potential_option.strip()[90m[39;49;00m
+            m = option_desc_re.match(potential_option)[90m[39;49;00m
+            [94mif[39;49;00m [95mnot[39;49;00m m:[90m[39;49;00m
+                [90m# Allow any string as an option to accommodate different syntaxes[39;49;00m[90m[39;49;00m
+                optname, args = potential_option, [33m'[39;49;00m[33m'[39;49;00m[90m[39;49;00m
+                logger.info(__([33m'[39;49;00m[33mUsing fallback option description for [39;49;00m[33m%r[39;49;00m[33m'[39;49;00m), potential_option,[90m[39;49;00m
+                             location=signode)[90m[39;49;00m
+            [94melse[39;49;00m:[90m[39;49;00m
+                optname, args = m.groups()[90m[39;49;00m
+>           optname, args = m.groups()[90m[39;49;00m
+[1m[31mE           AttributeError: 'NoneType' object has no attribute 'groups'[0m
+
+[1m[31msphinx/domains/std.py[0m:200: AttributeError
+--------------------------- Captured stdout teardown ---------------------------
+# testroot: root
+# builder: html
+# srcdir: /tmp/pytest-of-swe-bench/pytest-0/root
+# outdir: /tmp/pytest-of-swe-bench/pytest-0/root/_build/html
+# status: 
+[01mRunning Sphinx v3.4.0+/e4bd3bd3d[39;49;00m
+/tmp/pytest-of-swe-bench/pytest-0/root/index.rst:1: Using fallback option description for '[enable=]PATTERN'
+
+# warning: 
+[91mWARNING: while setting up extension sphinx.addnodes: node class 'meta' is already registered, its visitors will be overridden[39;49;00m
+
 [31m[1m_____________________________ test_productionlist ______________________________[0m
 
 app = <SphinxTestApp buildername='html'>
-status = <_io.StringIO object at 0x7c28cb756550>
-warning = <_io.StringIO object at 0x7c28cb756690>
+status = <_io.StringIO object at 0x7900df373190>
+warning = <_io.StringIO object at 0x7900df373050>
 
     [0m[37m@pytest[39;49;00m.mark.skipif(docutils.__version_info__ < ([94m0[39;49;00m, [94m13[39;49;00m),[90m[39;49;00m
                         reason=[33m'[39;49;00m[33mdocutils-0.13 or above is required[39;49;00m[33m'[39;49;00m)[90m[39;49;00m
@@ -291,95 +366,95 @@ tests/test_domain_std.py: 18 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/util/nodes.py:352: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for raw in node.traverse(nodes.raw):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/__init__.py:210: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse():  # type: Node
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/i18n.py:95: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(addnodes.translatable):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/__init__.py:110: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for ref in self.document.traverse(nodes.substitution_reference):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/__init__.py:131: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(nodes.target):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/__init__.py:150: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(nodes.block_quote):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/__init__.py:175: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(nodes.Element):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/__init__.py:222: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(addnodes.index):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/__init__.py:189: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(nodes.section):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/__init__.py:279: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(nodes.doctest_block):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/domains/citation.py:116: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(nodes.citation):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/domains/citation.py:135: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(nodes.citation_reference):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/builders/latex/transforms.py:36: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(matcher):  # type: nodes.Element
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/__init__.py:291: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(matcher):  # type: Element
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/util/compat.py:44: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(addnodes.index):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/domains/index.py:51: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in document.traverse(addnodes.index):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/domains/math.py:84: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     self.data['has_equations'][docname] = any(document.traverse(math_node))
 
-tests/test_domain_std.py: 15 warnings
+tests/test_domain_std.py: 14 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/ext/todo.py:97: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for todo in document.traverse(todo_node):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/environment/collectors/asset.py:46: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in doctree.traverse(nodes.image):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/environment/collectors/asset.py:127: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in doctree.traverse(addnodes.download_reference):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/environment/collectors/title.py:46: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in doctree.traverse(nodes.section):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/__init__.py:301: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(nodes.system_message):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/__init__.py:390: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for node in self.document.traverse(addnodes.manpage):
 
-tests/test_domain_std.py: 23 warnings
+tests/test_domain_std.py: 22 warnings
   /home/swe-bench/sphinx-doc__sphinx/sphinx/transforms/i18n.py:488: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     for inline in self.document.traverse(matcher):  # type: nodes.inline
 
@@ -388,7 +463,7 @@ tests/test_domain_std.py: 20 warnings
     for classifier in reversed(list(node.parent.traverse(nodes.classifier))):
 
 tests/test_domain_std.py::test_glossary_conflicted_labels
-  /home/swe-bench/sphinx-doc__sphinx/sphinx/domains/std.py:761: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
+  /home/swe-bench/sphinx-doc__sphinx/sphinx/domains/std.py:752: PendingDeprecationWarning: nodes.Node.traverse() is obsoleted by Node.findall().
     toctree = next(iter(node.traverse(addnodes.toctree)), None)
 
 tests/test_domain_std.py::test_productionlist
@@ -399,11 +474,11 @@ tests/test_domain_std.py::test_productionlist
 tests/test_domain_std.py::test_productionlist
 tests/test_domain_std.py::test_productionlist
 tests/test_domain_std.py::test_productionlist
-  /home/swe-bench/sphinx-doc__sphinx/sphinx/domains/std.py:471: DeprecationWarning: nodes.Text: initialization argument "rawsource" is ignored and will be removed in Docutils 2.0.
+  /home/swe-bench/sphinx-doc__sphinx/sphinx/domains/std.py:462: DeprecationWarning: nodes.Text: initialization argument "rawsource" is ignored and will be removed in Docutils 2.0.
     retnodes.append(nodes.Text(txt, txt))
 
 tests/test_domain_std.py: 11 warnings
-  /home/swe-bench/sphinx-doc__sphinx/sphinx/domains/std.py:478: DeprecationWarning: nodes.Text: initialization argument "rawsource" is ignored and will be removed in Docutils 2.0.
+  /home/swe-bench/sphinx-doc__sphinx/sphinx/domains/std.py:469: DeprecationWarning: nodes.Text: initialization argument "rawsource" is ignored and will be removed in Docutils 2.0.
     retnodes.append(nodes.Text(text[pos:], text[pos:]))
 
 tests/test_domain_std.py::test_productionlist
@@ -649,17 +724,6 @@ tests/test_domain_std.py::test_productionlist
 
 # warning: 
 [91mWARNING: while setting up extension sphinx.addnodes: node class 'meta' is already registered, its visitors will be overridden[39;49;00m
-
---------------------------- Captured stdout teardown ---------------------------
-# testroot: root
-# builder: html
-# srcdir: /tmp/pytest-of-swe-bench/pytest-0/root
-# outdir: /tmp/pytest-of-swe-bench/pytest-0/root/_build/html
-# status: 
-[01mRunning Sphinx v3.4.0+/e4bd3bd3d[39;49;00m
-
-# warning: 
-[91mWARNING: while setting up extension sphinx.addnodes: node class 'meta' is already registered, its visitors will be overridden[39;49;00m
 [91mWARNING: term term2 not found in case sensitive match.made a reference to TERM2 instead.[39;49;00m
 
 --------------------------- Captured stdout teardown ---------------------------
@@ -769,37 +833,36 @@ tests/test_domain_std.py::test_productionlist
 [91mWARNING: while setting up extension sphinx.addnodes: node class 'meta' is already registered, its visitors will be overridden[39;49;00m
 
 ============================= slowest 25 durations =============================
-0.88s setup    tests/test_domain_std.py::test_cmd_option_with_optional_value
-0.44s call     tests/test_domain_std.py::test_productionlist
-0.08s setup    tests/test_domain_std.py::test_glossary_comment2
+1.26s setup    tests/test_domain_std.py::test_cmd_option_with_optional_value
+0.74s call     tests/test_domain_std.py::test_productionlist
+0.08s setup    tests/test_domain_std.py::test_glossary_alphanumeric
 0.05s call     tests/test_domain_std.py::test_cmd_option_with_optional_value
-0.05s setup    tests/test_domain_std.py::test_glossary_comment
-0.04s setup    tests/test_domain_std.py::test_glossary_warning
-0.04s setup    tests/test_domain_std.py::test_cmdoption
-0.04s setup    tests/test_domain_std.py::test_glossary_sorted
-0.04s call     tests/test_domain_std.py::test_glossary_warning
+0.04s setup    tests/test_domain_std.py::test_disabled_docref
 0.04s setup    tests/test_domain_std.py::test_cmd_option_starting_with_bracket
 0.04s setup    tests/test_domain_std.py::test_glossary
-0.04s setup    tests/test_domain_std.py::test_multiple_cmdoptions
-0.03s setup    tests/test_domain_std.py::test_glossary_alphanumeric
+0.04s setup    tests/test_domain_std.py::test_glossary_warning
+0.03s call     tests/test_domain_std.py::test_glossary_warning
+0.03s setup    tests/test_domain_std.py::test_glossary_comment2
+0.03s setup    tests/test_domain_std.py::test_glossary_comment
+0.03s setup    tests/test_domain_std.py::test_glossary_sorted
+0.03s setup    tests/test_domain_std.py::test_multiple_cmdoptions
+0.03s setup    tests/test_domain_std.py::test_cmdoption
 0.03s setup    tests/test_domain_std.py::test_glossary_conflicted_labels
-0.02s call     tests/test_domain_std.py::test_glossary_comment
 0.02s setup    tests/test_domain_std.py::test_productionlist
-0.02s setup    tests/test_domain_std.py::test_disabled_docref
-0.01s call     tests/test_domain_std.py::test_glossary
-0.01s call     tests/test_domain_std.py::test_glossary_conflicted_labels
 0.01s call     tests/test_domain_std.py::test_glossary_sorted
+0.01s call     tests/test_domain_std.py::test_glossary
 0.01s call     tests/test_domain_std.py::test_glossary_comment2
-0.01s call     tests/test_domain_std.py::test_cmdoption
+0.01s call     tests/test_domain_std.py::test_disabled_docref
 0.01s call     tests/test_domain_std.py::test_glossary_alphanumeric
-0.01s call     tests/test_domain_std.py::test_multiple_cmdoptions
+0.01s call     tests/test_domain_std.py::test_glossary_conflicted_labels
+0.01s call     tests/test_domain_std.py::test_cmdoption
+0.01s call     tests/test_domain_std.py::test_glossary_comment
 0.01s call     tests/test_domain_std.py::test_cmd_option_starting_with_bracket
 [36m[1m=========================== short test summary info ============================[0m
 [32mPASSED[0m tests/test_domain_std.py::[1mtest_process_doc_handle_figure_caption[0m
 [32mPASSED[0m tests/test_domain_std.py::[1mtest_process_doc_handle_table_title[0m
 [32mPASSED[0m tests/test_domain_std.py::[1mtest_get_full_qualified_name[0m
 [32mPASSED[0m tests/test_domain_std.py::[1mtest_cmd_option_with_optional_value[0m
-[32mPASSED[0m tests/test_domain_std.py::[1mtest_cmd_option_starting_with_bracket[0m
 [32mPASSED[0m tests/test_domain_std.py::[1mtest_glossary[0m
 [32mPASSED[0m tests/test_domain_std.py::[1mtest_glossary_warning[0m
 [32mPASSED[0m tests/test_domain_std.py::[1mtest_glossary_comment[0m
@@ -810,11 +873,12 @@ tests/test_domain_std.py::test_productionlist
 [32mPASSED[0m tests/test_domain_std.py::[1mtest_cmdoption[0m
 [32mPASSED[0m tests/test_domain_std.py::[1mtest_multiple_cmdoptions[0m
 [32mPASSED[0m tests/test_domain_std.py::[1mtest_disabled_docref[0m
+[31mFAILED[0m tests/test_domain_std.py::[1mtest_cmd_option_starting_with_bracket[0m - AttributeError: 'NoneType' object has no attribute 'groups'
 [31mFAILED[0m tests/test_domain_std.py::[1mtest_productionlist[0m - assert 3 == 2
-[31m================= [31m[1m1 failed[0m, [32m15 passed[0m, [33m1052 warnings[0m[31m in 2.32s[0m[31m ==================[0m
-py39: exit 1 (3.87 seconds) /home/swe-bench/sphinx-doc__sphinx> python -X dev -m pytest -rA --durations 25 tests/test_domain_std.py pid=186
-  py39: FAIL code 1 (24.69=setup[20.82]+cmd[3.87] seconds)
-  evaluation failed :( (25.38 seconds)
+[31m================= [31m[1m2 failed[0m, [32m14 passed[0m, [33m1029 warnings[0m[31m in 3.49s[0m[31m ==================[0m
+py39: exit 1 (5.18 seconds) /home/swe-bench/sphinx-doc__sphinx> python -X dev -m pytest -rA --durations 25 tests/test_domain_std.py pid=186
+  py39: FAIL code 1 (27.09=setup[21.92]+cmd[5.18] seconds)
+  evaluation failed :( (27.92 seconds)
 ERROR conda.cli.main_run:execute(124): `conda run tox -epy39 -v -- tests/test_domain_std.py` failed. (See above for error)
 
  

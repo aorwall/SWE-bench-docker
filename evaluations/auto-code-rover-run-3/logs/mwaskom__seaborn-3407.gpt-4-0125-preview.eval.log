@@ -64,7 +64,7 @@ tests/test_axisgrid.py ................................................. [ 40%]
 =================================== FAILURES ===================================
 _________________ TestPairGrid.test_pairplot_column_multiindex _________________
 
-self = <tests.test_axisgrid.TestPairGrid object at 0x7fd69a7a5c70>
+self = <tests.test_axisgrid.TestPairGrid object at 0x7d884d708400>
 
     def test_pairplot_column_multiindex(self):
     
@@ -74,16 +74,16 @@ self = <tests.test_axisgrid.TestPairGrid object at 0x7fd69a7a5c70>
 
 tests/test_axisgrid.py:1429: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-seaborn/axisgrid.py:2110: in pairplot
+seaborn/axisgrid.py:2111: in pairplot
     data.columns = ['_'.join(col).strip() for col in data.columns.values]
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-.0 = <iterator object at 0x7fd684488b50>
+.0 = <iterator object at 0x7d8825545eb0>
 
 >   data.columns = ['_'.join(col).strip() for col in data.columns.values]
 E   TypeError: sequence item 1: expected str instance, int found
 
-seaborn/axisgrid.py:2110: TypeError
+seaborn/axisgrid.py:2111: TypeError
 =============================== warnings summary ===============================
 tests/test_axisgrid.py: 31 warnings
   /home/swe-bench/mwaskom__seaborn/seaborn/axisgrid.py:118: UserWarning: The figure layout has changed to tight
@@ -221,7 +221,7 @@ PASSED tests/test_axisgrid.py::TestJointPlot::test_leaky_dict
 PASSED tests/test_axisgrid.py::TestJointPlot::test_distplot_kwarg_warning
 PASSED tests/test_axisgrid.py::TestJointPlot::test_ax_warning
 FAILED tests/test_axisgrid.py::TestPairGrid::test_pairplot_column_multiindex
-=========== 1 failed, 120 passed, 209 warnings in 133.75s (0:02:13) ============
+=========== 1 failed, 120 passed, 209 warnings in 149.56s (0:02:29) ============
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA tests/test_axisgrid.py` failed. (See above for error)
 
  

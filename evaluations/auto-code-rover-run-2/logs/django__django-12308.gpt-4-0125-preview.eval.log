@@ -107,7 +107,7 @@ test_safestring_in_field_label (admin_utils.tests.UtilsTests) ... ok
 test_values_from_lookup_field (admin_utils.tests.UtilsTests) ... ERROR
 
 ======================================================================
-ERROR: test_json_display_for_field (admin_utils.tests.UtilsTests) [<object object at 0x7f70a057de90>] (value={('a', 'b'): 'c'})
+ERROR: test_json_display_for_field (admin_utils.tests.UtilsTests) [<object object at 0x772c752fae90>] (value={'a': {'b': 'c'}})
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -116,8 +116,50 @@ Traceback (most recent call last):
     yield
   File "/opt/django__django/tests/admin_utils/tests.py", line 192, in test_json_display_for_field
     display_for_field(value, models.JSONField(), self.empty_value),
-  File "/opt/django__django/django/contrib/admin/utils.py", line 406, in display_for_field
-    return field.get_prep_value(value)
+  File "/opt/django__django/django/contrib/admin/utils.py", line 408, in display_for_field
+    return json.dumps(prepared_value, ensure_ascii=False)
+NameError: name 'json' is not defined
+
+======================================================================
+ERROR: test_json_display_for_field (admin_utils.tests.UtilsTests) [<object object at 0x772c752fae90>] (value=['a', 'b'])
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 523, in subTest
+    yield
+  File "/opt/django__django/tests/admin_utils/tests.py", line 192, in test_json_display_for_field
+    display_for_field(value, models.JSONField(), self.empty_value),
+  File "/opt/django__django/django/contrib/admin/utils.py", line 408, in display_for_field
+    return json.dumps(prepared_value, ensure_ascii=False)
+NameError: name 'json' is not defined
+
+======================================================================
+ERROR: test_json_display_for_field (admin_utils.tests.UtilsTests) [<object object at 0x772c752fae90>] (value='a')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 523, in subTest
+    yield
+  File "/opt/django__django/tests/admin_utils/tests.py", line 192, in test_json_display_for_field
+    display_for_field(value, models.JSONField(), self.empty_value),
+  File "/opt/django__django/django/contrib/admin/utils.py", line 408, in display_for_field
+    return json.dumps(prepared_value, ensure_ascii=False)
+NameError: name 'json' is not defined
+
+======================================================================
+ERROR: test_json_display_for_field (admin_utils.tests.UtilsTests) [<object object at 0x772c752fae90>] (value={('a', 'b'): 'c'})
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 523, in subTest
+    yield
+  File "/opt/django__django/tests/admin_utils/tests.py", line 192, in test_json_display_for_field
+    display_for_field(value, models.JSONField(), self.empty_value),
+  File "/opt/django__django/django/contrib/admin/utils.py", line 407, in display_for_field
+    prepared_value = field.get_prep_value(value)
   File "/opt/django__django/django/db/models/fields/json.py", line 86, in get_prep_value
     return json.dumps(value, cls=self.encoder)
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/json/__init__.py", line 231, in dumps
@@ -145,8 +187,8 @@ Traceback (most recent call last):
     testMethod()
   File "/opt/django__django/tests/admin_utils/tests.py", line 138, in test_values_from_lookup_field
     resolved_value = display_for_field(resolved_value, field, self.empty_value)
-  File "/opt/django__django/django/contrib/admin/utils.py", line 406, in display_for_field
-    return field.get_prep_value(value)
+  File "/opt/django__django/django/contrib/admin/utils.py", line 407, in display_for_field
+    prepared_value = field.get_prep_value(value)
   File "/opt/django__django/django/db/models/fields/related.py", line 973, in get_prep_value
     return self.target_field.get_prep_value(value)
   File "/opt/django__django/django/db/models/fields/__init__.py", line 1778, in get_prep_value
@@ -154,9 +196,9 @@ Traceback (most recent call last):
 TypeError: Field 'id' expected a number but got <Site: example.com>.
 
 ----------------------------------------------------------------------
-Ran 22 tests in 0.156s
+Ran 22 tests in 0.147s
 
-FAILED (errors=2)
+FAILED (errors=5)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

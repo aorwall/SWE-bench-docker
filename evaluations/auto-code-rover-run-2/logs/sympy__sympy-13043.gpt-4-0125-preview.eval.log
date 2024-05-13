@@ -65,8 +65,8 @@ executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.1/bin/python
 architecture:       64-bit
 cache:              no
 ground types:       python 
-random seed:        85672171
-hash randomization: on (PYTHONHASHSEED=3618990388)
+random seed:        88460734
+hash randomization: on (PYTHONHASHSEED=3379795716)
 
 sympy/integrals/tests/test_intpoly.py[4] 
 test_decompose F
@@ -93,8 +93,12 @@ ________ sympy/integrals/tests/test_intpoly.py:test_polytope_integrate _________
     coords = [simplify(a + b) for a, b in zip(s, o)]
   File "/home/swe-bench/sympy__sympy/sympy/geometry/point.py", line 224, in <listcomp>
     coords = [simplify(a + b) for a, b in zip(s, o)]
-  File "/home/swe-bench/sympy__sympy/sympy/simplify/simplify.py", line 583, in simplify
-    short = shorter(powsimp(expr, combine='exp', deep=True), powsimp(expr), expr)
+  File "/home/swe-bench/sympy__sympy/sympy/simplify/simplify.py", line 545, in simplify
+    expr = Mul(*powsimp(expr).as_content_primitive())
+  File "/home/swe-bench/sympy__sympy/sympy/simplify/powsimp.py", line 372, in powsimp
+    recurse(newexpr, combine='base')
+  File "/home/swe-bench/sympy__sympy/sympy/simplify/powsimp.py", line 109, in recurse
+    return powsimp(arg, _deep, _combine, _force, _measure)
   File "/home/swe-bench/sympy__sympy/sympy/simplify/powsimp.py", line 118, in powsimp
     expr = expr.func(*[recurse(w) for w in expr.args])
   File "/home/swe-bench/sympy__sympy/sympy/simplify/powsimp.py", line 118, in <listcomp>
@@ -117,6 +121,11 @@ ________ sympy/integrals/tests/test_intpoly.py:test_polytope_integrate _________
     return _ask(fact, self)
   File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
     _ask(pk, obj)
+  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
+    _ask(pk, obj)
+  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
+    _ask(pk, obj)
+  [Previous line repeated 2 more times]
   File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
     a = evaluate(obj)
   File "/home/swe-bench/sympy__sympy/sympy/core/mul.py", line 1224, in _eval_is_irrational
@@ -125,18 +134,6 @@ ________ sympy/integrals/tests/test_intpoly.py:test_polytope_integrate _________
     return _ask(fact, self)
   File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 302, in _ask
     _ask(pk, obj)
-  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
-    a = evaluate(obj)
-  File "/home/swe-bench/sympy__sympy/sympy/core/power.py", line 551, in _eval_is_prime
-    return self.doit().is_prime
-  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 247, in getit
-    return _ask(fact, self)
-  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
-    a = evaluate(obj)
-  File "/home/swe-bench/sympy__sympy/sympy/core/power.py", line 551, in _eval_is_prime
-    return self.doit().is_prime
-  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 247, in getit
-    return _ask(fact, self)
   File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 290, in _ask
     a = evaluate(obj)
   File "/home/swe-bench/sympy__sympy/sympy/core/power.py", line 551, in _eval_is_prime
@@ -2070,7 +2067,7 @@ _____________ sympy/integrals/tests/test_intpoly.py:test_decompose _____________
 AssertionError
 
  tests finished: 1 passed, 1 failed, 1 expected to fail, 1 exceptions, 
-in 1.95 seconds 
+in 3.11 seconds 
 DO *NOT* COMMIT!
 /home/swe-bench/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
   from collections import Mapping, defaultdict

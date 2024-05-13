@@ -14,8 +14,10 @@ HEAD is now at 3346b78a8a Fixed #30786 -- Used CONVERT_TZ to check if the time z
 [django__django__3.1] [django__django-11797] Command: git apply -v /opt/temp_django__django-11797_pred_try.patch 
 [django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11797] Std. Output:
-Checking patch django/db/models/query.py...
-Applied patch django/db/models/query.py cleanly.
+Checking patch django/db/models/sql/compiler.py...
+Checking patch django/db/models/sql/query.py...
+Applied patch django/db/models/sql/compiler.py cleanly.
+Applied patch django/db/models/sql/query.py cleanly.
  
 [django__django__3.1] [django__django-11797] Return Code: 0 
 [django__django__3.1] [django__django-11797] Apply patch successful (pred_try) 
@@ -23,8 +25,10 @@ Applied patch django/db/models/query.py cleanly.
 [django__django__3.1] [django__django-11797] Command: git apply -v -R /opt/temp_django__django-11797_pred_try.patch 
 [django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11797] Std. Output:
-Checking patch django/db/models/query.py...
-Applied patch django/db/models/query.py cleanly.
+Checking patch django/db/models/sql/query.py...
+Checking patch django/db/models/sql/compiler.py...
+Applied patch django/db/models/sql/query.py cleanly.
+Applied patch django/db/models/sql/compiler.py cleanly.
  
 [django__django__3.1] [django__django-11797] Return Code: 0 
 [django__django__3.1] [django__django-11797] Revert patch successful (pred_try) 
@@ -32,8 +36,10 @@ Applied patch django/db/models/query.py cleanly.
 [django__django__3.1] [django__django-11797] Command: git apply -v /opt/temp_django__django-11797_pred.patch 
 [django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11797] Std. Output:
-Checking patch django/db/models/query.py...
-Applied patch django/db/models/query.py cleanly.
+Checking patch django/db/models/sql/compiler.py...
+Checking patch django/db/models/sql/query.py...
+Applied patch django/db/models/sql/compiler.py cleanly.
+Applied patch django/db/models/sql/query.py cleanly.
  
 [django__django__3.1] [django__django-11797] Return Code: 0 
 [django__django__3.1] [django__django-11797] Apply patch successful (pred) 
@@ -52,61 +58,6 @@ Test Script:  ./tests/runtests.py --verbosity 2 lookup.tests;
 [django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-11797] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_chain_date_time_lookups (lookup.tests.LookupTests) ... ok
-test_count (lookup.tests.LookupTests) ... ok
-test_custom_field_none_rhs (lookup.tests.LookupTests) ... ok
-test_custom_lookup_none_rhs (lookup.tests.LookupTests)
-Lookup.can_use_none_as_rhs=True allows None as a lookup value. ... ok
-test_error_messages (lookup.tests.LookupTests) ... ok
-test_escaping (lookup.tests.LookupTests) ... ok
-test_exact_exists (lookup.tests.LookupTests) ... ok
-test_exact_none_transform (lookup.tests.LookupTests)
-Transforms are used for __exact=None. ... ok
-test_exact_query_rhs_with_selected_columns (lookup.tests.LookupTests) ... FAIL
-test_exact_sliced_queryset_limit_one (lookup.tests.LookupTests) ... ok
-test_exact_sliced_queryset_limit_one_offset (lookup.tests.LookupTests) ... ok
-test_exact_sliced_queryset_not_limited_to_one (lookup.tests.LookupTests) ... ok
-test_exclude (lookup.tests.LookupTests) ... ok
-test_exists (lookup.tests.LookupTests) ... ok
-test_get_next_previous_by (lookup.tests.LookupTests) ... ok
-test_in (lookup.tests.LookupTests) ... ok
-test_in_bulk (lookup.tests.LookupTests) ... ok
-test_in_bulk_lots_of_ids (lookup.tests.LookupTests) ... ok
-test_in_bulk_non_unique_field (lookup.tests.LookupTests) ... ok
-test_in_bulk_with_field (lookup.tests.LookupTests) ... ok
-test_in_different_database (lookup.tests.LookupTests) ... ok
-test_in_keeps_value_ordering (lookup.tests.LookupTests) ... ok
-test_iterator (lookup.tests.LookupTests) ... ok
-test_lookup_collision (lookup.tests.LookupTests) ... ok
-test_lookup_date_as_str (lookup.tests.LookupTests) ... ok
-test_lookup_int_as_str (lookup.tests.LookupTests) ... ok
-test_nested_outerref_lhs (lookup.tests.LookupTests) ... ok
-test_none (lookup.tests.LookupTests) ... ok
-test_nonfield_lookups (lookup.tests.LookupTests) ... ok
-test_pattern_lookups_with_substr (lookup.tests.LookupTests) ... ok
-test_regex (lookup.tests.LookupTests) ... ok
-test_regex_backreferencing (lookup.tests.LookupTests) ... ok
-test_regex_non_ascii (lookup.tests.LookupTests) ... ok
-test_regex_non_string (lookup.tests.LookupTests) ... ok
-test_regex_null (lookup.tests.LookupTests) ... ok
-test_relation_nested_lookup_error (lookup.tests.LookupTests) ... ok
-test_unsupported_lookups (lookup.tests.LookupTests) ... ok
-test_values (lookup.tests.LookupTests) ... ok
-test_values_list (lookup.tests.LookupTests) ... ok
-
-======================================================================
-FAIL: test_exact_query_rhs_with_selected_columns (lookup.tests.LookupTests)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/opt/django__django/tests/lookup/tests.py", line 971, in test_exact_query_rhs_with_selected_columns
-    self.assertEqual(authors.get(), newest_author)
-AssertionError: <Author: Author object (2)> != <Author: Author object (3)>
-
-----------------------------------------------------------------------
-Ran 39 tests in 0.272s
-
-FAILED (failures=1)
-Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application lookup
 Skipping setup of unused database(s): other.
@@ -136,7 +87,48 @@ Running migrations:
   Applying admin.0003_logentry_add_action_flag_choices... OK
   Applying sites.0001_initial... OK
   Applying sites.0002_alter_domain_unique... OK
-System check identified no issues (0 silenced).
+Traceback (most recent call last):
+  File "./tests/runtests.py", line 566, in <module>
+    options.start_at, options.start_after, options.pdb,
+  File "./tests/runtests.py", line 308, in django_tests
+    extra_tests=extra_tests,
+  File "/opt/django__django/django/test/runner.py", line 684, in run_tests
+    old_config = self.setup_databases(aliases=databases)
+  File "/opt/django__django/django/test/runner.py", line 606, in setup_databases
+    self.parallel, **kwargs
+  File "/opt/django__django/django/test/utils.py", line 173, in setup_databases
+    serialize=connection.settings_dict.get('TEST', {}).get('SERIALIZE', True),
+  File "/opt/django__django/django/db/backends/base/creation.py", line 72, in create_test_db
+    run_syncdb=True,
+  File "/opt/django__django/django/core/management/__init__.py", line 168, in call_command
+    return command.execute(*args, **defaults)
+  File "/opt/django__django/django/core/management/base.py", line 369, in execute
+    output = self.handle(*args, **options)
+  File "/opt/django__django/django/core/management/base.py", line 83, in wrapped
+    res = handle_func(*args, **kwargs)
+  File "/opt/django__django/django/core/management/commands/migrate.py", line 233, in handle
+    fake_initial=fake_initial,
+  File "/opt/django__django/django/db/migrations/executor.py", line 123, in migrate
+    self.check_replacements()
+  File "/opt/django__django/django/db/migrations/executor.py", line 292, in check_replacements
+    applied = self.recorder.applied_migrations()
+  File "/opt/django__django/django/db/migrations/recorder.py", line 77, in applied_migrations
+    return {(migration.app, migration.name): migration for migration in self.migration_qs}
+  File "/opt/django__django/django/db/models/query.py", line 276, in __iter__
+    self._fetch_all()
+  File "/opt/django__django/django/db/models/query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/opt/django__django/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/opt/django__django/django/db/models/sql/compiler.py", line 1080, in execute_sql
+    sql, params = self.as_sql()
+  File "/opt/django__django/django/db/models/sql/compiler.py", line 483, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "/opt/django__django/django/db/models/sql/compiler.py", line 53, in pre_sql_setup
+    group_by = self.get_group_by(self.select + extra_select, order_by)
+  File "/opt/django__django/django/db/models/sql/compiler.py", line 95, in get_group_by
+    if self.query.is_subquery and self.query.subquery_group_by:
+AttributeError: 'Query' object has no attribute 'is_subquery'
  
 [django__django__3.1] [django__django-11797] Return Code: 1 
 

@@ -144,7 +144,7 @@ FAILED tests/test_requests.py::RequestsTestSuite::test_session_cookies_with_retu
 FAILED tests/test_requests.py::RequestsTestSuite::test_session_persistent_cookies
 FAILED tests/test_requests.py::RequestsTestSuite::test_str_data_content_type
 FAILED tests/test_requests.py::RequestsTestSuite::test_unpickled_session_requests
-=================== 7 failed, 69 passed, 1 warning in 35.59s ===================
+=================== 7 failed, 69 passed, 1 warning in 33.32s ===================
  
 [psf__requests__0.14] [psf__requests-863] Return Code: 1 
 

@@ -17,16 +17,16 @@ HEAD is now at 69356d20c Merge pull request #8903 from nicoddemus/remove-fspath-
     
 /home/swe-bench/temp_pytest-dev__pytest-8906_pred_try.patch:30: trailing whitespace.
     
-/home/swe-bench/temp_pytest-dev__pytest-8906_pred_try.patch:34: trailing whitespace.
+/home/swe-bench/temp_pytest-dev__pytest-8906_pred_try.patch:36: trailing whitespace.
     
-/home/swe-bench/temp_pytest-dev__pytest-8906_pred_try.patch:42: trailing whitespace.
-            
 /home/swe-bench/temp_pytest-dev__pytest-8906_pred_try.patch:45: trailing whitespace.
+    
+/home/swe-bench/temp_pytest-dev__pytest-8906_pred_try.patch:49: trailing whitespace.
             
 Checking patch src/_pytest/outcomes.py...
 Applied patch src/_pytest/outcomes.py cleanly.
-warning: squelched 2 whitespace errors
-warning: 7 lines add whitespace errors.
+warning: squelched 1 whitespace error
+warning: 6 lines add whitespace errors.
  
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-8906] Return Code: 0 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-8906] Apply patch successful (pred_try) 
@@ -47,16 +47,16 @@ Applied patch src/_pytest/outcomes.py cleanly.
     
 /home/swe-bench/temp_pytest-dev__pytest-8906_pred.patch:30: trailing whitespace.
     
-/home/swe-bench/temp_pytest-dev__pytest-8906_pred.patch:34: trailing whitespace.
+/home/swe-bench/temp_pytest-dev__pytest-8906_pred.patch:36: trailing whitespace.
     
-/home/swe-bench/temp_pytest-dev__pytest-8906_pred.patch:42: trailing whitespace.
-            
 /home/swe-bench/temp_pytest-dev__pytest-8906_pred.patch:45: trailing whitespace.
+    
+/home/swe-bench/temp_pytest-dev__pytest-8906_pred.patch:49: trailing whitespace.
             
 Checking patch src/_pytest/outcomes.py...
 Applied patch src/_pytest/outcomes.py cleanly.
-warning: squelched 2 whitespace errors
-warning: 7 lines add whitespace errors.
+warning: squelched 1 whitespace error
+warning: 6 lines add whitespace errors.
  
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-8906] Return Code: 0 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-8906] Apply patch successful (pred) 
@@ -85,9 +85,410 @@ rootdir: /home/swe-bench/pytest-dev__pytest, configfile: pyproject.toml
 collected 86 items
 
 testing/test_skipping.py ............................................... [ 54%]
-.................................F.....                                  [100%]
+................F.F.F.F.....F....F.....                                  [100%]
 
 =================================== FAILURES ===================================
+_________________________ test_skip_not_report_default _________________________
+
+pytester = <Pytester PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_skip_not_report_default0')>
+
+    def test_skip_not_report_default(pytester: Pytester) -> None:
+        p = pytester.makepyfile(
+            test_one="""
+            import pytest
+            def test_this():
+                pytest.skip("hello")
+        """
+        )
+        result = pytester.runpytest(p, "-v")
+>       result.stdout.fnmatch_lines(
+            [
+                # "*HINT*use*-r*",
+                "*1 skipped*"
+            ]
+        )
+E       Failed: nomatch: '*1 skipped*'
+E           and: '============================= test session starts =============================='
+E           and: 'platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1 -- /home/swe-bench/miniconda3/envs/pytest-dev__pytest__7.0/bin/python'
+E           and: 'cachedir: .pytest_cache'
+E           and: 'rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_skip_not_report_default0'
+E           and: 'collecting ... collected 1 item'
+E           and: ''
+E           and: 'test_one.py::test_this FAILED                                            [100%]'
+E           and: ''
+E           and: '=================================== FAILURES ==================================='
+E           and: '__________________________________ test_this ___________________________________'
+E           and: ''
+E           and: '    def test_this():'
+E           and: '>       pytest.skip("hello")'
+E           and: 'E       ValueError: Using pytest.skip with allow_module_level=False outside of a test is not allowed. To skip a module, set allow_module_level=True.'
+E           and: ''
+E           and: 'test_one.py:3: ValueError'
+E           and: '=========================== short test summary info ============================'
+E           and: 'FAILED test_one.py::test_this - ValueError: Using pytest.skip with allow_modu...'
+E           and: '============================== 1 failed in 0.01s ==============================='
+E       remains unmatched: '*1 skipped*'
+
+/home/swe-bench/pytest-dev__pytest/testing/test_skipping.py:960: Failed
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1 -- /home/swe-bench/miniconda3/envs/pytest-dev__pytest__7.0/bin/python
+cachedir: .pytest_cache
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_skip_not_report_default0
+collecting ... collected 1 item
+
+test_one.py::test_this FAILED                                            [100%]
+
+=================================== FAILURES ===================================
+__________________________________ test_this ___________________________________
+
+    def test_this():
+>       pytest.skip("hello")
+E       ValueError: Using pytest.skip with allow_module_level=False outside of a test is not allowed. To skip a module, set allow_module_level=True.
+
+test_one.py:3: ValueError
+=========================== short test summary info ============================
+FAILED test_one.py::test_this - ValueError: Using pytest.skip with allow_modu...
+============================== 1 failed in 0.01s ===============================
+_______________________ test_skipped_reasons_functional ________________________
+
+pytester = <Pytester PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_skipped_reasons_functional0')>
+
+    def test_skipped_reasons_functional(pytester: Pytester) -> None:
+        pytester.makepyfile(
+            test_one="""
+                import pytest
+                from conftest import doskip
+    
+                def setup_function(func):
+                    doskip()
+    
+                def test_func():
+                    pass
+    
+                class TestClass(object):
+                    def test_method(self):
+                        doskip()
+    
+                    @pytest.mark.skip("via_decorator")
+                    def test_deco(self):
+                        assert 0
+            """,
+            conftest="""
+                import pytest, sys
+                def doskip():
+                    assert sys._getframe().f_lineno == 3
+                    pytest.skip('test')
+            """,
+        )
+        result = pytester.runpytest("-rs")
+>       result.stdout.fnmatch_lines_random(
+            [
+                "SKIPPED [[]2[]] conftest.py:4: test",
+                "SKIPPED [[]1[]] test_one.py:14: via_decorator",
+            ]
+        )
+E       Failed: line 'SKIPPED [[]2[]] conftest.py:4: test' not found in output
+
+/home/swe-bench/pytest-dev__pytest/testing/test_skipping.py:1013: Failed
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_skipped_reasons_functional0
+collected 3 items
+
+test_one.py EFs                                                          [100%]
+
+==================================== ERRORS ====================================
+_________________________ ERROR at setup of test_func __________________________
+
+func = <function test_func at 0x7528c0c0d310>
+
+    def setup_function(func):
+>       doskip()
+
+test_one.py:5: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def doskip():
+        assert sys._getframe().f_lineno == 3
+>       pytest.skip('test')
+E       ValueError: Using pytest.skip with allow_module_level=False outside of a test is not allowed. To skip a module, set allow_module_level=True.
+
+conftest.py:4: ValueError
+=================================== FAILURES ===================================
+____________________________ TestClass.test_method _____________________________
+
+self = <test_one.TestClass object at 0x7528c0cded30>
+
+    def test_method(self):
+>       doskip()
+
+test_one.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def doskip():
+        assert sys._getframe().f_lineno == 3
+>       pytest.skip('test')
+E       ValueError: Using pytest.skip with allow_module_level=False outside of a test is not allowed. To skip a module, set allow_module_level=True.
+
+conftest.py:4: ValueError
+=========================== short test summary info ============================
+SKIPPED [1] test_one.py:14: via_decorator
+==================== 1 failed, 1 skipped, 1 error in 0.03s =====================
+_______________________________ test_reportchars _______________________________
+
+pytester = <Pytester PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_reportchars0')>
+
+    def test_reportchars(pytester: Pytester) -> None:
+        pytester.makepyfile(
+            """
+            import pytest
+            def test_1():
+                assert 0
+            @pytest.mark.xfail
+            def test_2():
+                assert 0
+            @pytest.mark.xfail
+            def test_3():
+                pass
+            def test_4():
+                pytest.skip("four")
+        """
+        )
+        result = pytester.runpytest("-rfxXs")
+>       result.stdout.fnmatch_lines(
+            ["FAIL*test_1*", "XFAIL*test_2*", "XPASS*test_3*", "SKIP*four*"]
+        )
+E       Failed: nomatch: 'FAIL*test_1*'
+E           and: '============================= test session starts =============================='
+E           and: 'platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1'
+E           and: 'rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_reportchars0'
+E           and: 'collected 4 items'
+E           and: ''
+E           and: 'test_reportchars.py FxXF                                                 [100%]'
+E           and: ''
+E           and: '=================================== FAILURES ==================================='
+E           and: '____________________________________ test_1 ____________________________________'
+E           and: ''
+E           and: '    def test_1():'
+E           and: '>       assert 0'
+E           and: 'E       assert 0'
+E           and: ''
+E           and: 'test_reportchars.py:3: AssertionError'
+E           and: '____________________________________ test_4 ____________________________________'
+E           and: ''
+E           and: '    def test_4():'
+E           and: '>       pytest.skip("four")'
+E           and: 'E       ValueError: Using pytest.skip with allow_module_level=False outside of a test is not allowed. To skip a module, set allow_module_level=True.'
+E           and: ''
+E           and: 'test_reportchars.py:11: ValueError'
+E           and: '=========================== short test summary info ============================'
+E       fnmatch: 'FAIL*test_1*'
+E          with: 'FAILED test_reportchars.py::test_1 - assert 0'
+E       nomatch: 'XFAIL*test_2*'
+E           and: 'FAILED test_reportchars.py::test_4 - ValueError: Using pytest.skip with allow...'
+E       fnmatch: 'XFAIL*test_2*'
+E          with: 'XFAIL test_reportchars.py::test_2'
+E       fnmatch: 'XPASS*test_3*'
+E          with: 'XPASS test_reportchars.py::test_3 '
+E       nomatch: 'SKIP*four*'
+E           and: '=================== 2 failed, 1 xfailed, 1 xpassed in 0.03s ===================='
+E       remains unmatched: 'SKIP*four*'
+
+/home/swe-bench/pytest-dev__pytest/testing/test_skipping.py:1058: Failed
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_reportchars0
+collected 4 items
+
+test_reportchars.py FxXF                                                 [100%]
+
+=================================== FAILURES ===================================
+____________________________________ test_1 ____________________________________
+
+    def test_1():
+>       assert 0
+E       assert 0
+
+test_reportchars.py:3: AssertionError
+____________________________________ test_4 ____________________________________
+
+    def test_4():
+>       pytest.skip("four")
+E       ValueError: Using pytest.skip with allow_module_level=False outside of a test is not allowed. To skip a module, set allow_module_level=True.
+
+test_reportchars.py:11: ValueError
+=========================== short test summary info ============================
+FAILED test_reportchars.py::test_1 - assert 0
+FAILED test_reportchars.py::test_4 - ValueError: Using pytest.skip with allow...
+XFAIL test_reportchars.py::test_2
+XPASS test_reportchars.py::test_3 
+=================== 2 failed, 1 xfailed, 1 xpassed in 0.03s ====================
+_____________________________ test_reportchars_all _____________________________
+
+pytester = <Pytester PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_reportchars_all0')>
+
+    def test_reportchars_all(pytester: Pytester) -> None:
+        pytester.makepyfile(
+            """
+            import pytest
+            def test_1():
+                assert 0
+            @pytest.mark.xfail
+            def test_2():
+                assert 0
+            @pytest.mark.xfail
+            def test_3():
+                pass
+            def test_4():
+                pytest.skip("four")
+            @pytest.fixture
+            def fail():
+                assert 0
+            def test_5(fail):
+                pass
+        """
+        )
+        result = pytester.runpytest("-ra")
+>       result.stdout.fnmatch_lines(
+            [
+                "SKIP*four*",
+                "XFAIL*test_2*",
+                "XPASS*test_3*",
+                "ERROR*test_5*",
+                "FAIL*test_1*",
+            ]
+        )
+E       Failed: nomatch: 'SKIP*four*'
+E           and: '============================= test session starts =============================='
+E           and: 'platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1'
+E           and: 'rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_reportchars_all0'
+E           and: 'collected 5 items'
+E           and: ''
+E           and: 'test_reportchars_all.py FxXFE                                            [100%]'
+E           and: ''
+E           and: '==================================== ERRORS ===================================='
+E           and: '___________________________ ERROR at setup of test_5 ___________________________'
+E           and: ''
+E           and: '    @pytest.fixture'
+E           and: '    def fail():'
+E           and: '>       assert 0'
+E           and: 'E       assert 0'
+E           and: ''
+E           and: 'test_reportchars_all.py:14: AssertionError'
+E           and: '=================================== FAILURES ==================================='
+E           and: '____________________________________ test_1 ____________________________________'
+E           and: ''
+E           and: '    def test_1():'
+E           and: '>       assert 0'
+E           and: 'E       assert 0'
+E           and: ''
+E           and: 'test_reportchars_all.py:3: AssertionError'
+E           and: '____________________________________ test_4 ____________________________________'
+E           and: ''
+E           and: '    def test_4():'
+E           and: '>       pytest.skip("four")'
+E           and: 'E       ValueError: Using pytest.skip with allow_module_level=False outside of a test is not allowed. To skip a module, set allow_module_level=True.'
+E           and: ''
+E           and: 'test_reportchars_all.py:11: ValueError'
+E           and: '=========================== short test summary info ============================'
+E           and: 'XFAIL test_reportchars_all.py::test_2'
+E           and: 'XPASS test_reportchars_all.py::test_3 '
+E           and: 'ERROR test_reportchars_all.py::test_5 - assert 0'
+E           and: 'FAILED test_reportchars_all.py::test_1 - assert 0'
+E           and: 'FAILED test_reportchars_all.py::test_4 - ValueError: Using pytest.skip with a...'
+E           and: '=============== 2 failed, 1 xfailed, 1 xpassed, 1 error in 0.04s ==============='
+E       remains unmatched: 'SKIP*four*'
+
+/home/swe-bench/pytest-dev__pytest/testing/test_skipping.py:1100: Failed
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_reportchars_all0
+collected 5 items
+
+test_reportchars_all.py FxXFE                                            [100%]
+
+==================================== ERRORS ====================================
+___________________________ ERROR at setup of test_5 ___________________________
+
+    @pytest.fixture
+    def fail():
+>       assert 0
+E       assert 0
+
+test_reportchars_all.py:14: AssertionError
+=================================== FAILURES ===================================
+____________________________________ test_1 ____________________________________
+
+    def test_1():
+>       assert 0
+E       assert 0
+
+test_reportchars_all.py:3: AssertionError
+____________________________________ test_4 ____________________________________
+
+    def test_4():
+>       pytest.skip("four")
+E       ValueError: Using pytest.skip with allow_module_level=False outside of a test is not allowed. To skip a module, set allow_module_level=True.
+
+test_reportchars_all.py:11: ValueError
+=========================== short test summary info ============================
+XFAIL test_reportchars_all.py::test_2
+XPASS test_reportchars_all.py::test_3 
+ERROR test_reportchars_all.py::test_5 - assert 0
+FAILED test_reportchars_all.py::test_1 - assert 0
+FAILED test_reportchars_all.py::test_4 - ValueError: Using pytest.skip with a...
+=============== 2 failed, 1 xfailed, 1 xpassed, 1 error in 0.04s ===============
+______________________ test_imperativeskip_on_xfail_test _______________________
+
+pytester = <Pytester PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_imperativeskip_on_xfail_test0')>
+
+    def test_imperativeskip_on_xfail_test(pytester: Pytester) -> None:
+        pytester.makepyfile(
+            """
+            import pytest
+            @pytest.mark.xfail
+            def test_that_fails():
+                assert 0
+    
+            @pytest.mark.skipif("True")
+            def test_hello():
+                pass
+        """
+        )
+        pytester.makeconftest(
+            """
+            import pytest
+            def pytest_runtest_setup(item):
+                pytest.skip("abc")
+        """
+        )
+        result = pytester.runpytest("-rsxX")
+>       result.stdout.fnmatch_lines_random(
+            """
+            *SKIP*abc*
+            *SKIP*condition: True*
+            *2 skipped*
+        """
+        )
+E       Failed: line '*SKIP*abc*' not found in output
+
+/home/swe-bench/pytest-dev__pytest/testing/test_skipping.py:1245: Failed
+----------------------------- Captured stdout call -----------------------------
+============================= test session starts ==============================
+platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1
+rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_imperativeskip_on_xfail_test0
+collected 2 items
+
+test_imperativeskip_on_xfail_test.py xs                                  [100%]
+
+=========================== short test summary info ============================
+SKIPPED [1] test_imperativeskip_on_xfail_test.py:6: condition: True
+XFAIL test_imperativeskip_on_xfail_test.py::test_that_fails
+======================== 1 skipped, 1 xfailed in 0.01s =========================
 _________________________ test_module_level_skip_error _________________________
 
 pytester = <Pytester PosixPath('/tmp/pytest-of-swe-bench/pytest-0/test_module_level_skip_error0')>
@@ -115,11 +516,13 @@ E           and: 'collected 0 items / 1 error'
 E           and: ''
 E           and: '==================================== ERRORS ===================================='
 E           and: '_______________ ERROR collecting test_module_level_skip_error.py _______________'
-E           and: 'Using pytest.skip outside of a test is not allowed. To decorate a test function, use the @pytest.mark.skip or @pytest.mark.skipif decorators instead, and to skip a module use `pytestmark = pytest.mark.{skip,skipif}.'
+E           and: 'test_module_level_skip_error.py:2: in <module>'
+E           and: '    pytest.skip("skip_module_level")'
+E           and: 'E   ValueError: Using pytest.skip with allow_module_level=False outside of a test is not allowed. To skip a module, set allow_module_level=True.'
 E           and: '=========================== short test summary info ============================'
-E           and: 'ERROR test_module_level_skip_error.py'
+E           and: 'ERROR test_module_level_skip_error.py - ValueError: Using pytest.skip with al...'
 E           and: '!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!'
-E           and: '=============================== 1 error in 0.08s ==============================='
+E           and: '=============================== 1 error in 0.05s ==============================='
 E       remains unmatched: '*Using pytest.skip outside of a test will skip the entire module*'
 
 /home/swe-bench/pytest-dev__pytest/testing/test_skipping.py:1343: Failed
@@ -131,11 +534,13 @@ collected 0 items / 1 error
 
 ==================================== ERRORS ====================================
 _______________ ERROR collecting test_module_level_skip_error.py _______________
-Using pytest.skip outside of a test is not allowed. To decorate a test function, use the @pytest.mark.skip or @pytest.mark.skipif decorators instead, and to skip a module use `pytestmark = pytest.mark.{skip,skipif}.
+test_module_level_skip_error.py:2: in <module>
+    pytest.skip("skip_module_level")
+E   ValueError: Using pytest.skip with allow_module_level=False outside of a test is not allowed. To skip a module, set allow_module_level=True.
 =========================== short test summary info ============================
-ERROR test_module_level_skip_error.py
+ERROR test_module_level_skip_error.py - ValueError: Using pytest.skip with al...
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.08s ===============================
+=============================== 1 error in 0.05s ===============================
 ==================================== PASSES ====================================
 ________________________ TestEvaluation.test_no_marker _________________________
 ----------------------------- Captured stdout call -----------------------------
@@ -259,7 +664,7 @@ test_skipif_markeval_namespace_ValueError.py E                           [100%]
 ___________________________ ERROR at setup of test_1 ___________________________
 
 cls = <class '_pytest.runner.CallInfo'>
-func = <function call_runtest_hook.<locals>.<lambda> at 0x7ba8a384e280>
+func = <function call_runtest_hook.<locals>.<lambda> at 0x7528c0f4b280>
 when = 'setup'
 reraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)
 
@@ -343,7 +748,7 @@ E                   ValueError: pytest_markeval_namespace() needs to return a di
 /home/swe-bench/pytest-dev__pytest/src/_pytest/skipping.py:106: ValueError
 =========================== short test summary info ============================
 ERROR test_skipif_markeval_namespace_ValueError.py::test_1 - ValueError: pyte...
-=============================== 1 error in 0.05s ===============================
+=============================== 1 error in 0.07s ===============================
 ______________________ TestXFail.test_xfail_simple[True] _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -383,7 +788,7 @@ platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_xfail_xpassed_strict0
 collected 0 items
 
-============================ no tests ran in 0.01s =============================
+============================ no tests ran in 0.00s =============================
 _______________________ TestXFail.test_xfail_run_anyway ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -404,7 +809,7 @@ E       assert 0
 test_xfail_run_anyway.py:4: AssertionError
 =========================== short test summary info ============================
 FAILED test_xfail_run_anyway.py::test_func - assert 0
-========================= 1 failed, 1 passed in 0.04s ==========================
+========================= 1 failed, 1 passed in 0.01s ==========================
 ________ TestXFail.test_xfail_run_with_skip_mark[test_input0-expected0] ________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -428,7 +833,7 @@ test_sample.py s                                                         [100%]
 
 =========================== short test summary info ============================
 SKIPPED [1] test_sample.py:2: unconditional skip
-============================== 1 skipped in 0.00s ==============================
+============================== 1 skipped in 0.01s ==============================
 ___________________ TestXFail.test_xfail_evalfalse_but_fails ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -462,7 +867,7 @@ XFAIL test_one.py::test_this
   reason: [NOTRUN] noway
 XFAIL test_one.py::test_this_true
   reason: [NOTRUN] condition: True
-========================= 1 passed, 2 xfailed in 0.11s =========================
+========================= 1 passed, 2 xfailed in 0.08s =========================
 __________________ TestXFail.test_xfail_not_run_no_setup_run ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -475,7 +880,7 @@ test_one.py x                                                            [100%]
 =========================== short test summary info ============================
 XFAIL test_one.py::test_this
   reason: [NOTRUN] hello
-============================== 1 xfailed in 0.06s ==============================
+============================== 1 xfailed in 0.04s ==============================
 __________________________ TestXFail.test_xfail_xpass __________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -568,7 +973,7 @@ test_dynamic_xfail_no_run.py x                                           [100%]
 =========================== short test summary info ============================
 XFAIL test_dynamic_xfail_no_run.py::test_this
   reason: [NOTRUN] 
-============================== 1 xfailed in 0.08s ==============================
+============================== 1 xfailed in 0.07s ==============================
 ____________ TestXFail.test_dynamic_xfail_set_during_funcarg_setup _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -578,7 +983,7 @@ collected 1 item
 
 test_dynamic_xfail_set_during_funcarg_setup.py x                         [100%]
 
-============================== 1 xfailed in 0.02s ==============================
+============================== 1 xfailed in 0.01s ==============================
 ____________ TestXFail.test_dynamic_xfail_set_during_runtest_failed ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -789,7 +1194,7 @@ E       assert False
 test_xfail_markeval_namespace.py:9: AssertionError
 =========================== short test summary info ============================
 FAILED test_xfail_markeval_namespace.py::test_2 - assert False
-========================= 1 failed, 1 xfailed in 0.02s =========================
+========================= 1 failed, 1 xfailed in 0.03s =========================
 _____________ TestXFailwithSetupTeardown.test_failing_setup_issue9 _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -904,7 +1309,7 @@ test_wrong_skip_usage.py E                                               [100%]
 _________________________ ERROR at setup of test_hello _________________________
 
 cls = <class '_pytest.runner.CallInfo'>
-func = <function call_runtest_hook.<locals>.<lambda> at 0x7ba8a2b6d160>
+func = <function call_runtest_hook.<locals>.<lambda> at 0x7528c0265160>
 when = 'setup'
 reraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)
 
@@ -982,7 +1387,7 @@ E               TypeError: __init__() got multiple values for argument 'reason' 
 /home/swe-bench/pytest-dev__pytest/src/_pytest/skipping.py:190: TypeError
 =========================== short test summary info ============================
 ERROR test_wrong_skip_usage.py::test_hello - TypeError: __init__() got multip...
-=============================== 1 error in 0.09s ===============================
+=============================== 1 error in 0.08s ===============================
 ______________________ TestSkipif.test_skipif_conditional ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1047,17 +1452,6 @@ test_foo.py X
 =========================== short test summary info ============================
 XPASS test_foo.py::test_foobar second_condition
 ============================== 1 xpassed in 0.01s ==============================
-_________________________ test_skip_not_report_default _________________________
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1 -- /home/swe-bench/miniconda3/envs/pytest-dev__pytest__7.0/bin/python
-cachedir: .pytest_cache
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_skip_not_report_default0
-collecting ... collected 1 item
-
-test_one.py::test_this SKIPPED (hello)                                   [100%]
-
-============================== 1 skipped in 0.01s ==============================
 ______________________________ test_skipif_class _______________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1067,20 +1461,7 @@ collected 2 items
 
 test_skipif_class.py ss                                                  [100%]
 
-============================== 2 skipped in 0.01s ==============================
-_______________________ test_skipped_reasons_functional ________________________
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_skipped_reasons_functional0
-collected 3 items
-
-test_one.py sss                                                          [100%]
-
-=========================== short test summary info ============================
-SKIPPED [2] conftest.py:4: test
-SKIPPED [1] test_one.py:14: via_decorator
-============================== 3 skipped in 0.02s ==============================
+============================== 2 skipped in 0.10s ==============================
 _____________________________ test_skipped_folding _____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1092,30 +1473,7 @@ test_one.py ss                                                           [100%]
 
 =========================== short test summary info ============================
 SKIPPED [2] test_one.py: Folding
-============================== 2 skipped in 0.02s ==============================
-_______________________________ test_reportchars _______________________________
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_reportchars0
-collected 4 items
-
-test_reportchars.py FxXs                                                 [100%]
-
-=================================== FAILURES ===================================
-____________________________________ test_1 ____________________________________
-
-    def test_1():
->       assert 0
-E       assert 0
-
-test_reportchars.py:3: AssertionError
-=========================== short test summary info ============================
-FAILED test_reportchars.py::test_1 - assert 0
-XFAIL test_reportchars.py::test_2
-XPASS test_reportchars.py::test_3 
-SKIPPED [1] test_reportchars.py:11: four
-============== 1 failed, 1 skipped, 1 xfailed, 1 xpassed in 0.03s ==============
+============================== 2 skipped in 0.01s ==============================
 ____________________________ test_reportchars_error ____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1136,39 +1494,6 @@ conftest.py:2: AssertionError
 =========================== short test summary info ============================
 ERROR test_simple.py::test_foo - assert 0
 ========================== 1 passed, 1 error in 0.01s ==========================
-_____________________________ test_reportchars_all _____________________________
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_reportchars_all0
-collected 5 items
-
-test_reportchars_all.py FxXsE                                            [100%]
-
-==================================== ERRORS ====================================
-___________________________ ERROR at setup of test_5 ___________________________
-
-    @pytest.fixture
-    def fail():
->       assert 0
-E       assert 0
-
-test_reportchars_all.py:14: AssertionError
-=================================== FAILURES ===================================
-____________________________________ test_1 ____________________________________
-
-    def test_1():
->       assert 0
-E       assert 0
-
-test_reportchars_all.py:3: AssertionError
-=========================== short test summary info ============================
-SKIPPED [1] test_reportchars_all.py:11: four
-XFAIL test_reportchars_all.py::test_2
-XPASS test_reportchars_all.py::test_3 
-ERROR test_reportchars_all.py::test_5 - assert 0
-FAILED test_reportchars_all.py::test_1 - assert 0
-========= 1 failed, 1 skipped, 1 xfailed, 1 xpassed, 1 error in 0.04s ==========
 __________________________ test_reportchars_all_error __________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1188,7 +1513,7 @@ E       assert 0
 conftest.py:2: AssertionError
 =========================== short test summary info ============================
 ERROR test_simple.py::test_foo - assert 0
-========================== 1 passed, 1 error in 0.02s ==========================
+========================== 1 passed, 1 error in 0.01s ==========================
 ____________________ test_errors_in_xfail_skip_expressions _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1260,19 +1585,6 @@ collected 1 item
 test_xfail_test_setup_exception.py x                                     [100%]
 
 ============================== 1 xfailed in 0.01s ==============================
-______________________ test_imperativeskip_on_xfail_test _______________________
------------------------------ Captured stdout call -----------------------------
-============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, py-1.11.0, pluggy-0.13.1
-rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_imperativeskip_on_xfail_test0
-collected 2 items
-
-test_imperativeskip_on_xfail_test.py ss                                  [100%]
-
-=========================== short test summary info ============================
-SKIPPED [1] conftest.py:3: abc
-SKIPPED [1] test_imperativeskip_on_xfail_test.py:6: condition: True
-============================== 2 skipped in 0.01s ==============================
 _______________________ TestBooleanCondition.test_skipif _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1318,7 +1630,7 @@ collected 1 item
 
 foo x                                                                    [100%]
 
-============================== 1 xfailed in 0.08s ==============================
+============================== 1 xfailed in 0.13s ==============================
 ________________ test_module_level_skip_with_allow_module_level ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1328,7 +1640,7 @@ collected 0 items / 1 skipped
 
 =========================== short test summary info ============================
 SKIPPED [1] test_module_level_skip_with_allow_module_level.py:2: skip_module_level
-============================== 1 skipped in 0.01s ==============================
+============================== 1 skipped in 0.00s ==============================
 _____________________ test_invalid_skip_keyword_parameter ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1344,7 +1656,7 @@ E   TypeError: skip() got an unexpected keyword argument 'unknown'
 =========================== short test summary info ============================
 ERROR test_invalid_skip_keyword_parameter.py - TypeError: skip() got an unexp...
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.08s ===============================
+=============================== 1 error in 0.06s ===============================
 _____________________________ test_mark_xfail_item _____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1354,7 +1666,7 @@ collected 1 item
 
 foo x                                                                    [100%]
 
-============================== 1 xfailed in 0.07s ==============================
+============================== 1 xfailed in 0.05s ==============================
 ________________________ test_summary_list_after_errors ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1386,7 +1698,7 @@ tests/test_1.py s                                                        [100%]
 
 =========================== short test summary info ============================
 SKIPPED [1] tests/test_1.py:2: unconditional skip
-============================== 1 skipped in 0.01s ==============================
+============================== 1 skipped in 0.00s ==============================
 =========================== short test summary info ============================
 PASSED testing/test_skipping.py::test_importorskip
 PASSED testing/test_skipping.py::TestEvaluation::test_no_marker
@@ -1451,19 +1763,14 @@ PASSED testing/test_skipping.py::TestSkipif::test_skipif_reporting[True, reason=
 PASSED testing/test_skipping.py::TestSkipif::test_skipif_using_platform
 PASSED testing/test_skipping.py::TestSkipif::test_skipif_reporting_multiple[skipif-SKIP-skipped]
 PASSED testing/test_skipping.py::TestSkipif::test_skipif_reporting_multiple[xfail-XPASS-xpassed]
-PASSED testing/test_skipping.py::test_skip_not_report_default
 PASSED testing/test_skipping.py::test_skipif_class
-PASSED testing/test_skipping.py::test_skipped_reasons_functional
 PASSED testing/test_skipping.py::test_skipped_folding
-PASSED testing/test_skipping.py::test_reportchars
 PASSED testing/test_skipping.py::test_reportchars_error
-PASSED testing/test_skipping.py::test_reportchars_all
 PASSED testing/test_skipping.py::test_reportchars_all_error
 PASSED testing/test_skipping.py::test_errors_in_xfail_skip_expressions
 PASSED testing/test_skipping.py::test_xfail_skipif_with_globals
 PASSED testing/test_skipping.py::test_default_markers
 PASSED testing/test_skipping.py::test_xfail_test_setup_exception
-PASSED testing/test_skipping.py::test_imperativeskip_on_xfail_test
 PASSED testing/test_skipping.py::TestBooleanCondition::test_skipif
 PASSED testing/test_skipping.py::TestBooleanCondition::test_skipif_noreason
 PASSED testing/test_skipping.py::TestBooleanCondition::test_xfail
@@ -1473,8 +1780,13 @@ PASSED testing/test_skipping.py::test_invalid_skip_keyword_parameter
 PASSED testing/test_skipping.py::test_mark_xfail_item
 PASSED testing/test_skipping.py::test_summary_list_after_errors
 PASSED testing/test_skipping.py::test_relpath_rootdir
+FAILED testing/test_skipping.py::test_skip_not_report_default - Failed: nomat...
+FAILED testing/test_skipping.py::test_skipped_reasons_functional - Failed: li...
+FAILED testing/test_skipping.py::test_reportchars - Failed: nomatch: 'FAIL*te...
+FAILED testing/test_skipping.py::test_reportchars_all - Failed: nomatch: 'SKI...
+FAILED testing/test_skipping.py::test_imperativeskip_on_xfail_test - Failed: ...
 FAILED testing/test_skipping.py::test_module_level_skip_error - Failed: nomat...
-========================= 1 failed, 85 passed in 5.90s =========================
+========================= 6 failed, 80 passed in 5.38s =========================
 ERROR conda.cli.main_run:execute(124): `conda run pytest -rA testing/test_skipping.py` failed. (See above for error)
 
  

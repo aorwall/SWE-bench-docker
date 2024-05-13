@@ -76,9 +76,7 @@ Successfully installed pylint-2.15.0a0
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Std. Output:
 Checking patch pylint/checkers/base/name_checker/naming_style.py...
-Checking patch pylint/config/arguments_manager.py...
 Applied patch pylint/checkers/base/name_checker/naming_style.py cleanly.
-Applied patch pylint/config/arguments_manager.py cleanly.
  
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Return Code: 0 
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Apply patch successful (pred_try) 
@@ -86,9 +84,7 @@ Applied patch pylint/config/arguments_manager.py cleanly.
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Command: git apply -v -R /home/swe-bench/temp_pylint-dev__pylint-7228_pred_try.patch 
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Std. Output:
-Checking patch pylint/config/arguments_manager.py...
 Checking patch pylint/checkers/base/name_checker/naming_style.py...
-Applied patch pylint/config/arguments_manager.py cleanly.
 Applied patch pylint/checkers/base/name_checker/naming_style.py cleanly.
  
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Return Code: 0 
@@ -98,9 +94,7 @@ Applied patch pylint/checkers/base/name_checker/naming_style.py cleanly.
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Std. Output:
 Checking patch pylint/checkers/base/name_checker/naming_style.py...
-Checking patch pylint/config/arguments_manager.py...
 Applied patch pylint/checkers/base/name_checker/naming_style.py cleanly.
-Applied patch pylint/config/arguments_manager.py cleanly.
  
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Return Code: 0 
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Apply patch successful (pred) 
@@ -127,7 +121,7 @@ ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no
 ============================= test session starts ==============================
 collected 12 items
 
-tests/config/test_config.py ........FF..                                 [100%]
+tests/config/test_config.py ........FF.F                                 [100%]
 
 =========================== short test summary info ============================
 PASSED tests/config/test_config.py::test_can_read_toml_env_variable
@@ -139,10 +133,10 @@ PASSED tests/config/test_config.py::test_empty_confidence
 PASSED tests/config/test_config.py::test_unknown_yes_no
 PASSED tests/config/test_config.py::test_unknown_py_version
 PASSED tests/config/test_config.py::test_short_verbose
-PASSED tests/config/test_config.py::test_argument_separator
-FAILED tests/config/test_config.py::test_regex_error - re.error: bad escape \...
-FAILED tests/config/test_config.py::test_csv_regex_error - re.error: missing ...
-========================= 2 failed, 10 passed in 0.51s =========================
+FAILED tests/config/test_config.py::test_regex_error - assert 'Error in provi...
+FAILED tests/config/test_config.py::test_csv_regex_error - assert 'Error in p...
+FAILED tests/config/test_config.py::test_argument_separator - assert not "Pro...
+========================= 3 failed, 9 passed in 0.80s ==========================
 
  
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7228] Return Code: 1 

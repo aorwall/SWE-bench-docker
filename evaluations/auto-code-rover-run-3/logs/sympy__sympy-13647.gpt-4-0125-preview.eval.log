@@ -18,13 +18,11 @@ HEAD is now at 67e3c95608 Merge pull request #13641 from Upabjojr/diff_and_array
 [sympy__sympy__1.1] [sympy__sympy-13647] Command: git apply -v /home/swe-bench/temp_sympy__sympy-13647_pred_try.patch 
 [sympy__sympy__1.1] [sympy__sympy-13647] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-13647] Std. Output:
-/home/swe-bench/temp_sympy__sympy-13647_pred_try.patch:10: trailing whitespace.
-    
-/home/swe-bench/temp_sympy__sympy-13647_pred_try.patch:20: trailing whitespace.
-    
+/home/swe-bench/temp_sympy__sympy-13647_pred_try.patch:18: trailing whitespace.
+        
 Checking patch sympy/matrices/common.py...
 Applied patch sympy/matrices/common.py cleanly.
-warning: 2 lines add whitespace errors.
+warning: 1 line adds whitespace errors.
  
 [sympy__sympy__1.1] [sympy__sympy-13647] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-13647] Apply patch successful (pred_try) 
@@ -41,13 +39,11 @@ Applied patch sympy/matrices/common.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-13647] Command: git apply -v /home/swe-bench/temp_sympy__sympy-13647_pred.patch 
 [sympy__sympy__1.1] [sympy__sympy-13647] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-13647] Std. Output:
-/home/swe-bench/temp_sympy__sympy-13647_pred.patch:10: trailing whitespace.
-    
-/home/swe-bench/temp_sympy__sympy-13647_pred.patch:20: trailing whitespace.
-    
+/home/swe-bench/temp_sympy__sympy-13647_pred.patch:18: trailing whitespace.
+        
 Checking patch sympy/matrices/common.py...
 Applied patch sympy/matrices/common.py cleanly.
-warning: 2 lines add whitespace errors.
+warning: 1 line adds whitespace errors.
  
 [sympy__sympy__1.1] [sympy__sympy-13647] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-13647] Apply patch successful (pred) 
@@ -76,8 +72,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        89542087
-hash randomization: on (PYTHONHASHSEED=3213983424)
+random seed:        97249071
+hash randomization: on (PYTHONHASHSEED=1477083880)
 
 sympy/matrices/tests/test_commonmatrix.py[81] 
 test__MinimalMatrix ok
@@ -167,15 +163,15 @@ ________________________________________________________________________________
 ____________ sympy/matrices/tests/test_commonmatrix.py:test_refine _____________
   File "/home/swe-bench/sympy__sympy/sympy/matrices/tests/test_commonmatrix.py", line 490, in test_refine
     m1 = m0.refine(Q.real(x) & Q.real(y))
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1752, in refine
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1761, in refine
     return self.applyfunc(lambda x: refine(x, assumptions))
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1548, in applyfunc
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1557, in applyfunc
     return self._eval_applyfunc(f)
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1488, in _eval_applyfunc
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1497, in _eval_applyfunc
     out = self._new(self.rows, self.cols, [f(x) for x in self])
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1488, in <listcomp>
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1497, in <listcomp>
     out = self._new(self.rows, self.cols, [f(x) for x in self])
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1752, in <lambda>
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1761, in <lambda>
     return self.applyfunc(lambda x: refine(x, assumptions))
   File "/home/swe-bench/sympy__sympy/sympy/assumptions/refine.py", line 28, in refine
     args = [refine(arg, assumptions) for arg in expr.args]
@@ -201,11 +197,11 @@ ___________ sympy/matrices/tests/test_commonmatrix.py:test_jacobian2 ___________
     assert X.jacobian(Y) == J
   File "/home/swe-bench/sympy__sympy/sympy/matrices/matrices.py", line 1651, in jacobian
     return self._new(m, n, lambda j, i: self[j].diff(X[i]))
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 2160, in _new
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 2169, in _new
     return cls(*args, **kwargs)
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 2165, in __init__
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 2174, in __init__
     mat = list(mat(i, j) for i in range(rows) for j in range(cols))
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 2165, in <genexpr>
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 2174, in <genexpr>
     mat = list(mat(i, j) for i in range(rows) for j in range(cols))
   File "/home/swe-bench/sympy__sympy/sympy/matrices/matrices.py", line 1651, in <lambda>
     return self._new(m, n, lambda j, i: self[j].diff(X[i]))
@@ -222,11 +218,11 @@ _____________ sympy/matrices/tests/test_commonmatrix.py:test_limit _____________
     assert m.limit(x, 5) == Matrix(2, 1, [S(1)/5, y])
   File "/home/swe-bench/sympy__sympy/sympy/matrices/matrices.py", line 1674, in limit
     return self.applyfunc(lambda x: x.limit(*args))
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1548, in applyfunc
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1557, in applyfunc
     return self._eval_applyfunc(f)
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1488, in _eval_applyfunc
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1497, in _eval_applyfunc
     out = self._new(self.rows, self.cols, [f(x) for x in self])
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1488, in <listcomp>
+  File "/home/swe-bench/sympy__sympy/sympy/matrices/common.py", line 1497, in <listcomp>
     out = self._new(self.rows, self.cols, [f(x) for x in self])
   File "/home/swe-bench/sympy__sympy/sympy/matrices/matrices.py", line 1674, in <lambda>
     return self.applyfunc(lambda x: x.limit(*args))
@@ -272,10 +268,30 @@ _____________ sympy/matrices/tests/test_commonmatrix.py:test_limit _____________
     return _ask(fact, self)
   File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 303, in _ask
     _ask(pk, obj)
+  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 303, in _ask
+    _ask(pk, obj)
+  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 303, in _ask
+    _ask(pk, obj)
   File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 291, in _ask
     a = evaluate(obj)
-  File "/home/swe-bench/sympy__sympy/sympy/core/mul.py", line 1228, in _eval_is_irrational
-    a = t.is_irrational
+  File "/home/swe-bench/sympy__sympy/sympy/core/mul.py", line 1325, in _eval_is_composite
+    if self.is_integer and self.is_positive:
+  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 248, in getit
+    return _ask(fact, self)
+  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 291, in _ask
+    a = evaluate(obj)
+  File "/home/swe-bench/sympy__sympy/sympy/core/mul.py", line 1115, in _eval_is_integer
+    is_rational = self.is_rational
+  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 248, in getit
+    return _ask(fact, self)
+  File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 291, in _ask
+    a = evaluate(obj)
+  File "/home/swe-bench/sympy__sympy/sympy/core/mul.py", line 1084, in _eval_is_rational
+    r = _fuzzy_group((a.is_rational for a in self.args), quick_exit=True)
+  File "/home/swe-bench/sympy__sympy/sympy/core/logic.py", line 78, in _fuzzy_group
+    for a in args:
+  File "/home/swe-bench/sympy__sympy/sympy/core/mul.py", line 1084, in <genexpr>
+    r = _fuzzy_group((a.is_rational for a in self.args), quick_exit=True)
   File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 248, in getit
     return _ask(fact, self)
   File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 303, in _ask
@@ -284,7 +300,7 @@ _____________ sympy/matrices/tests/test_commonmatrix.py:test_limit _____________
     _ask(pk, obj)
   File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 303, in _ask
     _ask(pk, obj)
-  [Previous line repeated 2 more times]
+  [Previous line repeated 3 more times]
   File "/home/swe-bench/sympy__sympy/sympy/core/assumptions.py", line 291, in _ask
     a = evaluate(obj)
   File "/home/swe-bench/sympy__sympy/sympy/core/power.py", line 1130, in _eval_is_algebraic
@@ -315,7 +331,7 @@ _____________ sympy/matrices/tests/test_commonmatrix.py:test_limit _____________
     warnings.warn("Using or importing the ABCs from 'collections' instead "
 DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
 
-= tests finished: 77 passed, 1 expected to fail, 3 exceptions, in 7.58 seconds =
+= tests finished: 77 passed, 1 expected to fail, 3 exceptions, in 8.57 seconds =
 DO *NOT* COMMIT!
 /home/swe-bench/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
   from collections import Mapping, defaultdict

@@ -127,7 +127,7 @@ PASSED sklearn/neighbors/tests/test_neighbors.py::test_include_self_neighbors_gr
 PASSED sklearn/neighbors/tests/test_neighbors.py::test_dtype_convert
 PASSED sklearn/neighbors/tests/test_neighbors.py::test_sparse_metric_callable
 PASSED sklearn/neighbors/tests/test_neighbors.py::test_pairwise_boolean_distance
-========== 1 failed, 44 passed, 2 xfailed, 3 warnings in 4.38 seconds ==========
+========== 1 failed, 44 passed, 2 xfailed, 3 warnings in 5.74 seconds ==========
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-11040] Return Code: 1 
 

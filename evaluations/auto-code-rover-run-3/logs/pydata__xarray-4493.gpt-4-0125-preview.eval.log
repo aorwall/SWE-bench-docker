@@ -13,8 +13,15 @@ HEAD is now at a5f53e20 don't skip the doctests CI (#4869)
 [pydata__xarray__0.12] [pydata__xarray-4493] Command: git apply -v /home/swe-bench/temp_pydata__xarray-4493_pred_try.patch 
 [pydata__xarray__0.12] [pydata__xarray-4493] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydata__xarray__0.12] [pydata__xarray-4493] Std. Output:
+/home/swe-bench/temp_pydata__xarray-4493_pred_try.patch:11: trailing whitespace.
+    
+/home/swe-bench/temp_pydata__xarray-4493_pred_try.patch:17: trailing whitespace.
+    
+/home/swe-bench/temp_pydata__xarray-4493_pred_try.patch:23: trailing whitespace.
+    
 Checking patch xarray/core/merge.py...
 Applied patch xarray/core/merge.py cleanly.
+warning: 3 lines add whitespace errors.
  
 [pydata__xarray__0.12] [pydata__xarray-4493] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4493] Apply patch successful (pred_try) 
@@ -31,8 +38,15 @@ Applied patch xarray/core/merge.py cleanly.
 [pydata__xarray__0.12] [pydata__xarray-4493] Command: git apply -v /home/swe-bench/temp_pydata__xarray-4493_pred.patch 
 [pydata__xarray__0.12] [pydata__xarray-4493] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydata__xarray__0.12] [pydata__xarray-4493] Std. Output:
+/home/swe-bench/temp_pydata__xarray-4493_pred.patch:11: trailing whitespace.
+    
+/home/swe-bench/temp_pydata__xarray-4493_pred.patch:17: trailing whitespace.
+    
+/home/swe-bench/temp_pydata__xarray-4493_pred.patch:23: trailing whitespace.
+    
 Checking patch xarray/core/merge.py...
 Applied patch xarray/core/merge.py cleanly.
+warning: 3 lines add whitespace errors.
  
 [pydata__xarray__0.12] [pydata__xarray-4493] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4493] Apply patch successful (pred) 
@@ -2234,7 +2248,7 @@ FAILED xarray/tests/test_dataset.py::TestDataset::test_polyfit_warnings - ass...
 FAILED xarray/tests/test_dataset.py::test_raise_no_warning_for_nan_in_binary_ops
 FAILED xarray/tests/test_variable.py::TestVariable::test_as_variable - Failed...
 FAILED xarray/tests/test_variable.py::test_raise_no_warning_for_nan_in_binary_ops
-= 48 failed, 1689 passed, 17 skipped, 73 xfailed, 26 xpassed, 8282 warnings in 88.12s (0:01:28) =
+= 48 failed, 1689 passed, 17 skipped, 73 xfailed, 26 xpassed, 8282 warnings in 86.64s (0:01:26) =
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider xarray/tests/test_dask.py xarray/tests/test_dataset.py xarray/tests/test_interp.py xarray/tests/test_variable.py` failed. (See above for error)
 
  

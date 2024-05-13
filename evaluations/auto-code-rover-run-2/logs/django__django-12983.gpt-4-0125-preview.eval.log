@@ -74,14 +74,14 @@ FAIL: test_slugify (utils_tests.test_text.TestUtilsText)
 Traceback (most recent call last):
   File "/opt/django__django/tests/utils_tests/test_text.py", line 209, in test_slugify
     self.assertEqual(text.slugify(value, allow_unicode=is_unicode), output)
-AssertionError: '-strip-mixed-value-' != 'strip-mixed-value'
-- -strip-mixed-value-
-? -                 -
-+ strip-mixed-value
+AssertionError: '-multiple-dash-and-space-' != 'multiple-dash-and-space'
+- -multiple-dash-and-space-
+? -                       -
++ multiple-dash-and-space
 
 
 ----------------------------------------------------------------------
-Ran 16 tests in 0.051s
+Ran 16 tests in 0.038s
 
 FAILED (failures=1)
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes

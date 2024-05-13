@@ -81,8 +81,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        84108315
-hash randomization: on (PYTHONHASHSEED=580387651)
+random seed:        8538465
+hash randomization: on (PYTHONHASHSEED=4193539911)
 
 sympy/functions/elementary/tests/test_hyperbolic.py[45] 
 test_sinh ok
@@ -132,7 +132,7 @@ test_sinh_expansion ok
 test_cosh_expansion ok                                                      [OK]
 
 
-================= tests finished: 45 passed, in 14.85 seconds ==================
+================= tests finished: 45 passed, in 15.22 seconds ==================
 
  
 [sympy__sympy__1.1] [sympy__sympy-13480] Return Code: 0 

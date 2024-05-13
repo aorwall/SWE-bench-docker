@@ -143,7 +143,7 @@ PASSED sklearn/preprocessing/tests/test_label.py::test_multilabel_binarizer_inve
 PASSED sklearn/preprocessing/tests/test_label.py::test_label_binarize_with_class_order
 PASSED sklearn/preprocessing/tests/test_label.py::test_invalid_input_label_binarize
 PASSED sklearn/preprocessing/tests/test_label.py::test_inverse_binarize_multiclass
-========= 2 failed, 18 passed, 3 xfailed, 13 warnings in 1.55 seconds ==========
+========= 2 failed, 18 passed, 3 xfailed, 13 warnings in 1.20 seconds ==========
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Return Code: 1 
 

@@ -225,7 +225,7 @@ Traceback (most recent call last):
     self.ctx = site.each_context(request)
   File "/opt/django__django/django/contrib/admin/sites.py", line 317, in each_context
     'available_apps': self.get_app_list(request),
-  File "/opt/django__django/django/contrib/admin/sites.py", line 508, in get_app_list
+  File "/opt/django__django/django/contrib/admin/sites.py", line 507, in get_app_list
     app_dict = self._build_app_dict(request)
 AttributeError: 'AdminSite' object has no attribute '_build_app_dict'
 
@@ -243,7 +243,7 @@ Traceback (most recent call last):
     self.ctx = site.each_context(request)
   File "/opt/django__django/django/contrib/admin/sites.py", line 317, in each_context
     'available_apps': self.get_app_list(request),
-  File "/opt/django__django/django/contrib/admin/sites.py", line 508, in get_app_list
+  File "/opt/django__django/django/contrib/admin/sites.py", line 507, in get_app_list
     app_dict = self._build_app_dict(request)
 AttributeError: 'AdminSite' object has no attribute '_build_app_dict'
 
@@ -261,12 +261,12 @@ Traceback (most recent call last):
     self.ctx = site.each_context(request)
   File "/opt/django__django/django/contrib/admin/sites.py", line 317, in each_context
     'available_apps': self.get_app_list(request),
-  File "/opt/django__django/django/contrib/admin/sites.py", line 508, in get_app_list
+  File "/opt/django__django/django/contrib/admin/sites.py", line 507, in get_app_list
     app_dict = self._build_app_dict(request)
 AttributeError: 'AdminSite' object has no attribute '_build_app_dict'
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.220s
+Ran 6 tests in 0.147s
 
 FAILED (errors=3)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

@@ -112,7 +112,7 @@ PASSED lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_anchored_locat
 PASSED lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_grid_with_axes_class_not_overriding_axis
 FAILED lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_image_grid_each_left_label_mode_all[png]
 FAILED lib/mpl_toolkits/axes_grid1/tests/test_axes_grid1.py::test_image_grid_single_bottom[png]
-======================== 2 failed, 47 passed in 18.73s =========================
+======================== 2 failed, 47 passed in 14.81s =========================
 
  
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-26020] Return Code: 1 

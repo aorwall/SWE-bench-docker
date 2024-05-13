@@ -176,19 +176,19 @@ py39: add activators for Bash, CShell, Fish, Nushell, PowerShell, Python
 .pkg: add seed packages via FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/swe-bench/.local/share/virtualenv)
 .pkg: add activators for Bash, CShell, Fish, Nushell, PowerShell, Python
 .pkg: install_requires> python -I -m pip install 'setuptools>=40.8.0' wheel
-.pkg: exit 0 (1.81 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'setuptools>=40.8.0' wheel pid=148
+.pkg: exit 0 (1.27 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'setuptools>=40.8.0' wheel pid=148
 .pkg: _optional_hooks> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__4.0/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__
-.pkg: exit None (0.28 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__4.0/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=153
+.pkg: exit None (0.39 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__4.0/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=153
 .pkg: get_requires_for_build_editable> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__4.0/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__
-.pkg: exit None (0.78 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__4.0/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=156
+.pkg: exit None (0.53 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__4.0/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=156
 .pkg: install_requires_for_build_editable> python -I -m pip install wheel
-.pkg: exit 0 (0.48 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install wheel pid=160
+.pkg: exit 0 (0.54 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install wheel pid=160
 .pkg: build_editable> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__4.0/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__
-.pkg: exit None (0.75 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__4.0/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=165
+.pkg: exit None (0.49 seconds) /home/swe-bench/sphinx-doc__sphinx> python /home/swe-bench/miniconda3/envs/sphinx-doc__sphinx__4.0/lib/python3.9/site-packages/pyproject_api/_backend.py True setuptools.build_meta __legacy__ pid=165
 py39: install_package_deps> python -I -m pip install 'Jinja2<3.0' 'Pygments>=2.0' 'alabaster<0.7.12,>=0.7' 'babel>=1.3' 'colorama>=0.3.5; sys_platform == "win32"' cython 'docutils>=0.14' html5lib imagesize 'markupsafe<=2.0.1' packaging pytest pytest-cov 'requests>=2.5.0' setuptools 'snowballstemmer>=1.1' 'sphinxcontrib-applehelp<=1.0.7' 'sphinxcontrib-devhelp<=1.0.5' 'sphinxcontrib-htmlhelp<=2.0.4' sphinxcontrib-jsmath 'sphinxcontrib-qthelp<=1.0.6' 'sphinxcontrib-serializinghtml<=1.1.9' 'typed-ast; python_version < "3.8"'
-py39: exit 0 (17.37 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'Jinja2<3.0' 'Pygments>=2.0' 'alabaster<0.7.12,>=0.7' 'babel>=1.3' 'colorama>=0.3.5; sys_platform == "win32"' cython 'docutils>=0.14' html5lib imagesize 'markupsafe<=2.0.1' packaging pytest pytest-cov 'requests>=2.5.0' setuptools 'snowballstemmer>=1.1' 'sphinxcontrib-applehelp<=1.0.7' 'sphinxcontrib-devhelp<=1.0.5' 'sphinxcontrib-htmlhelp<=2.0.4' sphinxcontrib-jsmath 'sphinxcontrib-qthelp<=1.0.6' 'sphinxcontrib-serializinghtml<=1.1.9' 'typed-ast; python_version < "3.8"' pid=169
+py39: exit 0 (15.37 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install 'Jinja2<3.0' 'Pygments>=2.0' 'alabaster<0.7.12,>=0.7' 'babel>=1.3' 'colorama>=0.3.5; sys_platform == "win32"' cython 'docutils>=0.14' html5lib imagesize 'markupsafe<=2.0.1' packaging pytest pytest-cov 'requests>=2.5.0' setuptools 'snowballstemmer>=1.1' 'sphinxcontrib-applehelp<=1.0.7' 'sphinxcontrib-devhelp<=1.0.5' 'sphinxcontrib-htmlhelp<=2.0.4' sphinxcontrib-jsmath 'sphinxcontrib-qthelp<=1.0.6' 'sphinxcontrib-serializinghtml<=1.1.9' 'typed-ast; python_version < "3.8"' pid=169
 py39: install_package> python -I -m pip install --force-reinstall --no-deps /home/swe-bench/sphinx-doc__sphinx/.tox/.tmp/package/1/Sphinx-4.0.0.dev20240512-0.editable-py3-none-any.whl
-py39: exit 0 (0.59 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install --force-reinstall --no-deps /home/swe-bench/sphinx-doc__sphinx/.tox/.tmp/package/1/Sphinx-4.0.0.dev20240512-0.editable-py3-none-any.whl pid=181
+py39: exit 0 (1.08 seconds) /home/swe-bench/sphinx-doc__sphinx> python -I -m pip install --force-reinstall --no-deps /home/swe-bench/sphinx-doc__sphinx/.tox/.tmp/package/1/Sphinx-4.0.0.dev20240512-0.editable-py3-none-any.whl pid=181
 py39: commands[0]> python -X dev -m pytest -rA --durations 25 tests/test_ext_napoleon_docstring.py
 [1m============================= test session starts ==============================[0m
 platform linux -- Python 3.9.19, pytest-8.2.0, pluggy-1.5.0
@@ -200,14 +200,60 @@ configfile: setup.cfg
 plugins: cov-5.0.0
 collected 47 items
 
-tests/test_ext_napoleon_docstring.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m [ 74%]
+tests/test_ext_napoleon_docstring.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m [ 74%]
 [0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                                                             [100%][0m
 
 =================================== FAILURES ===================================
+[31m[1m___________ NumpyDocstringTest.test_parameters_with_class_reference ____________[0m
+
+self = <tests.test_ext_napoleon_docstring.NumpyDocstringTest testMethod=test_parameters_with_class_reference>
+
+    [0m    [94mdef[39;49;00m [92mtest_parameters_with_class_reference[39;49;00m([96mself[39;49;00m):[90m[39;49;00m
+            docstring = [33m"""[39;49;00m[33m\[39;49;00m
+    [33mParameters[39;49;00m[33m[39;49;00m
+    [33m----------[39;49;00m[33m[39;49;00m
+    [33mparam1 : :class:`MyClass <name.space.MyClass>` instance[39;49;00m[33m[39;49;00m
+    [33m[39;49;00m
+    [33mOther Parameters[39;49;00m[33m[39;49;00m
+    [33m----------------[39;49;00m[33m[39;49;00m
+    [33mparam2 : :class:`MyClass <name.space.MyClass>` instance[39;49;00m[33m[39;49;00m
+    [33m[39;49;00m
+    [33m"""[39;49;00m[90m[39;49;00m
+    [90m[39;49;00m
+            config = Config(napoleon_use_param=[94mFalse[39;49;00m)[90m[39;49;00m
+            actual = [96mstr[39;49;00m(NumpyDocstring(docstring, config))[90m[39;49;00m
+            expected = [33m"""[39;49;00m[33m\[39;49;00m
+    [33m:Parameters: **param1** (:class:`MyClass <name.space.MyClass>` instance)[39;49;00m[33m[39;49;00m
+    [33m[39;49;00m
+    [33m:Other Parameters: **param2** (:class:`MyClass <name.space.MyClass>` instance)[39;49;00m[33m[39;49;00m
+    [33m"""[39;49;00m[90m[39;49;00m
+            [96mself[39;49;00m.assertEqual(expected, actual)[90m[39;49;00m
+    [90m[39;49;00m
+            config = Config(napoleon_use_param=[94mTrue[39;49;00m)[90m[39;49;00m
+            actual = [96mstr[39;49;00m(NumpyDocstring(docstring, config))[90m[39;49;00m
+            expected = [33m"""[39;49;00m[33m\[39;49;00m
+    [33m:param param1:[39;49;00m[33m[39;49;00m
+    [33m:type param1: :class:`MyClass <name.space.MyClass>` instance[39;49;00m[33m[39;49;00m
+    [33m[39;49;00m
+    [33m:param param2:[39;49;00m[33m[39;49;00m
+    [33m:type param2: :class:`MyClass <name.space.MyClass>` instance[39;49;00m[33m[39;49;00m
+    [33m"""[39;49;00m[90m[39;49;00m
+>           [96mself[39;49;00m.assertEqual(expected, actual)[90m[39;49;00m
+[1m[31mE           AssertionError: ':par[72 chars]\n\n:param param2:\n:type param2: :class:`MyCl[32 chars]ce\n' != ':par[72 chars]\n\n:Other Parameters: **param2** (:class:`MyC[34 chars]e)\n'[0m
+[1m[31mE             :param param1:[0m
+[1m[31mE             :type param1: :class:`MyClass <name.space.MyClass>` instance[0m
+[1m[31mE             [0m
+[1m[31mE           - :param param2:[0m
+[1m[31mE           - :type param2: :class:`MyClass <name.space.MyClass>` instance[0m
+[1m[31mE           ?   ^^ ^      ^^[0m
+[1m[31mE           + :Other Parameters: **param2** (:class:`MyClass <name.space.MyClass>` instance)[0m
+[1m[31mE           ?  + ^ ^^^^^^^^^^^^^^^^      ^^^^                                              +[0m
+
+[1m[31mtests/test_ext_napoleon_docstring.py[0m:1468: AssertionError
 [31m[1m__________________ TestNumpyDocstring.test_token_type_invalid __________________[0m
 
-self = <tests.test_ext_napoleon_docstring.TestNumpyDocstring object at 0x7d4fc3ba2c80>
-warning = <_io.StringIO object at 0x7d4fc3abf870>
+self = <tests.test_ext_napoleon_docstring.TestNumpyDocstring object at 0x79f5b7916c80>
+warning = <_io.StringIO object at 0x79f5b7891cd0>
 
     [0m[94mdef[39;49;00m [92mtest_token_type_invalid[39;49;00m([96mself[39;49;00m, warning):[90m[39;49;00m
         tokens = ([90m[39;49;00m
@@ -236,7 +282,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
     [0m[96mnext[39;49;00m([96mself[39;49;00m.gen)[90m[39;49;00m
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-warning = <_io.StringIO object at 0x7d4fc3abf870>
+warning = <_io.StringIO object at 0x79f5b7891cd0>
 match = '.+: invalid value set \\(missing closing brace\\):'
 
     [0m[37m@contextmanager[39;49;00m[90m[39;49;00m
@@ -302,12 +348,12 @@ Sample class with PEP 526 annotations and numpy docstring
    :type: str
 
 ============================= slowest 25 durations =============================
-0.85s setup    tests/test_ext_napoleon_docstring.py::TestNumpyDocstring::test_token_type_invalid
-0.01s call     tests/test_ext_napoleon_docstring.py::GoogleDocstringTest::test_list_in_parameter_description
-0.01s call     tests/test_ext_napoleon_docstring.py::NumpyDocstringTest::test_list_in_parameter_description
-0.01s call     tests/test_ext_napoleon_docstring.py::NumpyDocstringTest::test_raises_types
+0.99s setup    tests/test_ext_napoleon_docstring.py::TestNumpyDocstring::test_token_type_invalid
+0.02s call     tests/test_ext_napoleon_docstring.py::NumpyDocstringTest::test_list_in_parameter_description
 0.01s call     tests/test_ext_napoleon_docstring.py::NumpyDocstringTest::test_docstrings
+0.01s call     tests/test_ext_napoleon_docstring.py::GoogleDocstringTest::test_list_in_parameter_description
 0.01s call     tests/test_ext_napoleon_docstring.py::GoogleDocstringTest::test_docstrings
+0.01s call     tests/test_ext_napoleon_docstring.py::GoogleDocstringTest::test_raises_types
 
 (19 durations < 0.005s hidden.  Use -vv to show these durations.)
 [36m[1m=========================== short test summary info ============================[0m
@@ -337,7 +383,6 @@ Sample class with PEP 526 annotations and numpy docstring
 [32mPASSED[0m tests/test_ext_napoleon_docstring.py::[1mNumpyDocstringTest::test_list_in_parameter_description[0m
 [32mPASSED[0m tests/test_ext_napoleon_docstring.py::[1mNumpyDocstringTest::test_multiple_parameters[0m
 [32mPASSED[0m tests/test_ext_napoleon_docstring.py::[1mNumpyDocstringTest::test_parameter_types[0m
-[32mPASSED[0m tests/test_ext_napoleon_docstring.py::[1mNumpyDocstringTest::test_parameters_with_class_reference[0m
 [32mPASSED[0m tests/test_ext_napoleon_docstring.py::[1mNumpyDocstringTest::test_parameters_without_class_reference[0m
 [32mPASSED[0m tests/test_ext_napoleon_docstring.py::[1mNumpyDocstringTest::test_raises_types[0m
 [32mPASSED[0m tests/test_ext_napoleon_docstring.py::[1mNumpyDocstringTest::test_recombine_set_tokens[0m
@@ -357,11 +402,12 @@ Sample class with PEP 526 annotations and numpy docstring
 [32mPASSED[0m tests/test_ext_napoleon_docstring.py::[1mTestNumpyDocstring::test_escape_args_and_kwargs[*args, **kwargs-\\*args, \\*\\*kwargs][0m
 [32mPASSED[0m tests/test_ext_napoleon_docstring.py::[1mTestNumpyDocstring::test_escape_args_and_kwargs[*x, **y-\\*x, \\*\\*y][0m
 [32mPASSED[0m tests/test_ext_napoleon_docstring.py::[1mTestNumpyDocstring::test_pep526_annotations[0m
+[31mFAILED[0m tests/test_ext_napoleon_docstring.py::[1mNumpyDocstringTest::test_parameters_with_class_reference[0m - AssertionError: ':par[72 chars]\n\n:param param2:\n:type param2: :class:`My...
 [31mFAILED[0m tests/test_ext_napoleon_docstring.py::[1mTestNumpyDocstring::test_token_type_invalid[0m - assert (2 == 1)
-[31m=================== [31m[1m1 failed[0m, [32m46 passed[0m, [33m4 warnings[0m[31m in 1.42s[0m[31m ===================[0m
-py39: exit 1 (3.01 seconds) /home/swe-bench/sphinx-doc__sphinx> python -X dev -m pytest -rA --durations 25 tests/test_ext_napoleon_docstring.py pid=188
-  py39: FAIL code 1 (25.92=setup[22.91]+cmd[3.01] seconds)
-  evaluation failed :( (26.91 seconds)
+[31m=================== [31m[1m2 failed[0m, [32m45 passed[0m, [33m4 warnings[0m[31m in 1.61s[0m[31m ===================[0m
+py39: exit 1 (3.30 seconds) /home/swe-bench/sphinx-doc__sphinx> python -X dev -m pytest -rA --durations 25 tests/test_ext_napoleon_docstring.py pid=188
+  py39: FAIL code 1 (23.79=setup[20.49]+cmd[3.30] seconds)
+  evaluation failed :( (24.64 seconds)
 ERROR conda.cli.main_run:execute(124): `conda run tox -epy39 -v -- tests/test_ext_napoleon_docstring.py` failed. (See above for error)
 
  

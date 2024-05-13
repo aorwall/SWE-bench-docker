@@ -23,6 +23,7 @@ error: while searching for:
                 return 'something'
 
         f = FooBar(foo_bar=1)
+        self.assertEqual(f.get_foo_bar_display(), 'something')
 
 error: patch failed: tests/model_fields/tests.py:172
 error: tests/model_fields/tests.py: patch does not apply
@@ -40,6 +41,7 @@ error: while searching for:
                 return 'something'
 
         f = FooBar(foo_bar=1)
+        self.assertEqual(f.get_foo_bar_display(), 'something')
 
 error: patch failed: tests/model_fields/tests.py:172
 error: tests/model_fields/tests.py: patch does not apply

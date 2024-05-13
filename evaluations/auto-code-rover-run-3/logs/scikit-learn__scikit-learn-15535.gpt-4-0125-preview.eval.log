@@ -14,7 +14,9 @@ HEAD is now at 70b0ddea9 FEA Allow nan/inf in feature selection (#11635)
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Std. Output:
 Checking patch sklearn/metrics/cluster/_supervised.py...
+Checking patch sklearn/utils/validation.py...
 Applied patch sklearn/metrics/cluster/_supervised.py cleanly.
+Applied patch sklearn/utils/validation.py cleanly.
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Return Code: 0 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Apply patch successful (pred_try) 
@@ -22,7 +24,9 @@ Applied patch sklearn/metrics/cluster/_supervised.py cleanly.
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Command: git apply -v -R /opt/temp_scikit-learn__scikit-learn-15535_pred_try.patch 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Std. Output:
+Checking patch sklearn/utils/validation.py...
 Checking patch sklearn/metrics/cluster/_supervised.py...
+Applied patch sklearn/utils/validation.py cleanly.
 Applied patch sklearn/metrics/cluster/_supervised.py cleanly.
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Return Code: 0 
@@ -32,7 +36,9 @@ Applied patch sklearn/metrics/cluster/_supervised.py cleanly.
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Std. Output:
 Checking patch sklearn/metrics/cluster/_supervised.py...
+Checking patch sklearn/utils/validation.py...
 Applied patch sklearn/metrics/cluster/_supervised.py cleanly.
+Applied patch sklearn/utils/validation.py cleanly.
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Return Code: 0 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Apply patch successful (pred) 
@@ -60,10 +66,11 @@ platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
 rootdir: /opt/scikit-learn__scikit-learn, inifile: setup.cfg
 collected 60 items
 
-sklearn/metrics/cluster/tests/test_common.py ........................... [ 45%]
-.FFFFFFFF........................                                        [100%]
+sklearn/metrics/cluster/tests/test_common.py .........F................. [ 45%]
+.FFFFFFFF.....F.......F..........                                        [100%]
 
 =========================== short test summary info ============================
+FAILED sklearn/metrics/cluster/tests/test_common.py::test_normalized_output[adjusted_rand_score]
 FAILED sklearn/metrics/cluster/tests/test_common.py::test_format_invariance[adjusted_mutual_info_score]
 FAILED sklearn/metrics/cluster/tests/test_common.py::test_format_invariance[adjusted_rand_score]
 FAILED sklearn/metrics/cluster/tests/test_common.py::test_format_invariance[completeness_score]
@@ -72,6 +79,8 @@ FAILED sklearn/metrics/cluster/tests/test_common.py::test_format_invariance[mutu
 FAILED sklearn/metrics/cluster/tests/test_common.py::test_format_invariance[normalized_mutual_info_score]
 FAILED sklearn/metrics/cluster/tests/test_common.py::test_format_invariance[v_measure_score]
 FAILED sklearn/metrics/cluster/tests/test_common.py::test_format_invariance[fowlkes_mallows_score]
+FAILED sklearn/metrics/cluster/tests/test_common.py::test_single_sample[adjusted_rand_score]
+FAILED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[adjusted_rand_score-adjusted_rand_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_symmetric_non_symmetric_union
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_symmetry[adjusted_rand_score-y10-y20]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_symmetry[v_measure_score-y11-y21]
@@ -81,7 +90,6 @@ PASSED sklearn/metrics/cluster/tests/test_common.py::test_symmetry[normalized_mu
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_symmetry[fowlkes_mallows_score-y15-y25]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_non_symmetry[homogeneity_score-y10-y20]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_non_symmetry[completeness_score-y11-y21]
-PASSED sklearn/metrics/cluster/tests/test_common.py::test_normalized_output[adjusted_rand_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_normalized_output[homogeneity_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_normalized_output[completeness_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_normalized_output[v_measure_score]
@@ -105,7 +113,6 @@ PASSED sklearn/metrics/cluster/tests/test_common.py::test_format_invariance[silh
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_format_invariance[calinski_harabasz_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_format_invariance[davies_bouldin_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_single_sample[adjusted_mutual_info_score]
-PASSED sklearn/metrics/cluster/tests/test_common.py::test_single_sample[adjusted_rand_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_single_sample[completeness_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_single_sample[homogeneity_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_single_sample[mutual_info_score]
@@ -113,7 +120,6 @@ PASSED sklearn/metrics/cluster/tests/test_common.py::test_single_sample[normaliz
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_single_sample[v_measure_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_single_sample[fowlkes_mallows_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[adjusted_mutual_info_score-adjusted_mutual_info_score]
-PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[adjusted_rand_score-adjusted_rand_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[completeness_score-completeness_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[homogeneity_score-homogeneity_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[mutual_info_score-mutual_info_score]
@@ -124,7 +130,7 @@ PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[silhouet
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[silhouette_manhattan-metric_func9]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[calinski_harabasz_score-calinski_harabasz_score]
 PASSED sklearn/metrics/cluster/tests/test_common.py::test_inf_nan_input[davies_bouldin_score-davies_bouldin_score]
-===================== 8 failed, 52 passed in 1.71 seconds ======================
+===================== 11 failed, 49 passed in 1.03 seconds =====================
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15535] Return Code: 1 
 

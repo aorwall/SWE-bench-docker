@@ -183,7 +183,7 @@ PASSED xarray/tests/test_groupby.py::test_groupby_multiple_string_args
 PASSED xarray/tests/test_groupby.py::test_groupby_bins_timeseries
 PASSED xarray/tests/test_groupby.py::test_groupby_none_group_name
 PASSED xarray/tests/test_groupby.py::test_groupby_getitem
-======================= 34 passed, 120 warnings in 6.95s =======================
+======================= 34 passed, 120 warnings in 7.07s =======================
 
  
 [pydata__xarray__0.12] [pydata__xarray-5131] Return Code: 0 

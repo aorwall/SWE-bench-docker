@@ -13,8 +13,13 @@ HEAD is now at a64cf2d5 Show data by default in HTML repr for DataArray (#4182)
 [pydata__xarray__0.12] [pydata__xarray-4094] Command: git apply -v /home/swe-bench/temp_pydata__xarray-4094_pred_try.patch 
 [pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
+/home/swe-bench/temp_pydata__xarray-4094_pred_try.patch:14: trailing whitespace.
+        
 Checking patch xarray/core/dataarray.py...
+Checking patch xarray/core/dataset.py...
 Applied patch xarray/core/dataarray.py cleanly.
+Applied patch xarray/core/dataset.py cleanly.
+warning: 1 line adds whitespace errors.
  
 [pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4094] Apply patch successful (pred_try) 
@@ -22,7 +27,9 @@ Applied patch xarray/core/dataarray.py cleanly.
 [pydata__xarray__0.12] [pydata__xarray-4094] Command: git apply -v -R /home/swe-bench/temp_pydata__xarray-4094_pred_try.patch 
 [pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
+Checking patch xarray/core/dataset.py...
 Checking patch xarray/core/dataarray.py...
+Applied patch xarray/core/dataset.py cleanly.
 Applied patch xarray/core/dataarray.py cleanly.
  
 [pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
@@ -31,8 +38,13 @@ Applied patch xarray/core/dataarray.py cleanly.
 [pydata__xarray__0.12] [pydata__xarray-4094] Command: git apply -v /home/swe-bench/temp_pydata__xarray-4094_pred.patch 
 [pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
+/home/swe-bench/temp_pydata__xarray-4094_pred.patch:14: trailing whitespace.
+        
 Checking patch xarray/core/dataarray.py...
+Checking patch xarray/core/dataset.py...
 Applied patch xarray/core/dataarray.py cleanly.
+Applied patch xarray/core/dataset.py cleanly.
+warning: 1 line adds whitespace errors.
  
 [pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4094] Apply patch successful (pred) 
@@ -60,7 +72,7 @@ collected 889 items
 
 xarray/tests/test_dataset.py ........................................... [  4%]
 .FF..F............F........................F....xX...................... [ 12%]
-...........F.................................................F.......... [ 21%]
+..........FF.................................................F.......... [ 21%]
 ........................................................................ [ 29%]
 ........................................................................ [ 37%]
 ........................................................................ [ 45%]
@@ -252,7 +264,7 @@ xarray/tests/test_dataset.py::TestDataset::test_resample_drop_nondim_coords
     imax = index.get_loc(np.max(new_x.values), method="nearest")
 
 xarray/tests/test_dataset.py::TestDataset::test_from_dataframe_sparse
-  /home/swe-bench/pydata__xarray/xarray/core/dataset.py:4553: FutureWarning: MultiIndex.is_lexsorted is deprecated as a public function, users should use MultiIndex.is_monotonic_increasing instead.
+  /home/swe-bench/pydata__xarray/xarray/core/dataset.py:4554: FutureWarning: MultiIndex.is_lexsorted is deprecated as a public function, users should use MultiIndex.is_monotonic_increasing instead.
     is_sorted = idx.is_lexsorted()
 
 xarray/tests/test_dataset.py: 64 warnings
@@ -395,7 +407,6 @@ PASSED xarray/tests/test_dataset.py::TestDataset::test_stack_unstack_slow
 PASSED xarray/tests/test_dataset.py::TestDataset::test_to_stacked_array_invalid_sample_dims
 PASSED xarray/tests/test_dataset.py::TestDataset::test_to_stacked_array_name
 PASSED xarray/tests/test_dataset.py::TestDataset::test_to_stacked_array_dtype_dims
-PASSED xarray/tests/test_dataset.py::TestDataset::test_to_stacked_array_to_unstacked_dataset
 PASSED xarray/tests/test_dataset.py::TestDataset::test_update
 PASSED xarray/tests/test_dataset.py::TestDataset::test_update_overwrite_coords
 PASSED xarray/tests/test_dataset.py::TestDataset::test_update_auto_align
@@ -1148,10 +1159,11 @@ FAILED xarray/tests/test_dataset.py::TestDataset::test_sel_categorical_error
 FAILED xarray/tests/test_dataset.py::TestDataset::test_categorical_multiindex
 FAILED xarray/tests/test_dataset.py::TestDataset::test_reindex_warning - Type...
 FAILED xarray/tests/test_dataset.py::TestDataset::test_drop_index_labels - Fa...
+FAILED xarray/tests/test_dataset.py::TestDataset::test_to_stacked_array_to_unstacked_dataset
 FAILED xarray/tests/test_dataset.py::TestDataset::test_to_stacked_array_to_unstacked_dataset_different_dimension
 FAILED xarray/tests/test_dataset.py::TestDataset::test_from_dataframe_categorical
 FAILED xarray/tests/test_dataset.py::test_raise_no_warning_for_nan_in_binary_ops
-= 8 failed, 863 passed, 16 skipped, 1 xfailed, 1 xpassed, 3072 warnings in 21.63s =
+= 9 failed, 862 passed, 16 skipped, 1 xfailed, 1 xpassed, 3072 warnings in 28.52s =
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider xarray/tests/test_dataset.py` failed. (See above for error)
 
  

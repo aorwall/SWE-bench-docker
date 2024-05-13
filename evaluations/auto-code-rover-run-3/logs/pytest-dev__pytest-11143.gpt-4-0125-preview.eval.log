@@ -85,7 +85,7 @@ test_rewrites_plugin_as_a_package.py F                                   [100%]
 =================================== FAILURES ===================================
 _____________________________________ test _____________________________________
 
-special_asserter = <function special_asserter.<locals>.special_assert at 0x758015843670>
+special_asserter = <function special_asserter.<locals>.special_assert at 0x7a38c785b670>
 
 >   def test(special_asserter): special_asserter(1, 2)
 
@@ -101,7 +101,7 @@ E       assert 1 == 2
 plugin/__init__.py:5: AssertionError
 =========================== short test summary info ============================
 FAILED test_rewrites_plugin_as_a_package.py::test - assert 1 == 2
-============================== 1 failed in 0.02s ===============================
+============================== 1 failed in 0.01s ===============================
 ___________________ TestAssertionRewrite.test_honors_pep_235 ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -111,7 +111,7 @@ collected 1 item
 
 test_honors_pep_235.py .                                                 [100%]
 
-============================== 1 passed in 0.02s ===============================
+============================== 1 passed in 0.01s ===============================
 _________________ TestAssertionRewrite.test_assertion_message __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -217,7 +217,7 @@ E       assert 1 == 2
 test_assertion_message_escape.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_assertion_message_escape.py::test_foo - AssertionError: To be esc...
-============================== 1 failed in 0.02s ===============================
+============================== 1 failed in 0.01s ===============================
 ______________ TestAssertionRewrite.test_assertion_messages_bytes ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -278,7 +278,7 @@ collected 1 item
 
 test_pycache_is_readonly.py .                                            [100%]
 
-============================== 1 passed in 0.02s ===============================
+============================== 1 passed in 0.01s ===============================
 _______________________ TestRewriteOnImport.test_zipfile _______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -286,7 +286,7 @@ platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_zipfile0
 collected 0 items
 
-============================ no tests ran in 0.02s =============================
+============================ no tests ran in 0.01s =============================
 ________ TestRewriteOnImport.test_load_resource_via_files_with_rewrite _________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -345,7 +345,7 @@ platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_package_without__init__py0
 collected 0 items
 
-============================ no tests ran in 0.01s =============================
+============================ no tests ran in 0.00s =============================
 __________ TestAssertionRewriteHookDetails.test_sys_meta_path_munged ___________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -419,7 +419,7 @@ E       assert (False == False) == False
 test_simple_case.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_simple_case.py::test_ternary_display - assert (False == False) ==...
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 _________________________ TestIssue925.test_long_case __________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -439,7 +439,7 @@ E        assert (False == True) == True
 test_long_case.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_long_case.py::test_ternary_display - assert (False == True) == True
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 _______________________ TestIssue925.test_many_brackets ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -459,7 +459,7 @@ E        assert True == ((False == True) == True)
 test_many_brackets.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_many_brackets.py::test_ternary_display - assert True == ((False =...
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 ___________ TestIssue2121.test_rewrite_python_files_contain_subdirs ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -545,7 +545,7 @@ E         ? ^
 test_assertion_walrus_no_variable_name_conflict.py:3: AssertionError
 =========================== short test summary info ============================
 FAILED test_assertion_walrus_no_variable_name_conflict.py::test_walrus_conversion_no_conflict
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 _ TestIssue10743.test_assertion_walrus_operator_true_assertion_and_changes_variable_value _
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -580,7 +580,7 @@ E         ? ^
 test_assertion_walrus_operator_fail_assertion.py:3: AssertionError
 =========================== short test summary info ============================
 FAILED test_assertion_walrus_operator_fail_assertion.py::test_walrus_conversion_fails
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 _______ TestIssue10743.test_assertion_walrus_operator_boolean_composite ________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -590,7 +590,7 @@ collected 1 item
 
 test_assertion_walrus_operator_boolean_composite.py .                    [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 _____ TestIssue10743.test_assertion_walrus_operator_compare_boolean_fails ______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -611,7 +611,7 @@ E       assert not (True and False is False)
 test_assertion_walrus_operator_compare_boolean_fails.py:3: AssertionError
 =========================== short test summary info ============================
 FAILED test_assertion_walrus_operator_compare_boolean_fails.py::test_walrus_operator_change_boolean_value
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 _______ TestIssue10743.test_assertion_walrus_operator_boolean_none_fails _______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -632,7 +632,7 @@ E       assert not (True and None is None)
 test_assertion_walrus_operator_boolean_none_fails.py:3: AssertionError
 =========================== short test summary info ============================
 FAILED test_assertion_walrus_operator_boolean_none_fails.py::test_walrus_operator_change_boolean_value
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 _ TestIssue10743.test_assertion_walrus_operator_value_changes_cleared_after_each_test _
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -653,7 +653,7 @@ collected 1 item
 
 test_assertion_walrus_operator_in_operand.py .                           [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _____ TestIssue11028.test_assertion_walrus_operator_in_operand_json_dumps ______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -663,7 +663,7 @@ collected 1 item
 
 test_assertion_walrus_operator_in_operand_json_dumps.py .                [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ____ TestIssue11028.test_assertion_walrus_operator_equals_operand_function _____
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -683,7 +683,7 @@ collected 1 item
 
 test_assertion_walrus_operator_equals_operand_function_keyword_arg.py .  [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 _ TestIssue11028.test_assertion_walrus_operator_equals_operand_function_arg_as_function _
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -693,7 +693,7 @@ collected 1 item
 
 test_assertion_walrus_operator_equals_operand_function_arg_as_function.py . [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ______ TestIssue11028.test_assertion_walrus_operator_gt_operand_function _______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -724,7 +724,7 @@ collected 1 item
 
 test_source_mtime_long_long.py .                                         [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ________________________ test_source_mtime_long_long[1] ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -734,7 +734,7 @@ collected 1 item
 
 test_source_mtime_long_long.py .                                         [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ___________________ TestEarlyRewriteBailout.test_cwd_changed ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -801,7 +801,7 @@ test_hook_call.py:11: AssertionError
 =========================== short test summary info ============================
 FAILED test_hook_call.py::test_simple - Exception: Assertion Passed: a+b == c...
 FAILED test_hook_call.py::test_fails - assert with message
-============================== 2 failed in 0.07s ===============================
+============================== 2 failed in 0.11s ===============================
 _________________ TestAssertionPass.test_hook_call_with_parens _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -844,7 +844,7 @@ E        +  where 1 = f() at line 3
 conftest.py:2: Exception
 =========================== short test summary info ============================
 FAILED test_hook_call_with_parens.py::test - Exception: Assertion Passed: f() 1
-============================== 1 failed in 0.06s ===============================
+============================== 1 failed in 0.13s ===============================
 ___________ TestAssertionPass.test_hook_not_called_without_hookimpl ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -940,7 +940,7 @@ E       AssertionError: assert 'hello world' in 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 test_max_increased_verbosity.py:3: AssertionError
 =========================== short test summary info ============================
 FAILED test_max_increased_verbosity.py::test_very_long_string - AssertionErro...
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 _________ TestIssue11140.test_constant_not_picked_as_module_docstring __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -950,7 +950,7 @@ collected 1 item
 
 test_constant_not_picked_as_module_docstring.py .                        [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ________________ TestAssertionRewrite.test_dont_rewrite_plugin _________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_dont_rewrite_plugin0/runpytest-0
@@ -962,7 +962,7 @@ collected 1 item
 
 test_foo.py .                                                            [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 _________________ TestRewriteOnImport.test_dont_write_bytecode _________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_dont_write_bytecode0/runpytest-0
@@ -974,7 +974,7 @@ collected 1 item
 
 test_dont_write_bytecode.py .                                            [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 _________ TestRewriteOnImport.test_cached_pyc_includes_pytest_version __________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_cached_pyc_includes_pytest_version0/runpytest-0
@@ -1027,7 +1027,7 @@ E        +  where 'hello' = test_optimized.__doc__
 test_pyc_vs_pyo.py:4: AssertionError
 =========================== short test summary info ============================
 FAILED test_pyc_vs_pyo.py::test_optimized - AssertionError: assert 'hello' is...
-============================== 1 failed in 0.02s ===============================
+============================== 1 failed in 0.04s ===============================
 ___________________ TestRewriteOnImport.test_rewrite_warning ___________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_rewrite_warning0/runpytest-0
@@ -1043,7 +1043,7 @@ conftest.py:2
     pytest.register_assert_rewrite("_pytest")
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-============================== 1 warning in 0.00s ==============================
+============================== 1 warning in 0.01s ==============================
 ________ TestRewriteOnImport.test_rewrite_module_imported_from_conftest ________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_rewrite_module_imported_from_conftest0/runpytest-0
@@ -1097,7 +1097,7 @@ testpkg/test_pkg.py:1
     import pkg_resources
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-========================= 1 passed, 1 warning in 0.20s =========================
+========================= 1 passed, 1 warning in 0.08s =========================
 =========================== short test summary info ============================
 PASSED testing/test_assertrewrite.py::TestAssertionRewrite::test_place_initial_imports
 PASSED testing/test_assertrewrite.py::TestAssertionRewrite::test_location_is_set
@@ -1215,7 +1215,7 @@ PASSED testing/test_assertrewrite.py::TestRewriteOnImport::test_rewrite_module_i
 PASSED testing/test_assertrewrite.py::TestRewriteOnImport::test_rewrite_warning_using_pytest_plugins
 PASSED testing/test_assertrewrite.py::TestRewriteOnImport::test_rewrite_warning_using_pytest_plugins_env_var
 PASSED testing/test_assertrewrite.py::TestAssertionRewriteHookDetails::test_resources_provider_for_loader
-============================= 116 passed in 7.85s ==============================
+============================= 116 passed in 10.00s =============================
 
  
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11143] Return Code: 0 

@@ -18,13 +18,15 @@ HEAD is now at b17abcb09c Merge pull request #13836 from vishalg2235/invmatmat
 [sympy__sympy__1.1] [sympy__sympy-14024] Command: git apply -v /home/swe-bench/temp_sympy__sympy-14024_pred_try.patch 
 [sympy__sympy__1.1] [sympy__sympy-14024] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-14024] Std. Output:
-/home/swe-bench/temp_sympy__sympy-14024_pred_try.patch:29: trailing whitespace.
+/home/swe-bench/temp_sympy__sympy-14024_pred_try.patch:10: trailing whitespace.
     
-Checking patch sympy/core/symbol.py...
+/home/swe-bench/temp_sympy__sympy-14024_pred_try.patch:14: trailing whitespace.
+    
+/home/swe-bench/temp_sympy__sympy-14024_pred_try.patch:17: trailing whitespace.
+    
 Checking patch sympy/simplify/simplify.py...
-Applied patch sympy/core/symbol.py cleanly.
 Applied patch sympy/simplify/simplify.py cleanly.
-warning: 1 line adds whitespace errors.
+warning: 3 lines add whitespace errors.
  
 [sympy__sympy__1.1] [sympy__sympy-14024] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-14024] Apply patch successful (pred_try) 
@@ -33,9 +35,7 @@ warning: 1 line adds whitespace errors.
 [sympy__sympy__1.1] [sympy__sympy-14024] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-14024] Std. Output:
 Checking patch sympy/simplify/simplify.py...
-Checking patch sympy/core/symbol.py...
 Applied patch sympy/simplify/simplify.py cleanly.
-Applied patch sympy/core/symbol.py cleanly.
  
 [sympy__sympy__1.1] [sympy__sympy-14024] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-14024] Revert patch successful (pred_try) 
@@ -43,13 +43,15 @@ Applied patch sympy/core/symbol.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-14024] Command: git apply -v /home/swe-bench/temp_sympy__sympy-14024_pred.patch 
 [sympy__sympy__1.1] [sympy__sympy-14024] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-14024] Std. Output:
-/home/swe-bench/temp_sympy__sympy-14024_pred.patch:29: trailing whitespace.
+/home/swe-bench/temp_sympy__sympy-14024_pred.patch:10: trailing whitespace.
     
-Checking patch sympy/core/symbol.py...
+/home/swe-bench/temp_sympy__sympy-14024_pred.patch:14: trailing whitespace.
+    
+/home/swe-bench/temp_sympy__sympy-14024_pred.patch:17: trailing whitespace.
+    
 Checking patch sympy/simplify/simplify.py...
-Applied patch sympy/core/symbol.py cleanly.
 Applied patch sympy/simplify/simplify.py cleanly.
-warning: 1 line adds whitespace errors.
+warning: 3 lines add whitespace errors.
  
 [sympy__sympy__1.1] [sympy__sympy-14024] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-14024] Apply patch successful (pred) 
@@ -94,8 +96,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        8015939
-hash randomization: on (PYTHONHASHSEED=2890350412)
+random seed:        25145360
+hash randomization: on (PYTHONHASHSEED=542655591)
 
 sympy/core/tests/test_numbers.py[87] 
 test_integers_cache ok
@@ -145,7 +147,7 @@ test_issue_3321 ok
 test_issue_3692 ok
 test_issue_3423 ok
 test_issue_3449 ok
-test_issue_13890 ok
+test_issue_13890 E
 test_Integer_factors ok
 test_Rational_factors ok
 test_issue_4107 ok
@@ -188,6 +190,14 @@ test_numpy_to_float numpy not installed. Abort numpy tests. s             [FAIL]
 
 
 ________________________________________________________________________________
+______________ sympy/core/tests/test_numbers.py:test_issue_13890 _______________
+  File "/home/swe-bench/sympy__sympy/sympy/core/tests/test_numbers.py", line 1235, in test_issue_13890
+    f = simplify(e)
+  File "/home/swe-bench/sympy__sympy/sympy/simplify/simplify.py", line 595, in simplify
+    expr = refine_powers_with_assumptions(expr)
+UnboundLocalError: local variable 'refine_powers_with_assumptions' referenced before assignment
+
+________________________________________________________________________________
 _____________ sympy/core/tests/test_numbers.py:test_powers_Integer _____________
   File "/home/swe-bench/sympy__sympy/sympy/core/tests/test_numbers.py", line 1044, in test_powers_Integer
     assert (-2) ** Rational(-10, 3) == \
@@ -198,8 +208,8 @@ ____________ sympy/core/tests/test_numbers.py:test_powers_Rational _____________
     assert Rational(-3, 2)**Rational(-10, 3) == \
 AssertionError
 
- tests finished: 83 passed, 2 failed, 1 skipped, 1 expected to fail, 
-in 2.51 seconds 
+ tests finished: 82 passed, 2 failed, 1 skipped, 1 expected to fail, 
+1 exceptions, in 1.42 seconds 
 DO *NOT* COMMIT!
 
  

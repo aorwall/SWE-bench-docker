@@ -65,8 +65,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        78915678
-hash randomization: on (PYTHONHASHSEED=3479719473)
+random seed:        86103911
+hash randomization: on (PYTHONHASHSEED=1676190536)
 
 sympy/printing/tests/test_mathematica.py[10] 
 test_Integer ok
@@ -88,7 +88,7 @@ Traceback (most recent call last):
     assert mcode(Max(x,y,z)*Min(y,z)) == "Max[x, y, z]*Min[y, z]"
 AssertionError
 
-============= tests finished: 9 passed, 1 failed, in 0.09 seconds ==============
+============= tests finished: 9 passed, 1 failed, in 0.12 seconds ==============
 DO *NOT* COMMIT!
 
  

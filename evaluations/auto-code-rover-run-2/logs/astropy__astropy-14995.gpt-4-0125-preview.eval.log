@@ -61,7 +61,7 @@ collected 180 items
 astropy/nddata/mixins/tests/test_ndarithmetic.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 12%]
 [0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 52%]
 [0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m [ 92%]
-[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[31m                                                            [100%][0m
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m                                                            [100%][0m
 
 [36m[1m=========================== short test summary info ============================[0m
 [32mPASSED[0m astropy/nddata/mixins/tests/test_ndarithmetic.py::[1mtest_arithmetics_data[data10-data20][0m
@@ -243,14 +243,13 @@ astropy/nddata/mixins/tests/test_ndarithmetic.py [32m.[0m[32m.[0m[32m.[0m
 [32mPASSED[0m astropy/nddata/mixins/tests/test_ndarithmetic.py::[1mtest_arithmetics_unknown_uncertainties[0m
 [32mPASSED[0m astropy/nddata/mixins/tests/test_ndarithmetic.py::[1mtest_psf_warning[0m
 [32mPASSED[0m astropy/nddata/mixins/tests/test_ndarithmetic.py::[1mtest_raise_method_not_supported[0m
-[31mFAILED[0m astropy/nddata/mixins/tests/test_ndarithmetic.py::[1mtest_nddata_bitmask_arithmetic[0m - AssertionError: 
-[31m======================== [31m[1m1 failed[0m, [32m179 passed[0m[31m in 0.94s[0m[31m =========================[0m
+[32mPASSED[0m astropy/nddata/mixins/tests/test_ndarithmetic.py::[1mtest_nddata_bitmask_arithmetic[0m
+[32m============================= [32m[1m180 passed[0m[32m in 1.80s[0m[32m ==============================[0m
 <frozen importlib._bootstrap>:228: RuntimeWarning: numpy.ndarray size changed, may indicate binary incompatibility. Expected 80 from C header, got 96 from PyObject
 
-ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider astropy/nddata/mixins/tests/test_ndarithmetic.py` failed. (See above for error)
 
  
-[astropy__astropy__5.2] [astropy__astropy-14995] Return Code: 1 
+[astropy__astropy__5.2] [astropy__astropy-14995] Return Code: 0 
 
->>>>> Some Tests Failed
+>>>>> All Tests Passed
 [astropy__astropy__5.2] [astropy__astropy-14995] Test script run successful 

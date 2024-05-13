@@ -69,18 +69,18 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        87196550
-hash randomization: on (PYTHONHASHSEED=1992148735)
+random seed:        8251971
+hash randomization: on (PYTHONHASHSEED=3592887267)
 
 sympy/matrices/expressions/tests/test_blockmatrix.py[16] 
-test_bc_matmul E
+test_bc_matmul ok
 test_bc_matadd ok
 test_bc_transpose ok
 test_bc_dist_diag ok
 test_block_plus_ident ok
-test_BlockMatrix E
+test_BlockMatrix ok
 test_block_collapse_explicit_matrices ok
-test_issue_17624 E
+test_issue_17624 ok
 test_BlockMatrix_trace ok
 test_BlockMatrix_Determinant ok
 test_squareBlockMatrix ok
@@ -88,7 +88,7 @@ test_BlockDiagMatrix ok
 test_blockcut ok
 test_reblock_2x2 ok
 test_deblock ok
-test_block_collapse_type ok                                               [FAIL]
+test_block_collapse_type ok                                                 [OK]
 
 sympy/matrices/expressions/tests/test_matadd.py[7] 
 test_sort_key ok
@@ -101,77 +101,13 @@ test_matrix_add_with_scalar f                                             [FAIL]
 
 
 ________________________________________________________________________________
-_____ sympy/matrices/expressions/tests/test_blockmatrix.py:test_bc_matmul ______
-Traceback (most recent call last):
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/tests/test_blockmatrix.py", line 24, in test_bc_matmul
-    assert bc_matmul(H*b1*b2*G) == BlockMatrix([[(H*G*G + H*H*H)*G]])
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/blockmatrix.py", line 488, in bc_matmul
-    matrices[i] = BlockMatrix([[A]])._blockmul(B)
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/blockmatrix.py", line 168, in _blockmul
-    new_blocks = [[None for _ in range(len(other.blocks[0]))] for _ in range(len(self.blocks))]
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/blockmatrix.py", line 168, in <listcomp>
-    new_blocks = [[None for _ in range(len(other.blocks[0]))] for _ in range(len(self.blocks))]
-TypeError: object of type 'MatrixSymbol' has no len()
-________________________________________________________________________________
-____ sympy/matrices/expressions/tests/test_blockmatrix.py:test_BlockMatrix _____
-Traceback (most recent call last):
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/tests/test_blockmatrix.py", line 87, in test_BlockMatrix
-    assert block_collapse(X*Y).blocks[0, 0] == A*E + B*F
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/blockmatrix.py", line 401, in block_collapse
-    result = rule(expr)
-  File "/home/swe-bench/sympy__sympy/sympy/strategies/core.py", line 11, in exhaustive_rl
-    new, old = rule(expr), expr
-  File "/home/swe-bench/sympy__sympy/sympy/strategies/core.py", line 44, in chain_rl
-    expr = rule(expr)
-  File "/home/swe-bench/sympy__sympy/sympy/strategies/core.py", line 11, in exhaustive_rl
-    new, old = rule(expr), expr
-  File "/home/swe-bench/sympy__sympy/sympy/strategies/core.py", line 33, in conditioned_rl
-    return rule(expr)
-  File "/home/swe-bench/sympy__sympy/sympy/strategies/core.py", line 95, in switch_rl
-    return rl(expr)
-  File "/home/swe-bench/sympy__sympy/sympy/strategies/core.py", line 85, in do_one_rl
-    result = rl(expr)
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/blockmatrix.py", line 476, in bc_matmul
-    matrices[i] = A._blockmul(B)
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/blockmatrix.py", line 168, in _blockmul
-    new_blocks = [[None for _ in range(len(other.blocks[0]))] for _ in range(len(self.blocks))]
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/blockmatrix.py", line 168, in <listcomp>
-    new_blocks = [[None for _ in range(len(other.blocks[0]))] for _ in range(len(self.blocks))]
-TypeError: object of type 'MatrixSymbol' has no len()
-________________________________________________________________________________
-____ sympy/matrices/expressions/tests/test_blockmatrix.py:test_issue_17624 _____
-Traceback (most recent call last):
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/tests/test_blockmatrix.py", line 111, in test_issue_17624
-    assert block_collapse(b * b) == BlockMatrix([[a**2, z], [z, z]])
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/blockmatrix.py", line 401, in block_collapse
-    result = rule(expr)
-  File "/home/swe-bench/sympy__sympy/sympy/strategies/core.py", line 11, in exhaustive_rl
-    new, old = rule(expr), expr
-  File "/home/swe-bench/sympy__sympy/sympy/strategies/core.py", line 44, in chain_rl
-    expr = rule(expr)
-  File "/home/swe-bench/sympy__sympy/sympy/strategies/core.py", line 11, in exhaustive_rl
-    new, old = rule(expr), expr
-  File "/home/swe-bench/sympy__sympy/sympy/strategies/core.py", line 33, in conditioned_rl
-    return rule(expr)
-  File "/home/swe-bench/sympy__sympy/sympy/strategies/core.py", line 95, in switch_rl
-    return rl(expr)
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/blockmatrix.py", line 476, in bc_matmul
-    matrices[i] = A._blockmul(B)
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/blockmatrix.py", line 168, in _blockmul
-    new_blocks = [[None for _ in range(len(other.blocks[0]))] for _ in range(len(self.blocks))]
-  File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/blockmatrix.py", line 168, in <listcomp>
-    new_blocks = [[None for _ in range(len(other.blocks[0]))] for _ in range(len(self.blocks))]
-TypeError: object of type 'MatrixSymbol' has no len()
-
-________________________________________________________________________________
 _____ sympy/matrices/expressions/tests/test_matadd.py:test_zero_matrix_add _____
 Traceback (most recent call last):
   File "/home/swe-bench/sympy__sympy/sympy/matrices/expressions/tests/test_matadd.py", line 37, in test_zero_matrix_add
     assert Add(ZeroMatrix(2, 2), ZeroMatrix(2, 2)) == ZeroMatrix(2, 2)
 AssertionError
 
- tests finished: 18 passed, 1 failed, 1 expected to fail, 3 exceptions, 
-in 0.85 seconds 
+=== tests finished: 21 passed, 1 failed, 1 expected to fail, in 0.40 seconds ===
 DO *NOT* COMMIT!
 
  

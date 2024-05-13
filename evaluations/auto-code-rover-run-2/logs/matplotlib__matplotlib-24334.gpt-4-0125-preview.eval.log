@@ -13,8 +13,12 @@ HEAD is now at 332937997d Merge pull request #24329 from anntzer/ufpp
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-24334_pred_try.patch 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Std. Output:
+Checking patch lib/matplotlib/axes/_secondary_axes.py...
 Checking patch lib/matplotlib/axis.py...
+Checking patch lib/matplotlib/colorbar.py...
+Applied patch lib/matplotlib/axes/_secondary_axes.py cleanly.
 Applied patch lib/matplotlib/axis.py cleanly.
+Applied patch lib/matplotlib/colorbar.py cleanly.
  
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Apply patch successful (pred_try) 
@@ -22,8 +26,12 @@ Applied patch lib/matplotlib/axis.py cleanly.
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Command: git apply -v -R /home/swe-bench/temp_matplotlib__matplotlib-24334_pred_try.patch 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Std. Output:
+Checking patch lib/matplotlib/colorbar.py...
 Checking patch lib/matplotlib/axis.py...
+Checking patch lib/matplotlib/axes/_secondary_axes.py...
+Applied patch lib/matplotlib/colorbar.py cleanly.
 Applied patch lib/matplotlib/axis.py cleanly.
+Applied patch lib/matplotlib/axes/_secondary_axes.py cleanly.
  
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Revert patch successful (pred_try) 
@@ -31,8 +39,12 @@ Applied patch lib/matplotlib/axis.py cleanly.
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-24334_pred.patch 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Std. Output:
+Checking patch lib/matplotlib/axes/_secondary_axes.py...
 Checking patch lib/matplotlib/axis.py...
+Checking patch lib/matplotlib/colorbar.py...
+Applied patch lib/matplotlib/axes/_secondary_axes.py cleanly.
 Applied patch lib/matplotlib/axis.py cleanly.
+Applied patch lib/matplotlib/colorbar.py cleanly.
  
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Apply patch successful (pred) 
@@ -846,7 +858,7 @@ PASSED lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]
 PASSED lib/matplotlib/tests/test_axes.py::test_extent_units[png]
 SKIPPED [10] lib/matplotlib/testing/compare.py:285: Don't know how to convert .svg files to png
 SKIPPED [54] ../miniconda3/envs/matplotlib__matplotlib__3.6/lib/python3.11/contextlib.py:81: Cannot compare svg files because Inkscape is not installed
-================= 771 passed, 64 skipped in 156.97s (0:02:36) ==================
+================= 771 passed, 64 skipped in 147.43s (0:02:27) ==================
 
  
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Return Code: 0 

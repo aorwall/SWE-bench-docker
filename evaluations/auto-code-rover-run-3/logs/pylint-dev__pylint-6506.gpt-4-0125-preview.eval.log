@@ -13,9 +13,7 @@ HEAD is now at 0a4204fd7 Allow not yet published extensions links in ``linkcheck
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Command: git apply -v /home/swe-bench/temp_pylint-dev__pylint-6506_pred_try.patch 
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Std. Output:
-Checking patch pylint/__init__.py...
 Checking patch pylint/config/config_initialization.py...
-Applied patch pylint/__init__.py cleanly.
 Applied patch pylint/config/config_initialization.py cleanly.
  
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Return Code: 0 
@@ -25,9 +23,7 @@ Applied patch pylint/config/config_initialization.py cleanly.
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Std. Output:
 Checking patch pylint/config/config_initialization.py...
-Checking patch pylint/__init__.py...
 Applied patch pylint/config/config_initialization.py cleanly.
-Applied patch pylint/__init__.py cleanly.
  
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Return Code: 0 
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Revert patch successful (pred_try) 
@@ -35,9 +31,7 @@ Applied patch pylint/__init__.py cleanly.
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Command: git apply -v /home/swe-bench/temp_pylint-dev__pylint-6506_pred.patch 
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Std. Output:
-Checking patch pylint/__init__.py...
 Checking patch pylint/config/config_initialization.py...
-Applied patch pylint/__init__.py cleanly.
 Applied patch pylint/config/config_initialization.py cleanly.
  
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Return Code: 0 
@@ -82,7 +76,7 @@ PASSED tests/config/test_config.py::test_unknown_py_version
 PASSED tests/config/test_config.py::test_short_verbose
 FAILED tests/config/test_config.py::test_unknown_option_name - AssertionError...
 FAILED tests/config/test_config.py::test_unknown_short_option_name - Assertio...
-==================== 2 failed, 6 passed, 1 warning in 0.42s ====================
+==================== 2 failed, 6 passed, 1 warning in 0.74s ====================
 
  
 [pylint-dev__pylint__2.14] [pylint-dev__pylint-6506] Return Code: 1 

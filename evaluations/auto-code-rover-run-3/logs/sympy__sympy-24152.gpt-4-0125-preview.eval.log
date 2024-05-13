@@ -61,8 +61,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        36880442
-hash randomization: on (PYTHONHASHSEED=3565505405)
+random seed:        8520516
+hash randomization: on (PYTHONHASHSEED=1673105645)
 
 sympy/physics/quantum/tests/test_tensorproduct.py[8] 
 test_sparse_matrices ok
@@ -75,7 +75,7 @@ test_issue_5923 ok
 test_eval_trace ok                                                          [OK]
 
 
-================== tests finished: 8 passed, in 0.77 seconds ===================
+================== tests finished: 8 passed, in 0.90 seconds ===================
 
  
 [sympy__sympy__1.12] [sympy__sympy-24152] Return Code: 0 

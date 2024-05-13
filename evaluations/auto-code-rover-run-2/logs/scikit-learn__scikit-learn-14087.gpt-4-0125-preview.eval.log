@@ -705,7 +705,7 @@ PASSED sklearn/linear_model/tests/test_logistic.py::test_penalty_none[lbfgs]
 PASSED sklearn/linear_model/tests/test_logistic.py::test_penalty_none[newton-cg]
 PASSED sklearn/linear_model/tests/test_logistic.py::test_penalty_none[sag]
 PASSED sklearn/linear_model/tests/test_logistic.py::test_penalty_none[saga]
-============= 3 failed, 172 passed, 444 warnings in 31.70 seconds ==============
+============= 3 failed, 172 passed, 444 warnings in 28.24 seconds ==============
  This problem is unconstrained.
 RUNNING THE L-BFGS-B CODE
 

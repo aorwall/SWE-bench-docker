@@ -31,12 +31,8 @@ In AutoCodeRover's own benchmarks, they achieve 16.00% (48), 15.67% (47), and 16
 swe-bench-docker, the same predictions result in [18.00% (54)](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/auto-code-rover-run-1), 
 [19% (57)](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/auto-code-rover-run-2) and 
 [19% (57)](https://github.com/aorwall/SWE-bench-docker/blob/main/evaluations/auto-code-rover-run-3) resolved issues. 
-This adds up to a pass@3 of 26% (78) compared to 22.33% (67) reported in the [AutoCodeRover paper](https://arxiv.org/pdf/2404.05427). 
-In each individual run, there are also benchmark instances that fail in swe-bench-docker's evaluation but not in 
-AutoCodeRover's. Thus, it seems there are still false positives or negatives that are not detected when comparing with
-gold patches, likely due to incorrect dependency versions 
-
-But this suggests that other agents' benchmarks may show lower results than they actually achieve because it's challenging
+This adds up to a pass@3 of 26% (78) compared to 22.33% (67) reported in the [AutoCodeRover paper](https://arxiv.org/pdf/2404.05427).
+This suggests that other agents' benchmarks may show lower results than they actually achieve because it's challenging
 to conduct evaluations with completely accurate results.
 
 ## Docker images types
