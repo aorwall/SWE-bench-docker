@@ -1,4 +1,4 @@
-FROM aorwall/swe-bench-base:bookworm-slim
+FROM aorwall/swe-bench-pyenv:bookworm-slim
 
 ARG PYENV_VERSIONS="3.5.10 3.6.15 3.7.17 3.8.19 3.9.19 3.10.14 3.11.9"
 ARG ALLOW_FAILURES=

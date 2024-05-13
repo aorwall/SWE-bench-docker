@@ -12,8 +12,10 @@ repo=${3:-""}
 
 base_image="${docker_namespace}/swe-bench"
 
-# echo "Building base Docker image..."
-# docker build -t "${base_image}-base:latest" -f "$root_directory/Dockerfile" .
+echo "Building base Docker images..."
+docker build -t "${base_image}-base:bookworm-slim" -f "$root_directory/conda/Dockerfile" .
+docker build -t "${base_image}-pyenv:bookworm-slim" -f "$root_directory/pyenv/Dockerfile" .
+docker build -t "${base_image}-pyenv:bookworm-slim" -f "$root_directory/pyenv/Dockerfile-pyenvs" .
 
 build_docker_images() {
     if [ -z "$repo" ]; then
@@ -25,7 +27,7 @@ build_docker_images() {
                 tag="${tag%/}"
                 image_name="$base_image-$(echo $tag | sed 's/__*/_/g')"
                 echo "Building Docker image: $image_name"
-                docker build -t "$image_name:latest" -f "$dockerfile_path" .
+                docker build -t "$image_name:bookworm-slim" -f "$dockerfile_path" .
             fi
         done
     else
@@ -35,7 +37,7 @@ build_docker_images() {
             tag="${repo%/}"
             image_name="$base_image-$(echo $tag | sed 's/__*/_/g')"
             echo "Building Docker image: $image_name"
-            docker build -t "$image_name:latest" -f "$dir/Dockerfile" .
+            docker build -t "$image_name:bookworm-slim" -f "$dir/Dockerfile" .
         fi
     fi
 
