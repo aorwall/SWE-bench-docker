@@ -86,7 +86,7 @@ docker build -t aorwall/swe-bench-pyenvs:bookworm-slim -f docker/Dockerfile-pyen
 Generates Dockerfiles for all test beds in a SWE-Bench benchmark dataset. These can then be used to build Docker images.
 
 ```
-python generate_dockerfiles.py 
+python run_dockerfile_generator.py 
     --swe_bench_tasks  [Required]  Path to SWE-bench task instances file or dataset 
     --namespace        [Required]  Namespace of the Docker repository 
     --docker_dir       [Required]  Path to the directory where the Dockerfiles will be saved
