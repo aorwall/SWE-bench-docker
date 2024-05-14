@@ -14,7 +14,7 @@ WORKDIR /opt/django__django
 
 RUN git -c advice.detachedHead=false checkout 174811c5538c8c0b8f66089b31686e80d2bc7d3b
 
-COPY docker-python/django__django/1.9/requirements.txt .
+COPY docker/django__django/1.9/requirements.txt .
 
 RUN pip install --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --trusted-host pypi.org -r requirements.txt
 

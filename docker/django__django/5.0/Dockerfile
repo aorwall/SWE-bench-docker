@@ -14,7 +14,7 @@ WORKDIR /opt/django__django
 
 RUN git -c advice.detachedHead=false checkout 4a72da71001f154ea60906a2f74898d32b7322a7
 
-COPY docker-python/django__django/5.0/requirements.txt .
+COPY docker/django__django/5.0/requirements.txt .
 
 RUN pip install -r requirements.txt
 
