@@ -73,14 +73,8 @@ It might be worth pulling all Images before running the script to achieve more c
 ```bash
 scripts/pull_docker_images.sh [Dockerfiles directory] [Namespace]
 ```
+
 ## Build Docker images
-
-### Base images
-```commandline
-docker build -t aorwall/swe-bench-base:bookworm-slim -f docker/Dockerfile .                                 
-docker build -t aorwall/swe-bench-pyenvs:bookworm-slim -f docker/Dockerfile-pyenvs .                                 
-
-```
 
 ### Generate Dockerfiles
 Generates Dockerfiles for all test beds in a SWE-Bench benchmark dataset. These can then be used to build Docker images.
