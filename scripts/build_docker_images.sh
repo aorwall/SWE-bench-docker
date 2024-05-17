@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Check for minimum arguments
 if [ "$#" -lt 2 ]; then
@@ -13,9 +14,9 @@ repo=${3:-""}
 base_image="${docker_namespace}/swe-bench"
 
 echo "Building base Docker images..."
-docker build -t "${base_image}-base:bookworm-slim" -f "$root_directory/conda/Dockerfile" .
+docker build -t "${base_image}-base:bookworm-slim" -f "$root_directory/Dockerfile" .
 docker build -t "${base_image}-pyenv:bookworm-slim" -f "$root_directory/pyenv/Dockerfile" .
-docker build -t "${base_image}-pyenv:bookworm-slim" -f "$root_directory/pyenv/Dockerfile-pyenvs" .
+docker build -t "${base_image}-pyenvs:bookworm-slim" -f "$root_directory/pyenv/Dockerfile-pyenvs" .
 
 build_docker_images() {
     if [ -z "$repo" ]; then
