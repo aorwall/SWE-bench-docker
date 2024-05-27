@@ -51,7 +51,7 @@ Applied patch tests/migrations/test_executor.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 backends.base.test_creation migrations.test_executor;
 [django__django__4.1] [django__django-15252] Command: ./tests/runtests.py --verbosity 2 backends.base.test_creation migrations.test_executor 
-[django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.1] [django__django-15252] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
@@ -206,7 +206,7 @@ test_unrelated_model_lookups_forwards (migrations.test_executor.ExecutorTests)
 #24123 - All models of apps already applied which are ... ok
 
 ----------------------------------------------------------------------
-Ran 36 tests in 3.692s
+Ran 36 tests in 5.245s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

@@ -1,8 +1,9 @@
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Task Metadata:
 	- Instance ID: pytest-dev__pytest-9359
 	- Testbed: pytest-dev__pytest__7.0
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: git -c advice.detachedHead=false checkout e2ee3144ed6e241dea8d96215fcdca18b3892551 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Std. Output:
@@ -50,9 +51,9 @@ Applied patch testing/code/test_source.py cleanly.
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 0 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pytest-dev__pytest__7.0 pytest -rA testing/code/test_source.py;
+Test Script: conda run -n pytest-dev__pytest__7.0  pytest -rA testing/code/test_source.py;
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: conda run -n pytest-dev__pytest__7.0 pytest -rA testing/code/test_source.py 
-[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-7.0.0.dev332+ge2ee3144e, pluggy-0.13.1
@@ -119,7 +120,7 @@ PASSED testing/code/test_source.py::test_semicolon
 PASSED testing/code/test_source.py::test_def_online
 PASSED testing/code/test_source.py::test_decorator
 PASSED testing/code/test_source.py::test_getstartingblock_multiline
-============================== 55 passed in 0.20s ==============================
+============================== 55 passed in 0.48s ==============================
 
  
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 0 

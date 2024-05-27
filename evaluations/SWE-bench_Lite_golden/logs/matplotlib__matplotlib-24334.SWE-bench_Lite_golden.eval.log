@@ -1,8 +1,9 @@
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Task Metadata:
 	- Instance ID: matplotlib__matplotlib-24334
 	- Testbed: matplotlib__matplotlib__3.6
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Command: git -c advice.detachedHead=false checkout 332937997d03e0c173be6d9fc1841e9186e857df 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Std. Output:
@@ -54,9 +55,9 @@ Applied patch lib/matplotlib/tests/test_axes.py cleanly.
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n matplotlib__matplotlib__3.6 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_axes.py;
+Test Script: conda run -n matplotlib__matplotlib__3.6  pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_axes.py;
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Command: conda run -n matplotlib__matplotlib__3.6 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_axes.py 
-[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Std. Output:
 ============================= test session starts ==============================
 collected 835 items
@@ -849,7 +850,7 @@ PASSED lib/matplotlib/tests/test_axes.py::test_bar_all_nan[png]
 PASSED lib/matplotlib/tests/test_axes.py::test_extent_units[png]
 SKIPPED [10] lib/matplotlib/testing/compare.py:285: Don't know how to convert .svg files to png
 SKIPPED [54] ../miniconda3/envs/matplotlib__matplotlib__3.6/lib/python3.11/contextlib.py:81: Cannot compare svg files because Inkscape is not installed
-================= 771 passed, 64 skipped in 135.86s (0:02:15) ==================
+================= 771 passed, 64 skipped in 199.92s (0:03:19) ==================
 
  
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-24334] Return Code: 0 

@@ -49,7 +49,7 @@ Applied patch tests/auth_tests/test_forms.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 auth_tests.test_forms;
 [django__django__4.0] [django__django-14411] Command: ./tests/runtests.py --verbosity 2 auth_tests.test_forms 
-[django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.0] [django__django-14411] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application auth_tests
@@ -101,6 +101,12 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+test_field_order (auth_tests.test_forms.PasswordChangeFormTest) ... ok
+test_html_autocomplete_attributes (auth_tests.test_forms.PasswordChangeFormTest) ... ok
+test_incorrect_password (auth_tests.test_forms.PasswordChangeFormTest) ... ok
+test_password_verification (auth_tests.test_forms.PasswordChangeFormTest) ... ok
+test_password_whitespace_not_stripped (auth_tests.test_forms.PasswordChangeFormTest) ... ok
+test_success (auth_tests.test_forms.PasswordChangeFormTest) ... ok
 test_html_autocomplete_attributes (auth_tests.test_forms.AdminPasswordChangeFormTest) ... ok
 test_missing_passwords (auth_tests.test_forms.AdminPasswordChangeFormTest) ... ok
 test_non_matching_passwords (auth_tests.test_forms.AdminPasswordChangeFormTest) ... ok
@@ -131,6 +137,31 @@ test_username_field_label_empty_string (auth_tests.test_forms.AuthenticationForm
 test_username_field_label_not_set (auth_tests.test_forms.AuthenticationFormTest) ... ok
 test_username_field_max_length_defaults_to_254 (auth_tests.test_forms.AuthenticationFormTest) ... ok
 test_username_field_max_length_matches_user_model (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_help_text_translation (auth_tests.test_forms.SetPasswordFormTest) ... ok
+test_html_autocomplete_attributes (auth_tests.test_forms.SetPasswordFormTest) ... ok
+test_password_verification (auth_tests.test_forms.SetPasswordFormTest) ... ok
+test_password_whitespace_not_stripped (auth_tests.test_forms.SetPasswordFormTest) ... ok
+test_success (auth_tests.test_forms.SetPasswordFormTest) ... ok
+test_validates_password (auth_tests.test_forms.SetPasswordFormTest) ... ok
+test_both_passwords (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_custom_form (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_custom_form_hidden_username_field (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_custom_form_with_different_username_field (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_duplicate_normalized_unicode (auth_tests.test_forms.UserCreationFormTest)
+To prevent almost identical usernames, visually identical but differing ... ok
+test_html_autocomplete_attributes (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_invalid_data (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_normalize_username (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_password_help_text (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_password_verification (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_password_whitespace_not_stripped (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_success (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_unicode_username (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_user_already_exists (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_user_create_form_validates_password_with_all_data (auth_tests.test_forms.UserCreationFormTest)
+UserCreationForm password validation uses all of the form's data. ... ok
+test_username_field_autocapitalize_none (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_validates_password (auth_tests.test_forms.UserCreationFormTest) ... ok
 test_cleaned_data (auth_tests.test_forms.PasswordResetFormTest) ... ok
 test_custom_email_constructor (auth_tests.test_forms.PasswordResetFormTest) ... ok
 test_custom_email_field (auth_tests.test_forms.PasswordResetFormTest) ... ok
@@ -152,37 +183,6 @@ test_user_email_domain_unicode_collision (auth_tests.test_forms.PasswordResetFor
 test_user_email_domain_unicode_collision_nonexistent (auth_tests.test_forms.PasswordResetFormTest) ... ok
 test_user_email_unicode_collision (auth_tests.test_forms.PasswordResetFormTest) ... ok
 test_user_email_unicode_collision_nonexistent (auth_tests.test_forms.PasswordResetFormTest) ... ok
-test_field_order (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_html_autocomplete_attributes (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_incorrect_password (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_password_verification (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_password_whitespace_not_stripped (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_success (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_both_passwords (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_custom_form (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_custom_form_hidden_username_field (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_custom_form_with_different_username_field (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_duplicate_normalized_unicode (auth_tests.test_forms.UserCreationFormTest)
-To prevent almost identical usernames, visually identical but differing ... ok
-test_html_autocomplete_attributes (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_invalid_data (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_normalize_username (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_password_help_text (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_password_verification (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_password_whitespace_not_stripped (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_success (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_unicode_username (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_user_already_exists (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_user_create_form_validates_password_with_all_data (auth_tests.test_forms.UserCreationFormTest)
-UserCreationForm password validation uses all of the form's data. ... ok
-test_username_field_autocapitalize_none (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_validates_password (auth_tests.test_forms.UserCreationFormTest) ... ok
-test_help_text_translation (auth_tests.test_forms.SetPasswordFormTest) ... ok
-test_html_autocomplete_attributes (auth_tests.test_forms.SetPasswordFormTest) ... ok
-test_password_verification (auth_tests.test_forms.SetPasswordFormTest) ... ok
-test_password_whitespace_not_stripped (auth_tests.test_forms.SetPasswordFormTest) ... ok
-test_success (auth_tests.test_forms.SetPasswordFormTest) ... ok
-test_validates_password (auth_tests.test_forms.SetPasswordFormTest) ... ok
 test_bug_14242 (auth_tests.test_forms.UserChangeFormTest) ... ok
 test_bug_17944_empty_password (auth_tests.test_forms.UserChangeFormTest) ... ok
 test_bug_17944_unknown_password_algorithm (auth_tests.test_forms.UserChangeFormTest) ... ok
@@ -197,7 +197,7 @@ test_username_field_autocapitalize_none (auth_tests.test_forms.UserChangeFormTes
 test_username_validity (auth_tests.test_forms.UserChangeFormTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 84 tests in 1.252s
+Ran 84 tests in 1.330s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

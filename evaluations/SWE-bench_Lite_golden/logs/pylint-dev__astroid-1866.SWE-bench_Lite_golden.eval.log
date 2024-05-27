@@ -1,8 +1,9 @@
 [pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Task Metadata:
 	- Instance ID: pylint-dev__astroid-1866
 	- Testbed: pylint-dev__astroid__2.13
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Command: git -c advice.detachedHead=false checkout 6cf238d089cf4b6753c94cfc089b4a47487711e5 
 [pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Std. Output:
@@ -51,9 +52,9 @@ Applied patch tests/unittest_brain_builtin.py cleanly.
 [pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Return Code: 0 
 [pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pylint-dev__astroid__2.13 pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_brain_builtin.py;
+Test Script: conda run -n pylint-dev__astroid__2.13  pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_brain_builtin.py;
 [pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Command: conda run -n pylint-dev__astroid__2.13 pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_brain_builtin.py 
-[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Std. Output:
 ============================= test session starts ==============================
 collected 16 items
@@ -77,7 +78,7 @@ PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_unin
 PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_uninferable[\n            "My unicode character is {:c}".format(None)\n            ]
 PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_uninferable[\n            "My hex format is {:4x}".format('1')\n            ]
 PASSED tests/unittest_brain_builtin.py::TestStringNodes::test_string_format_with_specs
-============================== 16 passed in 0.73s ==============================
+============================== 16 passed in 1.38s ==============================
 
  
 [pylint-dev__astroid__2.13] [pylint-dev__astroid-1866] Return Code: 0 

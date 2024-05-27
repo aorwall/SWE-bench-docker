@@ -53,7 +53,7 @@ Applied patch sklearn/preprocessing/tests/test_encoders.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  pytest -rA --tb=no -p no:cacheprovider sklearn/preprocessing/tests/test_encoders.py;
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Command: pytest -rA --tb=no -p no:cacheprovider sklearn/preprocessing/tests/test_encoders.py 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
@@ -118,7 +118,7 @@ PASSED sklearn/preprocessing/tests/test_encoders.py::test_ordinal_encoder_raise_
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_encoder_dtypes_pandas
 PASSED sklearn/preprocessing/tests/test_encoders.py::test_one_hot_encoder_warning
-========================== 54 passed in 2.05 seconds ===========================
+========================== 54 passed in 1.47 seconds ===========================
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-12471] Return Code: 0 
 

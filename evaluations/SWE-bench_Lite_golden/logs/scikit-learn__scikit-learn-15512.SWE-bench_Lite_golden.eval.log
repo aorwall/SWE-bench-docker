@@ -53,7 +53,7 @@ Applied patch sklearn/cluster/tests/test_affinity_propagation.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  pytest -rA --tb=no -p no:cacheprovider sklearn/cluster/tests/test_affinity_propagation.py;
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15512] Command: pytest -rA --tb=no -p no:cacheprovider sklearn/cluster/tests/test_affinity_propagation.py 
-[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15512] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15512] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15512] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
@@ -79,7 +79,7 @@ PASSED sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propaga
 PASSED sklearn/cluster/tests/test_affinity_propagation.py::test_equal_similarities_and_preferences
 PASSED sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propagation_convergence_warning_dense_sparse[centers0]
 PASSED sklearn/cluster/tests/test_affinity_propagation.py::test_affinity_propagation_convergence_warning_dense_sparse[centers1]
-==================== 10 passed, 1 warnings in 0.77 seconds =====================
+==================== 10 passed, 1 warnings in 0.88 seconds =====================
  
 [scikit-learn__scikit-learn__0.22] [scikit-learn__scikit-learn-15512] Return Code: 0 
 

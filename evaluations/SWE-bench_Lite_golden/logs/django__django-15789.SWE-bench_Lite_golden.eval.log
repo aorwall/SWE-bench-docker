@@ -49,7 +49,7 @@ Applied patch tests/utils_tests/test_html.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 utils_tests.test_html;
 [django__django__4.2] [django__django-15789] Command: ./tests/runtests.py --verbosity 2 utils_tests.test_html 
-[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.2] [django__django-15789] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.2] [django__django-15789] Std. Output:
 test_conditional_escape (utils_tests.test_html.TestUtilsHtml) ... ok
 test_escape (utils_tests.test_html.TestUtilsHtml) ... ok
@@ -71,7 +71,7 @@ test_urlize (utils_tests.test_html.TestUtilsHtml) ... ok
 test_urlize_unchanged_inputs (utils_tests.test_html.TestUtilsHtml) ... ok
 
 ----------------------------------------------------------------------
-Ran 18 tests in 0.702s
+Ran 18 tests in 0.787s
 
 OK
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes

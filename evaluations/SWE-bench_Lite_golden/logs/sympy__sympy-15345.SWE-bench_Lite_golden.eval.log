@@ -1,8 +1,9 @@
 [sympy__sympy__1.4] [sympy__sympy-15345] Task Metadata:
 	- Instance ID: sympy__sympy-15345
 	- Testbed: sympy__sympy__1.4
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.4] [sympy__sympy-15345] Command: git -c advice.detachedHead=false checkout 9ef28fba5b4d6d0168237c9c005a550e6dc27d81 
 [sympy__sympy__1.4] [sympy__sympy-15345] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.4] [sympy__sympy-15345] Std. Output:
@@ -51,9 +52,9 @@ Applied patch sympy/printing/tests/test_mathematica.py cleanly.
 [sympy__sympy__1.4] [sympy__sympy-15345] Return Code: 0 
 [sympy__sympy__1.4] [sympy__sympy-15345] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.4 bin/test -C --verbose sympy/printing/tests/test_mathematica.py;
+Test Script: conda run -n sympy__sympy__1.4  bin/test -C --verbose sympy/printing/tests/test_mathematica.py;
 [sympy__sympy__1.4] [sympy__sympy-15345] Command: conda run -n sympy__sympy__1.4 bin/test -C --verbose sympy/printing/tests/test_mathematica.py 
-[sympy__sympy__1.4] [sympy__sympy-15345] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.4] [sympy__sympy-15345] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.4] [sympy__sympy-15345] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/solvers/diophantine.py:3188: SyntaxWarning: "is" with a literal. Did you mean "=="?
   if feasible is 1:  # it's prime and k == 2
@@ -64,8 +65,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        48975452
-hash randomization: on (PYTHONHASHSEED=3146198011)
+random seed:        16061017
+hash randomization: on (PYTHONHASHSEED=1509618246)
 
 sympy/printing/tests/test_mathematica.py[10] 
 test_Integer ok
@@ -80,7 +81,7 @@ test_Derivative ok
 test_Sum ok                                                                 [OK]
 
 
-================== tests finished: 10 passed, in 0.07 seconds ==================
+================== tests finished: 10 passed, in 0.08 seconds ==================
 
  
 [sympy__sympy__1.4] [sympy__sympy-15345] Return Code: 0 

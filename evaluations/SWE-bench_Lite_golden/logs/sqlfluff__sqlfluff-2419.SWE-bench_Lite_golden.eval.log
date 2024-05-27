@@ -1,8 +1,9 @@
 [sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Task Metadata:
 	- Instance ID: sqlfluff__sqlfluff-2419
 	- Testbed: sqlfluff__sqlfluff__0.8
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Command: git -c advice.detachedHead=false checkout f1dba0e1dd764ae72d67c3d5e1471cf14d3db030 
 [sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Std. Output:
@@ -46,9 +47,9 @@ Applied patch test/rules/std_L060_test.py cleanly.
 [sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Return Code: 0 
 [sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sqlfluff__sqlfluff__0.8 pytest --no-header -rA --tb=no -p no:cacheprovider test/rules/std_L060_test.py;
+Test Script: conda run -n sqlfluff__sqlfluff__0.8  pytest --no-header -rA --tb=no -p no:cacheprovider test/rules/std_L060_test.py;
 [sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Command: conda run -n sqlfluff__sqlfluff__0.8 pytest --no-header -rA --tb=no -p no:cacheprovider test/rules/std_L060_test.py 
-[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Std. Output:
 ============================= test session starts ==============================
 collected 1 item
@@ -57,7 +58,7 @@ test/rules/std_L060_test.py .                                            [100%]
 
 =========================== short test summary info ============================
 PASSED test/rules/std_L060_test.py::test__rules__std_L060_raised
-============================== 1 passed in 1.51s ===============================
+============================== 1 passed in 1.03s ===============================
 
  
 [sqlfluff__sqlfluff__0.8] [sqlfluff__sqlfluff-2419] Return Code: 0 

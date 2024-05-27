@@ -1,8 +1,9 @@
 [sympy__sympy__1.10] [sympy__sympy-22840] Task Metadata:
 	- Instance ID: sympy__sympy-22840
 	- Testbed: sympy__sympy__1.10
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.10] [sympy__sympy-22840] Command: git -c advice.detachedHead=false checkout d822fcba181155b85ff2b29fe525adbafb22b448 
 [sympy__sympy__1.10] [sympy__sympy-22840] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.10] [sympy__sympy-22840] Std. Output:
@@ -58,9 +59,9 @@ Applied patch sympy/utilities/tests/test_codegen.py cleanly.
 [sympy__sympy__1.10] [sympy__sympy-22840] Return Code: 0 
 [sympy__sympy__1.10] [sympy__sympy-22840] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.10 bin/test -C --verbose sympy/simplify/tests/test_cse.py sympy/utilities/tests/test_codegen.py;
+Test Script: conda run -n sympy__sympy__1.10  bin/test -C --verbose sympy/simplify/tests/test_cse.py sympy/utilities/tests/test_codegen.py;
 [sympy__sympy__1.10] [sympy__sympy-22840] Command: conda run -n sympy__sympy__1.10 bin/test -C --verbose sympy/simplify/tests/test_cse.py sympy/utilities/tests/test_codegen.py 
-[sympy__sympy__1.10] [sympy__sympy-22840] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.10] [sympy__sympy-22840] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.10] [sympy__sympy-22840] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.10/bin/python  (3.9.19-final-0) [CPython]
@@ -68,8 +69,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        77568042
-hash randomization: on (PYTHONHASHSEED=2019220919)
+random seed:        14741365
+hash randomization: on (PYTHONHASHSEED=210880989)
 
 sympy/simplify/tests/test_cse.py[47] 
 test_numbered_symbols ok
@@ -181,8 +182,8 @@ test_fcode_complex ok                                                       [OK]
 
 
 ________________________________ slowest tests _________________________________
-sympy/simplify/tests/test_cse.py::test_ignore_order_terms - Took 12.976 seconds
-======= tests finished: 99 passed, 5 expected to fail, in 18.26 seconds ========
+sympy/simplify/tests/test_cse.py::test_ignore_order_terms - Took 19.046 seconds
+======= tests finished: 99 passed, 5 expected to fail, in 27.71 seconds ========
 
  
 [sympy__sympy__1.10] [sympy__sympy-22840] Return Code: 0 

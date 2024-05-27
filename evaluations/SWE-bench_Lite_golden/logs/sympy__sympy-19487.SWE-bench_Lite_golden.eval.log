@@ -1,8 +1,9 @@
 [sympy__sympy__1.7] [sympy__sympy-19487] Task Metadata:
 	- Instance ID: sympy__sympy-19487
 	- Testbed: sympy__sympy__1.7
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.7] [sympy__sympy-19487] Command: git -c advice.detachedHead=false checkout 25fbcce5b1a4c7e3956e6062930f4a44ce95a632 
 [sympy__sympy__1.7] [sympy__sympy-19487] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.7] [sympy__sympy-19487] Std. Output:
@@ -58,9 +59,9 @@ Applied patch sympy/functions/elementary/tests/test_complexes.py cleanly.
 [sympy__sympy__1.7] [sympy__sympy-19487] Return Code: 0 
 [sympy__sympy__1.7] [sympy__sympy-19487] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.7 bin/test -C --verbose sympy/core/tests/test_subs.py sympy/functions/elementary/tests/test_complexes.py;
+Test Script: conda run -n sympy__sympy__1.7  bin/test -C --verbose sympy/core/tests/test_subs.py sympy/functions/elementary/tests/test_complexes.py;
 [sympy__sympy__1.7] [sympy__sympy-19487] Command: conda run -n sympy__sympy__1.7 bin/test -C --verbose sympy/core/tests/test_subs.py sympy/functions/elementary/tests/test_complexes.py 
-[sympy__sympy__1.7] [sympy__sympy-19487] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.7] [sympy__sympy-19487] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.7] [sympy__sympy-19487] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.7/bin/python  (3.9.19-final-0) [CPython]
@@ -68,8 +69,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        37244159
-hash randomization: on (PYTHONHASHSEED=1816155041)
+random seed:        23382383
+hash randomization: on (PYTHONHASHSEED=3547952007)
 
 sympy/core/tests/test_subs.py[66] 
 test_subs ok
@@ -173,7 +174,7 @@ test_zero_assumptions ok
 test_issue_15893 ok                                                         [OK]
 
 
-======= tests finished: 93 passed, 4 expected to fail, in 14.10 seconds ========
+======= tests finished: 93 passed, 4 expected to fail, in 25.98 seconds ========
 
  
 [sympy__sympy__1.7] [sympy__sympy-19487] Return Code: 0 

@@ -49,7 +49,7 @@ Applied patch tests/queries/test_qs_combinators.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 queries.test_qs_combinators;
 [django__django__3.2] [django__django-12908] Command: ./tests/runtests.py --verbosity 2 queries.test_qs_combinators 
-[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.2] [django__django-12908] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.2] [django__django-12908] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 test_combining_multiple_models (queries.test_qs_combinators.QuerySetSetOperationTests) ... ok
@@ -83,7 +83,7 @@ test_unsupported_operations_on_combined_qs (queries.test_qs_combinators.QuerySet
 test_unsupported_ordering_slicing_raises_db_error (queries.test_qs_combinators.QuerySetSetOperationTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 29 tests in 0.103s
+Ran 29 tests in 0.246s
 
 OK (skipped=2)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

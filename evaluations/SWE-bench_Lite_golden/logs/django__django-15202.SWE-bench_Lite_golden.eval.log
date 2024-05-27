@@ -49,7 +49,7 @@ Applied patch tests/forms_tests/field_tests/test_urlfield.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 forms_tests.field_tests.test_urlfield;
 [django__django__4.1] [django__django-15202] Command: ./tests/runtests.py --verbosity 2 forms_tests.field_tests.test_urlfield 
-[django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.1] [django__django-15202] Std. Output:
 test_urlfield_clean (forms_tests.field_tests.test_urlfield.URLFieldTest) ... ok
 test_urlfield_clean_invalid (forms_tests.field_tests.test_urlfield.URLFieldTest) ... ok
@@ -61,7 +61,7 @@ test_urlfield_widget (forms_tests.field_tests.test_urlfield.URLFieldTest) ... ok
 test_urlfield_widget_max_min_length (forms_tests.field_tests.test_urlfield.URLFieldTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.193s
+Ran 8 tests in 0.270s
 
 OK
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes

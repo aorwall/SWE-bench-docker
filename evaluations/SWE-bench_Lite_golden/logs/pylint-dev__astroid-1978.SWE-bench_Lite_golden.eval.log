@@ -1,8 +1,9 @@
 [pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Task Metadata:
 	- Instance ID: pylint-dev__astroid-1978
 	- Testbed: pylint-dev__astroid__2.14
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Command: git -c advice.detachedHead=false checkout 0c9ab0fe56703fa83c73e514a1020d398d23fa7f 
 [pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Std. Output:
@@ -50,9 +51,9 @@ Applied patch tests/unittest_raw_building.py cleanly.
 [pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Return Code: 0 
 [pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pylint-dev__astroid__2.14 pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_raw_building.py;
+Test Script: conda run -n pylint-dev__astroid__2.14  pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_raw_building.py;
 [pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Command: conda run -n pylint-dev__astroid__2.14 pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_raw_building.py 
-[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Std. Output:
 ============================= test session starts ==============================
 collected 13 items
@@ -73,7 +74,7 @@ PASSED tests/unittest_raw_building.py::RawBuildingTC::test_build_module
 PASSED tests/unittest_raw_building.py::RawBuildingTC::test_io_is__io
 PASSED tests/unittest_raw_building.py::RawBuildingTC::test_module_object_with_broken_getattr
 PASSED tests/unittest_raw_building.py::test_build_module_getattr_catch_output
-============================== 13 passed in 1.17s ==============================
+============================== 13 passed in 1.83s ==============================
 
  
 [pylint-dev__astroid__2.14] [pylint-dev__astroid-1978] Return Code: 0 

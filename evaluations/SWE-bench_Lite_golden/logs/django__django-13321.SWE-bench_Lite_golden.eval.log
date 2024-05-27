@@ -49,7 +49,7 @@ Applied patch tests/sessions_tests/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 sessions_tests.tests;
 [django__django__3.2] [django__django-13321] Command: ./tests/runtests.py --verbosity 2 sessions_tests.tests 
-[django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.2] [django__django-13321] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application sessions_tests
@@ -271,50 +271,6 @@ test_setdefault (sessions_tests.tests.FileSessionPathLibTests) ... ok
 test_store (sessions_tests.tests.FileSessionPathLibTests) ... ok
 test_update (sessions_tests.tests.FileSessionPathLibTests) ... ok
 test_values (sessions_tests.tests.FileSessionPathLibTests) ... ok
-test_actual_expiry (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_clear (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_custom_expiry_datetime (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_custom_expiry_reset (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_custom_expiry_seconds (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_custom_expiry_timedelta (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_cycle (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_cycle_with_no_session_cache (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_decode (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_decode_failure_logged_to_security (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_decode_legacy (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_default_expiry (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_default_hashing_algorith_legacy_decode (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_delete (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_exists_searches_cache_first (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_flush (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_get_empty (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_get_expire_at_browser_close (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_has_key (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_invalid_key (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_items (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_keys (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_load_overlong_key (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_new_session (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_non_default_cache (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_pop (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_pop_default (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_pop_default_named_argument (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_pop_no_default_keyerror_raised (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_save (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_save_doesnt_clear_data (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_session_key_empty_string_invalid (sessions_tests.tests.CacheDBSessionWithTimeZoneTests)
-Falsey values (Such as an empty string) are rejected. ... ok
-test_session_key_is_read_only (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_session_key_too_short_invalid (sessions_tests.tests.CacheDBSessionWithTimeZoneTests)
-Strings shorter than 8 characters are rejected. ... ok
-test_session_key_valid_string_saved (sessions_tests.tests.CacheDBSessionWithTimeZoneTests)
-Strings of length 8 and up are accepted and stored. ... ok
-test_session_load_does_not_create_record (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_session_save_does_not_resurrect_session_logged_out_in_other_context (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_setdefault (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_store (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_update (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
-test_values (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
 test_actual_expiry (sessions_tests.tests.CacheDBSessionTests) ... ok
 test_clear (sessions_tests.tests.CacheDBSessionTests) ... ok
 test_custom_expiry_datetime (sessions_tests.tests.CacheDBSessionTests) ... ok
@@ -359,52 +315,6 @@ test_setdefault (sessions_tests.tests.CacheDBSessionTests) ... ok
 test_store (sessions_tests.tests.CacheDBSessionTests) ... ok
 test_update (sessions_tests.tests.CacheDBSessionTests) ... ok
 test_values (sessions_tests.tests.CacheDBSessionTests) ... ok
-test_actual_expiry (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_clear (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_clearsessions_command (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_custom_expiry_datetime (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_custom_expiry_reset (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_custom_expiry_seconds (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_custom_expiry_timedelta (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_cycle (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_cycle_with_no_session_cache (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_decode (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_decode_failure_logged_to_security (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_decode_legacy (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_default_expiry (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_default_hashing_algorith_legacy_decode (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_delete (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_flush (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_get_empty (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_get_expire_at_browser_close (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_has_key (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_invalid_key (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_items (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_keys (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_new_session (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_pop (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_pop_default (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_pop_default_named_argument (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_pop_no_default_keyerror_raised (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_save (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_save_doesnt_clear_data (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_session_get_decoded (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_session_key_empty_string_invalid (sessions_tests.tests.DatabaseSessionTests)
-Falsey values (Such as an empty string) are rejected. ... ok
-test_session_key_is_read_only (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_session_key_too_short_invalid (sessions_tests.tests.DatabaseSessionTests)
-Strings shorter than 8 characters are rejected. ... ok
-test_session_key_valid_string_saved (sessions_tests.tests.DatabaseSessionTests)
-Strings of length 8 and up are accepted and stored. ... ok
-test_session_load_does_not_create_record (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_session_save_does_not_resurrect_session_logged_out_in_other_context (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_session_str (sessions_tests.tests.DatabaseSessionTests)
-Session repr should be the session key. ... ok
-test_sessionmanager_save (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_setdefault (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_store (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_update (sessions_tests.tests.DatabaseSessionTests) ... ok
-test_values (sessions_tests.tests.DatabaseSessionTests) ... ok
 test_actual_expiry (sessions_tests.tests.DatabaseSessionWithTimeZoneTests) ... ok
 test_clear (sessions_tests.tests.DatabaseSessionWithTimeZoneTests) ... ok
 test_clearsessions_command (sessions_tests.tests.DatabaseSessionWithTimeZoneTests) ... ok
@@ -451,6 +361,50 @@ test_setdefault (sessions_tests.tests.DatabaseSessionWithTimeZoneTests) ... ok
 test_store (sessions_tests.tests.DatabaseSessionWithTimeZoneTests) ... ok
 test_update (sessions_tests.tests.DatabaseSessionWithTimeZoneTests) ... ok
 test_values (sessions_tests.tests.DatabaseSessionWithTimeZoneTests) ... ok
+test_actual_expiry (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_clear (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_custom_expiry_datetime (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_custom_expiry_reset (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_custom_expiry_seconds (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_custom_expiry_timedelta (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_cycle (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_cycle_with_no_session_cache (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_decode (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_decode_failure_logged_to_security (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_decode_legacy (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_default_expiry (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_default_hashing_algorith_legacy_decode (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_delete (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_exists_searches_cache_first (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_flush (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_get_empty (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_get_expire_at_browser_close (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_has_key (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_invalid_key (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_items (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_keys (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_load_overlong_key (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_new_session (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_non_default_cache (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_pop (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_pop_default (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_pop_default_named_argument (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_pop_no_default_keyerror_raised (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_save (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_save_doesnt_clear_data (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_session_key_empty_string_invalid (sessions_tests.tests.CacheDBSessionWithTimeZoneTests)
+Falsey values (Such as an empty string) are rejected. ... ok
+test_session_key_is_read_only (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_session_key_too_short_invalid (sessions_tests.tests.CacheDBSessionWithTimeZoneTests)
+Strings shorter than 8 characters are rejected. ... ok
+test_session_key_valid_string_saved (sessions_tests.tests.CacheDBSessionWithTimeZoneTests)
+Strings of length 8 and up are accepted and stored. ... ok
+test_session_load_does_not_create_record (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_session_save_does_not_resurrect_session_logged_out_in_other_context (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_setdefault (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_store (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_update (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
+test_values (sessions_tests.tests.CacheDBSessionWithTimeZoneTests) ... ok
 test_actual_expiry (sessions_tests.tests.CustomDatabaseSessionTests) ... ok
 test_clear (sessions_tests.tests.CustomDatabaseSessionTests) ... ok
 test_clearsessions_command (sessions_tests.tests.CustomDatabaseSessionTests) ... ok
@@ -498,9 +452,55 @@ test_setdefault (sessions_tests.tests.CustomDatabaseSessionTests) ... ok
 test_store (sessions_tests.tests.CustomDatabaseSessionTests) ... ok
 test_update (sessions_tests.tests.CustomDatabaseSessionTests) ... ok
 test_values (sessions_tests.tests.CustomDatabaseSessionTests) ... ok
+test_actual_expiry (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_clear (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_clearsessions_command (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_custom_expiry_datetime (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_custom_expiry_reset (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_custom_expiry_seconds (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_custom_expiry_timedelta (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_cycle (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_cycle_with_no_session_cache (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_decode (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_decode_failure_logged_to_security (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_decode_legacy (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_default_expiry (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_default_hashing_algorith_legacy_decode (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_delete (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_flush (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_get_empty (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_get_expire_at_browser_close (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_has_key (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_invalid_key (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_items (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_keys (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_new_session (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_pop (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_pop_default (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_pop_default_named_argument (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_pop_no_default_keyerror_raised (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_save (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_save_doesnt_clear_data (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_session_get_decoded (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_session_key_empty_string_invalid (sessions_tests.tests.DatabaseSessionTests)
+Falsey values (Such as an empty string) are rejected. ... ok
+test_session_key_is_read_only (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_session_key_too_short_invalid (sessions_tests.tests.DatabaseSessionTests)
+Strings shorter than 8 characters are rejected. ... ok
+test_session_key_valid_string_saved (sessions_tests.tests.DatabaseSessionTests)
+Strings of length 8 and up are accepted and stored. ... ok
+test_session_load_does_not_create_record (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_session_save_does_not_resurrect_session_logged_out_in_other_context (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_session_str (sessions_tests.tests.DatabaseSessionTests)
+Session repr should be the session key. ... ok
+test_sessionmanager_save (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_setdefault (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_store (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_update (sessions_tests.tests.DatabaseSessionTests) ... ok
+test_values (sessions_tests.tests.DatabaseSessionTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 384 tests in 0.404s
+Ran 384 tests in 0.487s
 
 OK (skipped=2, expected failures=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-marshmallow-code_marshmallow:bookworm-slim
 RUN git -c advice.detachedHead=false checkout 7015fc4333a2f32cd58c3465296e834acd4496ff
 
 RUN conda create -n marshmallow-code__marshmallow__2.20 python=3.9  -y
-
 SHELL ["conda", "run", "-n", "marshmallow-code__marshmallow__2.20", "/bin/bash", "-c"]
 
 
@@ -15,10 +14,10 @@ RUN pip install -e '.[dev]'
 RUN git checkout 7015fc4333a2f32cd58c3465296e834acd4496ff .
 
 ENV TESTBED_NAME=marshmallow-code__marshmallow__2.20
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

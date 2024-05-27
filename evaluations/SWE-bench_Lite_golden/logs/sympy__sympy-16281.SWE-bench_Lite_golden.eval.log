@@ -1,8 +1,9 @@
 [sympy__sympy__1.4] [sympy__sympy-16281] Task Metadata:
 	- Instance ID: sympy__sympy-16281
 	- Testbed: sympy__sympy__1.4
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.4] [sympy__sympy-16281] Command: git -c advice.detachedHead=false checkout 41490b75f3621408e0468b0e7b6dc409601fc6ff 
 [sympy__sympy__1.4] [sympy__sympy-16281] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.4] [sympy__sympy-16281] Std. Output:
@@ -51,9 +52,9 @@ Applied patch sympy/printing/pretty/tests/test_pretty.py cleanly.
 [sympy__sympy__1.4] [sympy__sympy-16281] Return Code: 0 
 [sympy__sympy__1.4] [sympy__sympy-16281] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.4 bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py;
+Test Script: conda run -n sympy__sympy__1.4  bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py;
 [sympy__sympy__1.4] [sympy__sympy-16281] Command: conda run -n sympy__sympy__1.4 bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py 
-[sympy__sympy__1.4] [sympy__sympy-16281] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.4] [sympy__sympy-16281] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.4] [sympy__sympy-16281] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/solvers/diophantine.py:3186: SyntaxWarning: "is" with a literal. Did you mean "=="?
   if feasible is 1:  # it's prime and k == 2
@@ -81,8 +82,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        21154897
-hash randomization: on (PYTHONHASHSEED=1321530159)
+random seed:        41286782
+hash randomization: on (PYTHONHASHSEED=2366455475)
 
 sympy/printing/pretty/tests/test_pretty.py[125] 
 test_pretty_ascii_str ok
@@ -233,7 +234,7 @@ Traceback (most recent call last):
     code = compile(evaluateFalse(code), '<string>', 'eval')
 ValueError: Name node can't be used with 'False' constant
 
-========== tests finished: 123 passed, 2 exceptions, in 9.63 seconds ===========
+========== tests finished: 123 passed, 2 exceptions, in 9.91 seconds ===========
 DO *NOT* COMMIT!
 
  

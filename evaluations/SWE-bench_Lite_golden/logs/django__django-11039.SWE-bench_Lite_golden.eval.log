@@ -49,7 +49,7 @@ Applied patch tests/migrations/test_commands.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 migrations.test_commands;
 [django__django__3.0] [django__django-11039] Command: ./tests/runtests.py --verbosity 2 migrations.test_commands 
-[django__django__3.0] [django__django-11039] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.0] [django__django-11039] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.0] [django__django-11039] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application migrations
@@ -197,7 +197,7 @@ test_sqlmigrate_forwards (migrations.test_commands.MigrateTests) ... ok
 test_unknown_prefix (migrations.test_commands.MigrateTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 89 tests in 1.486s
+Ran 89 tests in 1.063s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

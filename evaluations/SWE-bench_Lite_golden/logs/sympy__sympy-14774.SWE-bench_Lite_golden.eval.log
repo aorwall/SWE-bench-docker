@@ -2,17 +2,17 @@
 	- Instance ID: sympy__sympy-14774
 	- Testbed: sympy__sympy__1.1
 	- Evaluation Model: SWE-bench_Lite_golden
-	- Python version: Python 3.7.17
+	- Python version: Python 3.11.8
  
 [sympy__sympy__1.1] [sympy__sympy-14774] Command: git -c advice.detachedHead=false checkout 8fc63c2d71752389a44367b8ef4aba8a91af6a45 
-[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-14774] Std. Output:
 Previous HEAD position was ec9e3c0436 Merge pull request #14817 from jashan498/print_mat_fix
 HEAD is now at 8fc63c2d71 Merge pull request #14772 from Eight1911/master
  
 [sympy__sympy__1.1] [sympy__sympy-14774] Return Code: 0 
-[sympy__sympy__1.1] [sympy__sympy-14774] Command: git apply -v /opt/temp_sympy__sympy-14774_pred_try.patch 
-[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-14774] Command: git apply -v /home/swe-bench/temp_sympy__sympy-14774_pred_try.patch 
+[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-14774] Std. Output:
 Checking patch sympy/printing/latex.py...
 Applied patch sympy/printing/latex.py cleanly.
@@ -20,8 +20,8 @@ Applied patch sympy/printing/latex.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-14774] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-14774] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[sympy__sympy__1.1] [sympy__sympy-14774] Command: git apply -v -R /opt/temp_sympy__sympy-14774_pred_try.patch 
-[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-14774] Command: git apply -v -R /home/swe-bench/temp_sympy__sympy-14774_pred_try.patch 
+[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-14774] Std. Output:
 Checking patch sympy/printing/latex.py...
 Applied patch sympy/printing/latex.py cleanly.
@@ -29,8 +29,8 @@ Applied patch sympy/printing/latex.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-14774] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-14774] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
-[sympy__sympy__1.1] [sympy__sympy-14774] Command: git apply -v /opt/temp_sympy__sympy-14774_pred.patch 
-[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-14774] Command: git apply -v /home/swe-bench/temp_sympy__sympy-14774_pred.patch 
+[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-14774] Std. Output:
 Checking patch sympy/printing/latex.py...
 Applied patch sympy/printing/latex.py cleanly.
@@ -39,12 +39,12 @@ Applied patch sympy/printing/latex.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-14774] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [sympy__sympy__1.1] [sympy__sympy-14774] Command: git restore sympy/printing/tests/test_latex.py 
-[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-14774] Std. Output:
  
 [sympy__sympy__1.1] [sympy__sympy-14774] Return Code: 0 
-[sympy__sympy__1.1] [sympy__sympy-14774] Command: git apply -v /opt/temp_sympy__sympy-14774_test.patch 
-[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.1] [sympy__sympy-14774] Command: git apply -v /home/swe-bench/temp_sympy__sympy-14774_test.patch 
+[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.1] [sympy__sympy-14774] Std. Output:
 Checking patch sympy/printing/tests/test_latex.py...
 Applied patch sympy/printing/tests/test_latex.py cleanly.
@@ -52,18 +52,35 @@ Applied patch sympy/printing/tests/test_latex.py cleanly.
 [sympy__sympy__1.1] [sympy__sympy-14774] Return Code: 0 
 [sympy__sympy__1.1] [sympy__sympy-14774] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script:  bin/test -C --verbose sympy/printing/tests/test_latex.py;
-[sympy__sympy__1.1] [sympy__sympy-14774] Command: bin/test -C --verbose sympy/printing/tests/test_latex.py 
-[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/opt/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+Test Script: conda run -n sympy__sympy__1.1  bin/test -C --verbose sympy/printing/tests/test_latex.py;
+[sympy__sympy__1.1] [sympy__sympy-14774] Command: conda run -n sympy__sympy__1.1 bin/test -C --verbose sympy/printing/tests/test_latex.py 
+[sympy__sympy__1.1] [sympy__sympy-14774] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.1] [sympy__sympy-14774] Std. Output:
+/home/swe-bench/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  from collections import Mapping, defaultdict
+/home/swe-bench/sympy__sympy/sympy/core/expr.py:12: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  from collections import defaultdict, Iterable
+/home/swe-bench/sympy__sympy/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  class OrderedSet(collections.MutableSet):
+/home/swe-bench/sympy__sympy/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  from collections import Callable
+/home/swe-bench/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  from collections import Mapping, defaultdict
+/home/swe-bench/sympy__sympy/sympy/core/expr.py:12: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  from collections import defaultdict, Iterable
+/home/swe-bench/sympy__sympy/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  class OrderedSet(collections.MutableSet):
+/home/swe-bench/sympy__sympy/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
+  from collections import Callable
+
 ============================= test process starts ==============================
-executable:         /opt/pyenv/versions/3.7.17/bin/python  (3.7.17-final-0) [CPython]
+executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.1/bin/python  (3.7.16-final-0) [CPython]
 architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        25069355
-hash randomization: on (PYTHONHASHSEED=1461533524)
+random seed:        1737679
+hash randomization: on (PYTHONHASHSEED=4110198558)
 
 sympy/printing/tests/test_latex.py[121] 
 test_printmethod ok
@@ -189,23 +206,8 @@ test_TensorProduct_printing ok
 test_WedgeProduct_printing ok                                               [OK]
 
 
-======= tests finished: 119 passed, 2 expected to fail, in 7.64 seconds ========
-/opt/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
-  from collections import Mapping, defaultdict
-/opt/sympy__sympy/sympy/core/expr.py:12: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
-  from collections import defaultdict, Iterable
-/opt/sympy__sympy/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
-  class OrderedSet(collections.MutableSet):
-/opt/sympy__sympy/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
-  from collections import Callable
-/opt/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
-  from collections import Mapping, defaultdict
-/opt/sympy__sympy/sympy/core/expr.py:12: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
-  from collections import defaultdict, Iterable
-/opt/sympy__sympy/sympy/core/containers.py:271: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
-  class OrderedSet(collections.MutableSet):
-/opt/sympy__sympy/sympy/plotting/plot.py:28: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
-  from collections import Callable
+======= tests finished: 119 passed, 2 expected to fail, in 5.89 seconds ========
+
  
 [sympy__sympy__1.1] [sympy__sympy-14774] Return Code: 0 
 

@@ -49,7 +49,7 @@ Applied patch tests/admin_scripts/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 admin_scripts.tests;
 [django__django__3.2] [django__django-13658] Command: ./tests/runtests.py --verbosity 2 admin_scripts.tests 
-[django__django__3.2] [django__django-13658] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.2] [django__django-13658] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.2] [django__django-13658] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application admin_scripts
@@ -117,38 +117,6 @@ test_custom_command_with_environment (admin_scripts.tests.DjangoAdminMultipleSet
 alternate: django-admin can execute user commands if settings are provided in environment ... ok
 test_custom_command_with_settings (admin_scripts.tests.DjangoAdminMultipleSettings)
 alternate: django-admin can execute user commands if settings are provided as argument ... ok
-test_builtin_command (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
-fulldefault: django-admin builtin commands fail with an error when no settings provided ... ok
-test_builtin_with_bad_environment (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
-fulldefault: django-admin builtin commands fail if settings file (from environment) doesn't exist ... ok
-test_builtin_with_bad_settings (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
-fulldefault: django-admin builtin commands fail if settings file (from argument) doesn't exist ... ok
-test_builtin_with_environment (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
-fulldefault: django-admin builtin commands succeed if the environment contains settings ... ok
-test_builtin_with_settings (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
-fulldefault: django-admin builtin commands succeed if a settings file is provided ... ok
-test_custom_command (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
-fulldefault: django-admin can't execute user commands unless settings are provided ... ok
-test_custom_command_with_environment (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
-fulldefault: django-admin can execute user commands if settings are provided in environment ... ok
-test_custom_command_with_settings (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
-fulldefault: django-admin can execute user commands if settings are provided as argument ... ok
-test_builtin_command (admin_scripts.tests.DjangoAdminMinimalSettings)
-minimal: django-admin builtin commands fail with an error when no settings provided ... ok
-test_builtin_with_bad_environment (admin_scripts.tests.DjangoAdminMinimalSettings)
-minimal: django-admin builtin commands fail if settings file (from environment) doesn't exist ... ok
-test_builtin_with_bad_settings (admin_scripts.tests.DjangoAdminMinimalSettings)
-minimal: django-admin builtin commands fail if settings file (from argument) doesn't exist ... ok
-test_builtin_with_environment (admin_scripts.tests.DjangoAdminMinimalSettings)
-minimal: django-admin builtin commands fail if settings are provided in the environment ... ok
-test_builtin_with_settings (admin_scripts.tests.DjangoAdminMinimalSettings)
-minimal: django-admin builtin commands fail if settings are provided as argument ... ok
-test_custom_command (admin_scripts.tests.DjangoAdminMinimalSettings)
-minimal: django-admin can't execute user commands unless settings are provided ... ok
-test_custom_command_with_environment (admin_scripts.tests.DjangoAdminMinimalSettings)
-minimal: django-admin can't execute user commands, even if settings are provided in environment ... ok
-test_custom_command_with_settings (admin_scripts.tests.DjangoAdminMinimalSettings)
-minimal: django-admin can't execute user commands, even if settings are provided as argument ... ok
 test_builtin_command (admin_scripts.tests.DjangoAdminDefaultSettings)
 default: django-admin builtin commands fail with an error when no settings provided ... ok
 test_builtin_with_bad_environment (admin_scripts.tests.DjangoAdminDefaultSettings)
@@ -165,6 +133,33 @@ test_custom_command_with_environment (admin_scripts.tests.DjangoAdminDefaultSett
 default: django-admin can execute user commands if settings are provided in environment ... ok
 test_custom_command_with_settings (admin_scripts.tests.DjangoAdminDefaultSettings)
 default: django-admin can execute user commands if settings are provided as argument ... ok
+test_builtin_command (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
+fulldefault: django-admin builtin commands fail with an error when no settings provided ... ok
+test_builtin_with_bad_environment (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
+fulldefault: django-admin builtin commands fail if settings file (from environment) doesn't exist ... ok
+test_builtin_with_bad_settings (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
+fulldefault: django-admin builtin commands fail if settings file (from argument) doesn't exist ... ok
+test_builtin_with_environment (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
+fulldefault: django-admin builtin commands succeed if the environment contains settings ... ok
+test_builtin_with_settings (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
+fulldefault: django-admin builtin commands succeed if a settings file is provided ... ok
+test_custom_command (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
+fulldefault: django-admin can't execute user commands unless settings are provided ... ok
+test_custom_command_with_environment (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
+fulldefault: django-admin can execute user commands if settings are provided in environment ... ok
+test_custom_command_with_settings (admin_scripts.tests.DjangoAdminFullPathDefaultSettings)
+fulldefault: django-admin can execute user commands if settings are provided as argument ... ok
+test_option_then_setting (admin_scripts.tests.ArgumentOrder)
+Options passed before settings are correctly handled. ... ok
+test_option_then_setting_then_option (admin_scripts.tests.ArgumentOrder)
+Options are correctly handled when they are passed before and after ... ok
+test_setting_then_option (admin_scripts.tests.ArgumentOrder)
+Options passed after settings are correctly handled. ... ok
+test_setting_then_short_option (admin_scripts.tests.ArgumentOrder)
+Short options passed after settings are correctly handled. ... ok
+test_short_option_then_setting (admin_scripts.tests.ArgumentOrder)
+Short options passed before settings are correctly handled. ... ok
+test_non_existent_command_output (admin_scripts.tests.ManageManuallyConfiguredSettings) ... ok
 test_builtin_command (admin_scripts.tests.DjangoAdminAlternateSettings)
 alternate: django-admin builtin commands fail with an error when no settings provided ... ok
 test_builtin_with_bad_environment (admin_scripts.tests.DjangoAdminAlternateSettings)
@@ -181,16 +176,6 @@ test_custom_command_with_environment (admin_scripts.tests.DjangoAdminAlternateSe
 alternate: django-admin can execute user commands if settings are provided in environment ... ok
 test_custom_command_with_settings (admin_scripts.tests.DjangoAdminAlternateSettings)
 alternate: django-admin can execute user commands if settings are provided as argument ... ok
-test_option_then_setting (admin_scripts.tests.ArgumentOrder)
-Options passed before settings are correctly handled. ... ok
-test_option_then_setting_then_option (admin_scripts.tests.ArgumentOrder)
-Options are correctly handled when they are passed before and after ... ok
-test_setting_then_option (admin_scripts.tests.ArgumentOrder)
-Options passed after settings are correctly handled. ... ok
-test_setting_then_short_option (admin_scripts.tests.ArgumentOrder)
-Short options passed after settings are correctly handled. ... ok
-test_short_option_then_setting (admin_scripts.tests.ArgumentOrder)
-Short options passed before settings are correctly handled. ... ok
 test_no_database (admin_scripts.tests.ManageRunserver) ... ok
 test_readonly_database (admin_scripts.tests.ManageRunserver) ... ok
 test_runner_addrport_ipv6 (admin_scripts.tests.ManageRunserver) ... ok
@@ -200,7 +185,6 @@ test_runner_custom_defaults_ipv6 (admin_scripts.tests.ManageRunserver) ... ok
 test_runner_hostname (admin_scripts.tests.ManageRunserver) ... ok
 test_runner_hostname_ipv6 (admin_scripts.tests.ManageRunserver) ... ok
 test_runserver_addrport (admin_scripts.tests.ManageRunserver) ... ok
-test_non_existent_command_output (admin_scripts.tests.ManageManuallyConfiguredSettings) ... ok
 test_all (admin_scripts.tests.DiffSettings)
 The all option also shows settings with the default value. ... ok
 test_basic (admin_scripts.tests.DiffSettings)
@@ -211,9 +195,24 @@ test_settings_configured (admin_scripts.tests.DiffSettings) ... ok
 test_unified (admin_scripts.tests.DiffSettings)
 --output=unified emits settings diff in unified mode. ... ok
 test_unified_all (admin_scripts.tests.DiffSettings) ... ok
+test_builtin_command (admin_scripts.tests.DjangoAdminMinimalSettings)
+minimal: django-admin builtin commands fail with an error when no settings provided ... ok
+test_builtin_with_bad_environment (admin_scripts.tests.DjangoAdminMinimalSettings)
+minimal: django-admin builtin commands fail if settings file (from environment) doesn't exist ... ok
+test_builtin_with_bad_settings (admin_scripts.tests.DjangoAdminMinimalSettings)
+minimal: django-admin builtin commands fail if settings file (from argument) doesn't exist ... ok
+test_builtin_with_environment (admin_scripts.tests.DjangoAdminMinimalSettings)
+minimal: django-admin builtin commands fail if settings are provided in the environment ... ok
+test_builtin_with_settings (admin_scripts.tests.DjangoAdminMinimalSettings)
+minimal: django-admin builtin commands fail if settings are provided as argument ... ok
+test_custom_command (admin_scripts.tests.DjangoAdminMinimalSettings)
+minimal: django-admin can't execute user commands unless settings are provided ... ok
+test_custom_command_with_environment (admin_scripts.tests.DjangoAdminMinimalSettings)
+minimal: django-admin can't execute user commands, even if settings are provided in environment ... ok
+test_custom_command_with_settings (admin_scripts.tests.DjangoAdminMinimalSettings)
+minimal: django-admin can't execute user commands, even if settings are provided as argument ... ok
 test_params_to_runserver (admin_scripts.tests.ManageTestserver) ... ok
 test_testserver_handle_params (admin_scripts.tests.ManageTestserver) ... ok
-test_empty_allowed_hosts_error (admin_scripts.tests.ManageRunserverEmptyAllowedHosts) ... ok
 test_builtin_command (admin_scripts.tests.DjangoAdminSettingsDirectory)
 directory: django-admin builtin commands fail with an error when no settings provided ... ok
 test_builtin_with_bad_environment (admin_scripts.tests.DjangoAdminSettingsDirectory)
@@ -232,27 +231,6 @@ test_setup_environ_custom_template (admin_scripts.tests.DjangoAdminSettingsDirec
 directory: startapp creates the correct directory with a custom template ... ok
 test_startapp_unicode_name (admin_scripts.tests.DjangoAdminSettingsDirectory)
 startapp creates the correct directory with Unicode characters. ... ok
-test_builtin_command (admin_scripts.tests.ManageNoSettings)
-no settings: manage.py builtin commands fail with an error when no settings provided ... ok
-test_builtin_with_bad_environment (admin_scripts.tests.ManageNoSettings)
-no settings: manage.py builtin commands fail if settings file (from environment) doesn't exist ... ok
-test_builtin_with_bad_settings (admin_scripts.tests.ManageNoSettings)
-no settings: manage.py builtin commands fail if settings file (from argument) doesn't exist ... ok
-test_attribute_error (admin_scripts.tests.ManageSettingsWithSettingsErrors) ... ok
-test_help (admin_scripts.tests.ManageSettingsWithSettingsErrors) ... ok
-test_import_error (admin_scripts.tests.ManageSettingsWithSettingsErrors) ... ok
-test_key_error (admin_scripts.tests.ManageSettingsWithSettingsErrors) ... ok
-test_app_with_import (admin_scripts.tests.ManageCheck)
-manage.py check does not raise errors when an app imports a base ... ok
-test_broken_app (admin_scripts.tests.ManageCheck)
-manage.py check reports an ImportError if an app's models.py ... ok
-test_complex_app (admin_scripts.tests.ManageCheck)
-manage.py check does not raise an ImportError validating a ... ok
-test_nonexistent_app (admin_scripts.tests.ManageCheck)
-check reports an error on a nonexistent app in INSTALLED_APPS. ... ok
-test_output_format (admin_scripts.tests.ManageCheck)
-All errors/warnings should be sorted by level and by message. ... ok
-test_warning_does_not_halt (admin_scripts.tests.ManageCheck) ... ok
 test_builtin_command (admin_scripts.tests.ManageAlternateSettings)
 alternate: manage.py builtin commands fail with an error when no default settings provided ... ok
 test_builtin_with_bad_environment (admin_scripts.tests.ManageAlternateSettings)
@@ -271,6 +249,28 @@ test_custom_command_with_environment (admin_scripts.tests.ManageAlternateSetting
 alternate: manage.py can execute user commands if settings are provided in environment ... ok
 test_custom_command_with_settings (admin_scripts.tests.ManageAlternateSettings)
 alternate: manage.py can execute user commands if settings are provided as argument ... ok
+test_empty_allowed_hosts_error (admin_scripts.tests.ManageRunserverEmptyAllowedHosts) ... ok
+test_app_with_import (admin_scripts.tests.ManageCheck)
+manage.py check does not raise errors when an app imports a base ... ok
+test_broken_app (admin_scripts.tests.ManageCheck)
+manage.py check reports an ImportError if an app's models.py ... ok
+test_complex_app (admin_scripts.tests.ManageCheck)
+manage.py check does not raise an ImportError validating a ... ok
+test_nonexistent_app (admin_scripts.tests.ManageCheck)
+check reports an error on a nonexistent app in INSTALLED_APPS. ... ok
+test_output_format (admin_scripts.tests.ManageCheck)
+All errors/warnings should be sorted by level and by message. ... ok
+test_warning_does_not_halt (admin_scripts.tests.ManageCheck) ... ok
+test_builtin_command (admin_scripts.tests.ManageNoSettings)
+no settings: manage.py builtin commands fail with an error when no settings provided ... ok
+test_builtin_with_bad_environment (admin_scripts.tests.ManageNoSettings)
+no settings: manage.py builtin commands fail if settings file (from environment) doesn't exist ... ok
+test_builtin_with_bad_settings (admin_scripts.tests.ManageNoSettings)
+no settings: manage.py builtin commands fail if settings file (from argument) doesn't exist ... ok
+test_attribute_error (admin_scripts.tests.ManageSettingsWithSettingsErrors) ... ok
+test_help (admin_scripts.tests.ManageSettingsWithSettingsErrors) ... ok
+test_import_error (admin_scripts.tests.ManageSettingsWithSettingsErrors) ... ok
+test_key_error (admin_scripts.tests.ManageSettingsWithSettingsErrors) ... ok
 test_builtin_command (admin_scripts.tests.ManageDefaultSettings)
 default: manage.py builtin commands succeed when default settings are appropriate ... ok
 test_builtin_with_bad_environment (admin_scripts.tests.ManageDefaultSettings)
@@ -287,22 +287,6 @@ test_custom_command_with_environment (admin_scripts.tests.ManageDefaultSettings)
 default: manage.py can execute user commands when settings are provided in environment ... ok
 test_custom_command_with_settings (admin_scripts.tests.ManageDefaultSettings)
 default: manage.py can execute user commands when settings are provided as argument ... ok
-test_builtin_command (admin_scripts.tests.ManageMinimalSettings)
-minimal: manage.py builtin commands fail with an error when no settings provided ... ok
-test_builtin_with_bad_environment (admin_scripts.tests.ManageMinimalSettings)
-minimal: manage.py builtin commands fail if settings file (from environment) doesn't exist ... ok
-test_builtin_with_bad_settings (admin_scripts.tests.ManageMinimalSettings)
-minimal: manage.py builtin commands fail if settings file (from argument) doesn't exist ... ok
-test_builtin_with_environment (admin_scripts.tests.ManageMinimalSettings)
-minimal: manage.py builtin commands fail if settings are provided in the environment ... ok
-test_builtin_with_settings (admin_scripts.tests.ManageMinimalSettings)
-minimal: manage.py builtin commands fail if settings are provided as argument ... ok
-test_custom_command (admin_scripts.tests.ManageMinimalSettings)
-minimal: manage.py can't execute user commands without appropriate settings ... ok
-test_custom_command_with_environment (admin_scripts.tests.ManageMinimalSettings)
-minimal: manage.py can't execute user commands, even if settings are provided in environment ... ok
-test_custom_command_with_settings (admin_scripts.tests.ManageMinimalSettings)
-minimal: manage.py can't execute user commands, even if settings are provided as argument ... ok
 test_builtin_command (admin_scripts.tests.ManageFullPathDefaultSettings)
 fulldefault: manage.py builtin commands succeed when default settings are appropriate ... ok
 test_builtin_with_bad_environment (admin_scripts.tests.ManageFullPathDefaultSettings)
@@ -319,6 +303,12 @@ test_custom_command_with_environment (admin_scripts.tests.ManageFullPathDefaultS
 fulldefault: manage.py can execute user commands when settings are provided in environment ... ok
 test_custom_command_with_settings (admin_scripts.tests.ManageFullPathDefaultSettings)
 fulldefault: manage.py can execute user commands when settings are provided as argument ... ok
+test_importable_name (admin_scripts.tests.StartApp) ... ok
+test_importable_target_name (admin_scripts.tests.StartApp) ... ok
+test_invalid_name (admin_scripts.tests.StartApp)
+startapp validates that app name is a valid Python identifier. ... ok
+test_invalid_target_name (admin_scripts.tests.StartApp) ... ok
+test_overlaying_app (admin_scripts.tests.StartApp) ... ok
 test_builtin_command (admin_scripts.tests.ManageMultipleSettings)
 multiple: manage.py builtin commands fail with an error when no settings provided ... ok
 test_builtin_with_bad_environment (admin_scripts.tests.ManageMultipleSettings)
@@ -335,12 +325,22 @@ test_custom_command_with_environment (admin_scripts.tests.ManageMultipleSettings
 multiple: manage.py can execute user commands if settings are provided in environment ... ok
 test_custom_command_with_settings (admin_scripts.tests.ManageMultipleSettings)
 multiple: manage.py can execute user commands if settings are provided as argument ... ok
-test_importable_name (admin_scripts.tests.StartApp) ... ok
-test_importable_target_name (admin_scripts.tests.StartApp) ... ok
-test_invalid_name (admin_scripts.tests.StartApp)
-startapp validates that app name is a valid Python identifier. ... ok
-test_invalid_target_name (admin_scripts.tests.StartApp) ... ok
-test_overlaying_app (admin_scripts.tests.StartApp) ... ok
+test_builtin_command (admin_scripts.tests.ManageMinimalSettings)
+minimal: manage.py builtin commands fail with an error when no settings provided ... ok
+test_builtin_with_bad_environment (admin_scripts.tests.ManageMinimalSettings)
+minimal: manage.py builtin commands fail if settings file (from environment) doesn't exist ... ok
+test_builtin_with_bad_settings (admin_scripts.tests.ManageMinimalSettings)
+minimal: manage.py builtin commands fail if settings file (from argument) doesn't exist ... ok
+test_builtin_with_environment (admin_scripts.tests.ManageMinimalSettings)
+minimal: manage.py builtin commands fail if settings are provided in the environment ... ok
+test_builtin_with_settings (admin_scripts.tests.ManageMinimalSettings)
+minimal: manage.py builtin commands fail if settings are provided as argument ... ok
+test_custom_command (admin_scripts.tests.ManageMinimalSettings)
+minimal: manage.py can't execute user commands without appropriate settings ... ok
+test_custom_command_with_environment (admin_scripts.tests.ManageMinimalSettings)
+minimal: manage.py can't execute user commands, even if settings are provided in environment ... ok
+test_custom_command_with_settings (admin_scripts.tests.ManageMinimalSettings)
+minimal: manage.py can't execute user commands, even if settings are provided as argument ... ok
 test_custom_project_destination_missing (admin_scripts.tests.StartProject) ... ok
 test_custom_project_template (admin_scripts.tests.StartProject)
 Make sure the startproject management command is able to use a different project template ... ok
@@ -430,7 +430,7 @@ test_version_alternative (admin_scripts.tests.CommandTypes)
 --version is equivalent to version ... ok
 
 ----------------------------------------------------------------------
-Ran 196 tests in 31.356s
+Ran 196 tests in 57.430s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

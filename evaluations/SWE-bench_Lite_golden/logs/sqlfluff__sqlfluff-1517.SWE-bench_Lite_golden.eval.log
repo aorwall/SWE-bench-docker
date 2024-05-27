@@ -1,8 +1,9 @@
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Task Metadata:
 	- Instance ID: sqlfluff__sqlfluff-1517
 	- Testbed: sqlfluff__sqlfluff__0.6
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Command: git -c advice.detachedHead=false checkout 304a197829f98e7425a46d872ada73176137e5ae 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Std. Output:
@@ -51,9 +52,9 @@ Applied patch test/dialects/ansi_test.py cleanly.
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Return Code: 0 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA --tb=no -p no:cacheprovider test/dialects/ansi_test.py;
+Test Script: conda run -n sqlfluff__sqlfluff__0.6  pytest --no-header -rA --tb=no -p no:cacheprovider test/dialects/ansi_test.py;
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Command: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA --tb=no -p no:cacheprovider test/dialects/ansi_test.py 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Std. Output:
 ============================= test session starts ==============================
 collected 59 items
@@ -127,7 +128,7 @@ PASSED test/dialects/ansi_test.py::test__dialect__ansi_multiple_semicolons[selec
 PASSED test/dialects/ansi_test.py::test__dialect__ansi_multiple_semicolons[select id from tbl;;;;;;-Could not parse: ;;;;;]
 PASSED test/dialects/ansi_test.py::test__dialect__ansi_multiple_semicolons[select id from tbl;select id2 from tbl2;-]
 PASSED test/dialects/ansi_test.py::test__dialect__ansi_multiple_semicolons[select id from tbl;;select id2 from tbl2;-Could not parse: ;select id2 from tbl2;]
-======================== 59 passed, 1 warning in 3.24s =========================
+======================== 59 passed, 1 warning in 6.41s =========================
 
  
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1517] Return Code: 0 

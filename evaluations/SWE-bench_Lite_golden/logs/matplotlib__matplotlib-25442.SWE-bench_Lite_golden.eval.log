@@ -1,8 +1,9 @@
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25442] Task Metadata:
 	- Instance ID: matplotlib__matplotlib-25442
 	- Testbed: matplotlib__matplotlib__3.7
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25442] Command: git -c advice.detachedHead=false checkout 73394f2b11321e03a5df199ec0196f27a728b0b0 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25442] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25442] Std. Output:
@@ -51,9 +52,9 @@ Applied patch lib/matplotlib/tests/test_offsetbox.py cleanly.
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25442] Return Code: 0 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25442] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n matplotlib__matplotlib__3.7 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_offsetbox.py;
+Test Script: conda run -n matplotlib__matplotlib__3.7  pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_offsetbox.py;
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25442] Command: conda run -n matplotlib__matplotlib__3.7 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_offsetbox.py 
-[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25442] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25442] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25442] Std. Output:
 ============================= test session starts ==============================
 collected 286 items
@@ -351,7 +352,7 @@ PASSED lib/matplotlib/tests/test_offsetbox.py::test_paddedbox[png]
 PASSED lib/matplotlib/tests/test_offsetbox.py::test_remove_draggable
 SKIPPED [1] ../miniconda3/envs/matplotlib__matplotlib__3.7/lib/python3.11/contextlib.py:81: Cannot compare svg files because Inkscape is not installed
 SKIPPED [1] lib/matplotlib/testing/compare.py:285: Don't know how to convert .svg files to png
-======================== 284 passed, 2 skipped in 8.34s ========================
+======================= 284 passed, 2 skipped in 13.70s ========================
 
  
 [matplotlib__matplotlib__3.7] [matplotlib__matplotlib-25442] Return Code: 0 

@@ -1,8 +1,9 @@
 [sympy__sympy__1.10] [sympy__sympy-22714] Task Metadata:
 	- Instance ID: sympy__sympy-22714
 	- Testbed: sympy__sympy__1.10
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.10] [sympy__sympy-22714] Command: git -c advice.detachedHead=false checkout 3ff4717b6aef6086e78f01cdfa06f64ae23aed7e 
 [sympy__sympy__1.10] [sympy__sympy-22714] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.10] [sympy__sympy-22714] Std. Output:
@@ -51,9 +52,9 @@ Applied patch sympy/geometry/tests/test_point.py cleanly.
 [sympy__sympy__1.10] [sympy__sympy-22714] Return Code: 0 
 [sympy__sympy__1.10] [sympy__sympy-22714] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.10 bin/test -C --verbose sympy/geometry/tests/test_point.py;
+Test Script: conda run -n sympy__sympy__1.10  bin/test -C --verbose sympy/geometry/tests/test_point.py;
 [sympy__sympy__1.10] [sympy__sympy-22714] Command: conda run -n sympy__sympy__1.10 bin/test -C --verbose sympy/geometry/tests/test_point.py 
-[sympy__sympy__1.10] [sympy__sympy-22714] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.10] [sympy__sympy-22714] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.10] [sympy__sympy-22714] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/geometry/point.py:148: UserWarning: Dimension of (0, 0) needs to be changed from 2 to 3.
   warnings.warn(message)
@@ -64,8 +65,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        2270440
-hash randomization: on (PYTHONHASHSEED=24357656)
+random seed:        42725991
+hash randomization: on (PYTHONHASHSEED=500628508)
 
 sympy/geometry/tests/test_point.py[13] 
 test_point ok
@@ -83,7 +84,9 @@ test_issue_22684 ok
 test_direction_cosine ok                                                    [OK]
 
 
-================== tests finished: 13 passed, in 8.44 seconds ==================
+________________________________ slowest tests _________________________________
+sympy/geometry/tests/test_point.py::test_point - Took 11.719 seconds
+================= tests finished: 13 passed, in 13.39 seconds ==================
 
  
 [sympy__sympy__1.10] [sympy__sympy-22714] Return Code: 0 

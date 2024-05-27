@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-mwaskom_seaborn:bookworm-slim
 RUN git -c advice.detachedHead=false checkout d25872b0fc99dbf7e666a91f59bd4ed125186aa1
 
 RUN conda create -n mwaskom__seaborn__0.12 python=3.9  -y
-
 SHELL ["conda", "run", "-n", "mwaskom__seaborn__0.12", "/bin/bash", "-c"]
 
 
@@ -17,10 +16,10 @@ RUN pip install -e .[dev]
 RUN git checkout d25872b0fc99dbf7e666a91f59bd4ed125186aa1 .
 
 ENV TESTBED_NAME=mwaskom__seaborn__0.12
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

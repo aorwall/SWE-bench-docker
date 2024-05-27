@@ -1,8 +1,9 @@
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Task Metadata:
 	- Instance ID: pydicom__pydicom-1256
 	- Testbed: pydicom__pydicom__2.1
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Command: git -c advice.detachedHead=false checkout 49a3da4a3d9c24d7e8427a25048a1c7d5c4f7724 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Std. Output:
@@ -54,9 +55,9 @@ warning: 1 line adds whitespace errors.
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Return Code: 0 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pydicom__pydicom__2.1 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_json.py;
+Test Script: conda run -n pydicom__pydicom__2.1  pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_json.py;
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Command: conda run -n pydicom__pydicom__2.1 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_json.py 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.6.11, py-1.11.0, pluggy-0.13.1
@@ -89,7 +90,7 @@ PASSED pydicom/tests/test_json.py::TestBinary::test_invalid_bulkdata_uri
 PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called
 PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called_2
 PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called_within_SQ
-========================== 23 passed in 0.28 seconds ===========================
+========================== 23 passed in 0.38 seconds ===========================
 
  
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Return Code: 0 

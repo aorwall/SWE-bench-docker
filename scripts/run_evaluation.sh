@@ -9,14 +9,14 @@ directory=$1
 swe_bench_tasks=$2
 
 python run_evaluation.py \
- --predictions_path $(pwd)/${directory}/predictions.jsonl \
- --log_dir $(pwd)/${directory}/logs \
+ --predictions_path ${directory}/all_preds.jsonl \
+ --log_dir ${directory}/logs \
  --swe_bench_tasks ${swe_bench_tasks} \
  --num_processes 6 \
  --skip_existing
 
 python generate_report.py \
- --predictions_path $(pwd)/${directory}/predictions.jsonl \
- --log_dir $(pwd)/${directory}/logs \
- --output_dir $(pwd)/${directory} \
+ --predictions_path ${directory}/all_preds.jsonl \
+ --log_dir ${directory}/logs \
+ --output_dir ${directory} \
  --swe_bench_tasks ${swe_bench_tasks}

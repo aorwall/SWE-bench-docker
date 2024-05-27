@@ -1,8 +1,9 @@
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Task Metadata:
 	- Instance ID: pytest-dev__pytest-7168
 	- Testbed: pytest-dev__pytest__5.4
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Command: git -c advice.detachedHead=false checkout 4787fd64a4ca0dba5528b5651bddd254102fe9f3 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Std. Output:
@@ -11,8 +12,8 @@ HEAD is now at 4787fd64a Merge pull request #7167 from bluetech/lint-merge-fix
  
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Running pre-test command: pip install -e . 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Command: conda run -n pytest-dev__pytest__5.4 pip install -e . 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Command: conda run -n pytest-dev__pytest__5.4  pip install -e . 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Std. Output:
 Obtaining file:///home/swe-bench/pytest-dev__pytest
   Installing build dependencies: started
@@ -32,8 +33,8 @@ Requirement already satisfied: wcwidth in /home/swe-bench/miniconda3/envs/pytest
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev195+g4787fd64a-0.editable-py3-none-any.whl size=7937 sha256=39a800839dca59092c7eb3f51ee5eedca9346328a6661c9deb69ef45cf9f1ab9
-  Stored in directory: /tmp/pip-ephem-wheel-cache-ze5jgncu/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev195+g4787fd64a-0.editable-py3-none-any.whl size=7937 sha256=797a14f6bf7980de869958a75e2a2d16a41e5d1b141d603035bce0af7f27af65
+  Stored in directory: /tmp/pip-ephem-wheel-cache-q7zgz857/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -44,7 +45,7 @@ Successfully installed pytest-5.4.1.dev195+g4787fd64a
 
  
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Return Code: 0 
-Pre-installation Command: conda run -n pytest-dev__pytest__5.4 pip install -e .
+Pre-installation Command: conda run -n pytest-dev__pytest__5.4  pip install -e .
 Std. Output: Obtaining file:///home/swe-bench/pytest-dev__pytest
   Installing build dependencies: started
   Installing build dependencies: finished with status 'done'
@@ -63,8 +64,8 @@ Requirement already satisfied: wcwidth in /home/swe-bench/miniconda3/envs/pytest
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev195+g4787fd64a-0.editable-py3-none-any.whl size=7937 sha256=39a800839dca59092c7eb3f51ee5eedca9346328a6661c9deb69ef45cf9f1ab9
-  Stored in directory: /tmp/pip-ephem-wheel-cache-ze5jgncu/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev195+g4787fd64a-0.editable-py3-none-any.whl size=7937 sha256=797a14f6bf7980de869958a75e2a2d16a41e5d1b141d603035bce0af7f27af65
+  Stored in directory: /tmp/pip-ephem-wheel-cache-q7zgz857/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -115,9 +116,9 @@ Applied patch testing/io/test_saferepr.py cleanly.
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pytest-dev__pytest__5.4 pytest -rA testing/io/test_saferepr.py;
+Test Script: conda run -n pytest-dev__pytest__5.4  pytest -rA testing/io/test_saferepr.py;
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Command: conda run -n pytest-dev__pytest__5.4 pytest -rA testing/io/test_saferepr.py 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev195+g4787fd64a, py-1.11.0, pluggy-0.13.1
@@ -139,7 +140,7 @@ PASSED testing/io/test_saferepr.py::test_repr_on_newstyle
 PASSED testing/io/test_saferepr.py::test_unicode
 PASSED testing/io/test_saferepr.py::test_pformat_dispatch
 PASSED testing/io/test_saferepr.py::test_broken_getattribute
-============================== 11 passed in 0.04s ==============================
+============================== 11 passed in 0.07s ==============================
 
  
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7168] Return Code: 0 

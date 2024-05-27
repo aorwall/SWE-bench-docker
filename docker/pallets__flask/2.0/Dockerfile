@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-pallets_flask:bookworm-slim
 RUN git -c advice.detachedHead=false checkout 4346498c85848c53843b810537b83a8f6124c9d3
 
 RUN conda create -n pallets__flask__2.0 python=3.9 -y
-
 SHELL ["conda", "run", "-n", "pallets__flask__2.0", "/bin/bash", "-c"]
 
 COPY docker/pallets__flask/2.0/requirements.txt .
@@ -20,10 +19,10 @@ RUN pip install -e .
 RUN git checkout 4346498c85848c53843b810537b83a8f6124c9d3 .
 
 ENV TESTBED_NAME=pallets__flask__2.0
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

@@ -6,7 +6,6 @@ RUN git -c advice.detachedHead=false checkout de98877e3dc45de8dd441d008f23d88738
 
 COPY docker/matplotlib__matplotlib/3.5/environment.yml .
 RUN conda env create -f environment.yml
-
 SHELL ["conda", "run", "-n", "matplotlib__matplotlib__3.5", "/bin/bash", "-c"]
 
 
@@ -18,10 +17,10 @@ RUN python -m pip install -e .
 RUN git checkout de98877e3dc45de8dd441d008f23d88738dc015d .
 
 ENV TESTBED_NAME=matplotlib__matplotlib__3.5
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

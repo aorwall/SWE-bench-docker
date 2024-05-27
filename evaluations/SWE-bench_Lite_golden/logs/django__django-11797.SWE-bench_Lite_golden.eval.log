@@ -49,7 +49,7 @@ Applied patch tests/lookup/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 lookup.tests;
 [django__django__3.1] [django__django-11797] Command: ./tests/runtests.py --verbosity 2 lookup.tests 
-[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-11797] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-11797] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 test_chain_date_time_lookups (lookup.tests.LookupTests) ... ok
@@ -95,7 +95,7 @@ test_values (lookup.tests.LookupTests) ... ok
 test_values_list (lookup.tests.LookupTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 39 tests in 0.487s
+Ran 39 tests in 0.832s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

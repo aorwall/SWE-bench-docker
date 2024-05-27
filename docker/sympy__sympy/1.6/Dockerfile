@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-sympy_sympy:bookworm-slim
 RUN git -c advice.detachedHead=false checkout 28b41c73c12b70d6ad9f6e45109a80649c4456da
 
 RUN conda create -n sympy__sympy__1.6 python=3.9 mpmath flake8 -y
-
 SHELL ["conda", "run", "-n", "sympy__sympy__1.6", "/bin/bash", "-c"]
 
 
@@ -17,10 +16,10 @@ RUN pip install -e .
 RUN git checkout 28b41c73c12b70d6ad9f6e45109a80649c4456da .
 
 ENV TESTBED_NAME=sympy__sympy__1.6
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

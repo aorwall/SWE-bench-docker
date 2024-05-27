@@ -51,7 +51,7 @@ Applied patch tests/urlpatterns/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 urlpatterns.path_urls urlpatterns.tests;
 [django__django__3.1] [django__django-12184] Command: ./tests/runtests.py --verbosity 2 urlpatterns.path_urls urlpatterns.tests 
-[django__django__3.1] [django__django-12184] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-12184] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-12184] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application urlpatterns
@@ -85,7 +85,7 @@ test_space_in_route (urlpatterns.tests.SimplifiedURLTests) ... ok
 test_two_variable_at_start_of_path_pattern (urlpatterns.tests.SimplifiedURLTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 26 tests in 0.149s
+Ran 26 tests in 0.180s
 
 OK
  

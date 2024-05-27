@@ -1,8 +1,9 @@
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Task Metadata:
 	- Instance ID: pydicom__pydicom-1139
 	- Testbed: pydicom__pydicom__2.0
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: git -c advice.detachedHead=false checkout b9fb05c177b685bf683f7f57b2d57374eb7d882d 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
@@ -54,9 +55,9 @@ warning: 1 line adds whitespace errors.
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Return Code: 0 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pydicom__pydicom__2.0 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py;
+Test Script: conda run -n pydicom__pydicom__2.0  pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py;
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: conda run -n pydicom__pydicom__2.0 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.8.19, pytest-4.6.11, py-1.11.0, pluggy-0.13.1
@@ -107,7 +108,7 @@ PASSED pydicom/tests/test_valuerep.py::TestPersonName::test_contains
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_date
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_date_time
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_time
-========================== 41 passed in 0.81 seconds ===========================
+========================== 41 passed in 0.86 seconds ===========================
 
  
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Return Code: 0 

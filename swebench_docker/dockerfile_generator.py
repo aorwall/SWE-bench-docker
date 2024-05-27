@@ -6,7 +6,7 @@ from jinja2 import FileSystemLoader, Environment
 from swebench import get_eval_refs, get_instances
 
 from swebench_docker.constants import MAP_VERSION_TO_INSTALL, MAP_REPO_TO_DEB_PACKAGES, PYTHON_ENVIRONMENT_VERSIONS, \
-    MAP_REPO_TO_ENV_YML_PATHS
+    MAP_REPO_TO_ENV_YML_PATHS, PYENV_REPOS
 from swebench_docker.utils import get_requirements, get_environment_yml
 
 logging.basicConfig(level=logging.INFO)
@@ -68,7 +68,7 @@ class DockerfileGenerator:
 
                 specifications = MAP_VERSION_TO_INSTALL[repo][version]
 
-                use_conda = repo in MAP_REPO_TO_ENV_YML_PATHS
+                use_conda = repo not in PYENV_REPOS
 
                 if repo_name not in testbeds:
                     deb_packages = None
@@ -234,8 +234,8 @@ class DockerfileGenerator:
             else:
                 install_cmds.append("pip install -r requirements.txt")
         elif pkgs == "environment.yml":
-            if not use_conda:
-                raise ValueError(f"Can't create non conda docker image with environment.yml set")
+            #if not use_conda:
+            #    raise ValueError(f"Can't create non conda docker image with environment.yml set")
 
             if "no_use_env" in specifications and specifications["no_use_env"]:
                 # Create environment from yml

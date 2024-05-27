@@ -1,8 +1,9 @@
 [sympy__sympy__1.7] [sympy__sympy-20049] Task Metadata:
 	- Instance ID: sympy__sympy-20049
 	- Testbed: sympy__sympy__1.7
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.7] [sympy__sympy-20049] Command: git -c advice.detachedHead=false checkout d57aaf064041fe52c0fa357639b069100f8b28e1 
 [sympy__sympy__1.7] [sympy__sympy-20049] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.7] [sympy__sympy-20049] Std. Output:
@@ -54,9 +55,9 @@ Applied patch sympy/physics/vector/tests/test_point.py cleanly.
 [sympy__sympy__1.7] [sympy__sympy-20049] Return Code: 0 
 [sympy__sympy__1.7] [sympy__sympy-20049] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.7 bin/test -C --verbose sympy/physics/vector/tests/test_point.py;
+Test Script: conda run -n sympy__sympy__1.7  bin/test -C --verbose sympy/physics/vector/tests/test_point.py;
 [sympy__sympy__1.7] [sympy__sympy-20049] Command: conda run -n sympy__sympy__1.7 bin/test -C --verbose sympy/physics/vector/tests/test_point.py 
-[sympy__sympy__1.7] [sympy__sympy-20049] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.7] [sympy__sympy-20049] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.7] [sympy__sympy-20049] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.7/bin/python  (3.9.19-final-0) [CPython]
@@ -64,8 +65,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        99728546
-hash randomization: on (PYTHONHASHSEED=3043823765)
+random seed:        48444566
+hash randomization: on (PYTHONHASHSEED=857097806)
 
 sympy/physics/vector/tests/test_point.py[14] 
 test_point_v1pt_theorys ok
@@ -84,7 +85,7 @@ test_auto_point_vel_shortest_path ok
 test_auto_point_vel_connected_frames ok                                     [OK]
 
 
-================== tests finished: 14 passed, in 0.92 seconds ==================
+================== tests finished: 14 passed, in 1.88 seconds ==================
 
  
 [sympy__sympy__1.7] [sympy__sympy-20049] Return Code: 0 

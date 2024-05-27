@@ -51,7 +51,7 @@ Applied patch tests/inspectdb/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 inspectdb.models inspectdb.tests;
 [django__django__4.2] [django__django-15819] Command: ./tests/runtests.py --verbosity 2 inspectdb.models inspectdb.tests 
-[django__django__4.2] [django__django-15819] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.2] [django__django-15819] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.2] [django__django-15819] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
@@ -130,7 +130,7 @@ test_unsupported_unique_together (inspectdb.tests.InspectDBTestCase)
 Unsupported index types (COALESCE here) are skipped. ... skipped 'PostgreSQL specific SQL'
 
 ----------------------------------------------------------------------
-Ran 24 tests in 1.255s
+Ran 24 tests in 0.954s
 
 OK (skipped=4)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

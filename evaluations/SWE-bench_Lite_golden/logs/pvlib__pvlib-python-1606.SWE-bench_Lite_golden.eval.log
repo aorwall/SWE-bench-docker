@@ -1,8 +1,9 @@
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Task Metadata:
 	- Instance ID: pvlib__pvlib-python-1606
 	- Testbed: pvlib__pvlib-python__0.8
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Command: git -c advice.detachedHead=false checkout c78b50f4337ecbe536a961336ca91a1176efc0e8 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Std. Output:
@@ -51,9 +52,9 @@ Applied patch pvlib/tests/test_tools.py cleanly.
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Return Code: 0 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pvlib__pvlib-python__0.8 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_tools.py;
+Test Script: conda run -n pvlib__pvlib-python__0.8  pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_tools.py;
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Command: conda run -n pvlib__pvlib-python__0.8 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_tools.py 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Std. Output:
 ============================= test session starts ==============================
 collected 11 items
@@ -83,7 +84,7 @@ PASSED pvlib/tests/test_tools.py::test__golden_sect_DataFrame_atol
 PASSED pvlib/tests/test_tools.py::test__golden_sect_DataFrame_vector
 PASSED pvlib/tests/test_tools.py::test__golden_sect_DataFrame_nans
 PASSED pvlib/tests/test_tools.py::test_degrees_to_index_1
-======================== 11 passed, 2 warnings in 0.05s ========================
+======================== 11 passed, 2 warnings in 0.11s ========================
 
  
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1606] Return Code: 0 

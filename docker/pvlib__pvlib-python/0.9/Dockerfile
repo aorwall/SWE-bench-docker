@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-pvlib_pvlib-python:bookworm-slim
 RUN git -c advice.detachedHead=false checkout 6072e0982c3c0236f532ddfa48fbf461180d834e
 
 RUN conda create -n pvlib__pvlib-python__0.9 python=3.9 pandas scipy -y
-
 SHELL ["conda", "run", "-n", "pvlib__pvlib-python__0.9", "/bin/bash", "-c"]
 
 
@@ -17,10 +16,10 @@ RUN pip install -e .[all]
 RUN git checkout 6072e0982c3c0236f532ddfa48fbf461180d834e .
 
 ENV TESTBED_NAME=pvlib__pvlib-python__0.9
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

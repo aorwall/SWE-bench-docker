@@ -1,8 +1,9 @@
 [sympy__sympy__1.8] [sympy__sympy-21055] Task Metadata:
 	- Instance ID: sympy__sympy-21055
 	- Testbed: sympy__sympy__1.8
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.8] [sympy__sympy-21055] Command: git -c advice.detachedHead=false checkout 748ce73479ee2cd5c861431091001cc18943c735 
 [sympy__sympy__1.8] [sympy__sympy-21055] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.8] [sympy__sympy-21055] Std. Output:
@@ -51,9 +52,9 @@ Applied patch sympy/assumptions/tests/test_refine.py cleanly.
 [sympy__sympy__1.8] [sympy__sympy-21055] Return Code: 0 
 [sympy__sympy__1.8] [sympy__sympy-21055] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.8 bin/test -C --verbose sympy/assumptions/tests/test_refine.py;
+Test Script: conda run -n sympy__sympy__1.8  bin/test -C --verbose sympy/assumptions/tests/test_refine.py;
 [sympy__sympy__1.8] [sympy__sympy-21055] Command: conda run -n sympy__sympy__1.8 bin/test -C --verbose sympy/assumptions/tests/test_refine.py 
-[sympy__sympy__1.8] [sympy__sympy-21055] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.8] [sympy__sympy-21055] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.8] [sympy__sympy-21055] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.8/bin/python  (3.9.19-final-0) [CPython]
@@ -61,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        85188130
-hash randomization: on (PYTHONHASHSEED=2595794506)
+random seed:        30224400
+hash randomization: on (PYTHONHASHSEED=446066796)
 
 sympy/assumptions/tests/test_refine.py[15] 
 test_Abs ok
@@ -82,7 +83,7 @@ test_refine_issue_12724 ok
 test_matrixelement ok                                                       [OK]
 
 
-================== tests finished: 15 passed, in 5.65 seconds ==================
+================== tests finished: 15 passed, in 9.89 seconds ==================
 
  
 [sympy__sympy__1.8] [sympy__sympy-21055] Return Code: 0 

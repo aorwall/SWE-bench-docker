@@ -1,8 +1,9 @@
 [sympy__sympy__1.12] [sympy__sympy-24102] Task Metadata:
 	- Instance ID: sympy__sympy-24102
 	- Testbed: sympy__sympy__1.12
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.12] [sympy__sympy-24102] Command: git -c advice.detachedHead=false checkout 58598660a3f6ab3d918781c4988c2e4b2bdd9297 
 [sympy__sympy__1.12] [sympy__sympy-24102] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.12] [sympy__sympy-24102] Std. Output:
@@ -58,9 +59,9 @@ Applied patch sympy/testing/quality_unicode.py cleanly.
 [sympy__sympy__1.12] [sympy__sympy-24102] Return Code: 0 
 [sympy__sympy__1.12] [sympy__sympy-24102] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.12 bin/test -C --verbose sympy/parsing/tests/test_mathematica.py sympy/testing/quality_unicode.py;
+Test Script: conda run -n sympy__sympy__1.12  bin/test -C --verbose sympy/parsing/tests/test_mathematica.py sympy/testing/quality_unicode.py;
 [sympy__sympy__1.12] [sympy__sympy-24102] Command: conda run -n sympy__sympy__1.12 bin/test -C --verbose sympy/parsing/tests/test_mathematica.py sympy/testing/quality_unicode.py 
-[sympy__sympy__1.12] [sympy__sympy-24102] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.12] [sympy__sympy-24102] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.12] [sympy__sympy-24102] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.12/bin/python  (3.9.19-final-0) [CPython]
@@ -68,8 +69,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        28727725
-hash randomization: on (PYTHONHASHSEED=1259344217)
+random seed:        31096174
+hash randomization: on (PYTHONHASHSEED=2233030651)
 
 sympy/parsing/tests/test_mathematica.py[3] 
 test_mathematica ok
@@ -77,7 +78,7 @@ test_parser_mathematica_tokenizer ok
 test_parser_mathematica_exp_alt ok                                          [OK]
 
 
-================== tests finished: 3 passed, in 0.91 seconds ===================
+================== tests finished: 3 passed, in 0.88 seconds ===================
 
  
 [sympy__sympy__1.12] [sympy__sympy-24102] Return Code: 0 

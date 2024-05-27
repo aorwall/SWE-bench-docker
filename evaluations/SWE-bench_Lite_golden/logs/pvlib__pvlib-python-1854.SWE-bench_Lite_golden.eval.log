@@ -1,8 +1,9 @@
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Task Metadata:
 	- Instance ID: pvlib__pvlib-python-1854
 	- Testbed: pvlib__pvlib-python__0.9
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: git -c advice.detachedHead=false checkout 27a3a07ebc84b11014d3753e4923902adf9a38c0 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
@@ -51,9 +52,9 @@ Applied patch pvlib/tests/test_pvsystem.py cleanly.
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pvlib__pvlib-python__0.9 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_pvsystem.py;
+Test Script: conda run -n pvlib__pvlib-python__0.9  pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_pvsystem.py;
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: conda run -n pvlib__pvlib-python__0.9 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_pvsystem.py 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
 ============================= test session starts ==============================
 collected 282 items
@@ -427,7 +428,7 @@ PASSED pvlib/tests/test_pvsystem.py::test_Array_dc_ohms_from_percent
 PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[sapm-keys0]
 PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[fuentes-keys1]
 PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[noct_sam-keys2]
-======================= 282 passed, 32 warnings in 2.19s =======================
+======================= 282 passed, 32 warnings in 1.30s =======================
 
  
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 

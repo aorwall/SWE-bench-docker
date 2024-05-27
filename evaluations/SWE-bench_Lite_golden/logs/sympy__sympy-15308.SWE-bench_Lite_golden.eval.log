@@ -1,8 +1,9 @@
 [sympy__sympy__1.4] [sympy__sympy-15308] Task Metadata:
 	- Instance ID: sympy__sympy-15308
 	- Testbed: sympy__sympy__1.4
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.4] [sympy__sympy-15308] Command: git -c advice.detachedHead=false checkout fb59d703e6863ed803c98177b59197b5513332e9 
 [sympy__sympy__1.4] [sympy__sympy-15308] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.4] [sympy__sympy-15308] Std. Output:
@@ -51,9 +52,9 @@ Applied patch sympy/printing/tests/test_latex.py cleanly.
 [sympy__sympy__1.4] [sympy__sympy-15308] Return Code: 0 
 [sympy__sympy__1.4] [sympy__sympy-15308] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.4 bin/test -C --verbose sympy/printing/tests/test_latex.py;
+Test Script: conda run -n sympy__sympy__1.4  bin/test -C --verbose sympy/printing/tests/test_latex.py;
 [sympy__sympy__1.4] [sympy__sympy-15308] Command: conda run -n sympy__sympy__1.4 bin/test -C --verbose sympy/printing/tests/test_latex.py 
-[sympy__sympy__1.4] [sympy__sympy-15308] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.4] [sympy__sympy-15308] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.4] [sympy__sympy-15308] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/solvers/diophantine.py:3188: SyntaxWarning: "is" with a literal. Did you mean "=="?
   if feasible is 1:  # it's prime and k == 2
@@ -73,8 +74,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        5965465
-hash randomization: on (PYTHONHASHSEED=1148356858)
+random seed:        54231123
+hash randomization: on (PYTHONHASHSEED=171383255)
 
 sympy/printing/tests/test_latex.py[126] 
 test_printmethod ok
@@ -222,7 +223,7 @@ Traceback (most recent call last):
     code = compile(evaluateFalse(code), '<string>', 'eval')
 ValueError: Name node can't be used with 'False' constant
 
- tests finished: 122 passed, 2 expected to fail, 2 exceptions, in 3.61 seconds =
+ tests finished: 122 passed, 2 expected to fail, 2 exceptions, in 5.40 seconds =
 DO *NOT* COMMIT!
 
  

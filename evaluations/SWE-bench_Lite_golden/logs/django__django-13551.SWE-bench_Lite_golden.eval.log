@@ -55,7 +55,7 @@ Applied patch tests/auth_tests/test_tokens.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 auth_tests.models.__init__ auth_tests.models.with_custom_email_field auth_tests.test_models auth_tests.test_tokens;
 [django__django__3.2] [django__django-13551] Command: ./tests/runtests.py --verbosity 2 auth_tests.models.__init__ auth_tests.models.with_custom_email_field auth_tests.test_models auth_tests.test_tokens 
-[django__django__3.2] [django__django-13551] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.2] [django__django-13551] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.2] [django__django-13551] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application auth_tests
@@ -170,18 +170,18 @@ test_save (auth_tests.test_models.AnonymousUserTests) ... ok
 test_set_password (auth_tests.test_models.AnonymousUserTests) ... ok
 test_str (auth_tests.test_models.AnonymousUserTests) ... ok
 test_str (auth_tests.test_models.GroupTests) ... ok
-test_user_is_created_and_added_to_group (auth_tests.test_models.LoadDataWithoutNaturalKeysTestCase) ... ok
+test_create_superuser (auth_tests.test_models.TestCreateSuperUserSignals) ... ok
+test_create_user (auth_tests.test_models.TestCreateSuperUserSignals) ... ok
 test_load_data_with_user_permissions (auth_tests.test_models.LoadDataWithNaturalKeysAndMultipleDatabasesTestCase) ... ok
 test_clean_normalize_username (auth_tests.test_models.AbstractBaseUserTests) ... ok
 test_custom_email (auth_tests.test_models.AbstractBaseUserTests) ... ok
 test_default_email (auth_tests.test_models.AbstractBaseUserTests) ... ok
 test_has_usable_password (auth_tests.test_models.AbstractBaseUserTests) ... ok
 test_normalize_username (auth_tests.test_models.AbstractBaseUserTests) ... ok
+test_str (auth_tests.test_models.PermissionTests) ... ok
+test_user_is_created_and_added_to_group (auth_tests.test_models.LoadDataWithoutNaturalKeysTestCase) ... ok
 test_builtin_user_isactive (auth_tests.test_models.IsActiveTestCase) ... ok
 test_is_active_field_default (auth_tests.test_models.IsActiveTestCase) ... ok
-test_create_superuser (auth_tests.test_models.TestCreateSuperUserSignals) ... ok
-test_create_user (auth_tests.test_models.TestCreateSuperUserSignals) ... ok
-test_str (auth_tests.test_models.PermissionTests) ... ok
 test_user_is_created_and_added_to_group (auth_tests.test_models.LoadDataWithNaturalKeysTestCase) ... ok
 test_10265 (auth_tests.test_tokens.TokenGeneratorTest) ... ok
 test_check_token_with_nonexistent_token_and_user (auth_tests.test_tokens.TokenGeneratorTest) ... ok
@@ -220,7 +220,7 @@ test_user_clean_normalize_email (auth_tests.test_models.AbstractUserTestCase) ..
 test_user_double_save (auth_tests.test_models.AbstractUserTestCase) ... ok
 
 ----------------------------------------------------------------------
-Ran 58 tests in 4.137s
+Ran 58 tests in 4.836s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

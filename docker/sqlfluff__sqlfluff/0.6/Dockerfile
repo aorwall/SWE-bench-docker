@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-sqlfluff_sqlfluff:bookworm-slim
 RUN git -c advice.detachedHead=false checkout 67023b85c41d23d6c6d69812a41b207c4f8a9331
 
 RUN conda create -n sqlfluff__sqlfluff__0.6 python=3.9 -y
-
 SHELL ["conda", "run", "-n", "sqlfluff__sqlfluff__0.6", "/bin/bash", "-c"]
 
 COPY docker/sqlfluff__sqlfluff/0.6/requirements.txt .
@@ -18,10 +17,10 @@ RUN pip install -e .
 RUN git checkout 67023b85c41d23d6c6d69812a41b207c4f8a9331 .
 
 ENV TESTBED_NAME=sqlfluff__sqlfluff__0.6
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

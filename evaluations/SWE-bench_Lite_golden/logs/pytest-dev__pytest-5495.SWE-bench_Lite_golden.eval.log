@@ -1,8 +1,9 @@
 [pytest-dev__pytest__4.6] [pytest-dev__pytest-5495] Task Metadata:
 	- Instance ID: pytest-dev__pytest-5495
 	- Testbed: pytest-dev__pytest__4.6
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pytest-dev__pytest__4.6] [pytest-dev__pytest-5495] Command: git -c advice.detachedHead=false checkout 1aefb24b37c30fba8fd79a744829ca16e252f340 
 [pytest-dev__pytest__4.6] [pytest-dev__pytest-5495] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__4.6] [pytest-dev__pytest-5495] Std. Output:
@@ -51,9 +52,9 @@ Applied patch testing/test_assertion.py cleanly.
 [pytest-dev__pytest__4.6] [pytest-dev__pytest-5495] Return Code: 0 
 [pytest-dev__pytest__4.6] [pytest-dev__pytest-5495] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pytest-dev__pytest__4.6 pytest -rA testing/test_assertion.py;
+Test Script: conda run -n pytest-dev__pytest__4.6  pytest -rA testing/test_assertion.py;
 [pytest-dev__pytest__4.6] [pytest-dev__pytest-5495] Command: conda run -n pytest-dev__pytest__4.6 pytest -rA testing/test_assertion.py 
-[pytest-dev__pytest__4.6] [pytest-dev__pytest-5495] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__4.6] [pytest-dev__pytest-5495] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pytest-dev__pytest__4.6] [pytest-dev__pytest-5495] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.6.11.dev1+gd5843f89d, py-1.11.0, pluggy-0.13.1
@@ -66,7 +67,7 @@ testing/test_assertion.py ................................FFF........... [ 49%]
 =================================== FAILURES ===================================
 _________________ TestAssert_reprcompare_attrsclass.test_attrs _________________
 
-self = <test_assertion.TestAssert_reprcompare_attrsclass object at 0x765d539dd5b0>
+self = <test_assertion.TestAssert_reprcompare_attrsclass object at 0x750a1ab9d5b0>
 
     def test_attrs(self):
         @attr.s
@@ -80,13 +81,13 @@ self = <test_assertion.TestAssert_reprcompare_attrsclass object at 0x765d539dd5b
         lines = callequal(left, right)
 >       assert lines[1].startswith("Omitting 1 identical item")
 E       AssertionError: assert False
-E        +  where False = <built-in method startswith of str object at 0x765d54061850>('Omitting 1 identical item')
-E        +    where <built-in method startswith of str object at 0x765d54061850> = '(pytest_assertion plugin: representation of details failed.  Probably an object has a faulty __repr__.)'.startswith
+E        +  where False = <built-in method startswith of str object at 0x750a1b4ff850>('Omitting 1 identical item')
+E        +    where <built-in method startswith of str object at 0x750a1b4ff850> = '(pytest_assertion plugin: representation of details failed.  Probably an object has a faulty __repr__.)'.startswith
 
 testing/test_assertion.py:667: AssertionError
 _____________ TestAssert_reprcompare_attrsclass.test_attrs_verbose _____________
 
-self = <test_assertion.TestAssert_reprcompare_attrsclass object at 0x765d53157be0>
+self = <test_assertion.TestAssert_reprcompare_attrsclass object at 0x750a1ac8aac0>
 
     def test_attrs_verbose(self):
         @attr.s
@@ -100,13 +101,13 @@ self = <test_assertion.TestAssert_reprcompare_attrsclass object at 0x765d53157be
         lines = callequal(left, right, verbose=2)
 >       assert lines[1].startswith("Matching attributes:")
 E       AssertionError: assert False
-E        +  where False = <built-in method startswith of str object at 0x765d54061850>('Matching attributes:')
-E        +    where <built-in method startswith of str object at 0x765d54061850> = '(pytest_assertion plugin: representation of details failed.  Probably an object has a faulty __repr__.)'.startswith
+E        +  where False = <built-in method startswith of str object at 0x750a1b4ff850>('Matching attributes:')
+E        +    where <built-in method startswith of str object at 0x750a1b4ff850> = '(pytest_assertion plugin: representation of details failed.  Probably an object has a faulty __repr__.)'.startswith
 
 testing/test_assertion.py:682: AssertionError
 __ TestAssert_reprcompare_attrsclass.test_attrs_with_attribute_comparison_off __
 
-self = <test_assertion.TestAssert_reprcompare_attrsclass object at 0x765d539a77f0>
+self = <test_assertion.TestAssert_reprcompare_attrsclass object at 0x750a1ac73880>
 
     def test_attrs_with_attribute_comparison_off(self):
         @attr.s
@@ -120,16 +121,16 @@ self = <test_assertion.TestAssert_reprcompare_attrsclass object at 0x765d539a77f
         lines = callequal(left, right, verbose=2)
 >       assert lines[1].startswith("Matching attributes:")
 E       AssertionError: assert False
-E        +  where False = <built-in method startswith of str object at 0x765d54061850>('Matching attributes:')
-E        +    where <built-in method startswith of str object at 0x765d54061850> = '(pytest_assertion plugin: representation of details failed.  Probably an object has a faulty __repr__.)'.startswith
+E        +  where False = <built-in method startswith of str object at 0x750a1b4ff850>('Matching attributes:')
+E        +    where <built-in method startswith of str object at 0x750a1b4ff850> = '(pytest_assertion plugin: representation of details failed.  Probably an object has a faulty __repr__.)'.startswith
 
 testing/test_assertion.py:696: AssertionError
 _______ TestImportHookInstallation.test_installed_plugin_rewrite[plain] ________
 
-self = <test_assertion.TestImportHookInstallation object at 0x765d532adb50>
+self = <test_assertion.TestImportHookInstallation object at 0x750a1ab338e0>
 testdir = <Testdir local('/tmp/pytest-of-swe-bench/pytest-0/test_installed_plugin_rewrite0')>
 mode = 'plain'
-monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x765d53157af0>
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x750a1ab33880>
 
     @pytest.mark.parametrize("mode", ["plain", "rewrite"])
     def test_installed_plugin_rewrite(self, testdir, mode, monkeypatch):
@@ -225,7 +226,7 @@ E           and: '>       available fixtures: cache, capfd, capfdbinary, caplog,
 E           and: ">       use 'pytest --fixtures [testpath]' for help on them."
 E           and: ''
 E           and: '/tmp/pytest-of-swe-bench/pytest-0/test_installed_plugin_rewrite0/test_foo.py:4'
-E           and: '=========================== 2 error in 0.01 seconds ============================'
+E           and: '=========================== 2 error in 0.03 seconds ============================'
 E       remains unmatched: 'E       AssertionError'
 
 /home/swe-bench/pytest-dev__pytest/testing/test_assertion.py:216: Failed
@@ -256,13 +257,13 @@ E       fixture 'check_first2' not found
 >       use 'pytest --fixtures [testpath]' for help on them.
 
 /tmp/pytest-of-swe-bench/pytest-0/test_installed_plugin_rewrite0/test_foo.py:4
-=========================== 2 error in 0.01 seconds ============================
+=========================== 2 error in 0.03 seconds ============================
 ______ TestImportHookInstallation.test_installed_plugin_rewrite[rewrite] _______
 
-self = <test_assertion.TestImportHookInstallation object at 0x765d536ffb80>
+self = <test_assertion.TestImportHookInstallation object at 0x750a1ac4bd60>
 testdir = <Testdir local('/tmp/pytest-of-swe-bench/pytest-0/test_installed_plugin_rewrite1')>
 mode = 'rewrite'
-monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x765d53180700>
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x750a1aa915e0>
 
     @pytest.mark.parametrize("mode", ["plain", "rewrite"])
     def test_installed_plugin_rewrite(self, testdir, mode, monkeypatch):
@@ -358,7 +359,7 @@ E           and: '>       available fixtures: cache, capfd, capfdbinary, caplog,
 E           and: ">       use 'pytest --fixtures [testpath]' for help on them."
 E           and: ''
 E           and: '/tmp/pytest-of-swe-bench/pytest-0/test_installed_plugin_rewrite1/test_foo.py:4'
-E           and: '=========================== 2 error in 0.02 seconds ============================'
+E           and: '=========================== 2 error in 0.04 seconds ============================'
 E       remains unmatched: '*assert 10 == 30*'
 
 /home/swe-bench/pytest-dev__pytest/testing/test_assertion.py:216: Failed
@@ -389,7 +390,7 @@ E       fixture 'check_first2' not found
 >       use 'pytest --fixtures [testpath]' for help on them.
 
 /tmp/pytest-of-swe-bench/pytest-0/test_installed_plugin_rewrite1/test_foo.py:4
-=========================== 2 error in 0.02 seconds ============================
+=========================== 2 error in 0.04 seconds ============================
 ==================================== PASSES ====================================
 ____ TestImportHookInstallation.test_conftest_assertion_rewrite[plain-True] ____
 ----------------------------- Captured stdout call -----------------------------
@@ -405,7 +406,7 @@ foo/tests/test_foo.py F                                                  [100%]
 =================================== FAILURES ===================================
 _____________________________________ test _____________________________________
 
-check_first = <function check_first.<locals>.check at 0x7d30de769310>
+check_first = <function check_first.<locals>.check at 0x71b2c814a310>
 
     def test(check_first):
 >       check_first([10, 30], 30)
@@ -420,7 +421,7 @@ values = [30], value = 30
 E       AssertionError
 
 conftest.py:5: AssertionError
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.07 seconds ===========================
 ___ TestImportHookInstallation.test_conftest_assertion_rewrite[plain-False] ____
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_conftest_assertion_rewrite1/runpytest-0 --assert=plain
@@ -435,7 +436,7 @@ foo/tests/test_foo.py F                                                  [100%]
 =================================== FAILURES ===================================
 _____________________________________ test _____________________________________
 
-check_first = <function check_first.<locals>.check at 0x76a5bb7bb310>
+check_first = <function check_first.<locals>.check at 0x73c361fab310>
 
     def test(check_first):
 >       check_first([10, 30], 30)
@@ -450,7 +451,7 @@ values = [30], value = 30
 E       AssertionError
 
 foo/conftest.py:5: AssertionError
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.06 seconds ===========================
 ___ TestImportHookInstallation.test_conftest_assertion_rewrite[rewrite-True] ___
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_conftest_assertion_rewrite2/runpytest-0 --assert=rewrite
@@ -465,7 +466,7 @@ foo/tests/test_foo.py F                                                  [100%]
 =================================== FAILURES ===================================
 _____________________________________ test _____________________________________
 
-check_first = <function check_first.<locals>.check at 0x71e06dcc9310>
+check_first = <function check_first.<locals>.check at 0x72bfc381d310>
 
     def test(check_first):
 >       check_first([10, 30], 30)
@@ -478,11 +479,11 @@ values = [30], value = 30
     def check(values, value):
 >       assert values.pop(0) == value
 E       assert 10 == 30
-E        +  where 10 = <built-in method pop of list object at 0x71e06cf77e00>(0)
-E        +    where <built-in method pop of list object at 0x71e06cf77e00> = [30].pop
+E        +  where 10 = <built-in method pop of list object at 0x72bfc2acc340>(0)
+E        +    where <built-in method pop of list object at 0x72bfc2acc340> = [30].pop
 
 conftest.py:5: AssertionError
-=========================== 1 failed in 0.07 seconds ===========================
+=========================== 1 failed in 0.10 seconds ===========================
 __ TestImportHookInstallation.test_conftest_assertion_rewrite[rewrite-False] ___
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_conftest_assertion_rewrite3/runpytest-0 --assert=rewrite
@@ -497,7 +498,7 @@ foo/tests/test_foo.py F                                                  [100%]
 =================================== FAILURES ===================================
 _____________________________________ test _____________________________________
 
-check_first = <function check_first.<locals>.check at 0x765f553ec310>
+check_first = <function check_first.<locals>.check at 0x7d6887348310>
 
     def test(check_first):
 >       check_first([10, 30], 30)
@@ -510,11 +511,11 @@ values = [30], value = 30
     def check(values, value):
 >       assert values.pop(0) == value
 E       assert 10 == 30
-E        +  where 10 = <built-in method pop of list object at 0x765f54698680>(0)
-E        +    where <built-in method pop of list object at 0x765f54698680> = [30].pop
+E        +  where 10 = <built-in method pop of list object at 0x7d68865f3840>(0)
+E        +    where <built-in method pop of list object at 0x7d68865f3840> = [30].pop
 
 foo/conftest.py:5: AssertionError
-=========================== 1 failed in 0.09 seconds ===========================
+=========================== 1 failed in 0.10 seconds ===========================
 ______ TestImportHookInstallation.test_rewrite_assertions_pytester_plugin ______
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_rewrite_assertions_pytester_plugin0/runpytest-0
@@ -539,7 +540,7 @@ testdir = <Testdir local('/tmp/pytest-of-swe-bench/pytest-0/test_rewrite_asserti
 ../../test_rewrite_assertions_pytester_plugin.py:5: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = <_pytest.pytester.HookRecorder object at 0x7948f6fadf70>, passed = 1
+self = <_pytest.pytester.HookRecorder object at 0x725dc743af70>, passed = 1
 skipped = 0, failed = 0
 
     def assertoutcome(self, passed=0, skipped=0, failed=0):
@@ -580,7 +581,7 @@ test_foo.py F                                                            [100%]
 =================================== FAILURES ===================================
 ___________________________________ test_foo ___________________________________
 
-check_first = <function check_first.<locals>.check at 0x743f297c6310>
+check_first = <function check_first.<locals>.check at 0x72fa9bc68310>
 
     def test_foo(check_first):
 >       check_first([10, 30], 30)
@@ -595,7 +596,7 @@ values = [30], value = 30
 E       AssertionError
 
 ham.py:5: AssertionError
-=========================== 1 failed in 0.06 seconds ===========================
+=========================== 1 failed in 0.03 seconds ===========================
 _______ TestImportHookInstallation.test_pytest_plugins_rewrite[rewrite] ________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_pytest_plugins_rewrite1/runpytest-0 --assert=rewrite
@@ -610,7 +611,7 @@ test_foo.py F                                                            [100%]
 =================================== FAILURES ===================================
 ___________________________________ test_foo ___________________________________
 
-check_first = <function check_first.<locals>.check at 0x71ee6978e310>
+check_first = <function check_first.<locals>.check at 0x71dcd8c48310>
 
     def test_foo(check_first):
 >       check_first([10, 30], 30)
@@ -623,8 +624,8 @@ values = [30], value = 30
     def check(values, value):
 >       assert values.pop(0) == value
 E       assert 10 == 30
-E        +  where 10 = <built-in method pop of list object at 0x71ee68a40440>(0)
-E        +    where <built-in method pop of list object at 0x71ee68a40440> = [30].pop
+E        +  where 10 = <built-in method pop of list object at 0x71dcd7ef9240>(0)
+E        +    where <built-in method pop of list object at 0x71dcd7ef9240> = [30].pop
 
 ham.py:5: AssertionError
 =========================== 1 failed in 0.08 seconds ===========================
@@ -639,7 +640,7 @@ collected 1 item
 
 test_foo.py .                                                            [100%]
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.05 seconds ===========================
 __ TestImportHookInstallation.test_pytest_plugins_rewrite_module_names[list] ___
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_pytest_plugins_rewrite_module_names1/runpytest-0 --assert=rewrite
@@ -651,7 +652,7 @@ collected 1 item
 
 test_foo.py .                                                            [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 _ TestImportHookInstallation.test_pytest_plugins_rewrite_module_names_correctly _
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_pytest_plugins_rewrite_module_names_correctly0/runpytest-0 --assert=rewrite
@@ -678,7 +679,7 @@ test_pkg.py FF                                                           [100%]
 =================================== FAILURES ===================================
 __________________________________ test_tool ___________________________________
 
-tool = <function tool at 0x7073afa64ca0>
+tool = <function tool at 0x74fd36f29ca0>
 
     def test_tool(tool):
 >       tool()
@@ -705,7 +706,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 E       AssertionError
 
 pkg/other.py:3: AssertionError
-=========================== 2 failed in 0.06 seconds ===========================
+=========================== 2 failed in 0.08 seconds ===========================
 _________ TestBinReprIntegration.test_pytest_assertrepr_compare_called _________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -727,7 +728,7 @@ E         -0
 E         +1
 
 test_pytest_assertrepr_compare_called.py:2: AssertionError
-====================== 1 failed, 1 passed in 0.03 seconds ======================
+====================== 1 failed, 1 passed in 0.05 seconds ======================
 ______________ TestAssert_reprcompare_dataclass.test_dataclasses _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -756,7 +757,7 @@ E         Differing attributes:
 E         field_b: 'b' != 'c'
 
 test_compare_dataclasses.py:14: AssertionError
-=========================== 1 failed in 0.03 seconds ===========================
+=========================== 1 failed in 0.08 seconds ===========================
 __________ TestAssert_reprcompare_dataclass.test_dataclasses_verbose ___________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -787,7 +788,7 @@ E         Differing attributes:
 E         field_b: 'b' != 'c'
 
 test_compare_dataclasses_verbose.py:14: AssertionError
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.04 seconds ===========================
 _ TestAssert_reprcompare_dataclass.test_dataclasses_with_attribute_comparison_off _
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -798,7 +799,7 @@ collecting ... collected 1 item
 
 test_compare_dataclasses_field_comparison_off.py::test_dataclasses_with_attribute_comparison_off PASSED [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 __ TestAssert_reprcompare_dataclass.test_comparing_two_different_data_classes __
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -809,7 +810,7 @@ collecting ... collected 1 item
 
 test_compare_two_different_dataclasses.py::test_comparing_two_different_data_classes PASSED [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 ________________ TestFormatExplanation.test_special_chars_full _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -860,7 +861,7 @@ E
 E         ...Full output truncated (2 lines hidden), use '-vv' to show
 
 test_full_output_truncated.py:6: AssertionError
-=========================== 1 failed in 0.04 seconds ===========================
+=========================== 1 failed in 0.02 seconds ===========================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.6.11.dev1+gd5843f89d, py-1.11.0, pluggy-0.13.1 -- /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/bin/python
 cachedir: .pytest_cache
@@ -888,7 +889,7 @@ E         - 55555555555555555555555555555555555555555555555555555555555555555555
 E           6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
 
 test_full_output_truncated.py:6: AssertionError
-=========================== 1 failed in 0.01 seconds ===========================
+=========================== 1 failed in 0.02 seconds ===========================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.6.11.dev1+gd5843f89d, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_full_output_truncated0
@@ -916,7 +917,7 @@ E         - 55555555555555555555555555555555555555555555555555555555555555555555
 E           6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
 
 test_full_output_truncated.py:6: AssertionError
-=========================== 1 failed in 0.01 seconds ===========================
+=========================== 1 failed in 0.02 seconds ===========================
 ________________________ test_python25_compile_issue257 ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -944,7 +945,7 @@ collected 1 item
 
 test_rewritten.py .                                                      [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 __________________ test_pytest_assertrepr_compare_integration __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -968,7 +969,7 @@ E         50
 E         Use -v to get the full diff
 
 test_pytest_assertrepr_compare_integration.py:5: AssertionError
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.03 seconds ===========================
 ______________________ test_sequence_comparison_uses_repr ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1024,7 +1025,7 @@ ____________________________________ test_b ____________________________________
 E   assert summary b
 
 b/test_b.py:1: AssertionError
-=========================== 3 failed in 0.10 seconds ===========================
+=========================== 3 failed in 0.12 seconds ===========================
 ____________________________ test_assertion_options ____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1043,7 +1044,7 @@ __________________________________ test_hello __________________________________
 E       assert 3 == 4
 
 test_assertion_options.py:3: AssertionError
-=========================== 1 failed in 0.03 seconds ===========================
+=========================== 1 failed in 0.04 seconds ===========================
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_assertion_options0/runpytest-0 --assert=plain
      in: /tmp/pytest-of-swe-bench/pytest-0/test_assertion_options0
 ============================= test session starts ==============================
@@ -1062,7 +1063,7 @@ __________________________________ test_hello __________________________________
 E       AssertionError
 
 test_assertion_options.py:3: AssertionError
-=========================== 1 failed in 0.05 seconds ===========================
+=========================== 1 failed in 0.03 seconds ===========================
 ______________________ test_triple_quoted_string_issue113 ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1076,7 +1077,7 @@ test_triple_quoted_string_issue113.py F                                  [100%]
 __________________________________ test_hello __________________________________
 
 cls = <class '_pytest.runner.CallInfo'>
-func = <function call_runtest_hook.<locals>.<lambda> at 0x765d535cbc10>
+func = <function call_runtest_hook.<locals>.<lambda> at 0x750a1aa7ec10>
 when = 'call'
 reraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)
 
@@ -1120,9 +1121,9 @@ kwargs = {'item': <Function test_hello>}, notincall = set()
 /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/lib/python3.9/site-packages/pluggy/hooks.py:286: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = <_pytest.config.PytestPluginManager object at 0x765d52f4a370>
+self = <_pytest.config.PytestPluginManager object at 0x750a1a3e82e0>
 hook = <_HookCaller 'pytest_runtest_call'>
-methods = [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from '/home/swe-bench/pytest-dev__pytest/src/_pytest/...est_hello>>>, <HookImpl plugin_name='logging-plugin', plugin=<_pytest.logging.LoggingPlugin object at 0x765d52ec9640>>]
+methods = [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from '/home/swe-bench/pytest-dev__pytest/src/_pytest/...est_hello>>>, <HookImpl plugin_name='logging-plugin', plugin=<_pytest.logging.LoggingPlugin object at 0x750a1a367a30>>]
 kwargs = {'item': <Function test_hello>}
 
     def _hookexec(self, hook, methods, kwargs):
@@ -1134,7 +1135,7 @@ kwargs = {'item': <Function test_hello>}
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 hook = <_HookCaller 'pytest_runtest_call'>
-hook_impls = [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from '/home/swe-bench/pytest-dev__pytest/src/_pytest/...est_hello>>>, <HookImpl plugin_name='logging-plugin', plugin=<_pytest.logging.LoggingPlugin object at 0x765d52ec9640>>]
+hook_impls = [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from '/home/swe-bench/pytest-dev__pytest/src/_pytest/...est_hello>>>, <HookImpl plugin_name='logging-plugin', plugin=<_pytest.logging.LoggingPlugin object at 0x750a1a367a30>>]
 kwargs = {'item': <Function test_hello>}
 
     def traced_hookexec(hook, hook_impls, kwargs):
@@ -1152,7 +1153,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 hook = <_HookCaller 'pytest_runtest_call'>
-methods = [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from '/home/swe-bench/pytest-dev__pytest/src/_pytest/...est_hello>>>, <HookImpl plugin_name='logging-plugin', plugin=<_pytest.logging.LoggingPlugin object at 0x765d52ec9640>>]
+methods = [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from '/home/swe-bench/pytest-dev__pytest/src/_pytest/...est_hello>>>, <HookImpl plugin_name='logging-plugin', plugin=<_pytest.logging.LoggingPlugin object at 0x750a1a367a30>>]
 kwargs = {'item': <Function test_hello>}
 
 >   self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
@@ -1206,7 +1207,7 @@ kwargs = {'pyfuncitem': <Function test_hello>}, notincall = set()
 /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/lib/python3.9/site-packages/pluggy/hooks.py:286: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = <_pytest.config.PytestPluginManager object at 0x765d52f4a370>
+self = <_pytest.config.PytestPluginManager object at 0x750a1a3e82e0>
 hook = <_HookCaller 'pytest_pyfunc_call'>
 methods = [<HookImpl plugin_name='python', plugin=<module '_pytest.python' from '/home/swe-bench/pytest-dev__pytest/src/_pytest/...name='skipping', plugin=<module '_pytest.skipping' from '/home/swe-bench/pytest-dev__pytest/src/_pytest/skipping.py'>>]
 kwargs = {'pyfuncitem': <Function test_hello>}
@@ -1280,7 +1281,7 @@ E             - ''
 E             + '\n'
 
 test_triple_quoted_string_issue113.py:2: AssertionError
-=========================== 1 failed in 0.14 seconds ===========================
+=========================== 1 failed in 0.18 seconds ===========================
 ____________________________ test_traceback_failure ____________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1307,7 +1308,7 @@ E       assert 3 == 2
 E        +  where 2 = g()
 
 test_traceback_failure.py:4: AssertionError
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.03 seconds ===========================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.6.11.dev1+gd5843f89d, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_traceback_failure0
@@ -1373,7 +1374,7 @@ test_exception_handling_no_traceback.py:9:
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
 self = <multiprocessing.pool.Pool state=TERMINATE pool_size=1>
-func = <function process_task at 0x765d52dd9d30>, iterable = [1]
+func = <function process_task at 0x750a1a27bd30>, iterable = [1]
 chunksize = None
 
     def map(self, func, iterable, chunksize=None):
@@ -1386,7 +1387,7 @@ chunksize = None
 /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/lib/python3.9/multiprocessing/pool.py:364: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = <multiprocessing.pool.MapResult object at 0x765d52ccc4c0>, timeout = None
+self = <multiprocessing.pool.MapResult object at 0x750a1a16d580>, timeout = None
 
     def get(self, timeout=None):
         self.wait(timeout)
@@ -1399,7 +1400,7 @@ self = <multiprocessing.pool.MapResult object at 0x765d52ccc4c0>, timeout = None
 E           assert 1 == 10
 
 /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/lib/python3.9/multiprocessing/pool.py:771: AssertionError
-=========================== 1 failed in 0.07 seconds ===========================
+=========================== 1 failed in 0.17 seconds ===========================
 ______________________________ test_warn_missing _______________________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.6/bin/python -OO -m pytest -h
@@ -1663,7 +1664,7 @@ platform linux -- Python 3.9.19, pytest-4.6.11.dev1+gd5843f89d, py-1.11.0, plugg
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_warn_missing0
 collected 0 items
 
-========================= no tests ran in 0.03 seconds =========================
+========================= no tests ran in 0.04 seconds =========================
 ----------------------------- Captured stderr call -----------------------------
 WARNING: assertions not in test modules or plugins will be ignored because assert statements are not executed by the underlying Python interpreter (are you using python -O?)
 WARNING: assertions not in test modules or plugins will be ignored because assert statements are not executed by the underlying Python interpreter (are you using python -O?)
@@ -1676,7 +1677,7 @@ collected 1 item
 <Module test_recursion_source_decode.py>
   <Function test_something>
 
-========================= no tests ran in 0.03 seconds =========================
+========================= no tests ran in 0.04 seconds =========================
 _________________________ test_AssertionError_message __________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1696,7 +1697,7 @@ E       AssertionError: (1, 2)
 E       assert 0
 
 test_AssertionError_message.py:3: AssertionError
-=========================== 1 failed in 0.03 seconds ===========================
+=========================== 1 failed in 0.05 seconds ===========================
 ___________________________ test_diff_newline_at_end ___________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1717,7 +1718,7 @@ E         + asdf
 E         ?     +
 
 test_diff_newline_at_end.py:2: AssertionError
-=========================== 1 failed in 0.05 seconds ===========================
+=========================== 1 failed in 0.04 seconds ===========================
 __________________________ test_assert_tuple_warning ___________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1733,7 +1734,7 @@ test_assert_tuple_warning.py:2
     assert(False, 'you shall not pass')
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
-===================== 1 passed, 1 warnings in 0.02 seconds =====================
+===================== 1 passed, 1 warnings in 0.03 seconds =====================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.6.11.dev1+gd5843f89d, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_assert_tuple_warning0
@@ -1749,7 +1750,7 @@ __________________________________ test_tuple __________________________________
 E       assert ()
 
 test_assert_tuple_warning.py:2: AssertionError
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.03 seconds ===========================
 ____________________ test_assert_indirect_tuple_no_warning _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1759,7 +1760,7 @@ collected 1 item
 
 test_assert_indirect_tuple_no_warning.py .                               [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 ___________________________ test_assert_with_unicode ___________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1779,7 +1780,7 @@ E         - 유니코드
 E         + Unicode
 
 test_assert_with_unicode.py:2: AssertionError
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.04 seconds ===========================
 ____________________ test_raise_unprintable_assertion_error ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1797,7 +1798,7 @@ __________________________ test_raise_assertion_error __________________________
 E       AssertionError: ÿ
 
 test_raise_unprintable_assertion_error.py:2: AssertionError
-=========================== 1 failed in 0.05 seconds ===========================
+=========================== 1 failed in 0.10 seconds ===========================
 ____________________ test_raise_assertion_error_raisin_repr ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1815,7 +1816,7 @@ ______________________________ test_raising_repr _______________________________
 E       AssertionError: <unprintable AssertionError object>
 
 test_raise_assertion_error_raisin_repr.py:5: AssertionError
-=========================== 1 failed in 0.02 seconds ===========================
+=========================== 1 failed in 0.03 seconds ===========================
 _______________________________ test_issue_1944 ________________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1828,9 +1829,9 @@ _____________________ ERROR collecting test_issue_1944.py ______________________
 test_issue_1944.py:4: in <module>
     assert f() == 10
 E   assert None == 10
-E    +  where None = <function f at 0x765d520c5b80>()
+E    +  where None = <function f at 0x750a18d46b80>()
 !!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
-=========================== 1 error in 0.08 seconds ============================
+=========================== 1 error in 0.12 seconds ============================
 =========================== short test summary info ============================
 PASSED testing/test_assertion.py::TestImportHookInstallation::test_register_assert_rewrite_checks_types
 PASSED testing/test_assertion.py::TestAssert_reprcompare::test_different_types
@@ -1925,7 +1926,7 @@ FAILED testing/test_assertion.py::TestAssert_reprcompare_attrsclass::test_attrs_
 FAILED testing/test_assertion.py::TestAssert_reprcompare_attrsclass::test_attrs_with_attribute_comparison_off
 FAILED testing/test_assertion.py::TestImportHookInstallation::test_installed_plugin_rewrite[plain]
 FAILED testing/test_assertion.py::TestImportHookInstallation::test_installed_plugin_rewrite[rewrite]
-===================== 5 failed, 88 passed in 10.23 seconds =====================
+===================== 5 failed, 88 passed in 13.74 seconds =====================
 ERROR conda.cli.main_run:execute(124): `conda run pytest -rA testing/test_assertion.py` failed. (See above for error)
 
  

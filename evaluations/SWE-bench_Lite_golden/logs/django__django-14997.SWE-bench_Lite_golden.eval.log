@@ -51,7 +51,7 @@ Applied patch tests/migrations/test_operations.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 backends.test_ddl_references migrations.test_operations;
 [django__django__4.1] [django__django-14997] Command: ./tests/runtests.py --verbosity 2 backends.test_ddl_references migrations.test_operations 
-[django__django__4.1] [django__django-14997] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.1] [django__django-14997] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.1] [django__django-14997] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
@@ -154,29 +154,29 @@ Cloning test database for alias 'other' ('file:memorydb_other?mode=memory&cache=
 Cloning test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')...
 Cloning test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')...
 System check identified no issues (0 silenced).
-test_references_column (backends.test_ddl_references.StatementTests) ... ok
-test_references_table (backends.test_ddl_references.StatementTests) ... ok
-test_rename_column_references (backends.test_ddl_references.StatementTests) ... ok
-test_rename_table_references (backends.test_ddl_references.StatementTests) ... ok
-test_repr (backends.test_ddl_references.StatementTests) ... ok
-test_str (backends.test_ddl_references.StatementTests) ... ok
 test_references_column (backends.test_ddl_references.ForeignKeyNameTests) ... ok
 test_references_table (backends.test_ddl_references.ForeignKeyNameTests) ... ok
 test_rename_column_references (backends.test_ddl_references.ForeignKeyNameTests) ... ok
 test_rename_table_references (backends.test_ddl_references.ForeignKeyNameTests) ... ok
 test_repr (backends.test_ddl_references.ForeignKeyNameTests) ... ok
 test_str (backends.test_ddl_references.ForeignKeyNameTests) ... ok
+test_references_column (backends.test_ddl_references.ColumnsTests) ... ok
+test_references_table (backends.test_ddl_references.ColumnsTests) ... ok
+test_rename_column_references (backends.test_ddl_references.ColumnsTests) ... ok
+test_rename_table_references (backends.test_ddl_references.ColumnsTests) ... ok
+test_repr (backends.test_ddl_references.ColumnsTests) ... ok
+test_str (backends.test_ddl_references.ColumnsTests) ... ok
 test_references_model_mixin (migrations.test_operations.TestCreateModel) ... ok
-test_references_table (backends.test_ddl_references.TableTests) ... ok
-test_rename_table_references (backends.test_ddl_references.TableTests) ... ok
-test_repr (backends.test_ddl_references.TableTests) ... ok
-test_str (backends.test_ddl_references.TableTests) ... ok
 test_references_column (backends.test_ddl_references.IndexNameTests) ... ok
 test_references_table (backends.test_ddl_references.IndexNameTests) ... ok
 test_rename_column_references (backends.test_ddl_references.IndexNameTests) ... ok
 test_rename_table_references (backends.test_ddl_references.IndexNameTests) ... ok
 test_repr (backends.test_ddl_references.IndexNameTests) ... ok
 test_str (backends.test_ddl_references.IndexNameTests) ... ok
+test_references_table (backends.test_ddl_references.TableTests) ... ok
+test_rename_table_references (backends.test_ddl_references.TableTests) ... ok
+test_repr (backends.test_ddl_references.TableTests) ... ok
+test_str (backends.test_ddl_references.TableTests) ... ok
 test_reference_field_by_through_fields (migrations.test_operations.FieldOperationTests) ... ok
 test_references_field_by_from_fields (migrations.test_operations.FieldOperationTests) ... ok
 test_references_field_by_name (migrations.test_operations.FieldOperationTests) ... ok
@@ -184,12 +184,18 @@ test_references_field_by_remote_field_model (migrations.test_operations.FieldOpe
 test_references_field_by_through (migrations.test_operations.FieldOperationTests) ... ok
 test_references_field_by_to_fields (migrations.test_operations.FieldOperationTests) ... ok
 test_references_model (migrations.test_operations.FieldOperationTests) ... ok
-test_references_column (backends.test_ddl_references.ColumnsTests) ... ok
-test_references_table (backends.test_ddl_references.ColumnsTests) ... ok
-test_rename_column_references (backends.test_ddl_references.ColumnsTests) ... ok
-test_rename_table_references (backends.test_ddl_references.ColumnsTests) ... ok
-test_repr (backends.test_ddl_references.ColumnsTests) ... ok
-test_str (backends.test_ddl_references.ColumnsTests) ... ok
+test_references_column (backends.test_ddl_references.ExpressionsTests) ... ok
+test_references_table (backends.test_ddl_references.ExpressionsTests) ... ok
+test_rename_column_references (backends.test_ddl_references.ExpressionsTests) ... ok
+test_rename_table_references (backends.test_ddl_references.ExpressionsTests) ... ok
+test_rename_table_references_without_alias (backends.test_ddl_references.ExpressionsTests) ... ok
+test_str (backends.test_ddl_references.ExpressionsTests) ... ok
+test_references_column (backends.test_ddl_references.StatementTests) ... ok
+test_references_table (backends.test_ddl_references.StatementTests) ... ok
+test_rename_column_references (backends.test_ddl_references.StatementTests) ... ok
+test_rename_table_references (backends.test_ddl_references.StatementTests) ... ok
+test_repr (backends.test_ddl_references.StatementTests) ... ok
+test_str (backends.test_ddl_references.StatementTests) ... ok
 test_add_field_ignore_swapped (migrations.test_operations.SwappableOperationTests)
 Tests the AddField operation. ... ok
 test_create_ignore_swapped (migrations.test_operations.SwappableOperationTests)
@@ -198,12 +204,6 @@ test_delete_ignore_swapped (migrations.test_operations.SwappableOperationTests)
 Tests the DeleteModel operation ignores swapped models. ... ok
 test_indexes_ignore_swapped (migrations.test_operations.SwappableOperationTests)
 Add/RemoveIndex operations ignore swapped models. ... ok
-test_references_column (backends.test_ddl_references.ExpressionsTests) ... ok
-test_references_table (backends.test_ddl_references.ExpressionsTests) ... ok
-test_rename_column_references (backends.test_ddl_references.ExpressionsTests) ... ok
-test_rename_table_references (backends.test_ddl_references.ExpressionsTests) ... ok
-test_rename_table_references_without_alias (backends.test_ddl_references.ExpressionsTests) ... ok
-test_str (backends.test_ddl_references.ExpressionsTests) ... ok
 test_add_binaryfield (migrations.test_operations.OperationTests)
 Tests the AddField operation on TextField/BinaryField. ... ok
 test_add_charfield (migrations.test_operations.OperationTests)
@@ -374,7 +374,7 @@ test_smallfield_bigautofield_foreignfield_growth (migrations.test_operations.Ope
 A field may be migrated from SmallAutoField to BigAutoField. ... ok
 
 ----------------------------------------------------------------------
-Ran 153 tests in 6.113s
+Ran 153 tests in 8.318s
 
 OK (skipped=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

@@ -49,7 +49,7 @@ Applied patch tests/check_framework/test_translation.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 check_framework.test_translation;
 [django__django__3.1] [django__django-12286] Command: ./tests/runtests.py --verbosity 2 check_framework.test_translation 
-[django__django__3.1] [django__django-12286] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-12286] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-12286] Std. Output:
 test_inconsistent_language_settings (check_framework.test_translation.TranslationCheckTests) ... ok
 test_invalid_language_code (check_framework.test_translation.TranslationCheckTests) ... ok
@@ -61,7 +61,7 @@ test_valid_languages_bidi (check_framework.test_translation.TranslationCheckTest
 test_valid_variant_consistent_language_settings (check_framework.test_translation.TranslationCheckTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.026s
+Ran 8 tests in 0.012s
 
 OK
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes

@@ -275,3 +275,7 @@ class TaskEnvContextManager:
 
     def __exit__(self, exc_type, exc_value, exc_traceback):
         os.chdir(self.cwd)
+        try:
+            os.chmod(self.log_file, 0o666)
+        except Exception as e:
+            self.log.write(f"Error changing file permissions: {e}", level=ERROR)

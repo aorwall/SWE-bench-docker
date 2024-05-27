@@ -51,7 +51,7 @@ Applied patch tests/model_options/test_default_pk.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 model_fields.test_autofield model_options.test_default_pk;
 [django__django__4.0] [django__django-14238] Command: ./tests/runtests.py --verbosity 2 model_fields.test_autofield model_options.test_default_pk 
-[django__django__4.0] [django__django-14238] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.0] [django__django-14238] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.0] [django__django-14238] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application model_options
@@ -136,6 +136,8 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+test_isinstance_of_autofield (model_fields.test_autofield.AutoFieldInheritanceTests) ... ok
+test_issubclass_of_autofield (model_fields.test_autofield.AutoFieldInheritanceTests) ... ok
 test_backend_range_save (model_fields.test_integerfield.SmallIntegerFieldTests)
 Backend specific ranges can be saved without corruption. ... ok
 test_backend_range_validation (model_fields.test_integerfield.SmallIntegerFieldTests)
@@ -148,8 +150,18 @@ test_redundant_backend_range_validators (model_fields.test_integerfield.SmallInt
 If there are stricter validators than the ones from the database ... ok
 test_rel_db_type (model_fields.test_integerfield.SmallIntegerFieldTests) ... ok
 test_types (model_fields.test_integerfield.SmallIntegerFieldTests) ... ok
-test_isinstance_of_autofield (model_fields.test_autofield.AutoFieldInheritanceTests) ... ok
-test_issubclass_of_autofield (model_fields.test_autofield.AutoFieldInheritanceTests) ... ok
+test_backend_range_save (model_fields.test_autofield.SmallAutoFieldTests)
+Backend specific ranges can be saved without corruption. ... ok
+test_backend_range_validation (model_fields.test_autofield.SmallAutoFieldTests)
+Backend specific ranges are enforced at the model validation level ... ok
+test_coercing (model_fields.test_autofield.SmallAutoFieldTests) ... ok
+test_documented_range (model_fields.test_autofield.SmallAutoFieldTests)
+Values within the documented safe range pass validation, and can be ... ok
+test_invalid_value (model_fields.test_autofield.SmallAutoFieldTests) ... ok
+test_redundant_backend_range_validators (model_fields.test_autofield.SmallAutoFieldTests)
+If there are stricter validators than the ones from the database ... ok
+test_rel_db_type (model_fields.test_autofield.SmallAutoFieldTests) ... ok
+test_types (model_fields.test_autofield.SmallAutoFieldTests) ... ok
 test_backend_range_save (model_fields.test_autofield.AutoFieldTests)
 Backend specific ranges can be saved without corruption. ... ok
 test_backend_range_validation (model_fields.test_autofield.AutoFieldTests)
@@ -174,29 +186,6 @@ test_redundant_backend_range_validators (model_fields.test_autofield.BigAutoFiel
 If there are stricter validators than the ones from the database ... ok
 test_rel_db_type (model_fields.test_autofield.BigAutoFieldTests) ... ok
 test_types (model_fields.test_autofield.BigAutoFieldTests) ... ok
-test_backend_range_save (model_fields.test_integerfield.BigIntegerFieldTests)
-Backend specific ranges can be saved without corruption. ... ok
-test_backend_range_validation (model_fields.test_integerfield.BigIntegerFieldTests)
-Backend specific ranges are enforced at the model validation level ... ok
-test_coercing (model_fields.test_integerfield.BigIntegerFieldTests) ... ok
-test_documented_range (model_fields.test_integerfield.BigIntegerFieldTests)
-Values within the documented safe range pass validation, and can be ... ok
-test_invalid_value (model_fields.test_integerfield.BigIntegerFieldTests) ... ok
-test_redundant_backend_range_validators (model_fields.test_integerfield.BigIntegerFieldTests)
-If there are stricter validators than the ones from the database ... ok
-test_rel_db_type (model_fields.test_integerfield.BigIntegerFieldTests) ... ok
-test_types (model_fields.test_integerfield.BigIntegerFieldTests) ... ok
-test_app_default_auto_field (model_options.test_default_pk.TestDefaultPK) ... ok
-test_app_default_auto_field_non_auto (model_options.test_default_pk.TestDefaultPK) ... ok
-test_app_default_auto_field_none (model_options.test_default_pk.TestDefaultPK) ... ok
-test_app_default_auto_field_nonexistent (model_options.test_default_pk.TestDefaultPK) ... ok
-test_default_auto_field_setting (model_options.test_default_pk.TestDefaultPK) ... ok
-test_default_auto_field_setting_bigautofield_subclass (model_options.test_default_pk.TestDefaultPK) ... ok
-test_default_auto_field_setting_non_auto (model_options.test_default_pk.TestDefaultPK) ... ok
-test_default_auto_field_setting_none (model_options.test_default_pk.TestDefaultPK) ... ok
-test_default_auto_field_setting_nonexistent (model_options.test_default_pk.TestDefaultPK) ... ok
-test_m2m_app_default_auto_field (model_options.test_default_pk.TestDefaultPK) ... ok
-test_m2m_default_auto_field_setting (model_options.test_default_pk.TestDefaultPK) ... ok
 test_backend_range_save (model_fields.test_integerfield.IntegerFieldTests)
 Backend specific ranges can be saved without corruption. ... ok
 test_backend_range_validation (model_fields.test_integerfield.IntegerFieldTests)
@@ -209,21 +198,32 @@ test_redundant_backend_range_validators (model_fields.test_integerfield.IntegerF
 If there are stricter validators than the ones from the database ... ok
 test_rel_db_type (model_fields.test_integerfield.IntegerFieldTests) ... ok
 test_types (model_fields.test_integerfield.IntegerFieldTests) ... ok
-test_backend_range_save (model_fields.test_autofield.SmallAutoFieldTests)
+test_app_default_auto_field (model_options.test_default_pk.TestDefaultPK) ... ok
+test_app_default_auto_field_non_auto (model_options.test_default_pk.TestDefaultPK) ... ok
+test_app_default_auto_field_none (model_options.test_default_pk.TestDefaultPK) ... ok
+test_app_default_auto_field_nonexistent (model_options.test_default_pk.TestDefaultPK) ... ok
+test_default_auto_field_setting (model_options.test_default_pk.TestDefaultPK) ... ok
+test_default_auto_field_setting_bigautofield_subclass (model_options.test_default_pk.TestDefaultPK) ... ok
+test_default_auto_field_setting_non_auto (model_options.test_default_pk.TestDefaultPK) ... ok
+test_default_auto_field_setting_none (model_options.test_default_pk.TestDefaultPK) ... ok
+test_default_auto_field_setting_nonexistent (model_options.test_default_pk.TestDefaultPK) ... ok
+test_m2m_app_default_auto_field (model_options.test_default_pk.TestDefaultPK) ... ok
+test_m2m_default_auto_field_setting (model_options.test_default_pk.TestDefaultPK) ... ok
+test_backend_range_save (model_fields.test_integerfield.BigIntegerFieldTests)
 Backend specific ranges can be saved without corruption. ... ok
-test_backend_range_validation (model_fields.test_autofield.SmallAutoFieldTests)
+test_backend_range_validation (model_fields.test_integerfield.BigIntegerFieldTests)
 Backend specific ranges are enforced at the model validation level ... ok
-test_coercing (model_fields.test_autofield.SmallAutoFieldTests) ... ok
-test_documented_range (model_fields.test_autofield.SmallAutoFieldTests)
+test_coercing (model_fields.test_integerfield.BigIntegerFieldTests) ... ok
+test_documented_range (model_fields.test_integerfield.BigIntegerFieldTests)
 Values within the documented safe range pass validation, and can be ... ok
-test_invalid_value (model_fields.test_autofield.SmallAutoFieldTests) ... ok
-test_redundant_backend_range_validators (model_fields.test_autofield.SmallAutoFieldTests)
+test_invalid_value (model_fields.test_integerfield.BigIntegerFieldTests) ... ok
+test_redundant_backend_range_validators (model_fields.test_integerfield.BigIntegerFieldTests)
 If there are stricter validators than the ones from the database ... ok
-test_rel_db_type (model_fields.test_autofield.SmallAutoFieldTests) ... ok
-test_types (model_fields.test_autofield.SmallAutoFieldTests) ... ok
+test_rel_db_type (model_fields.test_integerfield.BigIntegerFieldTests) ... ok
+test_types (model_fields.test_integerfield.BigIntegerFieldTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 61 tests in 0.522s
+Ran 61 tests in 0.552s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-pylint-dev_astroid:bookworm-slim
 RUN git -c advice.detachedHead=false checkout 0c9ab0fe56703fa83c73e514a1020d398d23fa7f
 
 RUN conda create -n pylint-dev__astroid__2.14 python=3.9  -y
-
 SHELL ["conda", "run", "-n", "pylint-dev__astroid__2.14", "/bin/bash", "-c"]
 
 
@@ -17,10 +16,10 @@ RUN pip install -e .
 RUN git checkout 0c9ab0fe56703fa83c73e514a1020d398d23fa7f .
 
 ENV TESTBED_NAME=pylint-dev__astroid__2.14
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

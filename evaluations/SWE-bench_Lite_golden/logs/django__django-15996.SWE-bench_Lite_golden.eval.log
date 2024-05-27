@@ -49,7 +49,7 @@ Applied patch tests/migrations/test_writer.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 migrations.test_writer;
 [django__django__4.2] [django__django-15996] Command: ./tests/runtests.py --verbosity 2 migrations.test_writer 
-[django__django__4.2] [django__django-15996] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.2] [django__django-15996] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.2] [django__django-15996] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application migrations
@@ -119,7 +119,7 @@ test_sorted_imports (migrations.test_writer.WriterTests)
 #24155 - Tests ordering of imports. ... ok
 
 ----------------------------------------------------------------------
-Ran 52 tests in 0.239s
+Ran 52 tests in 0.182s
 
 OK
  

@@ -51,7 +51,7 @@ Applied patch tests/backends/models.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 backends.base.test_creation backends.models;
 [django__django__3.1] [django__django-12453] Command: ./tests/runtests.py --verbosity 2 backends.base.test_creation backends.models 
-[django__django__3.1] [django__django-12453] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-12453] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-12453] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application backends
@@ -95,12 +95,12 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 test_custom_test_name (backends.base.test_creation.TestDbSignatureTests) ... ok
 test_custom_test_name_with_test_prefix (backends.base.test_creation.TestDbSignatureTests) ... ok
 test_default_name (backends.base.test_creation.TestDbSignatureTests) ... ok
+test_circular_reference (backends.base.test_creation.TestDeserializeDbFromString) ... ok
 test_migrate_test_setting_false (backends.base.test_creation.TestDbCreationTests) ... ok
 test_migrate_test_setting_true (backends.base.test_creation.TestDbCreationTests) ... ok
-test_circular_reference (backends.base.test_creation.TestDeserializeDbFromString) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.176s
+Ran 6 tests in 0.234s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

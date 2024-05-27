@@ -1,8 +1,9 @@
 [sympy__sympy__1.6] [sympy__sympy-18835] Task Metadata:
 	- Instance ID: sympy__sympy-18835
 	- Testbed: sympy__sympy__1.6
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.6] [sympy__sympy-18835] Command: git -c advice.detachedHead=false checkout 516fa83e69caf1e68306cfc912a13f36c434d51c 
 [sympy__sympy__1.6] [sympy__sympy-18835] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.6] [sympy__sympy-18835] Std. Output:
@@ -51,9 +52,9 @@ Applied patch sympy/utilities/tests/test_iterables.py cleanly.
 [sympy__sympy__1.6] [sympy__sympy-18835] Return Code: 0 
 [sympy__sympy__1.6] [sympy__sympy-18835] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.6 bin/test -C --verbose sympy/utilities/tests/test_iterables.py;
+Test Script: conda run -n sympy__sympy__1.6  bin/test -C --verbose sympy/utilities/tests/test_iterables.py;
 [sympy__sympy__1.6] [sympy__sympy-18835] Command: conda run -n sympy__sympy__1.6 bin/test -C --verbose sympy/utilities/tests/test_iterables.py 
-[sympy__sympy__1.6] [sympy__sympy-18835] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.6] [sympy__sympy-18835] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.6] [sympy__sympy-18835] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.6/bin/python  (3.9.19-final-0) [CPython]
@@ -61,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        38576919
-hash randomization: on (PYTHONHASHSEED=281361213)
+random seed:        68471322
+hash randomization: on (PYTHONHASHSEED=2397502950)
 
 sympy/utilities/tests/test_iterables.py[43] 
 test_is_palindromic ok
@@ -110,7 +111,7 @@ test_rotations ok
 test_ibin ok                                                                [OK]
 
 
-================== tests finished: 43 passed, in 0.64 seconds ==================
+================== tests finished: 43 passed, in 1.35 seconds ==================
 
  
 [sympy__sympy__1.6] [sympy__sympy-18835] Return Code: 0 

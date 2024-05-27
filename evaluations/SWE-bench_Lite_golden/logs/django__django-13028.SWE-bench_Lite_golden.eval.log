@@ -51,7 +51,7 @@ Applied patch tests/queries/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 queries.models queries.tests;
 [django__django__3.2] [django__django-13028] Command: ./tests/runtests.py --verbosity 2 queries.models queries.tests 
-[django__django__3.2] [django__django-13028] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.2] [django__django-13028] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.2] [django__django-13028] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application queries
@@ -189,21 +189,34 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 test_no_extra_params (queries.tests.DefaultValuesInsertTest) ... ok
+test_ticket7371 (queries.tests.CustomPkTests) ... ok
 test_ticket8597 (queries.tests.ComparisonTests) ... ok
-test_in_list_limit (queries.tests.ConditionalTests) ... ok
-test_infinite_loop (queries.tests.ConditionalTests) ... ok
-test_null_ordering_added (queries.tests.ConditionalTests) ... skipped "Database doesn't support feature(s): requires_explicit_null_ordering_when_grouping"
+test_ticket_21787 (queries.tests.ForeignKeyToBaseExcludeTests) ... ok
+test_exists (queries.tests.ExistsSql) ... ok
+test_ticket_18414 (queries.tests.ExistsSql) ... ok
+test_ticket_18414_distinct_on (queries.tests.ExistsSql) ... skipped "Database doesn't support feature(s): can_distinct_on_fields"
 test_evaluated_queryset_as_argument (queries.tests.CloneTests)
 #13227 -- If a queryset is already evaluated, it can still be used as a query arg ... ok
 test_no_fields_cloning (queries.tests.CloneTests) ... ok
 test_no_model_options_cloning (queries.tests.CloneTests) ... ok
-test_exists (queries.tests.ExistsSql) ... ok
-test_ticket_18414 (queries.tests.ExistsSql) ... ok
-test_ticket_18414_distinct_on (queries.tests.ExistsSql) ... skipped "Database doesn't support feature(s): can_distinct_on_fields"
-test_ticket_21787 (queries.tests.ForeignKeyToBaseExcludeTests) ... ok
 test_ticket7872 (queries.tests.DisjunctiveFilterTests) ... ok
 test_ticket8283 (queries.tests.DisjunctiveFilterTests) ... ok
-test_ticket7371 (queries.tests.CustomPkTests) ... ok
+test_primary_key (queries.tests.IsNullTests) ... ok
+test_to_field (queries.tests.IsNullTests) ... ok
+test_ticket_7302 (queries.tests.EscapingTests) ... ok
+test_double_subquery_in (queries.tests.DoubleInSubqueryTests) ... ok
+test_21001 (queries.tests.EmptyStringsAsNullTest) ... ok
+test_direct_exclude (queries.tests.EmptyStringsAsNullTest) ... ok
+test_joined_exclude (queries.tests.EmptyStringsAsNullTest) ... ok
+test_col_not_in_list_containing_null (queries.tests.NullInExcludeTest) ... expected failure
+test_double_exclude (queries.tests.NullInExcludeTest) ... ok
+test_null_in_exclude_qs (queries.tests.NullInExcludeTest) ... ok
+test_exclude_many_to_many (queries.tests.ManyToManyExcludeTest) ... ok
+test_ticket_12823 (queries.tests.ManyToManyExcludeTest) ... ok
+test_ticket22023 (queries.tests.Queries3Tests) ... ok
+test_ticket7107 (queries.tests.Queries3Tests) ... ok
+test_ticket8683 (queries.tests.Queries3Tests) ... ok
+test_ticket15786 (queries.tests.Exclude15786) ... ok
 test_fk_reuse (queries.tests.JoinReuseTest) ... ok
 test_fk_reuse_annotation (queries.tests.JoinReuseTest) ... ok
 test_fk_reuse_disjunction (queries.tests.JoinReuseTest) ... ok
@@ -212,41 +225,73 @@ test_fk_reuse_select_related (queries.tests.JoinReuseTest) ... ok
 test_inverted_q_across_relations (queries.tests.JoinReuseTest) ... ok
 test_revfk_noreuse (queries.tests.JoinReuseTest) ... ok
 test_revo2o_reuse (queries.tests.JoinReuseTest) ... ok
-test_exclude_many_to_many (queries.tests.ManyToManyExcludeTest) ... ok
-test_ticket_12823 (queries.tests.ManyToManyExcludeTest) ... ok
-test_ticket_7302 (queries.tests.EscapingTests) ... ok
-test_col_not_in_list_containing_null (queries.tests.NullInExcludeTest) ... expected failure
-test_double_exclude (queries.tests.NullInExcludeTest) ... ok
-test_null_in_exclude_qs (queries.tests.NullInExcludeTest) ... ok
-test_primary_key (queries.tests.IsNullTests) ... ok
-test_to_field (queries.tests.IsNullTests) ... ok
-test_evaluated_proxy_count (queries.tests.ProxyQueryCleanupTest) ... ok
+test_exclude_plain (queries.tests.ExcludeTest17600) ... ok
+test_exclude_plain_distinct (queries.tests.ExcludeTest17600) ... ok
+test_exclude_with_q_is_equal_to_plain_exclude (queries.tests.ExcludeTest17600) ... ok
+test_exclude_with_q_is_equal_to_plain_exclude_variation (queries.tests.ExcludeTest17600) ... ok
+test_exclude_with_q_object_distinct (queries.tests.ExcludeTest17600) ... ok
+test_exclude_with_q_object_no_distinct (queries.tests.ExcludeTest17600) ... ok
+test_only_orders_with_all_items_having_status_1 (queries.tests.ExcludeTest17600) ... expected failure
 test_join_already_in_query (queries.tests.NullableRelOrderingTests) ... ok
 test_ticket10028 (queries.tests.NullableRelOrderingTests) ... ok
-test_double_subquery_in (queries.tests.DoubleInSubqueryTests) ... ok
-test_ticket15786 (queries.tests.Exclude15786) ... ok
-test_ticket12239 (queries.tests.Queries2Tests) ... ok
-test_ticket4289 (queries.tests.Queries2Tests) ... ok
-test_ticket7759 (queries.tests.Queries2Tests) ... ok
-test_ticket22023 (queries.tests.Queries3Tests) ... ok
-test_ticket7107 (queries.tests.Queries3Tests) ... ok
-test_ticket8683 (queries.tests.Queries3Tests) ... ok
-test_21001 (queries.tests.EmptyStringsAsNullTest) ... ok
-test_direct_exclude (queries.tests.EmptyStringsAsNullTest) ... ok
-test_joined_exclude (queries.tests.EmptyStringsAsNullTest) ... ok
+test_evaluated_proxy_count (queries.tests.ProxyQueryCleanupTest) ... ok
+test_disjunction_promotion1 (queries.tests.DisjunctionPromotionTests) ... ok
+test_disjunction_promotion2 (queries.tests.DisjunctionPromotionTests) ... ok
+test_disjunction_promotion3 (queries.tests.DisjunctionPromotionTests) ... ok
+test_disjunction_promotion3_demote (queries.tests.DisjunctionPromotionTests) ... ok
+test_disjunction_promotion4 (queries.tests.DisjunctionPromotionTests) ... ok
+test_disjunction_promotion4_demote (queries.tests.DisjunctionPromotionTests) ... ok
+test_disjunction_promotion5_demote (queries.tests.DisjunctionPromotionTests) ... ok
+test_disjunction_promotion6 (queries.tests.DisjunctionPromotionTests) ... ok
+test_disjunction_promotion7 (queries.tests.DisjunctionPromotionTests) ... ok
+test_disjunction_promotion_fexpression (queries.tests.DisjunctionPromotionTests) ... ok
+test_disjunction_promotion_select_related (queries.tests.DisjunctionPromotionTests) ... ok
+test_in_list_limit (queries.tests.ConditionalTests) ... ok
+test_infinite_loop (queries.tests.ConditionalTests) ... ok
+test_null_ordering_added (queries.tests.ConditionalTests) ... skipped "Database doesn't support feature(s): requires_explicit_null_ordering_when_grouping"
+test_ticket14729 (queries.tests.RawQueriesTests) ... ok
 test_exclude_reverse_fk_field_ref (queries.tests.ExcludeTests) ... ok
 test_exclude_with_circular_fk_relation (queries.tests.ExcludeTests) ... ok
 test_subquery_exclude_outerref (queries.tests.ExcludeTests) ... ok
 test_ticket14511 (queries.tests.ExcludeTests) ... ok
 test_to_field (queries.tests.ExcludeTests) ... ok
+test_isnull_filter_promotion (queries.tests.NullJoinPromotionOrTest) ... ok
+test_null_join_demotion (queries.tests.NullJoinPromotionOrTest) ... ok
+test_ticket_17886 (queries.tests.NullJoinPromotionOrTest) ... ok
+test_ticket_21366 (queries.tests.NullJoinPromotionOrTest) ... ok
+test_ticket_21748 (queries.tests.NullJoinPromotionOrTest) ... ok
+test_ticket_21748_complex_filter (queries.tests.NullJoinPromotionOrTest) ... ok
+test_ticket_21748_double_negated_and (queries.tests.NullJoinPromotionOrTest) ... ok
+test_ticket_21748_double_negated_or (queries.tests.NullJoinPromotionOrTest) ... ok
+test_or_with_both_slice (queries.tests.QuerySetBitwiseOperationTests) ... ok
+test_or_with_both_slice_and_ordering (queries.tests.QuerySetBitwiseOperationTests) ... ok
+test_or_with_lhs_slice (queries.tests.QuerySetBitwiseOperationTests) ... ok
+test_or_with_rhs_slice (queries.tests.QuerySetBitwiseOperationTests) ... ok
 test_ticket_19964 (queries.tests.RelabelCloneTest) ... ok
-test_ticket14729 (queries.tests.RawQueriesTests) ... ok
-test_extra_select_literal_percent_s (queries.tests.Queries5Tests) ... ok
-test_ordering (queries.tests.Queries5Tests) ... ok
-test_ticket5261 (queries.tests.Queries5Tests) ... ok
-test_ticket7045 (queries.tests.Queries5Tests) ... ok
-test_ticket7256 (queries.tests.Queries5Tests) ... ok
-test_ticket9848 (queries.tests.Queries5Tests) ... ok
+test_reverse_trimming (queries.tests.ReverseJoinTrimmingTest) ... ok
+test_tickets_3045_3288 (queries.tests.SelectRelatedTests) ... ok
+test_distinct_ordered_sliced_subquery_aggregation (queries.tests.Queries6Tests) ... ok
+test_multiple_columns_with_the_same_name_slice (queries.tests.Queries6Tests) ... ok
+test_nested_queries_sql (queries.tests.Queries6Tests) ... ok
+test_parallel_iterators (queries.tests.Queries6Tests) ... ok
+test_ticket3739 (queries.tests.Queries6Tests) ... ok
+test_ticket_11320 (queries.tests.Queries6Tests) ... ok
+test_tickets_8921_9188 (queries.tests.Queries6Tests) ... ok
+test_ticket_21879 (queries.tests.ReverseM2MCustomPkTests) ... ok
+test_ticket7778 (queries.tests.SubclassFKTests) ... ok
+test_ticket_12807 (queries.tests.Ticket12807Tests) ... ok
+test_ticket_24278 (queries.tests.TestTicket24279) ... ok
+test_ticket_20101 (queries.tests.Ticket20101Tests) ... ok
+test_ticket_20788 (queries.tests.Ticket20788Tests) ... ok
+test_ticket_21203 (queries.tests.Ticket21203Tests) ... ok
+test_ticket12239 (queries.tests.Queries2Tests) ... ok
+test_ticket4289 (queries.tests.Queries2Tests) ... ok
+test_ticket7759 (queries.tests.Queries2Tests) ... ok
+test_ticket_24605 (queries.tests.TestTicket24605) ... ok
+test_ticket_23622 (queries.tests.Ticket23622Tests) ... skipped "Database doesn't support feature(s): can_distinct_on_fields"
+test_ticket_22429 (queries.tests.Ticket22429Tests) ... ok
+test_ticket_23605 (queries.tests.Ticket23605Tests) ... ok
+test_ticket_20955 (queries.tests.Ticket20955Tests) ... ok
 test_can_combine_queries_using_and_and_or_operators (queries.tests.QuerySetSupportsPythonIdioms) ... ok
 test_can_get_items_using_index_and_slice_notation (queries.tests.QuerySetSupportsPythonIdioms) ... ok
 test_can_get_number_of_items_in_queryset_using_standard_len (queries.tests.QuerySetSupportsPythonIdioms) ... ok
@@ -262,30 +307,61 @@ hint: inverting your ordering might do what you need ... ok
 test_slicing_with_steps_can_be_used (queries.tests.QuerySetSupportsPythonIdioms) ... ok
 test_slicing_with_tests_is_not_lazy (queries.tests.QuerySetSupportsPythonIdioms) ... ok
 test_slicing_without_step_is_lazy (queries.tests.QuerySetSupportsPythonIdioms) ... ok
-test_reverse_trimming (queries.tests.ReverseJoinTrimmingTest) ... ok
-test_ticket_21879 (queries.tests.ReverseM2MCustomPkTests) ... ok
-test_tickets_3045_3288 (queries.tests.SelectRelatedTests) ... ok
+test_values_in_subquery (queries.tests.ValuesSubqueryTests) ... ok
+test_empty_string_promotion (queries.tests.EmptyStringPromotionTests) ... ok
+test_ticket_14056 (queries.tests.Ticket14056Tests) ... ok
 test_correct_lookup (queries.tests.RelatedLookupTypeTests) ... ok
 test_values_queryset_lookup (queries.tests.RelatedLookupTypeTests) ... ok
 test_wrong_backward_lookup (queries.tests.RelatedLookupTypeTests) ... ok
 test_wrong_type_lookup (queries.tests.RelatedLookupTypeTests) ... ok
-test_ticket_24278 (queries.tests.TestTicket24279) ... ok
-test_or_with_both_slice (queries.tests.QuerySetBitwiseOperationTests) ... ok
-test_or_with_both_slice_and_ordering (queries.tests.QuerySetBitwiseOperationTests) ... ok
-test_or_with_lhs_slice (queries.tests.QuerySetBitwiseOperationTests) ... ok
-test_or_with_rhs_slice (queries.tests.QuerySetBitwiseOperationTests) ... ok
-test_ticket_12807 (queries.tests.Ticket12807Tests) ... ok
-test_ticket_14056 (queries.tests.Ticket14056Tests) ... ok
-test_exclude_plain (queries.tests.ExcludeTest17600) ... ok
-test_exclude_plain_distinct (queries.tests.ExcludeTest17600) ... ok
-test_exclude_with_q_is_equal_to_plain_exclude (queries.tests.ExcludeTest17600) ... ok
-test_exclude_with_q_is_equal_to_plain_exclude_variation (queries.tests.ExcludeTest17600) ... ok
-test_exclude_with_q_object_distinct (queries.tests.ExcludeTest17600) ... ok
-test_exclude_with_q_object_no_distinct (queries.tests.ExcludeTest17600) ... ok
-test_only_orders_with_all_items_having_status_1 (queries.tests.ExcludeTest17600) ... expected failure
-test_ticket7778 (queries.tests.SubclassFKTests) ... ok
-test_ticket_20788 (queries.tests.Ticket20788Tests) ... ok
-test_ticket_24605 (queries.tests.TestTicket24605) ... ok
+test_extra_select_literal_percent_s (queries.tests.Queries5Tests) ... ok
+test_ordering (queries.tests.Queries5Tests) ... ok
+test_ticket5261 (queries.tests.Queries5Tests) ... ok
+test_ticket7045 (queries.tests.Queries5Tests) ... ok
+test_ticket7256 (queries.tests.Queries5Tests) ... ok
+test_ticket9848 (queries.tests.Queries5Tests) ... ok
+test_ticket10432 (queries.tests.GeneratorExpressionTests) ... ok
+test_empty_full_handling_conjunction (queries.tests.WhereNodeTest) ... ok
+test_empty_full_handling_disjunction (queries.tests.WhereNodeTest) ... ok
+test_empty_nodes (queries.tests.WhereNodeTest) ... ok
+test_annotated_ordering (queries.tests.QuerysetOrderedTests) ... ok
+test_cleared_default_ordering (queries.tests.QuerysetOrderedTests) ... ok
+test_empty_queryset (queries.tests.QuerysetOrderedTests) ... ok
+test_explicit_ordering (queries.tests.QuerysetOrderedTests) ... ok
+test_no_default_or_explicit_ordering (queries.tests.QuerysetOrderedTests) ... ok
+test_order_by_extra (queries.tests.QuerysetOrderedTests) ... ok
+test_invalid_order_by (queries.tests.QuerySetExceptionTests) ... ok
+test_invalid_queryset_model (queries.tests.QuerySetExceptionTests) ... ok
+test_iter_exceptions (queries.tests.QuerySetExceptionTests) ... ok
+test_ticket_18785 (queries.tests.Ticket18785Tests) ... ok
+test_empty_resultset_sql (queries.tests.WeirdQuerysetSlicingTests) ... ok
+test_empty_sliced_subquery (queries.tests.WeirdQuerysetSlicingTests) ... ok
+test_empty_sliced_subquery_exclude (queries.tests.WeirdQuerysetSlicingTests) ... ok
+test_tickets_7698_10202 (queries.tests.WeirdQuerysetSlicingTests) ... ok
+test_zero_length_values_slicing (queries.tests.WeirdQuerysetSlicingTests) ... ok
+test_invalid_values (queries.tests.TestInvalidValuesRelation) ... ok
+test_non_nullable_fk_not_promoted (queries.tests.ValuesJoinPromotionTests) ... ok
+test_ticket_21376 (queries.tests.ValuesJoinPromotionTests) ... ok
+test_values_no_promotion_for_existing (queries.tests.ValuesJoinPromotionTests) ... ok
+test_extra_multiple_select_params_values_order_by (queries.tests.ValuesQuerysetTests) ... ok
+test_extra_select_params_values_order_in_extra (queries.tests.ValuesQuerysetTests) ... ok
+test_extra_values (queries.tests.ValuesQuerysetTests) ... ok
+test_extra_values_list (queries.tests.ValuesQuerysetTests) ... ok
+test_extra_values_order_in_extra (queries.tests.ValuesQuerysetTests) ... ok
+test_extra_values_order_multiple (queries.tests.ValuesQuerysetTests) ... ok
+test_extra_values_order_twice (queries.tests.ValuesQuerysetTests) ... ok
+test_field_error_values_list (queries.tests.ValuesQuerysetTests) ... ok
+test_flat_extra_values_list (queries.tests.ValuesQuerysetTests) ... ok
+test_flat_values_list (queries.tests.ValuesQuerysetTests) ... ok
+test_named_values_list_bad_field_name (queries.tests.ValuesQuerysetTests) ... ok
+test_named_values_list_expression (queries.tests.ValuesQuerysetTests) ... ok
+test_named_values_list_expression_with_default_alias (queries.tests.ValuesQuerysetTests) ... ok
+test_named_values_list_flat (queries.tests.ValuesQuerysetTests) ... ok
+test_named_values_list_with_fields (queries.tests.ValuesQuerysetTests) ... ok
+test_named_values_list_without_fields (queries.tests.ValuesQuerysetTests) ... ok
+test_emptyqueryset_values (queries.tests.EmptyQuerySetTests) ... ok
+test_ticket_19151 (queries.tests.EmptyQuerySetTests) ... ok
+test_values_subquery (queries.tests.EmptyQuerySetTests) ... ok
 test_combine_join_reuse (queries.tests.Queries4Tests) ... ok
 test_filter_reverse_non_integer_pk (queries.tests.Queries4Tests) ... ok
 test_join_reuse_order (queries.tests.Queries4Tests) ... ok
@@ -304,62 +380,6 @@ test_ticket15316_one2one_filter_false (queries.tests.Queries4Tests) ... ok
 test_ticket15316_one2one_filter_true (queries.tests.Queries4Tests) ... ok
 test_ticket24525 (queries.tests.Queries4Tests) ... ok
 test_ticket7095 (queries.tests.Queries4Tests) ... ok
-test_ticket_21203 (queries.tests.Ticket21203Tests) ... ok
-test_ticket_20101 (queries.tests.Ticket20101Tests) ... ok
-test_ticket_23622 (queries.tests.Ticket23622Tests) ... skipped "Database doesn't support feature(s): can_distinct_on_fields"
-test_ticket_23605 (queries.tests.Ticket23605Tests) ... ok
-test_distinct_ordered_sliced_subquery_aggregation (queries.tests.Queries6Tests) ... ok
-test_multiple_columns_with_the_same_name_slice (queries.tests.Queries6Tests) ... ok
-test_nested_queries_sql (queries.tests.Queries6Tests) ... ok
-test_parallel_iterators (queries.tests.Queries6Tests) ... ok
-test_ticket3739 (queries.tests.Queries6Tests) ... ok
-test_ticket_11320 (queries.tests.Queries6Tests) ... ok
-test_tickets_8921_9188 (queries.tests.Queries6Tests) ... ok
-test_ticket_22429 (queries.tests.Ticket22429Tests) ... ok
-test_ticket_20955 (queries.tests.Ticket20955Tests) ... ok
-test_emptyqueryset_values (queries.tests.EmptyQuerySetTests) ... ok
-test_ticket_19151 (queries.tests.EmptyQuerySetTests) ... ok
-test_values_subquery (queries.tests.EmptyQuerySetTests) ... ok
-test_values_in_subquery (queries.tests.ValuesSubqueryTests) ... ok
-test_invalid_order_by (queries.tests.QuerySetExceptionTests) ... ok
-test_invalid_queryset_model (queries.tests.QuerySetExceptionTests) ... ok
-test_iter_exceptions (queries.tests.QuerySetExceptionTests) ... ok
-test_distinct_ordered_sliced_subquery (queries.tests.SubqueryTests) ... ok
-test_ordered_subselect (queries.tests.SubqueryTests)
-Subselects honor any manual ordering ... ok
-test_related_sliced_subquery (queries.tests.SubqueryTests) ... ok
-test_slice_subquery_and_query (queries.tests.SubqueryTests) ... ok
-test_sliced_delete (queries.tests.SubqueryTests)
-Delete queries can safely contain sliced subqueries ... ok
-test_ticket10432 (queries.tests.GeneratorExpressionTests) ... ok
-test_empty_string_promotion (queries.tests.EmptyStringPromotionTests) ... ok
-test_non_nullable_fk_not_promoted (queries.tests.ValuesJoinPromotionTests) ... ok
-test_ticket_21376 (queries.tests.ValuesJoinPromotionTests) ... ok
-test_values_no_promotion_for_existing (queries.tests.ValuesJoinPromotionTests) ... ok
-test_empty_full_handling_conjunction (queries.tests.WhereNodeTest) ... ok
-test_empty_full_handling_disjunction (queries.tests.WhereNodeTest) ... ok
-test_empty_nodes (queries.tests.WhereNodeTest) ... ok
-test_empty_resultset_sql (queries.tests.WeirdQuerysetSlicingTests) ... ok
-test_empty_sliced_subquery (queries.tests.WeirdQuerysetSlicingTests) ... ok
-test_empty_sliced_subquery_exclude (queries.tests.WeirdQuerysetSlicingTests) ... ok
-test_tickets_7698_10202 (queries.tests.WeirdQuerysetSlicingTests) ... ok
-test_zero_length_values_slicing (queries.tests.WeirdQuerysetSlicingTests) ... ok
-test_ticket_18785 (queries.tests.Ticket18785Tests) ... ok
-test_invalid_values (queries.tests.TestInvalidValuesRelation) ... ok
-test_annotated_ordering (queries.tests.QuerysetOrderedTests) ... ok
-test_cleared_default_ordering (queries.tests.QuerysetOrderedTests) ... ok
-test_empty_queryset (queries.tests.QuerysetOrderedTests) ... ok
-test_explicit_ordering (queries.tests.QuerysetOrderedTests) ... ok
-test_no_default_or_explicit_ordering (queries.tests.QuerysetOrderedTests) ... ok
-test_order_by_extra (queries.tests.QuerysetOrderedTests) ... ok
-test_isnull_filter_promotion (queries.tests.NullJoinPromotionOrTest) ... ok
-test_null_join_demotion (queries.tests.NullJoinPromotionOrTest) ... ok
-test_ticket_17886 (queries.tests.NullJoinPromotionOrTest) ... ok
-test_ticket_21366 (queries.tests.NullJoinPromotionOrTest) ... ok
-test_ticket_21748 (queries.tests.NullJoinPromotionOrTest) ... ok
-test_ticket_21748_complex_filter (queries.tests.NullJoinPromotionOrTest) ... ok
-test_ticket_21748_double_negated_and (queries.tests.NullJoinPromotionOrTest) ... ok
-test_ticket_21748_double_negated_or (queries.tests.NullJoinPromotionOrTest) ... ok
 test_in_query (queries.tests.ToFieldTests) ... ok
 test_in_subquery (queries.tests.ToFieldTests) ... ok
 test_nested_in_subquery (queries.tests.ToFieldTests) ... ok
@@ -368,39 +388,19 @@ test_recursive_fk_reverse (queries.tests.ToFieldTests) ... ok
 test_reverse_in (queries.tests.ToFieldTests) ... ok
 test_single_object (queries.tests.ToFieldTests) ... ok
 test_single_object_reverse (queries.tests.ToFieldTests) ... ok
-test_extra_multiple_select_params_values_order_by (queries.tests.ValuesQuerysetTests) ... ok
-test_extra_select_params_values_order_in_extra (queries.tests.ValuesQuerysetTests) ... ok
-test_extra_values (queries.tests.ValuesQuerysetTests) ... ok
-test_extra_values_list (queries.tests.ValuesQuerysetTests) ... ok
-test_extra_values_order_in_extra (queries.tests.ValuesQuerysetTests) ... ok
-test_extra_values_order_multiple (queries.tests.ValuesQuerysetTests) ... ok
-test_extra_values_order_twice (queries.tests.ValuesQuerysetTests) ... ok
-test_field_error_values_list (queries.tests.ValuesQuerysetTests) ... ok
-test_flat_extra_values_list (queries.tests.ValuesQuerysetTests) ... ok
-test_flat_values_list (queries.tests.ValuesQuerysetTests) ... ok
-test_named_values_list_bad_field_name (queries.tests.ValuesQuerysetTests) ... ok
-test_named_values_list_expression (queries.tests.ValuesQuerysetTests) ... ok
-test_named_values_list_expression_with_default_alias (queries.tests.ValuesQuerysetTests) ... ok
-test_named_values_list_flat (queries.tests.ValuesQuerysetTests) ... ok
-test_named_values_list_with_fields (queries.tests.ValuesQuerysetTests) ... ok
-test_named_values_list_without_fields (queries.tests.ValuesQuerysetTests) ... ok
-test_disjunction_promotion1 (queries.tests.DisjunctionPromotionTests) ... ok
-test_disjunction_promotion2 (queries.tests.DisjunctionPromotionTests) ... ok
-test_disjunction_promotion3 (queries.tests.DisjunctionPromotionTests) ... ok
-test_disjunction_promotion3_demote (queries.tests.DisjunctionPromotionTests) ... ok
-test_disjunction_promotion4 (queries.tests.DisjunctionPromotionTests) ... ok
-test_disjunction_promotion4_demote (queries.tests.DisjunctionPromotionTests) ... ok
-test_disjunction_promotion5_demote (queries.tests.DisjunctionPromotionTests) ... ok
-test_disjunction_promotion6 (queries.tests.DisjunctionPromotionTests) ... ok
-test_disjunction_promotion7 (queries.tests.DisjunctionPromotionTests) ... ok
-test_disjunction_promotion_fexpression (queries.tests.DisjunctionPromotionTests) ... ok
-test_disjunction_promotion_select_related (queries.tests.DisjunctionPromotionTests) ... ok
 test_AB_ACB (queries.tests.UnionTests) ... ok
 test_A_AB (queries.tests.UnionTests) ... ok
 test_A_AB2 (queries.tests.UnionTests) ... ok
 test_BAB_BAC (queries.tests.UnionTests) ... ok
 test_BAB_BACB (queries.tests.UnionTests) ... ok
 test_BA_BCA__BAB_BAC_BCA (queries.tests.UnionTests) ... ok
+test_distinct_ordered_sliced_subquery (queries.tests.SubqueryTests) ... ok
+test_ordered_subselect (queries.tests.SubqueryTests)
+Subselects honor any manual ordering ... ok
+test_related_sliced_subquery (queries.tests.SubqueryTests) ... ok
+test_slice_subquery_and_query (queries.tests.SubqueryTests) ... ok
+test_sliced_delete (queries.tests.SubqueryTests)
+Delete queries can safely contain sliced subqueries ... ok
 test_avoid_infinite_loop_on_too_many_subqueries (queries.tests.Queries1Tests) ... ok
 test_common_mixed_case_foreign_keys (queries.tests.Queries1Tests) ... ok
 test_deferred_load_qs_pickling (queries.tests.Queries1Tests) ... ok
@@ -479,7 +479,7 @@ test_tickets_7204_7506 (queries.tests.Queries1Tests) ... ok
 test_tickets_7448_7707 (queries.tests.Queries1Tests) ... ok
 
 ----------------------------------------------------------------------
-Ran 284 tests in 1.520s
+Ran 284 tests in 1.656s
 
 OK (skipped=3, expected failures=2)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

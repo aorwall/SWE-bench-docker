@@ -51,7 +51,7 @@ Applied patch tests/many_to_one/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 many_to_one.models many_to_one.tests;
 [django__django__4.0] [django__django-13964] Command: ./tests/runtests.py --verbosity 2 many_to_one.models many_to_one.tests 
-[django__django__4.0] [django__django-13964] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.0] [django__django-13964] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.0] [django__django-13964] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application many_to_one
@@ -134,7 +134,7 @@ test_set_after_prefetch (many_to_one.tests.ManyToOneTests) ... ok
 test_values_list_exception (many_to_one.tests.ManyToOneTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 37 tests in 0.329s
+Ran 37 tests in 0.386s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

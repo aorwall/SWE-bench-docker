@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-pylint-dev_pylint:bookworm-slim
 RUN git -c advice.detachedHead=false checkout e90702074e68e20dc8e5df5013ee3ecf22139c3e
 
 RUN conda create -n pylint-dev__pylint__2.15 python=3.9 -y
-
 SHELL ["conda", "run", "-n", "pylint-dev__pylint__2.15", "/bin/bash", "-c"]
 
 COPY docker/pylint-dev__pylint/2.15/requirements.txt .
@@ -20,10 +19,10 @@ RUN pip install -e .
 RUN git checkout e90702074e68e20dc8e5df5013ee3ecf22139c3e .
 
 ENV TESTBED_NAME=pylint-dev__pylint__2.15
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

@@ -1,8 +1,9 @@
 [pytest-dev__pytest__4.4] [pytest-dev__pytest-5221] Task Metadata:
 	- Instance ID: pytest-dev__pytest-5221
 	- Testbed: pytest-dev__pytest__4.4
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pytest-dev__pytest__4.4] [pytest-dev__pytest-5221] Command: git -c advice.detachedHead=false checkout 4a2fdce62b73944030cff9b3e52862868ca9584d 
 [pytest-dev__pytest__4.4] [pytest-dev__pytest-5221] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__4.4] [pytest-dev__pytest-5221] Std. Output:
@@ -51,9 +52,9 @@ Applied patch testing/python/fixtures.py cleanly.
 [pytest-dev__pytest__4.4] [pytest-dev__pytest-5221] Return Code: 0 
 [pytest-dev__pytest__4.4] [pytest-dev__pytest-5221] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pytest-dev__pytest__4.4 pytest -rA testing/python/fixtures.py;
+Test Script: conda run -n pytest-dev__pytest__4.4  pytest -rA testing/python/fixtures.py;
 [pytest-dev__pytest__4.4] [pytest-dev__pytest-5221] Command: conda run -n pytest-dev__pytest__4.4 pytest -rA testing/python/fixtures.py 
-[pytest-dev__pytest__4.4] [pytest-dev__pytest-5221] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__4.4] [pytest-dev__pytest-5221] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pytest-dev__pytest__4.4] [pytest-dev__pytest-5221] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.4.3.dev6+g4ccaa987d, py-1.11.0, pluggy-0.13.1
@@ -83,7 +84,7 @@ E       fixture 'some' not found
 >       use 'pytest --fixtures [testpath]' for help on them.
 
 /tmp/pytest-of-swe-bench/pytest-0/test_funcarg_lookupfails0/test_funcarg_lookupfails.py:9
-=========================== 1 error in 0.02 seconds ============================
+=========================== 1 error in 0.03 seconds ============================
 ___________ TestFillFixtures.test_detect_recursive_dependency_error ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -108,7 +109,7 @@ E       recursive dependency involving fixture 'fix1' detected
 >       use 'pytest --fixtures [testpath]' for help on them.
 
 /tmp/pytest-of-swe-bench/pytest-0/test_detect_recursive_dependency_error0/test_detect_recursive_dependency_error.py:9
-=========================== 1 error in 0.02 seconds ============================
+=========================== 1 error in 0.03 seconds ============================
 _____________________ TestFillFixtures.test_funcarg_basic ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -126,7 +127,7 @@ collected 2 items
 
 test_funcarg_lookup_modulelevel.py ..                                    [100%]
 
-=========================== 2 passed in 0.03 seconds ===========================
+=========================== 2 passed in 0.04 seconds ===========================
 _______________ TestFillFixtures.test_funcarg_lookup_classlevel ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -136,7 +137,7 @@ collected 1 item
 
 test_funcarg_lookup_classlevel.py .                                      [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 _______ TestFillFixtures.test_conftest_funcargs_only_available_in_subdir _______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -158,7 +159,7 @@ collected 1 item
 
 test_extend_fixture_module_class.py .                                    [100%]
 
-=========================== 1 passed in 0.04 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.4.3.dev6+g4ccaa987d, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_extend_fixture_module_class0
@@ -202,7 +203,7 @@ collected 1 item
 
 pkg/test_spam.py .                                                       [100%]
 
-=========================== 1 passed in 0.01 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 _____________ TestFillFixtures.test_extend_fixture_conftest_plugin _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -222,7 +223,7 @@ collected 1 item
 
 test_extend_fixture_plugin_plugin.py .                                   [100%]
 
-=========================== 1 passed in 0.05 seconds ===========================
+=========================== 1 passed in 0.07 seconds ===========================
 _____ TestFillFixtures.test_override_parametrized_fixture_conftest_module ______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -268,7 +269,7 @@ collected 3 items
 
 test_override_non_parametrized_fixture_conftest_module.py ...            [100%]
 
-=========================== 3 passed in 0.04 seconds ===========================
+=========================== 3 passed in 0.02 seconds ===========================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.4.3.dev6+g4ccaa987d, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_override_non_parametrized_fixture_conftest_module0
@@ -286,7 +287,7 @@ collected 3 items
 
 subdir/test_spam.py ...                                                  [100%]
 
-=========================== 3 passed in 0.05 seconds ===========================
+=========================== 3 passed in 0.04 seconds ===========================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.4.3.dev6+g4ccaa987d, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_override_non_parametrized_fixture_conftest_conftest0
@@ -294,7 +295,7 @@ collected 3 items
 
 subdir/test_spam.py ...                                                  [100%]
 
-=========================== 3 passed in 0.01 seconds ===========================
+=========================== 3 passed in 0.02 seconds ===========================
 _ TestFillFixtures.test_override_autouse_fixture_with_parametrized_fixture_conftest_conftest _
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -304,7 +305,7 @@ collected 3 items
 
 subdir/test_spam.py ...                                                  [100%]
 
-=========================== 3 passed in 0.05 seconds ===========================
+=========================== 3 passed in 0.04 seconds ===========================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.4.3.dev6+g4ccaa987d, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_override_autouse_fixture_with_parametrized_fixture_conftest_conftest0
@@ -322,7 +323,7 @@ collected 1 item
 
 test_autouse_fixture_plugin.py .                                         [100%]
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.06 seconds ===========================
 __________________ TestFillFixtures.test_funcarg_lookup_error __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -351,7 +352,7 @@ collected 1 item
 
 test_fixture_excinfo_leak.py .                                           [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.07 seconds ===========================
 ___________________ TestRequestBasic.test_request_attributes ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -367,7 +368,7 @@ platform linux -- Python 3.9.19, pytest-4.4.3.dev6+g4ccaa987d, py-1.11.0, pluggy
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_request_attributes_method0
 collected 0 items
 
-========================= no tests ran in 0.00 seconds =========================
+========================= no tests ran in 0.01 seconds =========================
 ________ TestRequestBasic.test_request_contains_funcarg_arg2fixturedefs ________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -375,7 +376,7 @@ platform linux -- Python 3.9.19, pytest-4.4.3.dev6+g4ccaa987d, py-1.11.0, pluggy
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_request_contains_funcarg_arg2fixturedefs0
 collected 0 items
 
-========================= no tests ran in 0.00 seconds =========================
+========================= no tests ran in 0.01 seconds =========================
 ____________________ TestRequestBasic.test_request_garbage _____________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.4/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_request_garbage0/runpytest-0
@@ -387,7 +388,7 @@ collected 1 item
 
 test_request_garbage.py .                                                [100%]
 
-=========================== 1 passed in 0.04 seconds ===========================
+=========================== 1 passed in 0.09 seconds ===========================
 _______________ TestRequestBasic.test_getfixturevalue_recursive ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -415,7 +416,7 @@ platform linux -- Python 3.9.19, pytest-4.4.3.dev6+g4ccaa987d, py-1.11.0, pluggy
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_getfixturevalue0
 collected 0 items
 
-========================= no tests ran in 0.00 seconds =========================
+========================= no tests ran in 0.01 seconds =========================
 ____________ TestRequestBasic.test_getfixturevalue[getfuncargvalue] ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -454,7 +455,7 @@ request = <SubRequest 'myfix' for <Function test_fix>>
 E       assert 0
 
 test_request_addfinalizer_failing_setup.py:6: AssertionError
-====================== 1 passed, 1 error in 0.07 seconds =======================
+====================== 1 passed, 1 error in 0.09 seconds =======================
 _______ TestRequestBasic.test_request_addfinalizer_failing_setup_module ________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -477,7 +478,7 @@ request = <SubRequest 'myfix' for <Function test_fix>>
 E       assert 0
 
 test_request_addfinalizer_failing_setup_module.py:7: AssertionError
-=========================== 1 error in 0.02 seconds ============================
+=========================== 1 error in 0.03 seconds ============================
 _______ TestRequestBasic.test_request_addfinalizer_partial_setup_failure _______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -496,7 +497,7 @@ E       fixture 'missingarg' not found
 >       use 'pytest --fixtures [testpath]' for help on them.
 
 /tmp/pytest-of-swe-bench/pytest-0/test_request_addfinalizer_partial_setup_failure0/test_request_addfinalizer_partial_setup_failure.py:6
-====================== 1 passed, 1 error in 0.02 seconds =======================
+====================== 1 passed, 1 error in 0.03 seconds =======================
 _______ TestRequestBasic.test_request_subrequest_addfinalizer_exceptions _______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -539,7 +540,7 @@ collected 1 item
 
 test_request_fixturenames.py .                                           [100%]
 
-=========================== 1 passed in 0.06 seconds ===========================
+=========================== 1 passed in 0.10 seconds ===========================
 __________ TestRequestBasic.test_request_fixturenames_dynamic_fixture __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -559,7 +560,7 @@ collected 1 item
 
 test_funcargnames_compatattr.py .                                        [100%]
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ________________ TestRequestBasic.test_setupdecorator_and_xunit ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -572,7 +573,7 @@ test_setupdecorator_and_xunit.py::test_func PASSED                       [ 33%]
 test_setupdecorator_and_xunit.py::TestClass::test_method PASSED          [ 66%]
 test_setupdecorator_and_xunit.py::test_all PASSED                        [100%]
 
-=========================== 3 passed in 0.04 seconds ===========================
+=========================== 3 passed in 0.03 seconds ===========================
 ___________ TestRequestBasic.test_fixtures_sub_subdir_normalize_sep ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -713,7 +714,7 @@ arg1
     tests/unit/conftest.py:3: no docstring available
 
 
-========================= no tests ran in 0.04 seconds =========================
+========================= no tests ran in 0.03 seconds =========================
 ________________ TestRequestBasic.test_show_fixtures_color_yes _________________
 ----------------------------- Captured stdout call -----------------------------
 [1m============================= test session starts ==============================[0m
@@ -849,7 +850,7 @@ collected 1 item
         in python < 3.6 this is a pathlib2.Path
 
 
-[33m[1m========================= no tests ran in 0.03 seconds =========================[0m
+[33m[1m========================= no tests ran in 0.02 seconds =========================[0m
 _________________ TestRequestBasic.test_newstyle_with_request __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -859,7 +860,7 @@ collected 1 item
 
 test_newstyle_with_request.py .                                          [100%]
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 _________________ TestRequestBasic.test_setupcontext_no_param __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -897,7 +898,7 @@ collected 2 items
 
 test_accessmarker_dynamic.py ..                                          [100%]
 
-=========================== 2 passed in 0.04 seconds ===========================
+=========================== 2 passed in 0.03 seconds ===========================
 ____________________ TestFixtureUsages.test_noargfixturedec ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -907,7 +908,7 @@ collected 1 item
 
 test_noargfixturedec.py .                                                [100%]
 
-=========================== 1 passed in 0.04 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 ___________________ TestFixtureUsages.test_receives_funcargs ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -932,7 +933,7 @@ __________________________ ERROR at setup of test_add __________________________
 ScopeMismatch: You tried to access the 'function' scoped fixture 'arg1' with a 'module' scoped request object, involved factories
 test_receives_funcargs_scope_mismatch.py:6:  def arg2(arg1)
 test_receives_funcargs_scope_mismatch.py:2:  def arg1()
-=========================== 1 error in 0.03 seconds ============================
+=========================== 1 error in 0.02 seconds ============================
 _______ TestFixtureUsages.test_receives_funcargs_scope_mismatch_issue660 _______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -947,7 +948,7 @@ __________________________ ERROR at setup of test_add __________________________
 ScopeMismatch: You tried to access the 'function' scoped fixture 'arg1' with a 'module' scoped request object, involved factories
 test_receives_funcargs_scope_mismatch_issue660.py:6:  def arg2(arg1)
 test_receives_funcargs_scope_mismatch_issue660.py:2:  def arg1()
-=========================== 1 error in 0.03 seconds ============================
+=========================== 1 error in 0.02 seconds ============================
 _____________________ TestFixtureUsages.test_invalid_scope _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -969,7 +970,7 @@ collected 2 items
 
 test_funcarg_parametrized_and_used_twice.py ..                           [100%]
 
-=========================== 2 passed in 0.04 seconds ===========================
+=========================== 2 passed in 0.02 seconds ===========================
 ___ TestFixtureUsages.test_factory_uses_unknown_funcarg_as_dependency_error ____
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -994,7 +995,7 @@ E       fixture 'missing' not found
 >       use 'pytest --fixtures [testpath]' for help on them.
 
 /tmp/pytest-of-swe-bench/pytest-0/test_factory_uses_unknown_funcarg_as_dependency_error0/test_factory_uses_unknown_funcarg_as_dependency_error.py:3
-=========================== 1 error in 0.02 seconds ============================
+=========================== 1 error in 0.03 seconds ============================
 ____________ TestFixtureUsages.test_factory_setup_as_classes_fails _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1010,7 +1011,7 @@ test_factory_setup_as_classes_fails.py:5: in <module>
     raise ValueError("class fixtures not supported (maybe in the future)")
 E   ValueError: class fixtures not supported (maybe in the future)
 !!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
-=========================== 1 error in 0.24 seconds ============================
+=========================== 1 error in 0.17 seconds ============================
 _______________ TestFixtureUsages.test_request_can_be_overridden _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1026,7 +1027,7 @@ test_request_can_be_overridden.py .                                      [100%]
     warnings.warn(FIXTURE_NAMED_REQUEST)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
-===================== 1 passed, 1 warnings in 0.03 seconds =====================
+===================== 1 passed, 1 warnings in 0.02 seconds =====================
 __________________ TestFixtureUsages.test_usefixtures_marker ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1036,7 +1037,7 @@ collected 2 items
 
 test_usefixtures_marker.py ..                                            [100%]
 
-=========================== 2 passed in 0.04 seconds ===========================
+=========================== 2 passed in 0.03 seconds ===========================
 ____________________ TestFixtureUsages.test_usefixtures_ini ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1046,7 +1047,7 @@ collected 2 items
 
 test_usefixtures_ini.py ..                                               [100%]
 
-=========================== 2 passed in 0.04 seconds ===========================
+=========================== 2 passed in 0.03 seconds ===========================
 ____________ TestFixtureUsages.test_usefixtures_seen_in_showmarkers ____________
 ----------------------------- Captured stdout call -----------------------------
 @pytest.mark.filterwarnings(warning): add a warning filter to the given test. see https://docs.pytest.org/en/latest/warnings.html#pytest-mark-filterwarnings 
@@ -1074,7 +1075,7 @@ collected 1 item
 
 test_request_instance_issue203.py .                                      [100%]
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 __________ TestFixtureUsages.test_fixture_parametrized_with_iterator ___________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1098,7 +1099,7 @@ collected 2 items
 
 test_setup_functions_as_fixtures.py ..                                   [100%]
 
-=========================== 2 passed in 0.02 seconds ===========================
+=========================== 2 passed in 0.03 seconds ===========================
 __ TestFixtureManagerParseFactories.test_parsefactories_evil_objects_issue214 __
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1140,7 +1141,7 @@ collected 2 items
 package/test_x.py .                                                      [ 50%]
 package/sub/test_y.py .                                                  [100%]
 
-=========================== 2 passed in 0.10 seconds ===========================
+=========================== 2 passed in 0.09 seconds ===========================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-4.4.3.dev6+g4ccaa987d, py-1.11.0, pluggy-0.13.1
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_parsefactories_relative_node_ids0
@@ -1149,7 +1150,7 @@ collected 2 items
 ../package/test_x.py .                                                   [ 50%]
 ../package/sub/test_y.py .                                               [100%]
 
-=========================== 2 passed in 0.02 seconds ===========================
+=========================== 2 passed in 0.03 seconds ===========================
 _________ TestFixtureManagerParseFactories.test_package_xunit_fixture __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1160,7 +1161,7 @@ collected 2 items
 package/test_x.py .                                                      [ 50%]
 package2/test_x.py .                                                     [100%]
 
-=========================== 2 passed in 0.05 seconds ===========================
+=========================== 2 passed in 0.06 seconds ===========================
 ________ TestFixtureManagerParseFactories.test_package_fixture_complex _________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1181,7 +1182,7 @@ collected 3 items
 foo/__init__.py .                                                        [ 33%]
 foo/test_foo.py ..                                                       [100%]
 
-=========================== 3 passed in 0.02 seconds ===========================
+=========================== 3 passed in 0.03 seconds ===========================
 ______________ TestAutouseDiscovery.test_parsefactories_conftest _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1201,7 +1202,7 @@ collected 2 items
 
 test_two_classes_separated_autouse.py ..                                 [100%]
 
-=========================== 2 passed in 0.05 seconds ===========================
+=========================== 2 passed in 0.02 seconds ===========================
 ________________ TestAutouseDiscovery.test_setup_at_classlevel _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1211,7 +1212,7 @@ collected 2 items
 
 test_setup_at_classlevel.py ..
 
-=========================== 2 passed in 0.02 seconds ===========================
+=========================== 2 passed in 0.04 seconds ===========================
 __________________ TestAutouseDiscovery.test_callables_nocode __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1249,7 +1250,7 @@ collected 3 items
 
 test_autouse_in_module_and_two_classes.py ...                            [100%]
 
-=========================== 3 passed in 0.03 seconds ===========================
+=========================== 3 passed in 0.04 seconds ===========================
 __________ TestAutouseManagement.test_autouse_conftest_mid_directory ___________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1259,7 +1260,7 @@ collected 1 item
 
 xyz123/tests/test_app.py .
 
-=========================== 1 passed in 0.04 seconds ===========================
+=========================== 1 passed in 0.05 seconds ===========================
 _________________ TestAutouseManagement.test_funcarg_and_setup _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1279,7 +1280,7 @@ collected 2 items
 
 test_uses_parametrized_resource.py ..
 
-=========================== 2 passed in 0.02 seconds ===========================
+=========================== 2 passed in 0.03 seconds ===========================
 ___________ TestAutouseManagement.test_session_parametrized_function ___________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1352,7 +1353,7 @@ collected 2 items
 
 test_ordering_dependencies_torndown_first.py ..
 
-=========================== 2 passed in 0.02 seconds ===========================
+=========================== 2 passed in 0.03 seconds ===========================
 ___ TestAutouseManagement.test_ordering_dependencies_torndown_first[p10-p01] ___
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1372,7 +1373,7 @@ collected 2 items
 
 test_ordering_dependencies_torndown_first.py ..
 
-=========================== 2 passed in 0.02 seconds ===========================
+=========================== 2 passed in 0.03 seconds ===========================
 ___ TestAutouseManagement.test_ordering_dependencies_torndown_first[p11-p01] ___
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1382,7 +1383,7 @@ collected 2 items
 
 test_ordering_dependencies_torndown_first.py ..
 
-=========================== 2 passed in 0.02 seconds ===========================
+=========================== 2 passed in 0.03 seconds ===========================
 ______________________ TestFixtureMarker.test_parametrize ______________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1402,7 +1403,7 @@ collected 9 items
 
 test_multiple_parametrization_issue_736.py .........                     [100%]
 
-=========================== 9 passed in 0.04 seconds ===========================
+=========================== 9 passed in 0.05 seconds ===========================
 _ TestFixtureMarker.test_override_parametrized_fixture_issue_979['fixt, val'] __
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1422,7 +1423,7 @@ collected 2 items
 
 test_override_parametrized_fixture_issue_979.py ..                       [100%]
 
-=========================== 2 passed in 0.02 seconds ===========================
+=========================== 2 passed in 0.06 seconds ===========================
 _ TestFixtureMarker.test_override_parametrized_fixture_issue_979[['fixt', 'val']] _
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1432,7 +1433,7 @@ collected 2 items
 
 test_override_parametrized_fixture_issue_979.py ..                       [100%]
 
-=========================== 2 passed in 0.02 seconds ===========================
+=========================== 2 passed in 0.03 seconds ===========================
 _ TestFixtureMarker.test_override_parametrized_fixture_issue_979[('fixt', 'val')] _
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1442,7 +1443,7 @@ collected 2 items
 
 test_override_parametrized_fixture_issue_979.py ..                       [100%]
 
-=========================== 2 passed in 0.02 seconds ===========================
+=========================== 2 passed in 0.03 seconds ===========================
 _____________________ TestFixtureMarker.test_scope_session _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1452,7 +1453,7 @@ collected 3 items
 
 test_scope_session.py ...                                                [100%]
 
-=========================== 3 passed in 0.02 seconds ===========================
+=========================== 3 passed in 0.03 seconds ===========================
 ___________________ TestFixtureMarker.test_scope_session_exc ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1484,7 +1485,7 @@ test_bar.py s                                                            [ 33%]
 test_foo.py s                                                            [ 66%]
 test_real.py .                                                           [100%]
 
-===================== 1 passed, 2 skipped in 0.08 seconds ======================
+===================== 1 passed, 2 skipped in 0.09 seconds ======================
 _______________ TestFixtureMarker.test_scope_module_uses_session _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1494,7 +1495,7 @@ collected 3 items
 
 test_scope_module_uses_session.py ...                                    [100%]
 
-=========================== 3 passed in 0.04 seconds ===========================
+=========================== 3 passed in 0.03 seconds ===========================
 ______________ TestFixtureMarker.test_scope_module_and_finalizer _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1506,7 +1507,7 @@ test_mod1.py ..                                                          [ 50%]
 test_mod2.py .                                                           [ 75%]
 test_mode3.py .                                                          [100%]
 
-=========================== 4 passed in 0.07 seconds ===========================
+=========================== 4 passed in 0.10 seconds ===========================
 ________________ TestFixtureMarker.test_scope_mismatch_various _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1521,7 +1522,7 @@ ___________________________ ERROR at setup of test_1 ___________________________
 ScopeMismatch: You tried to access the 'function' scoped fixture 'arg' with a 'session' scoped request object, involved factories
 test_mod1.py:2:  def arg(request)
 conftest.py:4:  def arg(request)
-=========================== 1 error in 0.03 seconds ============================
+=========================== 1 error in 0.05 seconds ============================
 ________________ TestFixtureMarker.test_register_only_with_mark ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1531,7 +1532,7 @@ collected 1 item
 
 test_mod1.py .                                                           [100%]
 
-=========================== 1 passed in 0.04 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 _________________ TestFixtureMarker.test_parametrize_and_scope _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1544,7 +1545,7 @@ test_parametrize_and_scope.py::test_param[a] PASSED                      [ 33%]
 test_parametrize_and_scope.py::test_param[b] PASSED                      [ 66%]
 test_parametrize_and_scope.py::test_param[c] PASSED                      [100%]
 
-=========================== 3 passed in 0.04 seconds ===========================
+=========================== 3 passed in 0.03 seconds ===========================
 ____________________ TestFixtureMarker.test_scope_mismatch _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1559,7 +1560,7 @@ _______________________ ERROR at setup of test_mismatch ________________________
 ScopeMismatch: You tried to access the 'function' scoped fixture 'arg' with a 'session' scoped request object, involved factories
 test_scope_mismatch.py:2:  def arg(arg)
 conftest.py:2:  def arg(request)
-=========================== 1 error in 0.03 seconds ============================
+=========================== 1 error in 0.02 seconds ============================
 ______________ TestFixtureMarker.test_parametrize_separated_order ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1573,7 +1574,7 @@ test_parametrize_separated_order.py::test_2[1] PASSED                    [ 50%]
 test_parametrize_separated_order.py::test_1[2] PASSED                    [ 75%]
 test_parametrize_separated_order.py::test_2[2] PASSED                    [100%]
 
-=========================== 4 passed in 0.04 seconds ===========================
+=========================== 4 passed in 0.03 seconds ===========================
 _____________ TestFixtureMarker.test_module_parametrized_ordering ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1599,7 +1600,7 @@ test_mod2.py::test_func4[m2] PASSED
 test_mod1.py::test_func1[m1] PASSED
 test_mod1.py::test_func1[m2] PASSED
 
-========================== 16 passed in 0.10 seconds ===========================
+========================== 16 passed in 0.09 seconds ===========================
 _____________ TestFixtureMarker.test_dynamic_parametrized_ordering _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1617,7 +1618,7 @@ test_dynamic_parametrized_ordering.py::test2[flavor2-vlan] PASSED
 test_dynamic_parametrized_ordering.py::test[flavor1-vlan] PASSED
 test_dynamic_parametrized_ordering.py::test2[flavor1-vlan] PASSED
 
-=========================== 8 passed in 0.06 seconds ===========================
+=========================== 8 passed in 0.08 seconds ===========================
 ____________________ TestFixtureMarker.test_class_ordering _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1639,7 +1640,7 @@ test_class_ordering.py::TestClass::test_3[a-2] PASSED
 test_class_ordering.py::TestClass::test_3[b-1] PASSED
 test_class_ordering.py::TestClass::test_3[b-2] PASSED
 
-========================== 12 passed in 0.08 seconds ===========================
+========================== 12 passed in 0.06 seconds ===========================
 ____ TestFixtureMarker.test_parametrize_separated_order_higher_scope_first _____
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1661,7 +1662,7 @@ test_parametrize_separated_order_higher_scope_first.py::test_3[mod2-2] PASSED [ 
 test_parametrize_separated_order_higher_scope_first.py::test_4[mod2-1] PASSED [ 91%]
 test_parametrize_separated_order_higher_scope_first.py::test_4[mod2-2] PASSED [100%]
 
-========================== 12 passed in 0.06 seconds ===========================
+========================== 12 passed in 0.04 seconds ===========================
 [('create:1', 'create:1'),
  ('test1', 'test1'),
  ('fin:1', 'fin:1'),
@@ -1710,7 +1711,7 @@ test_parametrized_fixture_teardown_order.py::TestClass::test[1] PASSED   [ 33%]
 test_parametrized_fixture_teardown_order.py::TestClass::test[2] PASSED   [ 66%]
 test_parametrized_fixture_teardown_order.py::test_finish PASSED          [100%]
 
-=========================== 3 passed in 0.04 seconds ===========================
+=========================== 3 passed in 0.06 seconds ===========================
 ___________________ TestFixtureMarker.test_fixture_finalizer ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1720,7 +1721,7 @@ collected 1 item
 
 subdir/test_overridden_fixture_finalizer.py .Finalized
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.02 seconds ===========================
 _____________ TestFixtureMarker.test_class_scope_with_normal_tests _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1730,7 +1731,7 @@ collected 3 items
 
 test_class_scope_with_normal_tests.py ...                                [100%]
 
-=========================== 3 passed in 0.04 seconds ===========================
+=========================== 3 passed in 0.02 seconds ===========================
 ___________________ TestFixtureMarker.test_request_is_clean ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1740,7 +1741,7 @@ collected 2 items
 
 test_request_is_clean.py ..
 
-=========================== 2 passed in 0.03 seconds ===========================
+=========================== 2 passed in 0.02 seconds ===========================
 ____________ TestFixtureMarker.test_parametrize_separated_lifecycle ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1754,7 +1755,7 @@ test_parametrize_separated_lifecycle.py::test_2[1] PASSED
 test_parametrize_separated_lifecycle.py::test_1[2] PASSED
 test_parametrize_separated_lifecycle.py::test_2[2] PASSED
 
-=========================== 4 passed in 0.03 seconds ===========================
+=========================== 4 passed in 0.02 seconds ===========================
 [1, 1, 'fin1', 2, 2, 'fin2']
 _____ TestFixtureMarker.test_parametrize_function_scoped_finalizers_called _____
 ----------------------------- Captured stdout call -----------------------------
@@ -1784,7 +1785,7 @@ test_finalizer_order_on_parametrization.py::test_baz[1] PASSED
 test_finalizer_order_on_parametrization.py::test_other PASSEDfinalizing base
 
 
-=========================== 3 passed in 0.03 seconds ===========================
+=========================== 3 passed in 0.02 seconds ===========================
 _____ TestFixtureMarker.test_finalizer_order_on_parametrization[function] ______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1798,7 +1799,7 @@ test_finalizer_order_on_parametrization.py::test_baz[1] PASSEDfinalizing base
 
 test_finalizer_order_on_parametrization.py::test_other PASSED
 
-=========================== 3 passed in 0.03 seconds ===========================
+=========================== 3 passed in 0.05 seconds ===========================
 ______ TestFixtureMarker.test_finalizer_order_on_parametrization[module] _______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1812,7 +1813,7 @@ test_finalizer_order_on_parametrization.py::test_baz[1] PASSED
 test_finalizer_order_on_parametrization.py::test_other PASSEDfinalizing base
 
 
-=========================== 3 passed in 0.03 seconds ===========================
+=========================== 3 passed in 0.02 seconds ===========================
 _________ TestFixtureMarker.test_class_scope_parametrization_ordering __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1822,7 +1823,7 @@ collected 6 items
 
 test_class_scope_parametrization_ordering.py ......                      [100%]
 
-=========================== 6 passed in 0.04 seconds ===========================
+=========================== 6 passed in 0.05 seconds ===========================
 ______________ TestFixtureMarker.test_parametrize_setup_function _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1848,7 +1849,7 @@ collected 1 item
 
 test_fixture_marked_function_not_collected_as_test.py .                  [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 ____________________ TestFixtureMarker.test_params_and_ids _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1872,7 +1873,7 @@ collecting ... collected 2 items
 test_params_and_ids_yieldfixture.py::test_foo[alpha] PASSED              [ 50%]
 test_params_and_ids_yieldfixture.py::test_foo[beta] PASSED               [100%]
 
-=========================== 2 passed in 0.02 seconds ===========================
+=========================== 2 passed in 0.04 seconds ===========================
 ___________ TestFixtureMarker.test_deterministic_fixture_collection ____________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.4/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_deterministic_fixture_collection0/runpytest-0 -v
@@ -1896,7 +1897,7 @@ test_deterministic_fixture_collection.py::test_foo[banansda-C] PASSED    [ 83%]
 test_deterministic_fixture_collection.py::test_foo[banansda-B] PASSED    [ 91%]
 test_deterministic_fixture_collection.py::test_foo[banansda-A] PASSED    [100%]
 
-========================== 12 passed in 0.04 seconds ===========================
+========================== 12 passed in 0.10 seconds ===========================
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__4.4/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_deterministic_fixture_collection0/runpytest-1 -v
      in: /tmp/pytest-of-swe-bench/pytest-0/test_deterministic_fixture_collection0
 ============================= test session starts ==============================
@@ -1918,7 +1919,7 @@ test_deterministic_fixture_collection.py::test_foo[banansda-C] PASSED    [ 83%]
 test_deterministic_fixture_collection.py::test_foo[banansda-B] PASSED    [ 91%]
 test_deterministic_fixture_collection.py::test_foo[banansda-A] PASSED    [100%]
 
-========================== 12 passed in 0.04 seconds ===========================
+========================== 12 passed in 0.07 seconds ===========================
 ___ TestRequestScopeAccess.test_setup[session--fspath class function module] ___
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1938,7 +1939,7 @@ collected 1 item
 
 test_setup.py .                                                          [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 _____ TestRequestScopeAccess.test_setup[class-module fspath cls-function] ______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1958,7 +1959,7 @@ collected 1 item
 
 test_setup.py .                                                          [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.04 seconds ===========================
 __ TestRequestScopeAccess.test_funcarg[session--fspath class function module] __
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1978,7 +1979,7 @@ collected 1 item
 
 test_funcarg.py .                                                        [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.05 seconds ===========================
 ____ TestRequestScopeAccess.test_funcarg[class-module fspath cls-function] _____
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1988,7 +1989,7 @@ collected 1 item
 
 test_funcarg.py .                                                        [100%]
 
-=========================== 1 passed in 0.03 seconds ===========================
+=========================== 1 passed in 0.04 seconds ===========================
 __ TestRequestScopeAccess.test_funcarg[function-module fspath cls function-] ___
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1998,7 +1999,7 @@ collected 1 item
 
 test_funcarg.py .                                                        [100%]
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.05 seconds ===========================
 __________________ TestErrors.test_subfactory_missing_funcarg __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -2020,7 +2021,7 @@ E       fixture 'qwe123' not found
 >       use 'pytest --fixtures [testpath]' for help on them.
 
 /tmp/pytest-of-swe-bench/pytest-0/test_subfactory_missing_funcarg0/test_subfactory_missing_funcarg.py:2
-=========================== 1 error in 0.02 seconds ============================
+=========================== 1 error in 0.04 seconds ============================
 ______________ TestErrors.test_issue498_fixture_finalizer_failing ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -2045,7 +2046,7 @@ _________________________ ERROR at teardown of test_2 __________________________
 E       KeyError
 
 test_issue498_fixture_finalizer_failing.py:5: KeyError
-====================== 3 passed, 2 error in 0.04 seconds =======================
+====================== 3 passed, 2 error in 0.06 seconds =======================
 __________________ TestErrors.test_setupfunc_missing_funcarg ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -2203,7 +2204,7 @@ tmp_path
         in python < 3.6 this is a pathlib2.Path
 
 
-========================= no tests ran in 0.01 seconds =========================
+========================= no tests ran in 0.00 seconds =========================
 _________________ TestShowFixtures.test_show_fixtures_verbose __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -2340,7 +2341,7 @@ tmp_path -- /home/swe-bench/pytest-dev__pytest/src/_pytest/tmpdir.py:184
         in python < 3.6 this is a pathlib2.Path
 
 
-========================= no tests ran in 0.01 seconds =========================
+========================= no tests ran in 0.00 seconds =========================
 ________________ TestShowFixtures.test_show_fixtures_testmodule ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -2909,7 +2910,7 @@ arg1
     line2
 
 
-========================= no tests ran in 0.03 seconds =========================
+========================= no tests ran in 0.02 seconds =========================
 _______________ TestShowFixtures.test_show_fixtures_indented_doc _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3337,7 +3338,7 @@ fixture1
         indented line
 
 
-========================= no tests ran in 0.02 seconds =========================
+========================= no tests ran in 0.03 seconds =========================
 _____________ TestShowFixtures.test_show_fixtures_different_files ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3656,7 +3657,7 @@ arg1 = 1
 E       assert 0
 
 test_simple.py:12: AssertionError
-====================== 1 failed, 1 passed in 0.03 seconds ======================
+====================== 1 failed, 1 passed in 0.06 seconds ======================
 __________ TestContextManagerFixtureFuncs.test_simple[yield_fixture] ___________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3683,7 +3684,7 @@ arg1 = 1
 E       assert 0
 
 test_simple.py:12: AssertionError
-====================== 1 failed, 1 passed in 0.04 seconds ======================
+====================== 1 failed, 1 passed in 0.07 seconds ======================
 _____________ TestContextManagerFixtureFuncs.test_scoped[fixture] ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3711,7 +3712,7 @@ test1 1
 .teardown
 
 
-=========================== 2 passed in 0.04 seconds ===========================
+=========================== 2 passed in 0.05 seconds ===========================
 _________ TestContextManagerFixtureFuncs.test_setup_exception[fixture] _________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3730,7 +3731,7 @@ ___________________________ ERROR at setup of test_1 ___________________________
 E       NameError: name 'pytest' is not defined
 
 test_setup_exception.py:4: NameError
-=========================== 1 error in 0.04 seconds ============================
+=========================== 1 error in 0.05 seconds ============================
 ______ TestContextManagerFixtureFuncs.test_setup_exception[yield_fixture] ______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3749,7 +3750,7 @@ ___________________________ ERROR at setup of test_1 ___________________________
 E       NameError: name 'pytest' is not defined
 
 test_setup_exception.py:4: NameError
-=========================== 1 error in 0.04 seconds ============================
+=========================== 1 error in 0.07 seconds ============================
 _______ TestContextManagerFixtureFuncs.test_teardown_exception[fixture] ________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3769,7 +3770,7 @@ _________________________ ERROR at teardown of test_1 __________________________
 E       NameError: name 'pytest' is not defined
 
 test_teardown_exception.py:5: NameError
-====================== 1 passed, 1 error in 0.06 seconds =======================
+====================== 1 passed, 1 error in 0.05 seconds =======================
 ____ TestContextManagerFixtureFuncs.test_teardown_exception[yield_fixture] _____
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3808,7 +3809,7 @@ yield_fixture function has more than one 'yield':
         yield 1
         yield 2
 /tmp/pytest-of-swe-bench/pytest-0/test_yields_more_than_one0/test_yields_more_than_one.py:2
-====================== 1 passed, 1 error in 0.03 seconds =======================
+====================== 1 passed, 1 error in 0.05 seconds =======================
 ___ TestContextManagerFixtureFuncs.test_yields_more_than_one[yield_fixture] ____
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3849,7 +3850,7 @@ collected 1 item
 test_custom_name.py mew
 .
 
-=========================== 1 passed in 0.05 seconds ===========================
+=========================== 1 passed in 0.04 seconds ===========================
 ______________ TestParameterizedSubRequest.test_call_from_fixture ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3869,7 +3870,7 @@ test_call_from_fixture.py:4
 
 Requested here:
 test_call_from_fixture.py:9
-=========================== 1 error in 0.04 seconds ============================
+=========================== 1 error in 0.03 seconds ============================
 _______________ TestParameterizedSubRequest.test_call_from_test ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3909,7 +3910,7 @@ conftest.py:4
 
 Requested here:
 test_external_fixture.py:2
-=========================== 1 failed in 0.04 seconds ===========================
+=========================== 1 failed in 0.03 seconds ===========================
 ______________ TestParameterizedSubRequest.test_non_relative_path ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3929,7 +3930,7 @@ Requested fixture 'fix_with_param' defined in:
 
 Requested here:
 test_foos.py:4
-=========================== 1 failed in 0.03 seconds ===========================
+=========================== 1 failed in 0.04 seconds ===========================
 ______________ test_pytest_fixture_setup_and_post_finalizer_hook _______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3944,7 +3945,7 @@ TEST test_func
 ROOT finalizer hook called for my_fixture from test_func
 
 
-=========================== 1 passed in 0.02 seconds ===========================
+=========================== 1 passed in 0.03 seconds ===========================
 ____________ TestScopeOrdering.test_func_closure_module_auto[mark] _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -3992,7 +3993,7 @@ collected 1 item
 <Module test_func_closure_module.py>
   <Function test_func>
 
-========================= no tests ran in 0.02 seconds =========================
+========================= no tests ran in 0.03 seconds =========================
 _____________ TestScopeOrdering.test_func_closure_scopes_reordered _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -4003,7 +4004,7 @@ collected 1 item
   <Class Test>
       <Function test_func>
 
-========================= no tests ran in 0.04 seconds =========================
+========================= no tests ran in 0.03 seconds =========================
 _______ TestScopeOrdering.test_func_closure_same_scope_closer_root_first _______
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -4014,7 +4015,7 @@ collected 1 item
   <Module test_func.py>
     <Function test_func>
 
-========================= no tests ran in 0.04 seconds =========================
+========================= no tests ran in 0.07 seconds =========================
 ____________ TestScopeOrdering.test_func_closure_all_scopes_complex ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -4026,7 +4027,7 @@ collected 1 item
     <Class Test>
         <Function test_func>
 
-========================= no tests ran in 0.02 seconds =========================
+========================= no tests ran in 0.05 seconds =========================
 ___________________ TestScopeOrdering.test_multiple_packages ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -4037,7 +4038,7 @@ collected 2 items
 root/sub1/test_1.py .                                                    [ 50%]
 root/sub2/test_2.py .                                                    [100%]
 
-=========================== 2 passed in 0.09 seconds ===========================
+=========================== 2 passed in 0.14 seconds ===========================
 =========================== short test summary info ============================
 XFAIL testing/python/fixtures.py::TestAutouseDiscovery::test_setup_enabled_functionnode
   'enabled' feature not implemented
@@ -4213,7 +4214,7 @@ PASSED testing/python/fixtures.py::TestScopeOrdering::test_func_closure_scopes_r
 PASSED testing/python/fixtures.py::TestScopeOrdering::test_func_closure_same_scope_closer_root_first
 PASSED testing/python/fixtures.py::TestScopeOrdering::test_func_closure_all_scopes_complex
 PASSED testing/python/fixtures.py::TestScopeOrdering::test_multiple_packages
-==================== 172 passed, 1 xfailed in 16.12 seconds ====================
+==================== 172 passed, 1 xfailed in 19.60 seconds ====================
 
  
 [pytest-dev__pytest__4.4] [pytest-dev__pytest-5221] Return Code: 0 

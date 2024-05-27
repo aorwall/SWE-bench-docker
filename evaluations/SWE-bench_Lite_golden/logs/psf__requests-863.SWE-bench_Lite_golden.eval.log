@@ -53,7 +53,7 @@ Applied patch tests/test_requests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_requests.py;
 [psf__requests__0.14] [psf__requests-863] Command: pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_requests.py 
-[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[psf__requests__0.14] [psf__requests-863] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [psf__requests__0.14] [psf__requests-863] Std. Output:
 ============================= test session starts ==============================
 collected 76 items
@@ -144,7 +144,7 @@ FAILED tests/test_requests.py::RequestsTestSuite::test_session_cookies_with_retu
 FAILED tests/test_requests.py::RequestsTestSuite::test_session_persistent_cookies
 FAILED tests/test_requests.py::RequestsTestSuite::test_str_data_content_type
 FAILED tests/test_requests.py::RequestsTestSuite::test_unpickled_session_requests
-=================== 7 failed, 69 passed, 1 warning in 34.38s ===================
+=================== 7 failed, 69 passed, 1 warning in 36.59s ===================
  
 [psf__requests__0.14] [psf__requests-863] Return Code: 1 
 

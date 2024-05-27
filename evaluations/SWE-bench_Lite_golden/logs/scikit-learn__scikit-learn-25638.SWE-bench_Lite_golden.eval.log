@@ -67,7 +67,7 @@ Applied patch sklearn/utils/tests/test_multiclass.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  pytest -rA --tb=no -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py;
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Command: pytest -rA --tb=no -p no:cacheprovider sklearn/metrics/tests/test_classification.py sklearn/preprocessing/tests/test_label.py sklearn/utils/tests/test_multiclass.py 
-[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Std. Output:
 [1m============================= test session starts ==============================[0m
 platform linux -- Python 3.9.19, pytest-8.2.0, pluggy-1.5.0
@@ -288,7 +288,7 @@ sklearn/utils/tests/test_multiclass.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m
 [32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_safe_split_with_precomputed_kernel[0m
 [32mPASSED[0m sklearn/utils/tests/test_multiclass.py::[1mtest_ovr_decision_function[0m
 [33mSKIPPED[0m [1] sklearn/metrics/tests/test_classification.py:2565: Set SKLEARN_RUN_FLOAT32_TESTS=1 to run float32 dtype tests
-[33m================= [32m204 passed[0m, [33m[1m1 skipped[0m, [33m[1m150 warnings[0m[33m in 3.95s[0m[33m =================[0m
+[33m================ [32m204 passed[0m, [33m[1m1 skipped[0m, [33m[1m150 warnings[0m[33m in 11.21s[0m[33m =================[0m
  
 [scikit-learn__scikit-learn__1.3] [scikit-learn__scikit-learn-25638] Return Code: 0 
 

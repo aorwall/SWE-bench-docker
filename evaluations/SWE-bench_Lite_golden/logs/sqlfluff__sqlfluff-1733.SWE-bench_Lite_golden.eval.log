@@ -1,8 +1,9 @@
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Task Metadata:
 	- Instance ID: sqlfluff__sqlfluff-1733
 	- Testbed: sqlfluff__sqlfluff__0.6
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Command: git -c advice.detachedHead=false checkout a1579a16b1d8913d9d7c7d12add374a290bcc78c 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Std. Output:
@@ -48,9 +49,9 @@ Applied patch test/rules/std_L016_L36_combo.py => test/rules/std_L016_L36_combo_
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Return Code: 0 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA --tb=no -p no:cacheprovider test/rules/std_L003_L036_L039_combo_test.py test/rules/std_L016_L36_combo_test.py;
+Test Script: conda run -n sqlfluff__sqlfluff__0.6  pytest --no-header -rA --tb=no -p no:cacheprovider test/rules/std_L003_L036_L039_combo_test.py test/rules/std_L016_L36_combo_test.py;
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Command: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA --tb=no -p no:cacheprovider test/rules/std_L003_L036_L039_combo_test.py test/rules/std_L016_L36_combo_test.py 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Std. Output:
 ============================= test session starts ==============================
 collected 4 items
@@ -69,7 +70,7 @@ PASSED test/rules/std_L003_L036_L039_combo_test.py::test__rules__std_L003_L036_L
 PASSED test/rules/std_L016_L36_combo_test.py::test__rules__std_L016_L036_long_line_lint
 PASSED test/rules/std_L016_L36_combo_test.py::test__rules__std_L016_L036_long_line_fix
 PASSED test/rules/std_L016_L36_combo_test.py::test__rules__std_L016_L036_long_line_fix2
-========================= 4 passed, 1 warning in 1.48s =========================
+========================= 4 passed, 1 warning in 2.52s =========================
 
  
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1733] Return Code: 0 

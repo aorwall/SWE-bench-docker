@@ -49,7 +49,7 @@ Applied patch tests/expressions/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 expressions.tests;
 [django__django__4.1] [django__django-15320] Command: ./tests/runtests.py --verbosity 2 expressions.tests 
-[django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.1] [django__django-15320] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
@@ -97,37 +97,35 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 System check identified no issues (0 silenced).
-test_optimizations (expressions.tests.ExistsTests) ... ok
 test_and (expressions.tests.CombinableTests) ... ok
 test_negation (expressions.tests.CombinableTests) ... ok
 test_or (expressions.tests.CombinableTests) ... ok
 test_reversed_and (expressions.tests.CombinableTests) ... ok
 test_reversed_or (expressions.tests.CombinableTests) ... ok
-test_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
-test_non_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
-test_equal (expressions.tests.OrderByTests) ... ok
-test_hash (expressions.tests.OrderByTests) ... ok
-test_F_reuse (expressions.tests.ExpressionsTests) ... ok
-test_insensitive_patterns_escape (expressions.tests.ExpressionsTests)
-Special characters (e.g. %, _ and \) stored in database are ... ok
-test_patterns_escape (expressions.tests.ExpressionsTests)
-Special characters (e.g. %, _ and \) stored in database are ... ok
-test_equal (expressions.tests.SimpleExpressionTests) ... ok
-test_hash (expressions.tests.SimpleExpressionTests) ... ok
-test_resolve_output_field (expressions.tests.CombinedExpressionTests) ... ok
-test_aggregates (expressions.tests.ReprTests) ... ok
-test_distinct_aggregates (expressions.tests.ReprTests) ... ok
-test_expressions (expressions.tests.ReprTests) ... ok
-test_filtered_aggregates (expressions.tests.ReprTests) ... ok
-test_functions (expressions.tests.ReprTests) ... ok
 test_deconstruct (expressions.tests.FTests) ... ok
 test_deepcopy (expressions.tests.FTests) ... ok
 test_equal (expressions.tests.FTests) ... ok
 test_hash (expressions.tests.FTests) ... ok
 test_not_equal_Value (expressions.tests.FTests) ... ok
+test_equal (expressions.tests.OrderByTests) ... ok
+test_hash (expressions.tests.OrderByTests) ... ok
+test_aggregates (expressions.tests.ReprTests) ... ok
+test_distinct_aggregates (expressions.tests.ReprTests) ... ok
+test_expressions (expressions.tests.ReprTests) ... ok
+test_filtered_aggregates (expressions.tests.ReprTests) ... ok
+test_functions (expressions.tests.ReprTests) ... ok
+test_equal (expressions.tests.SimpleExpressionTests) ... ok
+test_hash (expressions.tests.SimpleExpressionTests) ... ok
+test_optimizations (expressions.tests.ExistsTests) ... ok
+test_resolve_output_field (expressions.tests.CombinedExpressionTests) ... ok
 test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
 test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
 test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
+test_F_reuse (expressions.tests.ExpressionsTests) ... ok
+test_insensitive_patterns_escape (expressions.tests.ExpressionsTests)
+Special characters (e.g. %, _ and \) stored in database are ... ok
+test_patterns_escape (expressions.tests.ExpressionsTests)
+Special characters (e.g. %, _ and \) stored in database are ... ok
 test_complex_expressions (expressions.tests.ExpressionsNumericTests)
 Complex expressions of different connection types are possible. ... ok
 test_decimal_expression (expressions.tests.ExpressionsNumericTests) ... ok
@@ -138,6 +136,8 @@ test_filter_not_equals_other_field (expressions.tests.ExpressionsNumericTests)
 We can filter for objects, where a value is not equals the value ... ok
 test_increment_value (expressions.tests.ExpressionsNumericTests)
 We can increment a value of all objects in a query set. ... ok
+test_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
+test_non_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
 test_compile_unresolved (expressions.tests.ValueTests) ... ok
 test_deconstruct (expressions.tests.ValueTests) ... ok
 test_deconstruct_output_field (expressions.tests.ValueTests) ... ok
@@ -153,6 +153,13 @@ test_resolve_output_field (expressions.tests.ValueTests) ... ok
 test_resolve_output_field_failure (expressions.tests.ValueTests) ... ok
 test_update_TimeField_using_Value (expressions.tests.ValueTests) ... ok
 test_update_UUIDField_using_Value (expressions.tests.ValueTests) ... ok
+test_complex_expressions_do_not_introduce_sql_injection_via_untrusted_string_inclusion (expressions.tests.IterableLookupInnerExpressionsTests)
+This tests that SQL injection isn't possible using compilation of ... ok
+test_expressions_in_lookups_join_choice (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_in_lookup_allows_F_expressions_and_expressions_for_datetimes (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_in_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_range_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_range_lookup_namedtuple (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
 test_lefthand_addition (expressions.tests.ExpressionOperatorTests) ... ok
 test_lefthand_bitwise_and (expressions.tests.ExpressionOperatorTests) ... ok
 test_lefthand_bitwise_left_shift_operator (expressions.tests.ExpressionOperatorTests) ... ok
@@ -175,38 +182,6 @@ test_right_hand_modulo (expressions.tests.ExpressionOperatorTests) ... ok
 test_right_hand_multiplication (expressions.tests.ExpressionOperatorTests) ... ok
 test_right_hand_subtraction (expressions.tests.ExpressionOperatorTests) ... ok
 test_righthand_power (expressions.tests.ExpressionOperatorTests) ... ok
-test_complex_expressions_do_not_introduce_sql_injection_via_untrusted_string_inclusion (expressions.tests.IterableLookupInnerExpressionsTests)
-This tests that SQL injection isn't possible using compilation of ... ok
-test_expressions_in_lookups_join_choice (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_in_lookup_allows_F_expressions_and_expressions_for_datetimes (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_in_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_range_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_range_lookup_namedtuple (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_date_case_subtraction (expressions.tests.FTimeDeltaTests) ... ok
-test_date_comparison (expressions.tests.FTimeDeltaTests) ... ok
-test_date_minus_duration (expressions.tests.FTimeDeltaTests) ... ok
-test_date_subquery_subtraction (expressions.tests.FTimeDeltaTests) ... ok
-test_date_subtraction (expressions.tests.FTimeDeltaTests) ... ok
-test_datetime_subquery_subtraction (expressions.tests.FTimeDeltaTests) ... ok
-test_datetime_subtraction (expressions.tests.FTimeDeltaTests) ... ok
-test_datetime_subtraction_microseconds (expressions.tests.FTimeDeltaTests) ... ok
-test_delta_add (expressions.tests.FTimeDeltaTests) ... ok
-test_delta_subtract (expressions.tests.FTimeDeltaTests) ... ok
-test_delta_update (expressions.tests.FTimeDeltaTests) ... ok
-test_duration_expressions (expressions.tests.FTimeDeltaTests) ... ok
-test_duration_with_datetime (expressions.tests.FTimeDeltaTests) ... ok
-test_duration_with_datetime_microseconds (expressions.tests.FTimeDeltaTests) ... ok
-test_durationfield_add (expressions.tests.FTimeDeltaTests) ... ok
-test_durationfield_multiply_divide (expressions.tests.FTimeDeltaTests) ... ok
-test_exclude (expressions.tests.FTimeDeltaTests) ... ok
-test_invalid_operator (expressions.tests.FTimeDeltaTests) ... ok
-test_mixed_comparisons1 (expressions.tests.FTimeDeltaTests) ... expected failure
-test_mixed_comparisons2 (expressions.tests.FTimeDeltaTests) ... ok
-test_multiple_query_compilation (expressions.tests.FTimeDeltaTests) ... ok
-test_negative_timedelta_update (expressions.tests.FTimeDeltaTests) ... ok
-test_query_clone (expressions.tests.FTimeDeltaTests) ... ok
-test_time_subquery_subtraction (expressions.tests.FTimeDeltaTests) ... ok
-test_time_subtraction (expressions.tests.FTimeDeltaTests) ... ok
 test_aggregate_rawsql_annotation (expressions.tests.BasicExpressionsTests) ... ok
 test_aggregate_subquery_annotation (expressions.tests.BasicExpressionsTests) ... ok
 test_annotate_values_aggregate (expressions.tests.BasicExpressionsTests) ... ok
@@ -269,9 +244,34 @@ test_update_inherited_field_value (expressions.tests.BasicExpressionsTests) ... 
 test_update_with_fk (expressions.tests.BasicExpressionsTests) ... ok
 test_update_with_none (expressions.tests.BasicExpressionsTests) ... ok
 test_uuid_pk_subquery (expressions.tests.BasicExpressionsTests) ... ok
+test_date_case_subtraction (expressions.tests.FTimeDeltaTests) ... ok
+test_date_comparison (expressions.tests.FTimeDeltaTests) ... ok
+test_date_minus_duration (expressions.tests.FTimeDeltaTests) ... ok
+test_date_subquery_subtraction (expressions.tests.FTimeDeltaTests) ... ok
+test_date_subtraction (expressions.tests.FTimeDeltaTests) ... ok
+test_datetime_subquery_subtraction (expressions.tests.FTimeDeltaTests) ... ok
+test_datetime_subtraction (expressions.tests.FTimeDeltaTests) ... ok
+test_datetime_subtraction_microseconds (expressions.tests.FTimeDeltaTests) ... ok
+test_delta_add (expressions.tests.FTimeDeltaTests) ... ok
+test_delta_subtract (expressions.tests.FTimeDeltaTests) ... ok
+test_delta_update (expressions.tests.FTimeDeltaTests) ... ok
+test_duration_expressions (expressions.tests.FTimeDeltaTests) ... ok
+test_duration_with_datetime (expressions.tests.FTimeDeltaTests) ... ok
+test_duration_with_datetime_microseconds (expressions.tests.FTimeDeltaTests) ... ok
+test_durationfield_add (expressions.tests.FTimeDeltaTests) ... ok
+test_durationfield_multiply_divide (expressions.tests.FTimeDeltaTests) ... ok
+test_exclude (expressions.tests.FTimeDeltaTests) ... ok
+test_invalid_operator (expressions.tests.FTimeDeltaTests) ... ok
+test_mixed_comparisons1 (expressions.tests.FTimeDeltaTests) ... expected failure
+test_mixed_comparisons2 (expressions.tests.FTimeDeltaTests) ... ok
+test_multiple_query_compilation (expressions.tests.FTimeDeltaTests) ... ok
+test_negative_timedelta_update (expressions.tests.FTimeDeltaTests) ... ok
+test_query_clone (expressions.tests.FTimeDeltaTests) ... ok
+test_time_subquery_subtraction (expressions.tests.FTimeDeltaTests) ... ok
+test_time_subtraction (expressions.tests.FTimeDeltaTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 164 tests in 0.564s
+Ran 164 tests in 1.665s
 
 OK (skipped=1, expected failures=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

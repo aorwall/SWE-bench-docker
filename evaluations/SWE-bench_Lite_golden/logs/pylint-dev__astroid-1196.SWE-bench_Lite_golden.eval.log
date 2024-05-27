@@ -1,8 +1,9 @@
 [pylint-dev__astroid__2.12] [pylint-dev__astroid-1196] Task Metadata:
 	- Instance ID: pylint-dev__astroid-1196
 	- Testbed: pylint-dev__astroid__2.12
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pylint-dev__astroid__2.12] [pylint-dev__astroid-1196] Command: git -c advice.detachedHead=false checkout 39c2a9805970ca57093d32bbaf0e6a63e05041d8 
 [pylint-dev__astroid__2.12] [pylint-dev__astroid-1196] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pylint-dev__astroid__2.12] [pylint-dev__astroid-1196] Std. Output:
@@ -51,9 +52,9 @@ Applied patch tests/unittest_python3.py cleanly.
 [pylint-dev__astroid__2.12] [pylint-dev__astroid-1196] Return Code: 0 
 [pylint-dev__astroid__2.12] [pylint-dev__astroid-1196] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pylint-dev__astroid__2.12 pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_python3.py;
+Test Script: conda run -n pylint-dev__astroid__2.12  pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_python3.py;
 [pylint-dev__astroid__2.12] [pylint-dev__astroid-1196] Command: conda run -n pylint-dev__astroid__2.12 pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_python3.py 
-[pylint-dev__astroid__2.12] [pylint-dev__astroid-1196] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pylint-dev__astroid__2.12] [pylint-dev__astroid-1196] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pylint-dev__astroid__2.12] [pylint-dev__astroid-1196] Std. Output:
 ============================= test session starts ==============================
 collected 26 items
@@ -87,7 +88,7 @@ PASSED tests/unittest_python3.py::Python3TC::test_unpacking_in_dicts
 PASSED tests/unittest_python3.py::Python3TC::test_yield_from
 PASSED tests/unittest_python3.py::Python3TC::test_yield_from_as_string
 PASSED tests/unittest_python3.py::Python3TC::test_yield_from_is_generator
-============================== 26 passed in 1.08s ==============================
+============================== 26 passed in 1.27s ==============================
 
  
 [pylint-dev__astroid__2.12] [pylint-dev__astroid-1196] Return Code: 0 

@@ -49,7 +49,7 @@ Applied patch tests/utils_tests/test_numberformat.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 utils_tests.test_numberformat;
 [django__django__4.2] [django__django-16046] Command: ./tests/runtests.py --verbosity 2 utils_tests.test_numberformat 
-[django__django__4.2] [django__django-16046] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.2] [django__django-16046] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.2] [django__django-16046] Std. Output:
 test_decimal_numbers (utils_tests.test_numberformat.TestNumberFormat) ... ok
 test_decimal_subclass (utils_tests.test_numberformat.TestNumberFormat) ... ok
@@ -60,7 +60,7 @@ test_format_string (utils_tests.test_numberformat.TestNumberFormat) ... ok
 test_large_number (utils_tests.test_numberformat.TestNumberFormat) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.014s
+Ran 7 tests in 0.017s
 
 OK
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes

@@ -1,8 +1,9 @@
 [sympy__sympy__1.5] [sympy__sympy-17139] Task Metadata:
 	- Instance ID: sympy__sympy-17139
 	- Testbed: sympy__sympy__1.5
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.5] [sympy__sympy-17139] Command: git -c advice.detachedHead=false checkout 1d3327b8e90a186df6972991963a5ae87053259d 
 [sympy__sympy__1.5] [sympy__sympy-17139] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.5] [sympy__sympy-17139] Std. Output:
@@ -58,9 +59,9 @@ Applied patch sympy/simplify/tests/test_simplify.py cleanly.
 [sympy__sympy__1.5] [sympy__sympy-17139] Return Code: 0 
 [sympy__sympy__1.5] [sympy__sympy-17139] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.5 bin/test -C --verbose sympy/simplify/tests/test_fu.py sympy/simplify/tests/test_simplify.py;
+Test Script: conda run -n sympy__sympy__1.5  bin/test -C --verbose sympy/simplify/tests/test_fu.py sympy/simplify/tests/test_simplify.py;
 [sympy__sympy__1.5] [sympy__sympy-17139] Command: conda run -n sympy__sympy__1.5 bin/test -C --verbose sympy/simplify/tests/test_fu.py sympy/simplify/tests/test_simplify.py 
-[sympy__sympy__1.5] [sympy__sympy-17139] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.5] [sympy__sympy-17139] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.5] [sympy__sympy-17139] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.5/bin/python  (3.9.19-final-0) [CPython]
@@ -68,8 +69,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        89236226
-hash randomization: on (PYTHONHASHSEED=2159638196)
+random seed:        24053911
+hash randomization: on (PYTHONHASHSEED=2625640288)
 
 sympy/simplify/tests/test_fu.py[27] 
 test_TR1 ok
@@ -150,11 +151,10 @@ test_issue_7971 ok                                                          [OK]
 
 
 ________________________________ slowest tests _________________________________
-test_simplify_ratio - Took 10.248 seconds
-test_besselsimp - Took 15.665 seconds
-test_simplify_other - Took 21.148 seconds
-test_simplify_expr - Took 89.919 seconds
-======= tests finished: 71 passed, 2 expected to fail, in 191.53 seconds =======
+test_besselsimp - Took 12.276 seconds
+test_simplify_other - Took 21.012 seconds
+test_simplify_expr - Took 112.059 seconds
+======= tests finished: 71 passed, 2 expected to fail, in 198.20 seconds =======
 
  
 [sympy__sympy__1.5] [sympy__sympy-17139] Return Code: 0 

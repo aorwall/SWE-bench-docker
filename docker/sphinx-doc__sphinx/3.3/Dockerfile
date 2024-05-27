@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-sphinx-doc_sphinx:bookworm-slim
 RUN git -c advice.detachedHead=false checkout 3b85187ffa3401e88582073c23188c147857a8a3
 
 RUN conda create -n sphinx-doc__sphinx__3.3 python=3.9  -y
-
 SHELL ["conda", "run", "-n", "sphinx-doc__sphinx__3.3", "/bin/bash", "-c"]
 
 RUN sed -i 's/pytest/pytest -rA/' tox.ini
@@ -26,10 +25,10 @@ RUN pip install -e .[test]
 RUN git checkout 3b85187ffa3401e88582073c23188c147857a8a3 .
 
 ENV TESTBED_NAME=sphinx-doc__sphinx__3.3
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

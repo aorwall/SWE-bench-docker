@@ -1,8 +1,9 @@
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Task Metadata:
 	- Instance ID: matplotlib__matplotlib-23476
 	- Testbed: matplotlib__matplotlib__3.5
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Command: git -c advice.detachedHead=false checkout 33a0599711d26dc2b79f851c6daed4947df7c167 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Std. Output:
@@ -51,9 +52,9 @@ Applied patch lib/matplotlib/tests/test_figure.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n matplotlib__matplotlib__3.5 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_figure.py;
+Test Script: conda run -n matplotlib__matplotlib__3.5  pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_figure.py;
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Command: conda run -n matplotlib__matplotlib__3.5 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_figure.py 
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Std. Output:
 ============================= test session starts ==============================
 collected 112 items
@@ -170,7 +171,7 @@ PASSED lib/matplotlib/tests/test_figure.py::test_deepcopy
 PASSED lib/matplotlib/tests/test_figure.py::test_unpickle_with_device_pixel_ratio
 SKIPPED [6] ../miniconda3/envs/matplotlib__matplotlib__3.5/lib/python3.11/contextlib.py:81: Cannot compare svg files on this system
 SKIPPED [1] lib/matplotlib/testing/compare.py:285: Don't know how to convert .svg files to png
-======================= 105 passed, 7 skipped in 45.59s ========================
+======================= 105 passed, 7 skipped in 35.80s ========================
 
  
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23476] Return Code: 0 

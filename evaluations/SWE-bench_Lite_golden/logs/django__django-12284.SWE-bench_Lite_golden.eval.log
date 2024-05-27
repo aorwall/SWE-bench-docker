@@ -49,7 +49,7 @@ Applied patch tests/model_fields/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 model_fields.tests;
 [django__django__3.1] [django__django-12284] Command: ./tests/runtests.py --verbosity 2 model_fields.tests 
-[django__django__3.1] [django__django-12284] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-12284] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-12284] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application model_fields
@@ -154,6 +154,8 @@ test_field_verbose_name (model_fields.tests.BasicFieldTests) ... ok
 test_formfield_disabled (model_fields.tests.BasicFieldTests)
 Field.formfield() sets disabled for fields with choices. ... ok
 test_show_hidden_initial (model_fields.tests.BasicFieldTests) ... ok
+test_get_choices (model_fields.tests.GetChoicesLimitChoicesToTests) ... ok
+test_get_choices_reverse_related_field (model_fields.tests.GetChoicesLimitChoicesToTests) ... ok
 test_choices_and_field_display (model_fields.tests.GetFieldDisplayTests) ... ok
 test_empty_iterator_choices (model_fields.tests.GetFieldDisplayTests) ... ok
 test_get_FIELD_display_translated (model_fields.tests.GetFieldDisplayTests)
@@ -165,11 +167,9 @@ test_get_choices (model_fields.tests.GetChoicesOrderingTests) ... ok
 test_get_choices_default_ordering (model_fields.tests.GetChoicesOrderingTests) ... ok
 test_get_choices_reverse_related_field (model_fields.tests.GetChoicesOrderingTests) ... ok
 test_get_choices_reverse_related_field_default_ordering (model_fields.tests.GetChoicesOrderingTests) ... ok
-test_get_choices (model_fields.tests.GetChoicesLimitChoicesToTests) ... ok
-test_get_choices_reverse_related_field (model_fields.tests.GetChoicesLimitChoicesToTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 32 tests in 0.179s
+Ran 32 tests in 0.190s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

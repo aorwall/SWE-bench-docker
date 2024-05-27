@@ -49,7 +49,7 @@ Applied patch tests/template_tests/filter_tests/test_join.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 template_tests.filter_tests.test_join;
 [django__django__5.0] [django__django-16873] Command: ./tests/runtests.py --verbosity 2 template_tests.filter_tests.test_join 
-[django__django__5.0] [django__django-16873] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__5.0] [django__django-16873] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__5.0] [django__django-16873] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application template_tests
@@ -72,7 +72,7 @@ test_join08 (template_tests.filter_tests.test_join.JoinTests.test_join08) ... ok
 test_join_autoescape_off (template_tests.filter_tests.test_join.JoinTests.test_join_autoescape_off) ... ok
 
 ----------------------------------------------------------------------
-Ran 14 tests in 0.089s
+Ran 14 tests in 0.101s
 
 OK
  

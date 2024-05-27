@@ -49,7 +49,7 @@ Applied patch tests/auth_tests/test_migrations.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 auth_tests.test_migrations;
 [django__django__3.0] [django__django-11283] Command: ./tests/runtests.py --verbosity 2 auth_tests.test_migrations 
-[django__django__3.0] [django__django-11283] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.0] [django__django-11283] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.0] [django__django-11283] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application auth_tests
@@ -89,18 +89,18 @@ System check identified no issues (0 silenced).
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+test_migrate_backwards (auth_tests.test_migrations.ProxyModelWithDifferentAppLabelTests) ... ok
+test_proxy_model_permissions_contenttype (auth_tests.test_migrations.ProxyModelWithDifferentAppLabelTests) ... ok
+test_user_has_now_proxy_model_permissions (auth_tests.test_migrations.ProxyModelWithDifferentAppLabelTests) ... ok
+test_user_keeps_same_permissions_after_migrating_backward (auth_tests.test_migrations.ProxyModelWithDifferentAppLabelTests) ... ok
 test_migrate_backwards (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests) ... ok
 test_migrate_with_existing_target_permission (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests) ... ok
 test_proxy_model_permissions_contenttype (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests) ... ok
 test_user_keeps_same_permissions_after_migrating_backward (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests) ... ok
 test_user_still_has_proxy_model_permissions (auth_tests.test_migrations.ProxyModelWithSameAppLabelTests) ... ok
-test_migrate_backwards (auth_tests.test_migrations.ProxyModelWithDifferentAppLabelTests) ... ok
-test_proxy_model_permissions_contenttype (auth_tests.test_migrations.ProxyModelWithDifferentAppLabelTests) ... ok
-test_user_has_now_proxy_model_permissions (auth_tests.test_migrations.ProxyModelWithDifferentAppLabelTests) ... ok
-test_user_keeps_same_permissions_after_migrating_backward (auth_tests.test_migrations.ProxyModelWithDifferentAppLabelTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.345s
+Ran 9 tests in 0.689s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

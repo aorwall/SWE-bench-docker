@@ -1,8 +1,9 @@
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Task Metadata:
 	- Instance ID: pvlib__pvlib-python-1072
 	- Testbed: pvlib__pvlib-python__0.7
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: git -c advice.detachedHead=false checkout 04a523fafbd61bc2e49420963b84ed8e2bd1b3cf 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Std. Output:
@@ -51,9 +52,9 @@ Applied patch pvlib/tests/test_temperature.py cleanly.
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Return Code: 0 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pvlib__pvlib-python__0.7 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_temperature.py;
+Test Script: conda run -n pvlib__pvlib-python__0.7  pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_temperature.py;
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: conda run -n pvlib__pvlib-python__0.7 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_temperature.py 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Std. Output:
 ============================= test session starts ==============================
 collected 19 items
@@ -103,7 +104,7 @@ PASSED pvlib/tests/test_temperature.py::test_fuentes[pvwatts_8760_rackmount.csv-
 PASSED pvlib/tests/test_temperature.py::test_fuentes[pvwatts_8760_roofmount.csv-49]
 PASSED pvlib/tests/test_temperature.py::test_fuentes_timezone[None]
 PASSED pvlib/tests/test_temperature.py::test_fuentes_timezone[Etc/GMT+5]
-======================== 19 passed, 5 warnings in 0.58s ========================
+======================== 19 passed, 5 warnings in 0.47s ========================
 
  
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Return Code: 0 

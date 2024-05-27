@@ -1,8 +1,9 @@
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11148] Task Metadata:
 	- Instance ID: pytest-dev__pytest-11148
 	- Testbed: pytest-dev__pytest__8.0
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11148] Command: git -c advice.detachedHead=false checkout 2f7415cfbc4b6ca62f9013f1abd27136f46b9653 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11148] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11148] Std. Output:
@@ -58,9 +59,9 @@ Applied patch testing/test_pathlib.py cleanly.
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11148] Return Code: 0 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11148] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pytest-dev__pytest__8.0 pytest -rA testing/acceptance_test.py testing/test_pathlib.py;
+Test Script: conda run -n pytest-dev__pytest__8.0  pytest -rA testing/acceptance_test.py testing/test_pathlib.py;
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11148] Command: conda run -n pytest-dev__pytest__8.0 pytest -rA testing/acceptance_test.py testing/test_pathlib.py 
-[pytest-dev__pytest__8.0] [pytest-dev__pytest-11148] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__8.0] [pytest-dev__pytest-11148] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11148] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
@@ -113,8 +114,8 @@ INTERNALERROR>     res = hook_impl.function(*args)
 INTERNALERROR>   File "/tmp/pytest-of-swe-bench/pytest-0/test_early_hook_error_issue38_10/conftest.py", line 2, in pytest_sessionstart
 INTERNALERROR>     0 / 0
 INTERNALERROR> ZeroDivisionError: division by zero
-INTERNALERROR> config = <_pytest.config.Config object at 0x7729e6e8a7f0>
-INTERNALERROR> doit = <function _main at 0x7729e75bc430>
+INTERNALERROR> config = <_pytest.config.Config object at 0x70e6e49a4f40>
+INTERNALERROR> doit = <function _main at 0x70e6e50d6430>
 INTERNALERROR> 
 INTERNALERROR>     def wrap_session(
 INTERNALERROR>         config: Config, doit: Callable[[Config, "Session"], Optional[Union[int, ExitCode]]]
@@ -155,9 +156,9 @@ INTERNALERROR>
 INTERNALERROR> /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/lib/python3.9/site-packages/pluggy/_hooks.py:493: 
 INTERNALERROR> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 INTERNALERROR> 
-INTERNALERROR> self = <_pytest.config.PytestPluginManager object at 0x7729e6783f70>
+INTERNALERROR> self = <_pytest.config.PytestPluginManager object at 0x70e6e4233130>
 INTERNALERROR> hook_name = 'pytest_sessionstart'
-INTERNALERROR> methods = [<HookImpl plugin_name='terminalreporter', plugin=<_pytest.terminal.TerminalReporter object at 0x7729e6708700>>, <Hook...nftest.py'>>, <HookImpl plugin_name='logging-plugin', plugin=<_pytest.logging.LoggingPlugin object at 0x7729e6708190>>]
+INTERNALERROR> methods = [<HookImpl plugin_name='terminalreporter', plugin=<_pytest.terminal.TerminalReporter object at 0x70e6e42247f0>>, <Hook...nftest.py'>>, <HookImpl plugin_name='logging-plugin', plugin=<_pytest.logging.LoggingPlugin object at 0x70e6e4224250>>]
 INTERNALERROR> kwargs = {'session': <Session test_early_hook_error_issue38_10 exitstatus=<ExitCode.INTERNAL_ERROR: 3> testsfailed=0 testscollected=0>}
 INTERNALERROR> firstresult = False
 INTERNALERROR> 
@@ -176,7 +177,7 @@ INTERNALERROR> /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/lib/pytho
 INTERNALERROR> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 INTERNALERROR> 
 INTERNALERROR> hook_name = 'pytest_sessionstart'
-INTERNALERROR> hook_impls = [<HookImpl plugin_name='terminalreporter', plugin=<_pytest.terminal.TerminalReporter object at 0x7729e6708700>>, <Hook...nftest.py'>>, <HookImpl plugin_name='logging-plugin', plugin=<_pytest.logging.LoggingPlugin object at 0x7729e6708190>>]
+INTERNALERROR> hook_impls = [<HookImpl plugin_name='terminalreporter', plugin=<_pytest.terminal.TerminalReporter object at 0x70e6e42247f0>>, <Hook...nftest.py'>>, <HookImpl plugin_name='logging-plugin', plugin=<_pytest.logging.LoggingPlugin object at 0x70e6e4224250>>]
 INTERNALERROR> caller_kwargs = {'session': <Session test_early_hook_error_issue38_10 exitstatus=<ExitCode.INTERNAL_ERROR: 3> testsfailed=0 testscollected=0>}
 INTERNALERROR> firstresult = False
 INTERNALERROR> 
@@ -404,7 +405,7 @@ E       assert 0
 test_assertion_rewrite.py:3: AssertionError
 =========================== short test summary info ============================
 FAILED test_assertion_rewrite.py::test_this - assert 0
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.02s ===============================
 ______________ TestGeneralUsage.test_assertion_rewrite[importlib] ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -448,7 +449,7 @@ E   ModuleNotFoundError: No module named 'does_not_work'
 =========================== short test summary info ============================
 ERROR test_nested_import_error.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.09s ===============================
+=============================== 1 error in 0.11s ===============================
 _______________ TestGeneralUsage.test_not_collectable_arguments ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -769,7 +770,7 @@ platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_early_skip0
 collected 0 items / 1 skipped
 
-============================== 1 skipped in 0.01s ==============================
+============================== 1 skipped in 0.00s ==============================
 ____________ TestGeneralUsage.test_issue88_initial_file_multinodes _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -782,7 +783,7 @@ collected 2 items
 <Module test_issue88_initial_file_multinodes.py>
   <Function test_hello>
 
-========================== 2 tests collected in 0.01s ==========================
+========================== 2 tests collected in 0.00s ==========================
 ________ TestGeneralUsage.test_issue93_initialnode_importing_capturing _________
 ----------------------------- Captured stdout call -----------------------------
 should not be seen
@@ -838,7 +839,7 @@ collected 1 item
 
 conftest.py .                                                            [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 ______________ TestGeneralUsage.test_skip_on_generated_funcarg_id ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -866,7 +867,7 @@ platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_direct_addressing_notfound0
 collected 0 items
 
-============================ no tests ran in 0.01s =============================
+============================ no tests ran in 0.00s =============================
 ----------------------------- Captured stderr call -----------------------------
 ERROR: not found: /tmp/pytest-of-swe-bench/pytest-0/test_direct_addressing_notfound0/test_direct_addressing_notfound.py::test_notfound
 (no name '/tmp/pytest-of-swe-bench/pytest-0/test_direct_addressing_notfound0/test_direct_addressing_notfound.py::test_notfound' in any of [<Module test_direct_addressing_notfound.py>])
@@ -991,7 +992,7 @@ E   SyntaxError: invalid syntax
 =========================== short test summary info ============================
 ERROR test_a.py
 ERROR test_b.py
-============================== 2 errors in 0.35s ===============================
+============================== 2 errors in 0.33s ===============================
 ----------------------------- Captured stderr call -----------------------------
 ERROR: not found: /tmp/pytest-of-swe-bench/pytest-0/test_report_all_failed_collections_initargs0/test_a.py::a
 (no name '/tmp/pytest-of-swe-bench/pytest-0/test_report_all_failed_collections_initargs0/test_a.py::a' in any of [<Module test_a.py>])
@@ -1045,7 +1046,7 @@ collected 1 item
 
 test_test_plugins_given_as_strings.py .                                  [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 _____________ TestGeneralUsage.test_parametrized_with_bytes_regex ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1065,7 +1066,7 @@ collected 3 items
 
 test_parametrized_with_null_bytes.py ...                                 [100%]
 
-============================== 3 passed in 0.02s ===============================
+============================== 3 passed in 0.01s ===============================
 ____________________ TestInvocationVariants.test_earlyinit _____________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python /tmp/pytest-of-swe-bench/pytest-0/test_earlyinit0/test_earlyinit.py
@@ -7682,7 +7683,7 @@ collected 1 item
 
 test_double_pytestcmdline.py .                                           [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ___________ TestInvocationVariants.test_python_minus_m_invocation_ok ___________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -m pytest /tmp/pytest-of-swe-bench/pytest-0/test_python_minus_m_invocation_ok0/test_python_minus_m_invocation_ok.py
@@ -7694,7 +7695,7 @@ collected 1 item
 
 test_python_minus_m_invocation_ok.py .                                   [100%]
 
-============================== 1 passed in 0.02s ===============================
+============================== 1 passed in 0.01s ===============================
 __________ TestInvocationVariants.test_python_minus_m_invocation_fail __________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -m pytest /tmp/pytest-of-swe-bench/pytest-0/test_python_minus_m_invocation_fail0/test_python_minus_m_invocation_fail.py
@@ -7715,7 +7716,7 @@ E   ZeroDivisionError: division by zero
 test_python_minus_m_invocation_fail.py:1: ZeroDivisionError
 =========================== short test summary info ============================
 FAILED test_python_minus_m_invocation_fail.py::test_fail - ZeroDivisionError:...
-============================== 1 failed in 0.02s ===============================
+============================== 1 failed in 0.05s ===============================
 ______________ TestInvocationVariants.test_python_pytest_package _______________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -m pytest /tmp/pytest-of-swe-bench/pytest-0/test_python_pytest_package0/test_python_pytest_package.py
@@ -7748,7 +7749,7 @@ E   ImportError
 =========================== short test summary info ============================
 ERROR tpkg/test_hello.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.12s ===============================
+=============================== 1 error in 0.15s ===============================
 ____________ TestInvocationVariants.test_pyargs_only_imported_once _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -7760,7 +7761,7 @@ collected 1 item
 
 foo/test_foo.py .
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 ________ TestInvocationVariants.test_pyargs_filename_looks_like_module _________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -7781,7 +7782,7 @@ collected 2 items
 tpkg/test_hello.py .                                                     [ 50%]
 tpkg/test_world.py .                                                     [100%]
 
-============================== 2 passed in 0.02s ===============================
+============================== 2 passed in 0.03s ===============================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_cmdline_python_package0
@@ -7798,7 +7799,7 @@ collected 2 items
 tpkg/test_hello.py .                                                     [ 50%]
 tpkg/test_world.py .                                                     [100%]
 
-============================== 2 passed in 0.01s ===============================
+============================== 2 passed in 0.02s ===============================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_cmdline_python_package0
@@ -7821,7 +7822,7 @@ test_hello.py::test_other PASSED                                         [ 50%]
 ns_pkg/world/test_world.py::test_world PASSED                            [ 75%]
 ns_pkg/world/test_world.py::test_other PASSED                            [100%]
 
-============================== 4 passed in 0.08s ===============================
+============================== 4 passed in 0.21s ===============================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0 -- /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python
 cachedir: .pytest_cache
@@ -7841,7 +7842,7 @@ world/ns_pkg/__init__.py:1
     __import__('pkg_resources').declare_namespace(__name__)
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================== 1 passed, 2 warnings in 0.05s =========================
+======================== 1 passed, 2 warnings in 0.14s =========================
 __________ TestInvocationVariants.test_invoke_test_and_doctestmodules __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -7851,7 +7852,7 @@ collected 1 item
 
 test_invoke_test_and_doctestmodules.py .                                 [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.03s ===============================
 __________ TestInvocationVariants.test_cmdline_python_package_symlink __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -7863,7 +7864,7 @@ collecting ... collected 2 items
 symlink_root/lib/foo/bar/test_bar.py::test_bar PASSED                    [ 50%]
 symlink_root/lib/foo/bar/test_bar.py::test_other PASSED                  [100%]
 
-============================== 2 passed in 0.01s ===============================
+============================== 2 passed in 0.03s ===============================
 ________ TestInvocationVariants.test_cmdline_python_package_not_exists _________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -7871,7 +7872,7 @@ platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_cmdline_python_package_not_exists0
 collected 0 items
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 ----------------------------- Captured stderr call -----------------------------
 ERROR: module or package not found: tpkgwhatv (missing __init__.py?)
 
@@ -7896,7 +7897,7 @@ Got:
 /tmp/pytest-of-swe-bench/pytest-0/test_doctest_id0/test_doctest_id.txt:2: DocTestFailure
 =========================== short test summary info ============================
 FAILED test_doctest_id.txt::test_doctest_id.txt
-============================== 1 failed in 0.01s ===============================
+============================== 1 failed in 0.03s ===============================
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-8.0.0.dev160+g10056865d, pluggy-1.3.0
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_doctest_id0
@@ -8092,7 +8093,7 @@ collected 1 item
 
 test_import_plugin_unicode_name.py .                                     [100%]
 
-============================== 1 passed in 0.00s ===============================
+============================== 1 passed in 0.01s ===============================
 ________________________ test_pytest_plugins_as_module _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -8122,7 +8123,7 @@ collected 1 item
 
 test_fixture_order_respects_scope.py .                                   [100%]
 
-============================== 1 passed in 0.01s ===============================
+============================== 1 passed in 0.02s ===============================
 ________________________ test_fixture_mock_integration _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -8163,7 +8164,7 @@ test_async.py::test_3
     warnings.warn(PytestUnhandledCoroutineWarning(msg.format(nodeid)))
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================== 3 skipped, 3 warnings in 0.01s ========================
+======================== 3 skipped, 3 warnings in 0.02s ========================
 _______________________ test_warn_on_async_gen_function ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -8187,7 +8188,7 @@ test_async.py::test_3
     warnings.warn(PytestUnhandledCoroutineWarning(msg.format(nodeid)))
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================== 3 skipped, 3 warnings in 0.01s ========================
+======================== 3 skipped, 3 warnings in 0.03s ========================
 ____________________ test_function_return_non_none_warning _____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -8201,7 +8202,7 @@ test_function_return_non_none_warning.py F                               [100%]
 __________________________________ test_stuff __________________________________
 
 cls = <class '_pytest.runner.CallInfo'>
-func = <function call_runtest_hook.<locals>.<lambda> at 0x7729e624a700>
+func = <function call_runtest_hook.<locals>.<lambda> at 0x70e6e3d68700>
 when = 'call'
 reraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)
 
@@ -8282,7 +8283,7 @@ E           pytest.PytestReturnNotNoneWarning: Expected None, but test_function_
 /home/swe-bench/pytest-dev__pytest/src/_pytest/python.py:198: PytestReturnNotNoneWarning
 =========================== short test summary info ============================
 FAILED test_function_return_non_none_warning.py::test_stuff - pytest.PytestRe...
-============================== 1 failed in 0.10s ===============================
+============================== 1 failed in 0.26s ===============================
 ___________________________ test_fixture_values_leak ___________________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_fixture_values_leak0/runpytest-0
@@ -8294,7 +8295,7 @@ collected 2 items
 
 test_fixture_values_leak.py ..                                           [100%]
 
-============================== 2 passed in 0.03s ===============================
+============================== 2 passed in 0.04s ===============================
 _______________________ test_frame_leak_on_failing_test ________________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_frame_leak_on_failing_test0/runpytest-0
@@ -8319,7 +8320,7 @@ E       assert 0
 test_frame_leak_on_failing_test.py:13: AssertionError
 =========================== short test summary info ============================
 FAILED test_frame_leak_on_failing_test.py::test1 - assert 0
-========================= 1 failed, 1 passed in 0.03s ==========================
+========================= 1 failed, 1 passed in 0.07s ==========================
 __________________________ test_pdb_can_be_rewritten ___________________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_pdb_can_be_rewritten0/runpytest-0 -p no:debugging -vv
@@ -8349,7 +8350,7 @@ E       assert 1 == 2
 pdb.py:2: AssertionError
 =========================== short test summary info ============================
 FAILED test_pdb.py::test - assert 1 == 2
-============================== 1 failed in 0.03s ===============================
+============================== 1 failed in 0.05s ===============================
 ___________________ test_tee_stdio_captures_and_live_prints ____________________
 ----------------------------- Captured stdout call -----------------------------
 running: /home/swe-bench/miniconda3/envs/pytest-dev__pytest__8.0/bin/python -mpytest --basetemp=/tmp/pytest-of-swe-bench/pytest-0/test_tee_stdio_captures_and_live_prints0/runpytest-0 /tmp/pytest-of-swe-bench/pytest-0/test_tee_stdio_captures_and_live_prints0/test_tee_stdio_captures_and_live_prints.py --capture=tee-sys --junitxml=output.xml -o junit_logging=all
@@ -8363,7 +8364,7 @@ test_tee_stdio_captures_and_live_prints.py @this is stdout@
 .                             [100%]
 
 - generated xml file: /tmp/pytest-of-swe-bench/pytest-0/test_tee_stdio_captures_and_live_prints0/output.xml -
-============================== 1 passed in 0.03s ===============================
+============================== 1 passed in 0.02s ===============================
 ----------------------------- Captured stderr call -----------------------------
 @this is stderr@
 ________________ test_doctest_and_normal_imports_with_importlib ________________
@@ -8513,7 +8514,7 @@ PASSED testing/acceptance_test.py::test_tee_stdio_captures_and_live_prints
 PASSED testing/acceptance_test.py::test_doctest_and_normal_imports_with_importlib
 SKIPPED [1] testing/test_pathlib.py:455: Windows only
 XFAIL testing/acceptance_test.py::TestInvocationVariants::test_noclass_discovery_if_not_testcase - decide: feature or bug
-================== 131 passed, 1 skipped, 1 xfailed in 10.62s ==================
+================== 131 passed, 1 skipped, 1 xfailed in 14.77s ==================
 
  
 [pytest-dev__pytest__8.0] [pytest-dev__pytest-11148] Return Code: 0 

@@ -53,7 +53,7 @@ Applied patch test_requests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.py;
 [psf__requests__2.4] [psf__requests-2317] Command: pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.py 
-[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[psf__requests__2.4] [psf__requests-2317] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [psf__requests__2.4] [psf__requests-2317] Std. Output:
 ============================= test session starts ==============================
 collected 143 items
@@ -245,7 +245,7 @@ PASSED test_requests.py::test_prepared_request_no_cookies_copy
 PASSED test_requests.py::test_prepared_request_complete_copy
 PASSED test_requests.py::test_prepare_unicode_url
 FAILED test_requests.py::RequestsTestCase::test_conflicting_post_params - Typ...
-============ 1 failed, 142 passed, 10 warnings in 592.14s (0:09:52) ============
+============ 1 failed, 142 passed, 10 warnings in 839.63s (0:13:59) ============
  
 [psf__requests__2.4] [psf__requests-2317] Return Code: 1 
 

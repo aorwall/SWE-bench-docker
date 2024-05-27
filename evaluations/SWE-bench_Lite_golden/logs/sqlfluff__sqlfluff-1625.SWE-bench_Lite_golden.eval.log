@@ -1,8 +1,9 @@
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Task Metadata:
 	- Instance ID: sqlfluff__sqlfluff-1625
 	- Testbed: sqlfluff__sqlfluff__0.6
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Command: git -c advice.detachedHead=false checkout 14e1a23a3166b9a645a16de96f694c77a5d4abb7 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Std. Output:
@@ -51,9 +52,9 @@ Applied patch test/cli/commands_test.py cleanly.
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Return Code: 0 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA --tb=no -p no:cacheprovider test/cli/commands_test.py;
+Test Script: conda run -n sqlfluff__sqlfluff__0.6  pytest --no-header -rA --tb=no -p no:cacheprovider test/cli/commands_test.py;
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Command: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA --tb=no -p no:cacheprovider test/cli/commands_test.py 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Std. Output:
 ============================= test session starts ==============================
 collected 69 items
@@ -137,7 +138,7 @@ PASSED test/cli/commands_test.py::test___main___help
 PASSED test/cli/commands_test.py::test_encoding[utf-8-ascii]
 PASSED test/cli/commands_test.py::test_encoding[utf-8-sig-UTF-8-SIG]
 PASSED test/cli/commands_test.py::test_encoding[utf-32-UTF-32]
-======================== 69 passed, 1 warning in 26.61s ========================
+======================== 69 passed, 1 warning in 25.09s ========================
 
  
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1625] Return Code: 0 

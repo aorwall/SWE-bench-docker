@@ -49,16 +49,12 @@ Applied patch tests/model_enums/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 model_enums.tests;
 [django__django__3.1] [django__django-11964] Command: ./tests/runtests.py --verbosity 2 model_enums.tests 
-[django__django__3.1] [django__django-11964] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-11964] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-11964] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application model_enums
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
-test_bool_unsupported (model_enums.tests.CustomChoicesTests) ... ok
-test_labels_valid (model_enums.tests.CustomChoicesTests) ... ok
-test_timezone_unsupported (model_enums.tests.CustomChoicesTests) ... ok
-test_uuid_unsupported (model_enums.tests.CustomChoicesTests) ... ok
 test_integerchoices (model_enums.tests.ChoicesTests) ... ok
 test_integerchoices_auto_label (model_enums.tests.ChoicesTests) ... ok
 test_integerchoices_containment (model_enums.tests.ChoicesTests) ... ok
@@ -72,9 +68,13 @@ test_textchoices_blank_value (model_enums.tests.ChoicesTests) ... ok
 test_textchoices_containment (model_enums.tests.ChoicesTests) ... ok
 test_textchoices_empty_label (model_enums.tests.ChoicesTests) ... ok
 test_textchoices_functional_api (model_enums.tests.ChoicesTests) ... ok
+test_bool_unsupported (model_enums.tests.CustomChoicesTests) ... ok
+test_labels_valid (model_enums.tests.CustomChoicesTests) ... ok
+test_timezone_unsupported (model_enums.tests.CustomChoicesTests) ... ok
+test_uuid_unsupported (model_enums.tests.CustomChoicesTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 17 tests in 0.163s
+Ran 17 tests in 0.154s
 
 OK
  

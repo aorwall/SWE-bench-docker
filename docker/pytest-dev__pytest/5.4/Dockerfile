@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-pytest-dev_pytest:bookworm-slim
 RUN git -c advice.detachedHead=false checkout 678c1a0745f1cf175c442c719906a1f13e496910
 
 RUN conda create -n pytest-dev__pytest__5.4 python=3.9  -y
-
 SHELL ["conda", "run", "-n", "pytest-dev__pytest__5.4", "/bin/bash", "-c"]
 
 
@@ -17,10 +16,10 @@ RUN pip install -e .
 RUN git checkout 678c1a0745f1cf175c442c719906a1f13e496910 .
 
 ENV TESTBED_NAME=pytest-dev__pytest__5.4
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

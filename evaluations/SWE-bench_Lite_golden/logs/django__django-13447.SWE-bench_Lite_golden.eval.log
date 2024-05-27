@@ -49,7 +49,7 @@ Applied patch tests/admin_views/test_adminsite.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 admin_views.test_adminsite;
 [django__django__4.0] [django__django-13447] Command: ./tests/runtests.py --verbosity 2 admin_views.test_adminsite 
-[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.0] [django__django-13447] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.0] [django__django-13447] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application admin_views
@@ -212,7 +212,7 @@ test_each_context (admin_views.test_adminsite.SiteEachContextTest) ... ok
 test_each_context_site_url_with_script_name (admin_views.test_adminsite.SiteEachContextTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 0.248s
+Ran 6 tests in 0.372s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

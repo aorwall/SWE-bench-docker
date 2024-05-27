@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-sympy_sympy:bookworm-slim
 RUN git -c advice.detachedHead=false checkout be161798ecc7278ccf3ffa47259e3b5fde280b7d
 
 RUN conda create -n sympy__sympy__1.13 python=3.9 -y
-
 SHELL ["conda", "run", "-n", "sympy__sympy__1.13", "/bin/bash", "-c"]
 
 COPY docker/sympy__sympy/1.13/requirements.txt .
@@ -20,10 +19,10 @@ RUN pip install -e .
 RUN git checkout be161798ecc7278ccf3ffa47259e3b5fde280b7d .
 
 ENV TESTBED_NAME=sympy__sympy__1.13
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

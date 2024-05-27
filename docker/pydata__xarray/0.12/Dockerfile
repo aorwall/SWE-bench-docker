@@ -6,7 +6,6 @@ RUN git -c advice.detachedHead=false checkout 1c198a191127c601d091213c4b3292a8bb
 
 COPY docker/pydata__xarray/0.12/environment.yml .
 RUN conda create -c conda-forge -n pydata__xarray__0.12 python=3.10 -y
-
 SHELL ["conda", "run", "-n", "pydata__xarray__0.12", "/bin/bash", "-c"]
 
 
@@ -20,10 +19,10 @@ RUN pip install -e .
 RUN git checkout 1c198a191127c601d091213c4b3292a8bb3054e1 .
 
 ENV TESTBED_NAME=pydata__xarray__0.12
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

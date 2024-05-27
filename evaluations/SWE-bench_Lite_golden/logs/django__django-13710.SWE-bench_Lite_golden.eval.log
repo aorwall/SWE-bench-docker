@@ -49,7 +49,7 @@ Applied patch tests/admin_inlines/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 admin_inlines.tests;
 [django__django__4.0] [django__django-13710] Command: ./tests/runtests.py --verbosity 2 admin_inlines.tests 
-[django__django__4.0] [django__django-13710] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.0] [django__django-13710] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.0] [django__django-13710] Std. Output:
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
 Importing application admin_inlines
@@ -235,7 +235,7 @@ test_tabular_non_field_errors (admin_inlines.tests.TestInline)
 non_field_errors are displayed correctly, including the correct value ... ok
 
 ----------------------------------------------------------------------
-Ran 75 tests in 7.498s
+Ran 75 tests in 9.690s
 
 OK (skipped=12)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

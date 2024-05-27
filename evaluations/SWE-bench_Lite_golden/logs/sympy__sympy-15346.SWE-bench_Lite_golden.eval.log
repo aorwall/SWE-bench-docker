@@ -1,8 +1,9 @@
 [sympy__sympy__1.4] [sympy__sympy-15346] Task Metadata:
 	- Instance ID: sympy__sympy-15346
 	- Testbed: sympy__sympy__1.4
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.4] [sympy__sympy-15346] Command: git -c advice.detachedHead=false checkout 9ef28fba5b4d6d0168237c9c005a550e6dc27d81 
 [sympy__sympy__1.4] [sympy__sympy-15346] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.4] [sympy__sympy-15346] Std. Output:
@@ -51,9 +52,9 @@ Applied patch sympy/simplify/tests/test_trigsimp.py cleanly.
 [sympy__sympy__1.4] [sympy__sympy-15346] Return Code: 0 
 [sympy__sympy__1.4] [sympy__sympy-15346] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.4 bin/test -C --verbose sympy/simplify/tests/test_trigsimp.py;
+Test Script: conda run -n sympy__sympy__1.4  bin/test -C --verbose sympy/simplify/tests/test_trigsimp.py;
 [sympy__sympy__1.4] [sympy__sympy-15346] Command: conda run -n sympy__sympy__1.4 bin/test -C --verbose sympy/simplify/tests/test_trigsimp.py 
-[sympy__sympy__1.4] [sympy__sympy-15346] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.4] [sympy__sympy-15346] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.4] [sympy__sympy-15346] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/solvers/diophantine.py:3188: SyntaxWarning: "is" with a literal. Did you mean "=="?
   if feasible is 1:  # it's prime and k == 2
@@ -64,8 +65,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        243280
-hash randomization: on (PYTHONHASHSEED=2502087370)
+random seed:        55215190
+hash randomization: on (PYTHONHASHSEED=3839811772)
 
 sympy/simplify/tests/test_trigsimp.py[25] 
 test_trigsimp1 ok
@@ -96,8 +97,8 @@ test_Piecewise ok                                                           [OK]
 
 
 ________________________________ slowest tests _________________________________
-test_trigsimp_groebner - Took 17.728 seconds
-======= tests finished: 24 passed, 1 expected to fail, in 56.80 seconds ========
+test_trigsimp_groebner - Took 20.657 seconds
+======= tests finished: 24 passed, 1 expected to fail, in 66.80 seconds ========
 
  
 [sympy__sympy__1.4] [sympy__sympy-15346] Return Code: 0 

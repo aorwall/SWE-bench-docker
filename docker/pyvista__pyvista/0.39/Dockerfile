@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-pyvista_pyvista:bookworm-slim
 RUN git -c advice.detachedHead=false checkout 4c2d1aed10b1600d520271beba8579c71433e808
 
 RUN conda create -n pyvista__pyvista__0.39 python=3.9 -y
-
 SHELL ["conda", "run", "-n", "pyvista__pyvista__0.39", "/bin/bash", "-c"]
 
 COPY docker/pyvista__pyvista/0.39/requirements.txt .
@@ -20,10 +19,10 @@ RUN pip install -e .
 RUN git checkout 4c2d1aed10b1600d520271beba8579c71433e808 .
 
 ENV TESTBED_NAME=pyvista__pyvista__0.39
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

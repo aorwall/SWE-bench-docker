@@ -1,8 +1,9 @@
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22835] Task Metadata:
 	- Instance ID: matplotlib__matplotlib-22835
 	- Testbed: matplotlib__matplotlib__3.5
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22835] Command: git -c advice.detachedHead=false checkout c33557d120eefe3148ebfcf2e758ff2357966000 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22835] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22835] Std. Output:
@@ -51,9 +52,9 @@ Applied patch lib/matplotlib/tests/test_artist.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22835] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22835] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n matplotlib__matplotlib__3.5 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_artist.py;
+Test Script: conda run -n matplotlib__matplotlib__3.5  pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_artist.py;
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22835] Command: conda run -n matplotlib__matplotlib__3.5 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_artist.py 
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22835] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22835] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22835] Std. Output:
 ============================= test session starts ==============================
 collected 29 items
@@ -89,7 +90,7 @@ PASSED lib/matplotlib/tests/test_artist.py::test_set_signature
 PASSED lib/matplotlib/tests/test_artist.py::test_set_is_overwritten
 PASSED lib/matplotlib/tests/test_artist.py::test_format_cursor_data_BoundaryNorm
 SKIPPED [2] ../miniconda3/envs/matplotlib__matplotlib__3.5/lib/python3.11/contextlib.py:81: Cannot compare svg files on this system
-======================== 27 passed, 2 skipped in 12.64s ========================
+======================== 27 passed, 2 skipped in 8.47s =========================
 
  
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22835] Return Code: 0 

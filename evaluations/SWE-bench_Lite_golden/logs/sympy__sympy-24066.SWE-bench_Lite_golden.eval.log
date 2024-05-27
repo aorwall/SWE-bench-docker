@@ -1,8 +1,9 @@
 [sympy__sympy__1.12] [sympy__sympy-24066] Task Metadata:
 	- Instance ID: sympy__sympy-24066
 	- Testbed: sympy__sympy__1.12
-	- 
-	- Evaluation Model: SWE-bench_Lite_golden 
+	- Evaluation Model: SWE-bench_Lite_golden
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.12] [sympy__sympy-24066] Command: git -c advice.detachedHead=false checkout 514579c655bf22e2af14f0743376ae1d7befe345 
 [sympy__sympy__1.12] [sympy__sympy-24066] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.12] [sympy__sympy-24066] Std. Output:
@@ -51,9 +52,9 @@ Applied patch sympy/physics/units/tests/test_quantities.py cleanly.
 [sympy__sympy__1.12] [sympy__sympy-24066] Return Code: 0 
 [sympy__sympy__1.12] [sympy__sympy-24066] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.12 bin/test -C --verbose sympy/physics/units/tests/test_quantities.py;
+Test Script: conda run -n sympy__sympy__1.12  bin/test -C --verbose sympy/physics/units/tests/test_quantities.py;
 [sympy__sympy__1.12] [sympy__sympy-24066] Command: conda run -n sympy__sympy__1.12 bin/test -C --verbose sympy/physics/units/tests/test_quantities.py 
-[sympy__sympy__1.12] [sympy__sympy-24066] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.12] [sympy__sympy-24066] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.12] [sympy__sympy-24066] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.12/bin/python  (3.9.19-final-0) [CPython]
@@ -61,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        55777460
-hash randomization: on (PYTHONHASHSEED=2074660441)
+random seed:        27036164
+hash randomization: on (PYTHONHASHSEED=3803868792)
 
 sympy/physics/units/tests/test_quantities.py[33] 
 test_str_repr ok
@@ -100,7 +101,7 @@ test_prefixed_property ok
 test_physics_constant ok                                                    [OK]
 
 
-======== tests finished: 32 passed, 1 expected to fail, in 2.36 seconds ========
+======== tests finished: 32 passed, 1 expected to fail, in 3.92 seconds ========
 
  
 [sympy__sympy__1.12] [sympy__sympy-24066] Return Code: 0 

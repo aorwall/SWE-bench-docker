@@ -49,7 +49,7 @@ Applied patch tests/admin_views/test_templatetags.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 admin_views.test_templatetags;
 [django__django__5.0] [django__django-16527] Command: ./tests/runtests.py --verbosity 2 admin_views.test_templatetags 
-[django__django__5.0] [django__django-16527] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__5.0] [django__django-16527] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__5.0] [django__django-16527] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
@@ -219,7 +219,7 @@ submit_row template tag should pass whole context. ... ok
 test_submit_row_save_as_new_add_permission_required (admin_views.test_templatetags.AdminTemplateTagsTest.test_submit_row_save_as_new_add_permission_required) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 1.621s
+Ran 7 tests in 1.305s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

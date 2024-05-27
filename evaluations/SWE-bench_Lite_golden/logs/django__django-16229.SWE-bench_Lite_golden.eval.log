@@ -49,7 +49,7 @@ Applied patch tests/forms_tests/tests/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 forms_tests.tests.tests;
 [django__django__4.2] [django__django-16229] Command: ./tests/runtests.py --verbosity 2 forms_tests.tests.tests 
-[django__django__4.2] [django__django-16229] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.2] [django__django-16229] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.2] [django__django-16229] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Testing against Django installed in '/opt/django__django/django' with up to 12 processes
@@ -89,28 +89,28 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 System check identified no issues (0 silenced).
+test_empty_queryset_return (forms_tests.tests.tests.TestTicket14567)
+If a model's ManyToManyField has blank=True and is saved with no data, ... ok
 test_invalid_loading_order (forms_tests.tests.tests.RelatedModelFormTests)
 Test for issue 10405 ... ok
 test_valid_loading_order (forms_tests.tests.tests.RelatedModelFormTests)
 Test for issue 10405 ... ok
-test_empty_queryset_return (forms_tests.tests.tests.TestTicket14567)
-If a model's ManyToManyField has blank=True and is saved with no data, ... ok
 test_m2m_field_exclusion (forms_tests.tests.tests.ManyToManyExclusionTestCase) ... ok
 test_boundary_conditions (forms_tests.tests.tests.FormsModelTestCase) ... ok
 test_formfield_initial (forms_tests.tests.tests.FormsModelTestCase) ... ok
 test_unicode_filename (forms_tests.tests.tests.FormsModelTestCase) ... ok
-test_empty_field_char (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
-test_empty_field_char_none (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
-test_empty_field_integer (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
-test_get_display_value_on_none (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
-test_html_rendering_of_prepopulated_models (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
-test_save_empty_label_forms (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
 test_empty_field_char (forms_tests.tests.tests.EmptyLabelTestCase) ... ok
 test_empty_field_char_none (forms_tests.tests.tests.EmptyLabelTestCase) ... ok
 test_empty_field_integer (forms_tests.tests.tests.EmptyLabelTestCase) ... ok
 test_get_display_value_on_none (forms_tests.tests.tests.EmptyLabelTestCase) ... ok
 test_html_rendering_of_prepopulated_models (forms_tests.tests.tests.EmptyLabelTestCase) ... ok
 test_save_empty_label_forms (forms_tests.tests.tests.EmptyLabelTestCase) ... ok
+test_empty_field_char (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
+test_empty_field_char_none (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
+test_empty_field_integer (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
+test_get_display_value_on_none (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
+test_html_rendering_of_prepopulated_models (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
+test_save_empty_label_forms (forms_tests.tests.tests.Jinja2EmptyLabelTestCase) ... ok
 test_callable_default_hidden_widget_value_not_overridden (forms_tests.tests.tests.ModelFormCallableModelDefault) ... ok
 test_callable_initial_value (forms_tests.tests.tests.ModelFormCallableModelDefault)
 The initial value for a callable default returning a queryset is the ... ok
@@ -120,7 +120,7 @@ test_no_empty_option (forms_tests.tests.tests.ModelFormCallableModelDefault)
 If a model's ForeignKey has blank=False and a default, no empty option ... ok
 
 ----------------------------------------------------------------------
-Ran 23 tests in 0.269s
+Ran 23 tests in 0.288s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

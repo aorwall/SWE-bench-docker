@@ -5,7 +5,6 @@ FROM aorwall/swe-bench-pydicom_pydicom:bookworm-slim
 RUN git -c advice.detachedHead=false checkout 9d69811e539774f296c2f289839147e741251716
 
 RUN conda create -n pydicom__pydicom__2.0 python=3.8 numpy -y
-
 SHELL ["conda", "run", "-n", "pydicom__pydicom__2.0", "/bin/bash", "-c"]
 
 
@@ -17,10 +16,10 @@ RUN pip install -e .
 RUN git checkout 9d69811e539774f296c2f289839147e741251716 .
 
 ENV TESTBED_NAME=pydicom__pydicom__2.0
+ENV IMAGE_TYPE=conda
 
 WORKDIR /home/swe-bench
 
 COPY swebench_docker swebench_docker
-COPY docker/entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

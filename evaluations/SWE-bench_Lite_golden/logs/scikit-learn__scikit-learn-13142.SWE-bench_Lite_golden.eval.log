@@ -60,7 +60,7 @@ Applied patch sklearn/mixture/tests/test_gaussian_mixture.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  pytest -rA --tb=no -p no:cacheprovider sklearn/mixture/tests/test_bayesian_mixture.py sklearn/mixture/tests/test_gaussian_mixture.py;
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Command: pytest -rA --tb=no -p no:cacheprovider sklearn/mixture/tests/test_bayesian_mixture.py sklearn/mixture/tests/test_gaussian_mixture.py 
-[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
@@ -145,7 +145,7 @@ PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_regularisation
 PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_property
 PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_sample
 PASSED sklearn/mixture/tests/test_gaussian_mixture.py::test_init
-==================== 56 passed, 9 warnings in 26.73 seconds ====================
+==================== 56 passed, 9 warnings in 34.86 seconds ====================
  
 [scikit-learn__scikit-learn__0.21] [scikit-learn__scikit-learn-13142] Return Code: 0 
 
