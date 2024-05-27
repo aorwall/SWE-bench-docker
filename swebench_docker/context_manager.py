@@ -208,6 +208,13 @@ class TaskEnvContextManager:
             f"git apply -v -R {patch_path}" if revert else f"git apply -v {patch_path}"
         )
         out_patch = self.exec(apply_cmd.split(" "), raise_error=False, check=False)
+
+        # If git command fails, try patch command
+        if out_patch.returncode != 0:
+            apply_cmd = (f"patch -R --batch --fuzz=5 -p1 -i {patch_path}" if revert \
+                else f"patch --batch --fuzz=5 -p1 -i {patch_path}")
+            out_patch = self.exec(apply_cmd.split(" "), raise_error=False, check=False)
+
         # TODO os.remove(patch_path)
 
         log_cmd = "Revert" if revert else "Apply"
