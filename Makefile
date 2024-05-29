@@ -1,7 +1,7 @@
 all:
-	docker build -t aorwall/swe-bench-conda:bookworm-slim -f "docker/Dockerfile .
-	docker build -t aorwall/swe-bench-pyenv:bookworm-slim -f "docker/pyenv/Dockerfile .
-	docker build -t aorwall/swe-bench-pyenvs:bookworm-slim -f "docker/pyenv/Dockerfile-pyenvs .
+	docker build -t aorwall/swe-bench-conda:bookworm-slim -f docker/Dockerfile .
+	docker build -t aorwall/swe-bench-pyenv:bookworm-slim -f docker/pyenv/Dockerfile .
+	docker build -t aorwall/swe-bench-pyenvs:bookworm-slim -f docker/pyenv/Dockerfile-pyenvs .
 	docker build -t aorwall/swe-bench-sqlfluff_sqlfluff:bookworm-slim -f docker/sqlfluff__sqlfluff/Dockerfile .
 	docker build -t aorwall/swe-bench-sqlfluff_sqlfluff-testbed:0.6 -f docker/sqlfluff__sqlfluff/0.6/Dockerfile .
 	docker build -t aorwall/swe-bench-sqlfluff_sqlfluff-testbed:0.8 -f docker/sqlfluff__sqlfluff/0.8/Dockerfile .

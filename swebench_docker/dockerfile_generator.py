@@ -26,8 +26,13 @@ class DockerfileGenerator:
         self.docker_dir = docker_dir
         self.task_instances = list(get_eval_refs(swe_bench_tasks).values())
 
-        self.dockerfiles_to_build = []
         self.image_prefix = "swe-bench"
+
+        self.dockerfiles_to_build = [
+            ("docker/Dockerfile", f"{self.namespace}/{self.image_prefix}-conda:bookworm-slim"),
+            ("docker/pyenv/Dockerfile", f"{self.namespace}/{self.image_prefix}-pyenv:bookworm-slim"),
+            ("docker/pyenv/Dockerfile-pyenvs", f"{self.namespace}/{self.image_prefix}-pyenvs:bookworm-slim"),
+        ]
 
         env = Environment(loader=FileSystemLoader("templates"))
         self.conda_testbed_template = env.get_template(f"Dockerfile.conda_testbed")
