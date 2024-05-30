@@ -4,6 +4,7 @@ import json
 import logging
 import subprocess
 import time
+import os
 
 from swebench_docker.constants import MAP_VERSION_TO_INSTALL
 
@@ -30,10 +31,12 @@ async def run_docker_evaluation(task_instance: dict, namespace: str, log_dir: st
     else:
         docker_image = f"{namespace}/{image_prefix}-{repo_name}-testbed:{task_instance['version']}"
 
+    swebench_docker_fork_dir = os.environ.get("SWEBENCH_DOCKER_FORK_DIR")
     docker_command = [
         'docker', 'run',
         '--rm',
         '-v', f"{log_dir}:{container_log_dir}",
+        '-v', f"{swebench_docker_fork_dir}/swebench_docker:/home/swe-bench/swebench_docker:ro",
         '-e', f"INSTANCE={instance_b64}",
         '-e', f"LOG_DIR={container_log_dir}",
         '-e', f"TIMEOUT={timeout}",
