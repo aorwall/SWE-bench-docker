@@ -99,7 +99,7 @@ async def main(
     test_directives: list[str],
     swe_bench_tasks: str,
     namespace: str,
-    test_output_path: str,
+    test_output_dir: str,
 ):
     """
     Runs arbitrary tests on a single instance's prediction and returns the stdout and stderr
@@ -110,7 +110,7 @@ async def main(
         test_directives (list[str]): A list of directives to pass to the test.
         swe_bench_tasks (str): Path to the SWE-bench tasks file OR HF dataset name.
         namespace (str): Docker repository namespace.
-        test_output_path (str): Optional path to write the test output.
+        test_output_dir (str): Optional path to write the test output.
     """
     if predictions_path:
         predictions_path = os.path.abspath(predictions_path)
@@ -126,7 +126,10 @@ async def main(
         model = "golden"
 
     output = await run_instance_tests(instance_id, patch, test_directives, model, swe_bench_tasks, namespace, verbose=True)
-    if test_output_path:
+    if test_output_dir:
+        test_output_dir = os.path.abspath(test_output_dir)
+        os.makedirs(os.path.dirname(test_output_dir), exist_ok=True)
+        test_output_path = os.path.join(test_output_dir, f"{instance_id}.test_output.txt")
         with open(test_output_path, "w") as f:
             f.write(output)
 
@@ -138,5 +141,6 @@ if __name__ == "__main__":
     parser.add_argument("--namespace", type=str, help="Docker repository namespace", required=False, default="aorwall")
     parser.add_argument("--predictions_path", type=str, help="Path to predictions file (must be .json)", required=False)
     parser.add_argument("--test_directives", type=str, help="Directives to pass to the test", required=False, nargs="*", default=[])
+    parser.add_argument("--test_output_dir", type=str, help="Path to write the test output", required=False)
     args = parser.parse_args()
     output = asyncio.run(main(**vars(args)))

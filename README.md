@@ -123,6 +123,7 @@ python run_instance_tests.py
     --namespace        [Optional]  Namespace of the Docker repository
     --predictions_path [Optional]  Path to the predictions file, if not set the golden patch will be used
     --test_directives  [Optional]  List of tests to run, e.g. "path/to/test.py::test1 path/to/test.py::test2". If empty, run all tests.
+    --test_output_dir  [Optional]  Path to directory to save test output
 ```
 
 ### Build single Docker image
