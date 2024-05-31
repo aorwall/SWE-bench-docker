@@ -71,7 +71,13 @@ def main(
 
 
 if __name__ == "__main__":
-    assert os.getenv('INSTANCE') is not None, "INSTANCE environment variable is not set"
+    TASK_INSTANCE_JSON = "/home/swe-bench/task_instance.json"
+    if os.path.exists(TASK_INSTANCE_JSON):
+        with open(TASK_INSTANCE_JSON, "r") as f:
+            task_instance = json.load(f)
+    else:
+        assert os.getenv('INSTANCE') is not None, "INSTANCE environment variable is not set"
+        task_instance = json.loads(base64.b64decode(os.getenv('INSTANCE')).decode('utf-8'))
     assert os.getenv('LOG_DIR') is not None, "LOG_DIR environment variable is not set"
     assert os.getenv('TESTBED_NAME') is not None, "TESTBED_NAME environment variable is not set"
 
@@ -81,7 +87,6 @@ if __name__ == "__main__":
 
     assert repo_dir, "REPO_DIR environment variable is not set"
 
-    task_instance = json.loads(base64.b64decode(os.getenv('INSTANCE')).decode('utf-8'))
 
     main(
         task_instance=task_instance,
