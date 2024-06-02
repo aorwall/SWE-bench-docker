@@ -114,7 +114,7 @@ python run_single_instance.py
 ```
 
 ### Run arbitrary tests on instance
-Run any or all tests in an instance repo and print logs to stadout.
+Run any or all tests in an instance repo and print logs to stdout.
 
 ```
 python run_instance_tests.py
