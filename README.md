@@ -113,6 +113,19 @@ python run_single_instance.py
     --predictions_path [Optional]  Path to the predictions file, if not set the golden patch will be used
 ```
 
+### Run arbitrary tests on instance
+Run any or all tests in an instance repo and print logs to stdout.
+
+```
+python run_instance_tests.py
+    --instance_id      [Required]  Instance ID of the task to run
+    --swe_bench_tasks  [Optional]  Path to SWE-bench task instances file or dataset (default is princeton-nlp/SWE-bench_Lite)
+    --namespace        [Optional]  Namespace of the Docker repository
+    --predictions_path [Optional]  Path to the predictions file, if not set the golden patch will be used
+    --test_directives  [Optional]  List of tests to run, e.g. "path/to/test.py::test1 path/to/test.py::test2". If empty, run all tests.
+    --test_output_dir  [Optional]  Path to directory to save test output
+```
+
 ### Build single Docker image
 
 ```bash
