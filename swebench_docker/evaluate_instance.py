@@ -59,9 +59,11 @@ def main(
             patch_type = PatchType.PATCH_PRED.value
 
         # Run testing script
+        prediction_patch = task_instance[KEY_PREDICTION]
+        test_patch = task_instance["test_patch"]
         if (
-                not tcm.apply_patch(task_instance[KEY_PREDICTION], patch_type=patch_type)
-                or not tcm.apply_patch(task_instance["test_patch"], patch_type=PatchType.PATCH_TEST.value)
+                (prediction_patch and not tcm.apply_patch(prediction_patch, patch_type=patch_type))
+                or (test_patch and not tcm.apply_patch(test_patch, patch_type=PatchType.PATCH_TEST.value))
                 or not tcm.run_tests_task(task_instance)
         ):
             logger.warning("Evaluation failed")
