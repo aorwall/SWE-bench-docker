@@ -11,6 +11,11 @@ Previous HEAD position was 647480166b Refs #33685 -- Doc'd that using PostgreSQL
 HEAD is now at b55ebe3241 Fixed #33443 -- Clarified when PasswordResetView sends an email.
  
 [django__django__4.1] [django__django-15320] Return Code: 0 
+[django__django__4.1] [django__django-15320] Command: git diff > /opt/temp_django__django-15320_pred_try_init.patch 
+[django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15320] Std. Output:
+ 
+[django__django__4.1] [django__django-15320] Return Code: 0 
 [django__django__4.1] [django__django-15320] Command: git apply -v /opt/temp_django__django-15320_pred_try.patch 
 [django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15320] Std. Output:
@@ -20,6 +25,11 @@ Applied patch django/db/models/expressions.py cleanly.
 [django__django__4.1] [django__django-15320] Return Code: 0 
 [django__django__4.1] [django__django-15320] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.1] [django__django-15320] Command: git diff > /opt/temp_django__django-15320_pred_try_init.patch 
+[django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15320] Std. Output:
+ 
+[django__django__4.1] [django__django-15320] Return Code: 0 
 [django__django__4.1] [django__django-15320] Command: git apply -v -R /opt/temp_django__django-15320_pred_try.patch 
 [django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15320] Std. Output:
@@ -29,6 +39,11 @@ Applied patch django/db/models/expressions.py cleanly.
 [django__django__4.1] [django__django-15320] Return Code: 0 
 [django__django__4.1] [django__django-15320] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.1] [django__django-15320] Command: git diff > /opt/temp_django__django-15320_pred_init.patch 
+[django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15320] Std. Output:
+ 
+[django__django__4.1] [django__django-15320] Return Code: 0 
 [django__django__4.1] [django__django-15320] Command: git apply -v /opt/temp_django__django-15320_pred.patch 
 [django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15320] Std. Output:
@@ -38,6 +53,11 @@ Applied patch django/db/models/expressions.py cleanly.
 [django__django__4.1] [django__django-15320] Return Code: 0 
 [django__django__4.1] [django__django-15320] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__4.1] [django__django-15320] Command: git diff > /opt/temp_django__django-15320_test_init.patch 
+[django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15320] Std. Output:
+ 
+[django__django__4.1] [django__django-15320] Return Code: 0 
 [django__django__4.1] [django__django-15320] Command: git apply -v /opt/temp_django__django-15320_test.patch 
 [django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15320] Std. Output:
@@ -49,10 +69,10 @@ Applied patch tests/expressions/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 expressions.tests;
 [django__django__4.1] [django__django-15320] Command: ./tests/runtests.py --verbosity 2 expressions.tests 
-[django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.1] [django__django-15320] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.1] [django__django-15320] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application expressions
 Found 164 test(s).
 Skipping setup of unused database(s): other.
@@ -96,48 +116,37 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 System check identified no issues (0 silenced).
-test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
-test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
-test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
-test_deconstruct (expressions.tests.FTests) ... ok
-test_deepcopy (expressions.tests.FTests) ... ok
-test_equal (expressions.tests.FTests) ... ok
-test_hash (expressions.tests.FTests) ... ok
-test_not_equal_Value (expressions.tests.FTests) ... ok
-test_equal (expressions.tests.OrderByTests) ... ok
-test_hash (expressions.tests.OrderByTests) ... ok
-test_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
-test_non_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
-test_optimizations (expressions.tests.ExistsTests) ... ERROR
 test_and (expressions.tests.CombinableTests) ... ok
 test_negation (expressions.tests.CombinableTests) ... ok
 test_or (expressions.tests.CombinableTests) ... ok
 test_reversed_and (expressions.tests.CombinableTests) ... ok
 test_reversed_or (expressions.tests.CombinableTests) ... ok
+test_equal (expressions.tests.OrderByTests) ... ok
+test_hash (expressions.tests.OrderByTests) ... ok
+test_deconstruct (expressions.tests.FTests) ... ok
+test_deepcopy (expressions.tests.FTests) ... ok
+test_equal (expressions.tests.FTests) ... ok
+test_hash (expressions.tests.FTests) ... ok
+test_not_equal_Value (expressions.tests.FTests) ... ok
+test_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
+test_non_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
+test_resolve_output_field (expressions.tests.CombinedExpressionTests) ... ok
 test_aggregates (expressions.tests.ReprTests) ... ok
 test_distinct_aggregates (expressions.tests.ReprTests) ... ok
 test_expressions (expressions.tests.ReprTests) ... ok
 test_filtered_aggregates (expressions.tests.ReprTests) ... ok
 test_functions (expressions.tests.ReprTests) ... ok
-test_compile_unresolved (expressions.tests.ValueTests) ... ok
-test_deconstruct (expressions.tests.ValueTests) ... ok
-test_deconstruct_output_field (expressions.tests.ValueTests) ... ok
-test_equal (expressions.tests.ValueTests) ... ok
-test_equal_output_field (expressions.tests.ValueTests) ... ok
-test_hash (expressions.tests.ValueTests) ... ok
-test_output_field_decimalfield (expressions.tests.ValueTests) ... ok
-test_output_field_does_not_create_broken_validators (expressions.tests.ValueTests)
-The output field for a given Value doesn't get cleaned & validated, ... ok
-test_raise_empty_expressionlist (expressions.tests.ValueTests) ... ok
-test_repr (expressions.tests.ValueTests) ... ok
-test_resolve_output_field (expressions.tests.ValueTests) ... ok
-test_resolve_output_field_failure (expressions.tests.ValueTests) ... ok
-test_update_TimeField_using_Value (expressions.tests.ValueTests) ... ok
-test_update_UUIDField_using_Value (expressions.tests.ValueTests) ... ok
-test_resolve_output_field (expressions.tests.CombinedExpressionTests) ... ok
+test_optimizations (expressions.tests.ExistsTests) ... ERROR
 test_equal (expressions.tests.SimpleExpressionTests) ... ok
 test_hash (expressions.tests.SimpleExpressionTests) ... ok
+test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
+test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
+test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
 test_F_reuse (expressions.tests.ExpressionsTests) ... ok
 test_insensitive_patterns_escape (expressions.tests.ExpressionsTests)
 Special characters (e.g. %, _ and \) stored in database are ... ok
@@ -153,6 +162,21 @@ test_filter_not_equals_other_field (expressions.tests.ExpressionsNumericTests)
 We can filter for objects, where a value is not equals the value ... ok
 test_increment_value (expressions.tests.ExpressionsNumericTests)
 We can increment a value of all objects in a query set. ... ok
+test_compile_unresolved (expressions.tests.ValueTests) ... ok
+test_deconstruct (expressions.tests.ValueTests) ... ok
+test_deconstruct_output_field (expressions.tests.ValueTests) ... ok
+test_equal (expressions.tests.ValueTests) ... ok
+test_equal_output_field (expressions.tests.ValueTests) ... ok
+test_hash (expressions.tests.ValueTests) ... ok
+test_output_field_decimalfield (expressions.tests.ValueTests) ... ok
+test_output_field_does_not_create_broken_validators (expressions.tests.ValueTests)
+The output field for a given Value doesn't get cleaned & validated, ... ok
+test_raise_empty_expressionlist (expressions.tests.ValueTests) ... ok
+test_repr (expressions.tests.ValueTests) ... ok
+test_resolve_output_field (expressions.tests.ValueTests) ... ok
+test_resolve_output_field_failure (expressions.tests.ValueTests) ... ok
+test_update_TimeField_using_Value (expressions.tests.ValueTests) ... ok
+test_update_UUIDField_using_Value (expressions.tests.ValueTests) ... ok
 test_complex_expressions_do_not_introduce_sql_injection_via_untrusted_string_inclusion (expressions.tests.IterableLookupInnerExpressionsTests)
 This tests that SQL injection isn't possible using compilation of ... ok
 test_expressions_in_lookups_join_choice (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
@@ -571,7 +595,7 @@ Traceback (most recent call last):
 ValueError: This queryset contains a reference to an outer query and may only be used in a subquery.
 
 ======================================================================
-ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(AND: <django.db.models.expressions.Exists object at 0x787a8009b7c0>, (AND: ))]
+ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(AND: <django.db.models.expressions.Exists object at 0x7fb57d9abd90>, (AND: ))]
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
@@ -635,7 +659,7 @@ Traceback (most recent call last):
 ValueError: This queryset contains a reference to an outer query and may only be used in a subquery.
 
 ======================================================================
-ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [<django.db.models.expressions.Exists object at 0x787a8015b820>]
+ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [<django.db.models.expressions.Exists object at 0x7fb57da77d90>]
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
@@ -699,7 +723,7 @@ Traceback (most recent call last):
 ValueError: This queryset contains a reference to an outer query and may only be used in a subquery.
 
 ======================================================================
-ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(OR: <django.db.models.expressions.Exists object at 0x787a800b3fa0>, (AND: ))]
+ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(OR: <django.db.models.expressions.Exists object at 0x7fb57d996460>, (AND: ))]
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
@@ -763,7 +787,7 @@ Traceback (most recent call last):
 ValueError: This queryset contains a reference to an outer query and may only be used in a subquery.
 
 ======================================================================
-ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [<django.db.models.expressions.Exists object at 0x787a800901c0>]
+ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [<django.db.models.expressions.Exists object at 0x7fb57d9e89a0>]
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
@@ -827,7 +851,7 @@ Traceback (most recent call last):
 ValueError: This queryset contains a reference to an outer query and may only be used in a subquery.
 
 ======================================================================
-ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(AND: <django.db.models.expressions.Exists object at 0x787a80052f70>)]
+ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(AND: <django.db.models.expressions.Exists object at 0x7fb57d9620d0>)]
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
@@ -891,7 +915,7 @@ Traceback (most recent call last):
 ValueError: This queryset contains a reference to an outer query and may only be used in a subquery.
 
 ======================================================================
-ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(AND: <django.db.models.expressions.Exists object at 0x787a8010e670>)]
+ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(AND: <django.db.models.expressions.Exists object at 0x7fb56ff997f0>)]
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
@@ -955,7 +979,7 @@ Traceback (most recent call last):
 ValueError: This queryset contains a reference to an outer query and may only be used in a subquery.
 
 ======================================================================
-ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(AND: <django.db.models.expressions.Exists object at 0x787a7fec8190>)]
+ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(AND: <django.db.models.expressions.Exists object at 0x7fb56ffb25b0>)]
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
@@ -1019,7 +1043,7 @@ Traceback (most recent call last):
 ValueError: This queryset contains a reference to an outer query and may only be used in a subquery.
 
 ======================================================================
-ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(AND: <django.db.models.expressions.Exists object at 0x787a7fe59f10>)]
+ERROR: test_boolean_expression_combined_with_empty_Q (expressions.tests.BasicExpressionsTests) [(AND: <django.db.models.expressions.Exists object at 0x7fb56ff4b370>)]
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.9.19/lib/python3.9/unittest/case.py", line 59, in testPartExecutor
@@ -2060,9 +2084,13 @@ Traceback (most recent call last):
 AssertionError: True is not False
 
 ----------------------------------------------------------------------
-Ran 164 tests in 0.549s
+Ran 164 tests in 0.321s
 
 FAILED (failures=2, errors=30, skipped=1, expected failures=1)
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

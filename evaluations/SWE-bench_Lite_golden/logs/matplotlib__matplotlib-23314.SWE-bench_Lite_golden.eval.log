@@ -1,18 +1,17 @@
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Task Metadata:
 	- Instance ID: matplotlib__matplotlib-23314
 	- Testbed: matplotlib__matplotlib__3.5
-	- Evaluation Model: SWE-bench_Lite_golden
-	- Python version: Python 3.11.8
- 
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Command: git -c advice.detachedHead=false checkout 97fc1154992f64cfb2f86321155a7404efeb2d8a 
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Std. Output:
 Previous HEAD position was de98877e3d Move axes_grid tests to axes_grid1 (#23861)
 HEAD is now at 97fc115499 Merge pull request #23286 from oscargus/pdfurlrefactor
  
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-23314_pred_try.patch 
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Std. Output:
 Checking patch lib/mpl_toolkits/mplot3d/axes3d.py...
 Applied patch lib/mpl_toolkits/mplot3d/axes3d.py cleanly.
@@ -21,7 +20,7 @@ Applied patch lib/mpl_toolkits/mplot3d/axes3d.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Command: git apply -v -R /home/swe-bench/temp_matplotlib__matplotlib-23314_pred_try.patch 
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Std. Output:
 Checking patch lib/mpl_toolkits/mplot3d/axes3d.py...
 Applied patch lib/mpl_toolkits/mplot3d/axes3d.py cleanly.
@@ -30,7 +29,7 @@ Applied patch lib/mpl_toolkits/mplot3d/axes3d.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-23314_pred.patch 
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Std. Output:
 Checking patch lib/mpl_toolkits/mplot3d/axes3d.py...
 Applied patch lib/mpl_toolkits/mplot3d/axes3d.py cleanly.
@@ -39,17 +38,17 @@ Applied patch lib/mpl_toolkits/mplot3d/axes3d.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Command: git restore lib/matplotlib/tests/test_axes.py 
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Std. Output:
  
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Command: git restore lib/mpl_toolkits/tests/test_mplot3d.py 
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Std. Output:
  
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-23314_test.patch 
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Std. Output:
 Checking patch lib/matplotlib/tests/test_axes.py...
 Checking patch lib/mpl_toolkits/tests/test_mplot3d.py...
@@ -59,9 +58,9 @@ Applied patch lib/mpl_toolkits/tests/test_mplot3d.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n matplotlib__matplotlib__3.5  pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_axes.py lib/mpl_toolkits/tests/test_mplot3d.py;
+Test Script: conda run -n matplotlib__matplotlib__3.5 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_axes.py lib/mpl_toolkits/tests/test_mplot3d.py;
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Command: conda run -n matplotlib__matplotlib__3.5 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_axes.py lib/mpl_toolkits/tests/test_mplot3d.py 
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Std. Output:
 ============================= test session starts ==============================
 collected 927 items
@@ -949,7 +948,7 @@ PASSED lib/mpl_toolkits/tests/test_mplot3d.py::test_view_init_vertical_axis[y-pr
 PASSED lib/mpl_toolkits/tests/test_mplot3d.py::test_view_init_vertical_axis[x-proj_expected2-axis_lines_expected2-tickdirs_expected2]
 SKIPPED [10] lib/matplotlib/testing/compare.py:285: Don't know how to convert .svg files to png
 SKIPPED [53] ../miniconda3/envs/matplotlib__matplotlib__3.5/lib/python3.11/contextlib.py:81: Cannot compare svg files on this system
-================= 864 passed, 63 skipped in 231.75s (0:03:51) ==================
+================== 864 passed, 63 skipped in 87.82s (0:01:27) ==================
 
  
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-23314] Return Code: 0 

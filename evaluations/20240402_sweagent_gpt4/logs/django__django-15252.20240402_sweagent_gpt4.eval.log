@@ -11,6 +11,11 @@ Previous HEAD position was 647480166b Refs #33685 -- Doc'd that using PostgreSQL
 HEAD is now at 361bb8f786 Refs #26872 -- Fixed wrapping of long choices in ModelAdmin.list_filter.
  
 [django__django__4.1] [django__django-15252] Return Code: 0 
+[django__django__4.1] [django__django-15252] Command: git diff > /opt/temp_django__django-15252_pred_try_init.patch 
+[django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15252] Std. Output:
+ 
+[django__django__4.1] [django__django-15252] Return Code: 0 
 [django__django__4.1] [django__django-15252] Command: git apply -v /opt/temp_django__django-15252_pred_try.patch 
 [django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15252] Std. Output:
@@ -22,6 +27,11 @@ Applied patch test_migration_recorder.py cleanly.
 [django__django__4.1] [django__django-15252] Return Code: 0 
 [django__django__4.1] [django__django-15252] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.1] [django__django-15252] Command: git diff > /opt/temp_django__django-15252_pred_try_init.patch 
+[django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15252] Std. Output:
+ 
+[django__django__4.1] [django__django-15252] Return Code: 0 
 [django__django__4.1] [django__django-15252] Command: git apply -v -R /opt/temp_django__django-15252_pred_try.patch 
 [django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15252] Std. Output:
@@ -33,6 +43,11 @@ Applied patch django/db/migrations/recorder.py cleanly.
 [django__django__4.1] [django__django-15252] Return Code: 0 
 [django__django__4.1] [django__django-15252] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.1] [django__django-15252] Command: git diff > /opt/temp_django__django-15252_pred_init.patch 
+[django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15252] Std. Output:
+ 
+[django__django__4.1] [django__django-15252] Return Code: 0 
 [django__django__4.1] [django__django-15252] Command: git apply -v /opt/temp_django__django-15252_pred.patch 
 [django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15252] Std. Output:
@@ -44,6 +59,11 @@ Applied patch test_migration_recorder.py cleanly.
 [django__django__4.1] [django__django-15252] Return Code: 0 
 [django__django__4.1] [django__django-15252] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__4.1] [django__django-15252] Command: git diff > /opt/temp_django__django-15252_test_init.patch 
+[django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15252] Std. Output:
+ 
+[django__django__4.1] [django__django-15252] Return Code: 0 
 [django__django__4.1] [django__django-15252] Command: git apply -v /opt/temp_django__django-15252_test.patch 
 [django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15252] Std. Output:
@@ -57,12 +77,12 @@ Applied patch tests/migrations/test_executor.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 backends.base.test_creation migrations.test_executor;
 [django__django__4.1] [django__django-15252] Command: ./tests/runtests.py --verbosity 2 backends.base.test_creation migrations.test_executor 
-[django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.1] [django__django-15252] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.1] [django__django-15252] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
-Importing application migrations
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application backends
+Importing application migrations
 Found 36 test(s).
 Traceback (most recent call last):
   File "/opt/django__django/./tests/runtests.py", line 657, in <module>

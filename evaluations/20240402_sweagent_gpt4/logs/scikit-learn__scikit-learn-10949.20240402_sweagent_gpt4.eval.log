@@ -10,6 +10,11 @@
 HEAD is now at 3b5abf765 DOC Credit Thomas Fan for contribution to ColumnTransformer
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git diff > /opt/temp_scikit-learn__scikit-learn-10949_pred_try_init.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-10949_pred_try.patch 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
@@ -19,6 +24,11 @@ Applied patch sklearn/utils/validation.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git diff > /opt/temp_scikit-learn__scikit-learn-10949_pred_try_init.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git apply -v -R /opt/temp_scikit-learn__scikit-learn-10949_pred_try.patch 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
@@ -28,6 +38,11 @@ Applied patch sklearn/utils/validation.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git diff > /opt/temp_scikit-learn__scikit-learn-10949_pred_init.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git apply -v /opt/temp_scikit-learn__scikit-learn-10949_pred.patch 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
@@ -37,6 +52,11 @@ Applied patch sklearn/utils/validation.py cleanly.
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git diff > /opt/temp_scikit-learn__scikit-learn-10949_test_init.patch 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
+ 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 0 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: git restore sklearn/utils/tests/test_validation.py 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
@@ -53,7 +73,7 @@ Applied patch sklearn/utils/tests/test_validation.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  pytest -rA --tb=no -p no:cacheprovider sklearn/utils/tests/test_validation.py;
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Command: pytest -rA --tb=no -p no:cacheprovider sklearn/utils/tests/test_validation.py 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
@@ -171,7 +191,7 @@ PASSED sklearn/utils/tests/test_validation.py::test_check_consistent_length
 PASSED sklearn/utils/tests/test_validation.py::test_check_dataframe_fit_attribute
 PASSED sklearn/utils/tests/test_validation.py::test_suppress_validation
 PASSED sklearn/utils/tests/test_validation.py::test_check_memory
-============== 28 failed, 25 passed, 26 warnings in 2.92 seconds ===============
+============== 28 failed, 25 passed, 26 warnings in 1.98 seconds ===============
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10949] Return Code: 1 
 

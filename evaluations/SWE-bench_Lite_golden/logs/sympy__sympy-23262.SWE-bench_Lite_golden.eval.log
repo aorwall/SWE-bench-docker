@@ -54,7 +54,7 @@ Applied patch sympy/utilities/tests/test_lambdify.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.11  bin/test -C --verbose sympy/utilities/tests/test_lambdify.py;
 [sympy__sympy__1.11] [sympy__sympy-23262] Command: conda run -n sympy__sympy__1.11 bin/test -C --verbose sympy/utilities/tests/test_lambdify.py 
-[sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.11] [sympy__sympy-23262] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.11/bin/python  (3.9.19-final-0) [CPython]
@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        90972260
-hash randomization: on (PYTHONHASHSEED=885560187)
+random seed:        17286177
+hash randomization: on (PYTHONHASHSEED=2075621987)
 
 sympy/utilities/tests/test_lambdify.py[117] 
 test_no_args ok
@@ -185,7 +185,7 @@ test_lambdify_cse ok
 test_deprecated_set ok                                                      [OK]
 
 
-============ tests finished: 63 passed, 54 skipped, in 5.46 seconds ============
+============ tests finished: 63 passed, 54 skipped, in 2.68 seconds ============
 
  
 [sympy__sympy__1.11] [sympy__sympy-23262] Return Code: 0 

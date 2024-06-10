@@ -54,7 +54,7 @@ Applied patch pvlib/tests/test_iam.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pvlib__pvlib-python__0.9  pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_iam.py;
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1707] Command: conda run -n pvlib__pvlib-python__0.9 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_iam.py 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1707] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1707] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1707] Std. Output:
 ============================= test session starts ==============================
 collected 31 items
@@ -104,7 +104,7 @@ PASSED pvlib/tests/test_iam.py::test_marion_integrate_ground_flat
 PASSED pvlib/tests/test_iam.py::test_marion_integrate_invalid
 PASSED pvlib/tests/test_iam.py::test_schlick
 PASSED pvlib/tests/test_iam.py::test_schlick_diffuse
-======================== 31 passed, 2 warnings in 0.29s ========================
+======================== 31 passed, 2 warnings in 0.25s ========================
 
  
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1707] Return Code: 0 

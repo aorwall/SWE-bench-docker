@@ -11,6 +11,11 @@ Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at 142ab6846a Fixed #31123 -- Added --include-stale-apps option to the remove_stale_contenttypes management command.
  
 [django__django__3.1] [django__django-12470] Return Code: 0 
+[django__django__3.1] [django__django-12470] Command: git diff > /opt/temp_django__django-12470_pred_try_init.patch 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12470] Std. Output:
+ 
+[django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Command: git apply -v /opt/temp_django__django-12470_pred_try.patch 
 [django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12470] Std. Output:
@@ -20,6 +25,11 @@ Applied patch replicate_issue.py cleanly.
 [django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-12470] Command: git diff > /opt/temp_django__django-12470_pred_try_init.patch 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12470] Std. Output:
+ 
+[django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Command: git apply -v -R /opt/temp_django__django-12470_pred_try.patch 
 [django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12470] Std. Output:
@@ -29,6 +39,11 @@ Applied patch replicate_issue.py cleanly.
 [django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-12470] Command: git diff > /opt/temp_django__django-12470_pred_init.patch 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12470] Std. Output:
+ 
+[django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Command: git apply -v /opt/temp_django__django-12470_pred.patch 
 [django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12470] Std. Output:
@@ -38,6 +53,11 @@ Applied patch replicate_issue.py cleanly.
 [django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.1] [django__django-12470] Command: git diff > /opt/temp_django__django-12470_test_init.patch 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12470] Std. Output:
+ 
+[django__django__3.1] [django__django-12470] Return Code: 0 
 [django__django__3.1] [django__django-12470] Command: git apply -v /opt/temp_django__django-12470_test.patch 
 [django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12470] Std. Output:
@@ -51,9 +71,9 @@ Applied patch tests/model_inheritance/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 model_inheritance.models model_inheritance.tests;
 [django__django__3.1] [django__django-12470] Command: ./tests/runtests.py --verbosity 2 model_inheritance.models model_inheritance.tests 
-[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-12470] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application model_inheritance
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -162,7 +182,7 @@ First differing element 0:
 
 
 ----------------------------------------------------------------------
-Ran 34 tests in 0.268s
+Ran 34 tests in 0.280s
 
 FAILED (failures=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

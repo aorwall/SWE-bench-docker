@@ -11,6 +11,11 @@ Previous HEAD position was 475cffd1d6 Fixed typo in docs/intro/reusable-apps.txt
 HEAD is now at 0c42cdf0d2 Fixed #32374 -- Stopped recording migration application before deferred SQL.
  
 [django__django__4.0] [django__django-13925] Return Code: 0 
+[django__django__4.0] [django__django-13925] Command: git diff > /opt/temp_django__django-13925_pred_try_init.patch 
+[django__django__4.0] [django__django-13925] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13925] Std. Output:
+ 
+[django__django__4.0] [django__django-13925] Return Code: 0 
 [django__django__4.0] [django__django-13925] Command: git apply -v /opt/temp_django__django-13925_pred_try.patch 
 [django__django__4.0] [django__django-13925] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13925] Std. Output:
@@ -20,6 +25,11 @@ Applied patch fix_w042.py cleanly.
 [django__django__4.0] [django__django-13925] Return Code: 0 
 [django__django__4.0] [django__django-13925] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.0] [django__django-13925] Command: git diff > /opt/temp_django__django-13925_pred_try_init.patch 
+[django__django__4.0] [django__django-13925] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13925] Std. Output:
+ 
+[django__django__4.0] [django__django-13925] Return Code: 0 
 [django__django__4.0] [django__django-13925] Command: git apply -v -R /opt/temp_django__django-13925_pred_try.patch 
 [django__django__4.0] [django__django-13925] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13925] Std. Output:
@@ -29,6 +39,11 @@ Applied patch fix_w042.py cleanly.
 [django__django__4.0] [django__django-13925] Return Code: 0 
 [django__django__4.0] [django__django-13925] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.0] [django__django-13925] Command: git diff > /opt/temp_django__django-13925_pred_init.patch 
+[django__django__4.0] [django__django-13925] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13925] Std. Output:
+ 
+[django__django__4.0] [django__django-13925] Return Code: 0 
 [django__django__4.0] [django__django-13925] Command: git apply -v /opt/temp_django__django-13925_pred.patch 
 [django__django__4.0] [django__django-13925] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13925] Std. Output:
@@ -38,6 +53,11 @@ Applied patch fix_w042.py cleanly.
 [django__django__4.0] [django__django-13925] Return Code: 0 
 [django__django__4.0] [django__django-13925] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__4.0] [django__django-13925] Command: git diff > /opt/temp_django__django-13925_test_init.patch 
+[django__django__4.0] [django__django-13925] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13925] Std. Output:
+ 
+[django__django__4.0] [django__django-13925] Return Code: 0 
 [django__django__4.0] [django__django-13925] Command: git apply -v /opt/temp_django__django-13925_test.patch 
 [django__django__4.0] [django__django-13925] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13925] Std. Output:
@@ -49,9 +69,9 @@ Applied patch tests/check_framework/test_model_checks.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 check_framework.test_model_checks;
 [django__django__4.0] [django__django-13925] Command: ./tests/runtests.py --verbosity 2 check_framework.test_model_checks 
-[django__django__4.0] [django__django-13925] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.0] [django__django-13925] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.0] [django__django-13925] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application check_framework
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -78,12 +98,6 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_collision_abstract_model (check_framework.test_model_checks.ConstraintNameTests) ... ok
-test_collision_across_apps (check_framework.test_model_checks.ConstraintNameTests) ... ok
-test_collision_in_different_models (check_framework.test_model_checks.ConstraintNameTests) ... ok
-test_collision_in_same_model (check_framework.test_model_checks.ConstraintNameTests) ... ok
-test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.ConstraintNameTests) ... ok
-test_no_collision_across_apps_interpolation (check_framework.test_model_checks.ConstraintNameTests) ... ok
 test_app_default_auto_field (check_framework.test_model_checks.ModelDefaultAutoFieldTests) ... ok
 test_auto_created_inherited_parent_link (check_framework.test_model_checks.ModelDefaultAutoFieldTests) ... ok
 test_auto_created_inherited_pk (check_framework.test_model_checks.ModelDefaultAutoFieldTests) ... FAIL
@@ -104,6 +118,12 @@ test_collision_in_different_models (check_framework.test_model_checks.IndexNameT
 test_collision_in_same_model (check_framework.test_model_checks.IndexNameTests) ... ok
 test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.IndexNameTests) ... ok
 test_no_collision_across_apps_interpolation (check_framework.test_model_checks.IndexNameTests) ... ok
+test_collision_abstract_model (check_framework.test_model_checks.ConstraintNameTests) ... ok
+test_collision_across_apps (check_framework.test_model_checks.ConstraintNameTests) ... ok
+test_collision_in_different_models (check_framework.test_model_checks.ConstraintNameTests) ... ok
+test_collision_in_same_model (check_framework.test_model_checks.ConstraintNameTests) ... ok
+test_no_collision_abstract_model_interpolation (check_framework.test_model_checks.ConstraintNameTests) ... ok
+test_no_collision_across_apps_interpolation (check_framework.test_model_checks.ConstraintNameTests) ... ok
 
 ======================================================================
 FAIL: test_auto_created_inherited_pk (check_framework.test_model_checks.ModelDefaultAutoFieldTests)
@@ -167,7 +187,7 @@ First extra element 0:
 + []
 
 ----------------------------------------------------------------------
-Ran 26 tests in 0.422s
+Ran 26 tests in 0.246s
 
 FAILED (failures=2)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

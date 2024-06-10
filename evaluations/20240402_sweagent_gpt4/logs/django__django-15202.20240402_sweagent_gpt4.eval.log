@@ -11,6 +11,11 @@ Previous HEAD position was 647480166b Refs #33685 -- Doc'd that using PostgreSQL
 HEAD is now at 4fd3044ca0 Fixed #33368 -- Fixed parse_duration() crash on invalid separators for decimal fractions.
  
 [django__django__4.1] [django__django-15202] Return Code: 0 
+[django__django__4.1] [django__django-15202] Command: git diff > /opt/temp_django__django-15202_pred_try_init.patch 
+[django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15202] Std. Output:
+ 
+[django__django__4.1] [django__django-15202] Return Code: 0 
 [django__django__4.1] [django__django-15202] Command: git apply -v /opt/temp_django__django-15202_pred_try.patch 
 [django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15202] Std. Output:
@@ -20,6 +25,11 @@ Applied patch django/forms/fields.py cleanly.
 [django__django__4.1] [django__django-15202] Return Code: 0 
 [django__django__4.1] [django__django-15202] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.1] [django__django-15202] Command: git diff > /opt/temp_django__django-15202_pred_try_init.patch 
+[django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15202] Std. Output:
+ 
+[django__django__4.1] [django__django-15202] Return Code: 0 
 [django__django__4.1] [django__django-15202] Command: git apply -v -R /opt/temp_django__django-15202_pred_try.patch 
 [django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15202] Std. Output:
@@ -29,6 +39,11 @@ Applied patch django/forms/fields.py cleanly.
 [django__django__4.1] [django__django-15202] Return Code: 0 
 [django__django__4.1] [django__django-15202] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.1] [django__django-15202] Command: git diff > /opt/temp_django__django-15202_pred_init.patch 
+[django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15202] Std. Output:
+ 
+[django__django__4.1] [django__django-15202] Return Code: 0 
 [django__django__4.1] [django__django-15202] Command: git apply -v /opt/temp_django__django-15202_pred.patch 
 [django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15202] Std. Output:
@@ -38,6 +53,11 @@ Applied patch django/forms/fields.py cleanly.
 [django__django__4.1] [django__django-15202] Return Code: 0 
 [django__django__4.1] [django__django-15202] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__4.1] [django__django-15202] Command: git diff > /opt/temp_django__django-15202_test_init.patch 
+[django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.1] [django__django-15202] Std. Output:
+ 
+[django__django__4.1] [django__django-15202] Return Code: 0 
 [django__django__4.1] [django__django-15202] Command: git apply -v /opt/temp_django__django-15202_test.patch 
 [django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.1] [django__django-15202] Std. Output:
@@ -49,7 +69,7 @@ Applied patch tests/forms_tests/field_tests/test_urlfield.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 forms_tests.field_tests.test_urlfield;
 [django__django__4.1] [django__django-15202] Command: ./tests/runtests.py --verbosity 2 forms_tests.field_tests.test_urlfield 
-[django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.1] [django__django-15202] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.1] [django__django-15202] Std. Output:
 test_urlfield_clean (forms_tests.field_tests.test_urlfield.URLFieldTest) ... ok
 test_urlfield_clean_invalid (forms_tests.field_tests.test_urlfield.URLFieldTest) ... test_urlfield_clean_not_required (forms_tests.field_tests.test_urlfield.URLFieldTest) ... ok
@@ -90,10 +110,10 @@ Traceback (most recent call last):
 TypeError: object of type 'NoneType' has no len()
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.134s
+Ran 8 tests in 0.057s
 
 FAILED (errors=2)
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application forms_tests
 Found 8 test(s).
 Skipping setup of unused database(s): default, other.

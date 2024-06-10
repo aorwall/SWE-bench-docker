@@ -11,6 +11,11 @@ Previous HEAD position was 3eb69be8 Merge pull request #2148 from romanlevin/han
 HEAD is now at 110048f9 Merge pull request #1916 from schlamar/accept-encoding
  
 [psf__requests__2.3] [psf__requests-1963] Return Code: 0 
+[psf__requests__2.3] [psf__requests-1963] Command: git diff > /opt/temp_psf__requests-1963_pred_try_init.patch 
+[psf__requests__2.3] [psf__requests-1963] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.3] [psf__requests-1963] Std. Output:
+ 
+[psf__requests__2.3] [psf__requests-1963] Return Code: 0 
 [psf__requests__2.3] [psf__requests-1963] Command: git apply -v /opt/temp_psf__requests-1963_pred_try.patch 
 [psf__requests__2.3] [psf__requests-1963] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.3] [psf__requests-1963] Std. Output:
@@ -20,6 +25,11 @@ Applied patch reproduce_bug.py cleanly.
 [psf__requests__2.3] [psf__requests-1963] Return Code: 0 
 [psf__requests__2.3] [psf__requests-1963] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[psf__requests__2.3] [psf__requests-1963] Command: git diff > /opt/temp_psf__requests-1963_pred_try_init.patch 
+[psf__requests__2.3] [psf__requests-1963] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.3] [psf__requests-1963] Std. Output:
+ 
+[psf__requests__2.3] [psf__requests-1963] Return Code: 0 
 [psf__requests__2.3] [psf__requests-1963] Command: git apply -v -R /opt/temp_psf__requests-1963_pred_try.patch 
 [psf__requests__2.3] [psf__requests-1963] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.3] [psf__requests-1963] Std. Output:
@@ -29,6 +39,11 @@ Applied patch reproduce_bug.py cleanly.
 [psf__requests__2.3] [psf__requests-1963] Return Code: 0 
 [psf__requests__2.3] [psf__requests-1963] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[psf__requests__2.3] [psf__requests-1963] Command: git diff > /opt/temp_psf__requests-1963_pred_init.patch 
+[psf__requests__2.3] [psf__requests-1963] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.3] [psf__requests-1963] Std. Output:
+ 
+[psf__requests__2.3] [psf__requests-1963] Return Code: 0 
 [psf__requests__2.3] [psf__requests-1963] Command: git apply -v /opt/temp_psf__requests-1963_pred.patch 
 [psf__requests__2.3] [psf__requests-1963] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.3] [psf__requests-1963] Std. Output:
@@ -38,6 +53,11 @@ Applied patch reproduce_bug.py cleanly.
 [psf__requests__2.3] [psf__requests-1963] Return Code: 0 
 [psf__requests__2.3] [psf__requests-1963] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[psf__requests__2.3] [psf__requests-1963] Command: git diff > /opt/temp_psf__requests-1963_test_init.patch 
+[psf__requests__2.3] [psf__requests-1963] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.3] [psf__requests-1963] Std. Output:
+ 
+[psf__requests__2.3] [psf__requests-1963] Return Code: 0 
 [psf__requests__2.3] [psf__requests-1963] Command: git restore test_requests.py 
 [psf__requests__2.3] [psf__requests-1963] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.3] [psf__requests-1963] Std. Output:
@@ -54,7 +74,7 @@ Applied patch test_requests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.py;
 [psf__requests__2.3] [psf__requests-1963] Command: pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.py 
-[psf__requests__2.3] [psf__requests-1963] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[psf__requests__2.3] [psf__requests-1963] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [psf__requests__2.3] [psf__requests-1963] Std. Output:
 ============================= test session starts ==============================
 collected 121 items
@@ -242,7 +262,7 @@ PASSED test_requests.py::TestMorselToCookieMaxAge::test_max_age_valid_int
 PASSED test_requests.py::TestTimeout::test_stream_timeout
 FAILED test_requests.py::RequestsTestCase::test_conflicting_post_params - Typ...
 FAILED test_requests.py::TestRedirects::test_requests_are_updated_each_time
-================= 2 failed, 119 passed, 14 warnings in 33.66s ==================
+============ 2 failed, 119 passed, 14 warnings in 71.27s (0:01:11) =============
  
 [psf__requests__2.3] [psf__requests-1963] Return Code: 1 
 

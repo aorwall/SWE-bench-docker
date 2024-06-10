@@ -49,15 +49,15 @@ Applied patch tests/backends/sqlite/test_creation.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 backends.sqlite.test_creation;
 [django__django__3.1] [django__django-12113] Command: ./tests/runtests.py --verbosity 2 backends.sqlite.test_creation 
-[django__django__3.1] [django__django-12113] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.1] [django__django-12113] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-12113] Std. Output:
 test_custom_test_name (backends.sqlite.test_creation.TestDbSignatureTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 1 test in 0.001s
+Ran 1 test in 0.000s
 
 OK
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application backends
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).

@@ -864,6 +864,7 @@
         "django__django-14855",
         "pytest-dev__pytest-9359",
         "django__django-15789",
+        "django__django-13757",
         "sphinx-doc__sphinx-10325",
         "django__django-16820",
         "django__django-11001",
@@ -879,9 +880,7 @@
         "scikit-learn__scikit-learn-12471"
     ],
     "test_errored": [],
-    "test_timeout": [
-        "sympy__sympy-11870"
-    ],
+    "test_timeout": [],
     "resolved": [
         "astropy__astropy-14995",
         "pytest-dev__pytest-5692",

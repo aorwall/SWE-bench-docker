@@ -1,12 +1,18 @@
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Task Metadata:
 	- Instance ID: pytest-dev__pytest-9359
 	- Testbed: pytest-dev__pytest__7.0
-	- 
-	- Evaluation Model: 20240402_sweagent_gpt4 
+	- Evaluation Model: 20240402_sweagent_gpt4
+	- Python version: Python 3.11.8
+ 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: git -c advice.detachedHead=false checkout e2ee3144ed6e241dea8d96215fcdca18b3892551 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Std. Output:
 HEAD is now at e2ee3144e Merge pull request #9352 from truth-quark/spelling_fix_9351
+ 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 0 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: git diff > /home/swe-bench/temp_pytest-dev__pytest-9359_pred_try_init.patch 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Std. Output:
  
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 0 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-9359_pred_try.patch 
@@ -18,6 +24,11 @@ Applied patch test_assert_lineno.py cleanly.
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 0 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: git diff > /home/swe-bench/temp_pytest-dev__pytest-9359_pred_try_init.patch 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Std. Output:
+ 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 0 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: git apply -v -R /home/swe-bench/temp_pytest-dev__pytest-9359_pred_try.patch 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Std. Output:
@@ -27,6 +38,11 @@ Applied patch test_assert_lineno.py cleanly.
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 0 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: git diff > /home/swe-bench/temp_pytest-dev__pytest-9359_pred_init.patch 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Std. Output:
+ 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 0 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-9359_pred.patch 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Std. Output:
@@ -36,6 +52,11 @@ Applied patch test_assert_lineno.py cleanly.
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 0 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: git diff > /home/swe-bench/temp_pytest-dev__pytest-9359_test_init.patch 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Std. Output:
+ 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 0 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: git restore testing/code/test_source.py 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Std. Output:
@@ -50,9 +71,9 @@ Applied patch testing/code/test_source.py cleanly.
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 0 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pytest-dev__pytest__7.0 pytest -rA testing/code/test_source.py;
+Test Script: conda run -n pytest-dev__pytest__7.0  pytest -rA testing/code/test_source.py;
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Command: conda run -n pytest-dev__pytest__7.0 pytest -rA testing/code/test_source.py 
-[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Std. Output:
 ERROR conda.cli.main_run:execute(124): `conda run pytest -rA testing/code/test_source.py` failed. (See above for error)
 ============================= test session starts ==============================
@@ -78,7 +99,7 @@ ________________________________ test_decorator ________________________________
         source = getstatement(3, s)
 >       assert "@foo" in str(source)
 E       AssertionError: assert '@foo' in '    pass'
-E        +  where '    pass' = str(<_pytest._code.source.Source object at 0x73f2f691afd0>)
+E        +  where '    pass' = str(<_pytest._code.source.Source object at 0x7f3d6feba3a0>)
 
 testing/code/test_source.py:631: AssertionError
 ==================================== PASSES ====================================
@@ -138,7 +159,7 @@ PASSED testing/code/test_source.py::test_semicolon
 PASSED testing/code/test_source.py::test_def_online
 PASSED testing/code/test_source.py::test_getstartingblock_multiline
 FAILED testing/code/test_source.py::test_decorator - AssertionError: assert '...
-========================= 1 failed, 54 passed in 0.24s =========================
+========================= 1 failed, 54 passed in 0.16s =========================
 
  
 [pytest-dev__pytest__7.0] [pytest-dev__pytest-9359] Return Code: 1 

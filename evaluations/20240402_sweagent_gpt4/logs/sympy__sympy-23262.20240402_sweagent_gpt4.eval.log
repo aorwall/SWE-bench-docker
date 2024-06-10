@@ -1,13 +1,19 @@
 [sympy__sympy__1.11] [sympy__sympy-23262] Task Metadata:
 	- Instance ID: sympy__sympy-23262
 	- Testbed: sympy__sympy__1.11
-	- 
-	- Evaluation Model: 20240402_sweagent_gpt4 
+	- Evaluation Model: 20240402_sweagent_gpt4
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.11] [sympy__sympy-23262] Command: git -c advice.detachedHead=false checkout fdc707f73a65a429935c01532cd3970d3355eab6 
 [sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.11] [sympy__sympy-23262] Std. Output:
 Previous HEAD position was 9a6104eab0 Merge pull request #23735 from mkoeppe/ci_sage_2022_07_06
 HEAD is now at fdc707f73a Merge pull request #23217 from oscarbenjamin/pr_unpickling_unyt
+ 
+[sympy__sympy__1.11] [sympy__sympy-23262] Return Code: 0 
+[sympy__sympy__1.11] [sympy__sympy-23262] Command: git diff > /home/swe-bench/temp_sympy__sympy-23262_pred_try_init.patch 
+[sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.11] [sympy__sympy-23262] Std. Output:
  
 [sympy__sympy__1.11] [sympy__sympy-23262] Return Code: 0 
 [sympy__sympy__1.11] [sympy__sympy-23262] Command: git apply -v /home/swe-bench/temp_sympy__sympy-23262_pred_try.patch 
@@ -19,6 +25,11 @@ Applied patch sympy/utilities/lambdify.py cleanly.
 [sympy__sympy__1.11] [sympy__sympy-23262] Return Code: 0 
 [sympy__sympy__1.11] [sympy__sympy-23262] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[sympy__sympy__1.11] [sympy__sympy-23262] Command: git diff > /home/swe-bench/temp_sympy__sympy-23262_pred_try_init.patch 
+[sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.11] [sympy__sympy-23262] Std. Output:
+ 
+[sympy__sympy__1.11] [sympy__sympy-23262] Return Code: 0 
 [sympy__sympy__1.11] [sympy__sympy-23262] Command: git apply -v -R /home/swe-bench/temp_sympy__sympy-23262_pred_try.patch 
 [sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.11] [sympy__sympy-23262] Std. Output:
@@ -28,6 +39,11 @@ Applied patch sympy/utilities/lambdify.py cleanly.
 [sympy__sympy__1.11] [sympy__sympy-23262] Return Code: 0 
 [sympy__sympy__1.11] [sympy__sympy-23262] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[sympy__sympy__1.11] [sympy__sympy-23262] Command: git diff > /home/swe-bench/temp_sympy__sympy-23262_pred_init.patch 
+[sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.11] [sympy__sympy-23262] Std. Output:
+ 
+[sympy__sympy__1.11] [sympy__sympy-23262] Return Code: 0 
 [sympy__sympy__1.11] [sympy__sympy-23262] Command: git apply -v /home/swe-bench/temp_sympy__sympy-23262_pred.patch 
 [sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.11] [sympy__sympy-23262] Std. Output:
@@ -37,6 +53,11 @@ Applied patch sympy/utilities/lambdify.py cleanly.
 [sympy__sympy__1.11] [sympy__sympy-23262] Return Code: 0 
 [sympy__sympy__1.11] [sympy__sympy-23262] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[sympy__sympy__1.11] [sympy__sympy-23262] Command: git diff > /home/swe-bench/temp_sympy__sympy-23262_test_init.patch 
+[sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.11] [sympy__sympy-23262] Std. Output:
+ 
+[sympy__sympy__1.11] [sympy__sympy-23262] Return Code: 0 
 [sympy__sympy__1.11] [sympy__sympy-23262] Command: git restore sympy/utilities/tests/test_lambdify.py 
 [sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.11] [sympy__sympy-23262] Std. Output:
@@ -51,9 +72,9 @@ Applied patch sympy/utilities/tests/test_lambdify.py cleanly.
 [sympy__sympy__1.11] [sympy__sympy-23262] Return Code: 0 
 [sympy__sympy__1.11] [sympy__sympy-23262] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.11 bin/test -C --verbose sympy/utilities/tests/test_lambdify.py;
+Test Script: conda run -n sympy__sympy__1.11  bin/test -C --verbose sympy/utilities/tests/test_lambdify.py;
 [sympy__sympy__1.11] [sympy__sympy-23262] Command: conda run -n sympy__sympy__1.11 bin/test -C --verbose sympy/utilities/tests/test_lambdify.py 
-[sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.11] [sympy__sympy-23262] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.11] [sympy__sympy-23262] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.11/bin/python  (3.9.19-final-0) [CPython]
@@ -61,8 +82,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        51719362
-hash randomization: on (PYTHONHASHSEED=686635006)
+random seed:        4787026
+hash randomization: on (PYTHONHASHSEED=2165966773)
 
 sympy/utilities/tests/test_lambdify.py[117] 
 test_no_args ok
@@ -184,7 +205,7 @@ test_lambdify_cse ok
 test_deprecated_set ok                                                      [OK]
 
 
-============ tests finished: 63 passed, 54 skipped, in 4.32 seconds ============
+============ tests finished: 63 passed, 54 skipped, in 2.33 seconds ============
 
  
 [sympy__sympy__1.11] [sympy__sympy-23262] Return Code: 0 

@@ -11,6 +11,11 @@ Previous HEAD position was 0fbdb9784d Fixed #23718 -- Doc'd that test mirrors re
 HEAD is now at d559cb02da Refs #19215 -- Fixed admin_widgets tests if Pillow isn't installed.
  
 [django__django__4.2] [django__django-16139] Return Code: 0 
+[django__django__4.2] [django__django-16139] Command: git diff > /opt/temp_django__django-16139_pred_try_init.patch 
+[django__django__4.2] [django__django-16139] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-16139] Std. Output:
+ 
+[django__django__4.2] [django__django-16139] Return Code: 0 
 [django__django__4.2] [django__django-16139] Command: git apply -v /opt/temp_django__django-16139_pred_try.patch 
 [django__django__4.2] [django__django-16139] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-16139] Std. Output:
@@ -20,6 +25,11 @@ Applied patch django/contrib/auth/forms.py cleanly.
 [django__django__4.2] [django__django-16139] Return Code: 0 
 [django__django__4.2] [django__django-16139] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.2] [django__django-16139] Command: git diff > /opt/temp_django__django-16139_pred_try_init.patch 
+[django__django__4.2] [django__django-16139] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-16139] Std. Output:
+ 
+[django__django__4.2] [django__django-16139] Return Code: 0 
 [django__django__4.2] [django__django-16139] Command: git apply -v -R /opt/temp_django__django-16139_pred_try.patch 
 [django__django__4.2] [django__django-16139] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-16139] Std. Output:
@@ -29,6 +39,11 @@ Applied patch django/contrib/auth/forms.py cleanly.
 [django__django__4.2] [django__django-16139] Return Code: 0 
 [django__django__4.2] [django__django-16139] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.2] [django__django-16139] Command: git diff > /opt/temp_django__django-16139_pred_init.patch 
+[django__django__4.2] [django__django-16139] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-16139] Std. Output:
+ 
+[django__django__4.2] [django__django-16139] Return Code: 0 
 [django__django__4.2] [django__django-16139] Command: git apply -v /opt/temp_django__django-16139_pred.patch 
 [django__django__4.2] [django__django-16139] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-16139] Std. Output:
@@ -38,6 +53,11 @@ Applied patch django/contrib/auth/forms.py cleanly.
 [django__django__4.2] [django__django-16139] Return Code: 0 
 [django__django__4.2] [django__django-16139] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__4.2] [django__django-16139] Command: git diff > /opt/temp_django__django-16139_test_init.patch 
+[django__django__4.2] [django__django-16139] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-16139] Std. Output:
+ 
+[django__django__4.2] [django__django-16139] Return Code: 0 
 [django__django__4.2] [django__django-16139] Command: git apply -v /opt/temp_django__django-16139_test.patch 
 [django__django__4.2] [django__django-16139] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-16139] Std. Output:
@@ -49,10 +69,10 @@ Applied patch tests/auth_tests/test_forms.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 auth_tests.test_forms;
 [django__django__4.2] [django__django-16139] Command: ./tests/runtests.py --verbosity 2 auth_tests.test_forms 
-[django__django__4.2] [django__django-16139] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.2] [django__django-16139] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.2] [django__django-16139] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application auth_tests
 Found 87 test(s).
 Skipping setup of unused database(s): other.
@@ -102,6 +122,12 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 System check identified no issues (0 silenced).
+test_field_order (auth_tests.test_forms.PasswordChangeFormTest) ... ok
+test_html_autocomplete_attributes (auth_tests.test_forms.PasswordChangeFormTest) ... ok
+test_incorrect_password (auth_tests.test_forms.PasswordChangeFormTest) ... ok
+test_password_verification (auth_tests.test_forms.PasswordChangeFormTest) ... ok
+test_password_whitespace_not_stripped (auth_tests.test_forms.PasswordChangeFormTest) ... ok
+test_success (auth_tests.test_forms.PasswordChangeFormTest) ... ok
 test_html_autocomplete_attributes (auth_tests.test_forms.AdminPasswordChangeFormTest) ... ok
 test_missing_passwords (auth_tests.test_forms.AdminPasswordChangeFormTest) ... ok
 test_non_matching_passwords (auth_tests.test_forms.AdminPasswordChangeFormTest) ... ok
@@ -113,32 +139,6 @@ test_label (auth_tests.test_forms.ReadOnlyPasswordHashTest)
 ReadOnlyPasswordHashWidget doesn't contain a for attribute in the ... ok
 test_readonly_field_has_changed (auth_tests.test_forms.ReadOnlyPasswordHashTest) ... ok
 test_render (auth_tests.test_forms.ReadOnlyPasswordHashTest) ... ok
-test_field_order (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_html_autocomplete_attributes (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_incorrect_password (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_password_verification (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_password_whitespace_not_stripped (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_success (auth_tests.test_forms.PasswordChangeFormTest) ... ok
-test_custom_login_allowed_policy (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_get_invalid_login_error (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_html_autocomplete_attributes (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_inactive_user (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_inactive_user_i18n (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_inactive_user_incorrect_password (auth_tests.test_forms.AuthenticationFormTest)
-An invalid login doesn't leak the inactive status of a user. ... ok
-test_integer_username (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_invalid_username (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_login_failed (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_no_password (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_password_whitespace_not_stripped (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_success (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_unicode_username (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_username_field_autocapitalize_none (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_username_field_label (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_username_field_label_empty_string (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_username_field_label_not_set (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_username_field_max_length_defaults_to_254 (auth_tests.test_forms.AuthenticationFormTest) ... ok
-test_username_field_max_length_matches_user_model (auth_tests.test_forms.AuthenticationFormTest) ... ok
 test_help_text_translation (auth_tests.test_forms.SetPasswordFormTest) ... ok
 test_html_autocomplete_attributes (auth_tests.test_forms.SetPasswordFormTest) ... ok
 test_no_password (auth_tests.test_forms.SetPasswordFormTest) ... ok
@@ -165,6 +165,26 @@ test_user_create_form_validates_password_with_all_data (auth_tests.test_forms.Us
 UserCreationForm password validation uses all of the form's data. ... ok
 test_username_field_autocapitalize_none (auth_tests.test_forms.UserCreationFormTest) ... ok
 test_validates_password (auth_tests.test_forms.UserCreationFormTest) ... ok
+test_custom_login_allowed_policy (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_get_invalid_login_error (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_html_autocomplete_attributes (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_inactive_user (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_inactive_user_i18n (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_inactive_user_incorrect_password (auth_tests.test_forms.AuthenticationFormTest)
+An invalid login doesn't leak the inactive status of a user. ... ok
+test_integer_username (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_invalid_username (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_login_failed (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_no_password (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_password_whitespace_not_stripped (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_success (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_unicode_username (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_username_field_autocapitalize_none (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_username_field_label (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_username_field_label_empty_string (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_username_field_label_not_set (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_username_field_max_length_defaults_to_254 (auth_tests.test_forms.AuthenticationFormTest) ... ok
+test_username_field_max_length_matches_user_model (auth_tests.test_forms.AuthenticationFormTest) ... ok
 test_cleaned_data (auth_tests.test_forms.PasswordResetFormTest) ... ok
 test_custom_email_constructor (auth_tests.test_forms.PasswordResetFormTest) ... ok
 test_custom_email_field (auth_tests.test_forms.PasswordResetFormTest) ... ok
@@ -201,7 +221,7 @@ test_username_field_autocapitalize_none (auth_tests.test_forms.UserChangeFormTes
 test_username_validity (auth_tests.test_forms.UserChangeFormTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 87 tests in 0.485s
+Ran 87 tests in 0.184s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

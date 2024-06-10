@@ -4,18 +4,18 @@
 
 | Resolved | Count | Rate |
 | -------- | ----- | ---- |
-| Yes | 319 | 98.76% |
+| Yes | 318 | 98.45% |
 | Partially | 0 | 0% |
-| No | 4 | 1.24% |  
+| No | 5 | 1.55% |  
 
 
 ## Patch Apply Success + Failure
 
 | Resolved | Count | Rate |
 | -------- | ----- | ---- |
-| Yes | 319 | 98.76% |
+| Yes | 318 | 98.45% |
 | Partially | 0 | 0% |
-| No | 4 | 1.24% |  
+| No | 5 | 1.55% |  
 
 
 ## Benchmark instances
@@ -24,10 +24,11 @@
 
 | Instance ID | Repository | Testbed version |
 | ----------- | ---------- | --------------- |
-| [matplotlib__matplotlib-23987](logs/matplotlib__matplotlib-23987.SWE-bench_Lite_golden.eval.log) | matplotlib/matplotlib | 3.6 |
+| [django__django-13660](logs/django__django-13660.SWE-bench_Lite_golden.eval.log) | django/django | 3.2 |
 | [pydata__xarray-4094](logs/pydata__xarray-4094.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
 | [pydata__xarray-4493](logs/pydata__xarray-4493.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
-| [sympy__sympy-13146](logs/sympy__sympy-13146.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
+| [pydicom__pydicom-1413](logs/pydicom__pydicom-1413.SWE-bench_Lite_golden.eval.log) | pydicom/pydicom | 2.1 |
+| [sympy__sympy-13177](logs/sympy__sympy-13177.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
 
 
 ### Resolved
@@ -94,7 +95,6 @@
 | [django__django-13551](logs/django__django-13551.SWE-bench_Lite_golden.eval.log) | django/django | 3.2 |
 | [django__django-13590](logs/django__django-13590.SWE-bench_Lite_golden.eval.log) | django/django | 3.2 |
 | [django__django-13658](logs/django__django-13658.SWE-bench_Lite_golden.eval.log) | django/django | 3.2 |
-| [django__django-13660](logs/django__django-13660.SWE-bench_Lite_golden.eval.log) | django/django | 3.2 |
 | [django__django-13710](logs/django__django-13710.SWE-bench_Lite_golden.eval.log) | django/django | 4.0 |
 | [django__django-13757](logs/django__django-13757.SWE-bench_Lite_golden.eval.log) | django/django | 3.2 |
 | [django__django-13768](logs/django__django-13768.SWE-bench_Lite_golden.eval.log) | django/django | 3.2 |
@@ -166,6 +166,7 @@
 | [matplotlib__matplotlib-23563](logs/matplotlib__matplotlib-23563.SWE-bench_Lite_golden.eval.log) | matplotlib/matplotlib | 3.5 |
 | [matplotlib__matplotlib-23913](logs/matplotlib__matplotlib-23913.SWE-bench_Lite_golden.eval.log) | matplotlib/matplotlib | 3.6 |
 | [matplotlib__matplotlib-23964](logs/matplotlib__matplotlib-23964.SWE-bench_Lite_golden.eval.log) | matplotlib/matplotlib | 3.6 |
+| [matplotlib__matplotlib-23987](logs/matplotlib__matplotlib-23987.SWE-bench_Lite_golden.eval.log) | matplotlib/matplotlib | 3.6 |
 | [matplotlib__matplotlib-24149](logs/matplotlib__matplotlib-24149.SWE-bench_Lite_golden.eval.log) | matplotlib/matplotlib | 3.6 |
 | [matplotlib__matplotlib-24265](logs/matplotlib__matplotlib-24265.SWE-bench_Lite_golden.eval.log) | matplotlib/matplotlib | 3.6 |
 | [matplotlib__matplotlib-24334](logs/matplotlib__matplotlib-24334.SWE-bench_Lite_golden.eval.log) | matplotlib/matplotlib | 3.6 |
@@ -201,7 +202,6 @@
 | [pydata__xarray-5131](logs/pydata__xarray-5131.SWE-bench_Lite_golden.eval.log) | pydata/xarray | 0.12 |
 | [pydicom__pydicom-1139](logs/pydicom__pydicom-1139.SWE-bench_Lite_golden.eval.log) | pydicom/pydicom | 2.0 |
 | [pydicom__pydicom-1256](logs/pydicom__pydicom-1256.SWE-bench_Lite_golden.eval.log) | pydicom/pydicom | 2.1 |
-| [pydicom__pydicom-1413](logs/pydicom__pydicom-1413.SWE-bench_Lite_golden.eval.log) | pydicom/pydicom | 2.1 |
 | [pydicom__pydicom-1694](logs/pydicom__pydicom-1694.SWE-bench_Lite_golden.eval.log) | pydicom/pydicom | 2.3 |
 | [pydicom__pydicom-901](logs/pydicom__pydicom-901.SWE-bench_Lite_golden.eval.log) | pydicom/pydicom | 1.3 |
 | [pylint-dev__astroid-1196](logs/pylint-dev__astroid-1196.SWE-bench_Lite_golden.eval.log) | pylint-dev/astroid | 2.12 |
@@ -287,7 +287,7 @@
 | [sympy__sympy-12481](logs/sympy__sympy-12481.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.0 |
 | [sympy__sympy-13031](logs/sympy__sympy-13031.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
 | [sympy__sympy-13043](logs/sympy__sympy-13043.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
-| [sympy__sympy-13177](logs/sympy__sympy-13177.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
+| [sympy__sympy-13146](logs/sympy__sympy-13146.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
 | [sympy__sympy-13437](logs/sympy__sympy-13437.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
 | [sympy__sympy-13471](logs/sympy__sympy-13471.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |
 | [sympy__sympy-13480](logs/sympy__sympy-13480.SWE-bench_Lite_golden.eval.log) | sympy/sympy | 1.1 |

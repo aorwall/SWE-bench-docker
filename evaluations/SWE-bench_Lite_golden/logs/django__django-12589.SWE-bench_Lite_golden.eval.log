@@ -51,7 +51,7 @@ Applied patch tests/aggregation/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 aggregation.models aggregation.tests;
 [django__django__3.1] [django__django-12589] Command: ./tests/runtests.py --verbosity 2 aggregation.models aggregation.tests 
-[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-12589] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 test_add_implementation (aggregation.tests.AggregateTestCase) ... ok
@@ -124,11 +124,11 @@ test_values_aggregation (aggregation.tests.AggregateTestCase) ... ok
 test_values_annotation_with_expression (aggregation.tests.AggregateTestCase) ... ok
 
 ----------------------------------------------------------------------
-Ran 67 tests in 0.389s
+Ran 67 tests in 0.168s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application aggregation
 Skipping setup of unused database(s): other.
 Operations to perform:

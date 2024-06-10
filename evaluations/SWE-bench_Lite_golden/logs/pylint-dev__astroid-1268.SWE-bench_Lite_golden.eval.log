@@ -54,7 +54,7 @@ Applied patch tests/unittest_nodes.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pylint-dev__astroid__2.9  pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_nodes.py;
 [pylint-dev__astroid__2.9] [pylint-dev__astroid-1268] Command: conda run -n pylint-dev__astroid__2.9 pytest --no-header -rA --tb=no -p no:cacheprovider tests/unittest_nodes.py 
-[pylint-dev__astroid__2.9] [pylint-dev__astroid-1268] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pylint-dev__astroid__2.9] [pylint-dev__astroid-1268] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__astroid", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pylint-dev__astroid__2.9] [pylint-dev__astroid-1268] Std. Output:
 ============================= test session starts ==============================
 collected 97 items
@@ -166,7 +166,7 @@ SKIPPED [1] tests/unittest_nodes.py:1672: pattern matching was added in PY310
 SKIPPED [1] tests/unittest_nodes.py:1727: pattern matching was added in PY310
 SKIPPED [1] tests/unittest_nodes.py:1781: pattern matching was added in PY310
 SKIPPED [1] tests/unittest_nodes.py:1831: pattern matching was added in PY310
-=================== 92 passed, 5 skipped, 1 warning in 5.74s ===================
+=================== 92 passed, 5 skipped, 1 warning in 2.41s ===================
 
  
 [pylint-dev__astroid__2.9] [pylint-dev__astroid-1268] Return Code: 0 

@@ -54,7 +54,7 @@ Applied patch sympy/polys/tests/test_factortools.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.7  bin/test -C --verbose sympy/polys/tests/test_factortools.py;
 [sympy__sympy__1.7] [sympy__sympy-19254] Command: conda run -n sympy__sympy__1.7 bin/test -C --verbose sympy/polys/tests/test_factortools.py 
-[sympy__sympy__1.7] [sympy__sympy-19254] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.7] [sympy__sympy-19254] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.7] [sympy__sympy-19254] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.7/bin/python  (3.9.19-final-0) [CPython]
@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        79266786
-hash randomization: on (PYTHONHASHSEED=1462521801)
+random seed:        32522467
+hash randomization: on (PYTHONHASHSEED=888958307)
 
 sympy/polys/tests/test_factortools.py[21] 
 test_dup_trial_division ok
@@ -89,7 +89,7 @@ test_dup_irreducible_p ok
 test_dmp_irreducible_p ok                                                   [OK]
 
 
-======== tests finished: 20 passed, 1 expected to fail, in 1.17 seconds ========
+======== tests finished: 20 passed, 1 expected to fail, in 0.74 seconds ========
 
  
 [sympy__sympy__1.7] [sympy__sympy-19254] Return Code: 0 

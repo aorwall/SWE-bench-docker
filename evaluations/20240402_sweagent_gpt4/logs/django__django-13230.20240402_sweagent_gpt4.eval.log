@@ -11,6 +11,11 @@ Previous HEAD position was 65dfb06a1a [3.2.x] Fixed #32648 -- Fixed VariableDoes
 HEAD is now at 184a6eebb0 Refs #31829 -- Added DatabaseFeatures.json_key_contains_list_matching_requires_list.
  
 [django__django__3.2] [django__django-13230] Return Code: 0 
+[django__django__3.2] [django__django-13230] Command: git diff > /opt/temp_django__django-13230_pred_try_init.patch 
+[django__django__3.2] [django__django-13230] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13230] Std. Output:
+ 
+[django__django__3.2] [django__django-13230] Return Code: 0 
 [django__django__3.2] [django__django-13230] Command: git apply -v /opt/temp_django__django-13230_pred_try.patch 
 [django__django__3.2] [django__django-13230] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13230] Std. Output:
@@ -20,6 +25,11 @@ Applied patch django/contrib/syndication/views.py cleanly.
 [django__django__3.2] [django__django-13230] Return Code: 0 
 [django__django__3.2] [django__django-13230] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.2] [django__django-13230] Command: git diff > /opt/temp_django__django-13230_pred_try_init.patch 
+[django__django__3.2] [django__django-13230] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13230] Std. Output:
+ 
+[django__django__3.2] [django__django-13230] Return Code: 0 
 [django__django__3.2] [django__django-13230] Command: git apply -v -R /opt/temp_django__django-13230_pred_try.patch 
 [django__django__3.2] [django__django-13230] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13230] Std. Output:
@@ -29,6 +39,11 @@ Applied patch django/contrib/syndication/views.py cleanly.
 [django__django__3.2] [django__django-13230] Return Code: 0 
 [django__django__3.2] [django__django-13230] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.2] [django__django-13230] Command: git diff > /opt/temp_django__django-13230_pred_init.patch 
+[django__django__3.2] [django__django-13230] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13230] Std. Output:
+ 
+[django__django__3.2] [django__django-13230] Return Code: 0 
 [django__django__3.2] [django__django-13230] Command: git apply -v /opt/temp_django__django-13230_pred.patch 
 [django__django__3.2] [django__django-13230] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13230] Std. Output:
@@ -38,6 +53,11 @@ Applied patch django/contrib/syndication/views.py cleanly.
 [django__django__3.2] [django__django-13230] Return Code: 0 
 [django__django__3.2] [django__django-13230] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.2] [django__django-13230] Command: git diff > /opt/temp_django__django-13230_test_init.patch 
+[django__django__3.2] [django__django-13230] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13230] Std. Output:
+ 
+[django__django__3.2] [django__django-13230] Return Code: 0 
 [django__django__3.2] [django__django-13230] Command: git apply -v /opt/temp_django__django-13230_test.patch 
 [django__django__3.2] [django__django-13230] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13230] Std. Output:
@@ -51,7 +71,7 @@ Applied patch tests/syndication_tests/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 syndication_tests.feeds syndication_tests.tests;
 [django__django__3.2] [django__django-13230] Command: ./tests/runtests.py --verbosity 2 syndication_tests.feeds syndication_tests.tests 
-[django__django__3.2] [django__django-13230] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.2] [django__django-13230] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.2] [django__django-13230] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 test_add_domain (syndication_tests.tests.SyndicationFeedTest) ... ok
@@ -80,11 +100,11 @@ test_template_feed (syndication_tests.tests.SyndicationFeedTest) ... ok
 test_title_escaping (syndication_tests.tests.SyndicationFeedTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 24 tests in 0.368s
+Ran 24 tests in 0.139s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application syndication_tests
 Skipping setup of unused database(s): other.
 Operations to perform:

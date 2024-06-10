@@ -51,19 +51,19 @@ Applied patch tests/urlpatterns/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 urlpatterns.path_urls urlpatterns.tests;
 [django__django__3.1] [django__django-12184] Command: ./tests/runtests.py --verbosity 2 urlpatterns.path_urls urlpatterns.tests 
-[django__django__3.1] [django__django-12184] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.1] [django__django-12184] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-12184] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application urlpatterns
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
-test_allows_non_ascii_but_valid_identifiers (urlpatterns.tests.ParameterRestrictionTests) ... ok
-test_non_identifier_parameter_name_causes_exception (urlpatterns.tests.ParameterRestrictionTests) ... ok
 test_resolve_type_error_propagates (urlpatterns.tests.ConversionExceptionTests) ... ok
 test_resolve_value_error_means_no_match (urlpatterns.tests.ConversionExceptionTests) ... ok
 test_reverse_value_error_propagates (urlpatterns.tests.ConversionExceptionTests) ... ok
 test_matching_urls (urlpatterns.tests.ConverterTests) ... ok
 test_nonmatching_urls (urlpatterns.tests.ConverterTests) ... ok
+test_allows_non_ascii_but_valid_identifiers (urlpatterns.tests.ParameterRestrictionTests) ... ok
+test_non_identifier_parameter_name_causes_exception (urlpatterns.tests.ParameterRestrictionTests) ... ok
 test_converter_resolve (urlpatterns.tests.SimplifiedURLTests) ... ok
 test_converter_reverse (urlpatterns.tests.SimplifiedURLTests) ... ok
 test_converter_reverse_with_second_layer_instance_namespace (urlpatterns.tests.SimplifiedURLTests) ... ok
@@ -85,7 +85,7 @@ test_space_in_route (urlpatterns.tests.SimplifiedURLTests) ... ok
 test_two_variable_at_start_of_path_pattern (urlpatterns.tests.SimplifiedURLTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 26 tests in 0.180s
+Ran 26 tests in 0.342s
 
 OK
  

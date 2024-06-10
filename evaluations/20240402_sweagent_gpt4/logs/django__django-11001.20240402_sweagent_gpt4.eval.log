@@ -11,6 +11,11 @@ Previous HEAD position was 419a78300f [3.0.x] Fixed typo in docs/ref/contrib/pos
 HEAD is now at ef082ebb84 Fixed #29529 -- Allowed models.fields.FilePathField to accept a callable path.
  
 [django__django__3.0] [django__django-11001] Return Code: 0 
+[django__django__3.0] [django__django-11001] Command: git diff > /opt/temp_django__django-11001_pred_try_init.patch 
+[django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11001] Std. Output:
+ 
+[django__django__3.0] [django__django-11001] Return Code: 0 
 [django__django__3.0] [django__django-11001] Command: git apply -v /opt/temp_django__django-11001_pred_try.patch 
 [django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11001] Std. Output:
@@ -24,6 +29,11 @@ Applied patch simulate_bug.py cleanly.
 [django__django__3.0] [django__django-11001] Return Code: 0 
 [django__django__3.0] [django__django-11001] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.0] [django__django-11001] Command: git diff > /opt/temp_django__django-11001_pred_try_init.patch 
+[django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11001] Std. Output:
+ 
+[django__django__3.0] [django__django-11001] Return Code: 0 
 [django__django__3.0] [django__django-11001] Command: git apply -v -R /opt/temp_django__django-11001_pred_try.patch 
 [django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11001] Std. Output:
@@ -37,6 +47,11 @@ Applied patch django/db/models/sql/compiler.py cleanly.
 [django__django__3.0] [django__django-11001] Return Code: 0 
 [django__django__3.0] [django__django-11001] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.0] [django__django-11001] Command: git diff > /opt/temp_django__django-11001_pred_init.patch 
+[django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11001] Std. Output:
+ 
+[django__django__3.0] [django__django-11001] Return Code: 0 
 [django__django__3.0] [django__django-11001] Command: git apply -v /opt/temp_django__django-11001_pred.patch 
 [django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11001] Std. Output:
@@ -50,6 +65,11 @@ Applied patch simulate_bug.py cleanly.
 [django__django__3.0] [django__django-11001] Return Code: 0 
 [django__django__3.0] [django__django-11001] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.0] [django__django-11001] Command: git diff > /opt/temp_django__django-11001_test_init.patch 
+[django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11001] Std. Output:
+ 
+[django__django__3.0] [django__django-11001] Return Code: 0 
 [django__django__3.0] [django__django-11001] Command: git apply -v /opt/temp_django__django-11001_test.patch 
 [django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11001] Std. Output:
@@ -61,9 +81,9 @@ Applied patch tests/expressions/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 expressions.tests;
 [django__django__3.0] [django__django-11001] Command: ./tests/runtests.py --verbosity 2 expressions.tests 
-[django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.0] [django__django-11001] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application expressions
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -117,20 +137,13 @@ test_negation (expressions.tests.CombinableTests) ... ok
 test_or (expressions.tests.CombinableTests) ... ok
 test_reversed_and (expressions.tests.CombinableTests) ... ok
 test_reversed_or (expressions.tests.CombinableTests) ... ok
+test_equal (expressions.tests.SimpleExpressionTests) ... ok
+test_hash (expressions.tests.SimpleExpressionTests) ... ok
 test_aggregates (expressions.tests.ReprTests) ... ok
 test_distinct_aggregates (expressions.tests.ReprTests) ... ok
 test_expressions (expressions.tests.ReprTests) ... ok
 test_filtered_aggregates (expressions.tests.ReprTests) ... ok
 test_functions (expressions.tests.ReprTests) ... ok
-test_equal (expressions.tests.SimpleExpressionTests) ... ok
-test_hash (expressions.tests.SimpleExpressionTests) ... ok
-test_F_reuse (expressions.tests.ExpressionsTests) ... ok
-test_insensitive_patterns_escape (expressions.tests.ExpressionsTests) ... ok
-test_patterns_escape (expressions.tests.ExpressionsTests) ... ok
-test_complex_expressions (expressions.tests.ExpressionsNumericTests) ... ok
-test_fill_with_value_from_same_object (expressions.tests.ExpressionsNumericTests) ... ok
-test_filter_not_equals_other_field (expressions.tests.ExpressionsNumericTests) ... ok
-test_increment_value (expressions.tests.ExpressionsNumericTests) ... ok
 test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
 test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
 test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
@@ -142,6 +155,18 @@ test_hash (expressions.tests.ValueTests) ... ok
 test_raise_empty_expressionlist (expressions.tests.ValueTests) ... ok
 test_update_TimeField_using_Value (expressions.tests.ValueTests) ... ok
 test_update_UUIDField_using_Value (expressions.tests.ValueTests) ... ok
+test_complex_expressions (expressions.tests.ExpressionsNumericTests) ... ok
+test_fill_with_value_from_same_object (expressions.tests.ExpressionsNumericTests) ... ok
+test_filter_not_equals_other_field (expressions.tests.ExpressionsNumericTests) ... ok
+test_increment_value (expressions.tests.ExpressionsNumericTests) ... ok
+test_F_reuse (expressions.tests.ExpressionsTests) ... ok
+test_insensitive_patterns_escape (expressions.tests.ExpressionsTests) ... ok
+test_patterns_escape (expressions.tests.ExpressionsTests) ... ok
+test_complex_expressions_do_not_introduce_sql_injection_via_untrusted_string_inclusion (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_expressions_in_lookups_join_choice (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_in_lookup_allows_F_expressions_and_expressions_for_datetimes (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_in_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_range_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
 test_lefthand_addition (expressions.tests.ExpressionOperatorTests) ... ok
 test_lefthand_bitwise_and (expressions.tests.ExpressionOperatorTests) ... ok
 test_lefthand_bitwise_left_shift_operator (expressions.tests.ExpressionOperatorTests) ... ok
@@ -158,11 +183,6 @@ test_right_hand_modulo (expressions.tests.ExpressionOperatorTests) ... ok
 test_right_hand_multiplication (expressions.tests.ExpressionOperatorTests) ... ok
 test_right_hand_subtraction (expressions.tests.ExpressionOperatorTests) ... ok
 test_righthand_power (expressions.tests.ExpressionOperatorTests) ... ok
-test_complex_expressions_do_not_introduce_sql_injection_via_untrusted_string_inclusion (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_expressions_in_lookups_join_choice (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_in_lookup_allows_F_expressions_and_expressions_for_datetimes (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_in_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_range_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
 test_aggregate_subquery_annotation (expressions.tests.BasicExpressionsTests) ... ok
 test_annotate_values_aggregate (expressions.tests.BasicExpressionsTests) ... ok
 test_annotate_values_count (expressions.tests.BasicExpressionsTests) ... ok
@@ -229,7 +249,7 @@ test_query_clone (expressions.tests.FTimeDeltaTests) ... ok
 test_time_subtraction (expressions.tests.FTimeDeltaTests) ... ok
 
 ======================================================================
-ERROR: test_order_by_multiline_sql (expressions.tests.BasicExpressionsTests) [<object object at 0x7ef158cd3af0>] (qs=<QuerySet [<Company: Example Inc.>, <Company: Foobar Ltd.>, <Company: Test GmbH>]>)
+ERROR: test_order_by_multiline_sql (expressions.tests.BasicExpressionsTests) [<object object at 0x7fd0147d3af0>] (qs=<QuerySet [<Company: Example Inc.>, <Company: Foobar Ltd.>, <Company: Test GmbH>]>)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/django__django/django/db/backends/utils.py", line 85, in _execute
@@ -272,7 +292,7 @@ Traceback (most recent call last):
 django.db.utils.OperationalError: near ")": syntax error
 
 ----------------------------------------------------------------------
-Ran 121 tests in 0.384s
+Ran 121 tests in 0.429s
 
 FAILED (errors=1, skipped=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

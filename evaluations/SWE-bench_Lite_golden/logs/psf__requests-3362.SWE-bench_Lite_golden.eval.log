@@ -53,7 +53,7 @@ Applied patch tests/test_requests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_requests.py;
 [psf__requests__2.10] [psf__requests-3362] Command: pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_requests.py 
-[psf__requests__2.10] [psf__requests-3362] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[psf__requests__2.10] [psf__requests-3362] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [psf__requests__2.10] [psf__requests-3362] Std. Output:
 ============================= test session starts ==============================
 collected 185 items
@@ -335,7 +335,7 @@ ERROR tests/test_requests.py::TestTimeout::test_encoded_methods
 ERROR tests/test_requests.py::test_requests_are_updated_each_time
 ERROR tests/test_requests.py::test_urllib3_retries
 ERROR tests/test_requests.py::test_urllib3_pool_connection_closed
-============ 76 passed, 1 xfailed, 22 warnings, 108 errors in 1.58s ============
+============ 76 passed, 1 xfailed, 22 warnings, 108 errors in 1.01s ============
  
 [psf__requests__2.10] [psf__requests-3362] Return Code: 1 
 

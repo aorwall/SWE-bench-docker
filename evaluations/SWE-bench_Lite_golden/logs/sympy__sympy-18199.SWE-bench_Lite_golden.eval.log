@@ -61,7 +61,7 @@ Applied patch sympy/solvers/tests/test_solveset.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.6  bin/test -C --verbose sympy/ntheory/tests/test_residue.py sympy/solvers/tests/test_solveset.py;
 [sympy__sympy__1.6] [sympy__sympy-18199] Command: conda run -n sympy__sympy__1.6 bin/test -C --verbose sympy/ntheory/tests/test_residue.py sympy/solvers/tests/test_solveset.py 
-[sympy__sympy__1.6] [sympy__sympy-18199] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.6] [sympy__sympy-18199] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.6] [sympy__sympy-18199] Std. Output:
 ERROR conda.cli.main_run:execute(124): `conda run bin/test -C --verbose sympy/ntheory/tests/test_residue.py sympy/solvers/tests/test_solveset.py` failed. (See above for error)
 ============================= test process starts ==============================
@@ -70,8 +70,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        125849
-hash randomization: on (PYTHONHASHSEED=1679983237)
+random seed:        47334143
+hash randomization: on (PYTHONHASHSEED=1687033397)
 
 sympy/ntheory/tests/test_residue.py[1] 
 test_residue ok                                                             [OK]
@@ -211,11 +211,7 @@ test_solve_modular_fail X                                                 [FAIL]
 
 
 ________________________________ slowest tests _________________________________
-test_issue_11064 - Took 10.657 seconds
-test__solveset_multi - Took 11.250 seconds
-test_solveset_sqrt_2 - Took 14.573 seconds
-test_solve_decomposition - Took 20.016 seconds
-test_issue_17479 - Took 40.032 seconds
+test_issue_17479 - Took 16.360 seconds
 ________________________________ xpassed tests _________________________________
 sympy/solvers/tests/test_solveset.py: test_solve_modular_fail
 
@@ -233,7 +229,7 @@ Traceback (most recent call last):
 AssertionError
 
  tests finished: 115 passed, 2 failed, 3 skipped, 11 expected to fail, 
-1 expected to fail but passed, in 262.03 seconds 
+1 expected to fail but passed, in 90.39 seconds 
 DO *NOT* COMMIT!
 
  

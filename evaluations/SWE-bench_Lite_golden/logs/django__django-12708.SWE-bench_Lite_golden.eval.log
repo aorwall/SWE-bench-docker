@@ -51,9 +51,9 @@ Applied patch tests/migrations/test_operations.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 migrations.test_base migrations.test_operations;
 [django__django__3.1] [django__django-12708] Command: ./tests/runtests.py --verbosity 2 migrations.test_base migrations.test_operations 
-[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-12708] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application migrations
 Operations to perform:
   Synchronize unmigrated apps: auth, contenttypes, messages, migrations, sessions, staticfiles
@@ -212,7 +212,7 @@ test_smallfield_bigautofield_foreignfield_growth (migrations.test_operations.Ope
 A field may be migrated from SmallAutoField to BigAutoField. ... ok
 
 ----------------------------------------------------------------------
-Ran 102 tests in 3.317s
+Ran 102 tests in 1.406s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

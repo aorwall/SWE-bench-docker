@@ -11,6 +11,11 @@ Previous HEAD position was 419a78300f [3.0.x] Fixed typo in docs/ref/contrib/pos
 HEAD is now at 17455e924e Removed executable bit from static asset xregexp.js.
  
 [django__django__3.0] [django__django-11049] Return Code: 0 
+[django__django__3.0] [django__django-11049] Command: git diff > /opt/temp_django__django-11049_pred_try_init.patch 
+[django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11049] Std. Output:
+ 
+[django__django__3.0] [django__django-11049] Return Code: 0 
 [django__django__3.0] [django__django-11049] Command: git apply -v /opt/temp_django__django-11049_pred_try.patch 
 [django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11049] Std. Output:
@@ -20,6 +25,11 @@ Applied patch django/forms/fields.py cleanly.
 [django__django__3.0] [django__django-11049] Return Code: 0 
 [django__django__3.0] [django__django-11049] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.0] [django__django-11049] Command: git diff > /opt/temp_django__django-11049_pred_try_init.patch 
+[django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11049] Std. Output:
+ 
+[django__django__3.0] [django__django-11049] Return Code: 0 
 [django__django__3.0] [django__django-11049] Command: git apply -v -R /opt/temp_django__django-11049_pred_try.patch 
 [django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11049] Std. Output:
@@ -29,6 +39,11 @@ Applied patch django/forms/fields.py cleanly.
 [django__django__3.0] [django__django-11049] Return Code: 0 
 [django__django__3.0] [django__django-11049] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.0] [django__django-11049] Command: git diff > /opt/temp_django__django-11049_pred_init.patch 
+[django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11049] Std. Output:
+ 
+[django__django__3.0] [django__django-11049] Return Code: 0 
 [django__django__3.0] [django__django-11049] Command: git apply -v /opt/temp_django__django-11049_pred.patch 
 [django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11049] Std. Output:
@@ -38,6 +53,11 @@ Applied patch django/forms/fields.py cleanly.
 [django__django__3.0] [django__django-11049] Return Code: 0 
 [django__django__3.0] [django__django-11049] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.0] [django__django-11049] Command: git diff > /opt/temp_django__django-11049_test_init.patch 
+[django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11049] Std. Output:
+ 
+[django__django__3.0] [django__django-11049] Return Code: 0 
 [django__django__3.0] [django__django-11049] Command: git apply -v /opt/temp_django__django-11049_test.patch 
 [django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11049] Std. Output:
@@ -49,9 +69,9 @@ Applied patch tests/model_fields/test_durationfield.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 model_fields.test_durationfield;
 [django__django__3.0] [django__django-11049] Command: ./tests/runtests.py --verbosity 2 model_fields.test_durationfield 
-[django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.0] [django__django-11049] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application model_fields
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -157,7 +177,7 @@ AssertionError: "'not[28 chars]valid format. It must be in [DD] [HH:[MM:]]ss[.uu
 
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.182s
+Ran 9 tests in 0.274s
 
 FAILED (failures=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

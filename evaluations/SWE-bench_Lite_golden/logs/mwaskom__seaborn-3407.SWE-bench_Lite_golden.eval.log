@@ -54,7 +54,7 @@ Applied patch tests/test_axisgrid.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n mwaskom__seaborn__0.13  pytest --no-header -rA tests/test_axisgrid.py;
 [mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Command: conda run -n mwaskom__seaborn__0.13 pytest --no-header -rA tests/test_axisgrid.py 
-[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Std. Output:
 ============================= test session starts ==============================
 collected 121 items
@@ -199,7 +199,7 @@ PASSED tests/test_axisgrid.py::TestJointPlot::test_unsupported_hue_kind
 PASSED tests/test_axisgrid.py::TestJointPlot::test_leaky_dict
 PASSED tests/test_axisgrid.py::TestJointPlot::test_distplot_kwarg_warning
 PASSED tests/test_axisgrid.py::TestJointPlot::test_ax_warning
-================ 121 passed, 212 warnings in 177.45s (0:02:57) =================
+================= 121 passed, 212 warnings in 71.30s (0:01:11) =================
 
  
 [mwaskom__seaborn__0.13] [mwaskom__seaborn-3407] Return Code: 0 

@@ -53,15 +53,20 @@ Applied patch tests/model_meta/models.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 field_deconstruction.tests invalid_models_tests.test_relative_fields model_meta.models;
 [django__django__4.0] [django__django-14730] Command: ./tests/runtests.py --verbosity 2 field_deconstruction.tests invalid_models_tests.test_relative_fields model_meta.models 
-[django__django__4.0] [django__django-14730] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.0] [django__django-14730] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.0] [django__django-14730] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
-Importing application invalid_models_tests
-Importing application model_meta
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application field_deconstruction
+Importing application model_meta
+Importing application invalid_models_tests
 Found 121 test(s).
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
+test_accessor_clash (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
+test_clash_under_explicit_related_name (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
+test_reverse_query_name_clash (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
+test_clash_parent_link (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
+test_complex_clash (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
 test_explicit_field_names (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests)
 If ``through_fields`` kwarg is given, it must specify both ... ok
 test_intersection_foreign_object (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
@@ -72,8 +77,17 @@ Mixing up the order of link fields to ManyToManyField.through_fields ... ok
 test_m2m_field_argument_validation (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests)
 ManyToManyField accepts the ``through_fields`` kwarg ... ok
 test_superset_foreign_object (invalid_models_tests.test_relative_fields.M2mThroughFieldsTests) ... ok
-test_clash_parent_link (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
-test_complex_clash (invalid_models_tests.test_relative_fields.ComplexClashTests) ... ok
+test_accessor_clash (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
+test_clash_between_accessors (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
+test_clash_under_explicit_related_name (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
+test_reverse_query_name_clash (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
+test_valid_model (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
+test_fk_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
+test_fk_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
+test_fk_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
+test_m2m_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
+test_m2m_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
+test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
 test_clash_between_accessors (invalid_models_tests.test_relative_fields.AccessorClashTests) ... ok
 test_fk_to_fk (invalid_models_tests.test_relative_fields.AccessorClashTests) ... ok
 test_fk_to_integer (invalid_models_tests.test_relative_fields.AccessorClashTests) ... ok
@@ -84,18 +98,13 @@ test_m2m_to_m2m (invalid_models_tests.test_relative_fields.AccessorClashTests) .
 test_m2m_to_m2m_with_inheritance (invalid_models_tests.test_relative_fields.AccessorClashTests)
 Ref #22047. ... ok
 test_no_clash_for_hidden_related_name (invalid_models_tests.test_relative_fields.AccessorClashTests) ... ok
-test_fk_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_fk_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_fk_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_hidden_fk_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_hidden_fk_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_hidden_fk_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_hidden_m2m_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_hidden_m2m_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_hidden_m2m_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_m2m_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_m2m_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
-test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_fk_to_fk (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_fk_to_integer (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_fk_to_m2m (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_m2m_to_fk (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_m2m_to_integer (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_no_clash_across_apps_without_accessor (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
 test_auto_field (field_deconstruction.tests.FieldDeconstructionTests) ... ok
 test_big_integer_field (field_deconstruction.tests.FieldDeconstructionTests) ... ok
 test_binary_field (field_deconstruction.tests.FieldDeconstructionTests) ... ok
@@ -133,27 +142,18 @@ test_small_integer_field (field_deconstruction.tests.FieldDeconstructionTests) .
 test_text_field (field_deconstruction.tests.FieldDeconstructionTests) ... ok
 test_time_field (field_deconstruction.tests.FieldDeconstructionTests) ... ok
 test_url_field (field_deconstruction.tests.FieldDeconstructionTests) ... ok
-test_accessor_clash (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
-test_clash_under_explicit_related_name (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
-test_reverse_query_name_clash (invalid_models_tests.test_relative_fields.SelfReferentialFKClashTests) ... ok
-test_fk_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_fk_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_fk_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_m2m_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_m2m_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedNameClashTests) ... ok
-test_accessor_clash (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
-test_clash_between_accessors (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
-test_clash_under_explicit_related_name (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
-test_reverse_query_name_clash (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
-test_valid_model (invalid_models_tests.test_relative_fields.SelfReferentialM2MClashTests) ... ok
-test_fk_to_fk (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_fk_to_integer (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_fk_to_m2m (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_m2m_to_fk (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_m2m_to_integer (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
-test_no_clash_across_apps_without_accessor (invalid_models_tests.test_relative_fields.ReverseQueryNameClashTests) ... ok
+test_fk_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_fk_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_fk_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_hidden_fk_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_hidden_fk_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_hidden_fk_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_hidden_m2m_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_hidden_m2m_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_hidden_m2m_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_m2m_to_fk (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_m2m_to_integer (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
+test_m2m_to_m2m (invalid_models_tests.test_relative_fields.ExplicitRelatedQueryNameClashTests) ... ok
 test_ambiguous_relationship_model_from (invalid_models_tests.test_relative_fields.RelativeFieldTests) ... ok
 test_ambiguous_relationship_model_to (invalid_models_tests.test_relative_fields.RelativeFieldTests) ... ok
 test_foreign_key_to_abstract_model (invalid_models_tests.test_relative_fields.RelativeFieldTests) ... ok
@@ -195,7 +195,7 @@ test_unique_m2m (invalid_models_tests.test_relative_fields.RelativeFieldTests) .
 test_valid_foreign_key_without_accessor (invalid_models_tests.test_relative_fields.RelativeFieldTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 121 tests in 1.632s
+Ran 121 tests in 0.105s
 
 OK
  

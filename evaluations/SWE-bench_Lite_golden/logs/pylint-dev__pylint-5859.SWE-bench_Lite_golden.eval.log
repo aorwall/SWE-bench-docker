@@ -54,7 +54,7 @@ Applied patch tests/checkers/unittest_misc.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pylint-dev__pylint__2.13  pytest --no-header -rA --tb=no -p no:cacheprovider tests/checkers/unittest_misc.py;
 [pylint-dev__pylint__2.13] [pylint-dev__pylint-5859] Command: conda run -n pylint-dev__pylint__2.13 pytest --no-header -rA --tb=no -p no:cacheprovider tests/checkers/unittest_misc.py 
-[pylint-dev__pylint__2.13] [pylint-dev__pylint-5859] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pylint-dev__pylint__2.13] [pylint-dev__pylint-5859] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pylint-dev__pylint__2.13] [pylint-dev__pylint-5859] Std. Output:
 ============================= test session starts ==============================
 collected 11 items
@@ -91,7 +91,7 @@ PASSED tests/checkers/unittest_misc.py::TestFixme::test_other_present_codetag
 PASSED tests/checkers/unittest_misc.py::TestFixme::test_issue_2321_should_not_trigger
 PASSED tests/checkers/unittest_misc.py::TestFixme::test_issue_2321_should_trigger
 PASSED tests/checkers/unittest_misc.py::TestFixme::test_dont_trigger_on_todoist
-======================= 11 passed, 10 warnings in 0.07s ========================
+======================= 11 passed, 10 warnings in 0.02s ========================
 
  
 [pylint-dev__pylint__2.13] [pylint-dev__pylint-5859] Return Code: 0 

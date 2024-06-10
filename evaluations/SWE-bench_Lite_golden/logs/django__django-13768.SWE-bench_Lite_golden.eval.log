@@ -49,9 +49,9 @@ Applied patch tests/dispatch/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 dispatch.tests;
 [django__django__3.2] [django__django-13768] Command: ./tests/runtests.py --verbosity 2 dispatch.tests 
-[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.2] [django__django-13768] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.2] [django__django-13768] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application dispatch
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
@@ -76,7 +76,7 @@ test_uid_registration (dispatch.tests.DispatcherTests) ... ok
 test_values_returned_by_disconnection (dispatch.tests.DispatcherTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 19 tests in 0.430s
+Ran 19 tests in 0.274s
 
 OK
  

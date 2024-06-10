@@ -54,7 +54,7 @@ Applied patch sympy/vector/tests/test_printing.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.11  bin/test -C --verbose sympy/vector/tests/test_printing.py;
 [sympy__sympy__1.11] [sympy__sympy-23191] Command: conda run -n sympy__sympy__1.11 bin/test -C --verbose sympy/vector/tests/test_printing.py 
-[sympy__sympy__1.11] [sympy__sympy-23191] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.11] [sympy__sympy-23191] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.11] [sympy__sympy-23191] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.11/bin/python  (3.9.19-final-0) [CPython]
@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        63273977
-hash randomization: on (PYTHONHASHSEED=4248855717)
+random seed:        2473954
+hash randomization: on (PYTHONHASHSEED=1495601942)
 
 sympy/vector/tests/test_printing.py[6] 
 test_str_printing ok
@@ -74,7 +74,7 @@ test_issue_23058 ok
 test_custom_names ok                                                        [OK]
 
 
-======== tests finished: 5 passed, 1 expected to fail, in 1.73 seconds =========
+======== tests finished: 5 passed, 1 expected to fail, in 0.72 seconds =========
 
  
 [sympy__sympy__1.11] [sympy__sympy-23191] Return Code: 0 

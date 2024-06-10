@@ -53,7 +53,7 @@ Applied patch sklearn/preprocessing/tests/test_label.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  pytest -rA --tb=no -p no:cacheprovider sklearn/preprocessing/tests/test_label.py;
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Command: pytest -rA --tb=no -p no:cacheprovider sklearn/preprocessing/tests/test_label.py 
-[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Subprocess args: {"cwd": "/opt/scikit-learn__scikit-learn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.6.15, pytest-4.5.0, py-1.11.0, pluggy-0.13.1
@@ -135,7 +135,7 @@ PASSED sklearn/preprocessing/tests/test_label.py::test_multilabel_binarizer_inve
 PASSED sklearn/preprocessing/tests/test_label.py::test_label_binarize_with_class_order
 PASSED sklearn/preprocessing/tests/test_label.py::test_invalid_input_label_binarize
 PASSED sklearn/preprocessing/tests/test_label.py::test_inverse_binarize_multiclass
-============== 20 passed, 3 xfailed, 11 warnings in 1.82 seconds ===============
+============== 20 passed, 3 xfailed, 11 warnings in 0.71 seconds ===============
  
 [scikit-learn__scikit-learn__0.20] [scikit-learn__scikit-learn-10508] Return Code: 0 
 

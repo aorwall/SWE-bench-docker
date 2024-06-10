@@ -49,15 +49,18 @@ Applied patch tests/utils_tests/test_http.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 utils_tests.test_http;
 [django__django__3.1] [django__django-11848] Command: ./tests/runtests.py --verbosity 2 utils_tests.test_http 
-[django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-11848] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application utils_tests
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
 test_parsing (utils_tests.test_http.ETagProcessingTests) ... ok
 test_quoting (utils_tests.test_http.ETagProcessingTests) ... ok
 test (utils_tests.test_http.EscapeLeadingSlashesTests) ... ok
+test_bad (utils_tests.test_http.IsSameDomainTests) ... ok
+test_good (utils_tests.test_http.IsSameDomainTests) ... ok
+test_roundtrip (utils_tests.test_http.URLSafeBase64Tests) ... ok
 test_input_too_large (utils_tests.test_http.Base36IntTests) ... ok
 test_invalid_literal (utils_tests.test_http.Base36IntTests) ... ok
 test_negative_input (utils_tests.test_http.Base36IntTests) ... ok
@@ -65,17 +68,6 @@ test_roundtrip (utils_tests.test_http.Base36IntTests) ... ok
 test_to_base36_errors (utils_tests.test_http.Base36IntTests) ... ok
 test_to_int_errors (utils_tests.test_http.Base36IntTests) ... ok
 test_values (utils_tests.test_http.Base36IntTests) ... ok
-test_bad (utils_tests.test_http.IsSameDomainTests) ... ok
-test_good (utils_tests.test_http.IsSameDomainTests) ... ok
-test_roundtrip (utils_tests.test_http.URLSafeBase64Tests) ... ok
-test_allowed_hosts_str (utils_tests.test_http.IsSafeURLTests) ... ok
-test_bad_urls (utils_tests.test_http.IsSafeURLTests) ... ok
-test_basic_auth (utils_tests.test_http.IsSafeURLTests) ... ok
-test_good_urls (utils_tests.test_http.IsSafeURLTests) ... ok
-test_is_safe_url_deprecated (utils_tests.test_http.IsSafeURLTests) ... ok
-test_no_allowed_hosts (utils_tests.test_http.IsSafeURLTests) ... ok
-test_secure_param_https_urls (utils_tests.test_http.IsSafeURLTests) ... ok
-test_secure_param_non_https_urls (utils_tests.test_http.IsSafeURLTests) ... ok
 test_custom_iterable_not_doseq (utils_tests.test_http.URLEncodeTests) ... ok
 test_dict (utils_tests.test_http.URLEncodeTests) ... ok
 test_dict_containing_empty_sequence_doseq (utils_tests.test_http.URLEncodeTests) ... ok
@@ -100,9 +92,17 @@ test_parsing_asctime (utils_tests.test_http.HttpDateProcessingTests) ... ok
 test_parsing_rfc1123 (utils_tests.test_http.HttpDateProcessingTests) ... ok
 test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) ... ok
 test_parsing_year_less_than_70 (utils_tests.test_http.HttpDateProcessingTests) ... ok
+test_allowed_hosts_str (utils_tests.test_http.IsSafeURLTests) ... ok
+test_bad_urls (utils_tests.test_http.IsSafeURLTests) ... ok
+test_basic_auth (utils_tests.test_http.IsSafeURLTests) ... ok
+test_good_urls (utils_tests.test_http.IsSafeURLTests) ... ok
+test_is_safe_url_deprecated (utils_tests.test_http.IsSafeURLTests) ... ok
+test_no_allowed_hosts (utils_tests.test_http.IsSafeURLTests) ... ok
+test_secure_param_https_urls (utils_tests.test_http.IsSafeURLTests) ... ok
+test_secure_param_non_https_urls (utils_tests.test_http.IsSafeURLTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 45 tests in 0.175s
+Ran 45 tests in 0.290s
 
 OK
  

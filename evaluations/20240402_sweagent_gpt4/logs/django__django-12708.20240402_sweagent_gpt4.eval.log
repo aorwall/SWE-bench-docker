@@ -11,6 +11,11 @@ Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at 447980e72a Fixed #31500 -- Fixed detecting of unique fields in QuerySet.in_bulk() when using Meta.constraints.
  
 [django__django__3.1] [django__django-12708] Return Code: 0 
+[django__django__3.1] [django__django-12708] Command: git diff > /opt/temp_django__django-12708_pred_try_init.patch 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12708] Std. Output:
+ 
+[django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Command: git apply -v /opt/temp_django__django-12708_pred_try.patch 
 [django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12708] Std. Output:
@@ -20,6 +25,11 @@ Applied patch reproduce_bug.py cleanly.
 [django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-12708] Command: git diff > /opt/temp_django__django-12708_pred_try_init.patch 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12708] Std. Output:
+ 
+[django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Command: git apply -v -R /opt/temp_django__django-12708_pred_try.patch 
 [django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12708] Std. Output:
@@ -29,6 +39,11 @@ Applied patch reproduce_bug.py cleanly.
 [django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-12708] Command: git diff > /opt/temp_django__django-12708_pred_init.patch 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12708] Std. Output:
+ 
+[django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Command: git apply -v /opt/temp_django__django-12708_pred.patch 
 [django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12708] Std. Output:
@@ -38,6 +53,11 @@ Applied patch reproduce_bug.py cleanly.
 [django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.1] [django__django-12708] Command: git diff > /opt/temp_django__django-12708_test_init.patch 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12708] Std. Output:
+ 
+[django__django__3.1] [django__django-12708] Return Code: 0 
 [django__django__3.1] [django__django-12708] Command: git apply -v /opt/temp_django__django-12708_test.patch 
 [django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12708] Std. Output:
@@ -51,9 +71,9 @@ Applied patch tests/migrations/test_operations.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 migrations.test_base migrations.test_operations;
 [django__django__3.1] [django__django-12708] Command: ./tests/runtests.py --verbosity 2 migrations.test_base migrations.test_operations 
-[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-12708] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-12708] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application migrations
 Operations to perform:
   Synchronize unmigrated apps: auth, contenttypes, messages, migrations, sessions, staticfiles
@@ -232,7 +252,7 @@ Traceback (most recent call last):
 ValueError: Found wrong number (2) of constraints for test_alintoremove_wunto_pony(pink, weight)
 
 ----------------------------------------------------------------------
-Ran 102 tests in 3.719s
+Ran 102 tests in 1.287s
 
 FAILED (errors=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

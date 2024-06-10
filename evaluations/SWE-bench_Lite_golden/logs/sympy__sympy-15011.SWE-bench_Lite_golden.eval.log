@@ -54,7 +54,7 @@ Applied patch sympy/utilities/tests/test_lambdify.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.2  bin/test -C --verbose sympy/utilities/tests/test_lambdify.py;
 [sympy__sympy__1.2] [sympy__sympy-15011] Command: conda run -n sympy__sympy__1.2 bin/test -C --verbose sympy/utilities/tests/test_lambdify.py 
-[sympy__sympy__1.2] [sympy__sympy-15011] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.2] [sympy__sympy-15011] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.2] [sympy__sympy-15011] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/solvers/diophantine.py:3188: SyntaxWarning: "is" with a literal. Did you mean "=="?
   if feasible is 1:  # it's prime and k == 2
@@ -65,8 +65,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        49755411
-hash randomization: on (PYTHONHASHSEED=3444479463)
+random seed:        60495076
+hash randomization: on (PYTHONHASHSEED=3560436693)
 
 sympy/utilities/tests/test_lambdify.py[84] 
 test_no_args ok
@@ -155,7 +155,7 @@ test_lambdify_inspect ok
 test_issue_14941 ok                                                         [OK]
 
 
-============ tests finished: 55 passed, 29 skipped, in 4.92 seconds ============
+============ tests finished: 55 passed, 29 skipped, in 1.90 seconds ============
 
  
 [sympy__sympy__1.2] [sympy__sympy-15011] Return Code: 0 

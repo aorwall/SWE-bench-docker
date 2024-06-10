@@ -1,18 +1,22 @@
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Task Metadata:
 	- Instance ID: pydicom__pydicom-1413
 	- Testbed: pydicom__pydicom__2.1
-	- Evaluation Model: SWE-bench_Lite_golden
-	- Python version: Python 3.11.8
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Command: git status --porcelain 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Std. Output:
  
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Return Code: 0 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Command: git -c advice.detachedHead=false checkout f909c76e31f759246cec3708dadd173c5d6e84b1 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Std. Output:
 Previous HEAD position was 506ecea8f [MRG] Typing updates (#1435)
 HEAD is now at f909c76e3 Don't inherit Dataset from dict (#1403)
  
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Return Code: 0 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1413_pred_try.patch 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Std. Output:
 Checking patch pydicom/dataelem.py...
 Applied patch pydicom/dataelem.py cleanly.
@@ -21,7 +25,7 @@ Applied patch pydicom/dataelem.py cleanly.
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Command: git apply -v -R /home/swe-bench/temp_pydicom__pydicom-1413_pred_try.patch 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Std. Output:
 Checking patch pydicom/dataelem.py...
 Applied patch pydicom/dataelem.py cleanly.
@@ -30,7 +34,7 @@ Applied patch pydicom/dataelem.py cleanly.
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1413_pred.patch 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Std. Output:
 Checking patch pydicom/dataelem.py...
 Applied patch pydicom/dataelem.py cleanly.
@@ -39,12 +43,12 @@ Applied patch pydicom/dataelem.py cleanly.
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Command: git restore pydicom/tests/test_valuerep.py 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Std. Output:
  
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Return Code: 0 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1413_test.patch 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Std. Output:
 Checking patch pydicom/tests/test_valuerep.py...
 Applied patch pydicom/tests/test_valuerep.py cleanly.
@@ -52,19 +56,19 @@ Applied patch pydicom/tests/test_valuerep.py cleanly.
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Return Code: 0 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pydicom__pydicom__2.1  pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py;
+Test Script: conda run -n pydicom__pydicom__2.1 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py;
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Command: conda run -n pydicom__pydicom__2.1 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Std. Output:
 ============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-4.6.11, py-1.11.0, pluggy-0.13.1
+platform linux -- Python 3.9.19, pytest-8.2.0, pluggy-1.5.0
 rootdir: /home/swe-bench/pydicom__pydicom
 collected 304 items
 
 pydicom/tests/test_valuerep.py ......................................... [ 13%]
 ........................................................................ [ 37%]
 ........................................................................ [ 60%]
-........................................................................ [ 84%]
+..........FF............................................................ [ 84%]
 ...............................................                          [100%]
 
 =========================== short test summary info ============================
@@ -263,8 +267,6 @@ PASSED pydicom/tests/test_valuerep.py::TestIS::test_str
 PASSED pydicom/tests/test_valuerep.py::TestIS::test_repr
 PASSED pydicom/tests/test_valuerep.py::TestIS::test_comparison_operators
 PASSED pydicom/tests/test_valuerep.py::TestIS::test_hash
-PASSED pydicom/tests/test_valuerep.py::TestBadValueRead::test_read_bad_value_in_VR_default
-PASSED pydicom/tests/test_valuerep.py::TestBadValueRead::test_read_bad_value_in_VR_enforce_valid_value
 PASSED pydicom/tests/test_valuerep.py::TestDecimalString::test_DS_decimal_set
 PASSED pydicom/tests/test_valuerep.py::TestDecimalString::test_valid_decimal_strings
 PASSED pydicom/tests/test_valuerep.py::TestDecimalString::test_invalid_decimal_strings
@@ -372,10 +374,13 @@ PASSED pydicom/tests/test_valuerep.py::test_assigning_bytes[UR-str-vm034-vmN34-C
 PASSED pydicom/tests/test_valuerep.py::test_assigning_bytes[US-int-vm035-vmN35-SourceAcquisitionBeamNumber]
 PASSED pydicom/tests/test_valuerep.py::test_assigning_bytes[UT-str-vm036-vmN36-StrainAdditionalInformation]
 PASSED pydicom/tests/test_valuerep.py::test_assigning_bytes[UV-int-vm037-vmN37-SelectorUVValue]
-========================== 304 passed in 1.76 seconds ==========================
+FAILED pydicom/tests/test_valuerep.py::TestBadValueRead::test_read_bad_value_in_VR_default
+FAILED pydicom/tests/test_valuerep.py::TestBadValueRead::test_read_bad_value_in_VR_enforce_valid_value
+======================== 2 failed, 302 passed in 0.51s =========================
+ERROR conda.cli.main_run:execute(124): `conda run pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py` failed. (See above for error)
 
  
-[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Return Code: 0 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1413] Return Code: 1 
 
->>>>> All Tests Passed
+>>>>> Some Tests Failed
 [pydicom__pydicom__2.1] [pydicom__pydicom-1413] Test script run successful 

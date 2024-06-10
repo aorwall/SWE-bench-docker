@@ -49,9 +49,9 @@ Applied patch tests/model_fields/test_jsonfield.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 model_fields.test_jsonfield;
 [django__django__3.2] [django__django-13757] Command: ./tests/runtests.py --verbosity 2 model_fields.test_jsonfield 
-[django__django__3.2] [django__django-13757] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.2] [django__django-13757] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.2] [django__django-13757] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application model_fields
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -132,22 +132,22 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_custom_encoder_decoder (model_fields.test_jsonfield.JSONFieldTests) ... ok
-test_db_check_constraints (model_fields.test_jsonfield.JSONFieldTests) ... ok
-test_invalid_value (model_fields.test_jsonfield.JSONFieldTests) ... ok
-test_custom_encoder (model_fields.test_jsonfield.TestValidation) ... ok
-test_invalid_decoder (model_fields.test_jsonfield.TestValidation) ... ok
-test_invalid_encoder (model_fields.test_jsonfield.TestValidation) ... ok
-test_validation_error (model_fields.test_jsonfield.TestValidation) ... ok
-test_dumping (model_fields.test_jsonfield.TestSerialization) ... ok
-test_loading (model_fields.test_jsonfield.TestSerialization) ... ok
-test_xml_serialization (model_fields.test_jsonfield.TestSerialization) ... ok
 test_formfield (model_fields.test_jsonfield.TestFormField) ... ok
 test_formfield_custom_encoder_decoder (model_fields.test_jsonfield.TestFormField) ... ok
 test_deconstruct (model_fields.test_jsonfield.TestMethods) ... ok
 test_deconstruct_custom_encoder_decoder (model_fields.test_jsonfield.TestMethods) ... ok
 test_get_transforms (model_fields.test_jsonfield.TestMethods) ... ok
 test_key_transform_text_lookup_mixin_non_key_transform (model_fields.test_jsonfield.TestMethods) ... ok
+test_custom_encoder (model_fields.test_jsonfield.TestValidation) ... ok
+test_invalid_decoder (model_fields.test_jsonfield.TestValidation) ... ok
+test_invalid_encoder (model_fields.test_jsonfield.TestValidation) ... ok
+test_validation_error (model_fields.test_jsonfield.TestValidation) ... ok
+test_custom_encoder_decoder (model_fields.test_jsonfield.JSONFieldTests) ... ok
+test_db_check_constraints (model_fields.test_jsonfield.JSONFieldTests) ... ok
+test_invalid_value (model_fields.test_jsonfield.JSONFieldTests) ... ok
+test_dumping (model_fields.test_jsonfield.TestSerialization) ... ok
+test_loading (model_fields.test_jsonfield.TestSerialization) ... ok
+test_xml_serialization (model_fields.test_jsonfield.TestSerialization) ... ok
 test_dict (model_fields.test_jsonfield.TestSaveLoad) ... ok
 test_json_null_different_from_sql_null (model_fields.test_jsonfield.TestSaveLoad) ... ok
 test_list (model_fields.test_jsonfield.TestSaveLoad) ... ok
@@ -219,7 +219,7 @@ test_shallow_obj_lookup (model_fields.test_jsonfield.TestQuerying) ... ok
 test_usage_in_subquery (model_fields.test_jsonfield.TestQuerying) ... ok
 
 ----------------------------------------------------------------------
-Ran 85 tests in 0.985s
+Ran 85 tests in 0.412s
 
 OK (skipped=8)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

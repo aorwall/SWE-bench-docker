@@ -54,7 +54,7 @@ Applied patch tests/test_fields.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n marshmallow-code__marshmallow__3.0  pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_fields.py;
 [marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Command: conda run -n marshmallow-code__marshmallow__3.0 pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_fields.py 
-[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Std. Output:
 ============================= test session starts ==============================
 collecting ... collected 77 items
@@ -221,7 +221,7 @@ PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_exclude_dump_
 PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_and_exclude_merged_with_nested[only-expected0]
 PASSED tests/test_fields.py::TestDictNested::test_dict_nested_only_and_exclude_merged_with_nested[exclude-expected1]
 PASSED tests/test_fields.py::TestDictNested::test_dict_nested_partial_propagated_to_nested
-======================== 77 passed, 1 warning in 0.38s =========================
+======================== 77 passed, 1 warning in 0.18s =========================
 
  
 [marshmallow-code__marshmallow__3.0] [marshmallow-code__marshmallow-1359] Return Code: 0 

@@ -11,6 +11,11 @@ Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at d51c50d836 Fixed #31462 -- Allowed overriding autocomplete/raw_id_fields/filter widgets for ManyToManyFields with formfield_overrides.
  
 [django__django__3.1] [django__django-12700] Return Code: 0 
+[django__django__3.1] [django__django-12700] Command: git diff > /opt/temp_django__django-12700_pred_try_init.patch 
+[django__django__3.1] [django__django-12700] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12700] Std. Output:
+ 
+[django__django__3.1] [django__django-12700] Return Code: 0 
 [django__django__3.1] [django__django-12700] Command: git apply -v /opt/temp_django__django-12700_pred_try.patch 
 [django__django__3.1] [django__django-12700] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12700] Std. Output:
@@ -20,6 +25,11 @@ Applied patch django/views/debug.py cleanly.
 [django__django__3.1] [django__django-12700] Return Code: 0 
 [django__django__3.1] [django__django-12700] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-12700] Command: git diff > /opt/temp_django__django-12700_pred_try_init.patch 
+[django__django__3.1] [django__django-12700] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12700] Std. Output:
+ 
+[django__django__3.1] [django__django-12700] Return Code: 0 
 [django__django__3.1] [django__django-12700] Command: git apply -v -R /opt/temp_django__django-12700_pred_try.patch 
 [django__django__3.1] [django__django-12700] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12700] Std. Output:
@@ -29,6 +39,11 @@ Applied patch django/views/debug.py cleanly.
 [django__django__3.1] [django__django-12700] Return Code: 0 
 [django__django__3.1] [django__django-12700] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-12700] Command: git diff > /opt/temp_django__django-12700_pred_init.patch 
+[django__django__3.1] [django__django-12700] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12700] Std. Output:
+ 
+[django__django__3.1] [django__django-12700] Return Code: 0 
 [django__django__3.1] [django__django-12700] Command: git apply -v /opt/temp_django__django-12700_pred.patch 
 [django__django__3.1] [django__django-12700] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12700] Std. Output:
@@ -38,6 +53,11 @@ Applied patch django/views/debug.py cleanly.
 [django__django__3.1] [django__django-12700] Return Code: 0 
 [django__django__3.1] [django__django-12700] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.1] [django__django-12700] Command: git diff > /opt/temp_django__django-12700_test_init.patch 
+[django__django__3.1] [django__django-12700] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12700] Std. Output:
+ 
+[django__django__3.1] [django__django-12700] Return Code: 0 
 [django__django__3.1] [django__django-12700] Command: git apply -v /opt/temp_django__django-12700_test.patch 
 [django__django__3.1] [django__django-12700] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12700] Std. Output:
@@ -49,9 +69,9 @@ Applied patch tests/view_tests/tests/test_debug.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 view_tests.tests.test_debug;
 [django__django__3.1] [django__django-12700] Command: ./tests/runtests.py --verbosity 2 view_tests.tests.test_debug 
-[django__django__3.1] [django__django-12700] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-12700] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-12700] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application view_tests
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -87,9 +107,9 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+test_repr (view_tests.tests.test_debug.CallableSettingWrapperTests) ... ok
 test_sensitive_post_parameters_not_called (view_tests.tests.test_debug.DecoratorsTests) ... ok
 test_sensitive_variables_not_called (view_tests.tests.test_debug.DecoratorsTests) ... ok
-test_repr (view_tests.tests.test_debug.CallableSettingWrapperTests) ... ok
 test_cleansed_substitute_override (view_tests.tests.test_debug.CustomExceptionReporterFilterTests) ... ok
 test_hidden_settings_override (view_tests.tests.test_debug.CustomExceptionReporterFilterTests) ... ok
 test_setting_allows_custom_subclass (view_tests.tests.test_debug.CustomExceptionReporterFilterTests) ... ok
@@ -224,7 +244,7 @@ Traceback (most recent call last):
 AssertionError: 1 != 0 : Response should not contain 'This should not be displayed'
 
 ----------------------------------------------------------------------
-Ran 83 tests in 6.283s
+Ran 83 tests in 2.235s
 
 FAILED (failures=2)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

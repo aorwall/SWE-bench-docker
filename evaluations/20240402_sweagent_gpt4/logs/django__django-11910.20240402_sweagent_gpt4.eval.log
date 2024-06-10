@@ -11,6 +11,11 @@ Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at d232fd76a8 Clarified that SECURE_REDIRECT_EXEMPT patterns should not include leading slashes.
  
 [django__django__3.1] [django__django-11910] Return Code: 0 
+[django__django__3.1] [django__django-11910] Command: git diff > /opt/temp_django__django-11910_pred_try_init.patch 
+[django__django__3.1] [django__django-11910] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11910] Std. Output:
+ 
+[django__django__3.1] [django__django-11910] Return Code: 0 
 [django__django__3.1] [django__django-11910] Command: git apply -v /opt/temp_django__django-11910_pred_try.patch 
 [django__django__3.1] [django__django-11910] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11910] Std. Output:
@@ -22,6 +27,11 @@ Applied patch reproduce_bug.py cleanly.
 [django__django__3.1] [django__django-11910] Return Code: 0 
 [django__django__3.1] [django__django-11910] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-11910] Command: git diff > /opt/temp_django__django-11910_pred_try_init.patch 
+[django__django__3.1] [django__django-11910] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11910] Std. Output:
+ 
+[django__django__3.1] [django__django-11910] Return Code: 0 
 [django__django__3.1] [django__django-11910] Command: git apply -v -R /opt/temp_django__django-11910_pred_try.patch 
 [django__django__3.1] [django__django-11910] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11910] Std. Output:
@@ -33,6 +43,11 @@ Applied patch mydatabase cleanly.
 [django__django__3.1] [django__django-11910] Return Code: 0 
 [django__django__3.1] [django__django-11910] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-11910] Command: git diff > /opt/temp_django__django-11910_pred_init.patch 
+[django__django__3.1] [django__django-11910] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11910] Std. Output:
+ 
+[django__django__3.1] [django__django-11910] Return Code: 0 
 [django__django__3.1] [django__django-11910] Command: git apply -v /opt/temp_django__django-11910_pred.patch 
 [django__django__3.1] [django__django-11910] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11910] Std. Output:
@@ -44,6 +59,11 @@ Applied patch reproduce_bug.py cleanly.
 [django__django__3.1] [django__django-11910] Return Code: 0 
 [django__django__3.1] [django__django-11910] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.1] [django__django-11910] Command: git diff > /opt/temp_django__django-11910_test_init.patch 
+[django__django__3.1] [django__django-11910] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11910] Std. Output:
+ 
+[django__django__3.1] [django__django-11910] Return Code: 0 
 [django__django__3.1] [django__django-11910] Command: git apply -v /opt/temp_django__django-11910_test.patch 
 [django__django__3.1] [django__django-11910] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11910] Std. Output:
@@ -55,7 +75,7 @@ Applied patch tests/migrations/test_autodetector.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 migrations.test_autodetector;
 [django__django__3.1] [django__django-11910] Command: ./tests/runtests.py --verbosity 2 migrations.test_autodetector 
-[django__django__3.1] [django__django-11910] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-11910] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-11910] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 test_add_alter_order_with_respect_to (migrations.test_autodetector.AutodetectorTests) ... ok
@@ -229,11 +249,11 @@ AssertionError: Operation type mismatch for app.auto_1 (expected ['RenameField']
 
 
 ----------------------------------------------------------------------
-Ran 114 tests in 0.841s
+Ran 114 tests in 0.278s
 
 FAILED (failures=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application migrations
 Skipping setup of unused database(s): other.
 Operations to perform:

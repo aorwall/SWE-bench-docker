@@ -54,7 +54,7 @@ Applied patch tests/test_marshalling.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n marshmallow-code__marshmallow__2.20  pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_marshalling.py;
 [marshmallow-code__marshmallow__2.20] [marshmallow-code__marshmallow-1343] Command: conda run -n marshmallow-code__marshmallow__2.20 pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_marshalling.py 
-[marshmallow-code__marshmallow__2.20] [marshmallow-code__marshmallow-1343] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[marshmallow-code__marshmallow__2.20] [marshmallow-code__marshmallow-1343] Subprocess args: {"cwd": "/home/swe-bench/marshmallow-code__marshmallow", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [marshmallow-code__marshmallow__2.20] [marshmallow-code__marshmallow-1343] Std. Output:
 ============================= test session starts ==============================
 collecting ... collected 25 items
@@ -121,7 +121,7 @@ PASSED tests/test_marshalling.py::TestUnmarshaller::test_deserialize_fields_with
 PASSED tests/test_marshalling.py::TestUnmarshaller::test_deserialize_wrong_type_root_data
 PASSED tests/test_marshalling.py::TestUnmarshaller::test_deserialize_wrong_type_nested_data
 PASSED tests/test_marshalling.py::TestUnmarshaller::test_deserialize_wrong_nested_type_with_validates_method
-======================== 25 passed, 2 warnings in 0.13s ========================
+======================== 25 passed, 2 warnings in 0.17s ========================
 
  
 [marshmallow-code__marshmallow__2.20] [marshmallow-code__marshmallow-1343] Return Code: 0 

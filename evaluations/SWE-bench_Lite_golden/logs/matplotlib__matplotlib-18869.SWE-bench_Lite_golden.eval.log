@@ -54,7 +54,7 @@ Applied patch lib/matplotlib/tests/test_matplotlib.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n matplotlib__matplotlib__3.3  pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_matplotlib.py;
 [matplotlib__matplotlib__3.3] [matplotlib__matplotlib-18869] Command: conda run -n matplotlib__matplotlib__3.3 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_matplotlib.py 
-[matplotlib__matplotlib__3.3] [matplotlib__matplotlib-18869] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[matplotlib__matplotlib__3.3] [matplotlib__matplotlib-18869] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [matplotlib__matplotlib__3.3] [matplotlib__matplotlib-18869] Std. Output:
 ============================= test session starts ==============================
 collected 8 items
@@ -70,7 +70,7 @@ PASSED lib/matplotlib/tests/test_matplotlib.py::test_tmpconfigdir_warning
 PASSED lib/matplotlib/tests/test_matplotlib.py::test_importable_with_no_home
 PASSED lib/matplotlib/tests/test_matplotlib.py::test_use_doc_standard_backends
 PASSED lib/matplotlib/tests/test_matplotlib.py::test_importable_with__OO
-============================== 8 passed in 15.27s ==============================
+============================== 8 passed in 6.77s ===============================
 
  
 [matplotlib__matplotlib__3.3] [matplotlib__matplotlib-18869] Return Code: 0 

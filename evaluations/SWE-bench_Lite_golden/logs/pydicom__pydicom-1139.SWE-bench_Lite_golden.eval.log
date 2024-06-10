@@ -57,7 +57,7 @@ warning: 1 line adds whitespace errors.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pydicom__pydicom__2.0  pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py;
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Command: conda run -n pydicom__pydicom__2.0 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_valuerep.py 
-[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pydicom__pydicom__2.0] [pydicom__pydicom-1139] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.8.19, pytest-4.6.11, py-1.11.0, pluggy-0.13.1
@@ -108,7 +108,7 @@ PASSED pydicom/tests/test_valuerep.py::TestPersonName::test_contains
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_date
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_date_time
 PASSED pydicom/tests/test_valuerep.py::TestDateTime::test_time
-========================== 41 passed in 0.86 seconds ===========================
+========================== 41 passed in 0.41 seconds ===========================
 
  
 [pydicom__pydicom__2.0] [pydicom__pydicom-1139] Return Code: 0 

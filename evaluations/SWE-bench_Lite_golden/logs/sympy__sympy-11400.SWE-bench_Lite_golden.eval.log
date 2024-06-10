@@ -54,7 +54,7 @@ Applied patch sympy/printing/tests/test_ccode.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.0  bin/test -C --verbose sympy/printing/tests/test_ccode.py;
 [sympy__sympy__1.0] [sympy__sympy-11400] Command: conda run -n sympy__sympy__1.0 bin/test -C --verbose sympy/printing/tests/test_ccode.py 
-[sympy__sympy__1.0] [sympy__sympy-11400] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.0] [sympy__sympy-11400] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.0] [sympy__sympy-11400] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/core/basic.py:3: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3,and in 3.9 it will stop working
   from collections import Mapping
@@ -70,8 +70,8 @@ executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.0/bin/python
 architecture:       64-bit
 cache:              no
 ground types:       python 
-random seed:        97931998
-hash randomization: on (PYTHONHASHSEED=4198664869)
+random seed:        19133370
+hash randomization: on (PYTHONHASHSEED=2238162023)
 
 sympy/printing/tests/test_ccode.py[32] 
 test_printmethod ok
@@ -108,7 +108,7 @@ test_ccode_Assignment ok
 test_ccode_For ok                                                           [OK]
 
 
-================== tests finished: 32 passed, in 0.61 seconds ==================
+================== tests finished: 32 passed, in 0.17 seconds ==================
 
  
 [sympy__sympy__1.0] [sympy__sympy-11400] Return Code: 0 

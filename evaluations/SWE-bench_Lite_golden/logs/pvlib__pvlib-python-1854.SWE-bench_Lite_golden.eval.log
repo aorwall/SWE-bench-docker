@@ -54,7 +54,7 @@ Applied patch pvlib/tests/test_pvsystem.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pvlib__pvlib-python__0.9  pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_pvsystem.py;
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Command: conda run -n pvlib__pvlib-python__0.9 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_pvsystem.py 
-[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Std. Output:
 ============================= test session starts ==============================
 collected 282 items
@@ -428,7 +428,7 @@ PASSED pvlib/tests/test_pvsystem.py::test_Array_dc_ohms_from_percent
 PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[sapm-keys0]
 PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[fuentes-keys1]
 PASSED pvlib/tests/test_pvsystem.py::test_Array_temperature_missing_parameters[noct_sam-keys2]
-======================= 282 passed, 32 warnings in 1.30s =======================
+======================= 282 passed, 32 warnings in 1.35s =======================
 
  
 [pvlib__pvlib-python__0.9] [pvlib__pvlib-python-1854] Return Code: 0 

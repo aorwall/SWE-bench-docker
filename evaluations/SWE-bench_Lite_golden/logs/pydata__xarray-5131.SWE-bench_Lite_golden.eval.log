@@ -54,7 +54,7 @@ Applied patch xarray/tests/test_groupby.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pydata__xarray__0.12  pytest --no-header -rA --tb=no -p no:cacheprovider xarray/tests/test_groupby.py;
 [pydata__xarray__0.12] [pydata__xarray-5131] Command: conda run -n pydata__xarray__0.12 pytest --no-header -rA --tb=no -p no:cacheprovider xarray/tests/test_groupby.py 
-[pydata__xarray__0.12] [pydata__xarray-5131] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pydata__xarray__0.12] [pydata__xarray-5131] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pydata__xarray__0.12] [pydata__xarray-5131] Std. Output:
 ============================= test session starts ==============================
 collected 34 items
@@ -184,7 +184,7 @@ PASSED xarray/tests/test_groupby.py::test_groupby_multiple_string_args
 PASSED xarray/tests/test_groupby.py::test_groupby_bins_timeseries
 PASSED xarray/tests/test_groupby.py::test_groupby_none_group_name
 PASSED xarray/tests/test_groupby.py::test_groupby_getitem
-======================= 34 passed, 120 warnings in 9.27s =======================
+======================= 34 passed, 120 warnings in 4.03s =======================
 
  
 [pydata__xarray__0.12] [pydata__xarray-5131] Return Code: 0 

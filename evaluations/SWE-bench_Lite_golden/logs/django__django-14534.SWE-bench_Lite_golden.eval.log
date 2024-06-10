@@ -49,9 +49,9 @@ Applied patch tests/forms_tests/tests/test_forms.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 forms_tests.tests.test_forms;
 [django__django__4.0] [django__django-14534] Command: ./tests/runtests.py --verbosity 2 forms_tests.tests.test_forms 
-[django__django__4.0] [django__django-14534] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.0] [django__django-14534] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.0] [django__django-14534] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application forms_tests
 Found 121 test(s).
 Skipping setup of unused database(s): default, other.
@@ -200,7 +200,7 @@ test_various_boolean_values (forms_tests.tests.test_forms.FormsTestCase) ... ok
 test_widget_output (forms_tests.tests.test_forms.FormsTestCase) ... ok
 
 ----------------------------------------------------------------------
-Ran 121 tests in 1.108s
+Ran 121 tests in 0.261s
 
 OK
  

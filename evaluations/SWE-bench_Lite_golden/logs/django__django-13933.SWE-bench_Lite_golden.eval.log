@@ -49,9 +49,9 @@ Applied patch tests/forms_tests/tests/test_error_messages.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 forms_tests.tests.test_error_messages;
 [django__django__4.0] [django__django-13933] Command: ./tests/runtests.py --verbosity 2 forms_tests.tests.test_error_messages 
-[django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.0] [django__django-13933] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application forms_tests
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -105,7 +105,7 @@ test_timefield (forms_tests.tests.test_error_messages.FormsErrorMessagesTestCase
 test_urlfield (forms_tests.tests.test_error_messages.FormsErrorMessagesTestCase) ... ok
 
 ----------------------------------------------------------------------
-Ran 20 tests in 0.546s
+Ran 20 tests in 0.300s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

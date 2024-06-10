@@ -54,7 +54,7 @@ Applied patch sympy/sets/tests/test_sets.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.5  bin/test -C --verbose sympy/sets/tests/test_sets.py;
 [sympy__sympy__1.5] [sympy__sympy-16988] Command: conda run -n sympy__sympy__1.5 bin/test -C --verbose sympy/sets/tests/test_sets.py 
-[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.5] [sympy__sympy-16988] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.5] [sympy__sympy-16988] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/solvers/diophantine.py:3185: SyntaxWarning: "is" with a literal. Did you mean "=="?
   if feasible is 1:  # it's prime and k == 2
@@ -71,8 +71,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        89769421
-hash randomization: on (PYTHONHASHSEED=874538820)
+random seed:        49626472
+hash randomization: on (PYTHONHASHSEED=1668650634)
 
 sympy/sets/tests/test_sets.py[78] 
 test_imageset ok
@@ -156,9 +156,9 @@ test_issue_16878b f                                                         [OK]
 
 
 ________________________________ slowest tests _________________________________
-test_image_interval - Took 90.537 seconds
-test_issue_10113 - Took 123.931 seconds
-======= tests finished: 74 passed, 4 expected to fail, in 228.73 seconds =======
+test_image_interval - Took 33.073 seconds
+test_issue_10113 - Took 46.786 seconds
+======= tests finished: 74 passed, 4 expected to fail, in 87.14 seconds ========
 
  
 [sympy__sympy__1.5] [sympy__sympy-16988] Return Code: 0 

@@ -49,9 +49,9 @@ Applied patch tests/model_fields/test_durationfield.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 model_fields.test_durationfield;
 [django__django__3.0] [django__django-11049] Command: ./tests/runtests.py --verbosity 2 model_fields.test_durationfield 
-[django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.0] [django__django-11049] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.0] [django__django-11049] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application model_fields
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -123,10 +123,10 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+test_formfield (model_fields.test_durationfield.TestFormField) ... ok
 test_invalid_string (model_fields.test_durationfield.TestValidation) ... ok
 test_dumping (model_fields.test_durationfield.TestSerialization) ... ok
 test_loading (model_fields.test_durationfield.TestSerialization) ... ok
-test_formfield (model_fields.test_durationfield.TestFormField) ... ok
 test_exact (model_fields.test_durationfield.TestQuerying) ... ok
 test_gt (model_fields.test_durationfield.TestQuerying) ... ok
 test_create_empty (model_fields.test_durationfield.TestSaveLoad) ... ok
@@ -134,7 +134,7 @@ test_fractional_seconds (model_fields.test_durationfield.TestSaveLoad) ... ok
 test_simple_roundtrip (model_fields.test_durationfield.TestSaveLoad) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.153s
+Ran 9 tests in 0.343s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
