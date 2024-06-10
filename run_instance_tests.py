@@ -125,7 +125,7 @@ async def main(
         patch = task["patch"]
         model = "golden"
 
-    output = await run_instance_tests(instance_id, patch, test_directives, model, swe_bench_tasks, namespace, verbose=True)
+    output = await run_instance_tests(instance_id, patch, test_directives, model, swe_bench_tasks, namespace, log_output=True)
     if test_output_dir:
         test_output_dir = os.path.abspath(test_output_dir)
         os.makedirs(os.path.dirname(test_output_dir), exist_ok=True)
