@@ -212,7 +212,9 @@ class TaskEnvContextManager:
         # If git command fails, try patch command
         if out_patch.returncode != 0:
             # Patch may has been partially applied so we should revert it.
-            self.exec("git restore .".split(" "))
+            # NOTE: we do not revert the test patch because it may unintentionally revert previously applied patches
+            if patch_type != PatchType.PATCH_TEST.value:
+                self.exec("git restore .".split(" "))
             apply_cmd = (f"patch -R --batch --fuzz=5 -p1 -i {patch_path}" if revert \
                 else f"patch --batch --fuzz=5 -p1 -i {patch_path}")
             out_patch = self.exec(apply_cmd.split(" "), raise_error=False, check=False)
