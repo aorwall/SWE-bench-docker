@@ -228,6 +228,9 @@ class TaskEnvContextManager:
                 f.write(out_patch.stdout)
                 if out_patch.stderr:
                     f.write(out_patch.stderr)
+                if patch_type != PatchType.PATCH_TEST.value and "patching" in out_patch.stdout:
+                    # Patch has been partially applied so we should revert it.
+                    self.exec("git restore .".split(" "))
             return False
 
         # Patch apply succeeded
