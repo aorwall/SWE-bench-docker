@@ -11,6 +11,11 @@ Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at f0adf3b9b7 Fixed #30774 -- Made serialization in migrations use members names for Enums.
  
 [django__django__3.1] [django__django-11848] Return Code: 0 
+[django__django__3.1] [django__django-11848] Command: git diff > /opt/temp_django__django-11848_pred_try_init.patch 
+[django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11848] Std. Output:
+ 
+[django__django__3.1] [django__django-11848] Return Code: 0 
 [django__django__3.1] [django__django-11848] Command: git apply -v /opt/temp_django__django-11848_pred_try.patch 
 [django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11848] Std. Output:
@@ -20,6 +25,11 @@ Applied patch django/utils/http.py cleanly.
 [django__django__3.1] [django__django-11848] Return Code: 0 
 [django__django__3.1] [django__django-11848] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-11848] Command: git diff > /opt/temp_django__django-11848_pred_try_init.patch 
+[django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11848] Std. Output:
+ 
+[django__django__3.1] [django__django-11848] Return Code: 0 
 [django__django__3.1] [django__django-11848] Command: git apply -v -R /opt/temp_django__django-11848_pred_try.patch 
 [django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11848] Std. Output:
@@ -29,6 +39,11 @@ Applied patch django/utils/http.py cleanly.
 [django__django__3.1] [django__django-11848] Return Code: 0 
 [django__django__3.1] [django__django-11848] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-11848] Command: git diff > /opt/temp_django__django-11848_pred_init.patch 
+[django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11848] Std. Output:
+ 
+[django__django__3.1] [django__django-11848] Return Code: 0 
 [django__django__3.1] [django__django-11848] Command: git apply -v /opt/temp_django__django-11848_pred.patch 
 [django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11848] Std. Output:
@@ -38,6 +53,11 @@ Applied patch django/utils/http.py cleanly.
 [django__django__3.1] [django__django-11848] Return Code: 0 
 [django__django__3.1] [django__django-11848] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.1] [django__django-11848] Command: git diff > /opt/temp_django__django-11848_test_init.patch 
+[django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-11848] Std. Output:
+ 
+[django__django__3.1] [django__django-11848] Return Code: 0 
 [django__django__3.1] [django__django-11848] Command: git apply -v /opt/temp_django__django-11848_test.patch 
 [django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-11848] Std. Output:
@@ -49,15 +69,18 @@ Applied patch tests/utils_tests/test_http.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 utils_tests.test_http;
 [django__django__3.1] [django__django-11848] Command: ./tests/runtests.py --verbosity 2 utils_tests.test_http 
-[django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-11848] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-11848] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application utils_tests
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
-test (utils_tests.test_http.EscapeLeadingSlashesTests) ... ok
 test_parsing (utils_tests.test_http.ETagProcessingTests) ... ok
 test_quoting (utils_tests.test_http.ETagProcessingTests) ... ok
+test (utils_tests.test_http.EscapeLeadingSlashesTests) ... ok
+test_bad (utils_tests.test_http.IsSameDomainTests) ... ok
+test_good (utils_tests.test_http.IsSameDomainTests) ... ok
+test_roundtrip (utils_tests.test_http.URLSafeBase64Tests) ... ok
 test_input_too_large (utils_tests.test_http.Base36IntTests) ... ok
 test_invalid_literal (utils_tests.test_http.Base36IntTests) ... ok
 test_negative_input (utils_tests.test_http.Base36IntTests) ... ok
@@ -65,9 +88,6 @@ test_roundtrip (utils_tests.test_http.Base36IntTests) ... ok
 test_to_base36_errors (utils_tests.test_http.Base36IntTests) ... ok
 test_to_int_errors (utils_tests.test_http.Base36IntTests) ... ok
 test_values (utils_tests.test_http.Base36IntTests) ... ok
-test_bad (utils_tests.test_http.IsSameDomainTests) ... ok
-test_good (utils_tests.test_http.IsSameDomainTests) ... ok
-test_roundtrip (utils_tests.test_http.URLSafeBase64Tests) ... ok
 test_custom_iterable_not_doseq (utils_tests.test_http.URLEncodeTests) ... ok
 test_dict (utils_tests.test_http.URLEncodeTests) ... ok
 test_dict_containing_empty_sequence_doseq (utils_tests.test_http.URLEncodeTests) ... ok
@@ -101,7 +121,7 @@ test_parsing_rfc1123 (utils_tests.test_http.HttpDateProcessingTests) ... ok
 test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) ... test_parsing_year_less_than_70 (utils_tests.test_http.HttpDateProcessingTests) ... FAIL
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7838b9fa37e0>] (rfc850str='Tuesday, 31-Dec-69 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7f71478e67e0>] (rfc850str='Tuesday, 31-Dec-69 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -115,7 +135,7 @@ Traceback (most recent call last):
 ValueError: 'Tuesday, 31-Dec-69 08:49:37 GMT' is not in a valid HTTP date format
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7838b9fa37e0>] (rfc850str='Tuesday, 10-Nov-70 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7f71478e67e0>] (rfc850str='Tuesday, 10-Nov-70 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -129,7 +149,7 @@ Traceback (most recent call last):
 ValueError: 'Tuesday, 10-Nov-70 08:49:37 GMT' is not in a valid HTTP date format
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7838b9fa37e0>] (rfc850str='Sunday, 06-Nov-94 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7f71478e67e0>] (rfc850str='Sunday, 06-Nov-94 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -143,7 +163,7 @@ Traceback (most recent call last):
 ValueError: 'Sunday, 06-Nov-94 08:49:37 GMT' is not in a valid HTTP date format
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7838b9fa37e0>] (rfc850str='Wednesday, 31-Dec-70 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7f71478e67e0>] (rfc850str='Wednesday, 31-Dec-70 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -157,7 +177,7 @@ Traceback (most recent call last):
 ValueError: 'Wednesday, 31-Dec-70 08:49:37 GMT' is not in a valid HTTP date format
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7838b9fa37e0>] (rfc850str='Friday, 31-Dec-71 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7f71478e67e0>] (rfc850str='Friday, 31-Dec-71 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -171,7 +191,7 @@ Traceback (most recent call last):
 ValueError: 'Friday, 31-Dec-71 08:49:37 GMT' is not in a valid HTTP date format
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7838b9fa37e0>] (rfc850str='Sunday, 31-Dec-00 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7f71478e67e0>] (rfc850str='Sunday, 31-Dec-00 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -185,7 +205,7 @@ Traceback (most recent call last):
 ValueError: 'Sunday, 31-Dec-00 08:49:37 GMT' is not in a valid HTTP date format
 
 ======================================================================
-ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7838b9fa37e0>] (rfc850str='Friday, 31-Dec-99 08:49:37 GMT')
+ERROR: test_parsing_rfc850 (utils_tests.test_http.HttpDateProcessingTests) [<object object at 0x7f71478e67e0>] (rfc850str='Friday, 31-Dec-99 08:49:37 GMT')
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
@@ -215,7 +235,7 @@ Traceback (most recent call last):
 AssertionError: datetime.datetime(1937, 11, 6, 8, 49, 37) != datetime.datetime(2037, 11, 6, 8, 49, 37)
 
 ----------------------------------------------------------------------
-Ran 45 tests in 0.145s
+Ran 45 tests in 0.272s
 
 FAILED (failures=1, errors=7)
  

@@ -51,10 +51,10 @@ Applied patch tests/sitemaps_tests/urls/http.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 sitemaps_tests.test_http sitemaps_tests.urls.http;
 [django__django__4.2] [django__django-16255] Command: ./tests/runtests.py --verbosity 2 sitemaps_tests.test_http sitemaps_tests.urls.http 
-[django__django__4.2] [django__django-16255] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.2] [django__django-16255] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.2] [django__django-16255] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application sitemaps_tests
 Found 40 test(s).
 Skipping setup of unused database(s): other.
@@ -153,7 +153,7 @@ The Last-Modified header is omitted when lastmod isn't found in all ... ok
 test_x_robots_sitemap (sitemaps_tests.test_http.HTTPSitemapTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 40 tests in 0.340s
+Ran 40 tests in 0.170s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

@@ -1,13 +1,19 @@
 [astropy__astropy__4.3] [astropy__astropy-12907] Task Metadata:
 	- Instance ID: astropy__astropy-12907
 	- Testbed: astropy__astropy__4.3
-	- 
-	- Evaluation Model: 20240402_sweagent_gpt4 
+	- Evaluation Model: 20240402_sweagent_gpt4
+	- Python version: Python 3.11.8
+ 
 [astropy__astropy__4.3] [astropy__astropy-12907] Command: git -c advice.detachedHead=false checkout d16bfe05a744909de4b27f5875fe0d4ed41ce607 
 [astropy__astropy__4.3] [astropy__astropy-12907] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [astropy__astropy__4.3] [astropy__astropy-12907] Std. Output:
 Previous HEAD position was 298ccb478 Merge pull request #13031 from meeseeksmachine/auto-backport-of-pr-13027-on-main
 HEAD is now at d16bfe05a Merge pull request #12900 from Cadair/custom_compound_model
+ 
+[astropy__astropy__4.3] [astropy__astropy-12907] Return Code: 0 
+[astropy__astropy__4.3] [astropy__astropy-12907] Command: git diff > /home/swe-bench/temp_astropy__astropy-12907_pred_try_init.patch 
+[astropy__astropy__4.3] [astropy__astropy-12907] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[astropy__astropy__4.3] [astropy__astropy-12907] Std. Output:
  
 [astropy__astropy__4.3] [astropy__astropy-12907] Return Code: 0 
 [astropy__astropy__4.3] [astropy__astropy-12907] Command: git apply -v /home/swe-bench/temp_astropy__astropy-12907_pred_try.patch 
@@ -21,6 +27,11 @@ Applied patch reproduce_separability.py cleanly.
 [astropy__astropy__4.3] [astropy__astropy-12907] Return Code: 0 
 [astropy__astropy__4.3] [astropy__astropy-12907] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[astropy__astropy__4.3] [astropy__astropy-12907] Command: git diff > /home/swe-bench/temp_astropy__astropy-12907_pred_try_init.patch 
+[astropy__astropy__4.3] [astropy__astropy-12907] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[astropy__astropy__4.3] [astropy__astropy-12907] Std. Output:
+ 
+[astropy__astropy__4.3] [astropy__astropy-12907] Return Code: 0 
 [astropy__astropy__4.3] [astropy__astropy-12907] Command: git apply -v -R /home/swe-bench/temp_astropy__astropy-12907_pred_try.patch 
 [astropy__astropy__4.3] [astropy__astropy-12907] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [astropy__astropy__4.3] [astropy__astropy-12907] Std. Output:
@@ -32,6 +43,11 @@ Applied patch astropy/modeling/separable.py cleanly.
 [astropy__astropy__4.3] [astropy__astropy-12907] Return Code: 0 
 [astropy__astropy__4.3] [astropy__astropy-12907] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[astropy__astropy__4.3] [astropy__astropy-12907] Command: git diff > /home/swe-bench/temp_astropy__astropy-12907_pred_init.patch 
+[astropy__astropy__4.3] [astropy__astropy-12907] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[astropy__astropy__4.3] [astropy__astropy-12907] Std. Output:
+ 
+[astropy__astropy__4.3] [astropy__astropy-12907] Return Code: 0 
 [astropy__astropy__4.3] [astropy__astropy-12907] Command: git apply -v /home/swe-bench/temp_astropy__astropy-12907_pred.patch 
 [astropy__astropy__4.3] [astropy__astropy-12907] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [astropy__astropy__4.3] [astropy__astropy-12907] Std. Output:
@@ -43,6 +59,11 @@ Applied patch reproduce_separability.py cleanly.
 [astropy__astropy__4.3] [astropy__astropy-12907] Return Code: 0 
 [astropy__astropy__4.3] [astropy__astropy-12907] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[astropy__astropy__4.3] [astropy__astropy-12907] Command: git diff > /home/swe-bench/temp_astropy__astropy-12907_test_init.patch 
+[astropy__astropy__4.3] [astropy__astropy-12907] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[astropy__astropy__4.3] [astropy__astropy-12907] Std. Output:
+ 
+[astropy__astropy__4.3] [astropy__astropy-12907] Return Code: 0 
 [astropy__astropy__4.3] [astropy__astropy-12907] Command: git restore astropy/modeling/tests/test_separable.py 
 [astropy__astropy__4.3] [astropy__astropy-12907] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [astropy__astropy__4.3] [astropy__astropy-12907] Std. Output:
@@ -57,9 +78,9 @@ Applied patch astropy/modeling/tests/test_separable.py cleanly.
 [astropy__astropy__4.3] [astropy__astropy-12907] Return Code: 0 
 [astropy__astropy__4.3] [astropy__astropy-12907] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n astropy__astropy__4.3 pytest --no-header -rA --tb=no -p no:cacheprovider astropy/modeling/tests/test_separable.py;
+Test Script: conda run -n astropy__astropy__4.3  pytest --no-header -rA --tb=no -p no:cacheprovider astropy/modeling/tests/test_separable.py;
 [astropy__astropy__4.3] [astropy__astropy-12907] Command: conda run -n astropy__astropy__4.3 pytest --no-header -rA --tb=no -p no:cacheprovider astropy/modeling/tests/test_separable.py 
-[astropy__astropy__4.3] [astropy__astropy-12907] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[astropy__astropy__4.3] [astropy__astropy-12907] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [astropy__astropy__4.3] [astropy__astropy-12907] Std. Output:
 <frozen importlib._bootstrap>:228: RuntimeWarning: numpy.ndarray size changed, may indicate binary incompatibility. Expected 80 from C header, got 96 from PyObject
 
@@ -85,7 +106,7 @@ FAILED astropy/modeling/tests/test_separable.py::test_separable[compound_model6-
 FAILED astropy/modeling/tests/test_separable.py::test_separable[compound_model7-result7]
 FAILED astropy/modeling/tests/test_separable.py::test_separable[compound_model8-result8]
 FAILED astropy/modeling/tests/test_separable.py::test_separable[compound_model9-result9]
-========================= 10 failed, 5 passed in 0.48s =========================
+========================= 10 failed, 5 passed in 0.73s =========================
 
  
 [astropy__astropy__4.3] [astropy__astropy-12907] Return Code: 1 

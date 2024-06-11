@@ -11,6 +11,11 @@ Previous HEAD position was 475cffd1d6 Fixed typo in docs/intro/reusable-apps.txt
 HEAD is now at fa4e963ee7 Doc'd that HttpRequest.path doesn't contain a query string.
  
 [django__django__4.0] [django__django-14411] Return Code: 0 
+[django__django__4.0] [django__django-14411] Command: git diff > /opt/temp_django__django-14411_pred_try_init.patch 
+[django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14411] Std. Output:
+ 
+[django__django__4.0] [django__django-14411] Return Code: 0 
 [django__django__4.0] [django__django-14411] Command: git apply -v /opt/temp_django__django-14411_pred_try.patch 
 [django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14411] Std. Output:
@@ -20,6 +25,11 @@ Applied patch django/contrib/auth/forms.py cleanly.
 [django__django__4.0] [django__django-14411] Return Code: 0 
 [django__django__4.0] [django__django-14411] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.0] [django__django-14411] Command: git diff > /opt/temp_django__django-14411_pred_try_init.patch 
+[django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14411] Std. Output:
+ 
+[django__django__4.0] [django__django-14411] Return Code: 0 
 [django__django__4.0] [django__django-14411] Command: git apply -v -R /opt/temp_django__django-14411_pred_try.patch 
 [django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14411] Std. Output:
@@ -29,6 +39,11 @@ Applied patch django/contrib/auth/forms.py cleanly.
 [django__django__4.0] [django__django-14411] Return Code: 0 
 [django__django__4.0] [django__django-14411] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.0] [django__django-14411] Command: git diff > /opt/temp_django__django-14411_pred_init.patch 
+[django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14411] Std. Output:
+ 
+[django__django__4.0] [django__django-14411] Return Code: 0 
 [django__django__4.0] [django__django-14411] Command: git apply -v /opt/temp_django__django-14411_pred.patch 
 [django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14411] Std. Output:
@@ -38,6 +53,11 @@ Applied patch django/contrib/auth/forms.py cleanly.
 [django__django__4.0] [django__django-14411] Return Code: 0 
 [django__django__4.0] [django__django-14411] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__4.0] [django__django-14411] Command: git diff > /opt/temp_django__django-14411_test_init.patch 
+[django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14411] Std. Output:
+ 
+[django__django__4.0] [django__django-14411] Return Code: 0 
 [django__django__4.0] [django__django-14411] Command: git apply -v /opt/temp_django__django-14411_test.patch 
 [django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14411] Std. Output:
@@ -49,9 +69,9 @@ Applied patch tests/auth_tests/test_forms.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 auth_tests.test_forms;
 [django__django__4.0] [django__django-14411] Command: ./tests/runtests.py --verbosity 2 auth_tests.test_forms 
-[django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.0] [django__django-14411] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.0] [django__django-14411] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application auth_tests
 Found 84 tests.
 Skipping setup of unused database(s): other.
@@ -101,11 +121,6 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_bug_19349_render_with_none_value (auth_tests.test_forms.ReadOnlyPasswordHashTest) ... ok
-test_label (auth_tests.test_forms.ReadOnlyPasswordHashTest)
-ReadOnlyPasswordHashWidget doesn't contain a for attribute in the ... FAIL
-test_readonly_field_has_changed (auth_tests.test_forms.ReadOnlyPasswordHashTest) ... ok
-test_render (auth_tests.test_forms.ReadOnlyPasswordHashTest) ... ok
 test_field_order (auth_tests.test_forms.PasswordChangeFormTest) ... ok
 test_html_autocomplete_attributes (auth_tests.test_forms.PasswordChangeFormTest) ... ok
 test_incorrect_password (auth_tests.test_forms.PasswordChangeFormTest) ... ok
@@ -118,6 +133,11 @@ test_non_matching_passwords (auth_tests.test_forms.AdminPasswordChangeFormTest) 
 test_one_password (auth_tests.test_forms.AdminPasswordChangeFormTest) ... ok
 test_password_whitespace_not_stripped (auth_tests.test_forms.AdminPasswordChangeFormTest) ... ok
 test_success (auth_tests.test_forms.AdminPasswordChangeFormTest) ... ok
+test_bug_19349_render_with_none_value (auth_tests.test_forms.ReadOnlyPasswordHashTest) ... ok
+test_label (auth_tests.test_forms.ReadOnlyPasswordHashTest)
+ReadOnlyPasswordHashWidget doesn't contain a for attribute in the ... FAIL
+test_readonly_field_has_changed (auth_tests.test_forms.ReadOnlyPasswordHashTest) ... ok
+test_render (auth_tests.test_forms.ReadOnlyPasswordHashTest) ... ok
 test_help_text_translation (auth_tests.test_forms.SetPasswordFormTest) ... ok
 test_html_autocomplete_attributes (auth_tests.test_forms.SetPasswordFormTest) ... ok
 test_password_verification (auth_tests.test_forms.SetPasswordFormTest) ... ok
@@ -216,7 +236,7 @@ Traceback (most recent call last):
 AssertionError: 'id' != None
 
 ----------------------------------------------------------------------
-Ran 84 tests in 0.206s
+Ran 84 tests in 0.328s
 
 FAILED (failures=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

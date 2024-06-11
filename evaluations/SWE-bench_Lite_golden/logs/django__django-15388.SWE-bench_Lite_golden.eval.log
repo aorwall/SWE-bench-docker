@@ -49,9 +49,9 @@ Applied patch tests/template_tests/test_autoreloader.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 template_tests.test_autoreloader;
 [django__django__4.1] [django__django-15388] Command: ./tests/runtests.py --verbosity 2 template_tests.test_autoreloader 
-[django__django__4.1] [django__django-15388] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.1] [django__django-15388] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.1] [django__django-15388] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application template_tests
 Found 10 test(s).
 Skipping setup of unused database(s): default, other.
@@ -68,7 +68,7 @@ test_template_dirs_normalized_to_paths (template_tests.test_autoreloader.Templat
 test_watch_for_template_changes (template_tests.test_autoreloader.TemplateReloadTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.152s
+Ran 10 tests in 0.040s
 
 OK
  

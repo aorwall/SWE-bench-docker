@@ -49,9 +49,9 @@ Applied patch tests/expressions/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 expressions.tests;
 [django__django__3.0] [django__django-11001] Command: ./tests/runtests.py --verbosity 2 expressions.tests 
-[django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.0] [django__django-11001] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.0] [django__django-11001] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application expressions
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -95,21 +95,26 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
-test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
-test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
-test_equal (expressions.tests.SimpleExpressionTests) ... ok
-test_hash (expressions.tests.SimpleExpressionTests) ... ok
 test_deconstruct (expressions.tests.FTests) ... ok
 test_deepcopy (expressions.tests.FTests) ... ok
 test_equal (expressions.tests.FTests) ... ok
 test_hash (expressions.tests.FTests) ... ok
 test_not_equal_Value (expressions.tests.FTests) ... ok
+test_and (expressions.tests.CombinableTests) ... ok
+test_negation (expressions.tests.CombinableTests) ... ok
+test_or (expressions.tests.CombinableTests) ... ok
+test_reversed_and (expressions.tests.CombinableTests) ... ok
+test_reversed_or (expressions.tests.CombinableTests) ... ok
+test_equal (expressions.tests.SimpleExpressionTests) ... ok
+test_hash (expressions.tests.SimpleExpressionTests) ... ok
 test_aggregates (expressions.tests.ReprTests) ... ok
 test_distinct_aggregates (expressions.tests.ReprTests) ... ok
 test_expressions (expressions.tests.ReprTests) ... ok
 test_filtered_aggregates (expressions.tests.ReprTests) ... ok
 test_functions (expressions.tests.ReprTests) ... ok
+test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
+test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
+test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
 test_deconstruct (expressions.tests.ValueTests) ... ok
 test_deconstruct_output_field (expressions.tests.ValueTests) ... ok
 test_equal (expressions.tests.ValueTests) ... ok
@@ -118,11 +123,6 @@ test_hash (expressions.tests.ValueTests) ... ok
 test_raise_empty_expressionlist (expressions.tests.ValueTests) ... ok
 test_update_TimeField_using_Value (expressions.tests.ValueTests) ... ok
 test_update_UUIDField_using_Value (expressions.tests.ValueTests) ... ok
-test_and (expressions.tests.CombinableTests) ... ok
-test_negation (expressions.tests.CombinableTests) ... ok
-test_or (expressions.tests.CombinableTests) ... ok
-test_reversed_and (expressions.tests.CombinableTests) ... ok
-test_reversed_or (expressions.tests.CombinableTests) ... ok
 test_complex_expressions (expressions.tests.ExpressionsNumericTests) ... ok
 test_fill_with_value_from_same_object (expressions.tests.ExpressionsNumericTests) ... ok
 test_filter_not_equals_other_field (expressions.tests.ExpressionsNumericTests) ... ok
@@ -130,6 +130,11 @@ test_increment_value (expressions.tests.ExpressionsNumericTests) ... ok
 test_F_reuse (expressions.tests.ExpressionsTests) ... ok
 test_insensitive_patterns_escape (expressions.tests.ExpressionsTests) ... ok
 test_patterns_escape (expressions.tests.ExpressionsTests) ... ok
+test_complex_expressions_do_not_introduce_sql_injection_via_untrusted_string_inclusion (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_expressions_in_lookups_join_choice (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_in_lookup_allows_F_expressions_and_expressions_for_datetimes (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_in_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
+test_range_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
 test_lefthand_addition (expressions.tests.ExpressionOperatorTests) ... ok
 test_lefthand_bitwise_and (expressions.tests.ExpressionOperatorTests) ... ok
 test_lefthand_bitwise_left_shift_operator (expressions.tests.ExpressionOperatorTests) ... ok
@@ -146,11 +151,6 @@ test_right_hand_modulo (expressions.tests.ExpressionOperatorTests) ... ok
 test_right_hand_multiplication (expressions.tests.ExpressionOperatorTests) ... ok
 test_right_hand_subtraction (expressions.tests.ExpressionOperatorTests) ... ok
 test_righthand_power (expressions.tests.ExpressionOperatorTests) ... ok
-test_complex_expressions_do_not_introduce_sql_injection_via_untrusted_string_inclusion (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_expressions_in_lookups_join_choice (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_in_lookup_allows_F_expressions_and_expressions_for_datetimes (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_in_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
-test_range_lookup_allows_F_expressions_and_expressions_for_integers (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
 test_aggregate_subquery_annotation (expressions.tests.BasicExpressionsTests) ... ok
 test_annotate_values_aggregate (expressions.tests.BasicExpressionsTests) ... ok
 test_annotate_values_count (expressions.tests.BasicExpressionsTests) ... ok
@@ -218,7 +218,7 @@ test_query_clone (expressions.tests.FTimeDeltaTests) ... ok
 test_time_subtraction (expressions.tests.FTimeDeltaTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 121 tests in 0.270s
+Ran 121 tests in 0.273s
 
 OK (skipped=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

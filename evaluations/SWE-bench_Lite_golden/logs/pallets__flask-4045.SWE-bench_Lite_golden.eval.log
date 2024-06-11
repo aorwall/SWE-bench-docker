@@ -61,7 +61,7 @@ Applied patch tests/test_blueprints.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pallets__flask__2.0  pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_basic.py tests/test_blueprints.py;
 [pallets__flask__2.0] [pallets__flask-4045] Command: conda run -n pallets__flask__2.0 pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_basic.py tests/test_blueprints.py 
-[pallets__flask__2.0] [pallets__flask-4045] Subprocess args: {"cwd": "/home/swe-bench/pallets__flask", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pallets__flask__2.0] [pallets__flask-4045] Subprocess args: {"cwd": "/home/swe-bench/pallets__flask", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pallets__flask__2.0] [pallets__flask-4045] Std. Output:
 ============================= test session starts ==============================
 collected 179 items
@@ -252,7 +252,7 @@ FAILED tests/test_blueprints.py::test_request_processing - DeprecationWarning...
 FAILED tests/test_blueprints.py::test_app_request_processing - DeprecationWar...
 FAILED tests/test_blueprints.py::test_app_url_processors - DeprecationWarning...
 FAILED tests/test_blueprints.py::test_nested_blueprint - DeprecationWarning: ...
-================== 116 failed, 52 passed, 11 errors in 2.14s ===================
+================== 116 failed, 52 passed, 11 errors in 0.64s ===================
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider tests/test_basic.py tests/test_blueprints.py` failed. (See above for error)
 
  

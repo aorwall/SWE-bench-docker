@@ -11,6 +11,11 @@ Previous HEAD position was 65dfb06a1a [3.2.x] Fixed #32648 -- Fixed VariableDoes
 HEAD is now at 8328811f04 Refs #31607 -- Added release notes for a125da6a7c79b1d4c55677d0bed6f9b1d7d77353.
  
 [django__django__3.2] [django__django-12856] Return Code: 0 
+[django__django__3.2] [django__django-12856] Command: git diff > /opt/temp_django__django-12856_pred_try_init.patch 
+[django__django__3.2] [django__django-12856] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12856] Std. Output:
+ 
+[django__django__3.2] [django__django-12856] Return Code: 0 
 [django__django__3.2] [django__django-12856] Command: git apply -v /opt/temp_django__django-12856_pred_try.patch 
 [django__django__3.2] [django__django-12856] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12856] Std. Output:
@@ -24,6 +29,11 @@ Applied patch tests/testapp/__init__.py cleanly.
 [django__django__3.2] [django__django-12856] Return Code: 0 
 [django__django__3.2] [django__django-12856] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.2] [django__django-12856] Command: git diff > /opt/temp_django__django-12856_pred_try_init.patch 
+[django__django__3.2] [django__django-12856] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12856] Std. Output:
+ 
+[django__django__3.2] [django__django-12856] Return Code: 0 
 [django__django__3.2] [django__django-12856] Command: git apply -v -R /opt/temp_django__django-12856_pred_try.patch 
 [django__django__3.2] [django__django-12856] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12856] Std. Output:
@@ -37,6 +47,11 @@ Applied patch django/db/migrations/graph.py cleanly.
 [django__django__3.2] [django__django-12856] Return Code: 0 
 [django__django__3.2] [django__django-12856] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.2] [django__django-12856] Command: git diff > /opt/temp_django__django-12856_pred_init.patch 
+[django__django__3.2] [django__django-12856] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12856] Std. Output:
+ 
+[django__django__3.2] [django__django-12856] Return Code: 0 
 [django__django__3.2] [django__django-12856] Command: git apply -v /opt/temp_django__django-12856_pred.patch 
 [django__django__3.2] [django__django-12856] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12856] Std. Output:
@@ -50,6 +65,11 @@ Applied patch tests/testapp/__init__.py cleanly.
 [django__django__3.2] [django__django-12856] Return Code: 0 
 [django__django__3.2] [django__django-12856] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.2] [django__django-12856] Command: git diff > /opt/temp_django__django-12856_test_init.patch 
+[django__django__3.2] [django__django-12856] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-12856] Std. Output:
+ 
+[django__django__3.2] [django__django-12856] Return Code: 0 
 [django__django__3.2] [django__django-12856] Command: git apply -v /opt/temp_django__django-12856_test.patch 
 [django__django__3.2] [django__django-12856] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-12856] Std. Output:
@@ -61,10 +81,10 @@ Applied patch tests/invalid_models_tests/test_models.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 invalid_models_tests.test_models;
 [django__django__3.2] [django__django-12856] Command: ./tests/runtests.py --verbosity 2 invalid_models_tests.test_models 
-[django__django__3.2] [django__django-12856] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.2] [django__django-12856] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.2] [django__django-12856] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application invalid_models_tests
 Traceback (most recent call last):
   File "./tests/runtests.py", line 577, in <module>

@@ -49,30 +49,15 @@ Applied patch tests/httpwrappers/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 httpwrappers.tests;
 [django__django__3.0] [django__django-11133] Command: ./tests/runtests.py --verbosity 2 httpwrappers.tests 
-[django__django__3.0] [django__django-11133] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.0] [django__django-11133] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.0] [django__django-11133] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application httpwrappers
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
-test_json_response_custom_encoder (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_list (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_non_ascii (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_passing_arguments_to_json_dumps (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_raises_type_error_with_default_setting (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_text (httpwrappers.tests.JsonResponseTests) ... ok
-test_json_response_uuid (httpwrappers.tests.JsonResponseTests) ... ok
 test_streaming_response (httpwrappers.tests.StreamingHttpResponseTests) ... ok
-test_invalid_redirect_repr (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
-test_not_allowed (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
-test_not_allowed_repr (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
-test_not_allowed_repr_no_content_type (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
-test_not_modified (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
-test_not_modified_repr (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
-test_redirect (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
-test_redirect_lazy (httpwrappers.tests.HttpResponseSubclassesTests)
-Make sure HttpResponseRedirect works with lazy strings. ... ok
-test_redirect_repr (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
+test_response (httpwrappers.tests.FileCloseTests) ... ok
+test_streaming_response (httpwrappers.tests.FileCloseTests) ... ok
 test_cookie_edgecases (httpwrappers.tests.CookieTests) ... ok
 test_decode (httpwrappers.tests.CookieTests)
 Semicolons and commas are decoded. ... ok
@@ -86,6 +71,23 @@ test_pickle (httpwrappers.tests.CookieTests) ... ok
 test_python_cookies (httpwrappers.tests.CookieTests) ... ok
 test_repeated_nonstandard_keys (httpwrappers.tests.CookieTests) ... ok
 test_samesite (httpwrappers.tests.CookieTests) ... ok
+test_json_response_custom_encoder (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_list (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_non_ascii (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_passing_arguments_to_json_dumps (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_raises_type_error_with_default_setting (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_text (httpwrappers.tests.JsonResponseTests) ... ok
+test_json_response_uuid (httpwrappers.tests.JsonResponseTests) ... ok
+test_invalid_redirect_repr (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
+test_not_allowed (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
+test_not_allowed_repr (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
+test_not_allowed_repr_no_content_type (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
+test_not_modified (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
+test_not_modified_repr (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
+test_redirect (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
+test_redirect_lazy (httpwrappers.tests.HttpResponseSubclassesTests)
+Make sure HttpResponseRedirect works with lazy strings. ... ok
+test_redirect_repr (httpwrappers.tests.HttpResponseSubclassesTests) ... ok
 test_dict_behavior (httpwrappers.tests.HttpResponseTests) ... ok
 test_file_interface (httpwrappers.tests.HttpResponseTests) ... ok
 test_headers_type (httpwrappers.tests.HttpResponseTests) ... ok
@@ -98,8 +100,6 @@ test_newlines_in_headers (httpwrappers.tests.HttpResponseTests) ... ok
 test_non_string_content (httpwrappers.tests.HttpResponseTests) ... ok
 test_stream_interface (httpwrappers.tests.HttpResponseTests) ... ok
 test_unsafe_redirect (httpwrappers.tests.HttpResponseTests) ... ok
-test_response (httpwrappers.tests.FileCloseTests) ... ok
-test_streaming_response (httpwrappers.tests.FileCloseTests) ... ok
 test_basic_mutable_operations (httpwrappers.tests.QueryDictTests) ... ok
 test_create_with_no_args (httpwrappers.tests.QueryDictTests) ... ok
 test_duplicates_in_fromkeys_iterable (httpwrappers.tests.QueryDictTests) ... ok
@@ -130,7 +130,7 @@ test_urlencode (httpwrappers.tests.QueryDictTests) ... ok
 test_urlencode_int (httpwrappers.tests.QueryDictTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 65 tests in 0.174s
+Ran 65 tests in 0.281s
 
 OK
  

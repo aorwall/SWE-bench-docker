@@ -11,6 +11,11 @@ Previous HEAD position was 0fbdb9784d Fixed #23718 -- Doc'd that test mirrors re
 HEAD is now at 5eb6a2b33d Fixed typo in docs/topics/signals.txt.
  
 [django__django__4.2] [django__django-15814] Return Code: 0 
+[django__django__4.2] [django__django-15814] Command: git diff > /opt/temp_django__django-15814_pred_try_init.patch 
+[django__django__4.2] [django__django-15814] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15814] Std. Output:
+ 
+[django__django__4.2] [django__django-15814] Return Code: 0 
 [django__django__4.2] [django__django-15814] Command: git apply -v /opt/temp_django__django-15814_pred_try.patch 
 [django__django__4.2] [django__django-15814] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15814] Std. Output:
@@ -20,6 +25,11 @@ Applied patch django/db/models/sql/query.py cleanly.
 [django__django__4.2] [django__django-15814] Return Code: 0 
 [django__django__4.2] [django__django-15814] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.2] [django__django-15814] Command: git diff > /opt/temp_django__django-15814_pred_try_init.patch 
+[django__django__4.2] [django__django-15814] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15814] Std. Output:
+ 
+[django__django__4.2] [django__django-15814] Return Code: 0 
 [django__django__4.2] [django__django-15814] Command: git apply -v -R /opt/temp_django__django-15814_pred_try.patch 
 [django__django__4.2] [django__django-15814] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15814] Std. Output:
@@ -29,6 +39,11 @@ Applied patch django/db/models/sql/query.py cleanly.
 [django__django__4.2] [django__django-15814] Return Code: 0 
 [django__django__4.2] [django__django-15814] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.2] [django__django-15814] Command: git diff > /opt/temp_django__django-15814_pred_init.patch 
+[django__django__4.2] [django__django-15814] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15814] Std. Output:
+ 
+[django__django__4.2] [django__django-15814] Return Code: 0 
 [django__django__4.2] [django__django-15814] Command: git apply -v /opt/temp_django__django-15814_pred.patch 
 [django__django__4.2] [django__django-15814] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15814] Std. Output:
@@ -38,6 +53,11 @@ Applied patch django/db/models/sql/query.py cleanly.
 [django__django__4.2] [django__django-15814] Return Code: 0 
 [django__django__4.2] [django__django-15814] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__4.2] [django__django-15814] Command: git diff > /opt/temp_django__django-15814_test_init.patch 
+[django__django__4.2] [django__django-15814] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15814] Std. Output:
+ 
+[django__django__4.2] [django__django-15814] Return Code: 0 
 [django__django__4.2] [django__django-15814] Command: git apply -v /opt/temp_django__django-15814_test.patch 
 [django__django__4.2] [django__django-15814] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15814] Std. Output:
@@ -49,10 +69,10 @@ Applied patch tests/proxy_models/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 proxy_models.tests;
 [django__django__4.2] [django__django-15814] Command: ./tests/runtests.py --verbosity 2 proxy_models.tests 
-[django__django__4.2] [django__django-15814] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.2] [django__django-15814] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.2] [django__django-15814] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application proxy_models
 Found 30 test(s).
 Skipping setup of unused database(s): other.
@@ -131,7 +151,7 @@ test_too_many_concrete_classes (proxy_models.tests.ProxyModelTests) ... ok
 test_user_proxy_models (proxy_models.tests.ProxyModelTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 30 tests in 0.309s
+Ran 30 tests in 0.146s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

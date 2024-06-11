@@ -13,7 +13,7 @@ HEAD is now at 397c1703e Don't emit ``super-init-not-called`` for abstract ``__i
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Return Code: 0 
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Running pre-test command: pip install -e . 
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Command: conda run -n pylint-dev__pylint__2.15  pip install -e . 
-[pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Std. Output:
 Obtaining file:///home/swe-bench/pylint-dev__pylint
   Installing build dependencies: started
@@ -123,7 +123,7 @@ Applied patch tests/lint/unittest_lint.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pylint-dev__pylint__2.15  pytest --no-header -rA --tb=no -p no:cacheprovider tests/checkers/unittest_imports.py tests/lint/unittest_lint.py;
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Command: conda run -n pylint-dev__pylint__2.15 pytest --no-header -rA --tb=no -p no:cacheprovider tests/checkers/unittest_imports.py tests/lint/unittest_lint.py 
-[pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Subprocess args: {"cwd": "/home/swe-bench/pylint-dev__pylint", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Std. Output:
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider tests/checkers/unittest_imports.py tests/lint/unittest_lint.py` failed. (See above for error)
 ============================= test session starts ==============================
@@ -197,7 +197,7 @@ PASSED tests/lint/unittest_lint.py::test_identically_named_nested_module
 XFAIL tests/checkers/unittest_imports.py::TestImportsChecker::test_relative_beyond_top_level_two - epylint manipulates cwd; these tests should not be using epylint
 FAILED tests/checkers/unittest_imports.py::TestImportsChecker::test_wildcard_import_init
 FAILED tests/checkers/unittest_imports.py::TestImportsChecker::test_wildcard_import_non_init
-=================== 2 failed, 60 passed, 1 xfailed in 8.32s ====================
+=================== 2 failed, 60 passed, 1 xfailed in 4.35s ====================
 
  
 [pylint-dev__pylint__2.15] [pylint-dev__pylint-7114] Return Code: 1 

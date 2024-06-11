@@ -1,13 +1,19 @@
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Task Metadata:
 	- Instance ID: matplotlib__matplotlib-22711
 	- Testbed: matplotlib__matplotlib__3.5
-	- 
-	- Evaluation Model: 20240402_sweagent_gpt4 
+	- Evaluation Model: 20240402_sweagent_gpt4
+	- Python version: Python 3.11.8
+ 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Command: git -c advice.detachedHead=false checkout f670fe78795b18eb1118707721852209cd77ad51 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Std. Output:
 Previous HEAD position was de98877e3d Move axes_grid tests to axes_grid1 (#23861)
 HEAD is now at f670fe7879 Merge pull request #22263 from jklymak/doc-version-switcher-condense
+ 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Return Code: 0 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Command: git diff > /home/swe-bench/temp_matplotlib__matplotlib-22711_pred_try_init.patch 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Std. Output:
  
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-22711_pred_try.patch 
@@ -19,6 +25,11 @@ Applied patch lib/matplotlib/widgets.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Command: git diff > /home/swe-bench/temp_matplotlib__matplotlib-22711_pred_try_init.patch 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Std. Output:
+ 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Command: git apply -v -R /home/swe-bench/temp_matplotlib__matplotlib-22711_pred_try.patch 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Std. Output:
@@ -28,6 +39,11 @@ Applied patch lib/matplotlib/widgets.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Command: git diff > /home/swe-bench/temp_matplotlib__matplotlib-22711_pred_init.patch 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Std. Output:
+ 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-22711_pred.patch 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Std. Output:
@@ -37,6 +53,11 @@ Applied patch lib/matplotlib/widgets.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Command: git diff > /home/swe-bench/temp_matplotlib__matplotlib-22711_test_init.patch 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Std. Output:
+ 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Command: git restore lib/matplotlib/tests/test_widgets.py 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Std. Output:
@@ -51,9 +72,9 @@ Applied patch lib/matplotlib/tests/test_widgets.py cleanly.
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Return Code: 0 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n matplotlib__matplotlib__3.5 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_widgets.py;
+Test Script: conda run -n matplotlib__matplotlib__3.5  pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_widgets.py;
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Command: conda run -n matplotlib__matplotlib__3.5 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_widgets.py 
-[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [matplotlib__matplotlib__3.5] [matplotlib__matplotlib-22711] Std. Output:
 ============================= test session starts ==============================
 collected 96 items
@@ -158,7 +179,7 @@ SKIPPED [1] lib/matplotlib/testing/compare.py:262: Don't know how to convert .sv
 FAILED lib/matplotlib/tests/test_widgets.py::test_rectangle_selector - matplo...
 FAILED lib/matplotlib/tests/test_widgets.py::test_range_slider[horizontal] - ...
 FAILED lib/matplotlib/tests/test_widgets.py::test_range_slider[vertical] - As...
-=================== 3 failed, 91 passed, 2 skipped in 30.85s ===================
+=================== 3 failed, 91 passed, 2 skipped in 16.49s ===================
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_widgets.py` failed. (See above for error)
 
  

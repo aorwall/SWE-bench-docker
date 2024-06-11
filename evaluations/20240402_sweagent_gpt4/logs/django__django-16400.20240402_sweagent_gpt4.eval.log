@@ -11,6 +11,11 @@ Previous HEAD position was 0fbdb9784d Fixed #23718 -- Doc'd that test mirrors re
 HEAD is now at 0bd2c0c901 Fixed #33735 -- Added async support to StreamingHttpResponse.
  
 [django__django__4.2] [django__django-16400] Return Code: 0 
+[django__django__4.2] [django__django-16400] Command: git diff > /opt/temp_django__django-16400_pred_try_init.patch 
+[django__django__4.2] [django__django-16400] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-16400] Std. Output:
+ 
+[django__django__4.2] [django__django-16400] Return Code: 0 
 [django__django__4.2] [django__django-16400] Command: git apply -v /opt/temp_django__django-16400_pred_try.patch 
 [django__django__4.2] [django__django-16400] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-16400] Std. Output:
@@ -25,6 +30,11 @@ warning: 2 lines add whitespace errors.
 [django__django__4.2] [django__django-16400] Return Code: 0 
 [django__django__4.2] [django__django-16400] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.2] [django__django-16400] Command: git diff > /opt/temp_django__django-16400_pred_try_init.patch 
+[django__django__4.2] [django__django-16400] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-16400] Std. Output:
+ 
+[django__django__4.2] [django__django-16400] Return Code: 0 
 [django__django__4.2] [django__django-16400] Command: git apply -v -R /opt/temp_django__django-16400_pred_try.patch 
 [django__django__4.2] [django__django-16400] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-16400] Std. Output:
@@ -34,6 +44,11 @@ Applied patch reproduce_bug.py cleanly.
 [django__django__4.2] [django__django-16400] Return Code: 0 
 [django__django__4.2] [django__django-16400] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.2] [django__django-16400] Command: git diff > /opt/temp_django__django-16400_pred_init.patch 
+[django__django__4.2] [django__django-16400] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-16400] Std. Output:
+ 
+[django__django__4.2] [django__django-16400] Return Code: 0 
 [django__django__4.2] [django__django-16400] Command: git apply -v /opt/temp_django__django-16400_pred.patch 
 [django__django__4.2] [django__django-16400] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-16400] Std. Output:
@@ -48,6 +63,11 @@ warning: 2 lines add whitespace errors.
 [django__django__4.2] [django__django-16400] Return Code: 0 
 [django__django__4.2] [django__django-16400] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__4.2] [django__django-16400] Command: git diff > /opt/temp_django__django-16400_test_init.patch 
+[django__django__4.2] [django__django-16400] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-16400] Std. Output:
+ 
+[django__django__4.2] [django__django-16400] Return Code: 0 
 [django__django__4.2] [django__django-16400] Command: git apply -v /opt/temp_django__django-16400_test.patch 
 [django__django__4.2] [django__django-16400] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-16400] Std. Output:
@@ -59,10 +79,10 @@ Applied patch tests/auth_tests/test_management.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 auth_tests.test_management;
 [django__django__4.2] [django__django-16400] Command: ./tests/runtests.py --verbosity 2 auth_tests.test_management 
-[django__django__4.2] [django__django-16400] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.2] [django__django-16400] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.2] [django__django-16400] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application auth_tests
 Found 65 test(s).
 Operations to perform:
@@ -158,13 +178,13 @@ Cloning test database for alias 'other' ('file:memorydb_other?mode=memory&cache=
 Cloning test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')...
 System check identified no issues (0 silenced).
 test_input_not_found (auth_tests.test_management.MockInputTests) ... ok
-test_that_changepassword_command_with_database_option_uses_given_db (auth_tests.test_management.MultiDBChangepasswordManagementCommandTestCase)
-changepassword --database should operate on the specified DB. ... ok
 test_actual_implementation (auth_tests.test_management.GetDefaultUsernameTestCase) ... ok
 test_existing (auth_tests.test_management.GetDefaultUsernameTestCase) ... ok
 test_i18n (auth_tests.test_management.GetDefaultUsernameTestCase) ... ok
 test_simple (auth_tests.test_management.GetDefaultUsernameTestCase) ... ok
 test_with_database (auth_tests.test_management.GetDefaultUsernameTestCase) ... ok
+test_that_changepassword_command_with_database_option_uses_given_db (auth_tests.test_management.MultiDBChangepasswordManagementCommandTestCase)
+changepassword --database should operate on the specified DB. ... ok
 test_set_permissions_fk_to_using_parameter (auth_tests.test_management.CreatePermissionsMultipleDatabasesTests) ... ERROR
 test_createsuperuser_command_suggested_username_with_database_option (auth_tests.test_management.MultiDBCreatesuperuserTestCase) ... ok
 test_createsuperuser_command_with_database_option (auth_tests.test_management.MultiDBCreatesuperuserTestCase)
@@ -272,7 +292,7 @@ Traceback (most recent call last):
 ValueError: Cannot assign "<ContentType: auth | permission>": the current database router prevents this relation.
 
 ----------------------------------------------------------------------
-Ran 65 tests in 0.817s
+Ran 65 tests in 0.254s
 
 FAILED (errors=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

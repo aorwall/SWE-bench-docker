@@ -49,9 +49,9 @@ Applied patch tests/admin_views/test_autocomplete_view.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 admin_views.test_autocomplete_view;
 [django__django__4.0] [django__django-14752] Command: ./tests/runtests.py --verbosity 2 admin_views.test_autocomplete_view 
-[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.0] [django__django-14752] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.0] [django__django-14752] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application admin_views
 Found 19 test(s).
 Skipping setup of unused database(s): other.
@@ -228,7 +228,7 @@ test_to_field_resolution_with_mti (admin_views.test_autocomplete_view.Autocomple
 to_field resolution should correctly resolve for target models using ... ok
 
 ----------------------------------------------------------------------
-Ran 19 tests in 3.376s
+Ran 19 tests in 0.540s
 
 OK (skipped=3)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

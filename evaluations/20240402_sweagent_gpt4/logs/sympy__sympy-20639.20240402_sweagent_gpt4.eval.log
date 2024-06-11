@@ -1,13 +1,19 @@
 [sympy__sympy__1.8] [sympy__sympy-20639] Task Metadata:
 	- Instance ID: sympy__sympy-20639
 	- Testbed: sympy__sympy__1.8
-	- 
-	- Evaluation Model: 20240402_sweagent_gpt4 
+	- Evaluation Model: 20240402_sweagent_gpt4
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.8] [sympy__sympy-20639] Command: git -c advice.detachedHead=false checkout eb926a1d0c1158bf43f01eaf673dc84416b5ebb1 
 [sympy__sympy__1.8] [sympy__sympy-20639] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.8] [sympy__sympy-20639] Std. Output:
 Previous HEAD position was 3ac1464b88 Merge pull request #21250 from akshanshbhatt/pr_integral_f2
 HEAD is now at eb926a1d0c Merge pull request #20546 from Soumi7/Doc_Series
+ 
+[sympy__sympy__1.8] [sympy__sympy-20639] Return Code: 0 
+[sympy__sympy__1.8] [sympy__sympy-20639] Command: git diff > /home/swe-bench/temp_sympy__sympy-20639_pred_try_init.patch 
+[sympy__sympy__1.8] [sympy__sympy-20639] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.8] [sympy__sympy-20639] Std. Output:
  
 [sympy__sympy__1.8] [sympy__sympy-20639] Return Code: 0 
 [sympy__sympy__1.8] [sympy__sympy-20639] Command: git apply -v /home/swe-bench/temp_sympy__sympy-20639_pred_try.patch 
@@ -21,6 +27,11 @@ Applied patch sympy/printing/pretty/pretty.py cleanly.
 [sympy__sympy__1.8] [sympy__sympy-20639] Return Code: 0 
 [sympy__sympy__1.8] [sympy__sympy-20639] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[sympy__sympy__1.8] [sympy__sympy-20639] Command: git diff > /home/swe-bench/temp_sympy__sympy-20639_pred_try_init.patch 
+[sympy__sympy__1.8] [sympy__sympy-20639] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.8] [sympy__sympy-20639] Std. Output:
+ 
+[sympy__sympy__1.8] [sympy__sympy-20639] Return Code: 0 
 [sympy__sympy__1.8] [sympy__sympy-20639] Command: git apply -v -R /home/swe-bench/temp_sympy__sympy-20639_pred_try.patch 
 [sympy__sympy__1.8] [sympy__sympy-20639] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.8] [sympy__sympy-20639] Std. Output:
@@ -32,6 +43,11 @@ Applied patch reproduce_bug.py cleanly.
 [sympy__sympy__1.8] [sympy__sympy-20639] Return Code: 0 
 [sympy__sympy__1.8] [sympy__sympy-20639] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[sympy__sympy__1.8] [sympy__sympy-20639] Command: git diff > /home/swe-bench/temp_sympy__sympy-20639_pred_init.patch 
+[sympy__sympy__1.8] [sympy__sympy-20639] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.8] [sympy__sympy-20639] Std. Output:
+ 
+[sympy__sympy__1.8] [sympy__sympy-20639] Return Code: 0 
 [sympy__sympy__1.8] [sympy__sympy-20639] Command: git apply -v /home/swe-bench/temp_sympy__sympy-20639_pred.patch 
 [sympy__sympy__1.8] [sympy__sympy-20639] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.8] [sympy__sympy-20639] Std. Output:
@@ -43,6 +59,11 @@ Applied patch sympy/printing/pretty/pretty.py cleanly.
 [sympy__sympy__1.8] [sympy__sympy-20639] Return Code: 0 
 [sympy__sympy__1.8] [sympy__sympy-20639] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[sympy__sympy__1.8] [sympy__sympy-20639] Command: git diff > /home/swe-bench/temp_sympy__sympy-20639_test_init.patch 
+[sympy__sympy__1.8] [sympy__sympy-20639] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.8] [sympy__sympy-20639] Std. Output:
+ 
+[sympy__sympy__1.8] [sympy__sympy-20639] Return Code: 0 
 [sympy__sympy__1.8] [sympy__sympy-20639] Command: git restore sympy/printing/pretty/tests/test_pretty.py 
 [sympy__sympy__1.8] [sympy__sympy-20639] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.8] [sympy__sympy-20639] Std. Output:
@@ -57,9 +78,9 @@ Applied patch sympy/printing/pretty/tests/test_pretty.py cleanly.
 [sympy__sympy__1.8] [sympy__sympy-20639] Return Code: 0 
 [sympy__sympy__1.8] [sympy__sympy-20639] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.8 bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py;
+Test Script: conda run -n sympy__sympy__1.8  bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py;
 [sympy__sympy__1.8] [sympy__sympy-20639] Command: conda run -n sympy__sympy__1.8 bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py 
-[sympy__sympy__1.8] [sympy__sympy-20639] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.8] [sympy__sympy-20639] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.8] [sympy__sympy-20639] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.8/bin/python  (3.9.19-final-0) [CPython]
@@ -67,8 +88,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        95746525
-hash randomization: on (PYTHONHASHSEED=180390899)
+random seed:        52601751
+hash randomization: on (PYTHONHASHSEED=1776269628)
 
 sympy/printing/pretty/tests/test_pretty.py[142] 
 test_pretty_ascii_str ok
@@ -287,7 +308,7 @@ Traceback (most recent call last):
     assert upretty(1/sqrt(x)) == ucode_str
 AssertionError
 
-===== tests finished: 135 passed, 5 failed, 2 exceptions, in 7.89 seconds ======
+===== tests finished: 135 passed, 5 failed, 2 exceptions, in 4.26 seconds ======
 DO *NOT* COMMIT!
 ERROR conda.cli.main_run:execute(124): `conda run bin/test -C --verbose sympy/printing/pretty/tests/test_pretty.py` failed. (See above for error)
 

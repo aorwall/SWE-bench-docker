@@ -1,13 +1,19 @@
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Task Metadata:
 	- Instance ID: mwaskom__seaborn-3190
 	- Testbed: mwaskom__seaborn__0.12
-	- 
-	- Evaluation Model: 20240402_sweagent_gpt4 
+	- Evaluation Model: 20240402_sweagent_gpt4
+	- Python version: Python 3.11.8
+ 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git -c advice.detachedHead=false checkout 4a9e54962a29c12a8b103d75f838e0e795a6974d 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
 Previous HEAD position was d25872b0 fix typos (#3193)
 HEAD is now at 4a9e5496 Improve user feedback for errors during plot compilation (#3203)
+ 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git diff > /home/swe-bench/temp_mwaskom__seaborn-3190_pred_try_init.patch 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
  
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-3190_pred_try.patch 
@@ -21,6 +27,11 @@ Applied patch seaborn/_core/scales.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git diff > /home/swe-bench/temp_mwaskom__seaborn-3190_pred_try_init.patch 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
+ 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git apply -v -R /home/swe-bench/temp_mwaskom__seaborn-3190_pred_try.patch 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
@@ -32,6 +43,11 @@ Applied patch seaborn/_core/plot.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git diff > /home/swe-bench/temp_mwaskom__seaborn-3190_pred_init.patch 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
+ 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git apply -v /home/swe-bench/temp_mwaskom__seaborn-3190_pred.patch 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
@@ -43,6 +59,11 @@ Applied patch seaborn/_core/scales.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git diff > /home/swe-bench/temp_mwaskom__seaborn-3190_test_init.patch 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
+ 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: git restore tests/_core/test_scales.py 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
@@ -57,9 +78,9 @@ Applied patch tests/_core/test_scales.py cleanly.
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Return Code: 0 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n mwaskom__seaborn__0.12 pytest --no-header -rA tests/_core/test_scales.py;
+Test Script: conda run -n mwaskom__seaborn__0.12  pytest --no-header -rA tests/_core/test_scales.py;
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Command: conda run -n mwaskom__seaborn__0.12 pytest --no-header -rA tests/_core/test_scales.py 
-[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Subprocess args: {"cwd": "/home/swe-bench/mwaskom__seaborn", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [mwaskom__seaborn__0.12] [mwaskom__seaborn-3190] Std. Output:
 ============================= test session starts ==============================
 collected 86 items
@@ -70,7 +91,7 @@ tests/_core/test_scales.py ........F.................................... [ 52%]
 =================================== FAILURES ===================================
 ___________________ TestContinuous.test_interval_with_bools ____________________
 
-self = <tests._core.test_scales.TestContinuous object at 0x725170336af0>
+self = <tests._core.test_scales.TestContinuous object at 0x7f0c7f351d30>
 
     def test_interval_with_bools(self):
     
@@ -85,8 +106,8 @@ data = 0    1
 1    0
 2    0
 dtype: int64
-prop = <seaborn._core.properties.IntervalProperty object at 0x725170cf5a00>
-axis = <seaborn._core.scales.PseudoAxis object at 0x725172fac1f0>
+prop = <seaborn._core.properties.IntervalProperty object at 0x7f0c7f558a00>
+axis = <seaborn._core.scales.PseudoAxis object at 0x7f0c7f5f8fd0>
 
     def _setup(
         self, data: Series, prop: Property, axis: Axis | None = None,
@@ -127,7 +148,7 @@ seaborn/_core/scales.py:354: TypeError
 ================================== XFAILURES ===================================
 _________________ TestNominal.test_color_numeric_int_float_mix _________________
 
-self = <tests._core.test_scales.TestNominal object at 0x725170c32f70>
+self = <tests._core.test_scales.TestNominal object at 0x7f0c7f5469d0>
 
     @pytest.mark.xfail(reason="Need to sort out float/int order")
     def test_color_numeric_int_float_mix(self):
@@ -152,7 +173,7 @@ obj = array([[0.12156863, 0.46666667, 0.70588235],
        [1.        , 0.49803922, 0.05490196]])
 method = 'take', args = (array([2, 3]),)
 kwds = {'axis': 0, 'mode': 'raise', 'out': None}
-bound = <built-in method take of numpy.ndarray object at 0x72517021fed0>
+bound = <built-in method take of numpy.ndarray object at 0x7f0c7f25b1b0>
 
     def _wrapfunc(obj, method, *args, **kwds):
         bound = getattr(obj, method, None)
@@ -266,7 +287,7 @@ PASSED tests/_core/test_scales.py::TestTemporal::test_label_formatter
 PASSED tests/_core/test_scales.py::TestTemporal::test_label_concise
 XFAIL tests/_core/test_scales.py::TestNominal::test_color_numeric_int_float_mix - Need to sort out float/int order
 FAILED tests/_core/test_scales.py::TestContinuous::test_interval_with_bools
-============= 1 failed, 84 passed, 1 xfailed, 48 warnings in 2.72s =============
+============= 1 failed, 84 passed, 1 xfailed, 48 warnings in 1.49s =============
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA tests/_core/test_scales.py` failed. (See above for error)
 
  

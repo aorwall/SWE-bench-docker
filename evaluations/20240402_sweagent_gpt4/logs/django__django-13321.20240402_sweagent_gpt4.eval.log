@@ -11,6 +11,11 @@ Previous HEAD position was 65dfb06a1a [3.2.x] Fixed #32648 -- Fixed VariableDoes
 HEAD is now at 35b03788b0 Refs #9061 -- Allowed GenericInlineFormSet to disable deleting extra forms.
  
 [django__django__3.2] [django__django-13321] Return Code: 0 
+[django__django__3.2] [django__django-13321] Command: git diff > /opt/temp_django__django-13321_pred_try_init.patch 
+[django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13321] Std. Output:
+ 
+[django__django__3.2] [django__django-13321] Return Code: 0 
 [django__django__3.2] [django__django-13321] Command: git apply -v /opt/temp_django__django-13321_pred_try.patch 
 [django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13321] Std. Output:
@@ -20,6 +25,11 @@ Applied patch django/contrib/sessions/backends/base.py cleanly.
 [django__django__3.2] [django__django-13321] Return Code: 0 
 [django__django__3.2] [django__django-13321] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.2] [django__django-13321] Command: git diff > /opt/temp_django__django-13321_pred_try_init.patch 
+[django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13321] Std. Output:
+ 
+[django__django__3.2] [django__django-13321] Return Code: 0 
 [django__django__3.2] [django__django-13321] Command: git apply -v -R /opt/temp_django__django-13321_pred_try.patch 
 [django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13321] Std. Output:
@@ -29,6 +39,11 @@ Applied patch django/contrib/sessions/backends/base.py cleanly.
 [django__django__3.2] [django__django-13321] Return Code: 0 
 [django__django__3.2] [django__django-13321] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.2] [django__django-13321] Command: git diff > /opt/temp_django__django-13321_pred_init.patch 
+[django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13321] Std. Output:
+ 
+[django__django__3.2] [django__django-13321] Return Code: 0 
 [django__django__3.2] [django__django-13321] Command: git apply -v /opt/temp_django__django-13321_pred.patch 
 [django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13321] Std. Output:
@@ -38,6 +53,11 @@ Applied patch django/contrib/sessions/backends/base.py cleanly.
 [django__django__3.2] [django__django-13321] Return Code: 0 
 [django__django__3.2] [django__django-13321] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.2] [django__django-13321] Command: git diff > /opt/temp_django__django-13321_test_init.patch 
+[django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.2] [django__django-13321] Std. Output:
+ 
+[django__django__3.2] [django__django-13321] Return Code: 0 
 [django__django__3.2] [django__django-13321] Command: git apply -v /opt/temp_django__django-13321_test.patch 
 [django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.2] [django__django-13321] Std. Output:
@@ -49,9 +69,9 @@ Applied patch tests/sessions_tests/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 sessions_tests.tests;
 [django__django__3.2] [django__django-13321] Command: ./tests/runtests.py --verbosity 2 sessions_tests.tests 
-[django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.2] [django__django-13321] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.2] [django__django-13321] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application sessions_tests
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -95,6 +115,20 @@ Destroying test database for alias 'default' ('file:memorydb_default?mode=memory
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+
+Subtest failed:
+
+    test: test_decode_failure_logged_to_security (sessions_tests.tests.CacheSessionTests)
+ subtest: test_decode_failure_logged_to_security (sessions_tests.tests.CacheSessionTests) (encoded='bad:encoded:value')
+
+Unfortunately, the subtest that failed cannot be pickled, so the parallel
+test runner cannot handle it cleanly. Here is the pickling error:
+
+> can't pickle _thread.lock objects
+
+You should re-run this test with --parallel=1 to reproduce the failure
+with a cleaner failure message.
+
 multiprocessing.pool.RemoteTraceback: 
 """
 Traceback (most recent call last):
@@ -173,16 +207,15 @@ Traceback (most recent call last):
   File "/opt/django__django/django/test/runner.py", line 134, in _confirm_picklable
     pickle.loads(pickle.dumps(obj))
 TypeError: can't pickle _thread.lock objects
+Error in atexit._run_exitfuncs:
 Traceback (most recent call last):
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/multiprocessing/util.py", line 262, in _run_finalizers
-    finalizer()
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/multiprocessing/util.py", line 186, in __call__
-    res = self._callback(*self._args, **self._kwargs)
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/shutil.py", line 477, in rmtree
-    onerror(os.lstat, path, sys.exc_info())
-  File "/opt/pyenv/versions/3.6.15/lib/python3.6/shutil.py", line 475, in rmtree
-    orig_st = os.lstat(path)
-FileNotFoundError: [Errno 2] No such file or directory: '/tmp/django_1y4a1lf_/pymp-vzchxm7s'
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/shutil.py", line 486, in rmtree
+    _rmtree_safe_fd(fd, path, onerror)
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/shutil.py", line 420, in _rmtree_safe_fd
+    onerror(os.open, fullname, sys.exc_info())
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/shutil.py", line 418, in _rmtree_safe_fd
+    dirfd = os.open(name, os.O_RDONLY, dir_fd=topfd)
+FileNotFoundError: [Errno 2] No such file or directory: 'tmpzbkxec36'
  
 [django__django__3.2] [django__django-13321] Return Code: 1 
 

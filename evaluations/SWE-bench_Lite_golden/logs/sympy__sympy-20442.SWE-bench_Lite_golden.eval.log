@@ -54,7 +54,7 @@ Applied patch sympy/physics/units/tests/test_quantities.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.8  bin/test -C --verbose sympy/physics/units/tests/test_quantities.py;
 [sympy__sympy__1.8] [sympy__sympy-20442] Command: conda run -n sympy__sympy__1.8 bin/test -C --verbose sympy/physics/units/tests/test_quantities.py 
-[sympy__sympy__1.8] [sympy__sympy-20442] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.8] [sympy__sympy-20442] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.8] [sympy__sympy-20442] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.8/bin/python  (3.9.19-final-0) [CPython]
@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        58157164
-hash randomization: on (PYTHONHASHSEED=3443103607)
+random seed:        6149463
+hash randomization: on (PYTHONHASHSEED=1087851646)
 
 sympy/physics/units/tests/test_quantities.py[27] 
 test_str_repr ok
@@ -95,7 +95,7 @@ test_issue_14547 ok
 test_deprecated_quantity_methods ok                                         [OK]
 
 
-======== tests finished: 26 passed, 1 expected to fail, in 2.91 seconds ========
+======== tests finished: 26 passed, 1 expected to fail, in 1.40 seconds ========
 
  
 [sympy__sympy__1.8] [sympy__sympy-20442] Return Code: 0 

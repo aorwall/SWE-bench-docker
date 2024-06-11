@@ -49,9 +49,9 @@ Applied patch tests/forms_tests/tests/test_formsets.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 forms_tests.tests.test_formsets;
 [django__django__4.2] [django__django-16041] Command: ./tests/runtests.py --verbosity 2 forms_tests.tests.test_formsets 
-[django__django__4.2] [django__django-16041] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.2] [django__django-16041] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.2] [django__django-16041] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application forms_tests
 Found 159 test(s).
 Skipping setup of unused database(s): default, other.
@@ -59,23 +59,23 @@ System check identified no issues (0 silenced).
 test_invalid (forms_tests.tests.test_formsets.AllValidTests)
 all_valid() validates all forms, even when some are invalid. ... ok
 test_valid (forms_tests.tests.test_formsets.AllValidTests) ... ok
-test_no_management_form_warning (forms_tests.tests.test_formsets.DeprecationTests)
-Management forms are already rendered with the new div template. ... ok
-test_warning (forms_tests.tests.test_formsets.DeprecationTests) ... ok
 test_empty_formset_is_multipart (forms_tests.tests.test_formsets.TestEmptyFormSet)
 is_multipart() works with an empty formset. ... ok
 test_empty_formset_is_valid (forms_tests.tests.test_formsets.TestEmptyFormSet)
 An empty formset still calls clean() ... ok
 test_empty_formset_media (forms_tests.tests.test_formsets.TestEmptyFormSet)
 Media is available on empty formset. ... ok
-test_as_div (forms_tests.tests.test_formsets.Jinja2FormsetAsTagTests) ... ok
-test_as_p (forms_tests.tests.test_formsets.Jinja2FormsetAsTagTests) ... ok
-test_as_table (forms_tests.tests.test_formsets.Jinja2FormsetAsTagTests) ... ok
-test_as_ul (forms_tests.tests.test_formsets.Jinja2FormsetAsTagTests) ... ok
+test_no_management_form_warning (forms_tests.tests.test_formsets.DeprecationTests)
+Management forms are already rendered with the new div template. ... ok
+test_warning (forms_tests.tests.test_formsets.DeprecationTests) ... ok
 test_as_div (forms_tests.tests.test_formsets.FormsetAsTagTests) ... ok
 test_as_p (forms_tests.tests.test_formsets.FormsetAsTagTests) ... ok
 test_as_table (forms_tests.tests.test_formsets.FormsetAsTagTests) ... ok
 test_as_ul (forms_tests.tests.test_formsets.FormsetAsTagTests) ... ok
+test_as_div (forms_tests.tests.test_formsets.Jinja2FormsetAsTagTests) ... ok
+test_as_p (forms_tests.tests.test_formsets.Jinja2FormsetAsTagTests) ... ok
+test_as_table (forms_tests.tests.test_formsets.Jinja2FormsetAsTagTests) ... ok
+test_as_ul (forms_tests.tests.test_formsets.Jinja2FormsetAsTagTests) ... ok
 test_customize_management_form_error (forms_tests.tests.test_formsets.TestIsBoundBehavior) ... ok
 test_empty_forms_are_unbound (forms_tests.tests.test_formsets.TestIsBoundBehavior) ... ok
 test_form_errors_are_caught_by_formset (forms_tests.tests.test_formsets.TestIsBoundBehavior) ... ok
@@ -310,7 +310,7 @@ test_template_name_uses_renderer_value (forms_tests.tests.test_formsets.Jinja2Fo
 test_validate_max_ignores_forms_marked_for_deletion (forms_tests.tests.test_formsets.Jinja2FormsFormsetTestCase) ... ok
 
 ----------------------------------------------------------------------
-Ran 159 tests in 1.857s
+Ran 159 tests in 0.461s
 
 OK
  

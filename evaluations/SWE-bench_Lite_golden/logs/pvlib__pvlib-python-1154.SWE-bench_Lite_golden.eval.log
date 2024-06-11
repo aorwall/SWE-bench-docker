@@ -54,7 +54,7 @@ Applied patch pvlib/tests/test_irradiance.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pvlib__pvlib-python__0.8  pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_irradiance.py;
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Command: conda run -n pvlib__pvlib-python__0.8 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_irradiance.py 
-[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Std. Output:
 ============================= test session starts ==============================
 collected 98 items
@@ -192,7 +192,7 @@ PASSED pvlib/tests/test_irradiance.py::test_kt_kt_prime_factor
 PASSED pvlib/tests/test_irradiance.py::test_clearsky_index
 PASSED pvlib/tests/test_irradiance.py::test_clearness_index
 PASSED pvlib/tests/test_irradiance.py::test_clearness_index_zenith_independent
-======================= 98 passed, 22 warnings in 7.54s ========================
+======================= 98 passed, 22 warnings in 4.68s ========================
 
  
 [pvlib__pvlib-python__0.8] [pvlib__pvlib-python-1154] Return Code: 0 

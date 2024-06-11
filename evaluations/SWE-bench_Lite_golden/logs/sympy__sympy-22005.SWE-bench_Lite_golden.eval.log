@@ -54,7 +54,7 @@ Applied patch sympy/solvers/tests/test_polysys.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.9  bin/test -C --verbose sympy/solvers/tests/test_polysys.py;
 [sympy__sympy__1.9] [sympy__sympy-22005] Command: conda run -n sympy__sympy__1.9 bin/test -C --verbose sympy/solvers/tests/test_polysys.py 
-[sympy__sympy__1.9] [sympy__sympy-22005] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.9] [sympy__sympy-22005] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.9] [sympy__sympy-22005] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.9/bin/python  (3.9.19-final-0) [CPython]
@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        17327784
-hash randomization: on (PYTHONHASHSEED=2550527034)
+random seed:        22888322
+hash randomization: on (PYTHONHASHSEED=1267170293)
 
 sympy/solvers/tests/test_polysys.py[4] 
 test_solve_poly_system ok
@@ -72,7 +72,7 @@ test_solve_triangulated ok
 test_solve_issue_3686 ok                                                    [OK]
 
 
-================== tests finished: 4 passed, in 11.93 seconds ==================
+================== tests finished: 4 passed, in 3.83 seconds ===================
 
  
 [sympy__sympy__1.9] [sympy__sympy-22005] Return Code: 0 

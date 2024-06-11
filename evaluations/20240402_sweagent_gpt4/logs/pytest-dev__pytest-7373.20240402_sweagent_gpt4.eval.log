@@ -1,8 +1,9 @@
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Task Metadata:
 	- Instance ID: pytest-dev__pytest-7373
 	- Testbed: pytest-dev__pytest__5.4
-	- 
-	- Evaluation Model: 20240402_sweagent_gpt4 
+	- Evaluation Model: 20240402_sweagent_gpt4
+	- Python version: Python 3.11.8
+ 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: git -c advice.detachedHead=false checkout 7b77fc086aab8b3a8ebc890200371884555eea1e 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Std. Output:
@@ -11,8 +12,8 @@ HEAD is now at 7b77fc086 Merge pull request #7368 from bluetech/teardown-in-setu
  
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Running pre-test command: pip install -e . 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: conda run -n pytest-dev__pytest__5.4 pip install -e . 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: conda run -n pytest-dev__pytest__5.4  pip install -e . 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Std. Output:
 Obtaining file:///home/swe-bench/pytest-dev__pytest
   Installing build dependencies: started
@@ -33,8 +34,8 @@ Requirement already satisfied: toml in /home/swe-bench/miniconda3/envs/pytest-de
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev522+g7b77fc086-0.editable-py3-none-any.whl size=5136 sha256=b34cb7258b9d5f9431abc973dc609803745bb83083dfe4342f5154c0a326acd1
-  Stored in directory: /tmp/pip-ephem-wheel-cache-1dl6d8z2/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev522+g7b77fc086-0.editable-py3-none-any.whl size=5136 sha256=ee1e6dc664978478fa38fccb98869b63f9fb521482d98739b510b5a133480b12
+  Stored in directory: /tmp/pip-ephem-wheel-cache-gfq5m_q5/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -45,7 +46,7 @@ Successfully installed pytest-5.4.1.dev522+g7b77fc086
 
  
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Return Code: 0 
-Pre-installation Command: conda run -n pytest-dev__pytest__5.4 pip install -e .
+Pre-installation Command: conda run -n pytest-dev__pytest__5.4  pip install -e .
 Std. Output: Obtaining file:///home/swe-bench/pytest-dev__pytest
   Installing build dependencies: started
   Installing build dependencies: finished with status 'done'
@@ -65,8 +66,8 @@ Requirement already satisfied: toml in /home/swe-bench/miniconda3/envs/pytest-de
 Building wheels for collected packages: pytest
   Building editable for pytest (pyproject.toml): started
   Building editable for pytest (pyproject.toml): finished with status 'done'
-  Created wheel for pytest: filename=pytest-5.4.1.dev522+g7b77fc086-0.editable-py3-none-any.whl size=5136 sha256=b34cb7258b9d5f9431abc973dc609803745bb83083dfe4342f5154c0a326acd1
-  Stored in directory: /tmp/pip-ephem-wheel-cache-1dl6d8z2/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
+  Created wheel for pytest: filename=pytest-5.4.1.dev522+g7b77fc086-0.editable-py3-none-any.whl size=5136 sha256=ee1e6dc664978478fa38fccb98869b63f9fb521482d98739b510b5a133480b12
+  Stored in directory: /tmp/pip-ephem-wheel-cache-gfq5m_q5/wheels/a6/44/a9/b1a742a6dfeb5fa7a6a187e5f4be92c62c5af751ce837b5b46
 Successfully built pytest
 Installing collected packages: pytest
   Attempting uninstall: pytest
@@ -76,6 +77,11 @@ Installing collected packages: pytest
 Successfully installed pytest-5.4.1.dev522+g7b77fc086
 
 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: git diff > /home/swe-bench/temp_pytest-dev__pytest-7373_pred_try_init.patch 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Std. Output:
+ 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-7373_pred_try.patch 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Std. Output:
@@ -89,6 +95,11 @@ Applied patch test_module_2.py cleanly.
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: git diff > /home/swe-bench/temp_pytest-dev__pytest-7373_pred_try_init.patch 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Std. Output:
+ 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: git apply -v -R /home/swe-bench/temp_pytest-dev__pytest-7373_pred_try.patch 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Std. Output:
@@ -102,6 +113,11 @@ Applied patch src/_pytest/mark/evaluate.py cleanly.
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: git diff > /home/swe-bench/temp_pytest-dev__pytest-7373_pred_init.patch 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Std. Output:
+ 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: git apply -v /home/swe-bench/temp_pytest-dev__pytest-7373_pred.patch 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Std. Output:
@@ -115,6 +131,11 @@ Applied patch test_module_2.py cleanly.
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: git diff > /home/swe-bench/temp_pytest-dev__pytest-7373_test_init.patch 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Std. Output:
+ 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: git restore testing/test_mark.py 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Std. Output:
@@ -129,9 +150,9 @@ Applied patch testing/test_mark.py cleanly.
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Return Code: 0 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pytest-dev__pytest__5.4 pytest -rA testing/test_mark.py;
+Test Script: conda run -n pytest-dev__pytest__5.4  pytest -rA testing/test_mark.py;
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Command: conda run -n pytest-dev__pytest__5.4 pytest -rA testing/test_mark.py 
-[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Subprocess args: {"cwd": "/home/swe-bench/pytest-dev__pytest", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pytest-dev__pytest__5.4] [pytest-dev__pytest-7373] Std. Output:
 ============================= test session starts ==============================
 platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, pluggy-0.13.1
@@ -144,7 +165,7 @@ testing/test_mark.py ................................................... [ 55%]
 =================================== FAILURES ===================================
 ___________________ TestFunctional.test_mark_from_parameters ___________________
 
-self = <test_mark.TestFunctional object at 0x732d07fd6610>
+self = <test_mark.TestFunctional object at 0x7f640b678640>
 testdir = <Testdir local('/tmp/pytest-of-swe-bench/pytest-0/test_mark_from_parameters0')>
 
     @pytest.mark.filterwarnings("ignore")
@@ -192,7 +213,7 @@ test_mark_from_parameters.py E                                           [100%]
 _____________________ ERROR at setup of test_1[parameter0] _____________________
 
 cls = <class '_pytest.runner.CallInfo'>
-func = <function call_runtest_hook.<locals>.<lambda> at 0x732d07fe4a60>
+func = <function call_runtest_hook.<locals>.<lambda> at 0x7f640b67ba60>
 when = 'setup'
 reraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)
 
@@ -227,7 +248,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
     if eval_skipif.istrue():
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = <_pytest.mark.evaluate.MarkEvaluator object at 0x732d07db7f70>
+self = <_pytest.mark.evaluate.MarkEvaluator object at 0x7f640b6d3fa0>
 
     def istrue(self) -> bool:
         if hasattr(self, "result"):
@@ -266,10 +287,10 @@ E                   UnboundLocalError: local variable 'result' referenced before
 /home/swe-bench/pytest-dev__pytest/src/_pytest/mark/evaluate.py:74: UnboundLocalError
 =========================== short test summary info ============================
 ERROR test_mark_from_parameters.py::test_1[parameter0] - UnboundLocalError: l...
-=============================== 1 error in 0.05s ===============================
+=============================== 1 error in 0.03s ===============================
 _________________ TestFunctional.test_reevaluate_dynamic_expr __________________
 
-self = <test_mark.TestFunctional object at 0x732d07ec7310>
+self = <test_mark.TestFunctional object at 0x7f640b6d3be0>
 testdir = <Testdir local('/tmp/pytest-of-swe-bench/pytest-0/test_reevaluate_dynamic_expr0')>
 
     def test_reevaluate_dynamic_expr(self, testdir):
@@ -304,9 +325,9 @@ testdir = <Testdir local('/tmp/pytest-of-swe-bench/pytest-0/test_reevaluate_dyna
 E       AssertionError: ([], [], [<TestReport 'test_reevaluate_dynamic_expr1.py::test_should_skip' when='setup' outcome='failed'>, <TestReport 'test_reevaluate_dynamic_expr2.py::test_should_not_skip' when='setup' outcome='failed'>])
 E       assert {'failed': 2,... 'skipped': 0} == {'failed': 0,... 'skipped': 1}
 E         Differing items:
+E         {'passed': 0} != {'passed': 1}
 E         {'failed': 2} != {'failed': 0}
 E         {'skipped': 0} != {'skipped': 1}
-E         {'passed': 0} != {'passed': 1}
 E         Use -v to get the full diff
 
 /home/swe-bench/pytest-dev__pytest/testing/test_mark.py:737: AssertionError
@@ -323,7 +344,7 @@ test_reevaluate_dynamic_expr2.py E                                       [100%]
 ______________________ ERROR at setup of test_should_skip ______________________
 
 cls = <class '_pytest.runner.CallInfo'>
-func = <function call_runtest_hook.<locals>.<lambda> at 0x732d07dcb550>
+func = <function call_runtest_hook.<locals>.<lambda> at 0x7f640b714550>
 when = 'setup'
 reraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)
 
@@ -358,7 +379,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
     if eval_skipif.istrue():
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = <_pytest.mark.evaluate.MarkEvaluator object at 0x732d07dec550>
+self = <_pytest.mark.evaluate.MarkEvaluator object at 0x7f640b6f7580>
 
     def istrue(self) -> bool:
         if hasattr(self, "result"):
@@ -385,7 +406,7 @@ E                       AttributeError: 'MarkEvaluator' object has no attribute 
 ____________________ ERROR at setup of test_should_not_skip ____________________
 
 cls = <class '_pytest.runner.CallInfo'>
-func = <function call_runtest_hook.<locals>.<lambda> at 0x732d07dcb3a0>
+func = <function call_runtest_hook.<locals>.<lambda> at 0x7f640b7143a0>
 when = 'setup'
 reraise = (<class '_pytest.outcomes.Exit'>, <class 'KeyboardInterrupt'>)
 
@@ -420,7 +441,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
     if eval_skipif.istrue():
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-self = <_pytest.mark.evaluate.MarkEvaluator object at 0x732d07ce64f0>
+self = <_pytest.mark.evaluate.MarkEvaluator object at 0x7f640b760910>
 
     def istrue(self) -> bool:
         if hasattr(self, "result"):
@@ -447,7 +468,7 @@ E                       AttributeError: 'MarkEvaluator' object has no attribute 
 =========================== short test summary info ============================
 ERROR test_reevaluate_dynamic_expr1.py::test_should_skip - AttributeError: 'M...
 ERROR test_reevaluate_dynamic_expr2.py::test_should_not_skip - AttributeError...
-============================== 2 errors in 0.08s ===============================
+============================== 2 errors in 0.05s ===============================
 ==================================== PASSES ====================================
 _________________________ test_marked_class_run_twice __________________________
 ----------------------------- Captured stdout call -----------------------------
@@ -468,7 +489,7 @@ collected 1 item
 
 test_ini_markers.py .                                                    [100%]
 
-============================== 1 passed in 0.02s ===============================
+============================== 1 passed in 0.01s ===============================
 _____________________________ test_markers_option ______________________________
 ----------------------------- Captured stdout call -----------------------------
 @pytest.mark.a1: this is a webtest marker
@@ -606,7 +627,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_mark_option3
 collected 2 items / 2 deselected
 
-============================ 2 deselected in 0.02s =============================
+============================ 2 deselected in 0.00s =============================
 ___________________ test_mark_option[xyz2-expected_passed4] ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -616,7 +637,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_mark_option.py .                                                    [100%]
 
-======================= 1 passed, 1 deselected in 0.02s ========================
+======================= 1 passed, 1 deselected in 0.00s ========================
 ________________ test_mark_option[xyz or xyz2-expected_passed5] ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -646,7 +667,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_mark_option_custom.py .                                             [100%]
 
-======================= 1 passed, 1 deselected in 0.00s ========================
+======================= 1 passed, 1 deselected in 0.01s ========================
 ____________ test_keyword_option_custom[interface-expected_passed0] ____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -656,7 +677,7 @@ collected 5 items / 4 deselected / 1 selected
 
 test_keyword_option_custom.py .                                          [100%]
 
-======================= 1 passed, 4 deselected in 0.01s ========================
+======================= 1 passed, 4 deselected in 0.00s ========================
 __________ test_keyword_option_custom[not interface-expected_passed1] __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -676,7 +697,7 @@ collected 5 items / 4 deselected / 1 selected
 
 test_keyword_option_custom.py .                                          [100%]
 
-======================= 1 passed, 4 deselected in 0.01s ========================
+======================= 1 passed, 4 deselected in 0.00s ========================
 ____________ test_keyword_option_custom[not pass-expected_passed3] _____________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -696,7 +717,7 @@ collected 5 items / 1 deselected / 4 selected
 
 test_keyword_option_custom.py ....                                       [100%]
 
-======================= 4 passed, 1 deselected in 0.01s ========================
+======================= 4 passed, 1 deselected in 0.02s ========================
 _____________ test_keyword_option_custom[1 or 2-expected_passed5] ______________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -756,7 +777,7 @@ collected 3 items / 2 deselected / 1 selected
 
 test_keyword_option_parametrize.py .                                     [100%]
 
-======================= 1 passed, 2 deselected in 0.00s ========================
+======================= 1 passed, 2 deselected in 0.01s ========================
 _________________________ test_parametrize_with_module _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -776,7 +797,7 @@ collected 3 items
 
 test_parametrized_collected_from_command_line.py ...                     [100%]
 
-============================== 3 passed in 0.02s ===============================
+============================== 3 passed in 0.01s ===============================
 __________________ test_parametrized_collect_with_wrong_args ___________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -827,7 +848,7 @@ collected 2 items
       <Class TestC>
           <Function test_d>
 
-============================ no tests ran in 0.01s =============================
+============================ no tests ran in 0.00s =============================
 <Function test_b> <NodeKeywords for node <Function test_b>>
 <Function test_d> <NodeKeywords for node <Function test_d>>
 ____ TestFunctional.test_mark_decorator_subclass_does_not_propagate_to_base ____
@@ -843,7 +864,7 @@ collected 2 items
   <Class Test2>
       <Function test_bar>
 
-============================ no tests ran in 0.01s =============================
+============================ no tests ran in 0.00s =============================
 __________ TestFunctional.test_mark_should_not_pass_to_siebling_class __________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -887,7 +908,7 @@ collected 2 items
       <Function test_has_own>
       <Function test_has_inherited>
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 __________________ TestFunctional.test_mark_with_wrong_marker __________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -915,7 +936,7 @@ E   TypeError: got <class 'test_mark_with_wrong_marker.pytestmark'> instead of M
 =========================== short test summary info ============================
 ERROR test_mark_with_wrong_marker.py - TypeError: got <class 'test_mark_with_...
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.10s ===============================
+=============================== 1 error in 0.08s ===============================
 _______________ TestFunctional.test_mark_dynamically_in_funcarg ________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -924,7 +945,7 @@ rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_mark_dynamically_in_funcarg0
 collected 1 item
 
 test_mark_dynamically_in_funcarg.py .                                    [100%]
-keyword: {'test_mark_dynamically_in_funcarg0': 1, 'test_func': 1, 'hello': 1, 'test_mark_dynamically_in_funcarg.py': 1}
+keyword: {'test_func': 1, 'test_mark_dynamically_in_funcarg0': 1, 'test_mark_dynamically_in_funcarg.py': 1, 'hello': 1}
 
 ============================== 1 passed in 0.00s ===============================
 ____________ TestFunctional.test_no_marker_match_on_unmarked_names _____________
@@ -1003,7 +1024,7 @@ test_select_simple.py F
 =================================== FAILURES ===================================
 __________________________ TestClass.test_method_one ___________________________
 
-self = <test_select_simple.TestClass object at 0x732d07e6f520>
+self = <test_select_simple.TestClass object at 0x7f640b574550>
 
     def test_method_one(self):
 >       assert 42 == 43
@@ -1022,7 +1043,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_select.py .
 
-======================= 1 passed, 1 deselected in 0.01s ========================
+======================= 1 passed, 1 deselected in 0.00s ========================
 keyword 'xxx'
 _______ TestKeywordSelection.test_select_extra_keywords[xxx and test_2] ________
 ----------------------------- Captured stdout call -----------------------------
@@ -1033,7 +1054,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_select.py .
 
-======================= 1 passed, 1 deselected in 0.01s ========================
+======================= 1 passed, 1 deselected in 0.00s ========================
 keyword 'xxx and test_2'
 __________ TestKeywordSelection.test_select_extra_keywords[TestClass] __________
 ----------------------------- Captured stdout call -----------------------------
@@ -1044,7 +1065,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_select.py .
 
-======================= 1 passed, 1 deselected in 0.01s ========================
+======================= 1 passed, 1 deselected in 0.00s ========================
 keyword 'TestClass'
 _____ TestKeywordSelection.test_select_extra_keywords[xxx and not test_1] ______
 ----------------------------- Captured stdout call -----------------------------
@@ -1055,7 +1076,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_select.py .
 
-======================= 1 passed, 1 deselected in 0.01s ========================
+======================= 1 passed, 1 deselected in 0.00s ========================
 keyword 'xxx and not test_1'
 ____ TestKeywordSelection.test_select_extra_keywords[TestClass and test_2] _____
 ----------------------------- Captured stdout call -----------------------------
@@ -1066,7 +1087,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_select.py .
 
-======================= 1 passed, 1 deselected in 0.01s ========================
+======================= 1 passed, 1 deselected in 0.00s ========================
 keyword 'TestClass and test_2'
 _ TestKeywordSelection.test_select_extra_keywords[xxx and TestClass and test_2] _
 ----------------------------- Captured stdout call -----------------------------
@@ -1095,7 +1116,7 @@ test_threepass.py ..                                                     [100%]
     deselect_by_keyword(items, config)
 
 -- Docs: https://docs.pytest.org/en/latest/warnings.html
-================== 2 passed, 1 deselected, 1 warning in 0.01s ==================
+================== 2 passed, 1 deselected, 1 warning in 0.00s ==================
 ___________________ TestKeywordSelection.test_keyword_extra ____________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1123,7 +1144,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_no_magic_values0
 collected 1 item / 1 deselected
 
-============================ 1 deselected in 0.00s =============================
+============================ 1 deselected in 0.01s =============================
 _________________ TestKeywordSelection.test_no_magic_values[+] _________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1182,7 +1203,7 @@ Empty parameter set in 'test' at line 3
 =========================== short test summary info ============================
 ERROR test_parameterset_for_fail_at_collect.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.04s ===============================
+=============================== 1 error in 0.03s ===============================
 ________________________ test_mark_expressions_no_smear ________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1192,7 +1213,7 @@ collected 2 items / 1 deselected / 1 selected
 
 test_mark_expressions_no_smear.py .                                      [100%]
 
-======================= 1 passed, 1 deselected in 0.01s ========================
+======================= 1 passed, 1 deselected in 0.02s ========================
 ________________________ test_markers_from_parametrize _________________________
 ----------------------------- Captured stdout call -----------------------------
 ============================= test session starts ==============================
@@ -1232,7 +1253,7 @@ platform linux -- Python 3.9.19, pytest-5.4.1.dev522+g7b77fc086, py-1.11.0, plug
 rootdir: /tmp/pytest-of-swe-bench/pytest-0/test_marker_expr_eval_failure_handling2
 collected 1 item
 
-============================ no tests ran in 0.00s =============================
+============================ no tests ran in 0.01s =============================
 ----------------------------- Captured stderr call -----------------------------
 ERROR: Wrong expression passed to '-m': bogus/: at column 6: unexpected character "/"
 
@@ -1329,7 +1350,7 @@ PASSED testing/test_mark.py::test_marker_expr_eval_failure_handling[bogus/]
 XFAIL testing/test_mark.py::TestKeywordSelection::test_keyword_extra_dash
 FAILED testing/test_mark.py::TestFunctional::test_mark_from_parameters - Asse...
 FAILED testing/test_mark.py::TestFunctional::test_reevaluate_dynamic_expr - A...
-=================== 2 failed, 89 passed, 1 xfailed in 2.89s ====================
+=================== 2 failed, 89 passed, 1 xfailed in 2.38s ====================
 ERROR conda.cli.main_run:execute(124): `conda run pytest -rA testing/test_mark.py` failed. (See above for error)
 
  

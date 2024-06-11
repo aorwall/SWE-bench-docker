@@ -11,6 +11,11 @@ Previous HEAD position was bf436ea0 Merge pull request #2746 from csparpa/master
 HEAD is now at 0be38a0c Merge pull request #2672 from petedmarsh/fix-custom-headers-example
  
 [psf__requests__2.7] [psf__requests-2674] Return Code: 0 
+[psf__requests__2.7] [psf__requests-2674] Command: git diff > /opt/temp_psf__requests-2674_pred_try_init.patch 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.7] [psf__requests-2674] Std. Output:
+ 
+[psf__requests__2.7] [psf__requests-2674] Return Code: 0 
 [psf__requests__2.7] [psf__requests-2674] Command: git apply -v /opt/temp_psf__requests-2674_pred_try.patch 
 [psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
@@ -22,6 +27,11 @@ Applied patch requests/adapters.py cleanly.
 [psf__requests__2.7] [psf__requests-2674] Return Code: 0 
 [psf__requests__2.7] [psf__requests-2674] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[psf__requests__2.7] [psf__requests-2674] Command: git diff > /opt/temp_psf__requests-2674_pred_try_init.patch 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.7] [psf__requests-2674] Std. Output:
+ 
+[psf__requests__2.7] [psf__requests-2674] Return Code: 0 
 [psf__requests__2.7] [psf__requests-2674] Command: git apply -v -R /opt/temp_psf__requests-2674_pred_try.patch 
 [psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
@@ -33,6 +43,11 @@ Applied patch reproduce_exceptions.py cleanly.
 [psf__requests__2.7] [psf__requests-2674] Return Code: 0 
 [psf__requests__2.7] [psf__requests-2674] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[psf__requests__2.7] [psf__requests-2674] Command: git diff > /opt/temp_psf__requests-2674_pred_init.patch 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.7] [psf__requests-2674] Std. Output:
+ 
+[psf__requests__2.7] [psf__requests-2674] Return Code: 0 
 [psf__requests__2.7] [psf__requests-2674] Command: git apply -v /opt/temp_psf__requests-2674_pred.patch 
 [psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
@@ -44,6 +59,11 @@ Applied patch requests/adapters.py cleanly.
 [psf__requests__2.7] [psf__requests-2674] Return Code: 0 
 [psf__requests__2.7] [psf__requests-2674] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[psf__requests__2.7] [psf__requests-2674] Command: git diff > /opt/temp_psf__requests-2674_test_init.patch 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[psf__requests__2.7] [psf__requests-2674] Std. Output:
+ 
+[psf__requests__2.7] [psf__requests-2674] Return Code: 0 
 [psf__requests__2.7] [psf__requests-2674] Command: git restore test_requests.py 
 [psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
@@ -60,7 +80,7 @@ Applied patch test_requests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.py;
 [psf__requests__2.7] [psf__requests-2674] Command: pytest --no-header -rA --tb=no -p no:cacheprovider test_requests.py 
-[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[psf__requests__2.7] [psf__requests-2674] Subprocess args: {"cwd": "/opt/psf__requests", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [psf__requests__2.7] [psf__requests-2674] Std. Output:
 ============================= test session starts ==============================
 collected 162 items
@@ -328,7 +348,7 @@ PASSED test_requests.py::test_vendor_aliases
 XPASS test_requests.py::RequestsTestCase::test_response_iter_lines_reentrant
 FAILED test_requests.py::RequestsTestCase::test_conflicting_post_params - Typ...
 FAILED test_requests.py::test_urllib3_pool_connection_closed - requests.packa...
-============ 2 failed, 159 passed, 1 xpassed, 28 warnings in 41.15s ============
+======= 2 failed, 159 passed, 1 xpassed, 28 warnings in 81.73s (0:01:21) =======
  
 [psf__requests__2.7] [psf__requests-2674] Return Code: 1 
 

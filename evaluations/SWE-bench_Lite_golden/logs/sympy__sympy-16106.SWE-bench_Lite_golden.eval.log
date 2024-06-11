@@ -54,7 +54,7 @@ Applied patch sympy/printing/tests/test_mathml.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.4  bin/test -C --verbose sympy/printing/tests/test_mathml.py;
 [sympy__sympy__1.4] [sympy__sympy-16106] Command: conda run -n sympy__sympy__1.4 bin/test -C --verbose sympy/printing/tests/test_mathml.py 
-[sympy__sympy__1.4] [sympy__sympy-16106] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.4] [sympy__sympy-16106] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.4] [sympy__sympy-16106] Std. Output:
 /home/swe-bench/sympy__sympy/sympy/solvers/diophantine.py:3186: SyntaxWarning: "is" with a literal. Did you mean "=="?
   if feasible is 1:  # it's prime and k == 2
@@ -74,8 +74,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        13529980
-hash randomization: on (PYTHONHASHSEED=2068490203)
+random seed:        66399621
+hash randomization: on (PYTHONHASHSEED=4123150115)
 
 sympy/printing/tests/test_mathml.py[66] 
 test_mathml_printer ok
@@ -201,7 +201,7 @@ Traceback (most recent call last):
     assert mathml(expr, printer='presentation') == '<mrow><mfenced close="&#8969;" open="&#8968;"><mi>x</mi></mfenced></mrow>'
 AssertionError
 
-============= tests finished: 57 passed, 9 failed, in 0.51 seconds =============
+============= tests finished: 57 passed, 9 failed, in 0.20 seconds =============
 DO *NOT* COMMIT!
 
  

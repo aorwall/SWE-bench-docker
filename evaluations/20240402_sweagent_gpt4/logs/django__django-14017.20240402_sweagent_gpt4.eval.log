@@ -11,6 +11,11 @@ Previous HEAD position was 475cffd1d6 Fixed typo in docs/intro/reusable-apps.txt
 HEAD is now at 466920f6d7 Fixed #32450 -- Fixed crash when ANDing/ORing an empty Q() with not pickleable Q().
  
 [django__django__4.0] [django__django-14017] Return Code: 0 
+[django__django__4.0] [django__django-14017] Command: git diff > /opt/temp_django__django-14017_pred_try_init.patch 
+[django__django__4.0] [django__django-14017] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14017] Std. Output:
+ 
+[django__django__4.0] [django__django-14017] Return Code: 0 
 [django__django__4.0] [django__django-14017] Command: git apply -v /opt/temp_django__django-14017_pred_try.patch 
 [django__django__4.0] [django__django-14017] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14017] Std. Output:
@@ -24,6 +29,11 @@ Applied patch reproduce_issue.py cleanly.
 [django__django__4.0] [django__django-14017] Return Code: 0 
 [django__django__4.0] [django__django-14017] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.0] [django__django-14017] Command: git diff > /opt/temp_django__django-14017_pred_try_init.patch 
+[django__django__4.0] [django__django-14017] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14017] Std. Output:
+ 
+[django__django__4.0] [django__django-14017] Return Code: 0 
 [django__django__4.0] [django__django-14017] Command: git apply -v -R /opt/temp_django__django-14017_pred_try.patch 
 [django__django__4.0] [django__django-14017] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14017] Std. Output:
@@ -37,6 +47,11 @@ Applied patch django/db/models/expressions.py cleanly.
 [django__django__4.0] [django__django-14017] Return Code: 0 
 [django__django__4.0] [django__django-14017] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.0] [django__django-14017] Command: git diff > /opt/temp_django__django-14017_pred_init.patch 
+[django__django__4.0] [django__django-14017] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14017] Std. Output:
+ 
+[django__django__4.0] [django__django-14017] Return Code: 0 
 [django__django__4.0] [django__django-14017] Command: git apply -v /opt/temp_django__django-14017_pred.patch 
 [django__django__4.0] [django__django-14017] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14017] Std. Output:
@@ -50,6 +65,11 @@ Applied patch reproduce_issue.py cleanly.
 [django__django__4.0] [django__django-14017] Return Code: 0 
 [django__django__4.0] [django__django-14017] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__4.0] [django__django-14017] Command: git diff > /opt/temp_django__django-14017_test_init.patch 
+[django__django__4.0] [django__django-14017] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-14017] Std. Output:
+ 
+[django__django__4.0] [django__django-14017] Return Code: 0 
 [django__django__4.0] [django__django-14017] Command: git apply -v /opt/temp_django__django-14017_test.patch 
 [django__django__4.0] [django__django-14017] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-14017] Std. Output:
@@ -61,9 +81,9 @@ Applied patch tests/expressions/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 expressions.tests;
 [django__django__4.0] [django__django-14017] Command: ./tests/runtests.py --verbosity 2 expressions.tests 
-[django__django__4.0] [django__django-14017] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.0] [django__django-14017] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.0] [django__django-14017] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application expressions
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -108,22 +128,33 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-test_optimizations (expressions.tests.ExistsTests) ... ok
-test_and (expressions.tests.CombinableTests) ... ok
-test_negation (expressions.tests.CombinableTests) ... ok
-test_or (expressions.tests.CombinableTests) ... ok
-test_reversed_and (expressions.tests.CombinableTests) ... ok
-test_reversed_or (expressions.tests.CombinableTests) ... ok
-test_aggregates (expressions.tests.ReprTests) ... ok
-test_distinct_aggregates (expressions.tests.ReprTests) ... ok
-test_expressions (expressions.tests.ReprTests) ... ok
-test_filtered_aggregates (expressions.tests.ReprTests) ... ok
-test_functions (expressions.tests.ReprTests) ... ok
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 test_deconstruct (expressions.tests.FTests) ... ok
 test_deepcopy (expressions.tests.FTests) ... ok
 test_equal (expressions.tests.FTests) ... ok
 test_hash (expressions.tests.FTests) ... ok
 test_not_equal_Value (expressions.tests.FTests) ... ok
+test_and (expressions.tests.CombinableTests) ... ok
+test_negation (expressions.tests.CombinableTests) ... ok
+test_or (expressions.tests.CombinableTests) ... ok
+test_reversed_and (expressions.tests.CombinableTests) ... ok
+test_reversed_or (expressions.tests.CombinableTests) ... ok
+test_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
+test_non_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
+test_aggregates (expressions.tests.ReprTests) ... ok
+test_distinct_aggregates (expressions.tests.ReprTests) ... ok
+test_expressions (expressions.tests.ReprTests) ... ok
+test_filtered_aggregates (expressions.tests.ReprTests) ... ok
+test_functions (expressions.tests.ReprTests) ... ok
+test_resolve_output_field (expressions.tests.CombinedExpressionTests) ... ok
+test_optimizations (expressions.tests.ExistsTests) ... ok
+test_equal (expressions.tests.SimpleExpressionTests) ... ok
+test_hash (expressions.tests.SimpleExpressionTests) ... ok
+test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
+test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
+test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
 test_complex_expressions (expressions.tests.ExpressionsNumericTests)
 Complex expressions of different connection types are possible. ... ok
 test_fill_with_value_from_same_object (expressions.tests.ExpressionsNumericTests)
@@ -132,16 +163,6 @@ test_filter_not_equals_other_field (expressions.tests.ExpressionsNumericTests)
 We can filter for objects, where a value is not equals the value ... ok
 test_increment_value (expressions.tests.ExpressionsNumericTests)
 We can increment a value of all objects in a query set. ... ok
-test_F_reuse (expressions.tests.ExpressionsTests) ... ok
-test_insensitive_patterns_escape (expressions.tests.ExpressionsTests)
-Special characters (e.g. %, _ and \) stored in database are ... ok
-test_patterns_escape (expressions.tests.ExpressionsTests)
-Special characters (e.g. %, _ and \) stored in database are ... ok
-test_equal (expressions.tests.SimpleExpressionTests) ... ok
-test_hash (expressions.tests.SimpleExpressionTests) ... ok
-test_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
-test_non_empty_group_by (expressions.tests.ExpressionWrapperTests) ... ok
-test_resolve_output_field (expressions.tests.CombinedExpressionTests) ... ok
 test_compile_unresolved (expressions.tests.ValueTests) ... ok
 test_deconstruct (expressions.tests.ValueTests) ... ok
 test_deconstruct_output_field (expressions.tests.ValueTests) ... ok
@@ -153,9 +174,11 @@ test_resolve_output_field (expressions.tests.ValueTests) ... ok
 test_resolve_output_field_failure (expressions.tests.ValueTests) ... ok
 test_update_TimeField_using_Value (expressions.tests.ValueTests) ... ok
 test_update_UUIDField_using_Value (expressions.tests.ValueTests) ... ok
-test_month_aggregation (expressions.tests.FieldTransformTests) ... ok
-test_multiple_transforms_in_values (expressions.tests.FieldTransformTests) ... ok
-test_transform_in_values (expressions.tests.FieldTransformTests) ... ok
+test_F_reuse (expressions.tests.ExpressionsTests) ... ok
+test_insensitive_patterns_escape (expressions.tests.ExpressionsTests)
+Special characters (e.g. %, _ and \) stored in database are ... ok
+test_patterns_escape (expressions.tests.ExpressionsTests)
+Special characters (e.g. %, _ and \) stored in database are ... ok
 test_complex_expressions_do_not_introduce_sql_injection_via_untrusted_string_inclusion (expressions.tests.IterableLookupInnerExpressionsTests)
 This tests that SQL injection isn't possible using compilation of ... ok
 test_expressions_in_lookups_join_choice (expressions.tests.IterableLookupInnerExpressionsTests) ... ok
@@ -338,9 +361,12 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for &: 'Q' and 'Q'
 
 ----------------------------------------------------------------------
-Ran 152 tests in 0.785s
+Ran 152 tests in 0.357s
 
 FAILED (errors=3, skipped=2)
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

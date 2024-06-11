@@ -53,10 +53,10 @@ Applied patch tests/postgres_tests/test_ranges.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 forms_tests.field_tests.test_multivaluefield forms_tests.field_tests.test_splitdatetimefield postgres_tests.test_ranges;
 [django__django__4.1] [django__django-15061] Command: ./tests/runtests.py --verbosity 2 forms_tests.field_tests.test_multivaluefield forms_tests.field_tests.test_splitdatetimefield postgres_tests.test_ranges 
-[django__django__4.1] [django__django-15061] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.1] [django__django-15061] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.1] [django__django-15061] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application postgres_tests
 Importing application forms_tests
 Found 116 test(s).
@@ -101,6 +101,15 @@ Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&ca
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Cloning test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 System check identified no issues (0 silenced).
+test_choices_tuple_list (postgres_tests.test_ranges.TestChecks) ... skipped 'PostgreSQL specific tests'
+test_range_widget (postgres_tests.test_ranges.TestWidget) ... skipped 'PostgreSQL specific tests'
+test_date_range_contains (postgres_tests.test_ranges.TestRangeContainsLookup) ... skipped 'PostgreSQL specific tests'
+test_datetime_range_contains (postgres_tests.test_ranges.TestRangeContainsLookup) ... skipped 'PostgreSQL specific tests'
+test_max (postgres_tests.test_ranges.TestValidators) ... skipped 'PostgreSQL specific tests'
+test_min (postgres_tests.test_ranges.TestValidators) ... skipped 'PostgreSQL specific tests'
+test_dumping (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
+test_loading (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
+test_serialize_range_with_null (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
 test_all_fields (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
 test_empty (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
 test_model_set_on_base_field (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
@@ -111,13 +120,40 @@ test_range_object_boundaries_range_with_default_bounds (postgres_tests.test_rang
 test_tuple (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
 test_tuple_range_with_default_bounds (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
 test_unbounded (postgres_tests.test_ranges.TestSaveLoad) ... skipped 'PostgreSQL specific tests'
-test_date_range_contains (postgres_tests.test_ranges.TestRangeContainsLookup) ... skipped 'PostgreSQL specific tests'
-test_datetime_range_contains (postgres_tests.test_ranges.TestRangeContainsLookup) ... skipped 'PostgreSQL specific tests'
 test_continuous_range_fields_default_bounds (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
 test_deconstruct (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
 test_discrete_range_fields_unsupported_default_bounds (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
 test_get_field_display (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
 test_invalid_default_bounds (postgres_tests.test_ranges.BasicTests) ... skipped 'PostgreSQL specific tests'
+test_auto_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_big_auto_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_biginteger_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_date_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_date_range_datetime_field (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_datetime_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_decimal_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_exclude (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_f_ranges (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_float_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_integer_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_small_auto_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_small_integer_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
+test_adjacent_to (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_bound_type (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_contained_by (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_contains (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_contains_range (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_endswith (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_exact (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_fully_gt (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_fully_lt (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_isempty (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_isnull (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_not_gt (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_not_lt (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_overlap (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_startswith (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
+test_startswith_chaining (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
 test_date_has_changed_first (postgres_tests.test_ranges.TestFormField) ... skipped 'PostgreSQL specific tests'
 test_date_has_changed_last (postgres_tests.test_ranges.TestFormField) ... skipped 'PostgreSQL specific tests'
 test_date_incorrect_data_type (postgres_tests.test_ranges.TestFormField) ... skipped 'PostgreSQL specific tests'
@@ -164,42 +200,6 @@ test_valid_dates (postgres_tests.test_ranges.TestFormField) ... skipped 'Postgre
 test_valid_decimal (postgres_tests.test_ranges.TestFormField) ... skipped 'PostgreSQL specific tests'
 test_valid_integer (postgres_tests.test_ranges.TestFormField) ... skipped 'PostgreSQL specific tests'
 test_valid_timestamps (postgres_tests.test_ranges.TestFormField) ... skipped 'PostgreSQL specific tests'
-test_dumping (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
-test_loading (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
-test_serialize_range_with_null (postgres_tests.test_ranges.TestSerialization) ... skipped 'PostgreSQL specific tests'
-test_range_widget (postgres_tests.test_ranges.TestWidget) ... skipped 'PostgreSQL specific tests'
-test_choices_tuple_list (postgres_tests.test_ranges.TestChecks) ... skipped 'PostgreSQL specific tests'
-test_max (postgres_tests.test_ranges.TestValidators) ... skipped 'PostgreSQL specific tests'
-test_min (postgres_tests.test_ranges.TestValidators) ... skipped 'PostgreSQL specific tests'
-test_auto_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_big_auto_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_biginteger_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_date_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_date_range_datetime_field (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_datetime_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_decimal_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_exclude (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_f_ranges (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_float_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_integer_range (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_small_auto_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_small_integer_field_contained_by (postgres_tests.test_ranges.TestQueryingWithRanges) ... skipped 'PostgreSQL specific tests'
-test_adjacent_to (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_bound_type (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_contained_by (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_contains (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_contains_range (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_endswith (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_exact (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_fully_gt (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_fully_lt (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_isempty (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_isnull (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_not_gt (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_not_lt (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_overlap (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_startswith (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
-test_startswith_chaining (postgres_tests.test_ranges.TestQuerying) ... skipped 'PostgreSQL specific tests'
 test_form_as_table (forms_tests.field_tests.test_splitdatetimefield.SplitDateTimeFieldTest) ... ok
 test_splitdatetimefield_1 (forms_tests.field_tests.test_splitdatetimefield.SplitDateTimeFieldTest) ... ok
 test_splitdatetimefield_2 (forms_tests.field_tests.test_splitdatetimefield.SplitDateTimeFieldTest) ... ok
@@ -222,7 +222,7 @@ If insufficient data is provided, None is substituted. ... ok
 test_render_required_attributes (forms_tests.field_tests.test_multivaluefield.MultiValueFieldTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 116 tests in 0.875s
+Ran 116 tests in 0.091s
 
 OK (skipped=99)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

@@ -54,7 +54,7 @@ Applied patch sympy/solvers/tests/test_diophantine.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.6  bin/test -C --verbose sympy/solvers/tests/test_diophantine.py;
 [sympy__sympy__1.6] [sympy__sympy-18189] Command: conda run -n sympy__sympy__1.6 bin/test -C --verbose sympy/solvers/tests/test_diophantine.py 
-[sympy__sympy__1.6] [sympy__sympy-18189] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.6] [sympy__sympy-18189] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.6] [sympy__sympy-18189] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.6/bin/python  (3.9.19-final-0) [CPython]
@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        61551164
-hash randomization: on (PYTHONHASHSEED=3647689399)
+random seed:        93291952
+hash randomization: on (PYTHONHASHSEED=1434674475)
 
 sympy/solvers/tests/test_diophantine.py[46] 
 test_input_format ok
@@ -115,8 +115,8 @@ test_ternary_quadratic ok                                                   [OK]
 
 
 ________________________________ slowest tests _________________________________
-test_quadratic_non_perfect_square - Took 30.041 seconds
-== tests finished: 43 passed, 1 skipped, 2 expected to fail, in 79.80 seconds ==
+test_quadratic_non_perfect_square - Took 12.369 seconds
+== tests finished: 43 passed, 1 skipped, 2 expected to fail, in 28.65 seconds ==
 
  
 [sympy__sympy__1.6] [sympy__sympy-18189] Return Code: 0 

@@ -54,7 +54,7 @@ Applied patch astropy/nddata/mixins/tests/test_ndarithmetic.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n astropy__astropy__5.2  pytest --no-header -rA --tb=no -p no:cacheprovider astropy/nddata/mixins/tests/test_ndarithmetic.py;
 [astropy__astropy__5.2] [astropy__astropy-14995] Command: conda run -n astropy__astropy__5.2 pytest --no-header -rA --tb=no -p no:cacheprovider astropy/nddata/mixins/tests/test_ndarithmetic.py 
-[astropy__astropy__5.2] [astropy__astropy-14995] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[astropy__astropy__5.2] [astropy__astropy-14995] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [astropy__astropy__5.2] [astropy__astropy-14995] Std. Output:
 [1m============================= test session starts ==============================[0m
 collected 180 items
@@ -245,7 +245,7 @@ astropy/nddata/mixins/tests/test_ndarithmetic.py [32m.[0m[32m.[0m[32m.[0m
 [32mPASSED[0m astropy/nddata/mixins/tests/test_ndarithmetic.py::[1mtest_psf_warning[0m
 [32mPASSED[0m astropy/nddata/mixins/tests/test_ndarithmetic.py::[1mtest_raise_method_not_supported[0m
 [32mPASSED[0m astropy/nddata/mixins/tests/test_ndarithmetic.py::[1mtest_nddata_bitmask_arithmetic[0m
-[32m============================= [32m[1m180 passed[0m[32m in 1.10s[0m[32m ==============================[0m
+[32m============================= [32m[1m180 passed[0m[32m in 0.80s[0m[32m ==============================[0m
 <frozen importlib._bootstrap>:228: RuntimeWarning: numpy.ndarray size changed, may indicate binary incompatibility. Expected 80 from C header, got 96 from PyObject
 
 

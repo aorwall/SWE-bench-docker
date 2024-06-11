@@ -54,7 +54,7 @@ Applied patch test/core/linter_test.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sqlfluff__sqlfluff__0.6  pytest --no-header -rA --tb=no -p no:cacheprovider test/core/linter_test.py;
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Command: conda run -n sqlfluff__sqlfluff__0.6 pytest --no-header -rA --tb=no -p no:cacheprovider test/core/linter_test.py 
-[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Subprocess args: {"cwd": "/home/swe-bench/sqlfluff__sqlfluff", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Std. Output:
 ============================= test session starts ==============================
 collected 69 items
@@ -138,7 +138,7 @@ PASSED test/core/linter_test.py::test_safe_create_replace_file[utf8_create]
 PASSED test/core/linter_test.py::test_safe_create_replace_file[utf8_update]
 PASSED test/core/linter_test.py::test_safe_create_replace_file[utf8_special_char]
 PASSED test/core/linter_test.py::test_safe_create_replace_file[incorrect_encoding]
-======================== 69 passed, 1 warning in 7.17s =========================
+======================== 69 passed, 1 warning in 2.76s =========================
 
  
 [sqlfluff__sqlfluff__0.6] [sqlfluff__sqlfluff-1763] Return Code: 0 

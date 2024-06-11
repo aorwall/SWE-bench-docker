@@ -1,13 +1,19 @@
 [pydata__xarray__0.12] [pydata__xarray-4094] Task Metadata:
 	- Instance ID: pydata__xarray-4094
 	- Testbed: pydata__xarray__0.12
-	- 
-	- Evaluation Model: 20240402_sweagent_gpt4 
+	- Evaluation Model: 20240402_sweagent_gpt4
+	- Python version: Python 3.11.8
+ 
 [pydata__xarray__0.12] [pydata__xarray-4094] Command: git -c advice.detachedHead=false checkout a64cf2d5476e7bbda099b34c40b7be1880dbd39a 
 [pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
 Previous HEAD position was 1c198a19 Convert attribute and dimension names to strings when generating HTML repr (#5149)
 HEAD is now at a64cf2d5 Show data by default in HTML repr for DataArray (#4182)
+ 
+[pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
+[pydata__xarray__0.12] [pydata__xarray-4094] Command: git diff > /home/swe-bench/temp_pydata__xarray-4094_pred_try_init.patch 
+[pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
  
 [pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4094] Command: git apply -v /home/swe-bench/temp_pydata__xarray-4094_pred_try.patch 
@@ -21,6 +27,11 @@ Applied patch xarray/core/dataarray.py cleanly.
 [pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4094] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[pydata__xarray__0.12] [pydata__xarray-4094] Command: git diff > /home/swe-bench/temp_pydata__xarray-4094_pred_try_init.patch 
+[pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
+ 
+[pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4094] Command: git apply -v -R /home/swe-bench/temp_pydata__xarray-4094_pred_try.patch 
 [pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
@@ -32,6 +43,11 @@ Applied patch reproduce_bug.py cleanly.
 [pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4094] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[pydata__xarray__0.12] [pydata__xarray-4094] Command: git diff > /home/swe-bench/temp_pydata__xarray-4094_pred_init.patch 
+[pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
+ 
+[pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4094] Command: git apply -v /home/swe-bench/temp_pydata__xarray-4094_pred.patch 
 [pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
@@ -43,6 +59,11 @@ Applied patch xarray/core/dataarray.py cleanly.
 [pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4094] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[pydata__xarray__0.12] [pydata__xarray-4094] Command: git diff > /home/swe-bench/temp_pydata__xarray-4094_test_init.patch 
+[pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
+ 
+[pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4094] Command: git restore xarray/tests/test_dataset.py 
 [pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
@@ -57,9 +78,9 @@ Applied patch xarray/tests/test_dataset.py cleanly.
 [pydata__xarray__0.12] [pydata__xarray-4094] Return Code: 0 
 [pydata__xarray__0.12] [pydata__xarray-4094] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pydata__xarray__0.12 pytest --no-header -rA --tb=no -p no:cacheprovider xarray/tests/test_dataset.py;
+Test Script: conda run -n pydata__xarray__0.12  pytest --no-header -rA --tb=no -p no:cacheprovider xarray/tests/test_dataset.py;
 [pydata__xarray__0.12] [pydata__xarray-4094] Command: conda run -n pydata__xarray__0.12 pytest --no-header -rA --tb=no -p no:cacheprovider xarray/tests/test_dataset.py 
-[pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[pydata__xarray__0.12] [pydata__xarray-4094] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [pydata__xarray__0.12] [pydata__xarray-4094] Std. Output:
 ============================= test session starts ==============================
 collected 889 items
@@ -1155,7 +1176,7 @@ FAILED xarray/tests/test_dataset.py::TestDataset::test_to_stacked_array_to_unsta
 FAILED xarray/tests/test_dataset.py::TestDataset::test_to_stacked_array_to_unstacked_dataset_different_dimension
 FAILED xarray/tests/test_dataset.py::TestDataset::test_from_dataframe_categorical
 FAILED xarray/tests/test_dataset.py::test_raise_no_warning_for_nan_in_binary_ops
-= 9 failed, 862 passed, 16 skipped, 1 xfailed, 1 xpassed, 3069 warnings in 23.73s =
+= 9 failed, 862 passed, 16 skipped, 1 xfailed, 1 xpassed, 3069 warnings in 13.78s =
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider xarray/tests/test_dataset.py` failed. (See above for error)
 
  

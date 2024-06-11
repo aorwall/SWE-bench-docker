@@ -49,7 +49,7 @@ Applied patch tests/dbshell/test_postgresql.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 dbshell.test_postgresql;
 [django__django__4.2] [django__django-15851] Command: ./tests/runtests.py --verbosity 2 dbshell.test_postgresql 
-[django__django__4.2] [django__django-15851] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.2] [django__django-15851] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.2] [django__django-15851] Std. Output:
 test_accent (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase) ... ok
 test_basic (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase) ... ok
@@ -64,10 +64,10 @@ SIGINT is ignored in Python and passed to psql to abort queries. ... skipped 'Re
 test_ssl_certificate (dbshell.test_postgresql.PostgreSqlDbshellCommandTestCase) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.058s
+Ran 10 tests in 0.094s
 
 OK (skipped=1)
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application dbshell
 Found 10 test(s).
 Skipping setup of unused database(s): default, other.

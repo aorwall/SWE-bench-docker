@@ -4,9 +4,9 @@
 
 | Resolved | Count | Rate |
 | -------- | ----- | ---- |
-| Yes | 54 | 19.15% |
-| Partially | 10 | 3.55% |
-| No | 218 | 77.3% |  
+| Yes | 54 | 19.08% |
+| Partially | 10 | 3.53% |
+| No | 219 | 77.39% |  
 
 
 ## Patch Apply Success + Failure
@@ -25,7 +25,6 @@
 | Instance ID | Repository | Testbed version |
 | ----------- | ---------- | --------------- |
 | [django__django-12497](logs/django__django-12497.20240402_sweagent_gpt4.eval.log) | django/django | 3.1 |
-| [django__django-13757](logs/django__django-13757.20240402_sweagent_gpt4.eval.log) | django/django | 3.2 |
 
 
 ### Applied but not resolved
@@ -79,6 +78,7 @@
 | [django__django-13590](logs/django__django-13590.20240402_sweagent_gpt4.eval.log) | django/django | 3.2 |
 | [django__django-13660](logs/django__django-13660.20240402_sweagent_gpt4.eval.log) | django/django | 3.2 |
 | [django__django-13710](logs/django__django-13710.20240402_sweagent_gpt4.eval.log) | django/django | 4.0 |
+| [django__django-13757](logs/django__django-13757.20240402_sweagent_gpt4.eval.log) | django/django | 3.2 |
 | [django__django-13768](logs/django__django-13768.20240402_sweagent_gpt4.eval.log) | django/django | 3.2 |
 | [django__django-13925](logs/django__django-13925.20240402_sweagent_gpt4.eval.log) | django/django | 4.0 |
 | [django__django-13933](logs/django__django-13933.20240402_sweagent_gpt4.eval.log) | django/django | 4.0 |

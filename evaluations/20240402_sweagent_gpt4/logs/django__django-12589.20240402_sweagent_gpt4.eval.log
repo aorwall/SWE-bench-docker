@@ -11,6 +11,11 @@ Previous HEAD position was 0668164b4a Fixed E128, E741 flake8 warnings.
 HEAD is now at 895f28f9cb Reverted "Pinned asgiref == 3.2.5 in test requirements."
  
 [django__django__3.1] [django__django-12589] Return Code: 0 
+[django__django__3.1] [django__django-12589] Command: git diff > /opt/temp_django__django-12589_pred_try_init.patch 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12589] Std. Output:
+ 
+[django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Command: git apply -v /opt/temp_django__django-12589_pred_try.patch 
 [django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12589] Std. Output:
@@ -22,6 +27,11 @@ Applied patch reproduce_issue.py cleanly.
 [django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-12589] Command: git diff > /opt/temp_django__django-12589_pred_try_init.patch 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12589] Std. Output:
+ 
+[django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Command: git apply -v -R /opt/temp_django__django-12589_pred_try.patch 
 [django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12589] Std. Output:
@@ -33,6 +43,11 @@ Applied patch django/db/models/sql/compiler.py cleanly.
 [django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.1] [django__django-12589] Command: git diff > /opt/temp_django__django-12589_pred_init.patch 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12589] Std. Output:
+ 
+[django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Command: git apply -v /opt/temp_django__django-12589_pred.patch 
 [django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12589] Std. Output:
@@ -44,6 +59,11 @@ Applied patch reproduce_issue.py cleanly.
 [django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.1] [django__django-12589] Command: git diff > /opt/temp_django__django-12589_test_init.patch 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.1] [django__django-12589] Std. Output:
+ 
+[django__django__3.1] [django__django-12589] Return Code: 0 
 [django__django__3.1] [django__django-12589] Command: git apply -v /opt/temp_django__django-12589_test.patch 
 [django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.1] [django__django-12589] Std. Output:
@@ -57,10 +77,10 @@ Applied patch tests/aggregation/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 aggregation.models aggregation.tests;
 [django__django__3.1] [django__django-12589] Command: ./tests/runtests.py --verbosity 2 aggregation.models aggregation.tests 
-[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.1] [django__django-12589] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.1] [django__django-12589] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application aggregation
 Skipping setup of unused database(s): other.
 Operations to perform:

@@ -49,9 +49,9 @@ Applied patch tests/queries/test_q.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 queries.test_q;
 [django__django__4.0] [django__django-14016] Command: ./tests/runtests.py --verbosity 2 queries.test_q 
-[django__django__4.0] [django__django-14016] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.0] [django__django-14016] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.0] [django__django-14016] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application queries
 Skipping setup of unused database(s): default, other.
 System check identified no issues (1 silenced).
@@ -72,7 +72,7 @@ test_reconstruct_negated (queries.test_q.QTests) ... ok
 test_reconstruct_or (queries.test_q.QTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 15 tests in 0.004s
+Ran 15 tests in 0.001s
 
 OK
  

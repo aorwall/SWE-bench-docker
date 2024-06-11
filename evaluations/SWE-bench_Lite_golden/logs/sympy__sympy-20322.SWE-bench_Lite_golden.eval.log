@@ -54,7 +54,7 @@ Applied patch sympy/core/tests/test_arit.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.8  bin/test -C --verbose sympy/core/tests/test_arit.py;
 [sympy__sympy__1.8] [sympy__sympy-20322] Command: conda run -n sympy__sympy__1.8 bin/test -C --verbose sympy/core/tests/test_arit.py 
-[sympy__sympy__1.8] [sympy__sympy-20322] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.8] [sympy__sympy-20322] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.8] [sympy__sympy-20322] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.8/bin/python  (3.9.19-final-0) [CPython]
@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        2412425
-hash randomization: on (PYTHONHASHSEED=1263073162)
+random seed:        59116790
+hash randomization: on (PYTHONHASHSEED=3544417893)
 
 sympy/core/tests/test_arit.py[93] 
 test_bug1 ok
@@ -161,9 +161,7 @@ test__neg__ ok
 test_issue_18507 ok                                                         [OK]
 
 
-________________________________ slowest tests _________________________________
-sympy/core/tests/test_arit.py::test_Mod - Took 19.745 seconds
-======= tests finished: 91 passed, 2 expected to fail, in 34.19 seconds ========
+======= tests finished: 91 passed, 2 expected to fail, in 12.39 seconds ========
 
  
 [sympy__sympy__1.8] [sympy__sympy-20322] Return Code: 0 

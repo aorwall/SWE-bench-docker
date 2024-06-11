@@ -61,7 +61,7 @@ Applied patch xarray/tests/test_concat.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pydata__xarray__0.12  pytest --no-header -rA --tb=no -p no:cacheprovider xarray/tests/test_combine.py xarray/tests/test_concat.py;
 [pydata__xarray__0.12] [pydata__xarray-3364] Command: conda run -n pydata__xarray__0.12 pytest --no-header -rA --tb=no -p no:cacheprovider xarray/tests/test_combine.py xarray/tests/test_concat.py 
-[pydata__xarray__0.12] [pydata__xarray-3364] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pydata__xarray__0.12] [pydata__xarray-3364] Subprocess args: {"cwd": "/home/swe-bench/pydata__xarray", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pydata__xarray__0.12] [pydata__xarray-3364] Std. Output:
 ============================= test session starts ==============================
 collected 113 items
@@ -290,7 +290,7 @@ PASSED xarray/tests/test_concat.py::TestConcatDataArray::test_concat_fill_value[
 PASSED xarray/tests/test_concat.py::TestConcatDataArray::test_concat_fill_value[2.0]
 PASSED xarray/tests/test_concat.py::TestConcatDataArray::test_concat_join_kwarg
 XFAIL xarray/tests/test_combine.py::TestNestedCombine::test_nested_concat_too_many_dims_at_once
-================= 112 passed, 1 xfailed, 68 warnings in 12.40s =================
+================= 112 passed, 1 xfailed, 68 warnings in 4.19s ==================
 
  
 [pydata__xarray__0.12] [pydata__xarray-3364] Return Code: 0 

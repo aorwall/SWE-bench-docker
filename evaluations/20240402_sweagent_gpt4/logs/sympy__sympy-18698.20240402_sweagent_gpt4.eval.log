@@ -1,13 +1,19 @@
 [sympy__sympy__1.6] [sympy__sympy-18698] Task Metadata:
 	- Instance ID: sympy__sympy-18698
 	- Testbed: sympy__sympy__1.6
-	- 
-	- Evaluation Model: 20240402_sweagent_gpt4 
+	- Evaluation Model: 20240402_sweagent_gpt4
+	- Python version: Python 3.11.8
+ 
 [sympy__sympy__1.6] [sympy__sympy-18698] Command: git -c advice.detachedHead=false checkout 3dff1b98a78f28c953ae2140b69356b8391e399c 
 [sympy__sympy__1.6] [sympy__sympy-18698] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.6] [sympy__sympy-18698] Std. Output:
 Previous HEAD position was 28b41c73c1 Merge pull request #19598 from oscarbenjamin/pr_bump_version_161rc1
 HEAD is now at 3dff1b98a7 Merge pull request #18690 from mohitacecode/issue_18666_2
+ 
+[sympy__sympy__1.6] [sympy__sympy-18698] Return Code: 0 
+[sympy__sympy__1.6] [sympy__sympy-18698] Command: git diff > /home/swe-bench/temp_sympy__sympy-18698_pred_try_init.patch 
+[sympy__sympy__1.6] [sympy__sympy-18698] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.6] [sympy__sympy-18698] Std. Output:
  
 [sympy__sympy__1.6] [sympy__sympy-18698] Return Code: 0 
 [sympy__sympy__1.6] [sympy__sympy-18698] Command: git apply -v /home/swe-bench/temp_sympy__sympy-18698_pred_try.patch 
@@ -21,6 +27,11 @@ Applied patch sympy/polys/sqfreetools.py cleanly.
 [sympy__sympy__1.6] [sympy__sympy-18698] Return Code: 0 
 [sympy__sympy__1.6] [sympy__sympy-18698] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[sympy__sympy__1.6] [sympy__sympy-18698] Command: git diff > /home/swe-bench/temp_sympy__sympy-18698_pred_try_init.patch 
+[sympy__sympy__1.6] [sympy__sympy-18698] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.6] [sympy__sympy-18698] Std. Output:
+ 
+[sympy__sympy__1.6] [sympy__sympy-18698] Return Code: 0 
 [sympy__sympy__1.6] [sympy__sympy-18698] Command: git apply -v -R /home/swe-bench/temp_sympy__sympy-18698_pred_try.patch 
 [sympy__sympy__1.6] [sympy__sympy-18698] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.6] [sympy__sympy-18698] Std. Output:
@@ -32,6 +43,11 @@ Applied patch reproduce_bug.py cleanly.
 [sympy__sympy__1.6] [sympy__sympy-18698] Return Code: 0 
 [sympy__sympy__1.6] [sympy__sympy-18698] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[sympy__sympy__1.6] [sympy__sympy-18698] Command: git diff > /home/swe-bench/temp_sympy__sympy-18698_pred_init.patch 
+[sympy__sympy__1.6] [sympy__sympy-18698] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.6] [sympy__sympy-18698] Std. Output:
+ 
+[sympy__sympy__1.6] [sympy__sympy-18698] Return Code: 0 
 [sympy__sympy__1.6] [sympy__sympy-18698] Command: git apply -v /home/swe-bench/temp_sympy__sympy-18698_pred.patch 
 [sympy__sympy__1.6] [sympy__sympy-18698] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.6] [sympy__sympy-18698] Std. Output:
@@ -43,6 +59,11 @@ Applied patch sympy/polys/sqfreetools.py cleanly.
 [sympy__sympy__1.6] [sympy__sympy-18698] Return Code: 0 
 [sympy__sympy__1.6] [sympy__sympy-18698] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[sympy__sympy__1.6] [sympy__sympy-18698] Command: git diff > /home/swe-bench/temp_sympy__sympy-18698_test_init.patch 
+[sympy__sympy__1.6] [sympy__sympy-18698] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[sympy__sympy__1.6] [sympy__sympy-18698] Std. Output:
+ 
+[sympy__sympy__1.6] [sympy__sympy-18698] Return Code: 0 
 [sympy__sympy__1.6] [sympy__sympy-18698] Command: git restore sympy/polys/tests/test_polytools.py 
 [sympy__sympy__1.6] [sympy__sympy-18698] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [sympy__sympy__1.6] [sympy__sympy-18698] Std. Output:
@@ -57,9 +78,9 @@ Applied patch sympy/polys/tests/test_polytools.py cleanly.
 [sympy__sympy__1.6] [sympy__sympy-18698] Return Code: 0 
 [sympy__sympy__1.6] [sympy__sympy-18698] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n sympy__sympy__1.6 bin/test -C --verbose sympy/polys/tests/test_polytools.py;
+Test Script: conda run -n sympy__sympy__1.6  bin/test -C --verbose sympy/polys/tests/test_polytools.py;
 [sympy__sympy__1.6] [sympy__sympy-18698] Command: conda run -n sympy__sympy__1.6 bin/test -C --verbose sympy/polys/tests/test_polytools.py 
-[sympy__sympy__1.6] [sympy__sympy-18698] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[sympy__sympy__1.6] [sympy__sympy-18698] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [sympy__sympy__1.6] [sympy__sympy-18698] Std. Output:
 ERROR conda.cli.main_run:execute(124): `conda run bin/test -C --verbose sympy/polys/tests/test_polytools.py` failed. (See above for error)
 ============================= test process starts ==============================
@@ -68,8 +89,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        50527467
-hash randomization: on (PYTHONHASHSEED=502282539)
+random seed:        55302876
+hash randomization: on (PYTHONHASHSEED=1325919555)
 
 sympy/polys/tests/test_polytools.py[150] 
 test_Poly_mixed_operations ok
@@ -237,7 +258,7 @@ Traceback (most recent call last):
     assert sqf_list(p) == result
 AssertionError
 
-== tests finished: 147 passed, 2 failed, 1 expected to fail, in 29.23 seconds ==
+== tests finished: 147 passed, 2 failed, 1 expected to fail, in 11.73 seconds ==
 DO *NOT* COMMIT!
 
  

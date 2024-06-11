@@ -54,7 +54,7 @@ Applied patch pvlib/tests/test_temperature.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n pvlib__pvlib-python__0.7  pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_temperature.py;
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Command: conda run -n pvlib__pvlib-python__0.7 pytest --no-header -rA --tb=no -p no:cacheprovider pvlib/tests/test_temperature.py 
-[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Subprocess args: {"cwd": "/home/swe-bench/pvlib__pvlib-python", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Std. Output:
 ============================= test session starts ==============================
 collected 19 items
@@ -104,7 +104,7 @@ PASSED pvlib/tests/test_temperature.py::test_fuentes[pvwatts_8760_rackmount.csv-
 PASSED pvlib/tests/test_temperature.py::test_fuentes[pvwatts_8760_roofmount.csv-49]
 PASSED pvlib/tests/test_temperature.py::test_fuentes_timezone[None]
 PASSED pvlib/tests/test_temperature.py::test_fuentes_timezone[Etc/GMT+5]
-======================== 19 passed, 5 warnings in 0.47s ========================
+======================== 19 passed, 5 warnings in 0.19s ========================
 
  
 [pvlib__pvlib-python__0.7] [pvlib__pvlib-python-1072] Return Code: 0 

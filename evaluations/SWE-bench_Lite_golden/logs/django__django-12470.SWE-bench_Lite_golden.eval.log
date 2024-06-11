@@ -51,9 +51,9 @@ Applied patch tests/model_inheritance/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 model_inheritance.models model_inheritance.tests;
 [django__django__3.1] [django__django-12470] Command: ./tests/runtests.py --verbosity 2 model_inheritance.models model_inheritance.tests 
-[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.1] [django__django-12470] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.1] [django__django-12470] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application model_inheritance
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -135,7 +135,7 @@ test_update_works_on_parent_and_child_models_at_once (model_inheritance.tests.Mo
 test_values_works_on_parent_model_fields (model_inheritance.tests.ModelInheritanceDataTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 34 tests in 0.401s
+Ran 34 tests in 0.366s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

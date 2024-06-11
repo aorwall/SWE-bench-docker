@@ -51,10 +51,10 @@ Applied patch tests/select_related_onetoone/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 defer_regress.tests select_related_onetoone.tests;
 [django__django__5.0] [django__django-16910] Command: ./tests/runtests.py --verbosity 2 defer_regress.tests select_related_onetoone.tests 
-[django__django__5.0] [django__django-16910] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__5.0] [django__django-16910] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__5.0] [django__django-16910] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application select_related_onetoone
 Importing application defer_regress
 Found 39 test(s).
@@ -154,7 +154,7 @@ test_ticket_16409 (defer_regress.tests.DeferRegressionTest.test_ticket_16409) ..
 test_ticket_23270 (defer_regress.tests.DeferRegressionTest.test_ticket_23270) ... ok
 
 ----------------------------------------------------------------------
-Ran 39 tests in 0.195s
+Ran 39 tests in 0.115s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

@@ -11,6 +11,11 @@ Previous HEAD position was 0fbdb9784d Fixed #23718 -- Doc'd that test mirrors re
 HEAD is now at 44c24bf028 Refs #25706 -- Removed inline CSS in the openlayers widget template.
  
 [django__django__4.2] [django__django-15902] Return Code: 0 
+[django__django__4.2] [django__django-15902] Command: git diff > /opt/temp_django__django-15902_pred_try_init.patch 
+[django__django__4.2] [django__django-15902] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15902] Std. Output:
+ 
+[django__django__4.2] [django__django-15902] Return Code: 0 
 [django__django__4.2] [django__django-15902] Command: git apply -v /opt/temp_django__django-15902_pred_try.patch 
 [django__django__4.2] [django__django-15902] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15902] Std. Output:
@@ -20,6 +25,11 @@ Applied patch reproduce_warning.py cleanly.
 [django__django__4.2] [django__django-15902] Return Code: 0 
 [django__django__4.2] [django__django-15902] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.2] [django__django-15902] Command: git diff > /opt/temp_django__django-15902_pred_try_init.patch 
+[django__django__4.2] [django__django-15902] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15902] Std. Output:
+ 
+[django__django__4.2] [django__django-15902] Return Code: 0 
 [django__django__4.2] [django__django-15902] Command: git apply -v -R /opt/temp_django__django-15902_pred_try.patch 
 [django__django__4.2] [django__django-15902] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15902] Std. Output:
@@ -29,6 +39,11 @@ Applied patch reproduce_warning.py cleanly.
 [django__django__4.2] [django__django-15902] Return Code: 0 
 [django__django__4.2] [django__django-15902] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.2] [django__django-15902] Command: git diff > /opt/temp_django__django-15902_pred_init.patch 
+[django__django__4.2] [django__django-15902] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15902] Std. Output:
+ 
+[django__django__4.2] [django__django-15902] Return Code: 0 
 [django__django__4.2] [django__django-15902] Command: git apply -v /opt/temp_django__django-15902_pred.patch 
 [django__django__4.2] [django__django-15902] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15902] Std. Output:
@@ -38,6 +53,11 @@ Applied patch reproduce_warning.py cleanly.
 [django__django__4.2] [django__django-15902] Return Code: 0 
 [django__django__4.2] [django__django-15902] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__4.2] [django__django-15902] Command: git diff > /opt/temp_django__django-15902_test_init.patch 
+[django__django__4.2] [django__django-15902] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.2] [django__django-15902] Std. Output:
+ 
+[django__django__4.2] [django__django-15902] Return Code: 0 
 [django__django__4.2] [django__django-15902] Command: git apply -v /opt/temp_django__django-15902_test.patch 
 [django__django__4.2] [django__django-15902] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.2] [django__django-15902] Std. Output:
@@ -49,19 +69,19 @@ Applied patch tests/forms_tests/tests/test_formsets.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 forms_tests.tests.test_formsets;
 [django__django__4.2] [django__django-15902] Command: ./tests/runtests.py --verbosity 2 forms_tests.tests.test_formsets 
-[django__django__4.2] [django__django-15902] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.2] [django__django-15902] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.2] [django__django-15902] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application forms_tests
 Found 157 test(s).
 Skipping setup of unused database(s): default, other.
 System check identified no issues (0 silenced).
-test_invalid (forms_tests.tests.test_formsets.AllValidTests)
-all_valid() validates all forms, even when some are invalid. ... ok
-test_valid (forms_tests.tests.test_formsets.AllValidTests) ... ok
 test_no_management_form_warning (forms_tests.tests.test_formsets.DeprecationTests)
 Management forms are already rendered with the new div template. ... ERROR
 test_warning (forms_tests.tests.test_formsets.DeprecationTests) ... ok
+test_invalid (forms_tests.tests.test_formsets.AllValidTests)
+all_valid() validates all forms, even when some are invalid. ... ok
+test_valid (forms_tests.tests.test_formsets.AllValidTests) ... ok
 test_empty_formset_is_multipart (forms_tests.tests.test_formsets.TestEmptyFormSet)
 is_multipart() works with an empty formset. ... ok
 test_empty_formset_is_valid (forms_tests.tests.test_formsets.TestEmptyFormSet)
@@ -325,7 +345,7 @@ Traceback (most recent call last):
 django.utils.deprecation.RemovedInDjango50Warning: The "default.html" templates for forms and formsets will be removed. These were proxies to the equivalent "table.html" templates, but the new "div.html" templates will be the default from Django 5.0. Transitional renderers are provided to allow you to opt-in to the new output style now. See https://docs.djangoproject.com/en/dev/releases/4.1/ for more details
 
 ----------------------------------------------------------------------
-Ran 157 tests in 0.883s
+Ran 157 tests in 0.433s
 
 FAILED (errors=1)
  

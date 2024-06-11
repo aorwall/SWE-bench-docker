@@ -1,13 +1,19 @@
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Task Metadata:
 	- Instance ID: matplotlib__matplotlib-23913
 	- Testbed: matplotlib__matplotlib__3.6
-	- 
-	- Evaluation Model: 20240402_sweagent_gpt4 
+	- Evaluation Model: 20240402_sweagent_gpt4
+	- Python version: Python 3.11.8
+ 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Command: git -c advice.detachedHead=false checkout 5c4595267ccd3daf78f5fd05693b7ecbcd575c1e 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Std. Output:
 Previous HEAD position was 73909bcb40 Merge pull request #24781 from tacaswell/mnt/restore_doc_sha
 HEAD is now at 5c4595267c Merge pull request #23896 from anntzer/uof
+ 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Return Code: 0 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Command: git diff > /home/swe-bench/temp_matplotlib__matplotlib-23913_pred_try_init.patch 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Std. Output:
  
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-23913_pred_try.patch 
@@ -21,6 +27,11 @@ Applied patch test_legend_draggable.py cleanly.
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Command: git diff > /home/swe-bench/temp_matplotlib__matplotlib-23913_pred_try_init.patch 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Std. Output:
+ 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Command: git apply -v -R /home/swe-bench/temp_matplotlib__matplotlib-23913_pred_try.patch 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Std. Output:
@@ -32,6 +43,11 @@ Applied patch lib/matplotlib/legend.py cleanly.
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Command: git diff > /home/swe-bench/temp_matplotlib__matplotlib-23913_pred_init.patch 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Std. Output:
+ 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Command: git apply -v /home/swe-bench/temp_matplotlib__matplotlib-23913_pred.patch 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Std. Output:
@@ -43,6 +59,11 @@ Applied patch test_legend_draggable.py cleanly.
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Command: git diff > /home/swe-bench/temp_matplotlib__matplotlib-23913_test_init.patch 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Std. Output:
+ 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Command: git restore lib/matplotlib/tests/test_legend.py 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Std. Output:
@@ -57,9 +78,9 @@ Applied patch lib/matplotlib/tests/test_legend.py cleanly.
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Return Code: 0 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n matplotlib__matplotlib__3.6 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_legend.py;
+Test Script: conda run -n matplotlib__matplotlib__3.6  pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_legend.py;
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Command: conda run -n matplotlib__matplotlib__3.6 pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_legend.py 
-[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Subprocess args: {"cwd": "/home/swe-bench/matplotlib__matplotlib", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [matplotlib__matplotlib__3.6] [matplotlib__matplotlib-23913] Std. Output:
 ============================= test session starts ==============================
 collected 114 items
@@ -175,7 +196,7 @@ PASSED lib/matplotlib/tests/test_legend.py::test_ncol_ncols[pdf]
 SKIPPED [9] ../miniconda3/envs/matplotlib__matplotlib__3.6/lib/python3.11/contextlib.py:81: Cannot compare svg files because Inkscape is not installed
 SKIPPED [1] lib/matplotlib/testing/compare.py:285: Don't know how to convert .svg files to png
 FAILED lib/matplotlib/tests/test_legend.py::test_legend_draggable[True] - Att...
-================== 1 failed, 103 passed, 10 skipped in 40.33s ==================
+================== 1 failed, 103 passed, 10 skipped in 17.92s ==================
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider lib/matplotlib/tests/test_legend.py` failed. (See above for error)
 
  

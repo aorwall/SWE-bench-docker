@@ -11,6 +11,11 @@ Previous HEAD position was 475cffd1d6 Fixed typo in docs/intro/reusable-apps.txt
 HEAD is now at 42e8cf47c7 Fixed #32369 -- Fixed adding check constraints with pattern lookups and expressions as rhs.
  
 [django__django__4.0] [django__django-13933] Return Code: 0 
+[django__django__4.0] [django__django-13933] Command: git diff > /opt/temp_django__django-13933_pred_try_init.patch 
+[django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13933] Std. Output:
+ 
+[django__django__4.0] [django__django-13933] Return Code: 0 
 [django__django__4.0] [django__django-13933] Command: git apply -v /opt/temp_django__django-13933_pred_try.patch 
 [django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13933] Std. Output:
@@ -20,6 +25,11 @@ Applied patch django/forms/models.py cleanly.
 [django__django__4.0] [django__django-13933] Return Code: 0 
 [django__django__4.0] [django__django-13933] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.0] [django__django-13933] Command: git diff > /opt/temp_django__django-13933_pred_try_init.patch 
+[django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13933] Std. Output:
+ 
+[django__django__4.0] [django__django-13933] Return Code: 0 
 [django__django__4.0] [django__django-13933] Command: git apply -v -R /opt/temp_django__django-13933_pred_try.patch 
 [django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13933] Std. Output:
@@ -29,6 +39,11 @@ Applied patch django/forms/models.py cleanly.
 [django__django__4.0] [django__django-13933] Return Code: 0 
 [django__django__4.0] [django__django-13933] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__4.0] [django__django-13933] Command: git diff > /opt/temp_django__django-13933_pred_init.patch 
+[django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13933] Std. Output:
+ 
+[django__django__4.0] [django__django-13933] Return Code: 0 
 [django__django__4.0] [django__django-13933] Command: git apply -v /opt/temp_django__django-13933_pred.patch 
 [django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13933] Std. Output:
@@ -38,6 +53,11 @@ Applied patch django/forms/models.py cleanly.
 [django__django__4.0] [django__django-13933] Return Code: 0 
 [django__django__4.0] [django__django-13933] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__4.0] [django__django-13933] Command: git diff > /opt/temp_django__django-13933_test_init.patch 
+[django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__4.0] [django__django-13933] Std. Output:
+ 
+[django__django__4.0] [django__django-13933] Return Code: 0 
 [django__django__4.0] [django__django-13933] Command: git apply -v /opt/temp_django__django-13933_test.patch 
 [django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__4.0] [django__django-13933] Std. Output:
@@ -49,9 +69,9 @@ Applied patch tests/forms_tests/tests/test_error_messages.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 forms_tests.tests.test_error_messages;
 [django__django__4.0] [django__django-13933] Command: ./tests/runtests.py --verbosity 2 forms_tests.tests.test_error_messages 
-[django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__4.0] [django__django-13933] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__4.0] [django__django-13933] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application forms_tests
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -140,7 +160,7 @@ First differing element 0:
 
 
 ----------------------------------------------------------------------
-Ran 20 tests in 0.454s
+Ran 20 tests in 0.250s
 
 FAILED (failures=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

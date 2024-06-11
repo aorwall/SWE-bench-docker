@@ -54,7 +54,7 @@ Applied patch sympy/printing/tests/test_latex.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.8  bin/test -C --verbose sympy/printing/tests/test_latex.py;
 [sympy__sympy__1.8] [sympy__sympy-21171] Command: conda run -n sympy__sympy__1.8 bin/test -C --verbose sympy/printing/tests/test_latex.py 
-[sympy__sympy__1.8] [sympy__sympy-21171] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.8] [sympy__sympy-21171] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.8] [sympy__sympy-21171] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.8/bin/python  (3.9.19-final-0) [CPython]
@@ -62,8 +62,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        80936778
-hash randomization: on (PYTHONHASHSEED=3960709411)
+random seed:        15295888
+hash randomization: on (PYTHONHASHSEED=846837577)
 
 sympy/printing/tests/test_latex.py[156] 
 test_printmethod ok
@@ -224,7 +224,7 @@ test_pickleable ok
 test_printing_latex_array_expressions ok                                    [OK]
 
 
-======= tests finished: 154 passed, 2 expected to fail, in 6.18 seconds ========
+======= tests finished: 154 passed, 2 expected to fail, in 2.92 seconds ========
 
  
 [sympy__sympy__1.8] [sympy__sympy-21171] Return Code: 0 

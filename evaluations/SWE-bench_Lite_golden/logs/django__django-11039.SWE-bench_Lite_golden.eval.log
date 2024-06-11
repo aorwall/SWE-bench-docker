@@ -49,9 +49,9 @@ Applied patch tests/migrations/test_commands.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 migrations.test_commands;
 [django__django__3.0] [django__django-11039] Command: ./tests/runtests.py --verbosity 2 migrations.test_commands 
-[django__django__3.0] [django__django-11039] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.0] [django__django-11039] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.0] [django__django-11039] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application migrations
 Operations to perform:
   Synchronize unmigrated apps: auth, contenttypes, messages, migrations, sessions, staticfiles
@@ -115,7 +115,7 @@ test_squashmigrations_nonexistent_app_label (migrations.test_commands.AppLabelEr
 test_squashed_name_with_start_migration_name (migrations.test_commands.SquashMigrationsTests)
 --squashed-name specifies the new migration's name. ... ok
 test_squashed_name_without_start_migration_name (migrations.test_commands.SquashMigrationsTests)
---squashed-name also works if a start migration is omitted. ... ok
+--squashed-name also works if a start migration is omitted. ... ERROR
 test_squashmigrations_initial_attribute (migrations.test_commands.SquashMigrationsTests) ... ok
 test_squashmigrations_invalid_start (migrations.test_commands.SquashMigrationsTests) ... ok
 test_squashmigrations_optimizes (migrations.test_commands.SquashMigrationsTests) ... ok
@@ -196,10 +196,29 @@ test_sqlmigrate_for_non_transactional_databases (migrations.test_commands.Migrat
 test_sqlmigrate_forwards (migrations.test_commands.MigrateTests) ... ok
 test_unknown_prefix (migrations.test_commands.MigrateTests) ... ok
 
+======================================================================
+ERROR: test_squashed_name_without_start_migration_name (migrations.test_commands.SquashMigrationsTests)
+--squashed-name also works if a start migration is omitted.
 ----------------------------------------------------------------------
-Ran 89 tests in 1.063s
+Traceback (most recent call last):
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 59, in testPartExecutor
+    yield
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/unittest/case.py", line 605, in run
+    testMethod()
+  File "/opt/django__django/tests/migrations/test_commands.py", line 1545, in test_squashed_name_without_start_migration_name
+    with self.temporary_migration_module(module="migrations.test_migrations") as migration_dir:
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/opt/django__django/tests/migrations/test_base.py", line 127, in temporary_migration_module
+    shutil.copytree(source_migrations_dir, target_migrations_dir)
+  File "/opt/pyenv/versions/3.6.15/lib/python3.6/shutil.py", line 365, in copytree
+    raise Error(errors)
+shutil.Error: [('/opt/django__django/tests/migrations/test_migrations/__pycache__/0002_second.cpython-36.pyc.139735485928624', '/tmp/django_9i5b47iw/tmp959g8hr6/tmpbrlmfcwp/migrations/__pycache__/0002_second.cpython-36.pyc.139735485928624', "[Errno 2] No such file or directory: '/opt/django__django/tests/migrations/test_migrations/__pycache__/0002_second.cpython-36.pyc.139735485928624'")]
 
-OK
+----------------------------------------------------------------------
+Ran 89 tests in 0.918s
+
+FAILED (errors=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
@@ -211,7 +230,7 @@ Destroying test database for alias 'other' ('file:memorydb_other?mode=memory&cac
 Destroying test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')...
 Destroying test database for alias 'other' ('file:memorydb_other?mode=memory&cache=shared')...
  
-[django__django__3.0] [django__django-11039] Return Code: 0 
+[django__django__3.0] [django__django-11039] Return Code: 1 
 
->>>>> All Tests Passed
+>>>>> Some Tests Failed
 [django__django__3.0] [django__django-11039] Test script run successful 

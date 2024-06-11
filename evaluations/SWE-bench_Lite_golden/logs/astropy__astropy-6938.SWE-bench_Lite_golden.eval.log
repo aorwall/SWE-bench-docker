@@ -62,7 +62,7 @@ Applied patch astropy/io/fits/tests/test_table.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n astropy__astropy__1.3  pytest --no-header -rA --tb=no -p no:cacheprovider astropy/io/fits/tests/test_checksum.py astropy/io/fits/tests/test_table.py;
 [astropy__astropy__1.3] [astropy__astropy-6938] Command: conda run -n astropy__astropy__1.3 pytest --no-header -rA --tb=no -p no:cacheprovider astropy/io/fits/tests/test_checksum.py astropy/io/fits/tests/test_table.py 
-[astropy__astropy__1.3] [astropy__astropy-6938] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[astropy__astropy__1.3] [astropy__astropy-6938] Subprocess args: {"cwd": "/home/swe-bench/astropy__astropy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [astropy__astropy__1.3] [astropy__astropy-6938] Std. Output:
 ============================= test session starts ==============================
 collected 107 items
@@ -180,7 +180,7 @@ FAILED astropy/io/fits/tests/test_table.py::TestTableFunctions::test_numpy_ndarr
 FAILED astropy/io/fits/tests/test_table.py::TestTableFunctions::test_new_table_from_recarray
 FAILED astropy/io/fits/tests/test_table.py::test_regression_5383 - AttributeE...
 FAILED astropy/io/fits/tests/test_table.py::test_table_to_hdu - AttributeErro...
-============= 21 failed, 13 passed, 2 skipped, 72 errors in 1.57s ==============
+============= 21 failed, 13 passed, 2 skipped, 72 errors in 1.26s ==============
 ERROR conda.cli.main_run:execute(124): `conda run pytest --no-header -rA --tb=no -p no:cacheprovider astropy/io/fits/tests/test_checksum.py astropy/io/fits/tests/test_table.py` failed. (See above for error)
 
  

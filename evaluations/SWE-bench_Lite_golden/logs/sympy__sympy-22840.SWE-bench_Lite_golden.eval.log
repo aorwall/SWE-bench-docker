@@ -61,7 +61,7 @@ Applied patch sympy/utilities/tests/test_codegen.py cleanly.
 >>>>> Applied Patch (test)
 Test Script: conda run -n sympy__sympy__1.10  bin/test -C --verbose sympy/simplify/tests/test_cse.py sympy/utilities/tests/test_codegen.py;
 [sympy__sympy__1.10] [sympy__sympy-22840] Command: conda run -n sympy__sympy__1.10 bin/test -C --verbose sympy/simplify/tests/test_cse.py sympy/utilities/tests/test_codegen.py 
-[sympy__sympy__1.10] [sympy__sympy-22840] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[sympy__sympy__1.10] [sympy__sympy-22840] Subprocess args: {"cwd": "/home/swe-bench/sympy__sympy", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [sympy__sympy__1.10] [sympy__sympy-22840] Std. Output:
 ============================= test process starts ==============================
 executable:         /home/swe-bench/miniconda3/envs/sympy__sympy__1.10/bin/python  (3.9.19-final-0) [CPython]
@@ -69,8 +69,8 @@ architecture:       64-bit
 cache:              no
 ground types:       python 
 numpy:              None
-random seed:        14741365
-hash randomization: on (PYTHONHASHSEED=210880989)
+random seed:        48453776
+hash randomization: on (PYTHONHASHSEED=2314918264)
 
 sympy/simplify/tests/test_cse.py[47] 
 test_numbered_symbols ok
@@ -181,9 +181,7 @@ test_c_with_printer ok
 test_fcode_complex ok                                                       [OK]
 
 
-________________________________ slowest tests _________________________________
-sympy/simplify/tests/test_cse.py::test_ignore_order_terms - Took 19.046 seconds
-======= tests finished: 99 passed, 5 expected to fail, in 27.71 seconds ========
+======= tests finished: 99 passed, 5 expected to fail, in 11.06 seconds ========
 
  
 [sympy__sympy__1.10] [sympy__sympy-22840] Return Code: 0 

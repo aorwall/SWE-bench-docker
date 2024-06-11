@@ -53,11 +53,11 @@ Applied patch tests/forms_tests/tests/test_media.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 admin_inlines.tests admin_widgets.test_autocomplete_widget forms_tests.tests.test_media;
 [django__django__3.0] [django__django-11019] Command: ./tests/runtests.py --verbosity 2 admin_inlines.tests admin_widgets.test_autocomplete_widget forms_tests.tests.test_media 
-[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.0] [django__django-11019] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.0] [django__django-11019] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
-Importing application admin_inlines
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application admin_widgets
+Importing application admin_inlines
 Importing application forms_tests
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -70,6 +70,21 @@ Synchronizing apps without migrations:
     Creating table auth_group
     Creating table auth_user
     Creating table django_session
+    Creating table admin_widgets_member
+    Creating table admin_widgets_band
+    Creating table admin_widgets_album
+    Creating table admin_widgets_inventory
+    Creating table admin_widgets_event
+    Creating table admin_widgets_car
+    Creating table admin_widgets_cartire
+    Creating table admin_widgets_honeycomb
+    Creating table admin_widgets_bee
+    Creating table admin_widgets_individual
+    Creating table admin_widgets_company
+    Creating table admin_widgets_advisor
+    Creating table admin_widgets_student
+    Creating table admin_widgets_school
+    Creating table admin_widgets_profile
     Creating table admin_inlines_parent
     Creating table admin_inlines_teacher
     Creating table admin_inlines_child
@@ -113,21 +128,6 @@ Synchronizing apps without migrations:
     Creating table admin_inlines_somechildmodel
     Creating table admin_inlines_profilecollection
     Creating table admin_inlines_profile
-    Creating table admin_widgets_member
-    Creating table admin_widgets_band
-    Creating table admin_widgets_album
-    Creating table admin_widgets_inventory
-    Creating table admin_widgets_event
-    Creating table admin_widgets_car
-    Creating table admin_widgets_cartire
-    Creating table admin_widgets_honeycomb
-    Creating table admin_widgets_bee
-    Creating table admin_widgets_individual
-    Creating table admin_widgets_company
-    Creating table admin_widgets_advisor
-    Creating table admin_widgets_student
-    Creating table admin_widgets_school
-    Creating table admin_widgets_profile
     Creating table forms_tests_boundarymodel
     Creating table forms_tests_defaults
     Creating table forms_tests_choicemodel
@@ -247,7 +247,7 @@ test_tabular_model_form_meta_readonly_field (admin_inlines.tests.TestInline) ...
 test_tabular_non_field_errors (admin_inlines.tests.TestInline) ... ok
 
 ----------------------------------------------------------------------
-Ran 80 tests in 2.157s
+Ran 80 tests in 1.843s
 
 OK (skipped=6)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

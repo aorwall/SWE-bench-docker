@@ -11,6 +11,11 @@ Previous HEAD position was 419a78300f [3.0.x] Fixed typo in docs/ref/contrib/pos
 HEAD is now at 514efa3129 Fixed #30688 -- Clarified base_manager_name docs.
  
 [django__django__3.0] [django__django-11620] Return Code: 0 
+[django__django__3.0] [django__django-11620] Command: git diff > /opt/temp_django__django-11620_pred_try_init.patch 
+[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11620] Std. Output:
+ 
+[django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Command: git apply -v /opt/temp_django__django-11620_pred_try.patch 
 [django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11620] Std. Output:
@@ -20,6 +25,11 @@ Applied patch reproduce_issue.py cleanly.
 [django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.0] [django__django-11620] Command: git diff > /opt/temp_django__django-11620_pred_try_init.patch 
+[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11620] Std. Output:
+ 
+[django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Command: git apply -v -R /opt/temp_django__django-11620_pred_try.patch 
 [django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11620] Std. Output:
@@ -29,6 +39,11 @@ Applied patch reproduce_issue.py cleanly.
 [django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
+[django__django__3.0] [django__django-11620] Command: git diff > /opt/temp_django__django-11620_pred_init.patch 
+[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11620] Std. Output:
+ 
+[django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Command: git apply -v /opt/temp_django__django-11620_pred.patch 
 [django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11620] Std. Output:
@@ -38,6 +53,11 @@ Applied patch reproduce_issue.py cleanly.
 [django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
+[django__django__3.0] [django__django-11620] Command: git diff > /opt/temp_django__django-11620_test_init.patch 
+[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": true, "shell": true, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[django__django__3.0] [django__django-11620] Std. Output:
+ 
+[django__django__3.0] [django__django-11620] Return Code: 0 
 [django__django__3.0] [django__django-11620] Command: git apply -v /opt/temp_django__django-11620_test.patch 
 [django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
 [django__django__3.0] [django__django-11620] Std. Output:
@@ -49,9 +69,9 @@ Applied patch tests/view_tests/tests/test_debug.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 view_tests.tests.test_debug;
 [django__django__3.0] [django__django-11620] Command: ./tests/runtests.py --verbosity 2 view_tests.tests.test_debug 
-[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
+[django__django__3.0] [django__django-11620] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
 [django__django__3.0] [django__django-11620] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application view_tests
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -90,7 +110,10 @@ test_repr (view_tests.tests.test_debug.CallableSettingWrapperTests) ... ok
 test_cleanse_setting_basic (view_tests.tests.test_debug.HelperFunctionTests) ... ok
 test_cleanse_setting_ignore_case (view_tests.tests.test_debug.HelperFunctionTests) ... ok
 test_cleanse_setting_recurses_in_dictionary (view_tests.tests.test_debug.HelperFunctionTests) ... ok
-test_handle_db_exception (view_tests.tests.test_debug.DebugViewQueriesAllowedTests) ... ok
+test_400 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
+test_403 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
+test_404 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
+test_template_not_found_error (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
 test_disallowed_host (view_tests.tests.test_debug.PlainTextReportTests)
 An exception report can be generated even for a disallowed host. ... ok
 test_message_only (view_tests.tests.test_debug.PlainTextReportTests) ... ok
@@ -104,10 +127,12 @@ test_request_and_message (view_tests.tests.test_debug.PlainTextReportTests)
 A message can be provided in addition to a request ... ok
 test_request_with_items_key (view_tests.tests.test_debug.PlainTextReportTests) ... ok
 test_template_exception (view_tests.tests.test_debug.PlainTextReportTests) ... ok
-test_400 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
-test_403 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
-test_404 (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
-test_template_not_found_error (view_tests.tests.test_debug.NonDjangoTemplatesDebugViewTests) ... ok
+test_handle_db_exception (view_tests.tests.test_debug.DebugViewQueriesAllowedTests) ... ok
+test_ajax_response_encoding (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
+test_custom_exception_reporter_filter (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
+test_non_sensitive_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
+test_paranoid_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
+test_sensitive_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
 test_400 (view_tests.tests.test_debug.DebugViewTests) ... ok
 test_403 (view_tests.tests.test_debug.DebugViewTests) ... ok
 test_403_template (view_tests.tests.test_debug.DebugViewTests) ... ok
@@ -126,11 +151,6 @@ test_template_encoding (view_tests.tests.test_debug.DebugViewTests) ... ok
 test_template_exceptions (view_tests.tests.test_debug.DebugViewTests) ... ok
 test_template_loader_postmortem (view_tests.tests.test_debug.DebugViewTests)
 Tests for not existing file ... ok
-test_ajax_response_encoding (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
-test_custom_exception_reporter_filter (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
-test_non_sensitive_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
-test_paranoid_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
-test_sensitive_request (view_tests.tests.test_debug.AjaxResponseExceptionReporterFilter) ... ok
 test_disallowed_host (view_tests.tests.test_debug.ExceptionReporterTests)
 An exception report can be generated even for a disallowed host. ... ok
 test_encoding_error (view_tests.tests.test_debug.ExceptionReporterTests) ... ok
@@ -218,7 +238,7 @@ Traceback (most recent call last):
 django.http.response.Http404
 
 ----------------------------------------------------------------------
-Ran 72 tests in 4.073s
+Ran 72 tests in 1.909s
 
 FAILED (errors=1)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

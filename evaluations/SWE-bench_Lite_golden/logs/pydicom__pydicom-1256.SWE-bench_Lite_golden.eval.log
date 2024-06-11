@@ -1,18 +1,22 @@
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Task Metadata:
 	- Instance ID: pydicom__pydicom-1256
 	- Testbed: pydicom__pydicom__2.1
-	- Evaluation Model: SWE-bench_Lite_golden
-	- Python version: Python 3.11.8
+	- 
+	- Evaluation Model: SWE-bench_Lite_golden 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Command: git status --porcelain 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Std. Output:
  
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Return Code: 0 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Command: git -c advice.detachedHead=false checkout 49a3da4a3d9c24d7e8427a25048a1c7d5c4f7724 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Std. Output:
 Previous HEAD position was 506ecea8f [MRG] Typing updates (#1435)
 HEAD is now at 49a3da4a3 Start v2.2 dev (#1245)
  
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Return Code: 0 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1256_pred_try.patch 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Std. Output:
 Checking patch pydicom/jsonrep.py...
 Applied patch pydicom/jsonrep.py cleanly.
@@ -21,7 +25,7 @@ Applied patch pydicom/jsonrep.py cleanly.
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Apply patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Command: git apply -v -R /home/swe-bench/temp_pydicom__pydicom-1256_pred_try.patch 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Std. Output:
 Checking patch pydicom/jsonrep.py...
 Applied patch pydicom/jsonrep.py cleanly.
@@ -30,7 +34,7 @@ Applied patch pydicom/jsonrep.py cleanly.
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Revert patch successful (pred_try) 
 >>>>> Applied Patch (pred_try)
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1256_pred.patch 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Std. Output:
 Checking patch pydicom/jsonrep.py...
 Applied patch pydicom/jsonrep.py cleanly.
@@ -39,12 +43,12 @@ Applied patch pydicom/jsonrep.py cleanly.
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Apply patch successful (pred) 
 >>>>> Applied Patch (pred)
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Command: git restore pydicom/tests/test_json.py 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": true, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Std. Output:
  
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Return Code: 0 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Command: git apply -v /home/swe-bench/temp_pydicom__pydicom-1256_test.patch 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Std. Output:
 /home/swe-bench/temp_pydicom__pydicom-1256_test.patch:15: trailing whitespace.
                 "vr": "SQ", 
@@ -55,17 +59,23 @@ warning: 1 line adds whitespace errors.
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Return Code: 0 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Apply patch successful (test) 
 >>>>> Applied Patch (test)
-Test Script: conda run -n pydicom__pydicom__2.1  pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_json.py;
+Test Script: conda run -n pydicom__pydicom__2.1 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_json.py;
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Command: conda run -n pydicom__pydicom__2.1 pytest -rA --tb=no -p no:cacheprovider pydicom/tests/test_json.py 
-[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[pydicom__pydicom__2.1] [pydicom__pydicom-1256] Subprocess args: {"cwd": "/home/swe-bench/pydicom__pydicom", "check": false, "shell": false, "capture_output": false, "text": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Std. Output:
 ============================= test session starts ==============================
-platform linux -- Python 3.9.19, pytest-4.6.11, py-1.11.0, pluggy-0.13.1
+platform linux -- Python 3.9.19, pytest-8.2.0, pluggy-1.5.0
 rootdir: /home/swe-bench/pydicom__pydicom
 collected 23 items
 
 pydicom/tests/test_json.py .......................                       [100%]
 
+=============================== warnings summary ===============================
+pydicom/data/data_manager.py:52
+  /home/swe-bench/pydicom__pydicom/pydicom/data/data_manager.py:52: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    from pkg_resources import iter_entry_points
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
 =========================== short test summary info ============================
 PASSED pydicom/tests/test_json.py::TestPersonName::test_json_pn_from_file
 PASSED pydicom/tests/test_json.py::TestPersonName::test_pn_components_to_json
@@ -90,7 +100,7 @@ PASSED pydicom/tests/test_json.py::TestBinary::test_invalid_bulkdata_uri
 PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called
 PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called_2
 PASSED pydicom/tests/test_json.py::TestBinary::test_bulk_data_reader_is_called_within_SQ
-========================== 23 passed in 0.38 seconds ===========================
+======================== 23 passed, 1 warning in 0.08s =========================
 
  
 [pydicom__pydicom__2.1] [pydicom__pydicom-1256] Return Code: 0 

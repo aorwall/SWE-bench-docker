@@ -49,9 +49,9 @@ Applied patch tests/auth_tests/test_validators.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 auth_tests.test_validators;
 [django__django__3.0] [django__django-11099] Command: ./tests/runtests.py --verbosity 2 auth_tests.test_validators 
-[django__django__3.0] [django__django-11099] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__3.0] [django__django-11099] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__3.0] [django__django-11099] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application auth_tests
 Skipping setup of unused database(s): other.
 Operations to perform:
@@ -117,7 +117,7 @@ test_validate_custom_list (auth_tests.test_validators.CommonPasswordValidatorTes
 test_validate_django_supplied_file (auth_tests.test_validators.CommonPasswordValidatorTest) ... ok
 
 ----------------------------------------------------------------------
-Ran 22 tests in 0.287s
+Ran 22 tests in 0.277s
 
 OK
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

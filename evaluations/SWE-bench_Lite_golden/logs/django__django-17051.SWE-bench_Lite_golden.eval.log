@@ -49,10 +49,10 @@ Applied patch tests/bulk_create/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 bulk_create.tests;
 [django__django__5.0] [django__django-17051] Command: ./tests/runtests.py --verbosity 2 bulk_create.tests 
-[django__django__5.0] [django__django-17051] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__5.0] [django__django-17051] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__5.0] [django__django-17051] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application bulk_create
 Found 52 test(s).
 Skipping setup of unused database(s): other.
@@ -145,7 +145,7 @@ test_zero_as_autoval (bulk_create.tests.BulkCreateTests.test_zero_as_autoval)
 Zero as id for AutoField should raise exception in MySQL, because MySQL ... skipped 'Database has feature(s) allows_auto_pk_0'
 
 ----------------------------------------------------------------------
-Ran 52 tests in 0.512s
+Ran 52 tests in 0.244s
 
 OK (skipped=7)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

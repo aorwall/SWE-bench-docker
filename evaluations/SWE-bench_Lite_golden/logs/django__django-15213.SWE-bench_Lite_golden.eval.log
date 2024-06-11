@@ -49,10 +49,10 @@ Applied patch tests/annotations/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 annotations.tests;
 [django__django__4.1] [django__django-15213] Command: ./tests/runtests.py --verbosity 2 annotations.tests 
-[django__django__4.1] [django__django-15213] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.1] [django__django-15213] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.1] [django__django-15213] Std. Output:
 Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application annotations
 Found 77 test(s).
 Skipping setup of unused database(s): other.
@@ -168,7 +168,7 @@ Annotations can reference fields in a values clause, ... ok
 test_values_with_pk_annotation (annotations.tests.NonAggregateAnnotationTestCase) ... ok
 
 ----------------------------------------------------------------------
-Ran 77 tests in 0.720s
+Ran 77 tests in 0.121s
 
 OK (skipped=3)
 Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...

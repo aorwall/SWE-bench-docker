@@ -49,9 +49,9 @@ Applied patch tests/user_commands/tests.py cleanly.
 >>>>> Applied Patch (test)
 Test Script:  ./tests/runtests.py --verbosity 2 user_commands.tests;
 [django__django__4.2] [django__django-15781] Command: ./tests/runtests.py --verbosity 2 user_commands.tests 
-[django__django__4.2] [django__django-15781] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 1800} 
+[django__django__4.2] [django__django-15781] Subprocess args: {"cwd": "/opt/django__django", "check": false, "shell": false, "universal_newlines": true, "stdout": -1, "stderr": -2, "timeout": 900} 
 [django__django__4.2] [django__django-15781] Std. Output:
-Testing against Django installed in '/opt/django__django/django' with up to 12 processes
+Testing against Django installed in '/opt/django__django/django' with up to 128 processes
 Importing application user_commands
 Found 44 test(s).
 Skipping setup of unused database(s): default, other.
@@ -112,7 +112,7 @@ test_script_prefix_set_in_commands (user_commands.tests.CommandRunTests) ... ok
 test_skip_checks (user_commands.tests.CommandRunTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 44 tests in 1.670s
+Ran 44 tests in 0.718s
 
 OK
  
