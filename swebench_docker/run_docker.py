@@ -29,63 +29,64 @@ async def run_docker_evaluation(task_instance: dict, namespace: str, log_dir: st
         docker_image = f"{namespace}/{image_prefix}-{repo_name}-testbed:{task_instance['version']}"
 
     # Create a temporary file to store the task_instance JSON
-    with tempfile.NamedTemporaryFile(delete=False, mode='w+', suffix='.json') as tmpfile:
-        json.dump(task_instance, tmpfile)
-        tmpfile.close()
-        tmpfile_path = tmpfile.name
+    tmpfile_path = tempfile.mktemp(suffix='.json')
+    with open(tmpfile_path, 'w+') as f:
+        json.dump(task_instance, f)
 
-        swebench_docker_fork_dir = os.environ.get("SWEBENCH_DOCKER_FORK_DIR")
-        docker_command = [
-            'docker', 'run',
-            '--rm',
-            '-v', f"{log_dir}:{container_log_dir}",
-            # Map the swebench_docker fork dir to the container
-            # for some reason, swebench_docker has different locations for the different containers :(
-            # so we need to map all of them to make it work
-            '-v', f"{swebench_docker_fork_dir}/swebench_docker:/opt/swebench_docker:ro",
-            '-v', f"{swebench_docker_fork_dir}/swebench_docker:/home/swe-bench/swebench_docker:ro",
-            '-v', f"{swebench_docker_fork_dir}/swebench_docker:/home/swe-bench/swebench:ro",
-            # =======
-            # Map file instead pass the instance as env var to avoid "Argument list too long" error
-            '-v', f"{tmpfile_path}:/home/swe-bench/task_instance.json:ro",
-            '-e', f"LOG_DIR={container_log_dir}",
-            '-e', f"TIMEOUT={timeout}",
-            '-e', f"LOG_SUFFIX={log_suffix}",
-            docker_image
-        ]
+    swebench_docker_fork_dir = os.environ.get("SWEBENCH_DOCKER_FORK_DIR")
+    docker_command = [
+        'docker', 'run',
+        '--rm',
+        '-u', 'root',
+        '-v', f"{log_dir}:{container_log_dir}",
+        # Map the swebench_docker fork dir to the container
+        # for some reason, swebench_docker has different locations for the different containers :(
+        # so we need to map all of them to make it work
+        '-v', f"{swebench_docker_fork_dir}/swebench_docker:/opt/swebench_docker:ro",
+        '-v', f"{swebench_docker_fork_dir}/swebench_docker:/home/swe-bench/swebench_docker:ro",
+        '-v', f"{swebench_docker_fork_dir}/swebench_docker:/home/swe-bench/swebench:ro",
+        # =======
+        # Map file instead pass the instance as env var to avoid "Argument list too long" error
+        '-v', f"{tmpfile_path}:/home/swe-bench/task_instance.json:ro",
+        '-e', f"LOG_DIR={container_log_dir}",
+        '-e', f"TIMEOUT={timeout}",
+        '-e', f"LOG_SUFFIX={log_suffix}",
+        docker_image
+    ]
 
-        cmd_string = ' '.join(docker_command)
+    cmd_string = ' '.join(docker_command)
 
-        if verbose:
-            logger.info(cmd_string)
+    if verbose:
+        logger.info(cmd_string)
 
-        start_time = time.time()
+    start_time = time.time()
 
-        try:
-            process = await asyncio.create_subprocess_shell(cmd_string, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-            stdout, stderr = await process.communicate()
-            stdout = stdout.decode()
-            if stderr:
-                stderr = stderr.decode()
+    try:
+        process = await asyncio.create_subprocess_shell(cmd_string, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        stdout, stderr = await process.communicate()
+        stdout = stdout.decode()
+        if stderr:
+            stderr = stderr.decode()
 
-            elapsed_time = time.time() - start_time
+        elapsed_time = time.time() - start_time
 
-            if process.returncode != 0:
-                logger.warning(
-                    f"[{task_instance['instance_id']}][{docker_image}]  Error running container:")
-                logger.warning(f"Command: {cmd_string}")
-                logger.warning(f"Stdout - {stdout}")
-                logger.warning(f"Stderr - {stderr}")
+        if process.returncode != 0:
+            logger.warning(
+                f"[{task_instance['instance_id']}][{docker_image}]  Error running container:")
+            logger.warning(f"Command: {cmd_string}")
+            logger.warning(f"Stdout - {stdout}")
+            logger.warning(f"Stderr - {stderr}")
 
-            elif "Evaluation succeeded" not in stdout:
-                logger.warning(f"[{task_instance['instance_id']}][{docker_image}]  Container ran successfully in {elapsed_time} seconds, but evaluation failed.")
-                logger.warning(f"Command: {cmd_string}")
-                logger.warning(f"stdout - {stdout}")
-            else:
-                logger.info(f"[{task_instance['instance_id']}][{docker_image}] Container ran successfully in {elapsed_time} seconds.")
-        except Exception as e:
-            logger.warning(f"[{task_instance['instance_id']}][{docker_image}]  Error running container: {e}")
-        finally:
-            # Ensure the temporary file is deleted after the Docker process completes
-            os.unlink(tmpfile_path)
-
+        elif "Evaluation succeeded" not in stdout:
+            logger.warning(f"[{task_instance['instance_id']}][{docker_image}]  Container ran successfully in {
+                           elapsed_time} seconds, but evaluation failed.")
+            logger.warning(f"Command: {cmd_string}")
+            logger.warning(f"stdout - {stdout}")
+        else:
+            logger.info(f"[{task_instance['instance_id']}][{
+                        docker_image}] Container ran successfully in {elapsed_time} seconds.")
+    except Exception as e:
+        logger.warning(f"[{task_instance['instance_id']}][{docker_image}]  Error running container: {e}")
+    finally:
+        # Ensure the temporary file is deleted after the Docker process completes
+        os.unlink(tmpfile_path)
