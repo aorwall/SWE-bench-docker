@@ -78,13 +78,11 @@ async def run_docker_evaluation(task_instance: dict, namespace: str, log_dir: st
             logger.warning(f"Stderr - {stderr}")
 
         elif "Evaluation succeeded" not in stdout:
-            logger.warning(f"[{task_instance['instance_id']}][{docker_image}]  Container ran successfully in {
-                           elapsed_time} seconds, but evaluation failed.")
+            logger.warning(f"[{task_instance['instance_id']}][{docker_image}]  Container ran successfully in {elapsed_time} seconds, but evaluation failed.")
             logger.warning(f"Command: {cmd_string}")
             logger.warning(f"stdout - {stdout}")
         else:
-            logger.info(f"[{task_instance['instance_id']}][{
-                        docker_image}] Container ran successfully in {elapsed_time} seconds.")
+            logger.info(f"[{task_instance['instance_id']}][{docker_image}] Container ran successfully in {elapsed_time} seconds.")
     except Exception as e:
         logger.warning(f"[{task_instance['instance_id']}][{docker_image}]  Error running container: {e}")
     finally:
