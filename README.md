@@ -52,16 +52,16 @@ In `scikit-learn`, some benchmarks seem to fail because Cython code isn't compil
 
 
 ## Run evaluation
-Run `run_evaluation.py` to evaluate a predictions file. A log for each test is written to log_dir in the same format
-as in the SWE-bench evaluation tools, and the same tooling can then be used to generate a report. 
+Run `run_evaluation.py` to evaluate a predictions file. A log for each test is written to log_dir in the same format as in the SWE-bench evaluation tools, and the same tooling can then be used to generate a report. 
 
-1. Export environment variable `SWEBENCH_DOCKER_FORK_DIR`
+Each prediction will be provided to the docker image in a base64 encoded environment variable. This might fail if the predictions are too large. To avoid this the export environment variable `SWEBENCH_DOCKER_FORK_DIR` can be set to provide the prediction in a file in a mounted volume instead.
+
 ```bash
 git clone https://github.com/aorwall/SWE-bench-docker.git
 export SWEBENCH_DOCKER_FORK_DIR=/path/to/SWE-bench-docker
 ```
 
-2. Run evaluation
+Run evaluation
 ```
 python run_evaluation.py 
     --predictions_path [Required]  Path to the predictions file 
