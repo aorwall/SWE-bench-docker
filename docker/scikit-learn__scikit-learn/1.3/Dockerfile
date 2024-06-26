@@ -16,7 +16,7 @@ RUN git -c advice.detachedHead=false checkout 1e8a5b833d1b58f3ab84099c4582239af8
 
 RUN pip install setuptools wheel
 
-RUN pip install numpy scipy cython pytest pandas matplotlib joblib threadpoolctl
+RUN pip install numpy==1.26.4 scipy==1.13.0 cython==3.0.10 pytest==8.2.0 pandas==2.2.2 matplotlib==3.8.4 joblib==1.4.2 threadpoolctl==3.5.0
 
 
 RUN git checkout 1e8a5b833d1b58f3ab84099c4582239af854b23a .
