@@ -35,7 +35,7 @@ MAP_VERSION_TO_INSTALL_SKLEARN.update(
             "instance_image": True,
             "python": "3.9",
             "pre_install": ["pip install setuptools wheel"],
-            "packages": "numpy scipy cython pytest pandas matplotlib joblib threadpoolctl",
+            "packages": "numpy==1.26.4 scipy==1.13.0 cython==3.0.10 pytest==8.2.0 pandas==2.2.2 matplotlib==3.8.4 joblib==1.4.2 threadpoolctl==3.5.0",
             "install": "pip install -v --no-use-pep517 --no-build-isolation -e .",
             "arch_specific_packages": {
                 "aarch64": "gxx_linux-aarch64 gcc_linux-aarch64 make",
@@ -560,7 +560,7 @@ MAP_VERSION_TO_INSTALL_PYDICOM = {
     k: {
         "python": "3.6",
         "install": "pip install -e .",
-        "packages": "numpy",
+        "packages": "numpy==1.26.4",
         "pip_packages": ["pytest"]
     }
     for k in ['1.2', '1.3', '1.4', '2.0', '2.1', '2.2', '2.3']

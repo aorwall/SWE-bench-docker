@@ -4,7 +4,7 @@ FROM aorwall/swe-bench-pydicom_pydicom:bookworm-slim
 
 RUN git -c advice.detachedHead=false checkout 7241f5d9db0de589b230bb84212fbb643a7c86c3
 
-RUN conda create -n pydicom__pydicom__1.3 python=3.6 numpy -y
+RUN conda create -n pydicom__pydicom__1.3 python=3.6 numpy==1.26.4 -y
 SHELL ["conda", "run", "-n", "pydicom__pydicom__1.3", "/bin/bash", "-c"]
 
 
