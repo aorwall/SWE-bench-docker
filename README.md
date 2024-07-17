@@ -2,7 +2,7 @@
 _Since the SWE-Bench team has developed a more stable containerized evaluation harness, this project will no longer be maintained. However, to continue promoting easier evaluation runs, I've set up a hosted solution for running evaluations that I'm trying out right now._
 
 ### How to use the hosted evaluation solution
-1. Go to [moatless.ai](https:/moatless.ai)
+1. Go to [moatless.ai](https://moatless.ai)
 2. Upload your prediction file and login with your Github account.
 3. Your file will be evaluated in under 20 minutes (if no other evaluations are already running).
 
