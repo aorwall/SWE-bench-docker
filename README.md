@@ -1,5 +1,5 @@
 ## Hosted Evaluation Solution
-_Since the SWE-Bench team has developed a more stable [containerized evaluation harness](https://github.com/princeton-nlp/SWE-bench/blob/main/docs/20240627_docker/README.md), this project will no longer be maintained. However, to continue promoting easier evaluation runs, I've set up a hosted solution for running evaluations that I'm trying out right now._
+_Since the SWE-Bench team has developed a more stable containerized evaluation harness, this project will no longer be maintained. However, to continue promoting easier evaluation runs, I've set up a hosted solution for running evaluations that I'm trying out right now._
 
 ### How to use the hosted evaluation solution
 1. Go to [eval.moatless.ai](https://eval.moatless.ai)
