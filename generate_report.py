@@ -1,5 +1,6 @@
 import argparse
 import json
+from tempfile import NamedTemporaryFile
 
 from swebench import (
     get_eval_refs,
@@ -39,22 +40,32 @@ def generate_report(
 ):
     instances = get_eval_refs(swe_bench_tasks)
 
-    if predictions_path.endswith(".json"):
-        jsonl_predictions_path = "/tmp/predictions.jsonl"
-        convert_json_to_jsonl(predictions_path, jsonl_predictions_path)
-        predictions_path = jsonl_predictions_path
+    with NamedTemporaryFile(buffering=0, prefix="predictions-", suffix=".jsonl") as jsonl_file:
+        if predictions_path.endswith(".json"):
+            convert_json_to_jsonl(predictions_path, jsonl_file.name)
+            predictions_path = jsonl_file.name
 
-    predictions = get_instances(predictions_path)
-    model_name_or_path = predictions[0]["model_name_or_path"]
+        predictions = get_instances(predictions_path)
+        model_name_or_path = predictions[0]["model_name_or_path"]
 
-    summary = get_model_eval_summary(
-        predicts_path=predictions_path,
-        eval_dir=log_dir,
-        swe_bench_tasks=swe_bench_tasks,
-    )
+        summary = get_model_eval_summary(
+            predicts_path=predictions_path,
+            eval_dir=log_dir,
+            swe_bench_tasks=swe_bench_tasks,
+        )
+        with open(f"{output_dir}/summary.json", "w") as f:
+            f.write(json.dumps(summary, indent=4))
 
-    with open(f"{output_dir}/summary.json", "w") as f:
-        f.write(json.dumps(summary, indent=4))
+        report = get_model_report(
+            verbose=True,
+            model=model_name_or_path,
+            predictions_path=predictions_path,
+            log_dir=log_dir,
+            swe_bench_tasks=swe_bench_tasks,
+        )
+        report = {k: sorted(v) for k, v in report.items()}
+        with open(f"{output_dir}/report.json", "w") as f:
+            f.write(json.dumps(report, indent=4))
 
     report_md = f"# Benchmark results"
 
@@ -78,19 +89,6 @@ def generate_report(
 
     print(case_resolution)
     report_md += case_resolution
-
-    report = get_model_report(
-        verbose=True,
-        model=model_name_or_path,
-        predictions_path=predictions_path,
-        log_dir=log_dir,
-        swe_bench_tasks=swe_bench_tasks,
-    )
-
-    report = {k: sorted(v) for k, v in report.items()}
-
-    with open(f"{output_dir}/report.json", "w") as f:
-        f.write(json.dumps(report, indent=4))
 
     report_md += f"\n\n## Benchmark instances"
 
