@@ -8,6 +8,12 @@ _Since the SWE-Bench team has developed a more stable [containerized evaluation 
 
 **Note**: This is a test solution to help streamline the evaluation process. Please send any feedback to [albert@moatless.ai](mailto:albert@moatless.ai).
 
+
+
+***
+
+
+
 ## SWE-bench-docker
 
 This is a Dockerfile based solution of the [SWE-Bench evaluation framework](https://github.com/princeton-nlp/SWE-bench/tree/main/swebench/harness).
