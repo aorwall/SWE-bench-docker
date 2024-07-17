@@ -2,9 +2,9 @@
 _Since the SWE-Bench team has developed a more stable [containerized evaluation harness](https://github.com/princeton-nlp/SWE-bench/blob/main/docs/20240627_docker/README.md), this project will no longer be maintained. However, to continue promoting easier evaluation runs, I've set up a hosted solution for running evaluations that I'm trying out right now._
 
 ### How to use the hosted evaluation solution
-1. **Log In**: Go to [eval.moatless.ai](https://eval.moatless.ai)
-2. **Upload Prediction File**: Upload your prediction file and login with your Github account.
-3. **Get Results**: Your file will be evaluated in under 20 minutes (if no other evaluations are already running).
+1. Go to [eval.moatless.ai](https://eval.moatless.ai)
+2. Upload your prediction file and login with your Github account.
+3. Your file will be evaluated in under 20 minutes (if no other evaluations are already running).
 
 **Note**: This is a test solution to help streamline the evaluation process. Please send any feedback to [albert@moatless.ai](mailto:albert@moatless.ai).
 
